@@ -90,15 +90,37 @@
       /* Source Filter Bar (New) */
 .source-filters {
   display: flex;
-  flex-wrap: wrap;
+  
+  /* DEFAULT (Mobile): Allow wrapping if screen is tiny */
+  flex-wrap: wrap; 
+  
   justify-content: center;
-  gap: 10px;                  /* Slightly larger gap for clarity */
-  margin-bottom: 20px;
-  max-width: 800px;           /* Prevents them from spreading too wide on desktop */
-  margin-left: auto;
-  margin-right: auto;
-} 
+  align-items: center;
+  gap: 8px;
+  
+  /* THE BOX / FRAME STYLING */
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8px);
+  border-radius: 20px;
+  padding: 8px 15px;
+  margin: 0 auto 20px;
+  
+  max-width: 95%;
+  width: fit-content;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
 
+/* NEW: Style for the "Filter:" label */
+.filter-label {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-right: 5px;
+  letter-spacing: 0.5px;
+  display: inline-block;
+}
 
      .source-pill {
         padding: 6px 12px;
@@ -778,6 +800,23 @@
       }
 
       /* Mobile Responsiveness */
+@media (min-width: 769px) {
+  .source-filters {
+    flex-wrap: nowrap;     /* FORCE single line */
+    white-space: nowrap;   /* Prevent text inside creating weird breaks */
+    padding: 10px 25px;    /* More breathing room on big screens */
+    width: auto;           /* Let it grow naturally */
+    max-width: 900px;      /* Ensure it doesn't get absurdly wide */
+  }
+
+/* Optional: Ensure pills don't shrink too much */
+  .source-pill {
+    flex-shrink: 0; 
+    min-width: 100px;      /* Ensure buttons feel substantial on desktop */
+  }
+}
+
+
       @media (max-width: 768px) {
         .container { padding: 15px; }
         .nav-buttons { gap: 15px; }
@@ -794,7 +833,18 @@
         .close-modal { font-size: 40px; }
         
         /* Mobile filter adjustments */
-        .source-filters {gap: 8px; padding: 0 10px;}
+.source-filters {
+    border-radius: 15px;
+    padding: 8px 10px;
+    width: 100%;       /* Fill width on mobile */
+  }
+  
+  /* Optional: Hide the text label on very small screens to save space */
+  .filter-label {
+    display: none; 
+  }
+}
+
         .source-pill {flex: 1 1 30%; max-width: 45%; font-size: 11px; padding: 6px 4px; height: 44px;}
       }
     </style>
@@ -842,13 +892,17 @@
         </button>
       </nav>
 
-      <div class="source-filters" id="sourceFilters">
-          <div class="source-pill active" onclick="filterBySource('all', this)">All Sources<br>肖战社交账号</div>
-          <div class="source-pill" onclick="filterBySource('weibo', this)">Weibo 微博</div>
-          <div class="source-pill" onclick="filterBySource('oasis', this)">Oasis 绿洲</div>
-          <div class="source-pill" onclick="filterBySource('douyin', this)">Douyin 抖音</div>
-          <div class="source-pill" onclick="filterBySource('ins', this)">Instagram</div>
-      </div>
+<div class="source-filters" id="sourceFilters">
+    <span class="filter-label">Filter:</span>
+    
+    <div class="source-pill active" onclick="filterBySource('all', this)">All Sources<br>全部</div>
+    <div class="source-pill" onclick="filterBySource('weibo', this)">Weibo<br>微博</div>
+    <div class="source-pill" onclick="filterBySource('oasis', this)">Oasis<br>绿洲</div>
+    <div class="source-pill" onclick="filterBySource('douyin', this)">Douyin<br>抖音</div>
+    <div class="source-pill" onclick="filterBySource('ins', this)">Instagram</div>
+</div>
+
+
 
       <div class="content-section">
         <div class="stats-grid">
@@ -865,7 +919,7 @@
         <input
             type="text"
             class="search-bar"
-            placeholder="Search by tags, date, or note"
+            placeholder="Search by keywords"
             id="searchInput"
         />
         <button
