@@ -1,6 +1,6 @@
 [
     {
-        "id": 173,
+        "id": 175,
         "url": "https://pub-7ef623b87169458aaafb3a91ab9b2966.r2.dev/full/20251212_XZ_DXJZ.mp4",
         "date": "2025-12-12",
         "month": "December",
@@ -15,7 +15,7 @@
         "link": "https://weibo.com/1792951112/Qi2CO1NB7"
     },
     {
-        "id": 174,
+        "id": 176,
         "url": "https://pub-7ef623b87169458aaafb3a91ab9b2966.r2.dev/full/20251212_DY_XZ.mp4",
         "date": "2025-12-12",
         "month": "December",
@@ -30,7 +30,7 @@
         "link": "https://v.douyin.com/bcdK1utn-sw/"
     },
     {
-        "id": 175,
+        "id": 177,
         "url": "https://pub-7ef623b87169458aaafb3a91ab9b2966.r2.dev/full/20251212_WB_XZ.jpg",
         "date": "2025-12-12",
         "month": "December",
@@ -44,6 +44,47 @@
         "note": "",
         "category": "screenshot",
         "source": "weibo"
+    },
+    {
+        "id": 178,
+        "url": "https://pub-7ef623b87169458aaafb3a91ab9b2966.r2.dev/full/20251212_WB_XZ-1.jpg",
+        "date": "2025-12-12",
+        "month": "December",
+        "year": "2025",
+        "tags": [
+            "得闲谨制",
+            "央视新闻"
+        ],
+        "category": "screenshot",
+        "groupName": "202512"
+    },
+    {
+        "id": 174,
+        "url": "https://pub-7ef623b87169458aaafb3a91ab9b2966.r2.dev/full/20251210_WB_XZ.jpg",
+        "date": "2025-12-10",
+        "month": "December",
+        "year": "2025",
+        "tags": [
+            "得闲谨制",
+            "新华社",
+            "后告片"
+        ],
+        "category": "screenshot",
+        "groupName": "202512"
+    },
+    {
+        "id": 173,
+        "url": "https://pub-7ef623b87169458aaafb3a91ab9b2966.r2.dev/full/20251208_WB_XZ.jpg",
+        "date": "2025-12-08",
+        "month": "December",
+        "year": "2025",
+        "tags": [
+            "得闲谨制",
+            "新华社",
+            "后告片"
+        ],
+        "category": "screenshot",
+        "groupName": "202512"
     },
     {
         "id": 170,
