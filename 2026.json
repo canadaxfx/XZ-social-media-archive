@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "url": "https://pub-7ef623b87169458aaafb3a91ab9b2966.r2.dev/full/20260101_WB_XZ.jpg",
+        "date": "2026-01-01",
+        "month": "January",
+        "year": "2026",
+        "tags": [
+            "冲",
+            "背影"
+        ],
+        "category": "screenshot",
+        "source": "weibo",
+        "link": "https://weibo.com/1792951112/Ql0Mp3jyI",
+        "groupName": "20260101"
+    },
+    {
+        "id": 2,
+        "url": "https://pub-7ef623b87169458aaafb3a91ab9b2966.r2.dev/full/20260101_XZ-Weibo-1.jpg",
+        "date": "2026-01-01",
+        "month": "January",
+        "year": "2026",
+        "tags": [
+            "冲",
+            "背影"
+        ],
+        "link": "https://weibo.com/1792951112/Ql0Mp3jyI",
+        "groupName": "20260101",
+        "category": "attached",
+        "source": "weibo"
+    }
+]
