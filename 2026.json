@@ -28,5 +28,36 @@
         "groupName": "20260101",
         "category": "attached",
         "source": "weibo"
+    },
+    {
+        "id": 3,
+        "url": "https://pub-7ef623b87169458aaafb3a91ab9b2966.r2.dev/full/20260101_WB_XZ-1.jpg",
+        "date": "2026-01-01",
+        "month": "January",
+        "year": "2026",
+        "tags": [
+            "跨年",
+            "舞台",
+            "不要回头"
+        ],
+        "category": "screenshot",
+        "groupName": "20260101",
+        "link": "https://weibo.com/1792951112/Ql615E6lp"
+    },
+    {
+        "id": 4,
+        "url": "https://pub-7ef623b87169458aaafb3a91ab9b2966.r2.dev/full/20260101XZ_BYHT.mp4",
+        "date": "2026-01-01",
+        "month": "January",
+        "year": "2026",
+        "tags": [
+            "跨年",
+            "舞台",
+            "不要回头"
+        ],
+        "link": "https://weibo.com/1792951112/Ql615E6lp",
+        "groupName": "20260101",
+        "category": "attached",
+        "source": "weibo"
     }
 ]
