@@ -169,9 +169,11 @@
             "米兰时装秀",
             "Video"
         ],
-        "category": "attached",
+        "category": "screenshot",
         "groupName": "202602",
-        "link": "https://weibo.com/1792951112/QtQUlpkt4"
+        "link": "https://weibo.com/1792951112/QtQUlpkt4",
+        "source": "weibo",
+        "note": ""
     },
     {
         "id": 31,
