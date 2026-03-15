@@ -1383,6 +1383,16 @@
     </footer>
 
     <script>
+      // --- SOURCE META HELPER ---
+      function getSourceMeta(source) {
+        switch (source) {
+          case "oasis":  return { cssClass: "bg-oasis",  dotLabel: "Oasis",     badgeLabel: "OASIS • 绿洲" };
+          case "ins":    return { cssClass: "bg-ins",    dotLabel: "Instagram", badgeLabel: "INSTAGRAM" };
+          case "douyin": return { cssClass: "bg-douyin", dotLabel: "Douyin",    badgeLabel: "DOUYIN • 抖音" };
+          default:       return { cssClass: "bg-weibo",  dotLabel: "Weibo",     badgeLabel: "WEIBO • 微博" };
+        }
+      }
+
       // --- VARIABLES ---
       let allData = [];
       let categoryData = [];
@@ -1395,6 +1405,11 @@
       let imageObserver = null;
       let currentGroupPhotos = [];
       let currentPhotoIndex = 0;
+
+      // Cached filter elements (script runs after DOM, safe to cache here)
+      const elFilterYear  = document.getElementById("filterYear");
+      const elFilterMonth = document.getElementById("filterMonth");
+      const elFilterDay   = document.getElementById("filterDay");
 
       // --- SETUP ---
       document.addEventListener("DOMContentLoaded", () => {
@@ -1517,9 +1532,9 @@
           if (years.length) toggleYear(years[0]);
 
           if (
-            document.getElementById("filterYear").value !== "all" ||
-            document.getElementById("filterMonth").value !== "all" ||
-            document.getElementById("filterDay").value !== "all"
+            elFilterYear.value !== "all" ||
+            elFilterMonth.value !== "all" ||
+            elFilterDay.value !== "all"
           ) {
             applyDateFilter();
           }
@@ -1547,9 +1562,9 @@
       }
 
       function applyDateFilter() {
-        const yVal = document.getElementById("filterYear").value;
-        const mVal = document.getElementById("filterMonth").value;
-        const dVal = document.getElementById("filterDay").value;
+        const yVal = elFilterYear.value;
+        const mVal = elFilterMonth.value;
+        const dVal = elFilterDay.value;
         const resetBtn = document.getElementById("resetDateBtn");
 
         // Show reset button if any filter is active
@@ -1600,9 +1615,9 @@
       }
 
       function resetDateFilter() {
-        document.getElementById("filterYear").value = "all";
-        document.getElementById("filterMonth").value = "all";
-        document.getElementById("filterDay").value = "all";
+        elFilterYear.value = "all";
+        elFilterMonth.value = "all";
+        elFilterDay.value = "all";
         applyDateFilter(); // Re-runs filter, which resets to full list
       }
 
@@ -1768,24 +1783,11 @@
           .map((item) => {
             const isVideo = item.url.match(/\.(mp4|mov)$/i);
 
-            // 1. Assign Color Class
-            let dotClass = "bg-weibo"; // Default (Gold)
-            let sourceName = "Weibo"; // Tooltip text
-
-            if (item.source === "oasis") {
-              dotClass = "bg-oasis";
-              sourceName = "Oasis";
-            } else if (item.source === "ins") {
-              dotClass = "bg-ins";
-              sourceName = "Instagram";
-            } else if (item.source === "douyin") {
-              dotClass = "bg-douyin";
-              sourceName = "Douyin";
-            }
+            const { cssClass, dotLabel } = getSourceMeta(item.source);
 
             return `
     <div class="timeline-photo" onclick="openModal(${item._uid})">
-        <div class="source-dot ${dotClass}" title="Source: ${sourceName}"></div>
+        <div class="source-dot ${cssClass}" title="Source: ${dotLabel}"></div>
         
         ${isVideo ? '<div class="video-overlay-icon">▶</div>' : ""}
         
@@ -1884,7 +1886,6 @@
                 })) ||
               item.date.includes(term) ||
               (item.note && item.note.toLowerCase().includes(term)) ||
-              (item.description && item.description.toLowerCase().includes(term)) ||
               (item.photoText && item.photoText.toLowerCase().includes(term)),
           );
 
@@ -1974,20 +1975,10 @@
         dateEl.textContent = `${photo.date} - ${photo.groupName || ""}`;
 
         const badgeEl = document.getElementById("modalSourceBadge");
-        badgeEl.className = "source-badge"; // reset classes
-        if (photo.source === "oasis") {
-          badgeEl.innerHTML = "OASIS • 绿洲";
-          badgeEl.classList.add("bg-oasis");
-        } else if (photo.source === "ins") {
-          badgeEl.innerHTML = "INSTAGRAM";
-          badgeEl.classList.add("bg-ins");
-        } else if (photo.source === "douyin") {
-          badgeEl.innerHTML = "DOUYIN • 抖音";
-          badgeEl.classList.add("bg-douyin");
-        } else {
-          badgeEl.innerHTML = "WEIBO • 微博";
-          badgeEl.classList.add("bg-weibo");
-        }
+        const { cssClass, badgeLabel } = getSourceMeta(photo.source);
+        badgeEl.className = "source-badge";
+        badgeEl.classList.add(cssClass);
+        badgeEl.innerHTML = badgeLabel;
 
         document.getElementById("downloadBtn").href = photo.url;
         const srcBtn = document.getElementById("sourceLinkBtn");
@@ -2069,11 +2060,6 @@
         const deviceInfo = `${navigator.platform} - ${navigator.userAgent.split(" ").slice(-2).join(" ")}`;
         const deviceInput = document.getElementById("reportDevice");
         if (deviceInput) deviceInput.value = deviceInfo;
-      }
-
-      function closeReportModal() {
-        document.getElementById("reportModal").classList.add("hidden");
-        document.getElementById("reportForm").reset();
       }
 
       // Add click-outside listener for Report Modal
