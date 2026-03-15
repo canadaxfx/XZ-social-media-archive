@@ -397,34 +397,21 @@
                 cursor: pointer;
             }
 
-      /* --- NEW VIDEO INDICATOR STYLES --- */
+      /* --- VIDEO INDICATOR STYLES --- */
       .video-overlay-icon {
         position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%); /* Centers the element */
-        width: 46px;
-        height: 46px;
-        background: rgba(0, 0, 0, 0.6);   /* Semi-transparent dark background */
-        border: 2px solid rgba(255, 255, 255, 0.9); /* Bright white border ring */
+        top: 8px;
+        right: 8px;
+        width: 24px;
+        height: 24px;
+        background: rgba(0, 0, 0, 0.6);
         border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
         color: white;
-        font-size: 20px;
+        font-size: 12px;
+        text-align: center;
+        line-height: 24px;
         z-index: 5;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Drop shadow for depth */
-        pointer-events: none; /* Allows click to pass through to the photo */
-        transition: all 0.3s ease;
-        padding-left: 4px; /* Optical adjustment to center the triangle */
-      }
-
-      /* Hover Effect: Expands slightly and gets darker when user hovers the photo */
-      .timeline-photo:hover .video-overlay-icon {
-        transform: translate(-50%, -50%) scale(1.1);
-        background: rgba(0, 0, 0, 0.8);
-        border-color: #fff;
+        pointer-events: none;
       }
 
 
@@ -1896,7 +1883,9 @@
                   );
                 })) ||
               item.date.includes(term) ||
-              (item.note && item.note.toLowerCase().includes(term)),
+              (item.note && item.note.toLowerCase().includes(term)) ||
+              (item.description && item.description.toLowerCase().includes(term)) ||
+              (item.photoText && item.photoText.toLowerCase().includes(term)),
           );
 
           currentRenderData = filtered;
