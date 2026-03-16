@@ -586,30 +586,30 @@
 
             .post-text-pill {
               font-size: 11px;
-              padding: 3px 11px;
+              padding: 3px 10px;
               background-color: #eef2ff;
               color: #4338ca;
-              border-radius: 15px;
+              border-radius: 12px;
               border: 1px solid #c7d2fe;
               cursor: pointer;
               transition: all 0.2s ease;
               font-family: inherit;
+              white-space: nowrap;
             }
             .post-text-pill:hover { background-color: #e0e7ff; }
             #postTextPanel {
-              margin-top: 8px;
-              padding: 10px 14px;
-              background: #f8f9fa;
-              border: 1px solid #e5e7eb;
-              border-radius: 8px;
+              padding: 10px 16px;
+              background: #f0f4ff;
+              border-bottom: 1px solid #c7d2fe;
               text-align: left;
               font-size: 13px;
               line-height: 1.7;
               color: #374151;
               white-space: pre-wrap;
               word-break: break-word;
-              max-height: 140px;
+              max-height: 120px;
               overflow-y: auto;
+              flex-shrink: 0;
             }
             .modal-tag-pill {
               font-size: 11px;
@@ -1074,9 +1074,13 @@
           <div class="photo-counter" id="photoCounter">1 / 1</div>
           <div class="group-title">
             <span id="groupTitleDate"></span>
+            <button class="post-text-pill" id="postTextBtn" onclick="togglePostText()" style="display:none;">📋 原文</button>
             <span id="modalSourceBadge" class="source-badge"></span>
           </div>
           <button class="close-modal" onclick="closeModal()">&times;</button>
+        </div>
+        <div id="postTextPanel" style="display:none;">
+          <p id="postTextContent" style="margin:0;"></p>
         </div>
 
         <div class="modal-photo-container">
@@ -1108,12 +1112,6 @@
               padding: 0 5px;
             "
           ></div>
-          <div id="postTextRow" style="display:none; margin-bottom:12px; text-align:center;">
-            <button class="post-text-pill" id="postTextBtn" onclick="togglePostText()">📋 原文</button>
-            <div id="postTextPanel" style="display:none;">
-              <p id="postTextContent" style="margin:0;"></p>
-            </div>
-          </div>
           <div class="download-actions-row">
             <a
               class="action-btn download-btn"
@@ -2006,7 +2004,7 @@
 
         // NEW: Update Badge and Title
         const dateEl = document.getElementById("groupTitleDate");
-        dateEl.textContent = `${photo.date} - ${photo.groupName || ""}`;
+        dateEl.textContent = photo.date;
 
         const badgeEl = document.getElementById("modalSourceBadge");
         const { cssClass, badgeLabel } = getSourceMeta(photo.source);
@@ -2042,18 +2040,18 @@
           }
         }
 
-        // postText pill
-        const postTextRow = document.getElementById("postTextRow");
-        const postTextPanel = document.getElementById("postTextPanel");
+        // postText pill + drawer
+        const postTextBtn     = document.getElementById("postTextBtn");
+        const postTextPanel   = document.getElementById("postTextPanel");
         const postTextContent = document.getElementById("postTextContent");
-        const postTextBtn = document.getElementById("postTextBtn");
         if (photo.postText && photo.postText.trim()) {
           postTextContent.textContent = photo.postText;
-          postTextRow.style.display = "block";
+          postTextBtn.style.display = "";
           postTextPanel.style.display = "none";
           postTextBtn.textContent = "📋 原文";
         } else {
-          postTextRow.style.display = "none";
+          postTextBtn.style.display = "none";
+          postTextPanel.style.display = "none";
         }
         document
           .querySelectorAll(".thumbnail")
