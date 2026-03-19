@@ -1534,6 +1534,12 @@
           .forEach((el) => el.classList.remove("active"));
         element.classList.add("active");
 
+        // Douyin has no screenshots — auto-switch to attached media tab
+        if (source === "douyin" && currentTab === "screenshot") {
+          switchTab("attached");
+          return;
+        }
+
         applyFilters();
       }
 
@@ -1813,7 +1819,10 @@
         // NEW: Add source dot color
         grid.innerHTML = displayItems
           .map((item) => {
-            const isVideo = item.url.match(/\.(mp4|mov)$/i);
+            const isVideo = item.url.match(/\.mp4$/i);
+            const isMotion = item.url.match(/\.(mov|gif)$/i);
+            const motionExt = isMotion ? (item.url.match(/\.(\w+)$/i) || [])[1]?.toUpperCase() : '';
+            const motionBadge = isMotion ? '<span style="position:absolute;right:4px;bottom:15px;background:rgba(0,150,136,0.75);color:white;border-radius:6px;padding:1px 4px;font-size:9px;font-weight:700;">' + motionExt + '</span>' : '';
 
             const { cssClass, dotLabel } = getSourceMeta(item.source);
 
@@ -1822,7 +1831,7 @@
         <div class="source-dot ${cssClass}" title="Source: ${dotLabel}"></div>
         
         ${isVideo ? '<div class="video-overlay-icon">▶</div>' : ""}
-        
+        ${motionBadge}
         <img data-src="${getThumbUrl(item.url)}" class="lazy-image loading-placeholder">
         <div class="photo-overlay">${item.date}</div>
     </div>`;
