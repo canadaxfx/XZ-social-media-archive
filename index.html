@@ -332,6 +332,19 @@
             .year-title {
               font-size: 16px;
               font-weight: bold;
+              display: flex;
+              align-items: center;
+              gap: 8px;
+            }
+            .gallery-id-badge {
+              font-size: 9px;
+              font-weight: 800;
+              letter-spacing: 0.05em;
+              text-transform: uppercase;
+              padding: 2px 7px;
+              border-radius: 8px;
+              background: white;
+              color: #1F2937;
             }
             .year-preview {
               display: flex;
@@ -1743,7 +1756,7 @@
                         <div class="timeline-year-header" onclick="toggleYear('${year}')">
                             <div class="year-header-content">
                                 <div class="year-header-top">
-                                    <span class="year-title">${year}</span>
+                                    <span class="year-title">${year}<span class="gallery-id-badge">Archive</span></span>
                                     <div style="display:flex; align-items:center; gap:10px;">
                                         <span class="timeline-year-count">${count} items</span>
                                         <span class="expand-icon">▼</span>
