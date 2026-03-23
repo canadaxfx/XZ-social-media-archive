@@ -28,7 +28,8 @@
         "note": "",
         "category": "attached",
         "source": "weibo",
-        "photoText": ""
+        "photoText": "",
+        "duration": 12
     },
     {
         "id": 165,
@@ -1427,7 +1428,8 @@
         "note": "",
         "category": "attached",
         "source": "weibo",
-        "photoText": ""
+        "photoText": "",
+        "duration": 55
     },
     {
         "id": 78,
@@ -1444,7 +1446,8 @@
         "source": "douyin",
         "link": "https://v.douyin.com/SaV8_jSx_Y0/",
         "photoText": "",
-        "postText": "给小满的一场🌧️"
+        "postText": "给小满的一场🌧️",
+        "duration": 23
     },
     {
         "id": 76,
@@ -1490,7 +1493,8 @@
         "source": "douyin",
         "link": "https://v.douyin.com/8Gkit1D9RpY/",
         "photoText": "",
-        "postText": "用表情包开启…🤓#五月你好"
+        "postText": "用表情包开启…🤓#五月你好",
+        "duration": 21
     },
     {
         "id": 74,
@@ -1507,7 +1511,8 @@
         "source": "douyin",
         "link": "https://v.douyin.com/g6Tg7b9m1EQ/",
         "photoText": "",
-        "postText": "#送给生活一首诗今日分享《一个愿望》📖"
+        "postText": "#送给生活一首诗今日分享《一个愿望》📖",
+        "duration": 39
     },
     {
         "id": 69,
@@ -1641,7 +1646,8 @@
         "source": "douyin",
         "link": "https://v.douyin.com/FBb8zTZ_Ax0/",
         "photoText": "",
-        "postText": "#憋笑大挑战 尽力了🤪"
+        "postText": "#憋笑大挑战 尽力了🤪",
+        "duration": 15
     },
     {
         "id": 60,
@@ -1710,7 +1716,8 @@
         "source": "douyin",
         "link": "https://v.douyin.com/0flE9WHIQ4g/",
         "photoText": "",
-        "postText": "余生收官，下次再见。"
+        "postText": "余生收官，下次再见。",
+        "duration": 31
     },
     {
         "id": 64,
@@ -1866,7 +1873,8 @@
         "note": "",
         "category": "attached",
         "source": "weibo",
-        "photoText": ""
+        "photoText": "",
+        "duration": 63
     },
     {
         "id": 53,
@@ -1884,7 +1892,8 @@
         "source": "douyin",
         "link": "https://v.douyin.com/t1PB43JG4pE/",
         "photoText": "",
-        "postText": "和我一起合唱吧🎙️ #余生合唱挑战 "
+        "postText": "和我一起合唱吧🎙️ #余生合唱挑战 ",
+        "duration": 57
     },
     {
         "id": 49,
@@ -2143,7 +2152,8 @@
         "source": "douyin",
         "link": "https://v.douyin.com/e58klPxioRg/",
         "photoText": "",
-        "postText": "惊蛰吃个🍐"
+        "postText": "惊蛰吃个🍐",
+        "duration": 12
     },
     {
         "id": 33,
@@ -2206,7 +2216,8 @@
         "source": "douyin",
         "link": "https://v.douyin.com/q_Pj5dyOkfY/",
         "photoText": "",
-        "postText": "#欢欢喜喜闹元宵 祝大家节日快乐！"
+        "postText": "#欢欢喜喜闹元宵 祝大家节日快乐！",
+        "duration": 34
     },
     {
         "id": 27,
@@ -2387,7 +2398,8 @@
         "source": "douyin",
         "link": "https://v.douyin.com/7nep24q4nLo/",
         "photoText": "",
-        "postText": "2022心想事🍊"
+        "postText": "2022心想事🍊",
+        "duration": 32
     },
     {
         "id": 13,
@@ -2529,7 +2541,8 @@
         "source": "douyin",
         "link": "https://v.douyin.com/uUsqqca380Y/",
         "photoText": "",
-        "postText": "就是愣个巴适！#温暖中国年 "
+        "postText": "就是愣个巴适！#温暖中国年 ",
+        "duration": 23
     },
     {
         "id": 11,
@@ -2546,7 +2559,8 @@
         "source": "douyin",
         "link": "https://v.douyin.com/zpMqZFD_K9g/",
         "photoText": "",
-        "postText": "点击加号，一起沉浸式过年！#温暖中国年 "
+        "postText": "点击加号，一起沉浸式过年！#温暖中国年 ",
+        "duration": 32
     },
     {
         "id": 10,
@@ -2599,7 +2613,8 @@
         "note": "",
         "category": "attached",
         "source": "weibo",
-        "photoText": ""
+        "photoText": "",
+        "duration": 35
     },
     {
         "id": 7,
@@ -2617,7 +2632,8 @@
         "source": "douyin",
         "link": "https://v.douyin.com/QEs-U_HbrPw/",
         "photoText": "",
-        "postText": "#王牌部队全员集结 生死在一起，顾一野报到！#王牌部队"
+        "postText": "#王牌部队全员集结 生死在一起，顾一野报到！#王牌部队",
+        "duration": 9
     },
     {
         "id": 6,
@@ -2652,7 +2668,8 @@
         "source": "douyin",
         "link": "https://v.douyin.com/Eqbza18kS6U/",
         "photoText": "",
-        "postText": "小寒的一些选择🤓"
+        "postText": "小寒的一些选择🤓",
+        "duration": 237
     },
     {
         "id": 4,
@@ -2687,7 +2704,8 @@
         "source": "douyin",
         "link": "https://v.douyin.com/YrxusIOOof0/ ",
         "photoText": "",
-        "postText": "#2022年第一条抖音 来了"
+        "postText": "#2022年第一条抖音 来了",
+        "duration": 16
     },
     {
         "id": 2,
