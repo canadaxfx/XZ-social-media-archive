@@ -410,11 +410,39 @@
                 cursor: pointer;
             }
 
+      /* --- DURATION BADGE --- */
+      .dur-badge {
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        background: rgba(0,0,0,0.65);
+        color: white;
+        border-radius: 4px;
+        padding: 1px 3px;
+        font-size: 10px;
+        font-weight: 600;
+        z-index: 2;
+        letter-spacing: 0.2px;
+        pointer-events: none;
+      }
+
+      /* --- THUMBNAIL PLATFORM BADGE (inside overlay) --- */
+      .thumb-src-badge {
+        display: inline-block;
+        font-size: 8px;
+        font-weight: 800;
+        padding: 1px 4px;
+        border-radius: 4px;
+        letter-spacing: 0.6px;
+        line-height: 1.4;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+      }
+
       /* --- VIDEO INDICATOR STYLES --- */
       .video-overlay-icon {
         position: absolute;
-        top: 8px;
-        right: 8px;
+        top: 4px;
+        right: 4px;
         width: 24px;
         height: 24px;
         background: rgba(0, 0, 0, 0.6);
@@ -463,10 +491,14 @@
               right: 0;
               background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
               color: white;
-              padding: 10px 8px 6px;
+              padding: 14px 4px 4px;
               font-size: 11px;
               font-weight: 600;
               text-align: center;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              gap: 2px;
             }
 
       /* Source Indicator Dot (Grid View) */
@@ -500,6 +532,7 @@
       .bg-douyin {
           background: #000000;
           color: #fff;
+          box-shadow: 0 0 0 1px rgba(255,255,255,0.35);
       }
 
             /* Modal Styles */
@@ -1431,11 +1464,21 @@
       // --- SOURCE META HELPER ---
       function getSourceMeta(source) {
         switch (source) {
-          case "oasis":  return { cssClass: "bg-oasis",  dotLabel: "Oasis",     badgeLabel: "OASIS" };
-          case "ins":    return { cssClass: "bg-ins",    dotLabel: "Instagram", badgeLabel: "INSTAGRAM" };
-          case "douyin": return { cssClass: "bg-douyin", dotLabel: "Douyin",    badgeLabel: "DOUYIN" };
-          default:       return { cssClass: "bg-weibo",  dotLabel: "Weibo",     badgeLabel: "WEIBO" };
+          case "oasis":  return { cssClass: "bg-oasis",  dotLabel: "Oasis",     badgeLabel: "OASIS",  thumbLabel: "OASIS" };
+          case "ins":    return { cssClass: "bg-ins",    dotLabel: "Instagram", badgeLabel: "INSTAGRAM", thumbLabel: "INS" };
+          case "douyin": return { cssClass: "bg-douyin", dotLabel: "Douyin",    badgeLabel: "DOUYIN", thumbLabel: "DOUYIN" };
+          default:       return { cssClass: "bg-weibo",  dotLabel: "Weibo",     badgeLabel: "WEIBO",  thumbLabel: "WEIBO" };
         }
+      }
+
+      function fmtDuration(secs) {
+        if (!secs) return '';
+        secs = Math.round(secs);
+        const h = Math.floor(secs / 3600);
+        const m = Math.floor((secs % 3600) / 60);
+        const s = secs % 60;
+        if (h > 0) return h + 'h' + String(m).padStart(2, '0') + 'm';
+        return m + ':' + String(s).padStart(2, '0');
       }
 
       // --- VARIABLES ---
@@ -1837,16 +1880,21 @@
             const motionExt = isMotion ? (item.url.match(/\.(\w+)$/i) || [])[1]?.toUpperCase() : '';
             const motionBadge = isMotion ? '<span style="position:absolute;right:4px;bottom:15px;background:rgba(0,150,136,0.75);color:white;border-radius:6px;padding:1px 4px;font-size:9px;font-weight:700;">' + motionExt + '</span>' : '';
 
-            const { cssClass, dotLabel } = getSourceMeta(item.source);
+            const { cssClass, thumbLabel } = getSourceMeta(item.source);
+            const durBadge = (isVideo && item.duration)
+              ? `<div class="dur-badge">${fmtDuration(item.duration)}</div>`
+              : '';
 
             return `
     <div class="timeline-photo" onclick="openModal(${item._uid})">
-        <div class="source-dot ${cssClass}" title="Source: ${dotLabel}"></div>
-        
         ${isVideo ? '<div class="video-overlay-icon">▶</div>' : ""}
+        ${durBadge}
         ${motionBadge}
         <img data-src="${getThumbUrl(item.url)}" class="lazy-image loading-placeholder">
-        <div class="photo-overlay">${item.date}</div>
+        <div class="photo-overlay">
+            <span class="thumb-src-badge ${cssClass}">${thumbLabel}</span>
+            ${item.date}
+        </div>
     </div>`;
           })
           .join("");
