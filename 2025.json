@@ -369,7 +369,9 @@
         "link": "https://weibo.com/1792951112/Qi2CO1NB7",
         "source": "weibo",
         "note": "",
-        "postText": "得闲想要，得闲手搓得到。#电影得闲谨制# http://t.cn/AXUvcobZ ​​​"
+        "postText": "得闲想要，得闲手搓得到。#电影得闲谨制# http://t.cn/AXUvcobZ ​​​",
+        "quality": "1080p",
+        "duration": 18
     },
     {
         "id": 201,
@@ -436,7 +438,8 @@
         "source": "douyin",
         "note": "",
         "description": "",
-        "postText": "我们的故事无人知晓，我们的子孙与世长存。#电影得闲谨制"
+        "postText": "我们的故事无人知晓，我们的子孙与世长存。#电影得闲谨制",
+        "duration": 11
     },
     {
         "id": 198,
@@ -523,7 +526,9 @@
         "note": "",
         "category": "attached",
         "source": "weibo",
-        "postText": "我是莫得闲，我们的家，我守护。#电影得闲谨制# http://t.cn/AXy97wQk ​​​"
+        "postText": "我是莫得闲，我们的家，我守护。#电影得闲谨制# http://t.cn/AXy97wQk ​​​",
+        "quality": "1080p",
+        "duration": 15
     },
     {
         "id": 195,
@@ -540,7 +545,8 @@
         "source": "douyin",
         "link": "https://v.douyin.com/jEMP8P8vC8U/",
         "photoText": "",
-        "postText": "我是莫得闲，我们的家，我守护。#电影得闲谨制"
+        "postText": "我是莫得闲，我们的家，我守护。#电影得闲谨制",
+        "duration": 15
     },
     {
         "id": 192,
@@ -593,7 +599,8 @@
         "source": "douyin",
         "link": "https://v.douyin.com/ywXapcz6fic/",
         "photoText": "",
-        "postText": "我是莫得闲，故事里有我的“得闲谨制”。#电影得闲谨制"
+        "postText": "我是莫得闲，故事里有我的“得闲谨制”。#电影得闲谨制",
+        "duration": 16
     },
     {
         "id": 189,
@@ -1491,7 +1498,8 @@
         "source": "douyin",
         "link": "https://v.douyin.com/kf-VbA8ln2k/",
         "photoText": "",
-        "postText": "已上任。来，下一个#藏海传"
+        "postText": "已上任。来，下一个#藏海传",
+        "duration": 15
     },
     {
         "id": 134,
@@ -1662,7 +1670,8 @@
         "link": "https://v.douyin.com/i20Wea0u0vA/",
         "note": "",
         "photoText": "",
-        "postText": "这一笔，轮到谁了#藏海传"
+        "postText": "这一笔，轮到谁了#藏海传",
+        "duration": 10
     },
     {
         "id": 118,
@@ -1769,7 +1778,8 @@
         "source": "douyin",
         "link": "https://v.douyin.com/laaF2c-YA-k/",
         "photoText": "",
-        "postText": "白切黑切白切黑⚪️⚫ #藏海传"
+        "postText": "白切黑切白切黑⚪️⚫ #藏海传",
+        "duration": 11
     },
     {
         "id": 117,
@@ -2492,7 +2502,8 @@
         "category": "attached",
         "groupName": "202503",
         "source": "ins",
-        "photoText": ""
+        "photoText": "",
+        "duration": 49
     },
     {
         "id": 68,
@@ -2545,7 +2556,8 @@
         "category": "attached",
         "groupName": "202503",
         "source": "ins",
-        "photoText": ""
+        "photoText": "",
+        "duration": 48
     },
     {
         "id": 65,
@@ -3059,7 +3071,8 @@
         "source": "douyin",
         "link": "https://v.douyin.com/zosmOdkwH1U/",
         "photoText": "",
-        "postText": "一🏹️进入武侠世界。#射雕英雄传侠之大者"
+        "postText": "一🏹️进入武侠世界。#射雕英雄传侠之大者",
+        "duration": 8
     },
     {
         "id": 28,
@@ -3110,7 +3123,8 @@
         "source": "douyin",
         "link": "https://v.douyin.com/pXtusph4dzM/",
         "photoText": "",
-        "postText": "为侠者，当不忘故土，以天下大义为己任。#射雕英雄传侠之大者"
+        "postText": "为侠者，当不忘故土，以天下大义为己任。#射雕英雄传侠之大者",
+        "duration": 21
     },
     {
         "id": 24,
@@ -3239,7 +3253,8 @@
         "source": "douyin",
         "link": "https://v.douyin.com/Y-pkzJPdPvw/",
         "photoText": "",
-        "postText": "在下郭靖，大年初一，江湖见！#射雕英雄传侠之大者"
+        "postText": "在下郭靖，大年初一，江湖见！#射雕英雄传侠之大者",
+        "duration": 14
     },
     {
         "id": 19,
