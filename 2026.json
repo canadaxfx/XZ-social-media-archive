@@ -16,7 +16,8 @@
         "source": "weibo",
         "note": "",
         "description": "",
-        "postText": "每一面，无惧细看！@NARS #NARS超雾瓶粉底# 肖战工作室的微博视频"
+        "postText": "每一面，无惧细看！@NARS #NARS超雾瓶粉底# 肖战工作室的微博视频",
+        "duration": 30
     },
     {
         "id": 55,
@@ -519,7 +520,8 @@
         "groupName": "202602",
         "note": "",
         "category": "attached",
-        "source": "ins"
+        "source": "ins",
+        "duration": 19
     },
     {
         "id": 19,
@@ -728,7 +730,8 @@
         "source": "weibo",
         "note": "",
         "postText": "歌声为约，岁岁相见，愿时光温柔，团圆常伴。#北京台春晚#",
-        "quality": "1080p"
+        "quality": "1080p",
+        "duration": 242
     },
     {
         "id": 10,
@@ -796,7 +799,8 @@
         "source": "douyin",
         "note": "",
         "description": "",
-        "postText": "🫴🏼万事顺遂，平安健康。祝大家新年快乐！🎆#新年有礼了 #新春陀螺转场"
+        "postText": "🫴🏼万事顺遂，平安健康。祝大家新年快乐！🎆#新年有礼了 #新春陀螺转场",
+        "duration": 15
     },
     {
         "id": 9,
@@ -954,6 +958,7 @@
         "source": "weibo",
         "note": "",
         "postText": "不要回头！http://t.cn/AX4eBgbC ​​​",
-        "quality": "1080p"
+        "quality": "1080p",
+        "duration": 228
     }
 ]
