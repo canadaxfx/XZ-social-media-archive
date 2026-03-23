@@ -1,5 +1,42 @@
 [
     {
+        "id": 54,
+        "url": "https://assets.xz-studio-gallery.com/full/20260320_XZ-Weibo-1.mp4",
+        "date": "2026-03-20",
+        "month": "March",
+        "year": "2026",
+        "tags": [
+            "NARS",
+            "超雾瓶粉底"
+        ],
+        "groupName": "202603",
+        "quality": "1080p",
+        "link": "https://weibo.com/1792951112/QwVMF4wmX",
+        "category": "attached",
+        "source": "weibo",
+        "note": "",
+        "description": "",
+        "postText": "每一面，无惧细看！@NARS #NARS超雾瓶粉底# 肖战工作室的微博视频"
+    },
+    {
+        "id": 55,
+        "url": "https://assets.xz-studio-gallery.com/full/20260320_WB_XZ.jpg",
+        "date": "2026-03-20",
+        "month": "March",
+        "year": "2026",
+        "tags": [
+            "NARS",
+            "超雾瓶粉底"
+        ],
+        "groupName": "202603",
+        "link": "https://weibo.com/1792951112/QwVMF4wmX",
+        "category": "screenshot",
+        "source": "weibo",
+        "note": "",
+        "description": "",
+        "postText": "每一面，无惧细看！@NARS #NARS超雾瓶粉底# 肖战工作室的微博视频"
+    },
+    {
         "id": 51,
         "url": "https://assets.xz-studio-gallery.com/full/20260315_XZ-Weibo-1.jpg",
         "date": "2026-03-15",
@@ -690,7 +727,8 @@
         "category": "attached",
         "source": "weibo",
         "note": "",
-        "postText": "歌声为约，岁岁相见，愿时光温柔，团圆常伴。#北京台春晚#"
+        "postText": "歌声为约，岁岁相见，愿时光温柔，团圆常伴。#北京台春晚#",
+        "quality": "1080p"
     },
     {
         "id": 10,
@@ -915,6 +953,7 @@
         "category": "attached",
         "source": "weibo",
         "note": "",
-        "postText": "不要回头！http://t.cn/AX4eBgbC ​​​"
+        "postText": "不要回头！http://t.cn/AX4eBgbC ​​​",
+        "quality": "1080p"
     }
 ]
