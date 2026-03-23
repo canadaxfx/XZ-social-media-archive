@@ -124,7 +124,8 @@
         ],
         "category": "attached",
         "groupName": "201812",
-        "photoText": ""
+        "photoText": "",
+        "duration": 16
     },
     {
         "id": 281,
@@ -996,7 +997,8 @@
         "note": "",
         "category": "attached",
         "source": "weibo",
-        "photoText": ""
+        "photoText": "",
+        "duration": 6
     },
     {
         "id": 222,
@@ -1785,7 +1787,8 @@
         "note": "",
         "category": "attached",
         "source": "weibo",
-        "photoText": ""
+        "photoText": "",
+        "duration": 15
     },
     {
         "id": 163,
@@ -1981,7 +1984,8 @@
         ],
         "category": "attached",
         "groupName": "201809",
-        "photoText": ""
+        "photoText": "",
+        "duration": 7
     },
     {
         "id": 155,
@@ -2119,7 +2123,8 @@
         "note": "",
         "category": "attached",
         "source": "weibo",
-        "photoText": ""
+        "photoText": "",
+        "duration": 6
     },
     {
         "id": 146,
@@ -2147,7 +2152,8 @@
         "note": "",
         "category": "attached",
         "source": "weibo",
-        "photoText": ""
+        "photoText": "",
+        "duration": 10
     },
     {
         "id": 144,
@@ -2284,7 +2290,8 @@
         "note": "",
         "category": "attached",
         "source": "weibo",
-        "photoText": ""
+        "photoText": "",
+        "duration": 10
     },
     {
         "id": 135,
@@ -2967,7 +2974,8 @@
         "note": "",
         "category": "attached",
         "source": "weibo",
-        "photoText": ""
+        "photoText": "",
+        "duration": 16
     },
     {
         "id": 89,
@@ -3054,7 +3062,8 @@
         ],
         "category": "attached",
         "groupName": "201804",
-        "photoText": ""
+        "photoText": "",
+        "duration": 14
     },
     {
         "id": 82,
@@ -3481,7 +3490,8 @@
         ],
         "category": "attached",
         "groupName": "201803",
-        "photoText": ""
+        "photoText": "",
+        "duration": 10
     },
     {
         "id": 49,
@@ -3832,7 +3842,8 @@
         "note": "",
         "category": "attached",
         "source": "weibo",
-        "photoText": ""
+        "photoText": "",
+        "duration": 45
     },
     {
         "id": 26,
@@ -3980,7 +3991,8 @@
         "note": "",
         "category": "attached",
         "source": "weibo",
-        "photoText": ""
+        "photoText": "",
+        "duration": 73
     },
     {
         "id": 18,
@@ -4189,7 +4201,8 @@
         ],
         "category": "attached",
         "groupName": "201801",
-        "photoText": ""
+        "photoText": "",
+        "duration": 7
     },
     {
         "id": 5,
@@ -4203,7 +4216,8 @@
         ],
         "category": "attached",
         "groupName": "201801",
-        "photoText": ""
+        "photoText": "",
+        "duration": 15
     },
     {
         "id": 2,
@@ -4248,7 +4262,8 @@
         "note": "",
         "category": "attached",
         "source": "weibo",
-        "photoText": ""
+        "photoText": "",
+        "duration": 57
     },
     {
         "id": 1,
@@ -4265,6 +4280,7 @@
         "source": "weibo",
         "link": "",
         "note": "",
-        "photoText": ""
+        "photoText": "",
+        "duration": 8
     }
 ]
