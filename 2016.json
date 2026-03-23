@@ -382,7 +382,8 @@
         "source": "weibo",
         "link": "",
         "note": "",
-        "photoText": ""
+        "photoText": "",
+        "duration": 111
     },
     {
         "id": 266,
@@ -833,7 +834,8 @@
         "source": "weibo",
         "link": "",
         "note": "",
-        "photoText": ""
+        "photoText": "",
+        "duration": 72
     },
     {
         "id": 241,
@@ -937,7 +939,8 @@
         "source": "weibo",
         "link": "",
         "note": "",
-        "photoText": ""
+        "photoText": "",
+        "duration": 10
     },
     {
         "id": 236,
@@ -953,7 +956,8 @@
         "source": "weibo",
         "link": "",
         "note": "",
-        "photoText": ""
+        "photoText": "",
+        "duration": 106
     },
     {
         "id": 232,
@@ -1011,7 +1015,8 @@
         "source": "weibo",
         "link": "",
         "note": "",
-        "photoText": ""
+        "photoText": "",
+        "duration": 241
     },
     {
         "id": 230,
@@ -1143,7 +1148,8 @@
         "source": "weibo",
         "link": "",
         "note": "",
-        "photoText": ""
+        "photoText": "",
+        "duration": 199
     },
     {
         "id": 219,
@@ -1284,7 +1290,8 @@
         "source": "weibo",
         "link": "",
         "note": "",
-        "photoText": ""
+        "photoText": "",
+        "duration": 34
     },
     {
         "id": 211,
@@ -1356,7 +1363,8 @@
         "source": "weibo",
         "link": "",
         "note": "",
-        "photoText": ""
+        "photoText": "",
+        "duration": 142
     },
     {
         "id": 205,
@@ -1400,7 +1408,8 @@
         "source": "weibo",
         "link": "",
         "note": "",
-        "photoText": ""
+        "photoText": "",
+        "duration": 269
     },
     {
         "id": 203,
@@ -1428,7 +1437,8 @@
         "source": "weibo",
         "link": "",
         "note": "",
-        "photoText": ""
+        "photoText": "",
+        "duration": 28
     },
     {
         "id": 197,
@@ -1560,7 +1570,8 @@
         "source": "weibo",
         "link": "",
         "note": "",
-        "photoText": ""
+        "photoText": "",
+        "duration": 176
     },
     {
         "id": 189,
@@ -1682,7 +1693,8 @@
         "source": "weibo",
         "link": "",
         "note": "",
-        "photoText": ""
+        "photoText": "",
+        "duration": 156
     },
     {
         "id": 184,
@@ -1710,7 +1722,8 @@
         "source": "weibo",
         "link": "",
         "note": "",
-        "photoText": ""
+        "photoText": "",
+        "duration": 48
     },
     {
         "id": 182,
@@ -1738,7 +1751,8 @@
         "source": "weibo",
         "link": "",
         "note": "",
-        "photoText": ""
+        "photoText": "",
+        "duration": 10
     },
     {
         "id": 180,
@@ -1754,7 +1768,8 @@
         "note": "",
         "category": "attached",
         "source": "weibo",
-        "photoText": ""
+        "photoText": "",
+        "duration": 210
     },
     {
         "id": 181,
@@ -1827,7 +1842,8 @@
         "source": "weibo",
         "link": "",
         "note": "",
-        "photoText": ""
+        "photoText": "",
+        "duration": 185
     },
     {
         "id": 174,
@@ -1855,7 +1871,8 @@
         "source": "weibo",
         "link": "",
         "note": "",
-        "photoText": ""
+        "photoText": "",
+        "duration": 149
     },
     {
         "id": 172,
@@ -1883,7 +1900,8 @@
         "source": "weibo",
         "link": "",
         "note": "",
-        "photoText": ""
+        "photoText": "",
+        "duration": 134
     },
     {
         "id": 170,
@@ -1911,7 +1929,8 @@
         "source": "weibo",
         "link": "",
         "note": "",
-        "photoText": ""
+        "photoText": "",
+        "duration": 300
     },
     {
         "id": 168,
@@ -1967,7 +1986,8 @@
         "source": "weibo",
         "link": "",
         "note": "",
-        "photoText": ""
+        "photoText": "",
+        "duration": 214
     },
     {
         "id": 165,
@@ -2035,7 +2055,8 @@
         "source": "weibo",
         "link": "",
         "note": "",
-        "photoText": ""
+        "photoText": "",
+        "duration": 10
     },
     {
         "id": 158,
@@ -2117,7 +2138,8 @@
         "source": "weibo",
         "link": "",
         "note": "",
-        "photoText": ""
+        "photoText": "",
+        "duration": 98
     },
     {
         "id": 153,
@@ -2144,7 +2166,8 @@
         "source": "weibo",
         "link": "",
         "note": "",
-        "photoText": ""
+        "photoText": "",
+        "duration": 189
     },
     {
         "id": 150,
@@ -2214,7 +2237,8 @@
         "source": "weibo",
         "link": "",
         "note": "",
-        "photoText": ""
+        "photoText": "",
+        "duration": 141
     },
     {
         "id": 145,
@@ -2412,7 +2436,8 @@
         "source": "weibo",
         "link": "",
         "note": "",
-        "photoText": ""
+        "photoText": "",
+        "duration": 217
     },
     {
         "id": 134,
@@ -2528,7 +2553,8 @@
         "source": "weibo",
         "link": "",
         "note": "",
-        "photoText": ""
+        "photoText": "",
+        "duration": 230
     },
     {
         "id": 118,
@@ -2726,7 +2752,8 @@
         "source": "weibo",
         "link": "",
         "note": "",
-        "photoText": ""
+        "photoText": "",
+        "duration": 201
     },
     {
         "id": 113,
@@ -2854,7 +2881,8 @@
         "source": "weibo",
         "link": "",
         "note": "",
-        "photoText": ""
+        "photoText": "",
+        "duration": 299
     },
     {
         "id": 104,
@@ -2910,7 +2938,8 @@
         "source": "weibo",
         "link": "",
         "note": "",
-        "photoText": ""
+        "photoText": "",
+        "duration": 353
     },
     {
         "id": 98,
@@ -2990,7 +3019,8 @@
         "source": "weibo",
         "link": "",
         "note": "",
-        "photoText": ""
+        "photoText": "",
+        "duration": 278
     },
     {
         "id": 95,
@@ -3046,7 +3076,8 @@
         "source": "weibo",
         "link": "",
         "note": "",
-        "photoText": ""
+        "photoText": "",
+        "duration": 171
     },
     {
         "id": 90,
@@ -3160,7 +3191,8 @@
         "source": "weibo",
         "link": "",
         "note": "",
-        "photoText": ""
+        "photoText": "",
+        "duration": 117
     },
     {
         "id": 82,
@@ -3262,7 +3294,8 @@
         "source": "weibo",
         "link": "",
         "note": "",
-        "photoText": ""
+        "photoText": "",
+        "duration": 66
     },
     {
         "id": 76,
@@ -3424,7 +3457,8 @@
         "note": "",
         "category": "attached",
         "source": "weibo",
-        "photoText": ""
+        "photoText": "",
+        "duration": 165
     },
     {
         "id": 65,
@@ -3452,7 +3486,8 @@
         "source": "weibo",
         "link": "",
         "note": "",
-        "photoText": ""
+        "photoText": "",
+        "duration": 89
     },
     {
         "id": 63,
@@ -3616,7 +3651,8 @@
         "source": "weibo",
         "link": "",
         "note": "",
-        "photoText": ""
+        "photoText": "",
+        "duration": 10
     },
     {
         "id": 49,
@@ -4214,7 +4250,8 @@
         "source": "weibo",
         "link": "",
         "note": "",
-        "photoText": ""
+        "photoText": "",
+        "duration": 209
     },
     {
         "id": 7,
@@ -4327,7 +4364,8 @@
         "source": "weibo",
         "link": "",
         "note": "",
-        "photoText": ""
+        "photoText": "",
+        "duration": 123
     },
     {
         "id": 3,
@@ -4361,7 +4399,8 @@
         "source": "weibo",
         "link": "",
         "note": "",
-        "photoText": ""
+        "photoText": "",
+        "duration": 153
     },
     {
         "id": 1,
@@ -4394,6 +4433,7 @@
         "note": "",
         "category": "attached",
         "source": "weibo",
-        "photoText": ""
+        "photoText": "",
+        "duration": 203
     }
 ]
