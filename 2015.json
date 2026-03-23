@@ -126,7 +126,8 @@
         "note": "",
         "category": "attached",
         "source": "weibo",
-        "photoText": ""
+        "photoText": "",
+        "duration": 243
     },
     {
         "id": 9,
@@ -157,7 +158,8 @@
         "note": "",
         "category": "attached",
         "source": "weibo",
-        "photoText": ""
+        "photoText": "",
+        "duration": 215
     },
     {
         "id": 7,
@@ -188,7 +190,8 @@
         "note": "",
         "category": "attached",
         "source": "weibo",
-        "photoText": ""
+        "photoText": "",
+        "duration": 150
     },
     {
         "id": 5,
@@ -205,7 +208,8 @@
         "groupName": "201512",
         "link": "",
         "note": "",
-        "photoText": ""
+        "photoText": "",
+        "duration": 99
     },
     {
         "id": 6,
@@ -247,7 +251,8 @@
         "groupName": "201511",
         "category": "attached",
         "source": "weibo",
-        "photoText": ""
+        "photoText": "",
+        "duration": 67
     },
     {
         "id": 2,
@@ -260,7 +265,8 @@
         ],
         "category": "attached",
         "groupName": "201511",
-        "photoText": ""
+        "photoText": "",
+        "duration": 25
     },
     {
         "id": 1,
