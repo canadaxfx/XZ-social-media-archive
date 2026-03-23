@@ -106,7 +106,8 @@
         "source": "douyin",
         "link": "https://v.douyin.com/IwpKUdzAW98/",
         "photoText": "",
-        "postText": "#我的漫画身份 准备迎接2021✌🏻"
+        "postText": "#我的漫画身份 准备迎接2021✌🏻",
+        "duration": 14
     },
     {
         "id": 72,
@@ -209,7 +210,8 @@
         "source": "douyin",
         "link": "https://v.douyin.com/VgI2fKW2NyE/",
         "photoText": "",
-        "postText": "失败的尝试"
+        "postText": "失败的尝试",
+        "duration": 14
     },
     {
         "id": 65,
@@ -274,7 +276,8 @@
         "source": "douyin",
         "link": "https://v.douyin.com/6tKyY_b1aX0/",
         "photoText": "",
-        "postText": "游戏结束的有点快"
+        "postText": "游戏结束的有点快",
+        "duration": 15
     },
     {
         "id": 62,
@@ -329,7 +332,8 @@
         "link": "https://v.douyin.com/o8fH26lFNA4/",
         "groupName": "202010",
         "photoText": "",
-        "postText": "搬砖结束😳"
+        "postText": "搬砖结束😳",
+        "duration": 15
     },
     {
         "id": 60,
@@ -379,7 +383,8 @@
         "source": "douyin",
         "link": "https://v.douyin.com/EnVBLBg7lQo/",
         "photoText": "",
-        "postText": "hello啊😬"
+        "postText": "hello啊😬",
+        "duration": 12
     },
     {
         "id": 56,
@@ -558,7 +563,8 @@
         "groupName": "202006",
         "note": "",
         "photoText": "",
-        "postText": "新的！🍊🍋🍯🧊🌸🌱"
+        "postText": "新的！🍊🍋🍯🧊🌸🌱",
+        "duration": 48
     },
     {
         "id": 42,
@@ -954,7 +960,8 @@
         "groupName": "202001",
         "category": "attached",
         "source": "weibo",
-        "photoText": ""
+        "photoText": "",
+        "duration": 17
     },
     {
         "id": 20,
