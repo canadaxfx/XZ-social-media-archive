@@ -2083,7 +2083,10 @@
         badgeEl.classList.add(cssClass);
         badgeEl.innerHTML = badgeLabel;
 
-        document.getElementById("downloadBtn").href = photo.url;
+        const _isVid = photo.url && photo.url.match(/\.mp4$/i);
+        document.getElementById("downloadBtn").href =
+            (_isVid && photo.url_4k) ? photo.url_4k :
+            (_isVid && photo.url_hd) ? photo.url_hd : photo.url;
         const srcBtn = document.getElementById("sourceLinkBtn");
 
         // Use 'link' OR 'weibo' field
