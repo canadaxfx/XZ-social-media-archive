@@ -2165,6 +2165,12 @@
           vid.classList.remove("hidden");
           vid.src = photo.url;
           vid.play().catch(() => {});
+          // Auto-play next video when current one ends (only in playlist mode)
+          vid.onended = () => {
+            if (playlistMode && currentPhotoIndex < currentGroupPhotos.length - 1) {
+              navigatePhoto(1);
+            }
+          };
           vcSetup(vid);
         } else {
           vid.classList.add("hidden");
@@ -2255,8 +2261,8 @@
           if (prevBtn && nextBtn) {
               prevBtn.disabled = currentPhotoIndex === 0;
               nextBtn.disabled = currentPhotoIndex === currentGroupPhotos.length - 1;
-              const videoVisible = !document.getElementById('modalVideo').classList.contains('hidden');
-              if (currentGroupPhotos.length <= 1 || videoVisible) {
+              // Only hide nav buttons for single-item view (not in playlist mode)
+              if (currentGroupPhotos.length <= 1 || (!playlistMode && currentGroupPhotos.length === 1)) {
                   prevBtn.style.display = 'none';
                   nextBtn.style.display = 'none';
               } else {
