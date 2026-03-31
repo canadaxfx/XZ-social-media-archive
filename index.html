@@ -1123,6 +1123,9 @@
         >
           Clear Search / 返回
         </button>
+        <div style="max-width:1000px;margin:4px auto 0;display:flex;justify-content:flex-end;padding-right:20px">
+          <button id="plAddAllBtn" class="pl-add-all-btn" onclick="addAllFilteredVideos()" style="display:none;">▶ Add <span id="plAddAllCount">0</span> videos to Playlist</button>
+        </div>
 
         <div id="timelineContainer" class="timeline-container">
           <div class="timeline-empty">
@@ -1680,6 +1683,10 @@
         currentRenderData = [...activeData]; // Sync render data with active filters
         // ---------------------
 
+        // Update filtered videos cache for playlist
+        filteredVideosCache = activeData.filter(p => p.url && p.url.match(/\.mp4$/i));
+        plUpdateAddAllBtn();
+
         expandedYears.clear();
         paginationState = {};
         document.getElementById("searchInput").value = "";
@@ -1706,6 +1713,8 @@
         const input = document.getElementById("searchInput");
         input.value = "";
         document.getElementById("clearSearchBtn").classList.add("hidden");
+        filteredVideosCache = activeData.filter(p => p.url && p.url.match(/\.mp4$/i));
+        plUpdateAddAllBtn();
         paginationState = {};
         renderTimeline(activeData);
       }
@@ -1790,6 +1799,10 @@
         // Update activeData and currentRenderData
         activeData = filtered;
         currentRenderData = filtered;
+
+        // Update filtered videos cache for playlist
+        filteredVideosCache = filtered.filter(p => p.url && p.url.match(/\.mp4$/i));
+        plUpdateAddAllBtn();
 
         // Update stats and render timeline
         updateStats();
@@ -2071,6 +2084,8 @@
           if (!term) {
             clearBtn.classList.add("hidden");
             currentRenderData = [...activeData];
+            filteredVideosCache = activeData.filter(p => p.url && p.url.match(/\.mp4$/i));
+            plUpdateAddAllBtn();
             renderTimeline(activeData);
             return;
           }
@@ -2093,6 +2108,8 @@
           );
 
           currentRenderData = filtered;
+          filteredVideosCache = filtered.filter(p => p.url && p.url.match(/\.mp4$/i));
+          plUpdateAddAllBtn();
 
           renderTimeline(filtered);
         });
@@ -2322,6 +2339,7 @@
       /* ---------- Playlist State ---------- */
       let playlist = [];
       let playlistMode = false;
+      let filteredVideosCache = [];
       const PL_KEY = 'xzArchivePlaylist';
 
       function plLoad() {
@@ -2465,7 +2483,26 @@
       }
 
       function plUpdateAddAllBtn() {
-          // Archive doesn't have the add-all button, no-op
+          const btn = document.getElementById('plAddAllBtn');
+          const countEl = document.getElementById('plAddAllCount');
+          if (filteredVideosCache.length > 0) {
+              countEl.textContent = filteredVideosCache.length;
+              btn.style.display = 'inline-block';
+          } else {
+              btn.style.display = 'none';
+          }
+      }
+
+      function addAllFilteredVideos() {
+          const MAX_VIDEOS = 50;
+          if (filteredVideosCache.length > MAX_VIDEOS) {
+              plShowToast(`最多只能添加 ${MAX_VIDEOS} 个视频到播放列表 / Max ${MAX_VIDEOS} videos allowed`);
+              return;
+          }
+          let added = 0;
+          filteredVideosCache.forEach(p => { if (!playlist.some(x => x._uid === p._uid)) { playlist.push(p); added++; } });
+          plSave(); plRender();
+          plShowToast(added ? `已加入 ${added} 个视频` : '视频已全在播放列表中');
       }
 
       /* ---------- Floating Button Group ---------- */
