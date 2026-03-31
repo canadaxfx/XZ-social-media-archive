@@ -463,12 +463,12 @@
         pointer-events: none;
       }
 
-      /* --- MOTION BADGE (MOV/GIF) --- */
+      /* --- MOTION BADGE (MOV/GIF/MP4 Clip) --- */
       .motion-badge {
         position: absolute;
         right: 4px;
-        bottom: 1px;
-        background: rgba(0, 150, 136, 0.75);
+        top: 4px;
+        background: rgba(0, 0, 0, 0.65);
         color: white;
         border-radius: 6px;
         padding: 1px 4px;
@@ -1515,7 +1515,11 @@
       }
 
       function isRealVideo(item) {
-        return !!(item.url && item.url.match(/\.mp4$/i));
+        return !!(item.url && item.url.match(/\.mp4$/i) && !item.clip);
+      }
+
+      function isClip(item) {
+        return item.clip === true && item.url && item.url.match(/\.mp4$/i);
       }
 
       function fmtDuration(secs) {
@@ -1670,11 +1674,10 @@
 
         // Apply media type filter (only for "attached" tab)
         if (currentTab === "attached" && currentMediaFilter !== "all") {
-          const isVideo = (item) => item.url && item.url.match(/\.mp4$/i);
           if (currentMediaFilter === "photo") {
-            activeData = activeData.filter((item) => !isVideo(item));
+            activeData = activeData.filter((item) => !isRealVideo(item));
           } else if (currentMediaFilter === "video") {
-            activeData = activeData.filter((item) => isVideo(item));
+            activeData = activeData.filter((item) => isRealVideo(item));
           }
         }
 
@@ -1682,8 +1685,8 @@
         currentRenderData = [...activeData]; // Sync render data with active filters
         // ---------------------
 
-        // Update filtered videos cache for playlist
-        filteredVideosCache = activeData.filter(p => p.url && p.url.match(/\.mp4$/i));
+        // Update filtered videos cache for playlist (excludes clips)
+        filteredVideosCache = activeData.filter(p => isRealVideo(p));
         plUpdateAddAllBtn();
 
         expandedYears.clear();
@@ -1712,7 +1715,7 @@
         const input = document.getElementById("searchInput");
         input.value = "";
         document.getElementById("clearSearchBtn").classList.add("hidden");
-        filteredVideosCache = activeData.filter(p => p.url && p.url.match(/\.mp4$/i));
+        filteredVideosCache = activeData.filter(p => isRealVideo(p));
         plUpdateAddAllBtn();
         paginationState = {};
         renderTimeline(activeData);
@@ -1784,11 +1787,10 @@
 
           // 5. Check Media Type (only for "attached" tab)
           if (currentTab === "attached" && currentMediaFilter !== "all") {
-            const isVideo = item.url && item.url.match(/\.mp4$/i);
             if (currentMediaFilter === "photo") {
-              if (isVideo) return false;
+              if (isRealVideo(item)) return false;
             } else if (currentMediaFilter === "video") {
-              if (!isVideo) return false;
+              if (!isRealVideo(item)) return false;
             }
           }
 
@@ -1800,7 +1802,7 @@
         currentRenderData = filtered;
 
         // Update filtered videos cache for playlist
-        filteredVideosCache = filtered.filter(p => p.url && p.url.match(/\.mp4$/i));
+        filteredVideosCache = filtered.filter(p => isRealVideo(p));
         plUpdateAddAllBtn();
 
         // Update stats and render timeline
@@ -1984,13 +1986,14 @@
         // NEW: Add source dot color
         grid.innerHTML = displayItems
           .map((item) => {
-            const isVideo = item.url.match(/\.mp4$/i);
+            const isVideo = isRealVideo(item); // Regular mp4 only (excludes clips)
             const isMotion = item.url.match(/\.(mov|gif)$/i);
-            const motionExt = isMotion ? (item.url.match(/\.(\w+)$/i) || [])[1]?.toUpperCase() : '';
-            const motionBadge = isMotion ? '<span class="motion-badge">' + motionExt + '</span>' : '';
+            const isClipMp4 = isClip(item);
+            const motionExt = isClipMp4 ? 'MP4' : (isMotion ? (item.url.match(/\.(\w+)$/i) || [])[1]?.toUpperCase() : '');
+            const motionBadge = (isMotion || isClipMp4) ? '<span class="motion-badge">' + motionExt + '</span>' : '';
 
             const { cssClass, thumbLabel } = getSourceMeta(item.source);
-            const durBadge = (isVideo && item.duration)
+            const durBadge = ((isVideo || isClipMp4) && item.duration)
               ? `<div class="dur-badge">${fmtDuration(item.duration)}</div>`
               : '';
 
@@ -2083,7 +2086,7 @@
           if (!term) {
             clearBtn.classList.add("hidden");
             currentRenderData = [...activeData];
-            filteredVideosCache = activeData.filter(p => p.url && p.url.match(/\.mp4$/i));
+            filteredVideosCache = activeData.filter(p => isRealVideo(p));
             plUpdateAddAllBtn();
             renderTimeline(activeData);
             return;
@@ -2107,7 +2110,7 @@
           );
 
           currentRenderData = filtered;
-          filteredVideosCache = filtered.filter(p => p.url && p.url.match(/\.mp4$/i));
+          filteredVideosCache = filtered.filter(p => isRealVideo(p));
           plUpdateAddAllBtn();
 
           renderTimeline(filtered);
@@ -2176,7 +2179,7 @@
         if (plNav) plNav.style.display = isVideo ? 'flex' : 'none';
         const plModalBtn = document.getElementById('plModalAddBtn2');
         if (plModalBtn) {
-            const isRealVid = photo.url && photo.url.match(/\.mp4$/i);
+            const isRealVid = isRealVideo(photo);
             plModalBtn.style.display = isRealVid ? 'inline-block' : 'none';
             if (isRealVid) plSyncModalAddBtn(photo);
         }
