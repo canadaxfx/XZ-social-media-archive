@@ -56,104 +56,52 @@
               opacity: 1;
             }
 
-            /* Navigation Buttons (Main Tabs) */
-            .nav-buttons {
+            .nav-segmented {
               display: flex;
               justify-content: center;
-              gap: 15px;
-              margin: 10px 0 12px;
-            }
-            .nav-btn,
-            .btn {
-              padding: 15px 15px;
-              border: none;
+              max-width: 500px;
+              margin: 0 auto 0;
+              background: rgba(255, 255, 255, 0.25);
               border-radius: 25px;
-              cursor: pointer;
-              font-size: 13px;
-              font-weight: 600;
-              transition: all 0.3s ease;
-              text-decoration: none;
-              display: inline-block;
-            }
-            .nav-btn.active,
-            .btn.primary {
-              background: linear-gradient(45deg, #5E9FD8, #4A8BC8);
-              color: white;
-              transform: translateY(-2px);
-              box-shadow: 0 8px 20px rgba(94, 159, 216, 0.3);
-            }
-            .nav-btn:not(.active) {
-              background: rgba(94, 159, 216, 0.15);
-              color: white;
+              padding: 4px;
+              border: 1px solid rgba(255, 255, 255, 0.3);
               backdrop-filter: blur(10px);
             }
-            .nav-btn:hover {
-              transform: translateY(-2px);
-              box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-            }
 
-            /* Source Filter Bar (New) */
-      .source-filters {
-        display: flex;
-
-        /* DEFAULT (Mobile): Allow wrapping if screen is tiny */
-        flex-wrap: wrap;
-
-        justify-content: center;
-        align-items: center;
-        gap: 8px;
-
-        /* THE BOX / FRAME STYLING */
-        background: rgba(0, 0, 0, 0.2);
-        border: 1px solid rgba(255, 255, 255, 0.15);
-        backdrop-filter: blur(8px);
-        border-radius: 20px;
-        padding: 8px 15px;
-        margin: 0 auto 20px;
-
-        max-width: 95%;
-        width: fit-content;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      }
-
-      /* NEW: Style for the "Filter:" label */
-      .filter-label {
-        color: rgba(255, 255, 255, 0.9);
-        font-size: 12px;
-        font-weight: 700;
-        text-transform: uppercase;
-        margin-right: 5px;
-        letter-spacing: 0.5px;
-        display: inline-block;
-      }
-
-           .source-pill {
-              padding: 6px 12px;
-              border-radius: 15px;
-              font-size: 12px;
-              font-weight: 600;
+            .nav-segmented .segment-btn {
+              padding: 10px 20px !important;
+              border: none !important;
+              background: #e8eaed !important;
+              color: #444 !important;
+              font-size: 13px;
+              font-weight: 700 !important;
               cursor: pointer;
-              background: rgba(255, 255, 255, 0.15);
-              color: white;
-              border: 1px solid rgba(255, 255, 255, 0.3);
-              transition: all 0.2s;
-      	text-align: center;
-              line-height: 1.3;
-      	display: flex;
-        	align-items: center;
-        	justify-content: center;
-        	text-align: center;
-        	min-width: 80px;
+              transition: all 0.25s ease;
+              border-radius: 20px;
+              white-space: nowrap;
+              line-height: 1.2;
             }
 
-            .source-pill:hover {
-              background: rgba(255, 255, 255, 0.3);
+            .nav-segmented .segment-btn:hover {
+              background: #dadce0 !important;
             }
-            .source-pill.active {
-              background: white;
-              color: #5E9FD8;
-              border-color: white;
-              box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+
+            .nav-segmented .segment-btn.active {
+              background: linear-gradient(45deg, #5E9FD8, #4A8BC8) !important;
+              color: #fff !important;
+              box-shadow: 0 2px 8px rgba(94, 159, 216, 0.4);
+            }
+
+            .nav-segmented .segment-btn span {
+              display: block;
+              font-size: 11px;
+              font-weight: 500;
+              margin-top: 2px;
+              color: #666;
+            }
+
+            .nav-segmented .segment-btn.active span {
+              color: rgba(255, 255, 255, 0.95);
             }
 
       /* --- DATE FILTER STYLES --- */
@@ -162,24 +110,40 @@
         justify-content: center;
         align-items: center;
         gap: 10px;
-        margin-bottom: 20px;
+        margin-bottom: 0px;
         flex-wrap: wrap;
       }
 
       .date-select-wrapper {
+        position: relative;
+        z-index: 2;
         display: flex;
         gap: 8px;
-        background: white;
+        background: rgba(255, 255, 255, 0.92);
         padding: 5px;
         border-radius: 25px;
         border: 1px solid #e0e0e0;
         box-shadow: 0 2px 10px rgba(0,0,0,0.05);
       }
 
+      .filter-hint {
+        position: absolute;
+        left: 50%;
+        top: 0%;
+        transform: translateX(-50%);
+        font-size: 11px;
+        color: rgba(0, 0, 0, 0.4);
+        pointer-events: none;
+        white-space: nowrap;
+        z-index: 0;
+      }
+
       .date-select-wrapper select {
+        position: relative;
+        z-index: 1;
         border: none;
         background: transparent;
-        padding: 8px 12px;
+        padding: 6px 6px;
         font-size: 13px;
         font-weight: 600;
         color: #555;
@@ -188,27 +152,43 @@
         border-radius: 20px;
       }
 
+      .date-select-wrapper select option {
+        padding: 6px 6px;
+      }
+
       .date-select-wrapper select:hover {
         background-color: #f0f2f5;
       }
 
+      /* Source dropdown - distinct background color */
+      #filterSource {
+        background-color: #f8f9fa;
+        color: #333;
+      }
+
+      #filterSource:hover {
+        background-color: #e9ecef;
+      }
+
       .reset-date-btn {
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
+        padding: 6px 12px;
+        border-radius: 20px;
         border: none;
         background: #5E9FD8;
         color: white;
         cursor: pointer;
-        font-weight: bold;
+        font-weight: 600;
+        font-size: 12px;
         display: flex;
         align-items: center;
         justify-content: center;
-        transition: transform 0.2s;
+        transition: all 0.2s;
+        white-space: nowrap;
       }
 
       .reset-date-btn:hover {
-        transform: scale(1.1);
+        background: #4A8BC8;
+        transform: scale(1.05);
       }
 
       /* Mobile Adjustment */
@@ -238,13 +218,41 @@
             .search-bar {
               width: 100%;
               max-width: 400px;
-              padding: 15px;
+              padding: 10px;
               border: 2px solid #e0e0e0;
               border-radius: 25px;
               font-size: 14px;
-              margin: 0 auto 20px;
+              margin: 15px auto 10px;
               display: block;
-              transition: border-color 0.3s ease;
+            }
+
+            /* Media Filter Tabs (for Attached Media) */
+            .media-filter-tabs {
+              display: flex;
+              justify-content: center;
+              gap: 8px;
+              margin: 10px 0 15px;
+            }
+            .media-tab {
+              background: #f0f4f8;
+              color: #111;
+              border: 1px solid #d0d8e0;
+              border-radius: 20px;
+              padding: 6px 16px;
+              font-size: 13px;
+              cursor: pointer;
+              transition: all 0.2s;
+            }
+            .media-tab:hover {
+              background: #e0eaf4;
+              color: #2c5f8a;
+              border-color: #5E9FD8;
+            }
+            .media-tab.active {
+              background: linear-gradient(45deg, #5E9FD8, #4A8BC8);
+              color: white;
+              font-weight: 600;
+              border-color: transparent;
             }
             .search-bar:focus {
               outline: none;
@@ -455,6 +463,20 @@
         pointer-events: none;
       }
 
+      /* --- MOTION BADGE (MOV/GIF) --- */
+      .motion-badge {
+        position: absolute;
+        right: 4px;
+        bottom: 1px;
+        background: rgba(0, 150, 136, 0.75);
+        color: white;
+        border-radius: 6px;
+        padding: 1px 4px;
+        font-size: 9px;
+        font-weight: 700;
+        z-index: 3;
+      }
+
 
 
             /* Photo Grid */
@@ -491,14 +513,14 @@
               right: 0;
               background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
               color: white;
-              padding: 14px 4px 4px;
-              font-size: 11px;
+              padding: 2px 2px 2px;
+              font-size: 9px;
               font-weight: 600;
-              text-align: center;
-              display: flex;
-              flex-direction: column;
-              align-items: center;
-              gap: 2px;
+              text-align: left;
+            }
+            .photo-date {
+              display: block;
+              margin-bottom: 1px;
             }
 
       /* Source Indicator Dot (Grid View) */
@@ -565,13 +587,29 @@
             }
             .modal-header {
               display: flex;
-              justify-content: space-between;
-              align-items: center;
-              padding: 8px 10px;
+              flex-direction: column;
+              align-items: stretch;
+              gap: 3px;
+              padding: 6px 10px 5px;
               border-bottom: 1px solid #e0e0e0;
               background: #f8f9fa;
               border-radius: 15px 15px 0 0;
               flex-shrink: 0;
+            }
+            .modal-tags-container {
+              display: flex;
+              flex-wrap: wrap;
+              gap: 4px;
+              padding: 0 2px 2px;
+            }
+            .modal-tag-pill {
+              font-size: 10px;
+              padding: 2px 8px;
+              background-color: #f0f2f5;
+              color: #555;
+              border-radius: 10px;
+              border: 1px solid #e4e6eb;
+              white-space: nowrap;
             }
             .group-title {
               font-weight: 600;
@@ -733,32 +771,39 @@
             }
             .download-actions-row {
               display: flex;
+              flex-direction: column;
               gap: 10px;
               justify-content: center;
-              flex-wrap: wrap;
+              align-items: center;
               margin-top: 5px;
             }
             .action-btn {
               flex: 1;
               min-width: 160px;
               max-width: 200px;
-              padding: 8px 10px;
+              padding: 6px 10px;
               border: none;
               border-radius: 8px;
               font-size: 12px;
               font-weight: 600;
               cursor: pointer;
+              transition: all 0.3s ease;
               text-decoration: none;
               text-align: center;
-              color: white;
               display: inline-block;
+              line-height: 1.2;
             }
             .download-btn {
-              background: linear-gradient(45deg, #4caf50, #45a049);
+              background: linear-gradient(135deg, #2563eb, #1d4ed8);
+              color: white;
             }
+            .download-btn:hover { background: linear-gradient(135deg, #1d4ed8, #1e40af); }
             .source-link-btn {
-              background: linear-gradient(45deg, #5E9FD8, #4A8BC8);
+              background: transparent;
+              color: #2563eb;
+              border: 1.5px solid #2563eb;
             }
+            .source-link-btn:hover { background: #eff6ff; }
 
             /* Footer */
             .site-footer {
@@ -872,116 +917,87 @@
               border-color: #5E9FD8;
             }
 
-            #back-to-top {
-              position: fixed;
-              bottom: 20px;
-              right: 20px;
-              background: white;
-              color: #5E9FD8;
-              width: 80px;
-              height: 90x;
-              border-radius: 30px;
-              display: flex;
-              flex-direction: column;
-              align-items: center;
-              justify-content: center;
-              cursor: pointer;
-              box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-              opacity: 0;
-              visibility: hidden;
-              transition: all 0.3s ease;
-              z-index: 9999;
-              border: 1px solid #5E9FD8;
-              font-size: 40px;
-              font-weight: 600;
-              -webkit-text-stroke: 2px #5E9FD8;
-              text-stroke: 2px #5E9FD8;
-              padding: 4px 4px;
-            }
-            #back-to-top .arrow {
-              line-height: 1;
-            }
-            #back-to-top .text {
-              font-size: 12px;
-              font-weight: 600;
-              margin-top: 0px;
-              text-align: center;
-              line-height: 1;
-              color: #5E9FD8;
-              -webkit-text-stroke: 0;
-              text-stroke: 0;
-              -webkit-text-fill-color: #5E9FD8;
-              position: relative;
-              z-index: 1;
-            }
-
-            #back-to-top.visible {
-              opacity: 0.85;
-              visibility: visible;
-              animation: subtle-pulse-white 2s infinite ease-in-out;
-            }
-            #back-to-top:hover {
-              transform: scale(1.15);
-              box-shadow: 0 6px 25px rgba(94, 159, 216, 0.4);
-              opacity: 1;
-            }
-
-            @keyframes subtle-pulse-white {
-              0%, 100% { box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); }
-              50% { box-shadow: 0 4px 20px rgba(94, 159, 216, 0.3); }
-            }
-
             /* Mobile Responsiveness */
-      @media (min-width: 769px) {
-        .source-filters {
-          flex-wrap: nowrap;     /* FORCE single line */
-          white-space: nowrap;   /* Prevent text inside creating weird breaks */
-          padding: 10px 25px;    /* More breathing room on big screens */
-          width: auto;           /* Let it grow naturally */
-          max-width: 900px;      /* Ensure it doesn't get absurdly wide */
-        }
+      @media (max-width: 768px) {
+        .container { padding: 15px; }
+        .year-photos-grid { grid-template-columns: repeat(3, 1fr); gap: 8px; }
+        .stats-grid { grid-template-columns: repeat(3, 1fr); gap: 8px; }
 
-      /* Optional: Ensure pills don't shrink too much */
-        .source-pill {
-          flex-shrink: 0;
-          min-width: 100px;      /* Ensure buttons feel substantial on desktop */
-        }
+        .modal { padding: 5px; align-items: flex-start; padding-top: 5px; }
+        .modal-content { max-width: 95vw; max-height: 98vh; margin-top: 0; }
+        .modal-photo-container { flex: none; height: 35vh; min-height: 200px; max-height: 300px; }
+        .nav-arrow { width: 40px; height: 40px; font-size: 16px; }
+        .thumbnail-strip { padding: 8px 10px; min-height: 50px; }
+        .thumbnail { width: 40px; height: 40px; }
+        .close-modal { font-size: 40px; }
+
+        .nav-segmented { width: 100%; justify-content: center; }
+        .nav-segmented .segment-btn { padding: 10px 14px; font-size: 12px; }
+        .nav-segmented .segment-btn span { font-size: 10px; }
+
+        .media-filter-tabs { gap: 4px; }
+        .media-tab { font-size: 11px; padding: 5px 10px; }
       }
 
-
-            @media (max-width: 768px) {
-              .container { padding: 15px; }
-              .nav-buttons { gap: 15px; }
-              .nav-btn { padding: 10px 12px; font-size: 13px; }
-              .year-photos-grid { grid-template-columns: repeat(3, 1fr); gap: 8px; }
-              .stats-grid { grid-template-columns: repeat(3, 1fr); gap: 8px; }
-
-              .modal { padding: 5px; align-items: flex-start; padding-top: 5px; }
-              .modal-content { max-width: 95vw; max-height: 98vh; margin-top: 0; }
-              .modal-photo-container { flex: none; height: 35vh; min-height: 200px; max-height: 300px; }
-              .nav-arrow { width: 40px; height: 40px; font-size: 16px; }
-              .thumbnail-strip { padding: 8px 10px; min-height: 50px; }
-              .thumbnail { width: 40px; height: 40px; }
-              .close-modal { font-size: 40px; }
-
-              /* Mobile filter adjustments */
-      .source-filters {
-          border-radius: 15px;
-          padding: 8px 10px;
-          width: 100%;       /* Fill width on mobile */
-        }
-
-        /* Optional: Hide the text label on very small screens to save space */
-        .filter-label {
-          display: none;
-        }
-      }
-
-              .source-pill {flex: 1 1 30%; max-width: 45%; font-size: 11px; padding: 6px 4px; height: 44px;}
-            }
     </style>
   </head>
   <body>
+<style>
+/* ===== FLOAT GROUP ===== */
+#floatBtnGroup{position:fixed;right:16px;bottom:80px;display:flex;flex-direction:column;align-items:center;gap:8px;z-index:8000;touch-action:none;cursor:grab}
+.float-btn{width:58px;height:58px;border-radius:50%;border:2px solid rgba(94,159,216,0.4);background:#fff;color:#5E9FD8;display:flex;flex-direction:column;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 4px 18px rgba(0,0,0,0.15);font-size:22px;font-weight:600;transition:transform .18s,box-shadow .18s;position:relative;flex-shrink:0;user-select:none;overflow:hidden}
+.float-btn:hover{transform:scale(1.08);box-shadow:0 6px 24px rgba(0,0,0,0.22)}
+#plFloatBtn{background:linear-gradient(135deg,#2563eb,#7c3aed);color:#fff;border-color:rgba(255,255,255,0.3);font-size:20px;width:68px;height:68px;overflow:visible}
+#plFloatBadge{position:absolute;top:-3px;right:-3px;background:#ef4444;color:#fff;border-radius:10px;font-size:10px;font-weight:700;padding:1px 5px;min-width:18px;text-align:center;display:none;line-height:1.6}
+#backToTopFloat{opacity:0.88;visibility:visible}
+.float-top-text{font-size:9px;font-weight:700;line-height:1.3;margin-top:1px;text-align:center}
+#backToTopFloat .float-top-text{color:#4A8BC8}
+.timeline-photo.pl-in-playlist{box-shadow:0 0 0 2.5px #2563eb,0 2px 8px rgba(0,0,0,0.1)}
+@media(max-width:768px){#floatBtnGroup{right:8px}.float-btn{width:50px;height:50px;font-size:18px}}
+/* ===== PLAYLIST ===== */
+.playlist-panel{position:fixed;width:300px;max-height:420px;background:#fff;border-radius:12px;box-shadow:0 6px 28px rgba(0,0,0,.22);z-index:7999;display:flex;flex-direction:column;overflow:hidden}
+.playlist-header{display:flex;align-items:center;gap:8px;padding:12px 14px;background:linear-gradient(135deg,#2563eb,#7c3aed);border-radius:12px 12px 0 0;color:#fff;cursor:pointer;font-size:14px;font-weight:700;flex-shrink:0;user-select:none;letter-spacing:0.2px}
+.playlist-panel.collapsed .playlist-header{border-radius:12px}
+.playlist-count-badge{background:rgba(255,255,255,.25);border-radius:10px;padding:2px 8px;font-size:12px;font-weight:700}
+.playlist-list{overflow-y:auto;flex:1;min-height:0}
+.playlist-item{display:flex;align-items:center;gap:8px;padding:7px 10px;cursor:pointer;border-bottom:1px solid #f3f4f6;font-size:12px}
+.playlist-item:hover{background:#f9fafb}
+.playlist-item.pl-active{background:#eff6ff;border-left:3px solid #2563eb}
+.playlist-item img{width:52px;height:36px;object-fit:cover;border-radius:4px;flex-shrink:0;background:#e5e7eb}
+.playlist-item-info{flex:1;min-width:0}
+.playlist-item-title{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:#374151;font-weight:500}
+.playlist-item-meta{color:#9ca3af;font-size:11px;margin-top:1px}
+.playlist-remove-btn{flex-shrink:0;background:#e5e7eb;border:none;cursor:pointer;color:#6b7280;font-size:14px;font-weight:700;line-height:1;padding:0;width:22px;height:22px;border-radius:50%;text-align:center;line-height:22px}
+.playlist-remove-btn:hover{background:#fecaca;color:#dc2626}
+.playlist-footer{display:flex;gap:6px;padding:8px 10px;border-top:1px solid #e5e7eb;flex-shrink:0}
+.pl-play-btn{flex:1;padding:6px;background:linear-gradient(135deg,#2563eb,#7c3aed);color:#fff;border:none;border-radius:6px;cursor:pointer;font-size:12px;font-weight:600}
+.pl-clear-btn{padding:6px 10px;background:#fee2e2;color:#dc2626;border:none;border-radius:6px;cursor:pointer;font-size:12px}
+.pl-card-add{position:absolute;bottom:26px;right:4px;background:rgba(0,0,0,.65);color:#fff;border:none;border-radius:4px;padding:2px 6px;font-size:11px;cursor:pointer;opacity:1;z-index:3;white-space:nowrap}
+.pl-card-add.pl-added{background:rgba(37,99,235,.8)}
+.pl-add-all-btn{display:none;padding:6px 11px;background:#1f2937;color:#fff;border:none;border-radius:6px;font-size:12px;cursor:pointer;white-space:nowrap;margin-top:6px}
+.pl-modal-add-btn{padding:3px 10px;background:rgba(37,99,235,.12);color:#2563eb;border:1px solid #bfdbfe;border-radius:12px;font-size:12px;cursor:pointer;display:none;white-space:nowrap}
+.pl-modal-add-btn:hover{background:#dbeafe}
+.pl-modal-add-btn.pl-in-list{background:rgba(37,99,235,.12);color:#2563eb;border-color:#93c5fd;box-shadow:0 0 0 1.5px #2563eb}
+.pl-counter-badge{background:#1f2937;color:#fff;padding:2px 9px;border-radius:10px;font-size:11px;margin-left:5px;display:none}
+#plToast{position:fixed;bottom:76px;left:50%;transform:translateX(-50%);background:#1f2937;color:#fff;padding:8px 18px;border-radius:8px;font-size:13px;z-index:9999;pointer-events:none;opacity:0;transition:opacity .3s}
+@media(max-width:600px){.playlist-panel{width:calc(100vw - 90px)}}
+@media(max-height:500px){.pl-fs-controls{padding:6px 12px}.pl-fs-nav-btn,.vc-btn{width:34px!important;height:34px!important}#vcPlayBtn{width:38px!important;height:38px!important}}
+@media(max-width:600px){.pl-fs-controls{flex-wrap:wrap;padding:8px 12px;gap:8px;justify-content:center}.vc-middle{order:10;flex:0 0 100%!important;min-width:100%!important}}
+.pl-fs-controls{display:none;align-items:center;gap:10px;padding:10px 18px;background:linear-gradient(180deg,#0f172a 0%,#1e293b 100%);flex-shrink:0;border-top:1px solid #334155}
+.pl-fs-nav-btn{background:#334155;color:#e2e8f0;border:1px solid #475569;border-radius:50%;width:48px;height:48px;font-size:26px;cursor:pointer;transition:all .18s;line-height:1;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;font-weight:700}
+.pl-fs-nav-btn:hover{background:#475569;color:#fff;border-color:#64748b}
+.pl-fs-nav-btn:disabled{opacity:.25;cursor:default}
+.pl-fs-nav-counter{color:#64748b;font-size:12px;min-width:50px;text-align:center}
+.vc-btn{background:#1e293b;color:#cbd5e1;border:1px solid #334155;border-radius:10px;width:40px;height:40px;font-size:16px;cursor:pointer;line-height:1;flex-shrink:0;transition:all .18s;display:inline-flex;align-items:center;justify-content:center}
+.vc-btn:hover{background:#334155;color:#f1f5f9;border-color:#475569}
+#vcPlayBtn{background:#2563eb;border-color:#3b82f6;border-radius:50%;width:48px;height:48px;font-size:19px;color:#fff}
+#vcPlayBtn:hover{background:#1d4ed8;border-color:#2563eb}
+#vcFsBtn{background:#0e7490;border-color:#0891b2;color:#e0f2fe;font-size:18px}
+#vcFsBtn:hover{background:#0891b2;border-color:#06b6d4;color:#fff}
+.vc-seek{flex:1;min-width:0;height:5px;accent-color:#3b82f6;cursor:pointer;border-radius:4px}
+.vc-time{color:#64748b;font-size:12px;white-space:nowrap;flex-shrink:0;font-variant-numeric:tabular-nums}
+.vc-middle{flex:1;min-width:0;display:flex;flex-direction:column;gap:5px;justify-content:center}
+</style>
     <div class="container">
       <header>
         <h1>Xiao Zhan Social Media Archive<br />肖战社交媒体存档</h1>
@@ -1006,43 +1022,6 @@
         </p>
       </header>
 
-      <nav class="nav-buttons">
-        <button
-          class="nav-btn active"
-          data-section="screenshot"
-          onclick="switchTab('screenshot')"
-        >
-          Post Screenshots<br />社交平台截图
-        </button>
-        <button
-          class="nav-btn"
-          data-section="attached"
-          onclick="switchTab('attached')"
-        >
-          Attached Visual Media<br />配图&视频
-        </button>
-      </nav>
-
-      <div class="source-filters" id="sourceFilters">
-        <span class="filter-label">Filter:</span>
-
-        <div class="source-pill active" onclick="filterBySource('all', this)">
-          All Sources<br />全部
-        </div>
-        <div class="source-pill" onclick="filterBySource('weibo', this)">
-          Weibo<br />微博
-        </div>
-        <div class="source-pill" onclick="filterBySource('oasis', this)">
-          Oasis<br />绿洲
-        </div>
-        <div class="source-pill" onclick="filterBySource('douyin', this)">
-          Douyin<br />抖音
-        </div>
-        <div class="source-pill" onclick="filterBySource('ins', this)">
-          Instagram
-        </div>
-      </div>
-
       <div class="content-section">
         <div class="stats-grid">
           <div class="stat-card">
@@ -1055,10 +1034,43 @@
           </div>
         </div>
 
+        <nav class="nav-segmented">
+          <button
+            class="segment-btn active"
+            data-section="all"
+            onclick="switchTab('all')"
+          >
+            All<span>全部</span>
+          </button>
+          <button
+            class="segment-btn"
+            data-section="screenshot"
+            onclick="switchTab('screenshot')"
+          >
+            Screenshots<span>截图</span>
+          </button>
+          <button
+            class="segment-btn"
+            data-section="attached"
+            onclick="switchTab('attached')"
+          >
+            Attached Media<span>配图&视频</span>
+          </button>
+        </nav>
+
         <div class="date-filter-container">
           <div class="date-select-wrapper">
+            <span class="filter-hint">按平台和日期选择</span>
+            <select id="filterSource" onchange="applyDateFilter()">
+              <option value="all">Source</option>
+              <option value="weibo">Weibo 微博</option>
+              <option value="oasis">Oasis 绿洲</option>
+              <option value="douyin">Douyin 抖音</option>
+              <option value="ins">Instagram</option>
+            </select>
+
             <select id="filterYear" onchange="applyDateFilter()">
-              <option value="all">Year: All</option>
+              <option value="all">Year</option>
             </select>
 
             <select id="filterMonth" onchange="applyDateFilter()">
@@ -1087,8 +1099,14 @@
             id="resetDateBtn"
             onclick="resetDateFilter()"
           >
-            ✕
+            Clear / 重选
           </button>
+        </div>
+
+        <div class="media-filter-tabs hidden" id="mediaFilterTabs">
+          <button class="media-tab active" data-media="all" onclick="setMediaFilter('all')">All 全部</button>
+          <button class="media-tab" data-media="photo" onclick="setMediaFilter('photo')">📷 Photos 图片</button>
+          <button class="media-tab" data-media="video" onclick="setMediaFilter('video')">🎬 Videos 视频</button>
         </div>
 
         <input
@@ -1118,29 +1136,48 @@
     <div id="photoModal" class="modal hidden">
       <div class="modal-content">
         <div class="modal-header">
-          <div class="photo-counter" id="photoCounter">1 / 1</div>
-          <div class="group-title">
-            <span id="groupTitleDate"></span>
-            <button class="post-text-pill" id="postTextBtn" onclick="togglePostText()" style="display:none;">📋 原文</button>
-            <span id="modalSourceBadge" class="source-badge"></span>
+          <div style="display:flex;align-items:center;justify-content:space-between;">
+            <div class="photo-counter" id="photoCounter">1 / 1</div>
+            <div class="group-title">
+              <span id="groupTitleDate"></span>
+              <button class="post-text-pill" id="postTextBtn" onclick="togglePostText()" style="display:none;">📋 原文</button>
+              <span id="modalSourceBadge" class="source-badge"></span>
+            </div>
+            <button class="close-modal" onclick="closeModal()">&times;</button>
           </div>
-          <button class="close-modal" onclick="closeModal()">&times;</button>
+          <div id="modalTags" class="modal-tags-container"></div>
         </div>
         <div id="postTextPanel" style="display:none;">
           <p id="postTextContent" style="margin:0;"></p>
         </div>
 
         <div class="modal-photo-container">
-          <button class="nav-arrow prev" onclick="navigatePhoto(-1)">‹</button>
+          <button class="nav-arrow prev" id="prevBtn" onclick="navigatePhoto(-1)">‹</button>
           <img id="modalPhoto" class="modal-photo" alt="Current photo" />
           <video
             id="modalVideo"
             class="modal-photo hidden"
-            controls
+            autoplay
             playsinline
             loop
           ></video>
-          <button class="nav-arrow next" onclick="navigatePhoto(1)">›</button>
+          <button class="nav-arrow next" id="nextBtn" onclick="navigatePhoto(1)">›</button>
+        </div>
+
+        <!-- Video control bar (shown when a video is open) -->
+        <div class="pl-fs-controls" id="plNavBar">
+            <button class="pl-fs-nav-btn" id="plFsPrev" onclick="navigatePhoto(-1)" title="Previous">‹</button>
+            <button class="vc-btn" id="vcPlayBtn" onclick="vcTogglePlay()">▶</button>
+            <div class="vc-middle">
+                <input type="range" class="vc-seek" id="vcSeek" value="0" min="0" step="0.1">
+                <div style="display:flex;justify-content:space-between">
+                    <span class="vc-time" id="vcCurrent">0:00</span>
+                    <span class="vc-time" id="vcDuration">0:00</span>
+                </div>
+            </div>
+            <button class="vc-btn" id="vcMuteBtn" onclick="vcToggleMute()" title="Mute">🔊</button>
+            <button class="vc-btn" id="vcFsBtn" onclick="vcFullscreen()" title="Fullscreen">⛶</button>
+            <button class="pl-fs-nav-btn" id="plFsNext" onclick="navigatePhoto(1)" title="Next">›</button>
         </div>
 
         <div class="thumbnail-strip">
@@ -1148,33 +1185,15 @@
         </div>
 
         <div class="photo-info-panel">
-          <div
-            id="modalTags"
-            style="
-              display: flex;
-              flex-wrap: wrap;
-              gap: 8px;
-              justify-content: center;
-              margin-bottom: 15px;
-              padding: 0 5px;
-            "
-          ></div>
+          <div style="display:flex;align-items:center;justify-content:center;margin-bottom:6px;position:relative;">
+            <button class="pl-modal-add-btn" id="plModalAddBtn2" onclick="plModalToggle()" style="display:none;font-size:13px;padding:5px 16px;">+ 加入播放列表 Add to Playlist</button>
+          </div>
           <div class="download-actions-row">
-            <a
-              class="action-btn download-btn"
-              id="downloadBtn"
-              href="#"
-              target="_blank"
-              download
-            >
-              ⬇️ Download HD<br /><small>下载高清</small>
+            <a class="action-btn download-btn" id="downloadBtn" href="#" target="_blank" download>
+              ⬇️ Download HD<br><small>下载高清</small>
             </a>
-            <a
-              class="action-btn source-link-btn"
-              id="sourceLinkBtn"
-              target="_blank"
-            >
-              📱 View on Platform<br /><small>查看原帖</small>
+            <a class="action-btn source-link-btn" id="sourceLinkBtn" target="_blank">
+              📱 View on Platform<br><small>查看原帖</small>
             </a>
           </div>
         </div>
@@ -1394,10 +1413,32 @@
       </div>
     </div>
 
-    <div id="back-to-top">
-      <div class="arrow">▲</div>
-      <div class="text">TOP<br />回顶部</div>
+    <div id="floatBtnGroup">
+        <button id="plFloatBtn" class="float-btn" onclick="plTogglePanel()">
+            <span>🎬</span>
+            <span class="float-top-text" style="-webkit-text-fill-color:#fff;color:#fff;">Play<br>播放</span>
+            <span id="plFloatBadge">0</span>
+        </button>
+        <button id="backToTopFloat" class="float-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+            <span>▲</span>
+            <span class="float-top-text">TOP<br>回顶部</span>
+        </button>
     </div>
+
+    <!-- Playlist Panel -->
+    <div id="playlistPanel" class="playlist-panel" style="display:none">
+        <div class="playlist-header">
+            <span>🎬 Playlist 播放列表</span>
+            <span class="playlist-count-badge" id="plPanelCount">0</span>
+            <button onclick="plTogglePanel()" style="margin-left:auto;background:rgba(255,255,255,0.2);color:#fff;border:none;border-radius:50%;width:26px;height:26px;font-size:15px;cursor:pointer;line-height:1;display:flex;align-items:center;justify-content:center">&times;</button>
+        </div>
+        <div class="playlist-list" id="plList"></div>
+        <div class="playlist-footer">
+            <button class="pl-play-btn" onclick="plPlayFromStart()">▶ Play All 播放全部</button>
+            <button class="pl-clear-btn" onclick="plClear()">Clear 清空</button>
+        </div>
+    </div>
+    <div id="plToast"></div>
 
     <footer class="site-footer">
       <div class="footer-content">
@@ -1471,6 +1512,10 @@
         }
       }
 
+      function isRealVideo(item) {
+        return !!(item.url && item.url.match(/\.mp4$/i));
+      }
+
       function fmtDuration(secs) {
         if (!secs) return '';
         secs = Math.round(secs);
@@ -1486,8 +1531,9 @@
       let categoryData = [];
       let activeData = [];
       let currentRenderData = [];
-      let currentTab = "screenshot";
+      let currentTab = "all";
       let currentSourceFilter = "all";
+      let currentMediaFilter = "all";
       let expandedYears = new Set();
       let paginationState = {};
       let imageObserver = null;
@@ -1504,9 +1550,10 @@
         loadAllData();
         setupIntersectionObserver();
         setupSearch();
-        setupBackToTop();
+        setupFloatGroup();
         setupFooterToggle();
         setupDateFilters();
+        plLoad();
       });
 
       // --- DATA LOADING & TABS ---
@@ -1547,7 +1594,7 @@
 
         const years = [...new Set(allData.map((d) => d.year))].sort().reverse();
         const yearSelect = document.getElementById("filterYear");
-        yearSelect.innerHTML = '<option value="all">Year: All</option>';
+        yearSelect.innerHTML = '<option value="all">Year</option>';
         years.forEach((y) => {
           let opt = document.createElement("option");
           opt.value = y;
@@ -1555,25 +1602,41 @@
           yearSelect.appendChild(opt);
         });
 
-        switchTab("screenshot");
+        switchTab("all");
       }
 
       function switchTab(tabName) {
         currentTab = tabName;
+
         // Update UI Tabs
-        document.querySelectorAll(".nav-btn").forEach((btn) => {
+        document.querySelectorAll("[data-section]").forEach((btn) => {
           btn.classList.toggle("active", btn.dataset.section === tabName);
         });
+
+        // Show/hide media filter tabs only for "Attached Media"
+        const mediaFilterTabs = document.getElementById("mediaFilterTabs");
+        if (tabName === "attached") {
+          mediaFilterTabs.classList.remove("hidden");
+        } else {
+          mediaFilterTabs.classList.add("hidden");
+          currentMediaFilter = "all"; // Reset media filter when leaving attached tab
+          document.querySelectorAll(".media-tab").forEach((btn) => {
+            btn.classList.toggle("active", btn.dataset.media === "all");
+          });
+        }
 
         // 1. Filter by Category first
         if (tabName === "screenshot") {
           categoryData = allData.filter(
             (item) => item.category === "screenshot",
           );
-        } else {
+        } else if (tabName === "attached") {
           categoryData = allData.filter(
             (item) => item.category === "attached" || !item.category,
           );
+        } else {
+          // "all" - include both screenshot and attached
+          categoryData = [...allData];
         }
 
         // 2. Reset or Re-apply Source Filter?
@@ -1581,21 +1644,15 @@
         applyFilters();
       }
 
-      function filterBySource(source, element) {
-        currentSourceFilter = source;
+      function setMediaFilter(mediaType) {
+        currentMediaFilter = mediaType;
 
-        // Update Pill UI
-        document
-          .querySelectorAll(".source-pill")
-          .forEach((el) => el.classList.remove("active"));
-        element.classList.add("active");
+        // Update UI tabs
+        document.querySelectorAll(".media-tab").forEach((btn) => {
+          btn.classList.toggle("active", btn.dataset.media === mediaType);
+        });
 
-        // Douyin has no screenshots — auto-switch to attached media tab
-        if (source === "douyin" && currentTab === "screenshot") {
-          switchTab("attached");
-          return;
-        }
-
+        // Re-apply filters with new media type
         applyFilters();
       }
 
@@ -1607,6 +1664,16 @@
           activeData = categoryData.filter(
             (item) => item.source === currentSourceFilter,
           );
+        }
+
+        // Apply media type filter (only for "attached" tab)
+        if (currentTab === "attached" && currentMediaFilter !== "all") {
+          const isVideo = (item) => item.url && item.url.match(/\.mp4$/i);
+          if (currentMediaFilter === "photo") {
+            activeData = activeData.filter((item) => !isVideo(item));
+          } else if (currentMediaFilter === "video") {
+            activeData = activeData.filter((item) => isVideo(item));
+          }
         }
 
         // --- ADD THIS LINE ---
@@ -1656,50 +1723,76 @@
       }
 
       function applyDateFilter() {
+        const sourceVal = document.getElementById("filterSource").value;
         const yVal = elFilterYear.value;
         const mVal = elFilterMonth.value;
         const dVal = elFilterDay.value;
         const resetBtn = document.getElementById("resetDateBtn");
 
         // Show reset button if any filter is active
-        if (yVal !== "all" || mVal !== "all" || dVal !== "all") {
+        if (yVal !== "all" || mVal !== "all" || dVal !== "all" || sourceVal !== "all") {
           resetBtn.classList.remove("hidden");
         } else {
           resetBtn.classList.add("hidden");
         }
 
-        // Start with the currently active source/category data (activeData is set by Source Filters)
-        // Note: We need to make sure we don't lose the Category/Source selection.
-        // The easiest way is to re-run the main filter chain, but let's filter 'activeData' locally for now
-        // assuming 'activeData' contains the correct Category + Source items.
+        // Sync the pill-based source filter
+        if (sourceVal !== currentSourceFilter) {
+          currentSourceFilter = sourceVal;
 
-        // HOWEVER, to be safe, let's filter against 'activeData' which holds (Category + Source) results.
-        let filtered = activeData.filter((item) => {
-          // item.date format is typically "YYYY-MM-DD..."
+          // Auto-switch to "all" tab when selecting a source (except Douyin)
+          if (sourceVal === "douyin") {
+            if (currentTab !== "attached") {
+              switchTab("attached");
+            }
+          } else {
+            if (currentTab !== "all") {
+              switchTab("all");
+            }
+          }
+        }
 
-          // 1. Check Year
+        // Filter against categoryData with all filters applied at once
+        let filtered = categoryData.filter((item) => {
+          // 1. Check Source
+          if (sourceVal !== "all" && item.source !== sourceVal) return false;
+
+          // 2. Check Year
           if (yVal !== "all" && item.year !== yVal) return false;
 
-          // 2. Check Month (The month is index 5-7 in "2025-05-11")
+          // 3. Check Month
           if (mVal !== "all") {
-            // Safety check if date string is long enough
             if (!item.date || item.date.length < 7) return false;
             const itemMonth = item.date.substring(5, 7);
             if (itemMonth !== mVal) return false;
           }
 
-          // 3. Check Day (The day is index 8-10 in "2025-05-11")
+          // 4. Check Day
           if (dVal !== "all") {
             if (!item.date || item.date.length < 10) return false;
             const itemDay = item.date.substring(8, 10);
             if (itemDay !== dVal) return false;
           }
 
+          // 5. Check Media Type (only for "attached" tab)
+          if (currentTab === "attached" && currentMediaFilter !== "all") {
+            const isVideo = item.url && item.url.match(/\.mp4$/i);
+            if (currentMediaFilter === "photo") {
+              if (isVideo) return false;
+            } else if (currentMediaFilter === "video") {
+              if (!isVideo) return false;
+            }
+          }
+
           return true;
         });
 
-        // Update global render data and refresh timeline
+        // Update activeData and currentRenderData
+        activeData = filtered;
         currentRenderData = filtered;
+
+        // Update stats and render timeline
+        updateStats();
 
         // Clear text search input to avoid confusion
         document.getElementById("searchInput").value = "";
@@ -1712,6 +1805,9 @@
         elFilterYear.value = "all";
         elFilterMonth.value = "all";
         elFilterDay.value = "all";
+        document.getElementById("filterSource").value = "all";
+        currentSourceFilter = "all";
+
         applyDateFilter(); // Re-runs filter, which resets to full list
       }
 
@@ -1828,6 +1924,7 @@
             renderYearContent(y, grouped[y]);
           }
         });
+        plSyncAllCards();
       }
 
       function toggleYear(year) {
@@ -1878,26 +1975,29 @@
             const isVideo = item.url.match(/\.mp4$/i);
             const isMotion = item.url.match(/\.(mov|gif)$/i);
             const motionExt = isMotion ? (item.url.match(/\.(\w+)$/i) || [])[1]?.toUpperCase() : '';
-            const motionBadge = isMotion ? '<span style="position:absolute;right:4px;bottom:15px;background:rgba(0,150,136,0.75);color:white;border-radius:6px;padding:1px 4px;font-size:9px;font-weight:700;">' + motionExt + '</span>' : '';
+            const motionBadge = isMotion ? '<span class="motion-badge">' + motionExt + '</span>' : '';
 
             const { cssClass, thumbLabel } = getSourceMeta(item.source);
             const durBadge = (isVideo && item.duration)
               ? `<div class="dur-badge">${fmtDuration(item.duration)}</div>`
               : '';
 
+            const inPlaylist = playlist.some(p => p._uid === item._uid);
             return `
-    <div class="timeline-photo" onclick="openModal(${item._uid})">
+    <div class="timeline-photo${inPlaylist ? ' pl-in-playlist' : ''}" id="plcard-${item._uid}" onclick="openModal(${item._uid})">
         ${isVideo ? '<div class="video-overlay-icon">▶</div>' : ""}
         ${durBadge}
         ${motionBadge}
+        ${isRealVideo(item) ? `<button class="pl-card-add${inPlaylist ? ' pl-added' : ''}" id="plcadd-${item._uid}" onclick="event.stopPropagation();plCardAdd(${item._uid})"><b>${inPlaylist ? '✓' : '＋'}</b> Playlist</button>` : ''}
         <img data-src="${getThumbUrl(item.url)}" class="lazy-image loading-placeholder">
         <div class="photo-overlay">
-            <span class="thumb-src-badge ${cssClass}">${thumbLabel}</span>
-            ${item.date}
+            <div class="photo-date">${item.date}</div>
+            <div class="thumb-src-badge ${cssClass}">${thumbLabel}</div>
         </div>
     </div>`;
           })
           .join("");
+        plSyncAllCards();
 
         if (state.limit !== "all" && totalPages > 1) {
           nav.innerHTML =
@@ -1998,23 +2098,6 @@
         });
       }
 
-      function setupBackToTop() {
-        const btn = document.getElementById("back-to-top");
-        if (!btn) return;
-        window.addEventListener(
-          "scroll",
-          () => {
-            window.requestAnimationFrame(() => {
-              btn.classList.toggle("visible", window.scrollY > 300);
-            });
-          },
-          { passive: true },
-        );
-        btn.addEventListener("click", () =>
-          window.scrollTo({ top: 0, behavior: "smooth" }),
-        );
-      }
-
       // --- FOOTER FUNCTIONS ---
       function setupFooterToggle() {
         const termsToggle = document.getElementById("terms-toggle");
@@ -2064,11 +2147,22 @@
           img.classList.add("hidden");
           vid.classList.remove("hidden");
           vid.src = photo.url;
+          vid.play().catch(() => {});
+          vcSetup(vid);
         } else {
           vid.classList.add("hidden");
           vid.pause();
           img.classList.remove("hidden");
           img.src = photo.url;
+        }
+        // Show/hide video control bar and playlist modal button
+        const plNav = document.getElementById('plNavBar');
+        if (plNav) plNav.style.display = isVideo ? 'flex' : 'none';
+        const plModalBtn = document.getElementById('plModalAddBtn2');
+        if (plModalBtn) {
+            const isRealVid = photo.url && photo.url.match(/\.mp4$/i);
+            plModalBtn.style.display = isRealVid ? 'inline-block' : 'none';
+            if (isRealVid) plSyncModalAddBtn(photo);
         }
         document.getElementById("photoCounter").textContent =
           `${currentPhotoIndex + 1} / ${currentGroupPhotos.length}`;
@@ -2135,6 +2229,29 @@
         const activeThumb = document.querySelector(".thumbnail.active");
         if (activeThumb)
           activeThumb.scrollIntoView({ behavior: "smooth", inline: "center" });
+        updateNavigationButtons();
+      }
+
+      function updateNavigationButtons() {
+          const prevBtn = document.getElementById('prevBtn');
+          const nextBtn = document.getElementById('nextBtn');
+          if (prevBtn && nextBtn) {
+              prevBtn.disabled = currentPhotoIndex === 0;
+              nextBtn.disabled = currentPhotoIndex === currentGroupPhotos.length - 1;
+              const videoVisible = !document.getElementById('modalVideo').classList.contains('hidden');
+              if (currentGroupPhotos.length <= 1 || videoVisible) {
+                  prevBtn.style.display = 'none';
+                  nextBtn.style.display = 'none';
+              } else {
+                  prevBtn.style.display = 'flex';
+                  nextBtn.style.display = 'flex';
+              }
+          }
+          // Update pl-fs-controls prev/next buttons
+          const fsPrev = document.getElementById('plFsPrev');
+          const fsNext = document.getElementById('plFsNext');
+          if (fsPrev) fsPrev.disabled = currentPhotoIndex === 0;
+          if (fsNext) fsNext.disabled = currentPhotoIndex === currentGroupPhotos.length - 1;
       }
 
       function generateThumbnails() {
@@ -2167,9 +2284,14 @@
       }
 
       function closeModal() {
+        const videoElement = document.getElementById("modalVideo");
+        if (videoElement) {
+            videoElement.pause();
+            videoElement.src = "";
+        }
         document.getElementById("photoModal").classList.add("hidden");
-        document.getElementById("modalVideo").pause();
         document.removeEventListener("keydown", handleKeyNav);
+        if (playlistMode) { playlistMode = false; plRender(); }
       }
       function handleKeyNav(e) {
         if (e.key === "ArrowLeft") navigatePhoto(-1);
@@ -2196,6 +2318,303 @@
       });
 
       // (Keep setupFooterToggle and report functions if used in HTML)
+
+      /* ---------- Playlist State ---------- */
+      let playlist = [];
+      let playlistMode = false;
+      const PL_KEY = 'xzArchivePlaylist';
+
+      function plLoad() {
+          try { playlist = JSON.parse(localStorage.getItem(PL_KEY) || '[]'); } catch(e) { playlist = []; }
+          plRender();
+      }
+      function plSave() { localStorage.setItem(PL_KEY, JSON.stringify(playlist)); }
+
+      function plCardAdd(uid) {
+          const item = allData.find(p => p._uid === uid);
+          if (!item) return;
+          const already = playlist.some(p => p._uid === uid);
+          if (already) {
+              playlist = playlist.filter(p => p._uid !== uid);
+              plSave(); plRender(); plShowToast('已从播放列表移除');
+          } else {
+              playlist.push(item);
+              plSave(); plRender(); plShowToast('已加入播放列表');
+          }
+          const btn = document.getElementById('plcadd-' + uid);
+          if (btn) plSyncCardBtn(btn, !already);
+      }
+
+      function plSyncCardBtn(btn, inList) {
+          btn.classList.toggle('pl-added', inList);
+          btn.innerHTML = inList ? '<b>✓</b> Playlist' : '<b>＋</b> Playlist';
+          const card = btn.closest('.timeline-photo');
+          if (card) card.classList.toggle('pl-in-playlist', inList);
+      }
+
+      function plSyncAllCards() {
+          document.querySelectorAll('[id^="plcadd-"]').forEach(btn => {
+              const uid = parseInt(btn.id.replace('plcadd-', ''));
+              plSyncCardBtn(btn, playlist.some(p => p._uid === uid));
+          });
+      }
+
+      function plRender() {
+          const panel   = document.getElementById('playlistPanel');
+          const list    = document.getElementById('plList');
+          const countEl = document.getElementById('plPanelCount');
+          const badge   = document.getElementById('plFloatBadge');
+          if (!countEl) return;
+          countEl.textContent = playlist.length;
+          if (badge) { badge.textContent = playlist.length; badge.style.display = playlist.length ? 'block' : 'none'; }
+          if (!playlist.length) { if (panel) panel.style.display = 'none'; return; }
+          const activeUid = playlistMode ? (currentGroupPhotos[currentPhotoIndex] || {})._uid : null;
+          list.innerHTML = playlist.map((p, i) => `
+              <div class="playlist-item ${p._uid === activeUid ? 'pl-active' : ''}" onclick="plPlayItem(${i})">
+                  <img src="${getThumbUrl(p.url)}" onerror="this.style.display='none'" alt="">
+                  <div class="playlist-item-info">
+                      <div class="playlist-item-title">${p.note || p.date}</div>
+                      <div class="playlist-item-meta">${p.date}${p.duration ? ' · ' + fmtDuration(p.duration) : ''}</div>
+                  </div>
+                  <button class="playlist-remove-btn" onclick="plRemove(${p._uid}, event)">×</button>
+              </div>`).join('');
+          plSyncAllCards();
+      }
+
+      function plRemove(uid, e) {
+          e.stopPropagation();
+          playlist = playlist.filter(p => p._uid !== uid);
+          plSave(); plRender();
+          if (playlistMode) {
+              if (!playlist.length) { closeModal(); return; }
+              currentGroupPhotos = [...playlist];
+              if (currentPhotoIndex >= playlist.length) currentPhotoIndex = playlist.length - 1;
+              updateModalView();
+              updateNavigationButtons();
+          }
+      }
+
+      function plUpdateBadge() {
+          const badge = document.getElementById('plFloatBadge');
+          if (badge) { badge.textContent = playlist.length; badge.style.display = playlist.length ? 'block' : 'none'; }
+      }
+
+      function plTogglePanel() {
+          const panel = document.getElementById('playlistPanel');
+          if (!panel) return;
+          if (panel.style.display === 'none') {
+              panel.style.display = 'flex';
+              setTimeout(plPositionPanel, 0);
+          } else {
+              panel.style.display = 'none';
+          }
+      }
+
+      function plPlayFromStart() {
+          if (!playlist.length) return;
+          const panel = document.getElementById('playlistPanel');
+          if (panel) { panel.style.display = 'flex'; setTimeout(plPositionPanel, 0); }
+          plPlayItem(0);
+      }
+
+      function plPlayItem(index) {
+          playlistMode = true;
+          currentGroupPhotos = [...playlist];
+          currentPhotoIndex = index;
+          document.getElementById('photoModal').classList.remove('hidden');
+          updateModalView();
+          generateThumbnails();
+          updateNavigationButtons();
+          document.addEventListener('keydown', handleKeyNav);
+          plRender();
+      }
+
+      function plClear() {
+          if (!playlist.length) return;
+          if (!confirm('清空播放列表？')) return;
+          playlist = []; plSave(); plRender();
+          if (playlistMode) closeModal();
+      }
+
+      function plModalToggle() {
+          const item = currentGroupPhotos[currentPhotoIndex];
+          if (!item) return;
+          const inList = playlist.some(p => p._uid === item._uid);
+          if (inList) {
+              playlist = playlist.filter(p => p._uid !== item._uid);
+          } else {
+              playlist.push(item);
+          }
+          plSave(); plRender(); plSyncModalAddBtn(item); plSyncAllCards();
+      }
+
+      function plSyncModalAddBtn(item) {
+          const btn = document.getElementById('plModalAddBtn2');
+          if (!btn) return;
+          const inList = playlist.some(p => p._uid === item._uid);
+          btn.classList.toggle('pl-in-list', inList);
+          btn.textContent = inList ? '✓ 在播放列表中 In Playlist' : '+ 加入播放列表 Add to Playlist';
+      }
+
+      function plShowToast(msg) {
+          const t = document.getElementById('plToast');
+          if (!t) return;
+          t.textContent = msg; t.style.opacity = '1';
+          clearTimeout(t._tid);
+          t._tid = setTimeout(() => t.style.opacity = '0', 2000);
+      }
+
+      function plUpdateAddAllBtn() {
+          // Archive doesn't have the add-all button, no-op
+      }
+
+      /* ---------- Floating Button Group ---------- */
+      function setupFloatGroup() {
+          const group  = document.getElementById('floatBtnGroup');
+          const topBtn = document.getElementById('backToTopFloat');
+          if (!group || !topBtn) return;
+          const margin = 10;
+
+          window.addEventListener('scroll', () => {
+              topBtn.classList.toggle('visible', window.scrollY > 300);
+          }, { passive: true });
+
+          const saved = localStorage.getItem('floatGroupTop');
+          if (saved) {
+              try {
+                  const top = parseFloat(saved);
+                  const h = group.offsetHeight || 130;
+                  const safeTop = Math.max(margin, Math.min(top, window.innerHeight - h - margin));
+                  group.style.top = safeTop + 'px';
+                  group.style.bottom = 'auto';
+                  group.style.transform = 'none';
+              } catch(e) { localStorage.removeItem('floatGroupTop'); }
+          }
+
+          let dragging = false, startY, startTop, moved;
+
+          function clamp(v, lo, hi) { return Math.max(lo, Math.min(hi, v)); }
+
+          function convertToPixelTop() {
+              if (!group.style.top || group.style.top === '' || group.style.top === '50%') {
+                  const rect = group.getBoundingClientRect();
+                  group.style.top = rect.top + 'px';
+                  group.style.bottom = 'auto';
+                  group.style.transform = 'none';
+              }
+          }
+
+          group.addEventListener('click', function(e) {
+              if (moved) { e.stopPropagation(); e.preventDefault(); moved = false; }
+          }, true);
+
+          function pointerStart(e) {
+              const p = e.touches ? e.touches[0] : e;
+              convertToPixelTop();
+              startY = p.clientY;
+              startTop = parseFloat(group.style.top);
+              dragging = true; moved = false;
+          }
+
+          function pointerMove(e) {
+              if (!dragging) return;
+              const p = e.touches ? e.touches[0] : e;
+              const dy = p.clientY - startY;
+              if (Math.abs(dy) > 4) moved = true;
+              group.style.top = clamp(startTop + dy, margin, window.innerHeight - group.offsetHeight - margin) + 'px';
+              e.preventDefault();
+          }
+
+          function pointerEnd() {
+              if (!dragging) return;
+              dragging = false;
+              if (moved) {
+                  localStorage.setItem('floatGroupTop', parseFloat(group.style.top));
+                  plPositionPanel();
+              }
+          }
+
+          group.addEventListener('mousedown',  pointerStart);
+          group.addEventListener('touchstart', pointerStart, { passive: false });
+          document.addEventListener('mousemove',  pointerMove);
+          document.addEventListener('touchmove',  pointerMove, { passive: false });
+          document.addEventListener('mouseup',  pointerEnd);
+          document.addEventListener('touchend', pointerEnd);
+      }
+
+      function plPositionPanel() {
+          const group = document.getElementById('floatBtnGroup');
+          const panel = document.getElementById('playlistPanel');
+          if (!panel || panel.style.display === 'none') return;
+          const rect  = group.getBoundingClientRect();
+          const gap   = 10;
+          panel.style.left   = 'auto';
+          panel.style.bottom = 'auto';
+          panel.style.right  = (window.innerWidth - rect.left + gap) + 'px';
+          const panelH = panel.offsetHeight || 420;
+          panel.style.top = Math.max(10, Math.min(rect.top, window.innerHeight - panelH - 10)) + 'px';
+      }
+
+      /* ---------- Custom Video Controls ---------- */
+      function vcFmt(s) {
+          if (isNaN(s)) return '0:00';
+          const m = Math.floor(s / 60);
+          return m + ':' + String(Math.floor(s % 60)).padStart(2, '0');
+      }
+
+      function vcSetup(v) {
+          const seek    = document.getElementById('vcSeek');
+          const playBtn = document.getElementById('vcPlayBtn');
+          const cur     = document.getElementById('vcCurrent');
+          const dur     = document.getElementById('vcDuration');
+          const muteBtn = document.getElementById('vcMuteBtn');
+          if (!seek) return;
+
+          seek.value = 0; seek._seeking = false;
+          cur.textContent = '0:00'; dur.textContent = '0:00';
+          playBtn.textContent = v.paused ? '▶' : '⏸';
+          muteBtn.textContent = v.muted ? '🔇' : '🔊';
+
+          v.ontimeupdate = () => {
+              if (!seek._seeking) {
+                  seek.value = v.currentTime;
+                  cur.textContent = vcFmt(v.currentTime);
+              }
+          };
+          v.onloadedmetadata = () => {
+              seek.max = v.duration;
+              dur.textContent = vcFmt(v.duration);
+          };
+          v.onplay  = () => { playBtn.textContent = '⏸'; };
+          v.onpause = () => { playBtn.textContent = '▶'; };
+          v.onvolumechange = () => { muteBtn.textContent = v.muted ? '🔇' : '🔊'; };
+
+          seek.oninput  = () => { seek._seeking = true; cur.textContent = vcFmt(parseFloat(seek.value)); };
+          seek.onchange = () => { v.currentTime = parseFloat(seek.value); seek._seeking = false; };
+      }
+
+      function vcTogglePlay() {
+          const v = document.getElementById('modalVideo');
+          v.paused ? v.play() : v.pause();
+      }
+
+      function vcToggleMute() {
+          const v = document.getElementById('modalVideo');
+          v.muted = !v.muted;
+      }
+
+      function vcFullscreen() {
+          const v = document.getElementById('modalVideo');
+          const req = v.requestFullscreen || v.webkitRequestFullscreen || v.webkitEnterFullscreen;
+          if (req) req.call(v).catch(() => {});
+      }
+
+      function vcUpdateSeek() {
+          const v = document.getElementById('modalVideo');
+          const seek = document.getElementById('vcSeek');
+          if (seek && v) seek.value = v.currentTime;
+      }
+
     </script>
   </body>
 </html>
