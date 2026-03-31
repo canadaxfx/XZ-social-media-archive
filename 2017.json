@@ -144,7 +144,8 @@
         "category": "attached",
         "groupName": "201712",
         "photoText": "",
-        "duration": 4
+        "duration": 4,
+        "clip": true
     },
     {
         "id": 317,
@@ -481,7 +482,8 @@
         "link": "",
         "note": "",
         "photoText": "",
-        "duration": 4
+        "duration": 4,
+        "clip": true
     },
     {
         "id": 298,
@@ -498,7 +500,8 @@
         "link": "",
         "note": "",
         "photoText": "",
-        "duration": 4
+        "duration": 4,
+        "clip": true
     },
     {
         "id": 292,
@@ -4140,7 +4143,8 @@
         "note": "",
         "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY\n回眸一笑",
-        "postText": "元宵快乐,录完周记去剪了一个瓜兮兮的头发!记 得吃元宵!! 秒拍视频.\n回眸一笑"
+        "postText": "元宵快乐,录完周记去剪了一个瓜兮兮的头发!记 得吃元宵!! 秒拍视频.\n回眸一笑",
+        "clip": true
     },
     {
         "id": 54,
