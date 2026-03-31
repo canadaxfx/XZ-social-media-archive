@@ -2254,8 +2254,9 @@
           if (prevBtn && nextBtn) {
               prevBtn.disabled = currentPhotoIndex === 0;
               nextBtn.disabled = currentPhotoIndex === currentGroupPhotos.length - 1;
-              // Only hide nav buttons for single-item view (not in playlist mode)
-              if (currentGroupPhotos.length <= 1 || (!playlistMode && currentGroupPhotos.length === 1)) {
+              // Hide arrows if only one photo OR if video is visible (video uses pl-fs-controls instead)
+              const videoVisible = !document.getElementById('modalVideo').classList.contains('hidden');
+              if (currentGroupPhotos.length <= 1 || videoVisible) {
                   prevBtn.style.display = 'none';
                   nextBtn.style.display = 'none';
               } else {
