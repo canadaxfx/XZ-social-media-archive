@@ -983,19 +983,21 @@
 @media(max-width:600px){.playlist-panel{width:calc(100vw - 90px)}}
 @media(max-height:500px){.pl-fs-controls{padding:6px 12px}.pl-fs-nav-btn,.vc-btn{width:34px!important;height:34px!important}#vcPlayBtn{width:38px!important;height:38px!important}}
 @media(max-width:600px){.pl-fs-controls{flex-wrap:wrap;padding:8px 12px;gap:8px;justify-content:center}.vc-middle{order:10;flex:0 0 100%!important;min-width:100%!important}}
-.pl-fs-controls{display:none;align-items:center;gap:10px;padding:10px 18px;background:linear-gradient(180deg,#0f172a 0%,#1e293b 100%);flex-shrink:0;border-top:1px solid #334155}
-.pl-fs-nav-btn{background:#334155;color:#e2e8f0;border:1px solid #475569;border-radius:50%;width:48px;height:48px;font-size:26px;cursor:pointer;transition:all .18s;line-height:1;display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;font-weight:700}
-.pl-fs-nav-btn:hover{background:#475569;color:#fff;border-color:#64748b}
+.pl-fs-controls{display:none;align-items:center;gap:8px;padding:8px 16px;background:linear-gradient(to top, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.7) 100%);flex-shrink:0;border-radius:8px}
+.pl-fs-nav-btn{background:rgba(255,255,255,0.2);color:#fff;border:2px solid rgba(255,255,255,0.4);border-radius:8px;width:42px;height:42px;font-size:20px;cursor:pointer;transition:all .15s;line-height:1;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-weight:700;padding:0}
+.pl-fs-nav-btn:hover{background:rgba(255,255,255,0.3);border-color:rgba(255,255,255,0.6)}
 .pl-fs-nav-btn:disabled{opacity:.25;cursor:default}
-.pl-fs-nav-counter{color:#64748b;font-size:12px;min-width:50px;text-align:center}
-.vc-btn{background:#1e293b;color:#cbd5e1;border:1px solid #334155;border-radius:10px;width:40px;height:40px;font-size:16px;cursor:pointer;line-height:1;flex-shrink:0;transition:all .18s;display:inline-flex;align-items:center;justify-content:center}
-.vc-btn:hover{background:#334155;color:#f1f5f9;border-color:#475569}
-#vcPlayBtn{background:#2563eb;border-color:#3b82f6;border-radius:50%;width:48px;height:48px;font-size:19px;color:#fff}
-#vcPlayBtn:hover{background:#1d4ed8;border-color:#2563eb}
-#vcFsBtn{background:#0e7490;border-color:#0891b2;color:#e0f2fe;font-size:18px}
-#vcFsBtn:hover{background:#0891b2;border-color:#06b6d4;color:#fff}
-.vc-seek{flex:1;min-width:0;height:5px;accent-color:#3b82f6;cursor:pointer;border-radius:4px}
-.vc-time{color:#64748b;font-size:12px;white-space:nowrap;flex-shrink:0;font-variant-numeric:tabular-nums}
+.pl-fs-nav-btn svg{width:20px;height:20px;fill:none;stroke:#fff;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+.pl-fs-nav-counter{color:rgba(255,255,255,0.9);font-size:12px;min-width:50px;text-align:center}
+.vc-btn{background:rgba(255,255,255,0.1);color:#fff;border:1px solid rgba(255,255,255,0.2);border-radius:8px;width:38px;height:38px;font-size:16px;cursor:pointer;line-height:1;flex-shrink:0;transition:all .15s;display:flex;align-items:center;justify-content:center;padding:0}
+.vc-btn:hover{background:rgba(255,255,255,0.2);border-color:rgba(255,255,255,0.3)}
+.vc-btn svg{width:20px;height:20px;fill:none;stroke:#fff;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+#vcPlayBtn{background:#fff;border:none;border-radius:50%;width:46px;height:46px;font-size:20px;color:#000;font-weight:700}
+#vcPlayBtn:hover{background:#f0f0f0;transform:scale(1.05)}
+#vcFsBtn{background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2)}
+#vcFsBtn:hover{background:rgba(255,255,255,0.2);border-color:rgba(255,255,255,0.3)}
+.vc-seek{flex:1;min-width:0;height:5px;accent-color:#fff;cursor:pointer;border-radius:3px}
+.vc-time{color:rgba(255,255,255,0.9);font-size:12px;white-space:nowrap;flex-shrink:0;font-variant-numeric:tabular-nums;font-weight:500}
 .vc-middle{flex:1;min-width:0;display:flex;flex-direction:column;gap:5px;justify-content:center}
 </style>
     <div class="container">
@@ -1168,7 +1170,7 @@
 
         <!-- Video control bar (shown when a video is open) -->
         <div class="pl-fs-controls" id="plNavBar">
-            <button class="pl-fs-nav-btn" id="plFsPrev" onclick="navigatePhoto(-1)" title="Previous">‹</button>
+            <button class="pl-fs-nav-btn" id="plFsPrev" onclick="navigatePhoto(-1)" title="Previous"><svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg></button>
             <button class="vc-btn" id="vcPlayBtn" onclick="vcTogglePlay()">▶</button>
             <div class="vc-middle">
                 <input type="range" class="vc-seek" id="vcSeek" value="0" min="0" step="0.1">
@@ -1177,9 +1179,9 @@
                     <span class="vc-time" id="vcDuration">0:00</span>
                 </div>
             </div>
-            <button class="vc-btn" id="vcMuteBtn" onclick="vcToggleMute()" title="Mute">🔊</button>
-            <button class="vc-btn" id="vcFsBtn" onclick="vcFullscreen()" title="Fullscreen">⛶</button>
-            <button class="pl-fs-nav-btn" id="plFsNext" onclick="navigatePhoto(1)" title="Next">›</button>
+            <button class="vc-btn" id="vcMuteBtn" onclick="vcToggleMute()" title="Mute"><svg viewBox="0 0 24 24"><path d="M11 5L6 9H2v6h4l5 4V5z"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg></button>
+            <button class="vc-btn" id="vcFsBtn" onclick="vcFullscreen()" title="Fullscreen"><svg viewBox="0 0 24 24"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/></svg></button>
+            <button class="pl-fs-nav-btn" id="plFsNext" onclick="navigatePhoto(1)" title="Next"><svg viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg></button>
         </div>
 
         <div class="thumbnail-strip">
