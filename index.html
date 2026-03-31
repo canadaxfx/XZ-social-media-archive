@@ -1162,7 +1162,6 @@
             class="modal-photo hidden"
             autoplay
             playsinline
-            loop
           ></video>
           <button class="nav-arrow next" id="nextBtn" onclick="navigatePhoto(1)">›</button>
         </div>
@@ -2165,12 +2164,6 @@
           vid.classList.remove("hidden");
           vid.src = photo.url;
           vid.play().catch(() => {});
-          // Auto-play next video when current one ends (only in playlist mode)
-          vid.onended = () => {
-            if (playlistMode && currentPhotoIndex < currentGroupPhotos.length - 1) {
-              navigatePhoto(1);
-            }
-          };
           vcSetup(vid);
         } else {
           vid.classList.add("hidden");
@@ -2631,6 +2624,11 @@
           v.onplay  = () => { playBtn.textContent = '⏸'; };
           v.onpause = () => { playBtn.textContent = '▶'; };
           v.onvolumechange = () => { muteBtn.textContent = v.muted ? '🔇' : '🔊'; };
+          v.onended = () => {
+              if (playlistMode && currentPhotoIndex < currentGroupPhotos.length - 1) {
+                  navigatePhoto(1);
+              }
+          };
 
           seek.oninput  = () => { seek._seeking = true; cur.textContent = vcFmt(parseFloat(seek.value)); };
           seek.onchange = () => { v.currentTime = parseFloat(seek.value); seek._seeking = false; };
