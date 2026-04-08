@@ -663,6 +663,7 @@
               max-height: 60vh;
               height: 60vh;
             }
+            .badge-youtube { position: absolute; bottom: 0px; left: 10px; background: rgba(204, 0, 0, 0.85); color: #fff; padding: 2px 7px; border-radius: 4px; font-size: 11px; font-weight: 700; z-index: 11; letter-spacing: 0.05em; text-decoration: none; cursor: pointer; }
             .modal-photo {
               max-width: 100%;
               max-height: 100%;
@@ -1167,6 +1168,7 @@
             autoplay
             playsinline
           ></video>
+          <a id="badgeYT" class="badge-youtube hidden" target="_blank" rel="noopener">YouTube ↗</a>
           <button class="nav-arrow next" id="nextBtn" onclick="navigatePhoto(1)">›</button>
         </div>
 
@@ -1524,6 +1526,7 @@
       function isRealVideo(item) {
         return !!(item.url && item.url.match(/\.mp4$/i) && !item.clip);
       }
+      function isVideoEntry(p) { return isVideoEntry(p); }
 
       function isClip(item) {
         return item.clip === true && item.url && item.url.match(/\.mp4$/i);
@@ -1682,9 +1685,9 @@
         // Apply media type filter (only for "attached" tab)
         if (currentTab === "attached" && currentMediaFilter !== "all") {
           if (currentMediaFilter === "photo") {
-            activeData = activeData.filter((item) => !isRealVideo(item) && !isYouTubeUrl(item.url));
+            activeData = activeData.filter((item) => !isVideoEntry(item));
           } else if (currentMediaFilter === "video") {
-            activeData = activeData.filter((item) => isRealVideo(item) || isYouTubeUrl(item.url));
+            activeData = activeData.filter((item) => isVideoEntry(item));
           }
         }
 
@@ -1693,7 +1696,7 @@
         // ---------------------
 
         // Update filtered videos cache for playlist (excludes clips)
-        filteredVideosCache = activeData.filter(p => isRealVideo(p) || isYouTubeUrl(p.url));
+        filteredVideosCache = activeData.filter(p => isVideoEntry(p));
         plUpdateAddAllBtn();
 
         expandedYears.clear();
@@ -1721,7 +1724,7 @@
         const input = document.getElementById("searchInput");
         input.value = "";
         document.getElementById("clearSearchBtn").classList.add("hidden");
-        filteredVideosCache = activeData.filter(p => isRealVideo(p) || isYouTubeUrl(p.url));
+        filteredVideosCache = activeData.filter(p => isVideoEntry(p));
         plUpdateAddAllBtn();
         paginationState = {};
         renderTimeline(activeData);
@@ -1794,9 +1797,9 @@
           // 5. Check Media Type (only for "attached" tab)
           if (currentTab === "attached" && currentMediaFilter !== "all") {
             if (currentMediaFilter === "photo") {
-              if (isRealVideo(item)) return false;
+              if (isVideoEntry(item)) return false;
             } else if (currentMediaFilter === "video") {
-              if (!isRealVideo(item)) return false;
+              if (!isVideoEntry(item)) return false;
             }
           }
 
@@ -1808,7 +1811,7 @@
         currentRenderData = filtered;
 
         // Update filtered videos cache for playlist
-        filteredVideosCache = filtered.filter(p => isRealVideo(p) || isYouTubeUrl(p.url));
+        filteredVideosCache = filtered.filter(p => isVideoEntry(p));
         plUpdateAddAllBtn();
 
         // Update stats and render timeline
@@ -1909,7 +1912,7 @@
               .join("");
             const isExpanded = expandedYears.has(year);
             const photoUids = items.map((item) => item._uid).join(",");
-            const yearVideoCount = items.filter(p => isRealVideo(p) || isYouTubeUrl(p.url)).length;
+            const yearVideoCount = items.filter(p => isVideoEntry(p)).length;
 
             return `
                     <div class="timeline-year ${isExpanded ? "expanded" : ""}" data-year="${year}">
@@ -2001,14 +2004,14 @@
             const motionBadge = (isMotion || isClipMp4) ? '<span class="motion-badge">' + motionExt + '</span>' : '';
 
             const { cssClass, thumbLabel } = getSourceMeta(item.source);
-            const durBadge = ((isVideo || isClipMp4 || isYouTubeUrl(item.url)) && item.duration)
+            const durBadge = ((isVideoEntry(item) || isClipMp4) && item.duration)
               ? `<div class="dur-badge">${fmtDuration(item.duration)}</div>`
               : '';
 
             const inPlaylist = playlist.some(p => p._uid === item._uid);
             return `
     <div class="timeline-photo${inPlaylist ? ' pl-in-playlist' : ''}" id="plcard-${item._uid}" onclick="openModal(${item._uid})">
-        ${(isVideo || isYouTubeUrl(item.url)) ? '<div class="video-overlay-icon">▶</div>' : ""}
+        ${isVideoEntry(item) ? '<div class="video-overlay-icon">▶</div>' : ""}
         ${durBadge}
         ${motionBadge}
         ${isRealVideo(item) ? `<button class="pl-card-add${inPlaylist ? ' pl-added' : ''}" id="plcadd-${item._uid}" onclick="event.stopPropagation();plCardAdd(${item._uid})"><b>${inPlaylist ? '✓' : '＋'}</b> Playlist</button>` : ''}
@@ -2098,7 +2101,7 @@
           if (!term) {
             clearBtn.classList.add("hidden");
             currentRenderData = [...activeData];
-            filteredVideosCache = activeData.filter(p => isRealVideo(p));
+            filteredVideosCache = activeData.filter(p => isVideoEntry(p));
             plUpdateAddAllBtn();
             renderTimeline(activeData);
             return;
@@ -2122,7 +2125,7 @@
           );
 
           currentRenderData = filtered;
-          filteredVideosCache = filtered.filter(p => isRealVideo(p));
+          filteredVideosCache = filtered.filter(p => isVideoEntry(p));
           plUpdateAddAllBtn();
 
           renderTimeline(filtered);
@@ -2229,6 +2232,8 @@
         badgeEl.innerHTML = badgeLabel;
 
         const _isVid = photo.url && photo.url.match(/\.mp4$/i);
+        const badgeYT = document.getElementById('badgeYT');
+        if (badgeYT) { badgeYT.classList.toggle('hidden', !isYT); if (isYT) badgeYT.href = photo.url; }
         const _dlBtn = document.getElementById("downloadBtn");
         if (isYT) {
           if (photo.download_url) {
