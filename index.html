@@ -306,7 +306,7 @@
             .timeline-year-header {
               background: linear-gradient(45deg, #1F2937, #2D3748);
               color: white;
-              padding: 15px 20px;
+              padding: 15px 20px 28px;
               font-size: 16px;
               font-weight: bold;
               cursor: pointer;
@@ -314,6 +314,8 @@
               user-select: none;
               position: relative;
             }
+            .yr-pl-btn{background:none;border:none;color:rgba(255,255,255,0.75);font-size:10px;cursor:pointer;padding:6px 0 0;font-style:italic;display:block;width:100%;text-align:left}
+            .yr-pl-btn:hover{color:#fff;text-decoration:underline}
             .timeline-year-header::after {
               content: "Click thumbnails for high-res • 点击缩略图打开高清";
               position: absolute;
@@ -1701,7 +1703,6 @@
           const years = [...new Set(activeData.map((d) => d.year))]
             .sort()
             .reverse();
-          if (years.length) toggleYear(years[0]);
 
           if (
             elFilterYear.value !== "all" ||
@@ -1905,6 +1906,7 @@
               .join("");
             const isExpanded = expandedYears.has(year);
             const photoUids = items.map((item) => item._uid).join(",");
+            const yearVideoCount = items.filter(p => isRealVideo(p)).length;
 
             return `
                     <div class="timeline-year ${isExpanded ? "expanded" : ""}" data-year="${year}">
@@ -1918,6 +1920,7 @@
                                     </div>
                                 </div>
                                 <div class="year-preview">${previewHtml}</div>
+                                ${yearVideoCount ? `<button class="yr-pl-btn" onclick="event.stopPropagation();addYearToPlaylist('${year}')">＋ Add ${yearVideoCount} video${yearVideoCount > 1 ? 's' : ''} to playlist</button>` : ''}
                             </div>
                         </div>
                         <div class="timeline-year-content" data-photo-uids="${photoUids}">
@@ -2499,15 +2502,18 @@
       }
 
       function addAllFilteredVideos() {
-          const MAX_VIDEOS = 50;
-          if (filteredVideosCache.length > MAX_VIDEOS) {
-              plShowToast(`最多只能添加 ${MAX_VIDEOS} 个视频到播放列表 / Max ${MAX_VIDEOS} videos allowed`);
-              return;
-          }
           let added = 0;
           filteredVideosCache.forEach(p => { if (!playlist.some(x => x._uid === p._uid)) { playlist.push(p); added++; } });
           plSave(); plRender();
           plShowToast(added ? `已加入 ${added} 个视频` : '视频已全在播放列表中');
+      }
+
+      function addYearToPlaylist(year) {
+          const videos = filteredVideosCache.filter(p => String(p.year) === String(year));
+          let added = 0;
+          videos.forEach(p => { if (!playlist.some(x => x._uid === p._uid)) { playlist.push(p); added++; } });
+          plSave(); plRender();
+          plShowToast(added ? `已加入 ${year} 年 ${added} 个视频` : `${year} 年视频已全在播放列表中`);
       }
 
       /* ---------- Floating Button Group ---------- */
