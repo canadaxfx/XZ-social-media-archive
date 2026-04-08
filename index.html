@@ -1518,6 +1518,9 @@
         }
       }
 
+      function isYouTubeUrl(url) { return /youtube\.com\/watch|youtu\.be\//.test(url); }
+      function getYouTubeId(url) { const m = url.match(/[?&]v=([^&]+)/)||url.match(/youtu\.be\/([^?/]+)/); return m?m[1]:null; }
+
       function isRealVideo(item) {
         return !!(item.url && item.url.match(/\.mp4$/i) && !item.clip);
       }
@@ -1679,9 +1682,9 @@
         // Apply media type filter (only for "attached" tab)
         if (currentTab === "attached" && currentMediaFilter !== "all") {
           if (currentMediaFilter === "photo") {
-            activeData = activeData.filter((item) => !isRealVideo(item));
+            activeData = activeData.filter((item) => !isRealVideo(item) && !isYouTubeUrl(item.url));
           } else if (currentMediaFilter === "video") {
-            activeData = activeData.filter((item) => isRealVideo(item));
+            activeData = activeData.filter((item) => isRealVideo(item) || isYouTubeUrl(item.url));
           }
         }
 
@@ -1690,7 +1693,7 @@
         // ---------------------
 
         // Update filtered videos cache for playlist (excludes clips)
-        filteredVideosCache = activeData.filter(p => isRealVideo(p));
+        filteredVideosCache = activeData.filter(p => isRealVideo(p) || isYouTubeUrl(p.url));
         plUpdateAddAllBtn();
 
         expandedYears.clear();
@@ -1718,7 +1721,7 @@
         const input = document.getElementById("searchInput");
         input.value = "";
         document.getElementById("clearSearchBtn").classList.add("hidden");
-        filteredVideosCache = activeData.filter(p => isRealVideo(p));
+        filteredVideosCache = activeData.filter(p => isRealVideo(p) || isYouTubeUrl(p.url));
         plUpdateAddAllBtn();
         paginationState = {};
         renderTimeline(activeData);
@@ -1805,7 +1808,7 @@
         currentRenderData = filtered;
 
         // Update filtered videos cache for playlist
-        filteredVideosCache = filtered.filter(p => isRealVideo(p));
+        filteredVideosCache = filtered.filter(p => isRealVideo(p) || isYouTubeUrl(p.url));
         plUpdateAddAllBtn();
 
         // Update stats and render timeline
@@ -1906,7 +1909,7 @@
               .join("");
             const isExpanded = expandedYears.has(year);
             const photoUids = items.map((item) => item._uid).join(",");
-            const yearVideoCount = items.filter(p => isRealVideo(p)).length;
+            const yearVideoCount = items.filter(p => isRealVideo(p) || isYouTubeUrl(p.url)).length;
 
             return `
                     <div class="timeline-year ${isExpanded ? "expanded" : ""}" data-year="${year}">
@@ -1998,14 +2001,14 @@
             const motionBadge = (isMotion || isClipMp4) ? '<span class="motion-badge">' + motionExt + '</span>' : '';
 
             const { cssClass, thumbLabel } = getSourceMeta(item.source);
-            const durBadge = ((isVideo || isClipMp4) && item.duration)
+            const durBadge = ((isVideo || isClipMp4 || isYouTubeUrl(item.url)) && item.duration)
               ? `<div class="dur-badge">${fmtDuration(item.duration)}</div>`
               : '';
 
             const inPlaylist = playlist.some(p => p._uid === item._uid);
             return `
     <div class="timeline-photo${inPlaylist ? ' pl-in-playlist' : ''}" id="plcard-${item._uid}" onclick="openModal(${item._uid})">
-        ${isVideo ? '<div class="video-overlay-icon">▶</div>' : ""}
+        ${(isVideo || isYouTubeUrl(item.url)) ? '<div class="video-overlay-icon">▶</div>' : ""}
         ${durBadge}
         ${motionBadge}
         ${isRealVideo(item) ? `<button class="pl-card-add${inPlaylist ? ' pl-added' : ''}" id="plcadd-${item._uid}" onclick="event.stopPropagation();plCardAdd(${item._uid})"><b>${inPlaylist ? '✓' : '＋'}</b> Playlist</button>` : ''}
@@ -2046,6 +2049,10 @@
           .scrollIntoView({ behavior: "smooth", block: "start" });
       }
       function getThumbUrl(fullUrl) {
+        if (isYouTubeUrl(fullUrl)) {
+          const ytId = getYouTubeId(fullUrl);
+          return ytId ? `https://img.youtube.com/vi/${ytId}/mqdefault.jpg` : fullUrl;
+        }
         if (fullUrl.includes("/full/"))
           return fullUrl
             .replace("/full/", "/thumbs/")
@@ -2167,7 +2174,27 @@
         const img = document.getElementById("modalPhoto");
         const vid = document.getElementById("modalVideo");
         const isVideo = photo.url.match(/\.(mp4|mov)$/i);
-        if (isVideo) {
+        const isYT = isYouTubeUrl(photo.url);
+
+        let ytFrame = document.getElementById('modalYouTube');
+        if (!isYT && ytFrame) { ytFrame.src = ''; ytFrame.classList.add('hidden'); }
+
+        if (isYT) {
+          img.classList.add("hidden");
+          vid.classList.add("hidden");
+          if (vid) { vid.pause(); vid.src = ''; }
+          if (!ytFrame) {
+            ytFrame = document.createElement('iframe');
+            ytFrame.id = 'modalYouTube';
+            ytFrame.className = 'modal-photo';
+            ytFrame.style.cssText = 'border:0;background:#000;';
+            ytFrame.setAttribute('allow', 'autoplay; fullscreen; picture-in-picture');
+            ytFrame.setAttribute('allowfullscreen', '');
+            vid.parentNode.insertBefore(ytFrame, vid.nextSibling);
+          }
+          ytFrame.classList.remove('hidden');
+          ytFrame.src = `https://www.youtube.com/embed/${getYouTubeId(photo.url)}?autoplay=1&rel=0`;
+        } else if (isVideo) {
           img.classList.add("hidden");
           vid.classList.remove("hidden");
           vid.src = photo.url;
@@ -2181,7 +2208,7 @@
         }
         // Show/hide video control bar and playlist modal button
         const plNav = document.getElementById('plNavBar');
-        if (plNav) plNav.style.display = isVideo ? 'flex' : 'none';
+        if (plNav) plNav.style.display = (isVideo && !isYT) ? 'flex' : 'none';
         const plModalBtn = document.getElementById('plModalAddBtn2');
         if (plModalBtn) {
             const isRealVid = isRealVideo(photo);
@@ -2202,9 +2229,21 @@
         badgeEl.innerHTML = badgeLabel;
 
         const _isVid = photo.url && photo.url.match(/\.mp4$/i);
-        document.getElementById("downloadBtn").href =
-            (_isVid && photo.url_4k) ? photo.url_4k :
-            (_isVid && photo.url_hd) ? photo.url_hd : photo.url;
+        const _dlBtn = document.getElementById("downloadBtn");
+        if (isYT) {
+          if (photo.download_url) {
+            _dlBtn.href = photo.download_url;
+            _dlBtn.setAttribute('download', '');
+            _dlBtn.style.display = '';
+          } else {
+            _dlBtn.style.display = 'none';
+          }
+        } else {
+          _dlBtn.style.display = '';
+          _dlBtn.href = (_isVid && photo.url_4k) ? photo.url_4k :
+                        (_isVid && photo.url_hd) ? photo.url_hd : photo.url;
+          _dlBtn.setAttribute('download', '');
+        }
         const srcBtn = document.getElementById("sourceLinkBtn");
 
         // Use 'link' OR 'weibo' field
@@ -2314,6 +2353,8 @@
             videoElement.pause();
             videoElement.src = "";
         }
+        const ytFrame = document.getElementById('modalYouTube');
+        if (ytFrame) { ytFrame.src = ''; ytFrame.classList.add('hidden'); }
         document.getElementById("photoModal").classList.add("hidden");
         document.removeEventListener("keydown", handleKeyNav);
         if (playlistMode) { playlistMode = false; plRender(); }
