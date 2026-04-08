@@ -1526,7 +1526,7 @@
       function isRealVideo(item) {
         return !!(item.url && item.url.match(/\.mp4$/i) && !item.clip);
       }
-      function isVideoEntry(p) { return isVideoEntry(p); }
+      function isVideoEntry(p) { return isRealVideo(p) || isYouTubeUrl(p.url); }
 
       function isClip(item) {
         return item.clip === true && item.url && item.url.match(/\.mp4$/i);
