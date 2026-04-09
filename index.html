@@ -1535,7 +1535,8 @@
               btn.onclick = e => { e.preventDefault(); dlShowPrompt(url); };
               const sm = btn.querySelector('small'); if (sm) sm.textContent = '🔒 联系管理员';
           } else {
-              btn.href = url; btn.setAttribute('download', ''); btn.onclick = null;
+              const dlHref = dlIsLocked(url) ? url + '?dl=1' : url;
+              btn.href = dlHref; btn.setAttribute('download', ''); btn.onclick = null;
               const sm = btn.querySelector('small'); if (sm) sm.textContent = '下载高清';
           }
       }
