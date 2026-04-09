@@ -1527,7 +1527,7 @@
       // --- Download Lock ---
       const DL_HASH = '37f46387b605b43821fabfb33842d751f15c93781781abd83a8e5ebb7a2b2297';
       const DL_KEY  = 'xzDlUnlocked';
-      function dlIsUnlocked() { return localStorage.getItem(DL_KEY) === '1'; }
+      function dlIsUnlocked() { const t = localStorage.getItem(DL_KEY); return !!t && (Date.now() - parseInt(t)) < 2 * 60 * 1000; }
       function dlIsLocked(url) { return !!url && url.includes('canadaxfx.synology.me'); }
       function dlSetBtn(btn, url) {
           if (dlIsLocked(url) && !dlIsUnlocked()) {
@@ -1553,7 +1553,7 @@
           const pw = document.getElementById('dlPwInput').value;
           const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(pw));
           const hex = Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2,'0')).join('');
-          if (hex === DL_HASH) { localStorage.setItem(DL_KEY, '1'); dlClose(); updateModalContent(); }
+          if (hex === DL_HASH) { localStorage.setItem(DL_KEY, Date.now().toString()); dlClose(); updateModalContent(); }
           else { document.getElementById('dlPwError').textContent = '密码错误，请联系管理员获取密码'; }
       }
       document.addEventListener('keydown', e => {
