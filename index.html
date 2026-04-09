@@ -1221,9 +1221,9 @@
               🔧 Report an Issue
             </h3>
             <p style="color: #666; font-size: 14px">
-              Help us by reporting bugs or broken links<br />
+              Help us by reporting bugs or connect with admin<br />
               <span style="font-size: 12px; color: #888"
-                >帮助我们改进网站，报告错误或失效链接</span
+                >报告错误或联系管理员</span
               >
             </p>
           </div>
@@ -1482,7 +1482,7 @@
         >
           🔧 Report Broken Links or Bugs<br />
           <small style="font-size: 11px; opacity: 0.8; font-weight: normal"
-            >报告错误链接或功能问题</small
+            >报告错误或联系管理员</small
           >
         </a>
       </div>
@@ -1523,6 +1523,41 @@
       }
 
       function isYouTubeUrl(url) { return /youtube\.com\/watch|youtu\.be\//.test(url); }
+
+      // --- Download Lock ---
+      const DL_HASH = '37f46387b605b43821fabfb33842d751f15c93781781abd83a8e5ebb7a2b2297';
+      const DL_KEY  = 'xzDlUnlocked';
+      function dlIsUnlocked() { return localStorage.getItem(DL_KEY) === '1'; }
+      function dlIsLocked(url) { return !!url && url.includes('canadaxfx.synology.me'); }
+      function dlSetBtn(btn, url) {
+          if (dlIsLocked(url) && !dlIsUnlocked()) {
+              btn.href = '#'; btn.removeAttribute('download');
+              btn.onclick = e => { e.preventDefault(); dlShowPrompt(url); };
+              const sm = btn.querySelector('small'); if (sm) sm.textContent = '🔒 联系管理员';
+          } else {
+              btn.href = url; btn.setAttribute('download', ''); btn.onclick = null;
+              const sm = btn.querySelector('small'); if (sm) sm.textContent = '下载高清';
+          }
+      }
+      let _dlPendingUrl = null;
+      function dlShowPrompt(url) {
+          _dlPendingUrl = url;
+          document.getElementById('dlPwInput').value = '';
+          document.getElementById('dlPwError').textContent = '';
+          document.getElementById('dlUnlockOverlay').style.display = 'flex';
+          setTimeout(() => document.getElementById('dlPwInput').focus(), 100);
+      }
+      function dlClose() { document.getElementById('dlUnlockOverlay').style.display = 'none'; _dlPendingUrl = null; }
+      async function dlConfirm() {
+          const pw = document.getElementById('dlPwInput').value;
+          const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(pw));
+          const hex = Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2,'0')).join('');
+          if (hex === DL_HASH) { localStorage.setItem(DL_KEY, '1'); dlClose(); updateModalContent(); }
+          else { document.getElementById('dlPwError').textContent = '密码错误，请联系管理员获取密码'; }
+      }
+      document.addEventListener('keydown', e => {
+          if (e.key === 'Enter' && document.getElementById('dlUnlockOverlay')?.style.display !== 'none') dlConfirm();
+      });
       function getYouTubeId(url) { const m = url.match(/[?&]v=([^&]+)/)||url.match(/youtu\.be\/([^?/]+)/); return m?m[1]:null; }
 
       function isRealVideo(item) {
@@ -2243,17 +2278,16 @@
         const _dlBtn = document.getElementById("downloadBtn");
         if (isYT) {
           if (photo.download_url) {
-            _dlBtn.href = photo.download_url;
-            _dlBtn.setAttribute('download', '');
+            dlSetBtn(_dlBtn, photo.download_url);
             _dlBtn.style.display = '';
           } else {
             _dlBtn.style.display = 'none';
           }
         } else {
           _dlBtn.style.display = '';
-          _dlBtn.href = (_isVid && photo.url_4k) ? photo.url_4k :
-                        (_isVid && photo.url_hd) ? photo.url_hd : photo.url;
-          _dlBtn.setAttribute('download', '');
+          const _dlUrl = (_isVid && photo.url_4k) ? photo.url_4k :
+                         (_isVid && photo.url_hd) ? photo.url_hd : photo.url;
+          dlSetBtn(_dlBtn, _dlUrl);
         }
         const srcBtn = document.getElementById("sourceLinkBtn");
 
@@ -2725,5 +2759,20 @@
       }
 
     </script>
+<!-- DL UNLOCK PROMPT -->
+<div id="dlUnlockOverlay" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.65);z-index:99999;align-items:center;justify-content:center;">
+  <div style="background:white;border-radius:14px;padding:28px 24px;max-width:340px;width:90%;text-align:center;box-shadow:0 8px 32px rgba(0,0,0,0.25);">
+    <div style="font-size:36px;margin-bottom:8px;">🔒</div>
+    <div style="font-weight:700;font-size:16px;margin-bottom:6px;">受保护内容</div>
+    <div style="font-size:13px;color:#6b7280;margin-bottom:18px;">请联系管理员获取下载密码</div>
+    <input type="password" id="dlPwInput" placeholder="输入密码" onkeydown="if(event.key==='Enter')dlConfirm()"
+      style="width:100%;padding:9px 12px;border:1px solid #d1d5db;border-radius:7px;font-size:14px;margin-bottom:8px;box-sizing:border-box;outline:none;" />
+    <div id="dlPwError" style="color:#dc2626;font-size:12px;min-height:18px;margin-bottom:10px;"></div>
+    <div style="display:flex;gap:10px;justify-content:center;">
+      <button onclick="dlConfirm()" style="background:#6366f1;color:white;border:none;padding:9px 22px;border-radius:7px;cursor:pointer;font-weight:600;font-size:14px;">确认</button>
+      <button onclick="dlClose()" style="background:#f3f4f6;color:#374151;border:none;padding:9px 22px;border-radius:7px;cursor:pointer;font-size:14px;">取消</button>
+    </div>
+  </div>
+</div>
   </body>
 </html>
