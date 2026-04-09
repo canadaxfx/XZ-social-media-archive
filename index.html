@@ -375,7 +375,7 @@
               transition: all 0.3s ease;
             }
             .timeline-year-count {
-              font-size: 14px;
+              font-size: 11px;
               opacity: 0.9;
               background: rgba(255, 255, 255, 0.2);
               padding: 5px 12px;
@@ -461,6 +461,22 @@
         font-size: 12px;
         text-align: center;
         line-height: 24px;
+        z-index: 5;
+        pointer-events: none;
+      }
+      .yt-overlay-icon {
+        position: absolute;
+        top: 4px;
+        right: 4px;
+        width: 28px;
+        height: 18px;
+        background: #ff0000;
+        border-radius: 4px;
+        color: white;
+        font-size: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         z-index: 5;
         pointer-events: none;
       }
@@ -1951,6 +1967,14 @@
             const isExpanded = expandedYears.has(year);
             const photoUids = items.map((item) => item._uid).join(",");
             const yearVideoCount = items.filter(p => isVideoEntry(p)).length;
+            const ytCount = items.filter(p => isYouTubeUrl(p.url)).length;
+            const realVideoCount = items.filter(p => isRealVideo(p)).length;
+            const photoCount = count - ytCount - realVideoCount;
+            const countParts = [];
+            if (photoCount > 0) countParts.push(`${photoCount} 📷`);
+            if (realVideoCount > 0) countParts.push(`${realVideoCount} 🎬`);
+            if (ytCount > 0) countParts.push(`${ytCount} <span style="display:inline-flex;align-items:center;background:#ff0000;color:white;border-radius:3px;padding:0 4px;font-size:9px;font-weight:700;vertical-align:middle;">▶</span>`);
+            const countLabel = countParts.join(' ') || '0 items';
 
             return `
                     <div class="timeline-year ${isExpanded ? "expanded" : ""}" data-year="${year}">
@@ -1959,7 +1983,7 @@
                                 <div class="year-header-top">
                                     <span class="year-title">${year}<span class="gallery-id-badge">Archive</span></span>
                                     <div style="display:flex; align-items:center; gap:10px;">
-                                        <span class="timeline-year-count">${count} items</span>
+                                        <span class="timeline-year-count">${countLabel}</span>
                                         <span class="expand-icon">▼</span>
                                     </div>
                                 </div>
@@ -2049,7 +2073,7 @@
             const inPlaylist = playlist.some(p => p._uid === item._uid);
             return `
     <div class="timeline-photo${inPlaylist ? ' pl-in-playlist' : ''}" id="plcard-${item._uid}" onclick="openModal(${item._uid})">
-        ${isVideoEntry(item) ? '<div class="video-overlay-icon">▶</div>' : ""}
+        ${isYouTubeUrl(item.url) ? '<div class="yt-overlay-icon">▶</div>' : isVideoEntry(item) ? '<div class="video-overlay-icon">▶</div>' : ""}
         ${durBadge}
         ${motionBadge}
         ${isRealVideo(item) ? `<button class="pl-card-add${inPlaylist ? ' pl-added' : ''}" id="plcadd-${item._uid}" onclick="event.stopPropagation();plCardAdd(${item._uid})"><b>${inPlaylist ? '✓' : '＋'}</b> Playlist</button>` : ''}
