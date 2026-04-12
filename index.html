@@ -2183,6 +2183,7 @@
               item.date.includes(term) ||
               (item.note && item.note.toLowerCase().includes(term)) ||
               (item.photoText && item.photoText.toLowerCase().includes(term)) ||
+              (Array.isArray(item.englishTags) && item.englishTags.some(t => t.toLowerCase().includes(term))) ||
               (item.postText && item.postText.toLowerCase().includes(term)),
           );
 
