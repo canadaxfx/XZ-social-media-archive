@@ -8,6 +8,10 @@
       name="copyright"
       content="Content curation and organization © 2025 CanadaXFX. Unauthorized AI training prohibited."
     />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,700;1,600;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
     <title>Xiao Zhan Social Media Archive | 肖战社交媒体存档</title>
     <script
       async
@@ -31,8 +35,12 @@
               box-sizing: border-box;
             }
             body {
-              font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-              background: linear-gradient(135deg, #1F2937 0%, #2D3748 100%);
+              font-family: 'Inter', 'Noto Sans SC', "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+              font-feature-settings: 'cv02','cv03','cv04','cv11';
+              background:
+                radial-gradient(ellipse 80% 45% at 50% 0%, rgba(196, 18, 48, 0.18) 0%, transparent 100%),
+                radial-gradient(ellipse 110% 90% at 50% 50%, transparent 38%, rgba(0, 0, 0, 0.5) 100%),
+                linear-gradient(160deg, #150205 0%, #200407 100%);
               min-height: 100vh;
               color: #333;
             }
@@ -43,53 +51,150 @@
             }
             header {
               text-align: center;
-              padding: 16px 0;
+              padding: 12px 0 8px;
               color: white;
             }
+            header::after {
+              content: '';
+              display: block;
+              height: 2px;
+              background: linear-gradient(90deg, transparent 0%, rgba(220, 170, 20, 0.6) 15%, rgba(220, 170, 20, 1) 50%, rgba(220, 170, 20, 0.6) 85%, transparent 100%);
+              margin-top: 10px;
+            }
             h1 {
-              font-size: 1.3rem;
-              margin-bottom: 10px;
-              text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+              font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+              font-size: clamp(1.4rem, 4vw, 2.2rem);
+              font-weight: 400;
+              line-height: 1.35;
+              margin-bottom: 4px;
+              color: white;
+              text-shadow: 1px 2px 10px rgba(0, 0, 0, 0.3);
+            }
+            .title-highlight {
+              font-style: italic;
+              font-weight: 700;
+              color: #A07800;
+            }
+            .title-zh {
+              font-size: 0.72em;
+              font-weight: 700;
+              font-style: normal;
+              color: rgba(255, 255, 255, 0.9);
             }
             .subtitle {
               font-size: 0.8rem;
               opacity: 1;
             }
-
-            .nav-segmented {
+            .header-links-section {
               display: flex;
+              flex-direction: column;
+              align-items: center;
+              gap: 8px;
+              margin: 6px 0 0;
+            }
+            .header-links-desc {
+              font-size: 11.5px;
+              color: rgba(255, 255, 255, 0.55);
+              font-style: italic;
+              letter-spacing: 0.01em;
+              line-height: 1.6;
+              text-align: center;
+            }
+            .header-links-desc .desc-en,
+            .header-links-desc .desc-zh {
+              display: block;
+            }
+            .header-links-desc a {
+              color: rgba(255, 255, 255, 0.55);
+              text-decoration: underline;
+            }
+            .header-links-row {
+              display: flex;
+              gap: 10px;
+              flex-wrap: wrap;
               justify-content: center;
-              max-width: 500px;
-              margin: 0 auto 0;
-              background: rgba(255, 255, 255, 0.25);
-              border-radius: 25px;
-              padding: 4px;
-              border: 1px solid rgba(255, 255, 255, 0.3);
-              backdrop-filter: blur(10px);
+            }
+            .header-link-card {
+              display: flex;
+              align-items: center;
+              gap: 10px;
+              padding: 7px 14px 7px 12px;
+              border-radius: 8px;
+              background: rgba(255, 255, 255, 0.05);
+              border: 1px solid rgba(255, 255, 255, 0.1);
+              border-left: 3px solid rgba(220, 170, 20, 0.75);
+              text-decoration: none;
+              transition: background 0.2s ease, border-color 0.2s ease;
+            }
+            .header-link-card:hover {
+              background: rgba(255, 255, 255, 0.09);
+              border-left-color: rgba(220, 170, 20, 1);
+            }
+            .header-link-card-text {
+              display: flex;
+              flex-direction: column;
+              line-height: 1.35;
+            }
+            .card-en {
+              font-size: 12px;
+              font-weight: 600;
+              color: rgba(255, 255, 255, 0.9);
+            }
+            .card-zh {
+              font-size: 10px;
+              color: rgba(220, 170, 20, 0.8);
+            }
+            .card-arrow {
+              font-size: 13px;
+              color: rgba(220, 170, 20, 0.6);
+              flex-shrink: 0;
+            }
+            @media (max-width: 768px) {
+              .header-links-row { gap: 8px; }
+              .header-link-card { padding: 6px 11px 6px 10px; }
+              .card-en { font-size: 11px; }
             }
 
+            .nav-segmented {
+              display: inline-flex;
+              justify-content: center;
+              gap: 4px;
+              margin: 0 auto;
+              background: #f1f5f9;
+              border: 1px solid #e2e8f0;
+              border-radius: 12px;
+              padding: 4px;
+              backdrop-filter: none;
+            }
+            .nav-segmented-wrap { display: flex; justify-content: center; margin-bottom: 10px; }
+
             .nav-segmented .segment-btn {
-              padding: 10px 20px !important;
+              padding: 8px 18px !important;
               border: none !important;
-              background: #e8eaed !important;
-              color: #444 !important;
+              background: transparent !important;
+              color: #475569 !important;
               font-size: 13px;
-              font-weight: 700 !important;
+              font-weight: 600 !important;
               cursor: pointer;
-              transition: all 0.25s ease;
-              border-radius: 20px;
+              transition: background 0.18s ease, color 0.18s ease, box-shadow 0.18s ease;
+              border-radius: 9px;
               white-space: nowrap;
               line-height: 1.2;
+              font-family: inherit;
             }
 
             .nav-segmented .segment-btn:hover {
-              background: #dadce0 !important;
+              background: rgba(160, 120, 0, 0.1) !important;
+              color: #A07800 !important;
             }
 
             .nav-segmented .segment-btn.active {
-              background: linear-gradient(45deg, #5E9FD8, #4A8BC8) !important;
+              background: linear-gradient(135deg, #E8C040 0%, #B89010 50%, #DDB820 100%) !important;
               color: #fff !important;
-              box-shadow: 0 2px 8px rgba(94, 159, 216, 0.4);
+              box-shadow: 0 1px 3px rgba(160, 120, 0, 0.4), 0 1px 2px rgba(0, 0, 0, 0.06);
+            }
+            .nav-segmented .segment-btn.active:hover {
+              background: linear-gradient(135deg, #D4A820 0%, #8A6800 50%, #C0980C 100%) !important;
             }
 
             .nav-segmented .segment-btn span {
@@ -97,11 +202,15 @@
               font-size: 11px;
               font-weight: 500;
               margin-top: 2px;
-              color: #666;
+              color: #94a3b8;
+            }
+
+            .nav-segmented .segment-btn:hover span {
+              color: #2c5f8a;
             }
 
             .nav-segmented .segment-btn.active span {
-              color: rgba(255, 255, 255, 0.95);
+              color: rgba(255, 255, 255, 0.85);
             }
 
       /* --- DATE FILTER STYLES --- */
@@ -119,11 +228,15 @@
         z-index: 2;
         display: flex;
         gap: 8px;
-        background: rgba(255, 255, 255, 0.92);
+        background: #fdf5f0;
         padding: 5px;
         border-radius: 25px;
-        border: 1px solid #e0e0e0;
+        border: 1.5px solid rgba(160, 120, 0, 0.35);
         box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        transition: border-color 0.2s ease;
+      }
+      .date-select-wrapper:focus-within {
+        border-color: rgba(160, 120, 0, 0.7);
       }
 
       .filter-hint {
@@ -204,10 +317,10 @@
 
             /* Content Sections */
             .content-section {
-              background: rgba(255, 255, 255, 0.95);
+              background: rgba(253, 245, 240, 0.98);
               border-radius: 20px;
               padding: 15px;
-              box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+              box-shadow: 0 1px 2px rgba(48, 8, 16, 0.1), 0 12px 32px -8px rgba(48, 8, 16, 0.28);
               backdrop-filter: blur(10px);
             }
             .hidden {
@@ -218,45 +331,60 @@
             .search-bar {
               width: 100%;
               max-width: 400px;
-              padding: 10px;
-              border: 2px solid #e0e0e0;
-              border-radius: 25px;
+              padding: 13px 18px 13px 44px;
+              border: 1px solid #e2e8f0;
+              border-radius: 14px;
               font-size: 14px;
               margin: 15px auto 10px;
               display: block;
+              background-color: #f8fafc;
+              background-image: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 24 24' fill='none' stroke='%2394a3b8' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'/%3E%3Cpath d='m21 21-4.3-4.3'/%3E%3C/svg%3E");
+              background-repeat: no-repeat;
+              background-position: 16px center;
+              color: #0f172a;
+              transition: border-color 0.18s ease, background-color 0.18s ease, box-shadow 0.18s ease;
             }
+            .search-bar::placeholder { color: #94a3b8; }
+            .search-bar:hover { background-color: #ffffff; }
 
             /* Media Filter Tabs (for Attached Media) */
             .media-filter-tabs {
               display: flex;
               justify-content: center;
-              gap: 8px;
-              margin: 10px 0 15px;
+              gap: 4px;
+              margin: 10px auto 15px;
+              padding: 4px;
+              background: #ede7d6;
+              border: 1px solid #d8ccb8;
+              border-radius: 12px;
+              width: fit-content;
+              max-width: 100%;
             }
             .media-tab {
-              background: #f0f4f8;
-              color: #111;
-              border: 1px solid #d0d8e0;
-              border-radius: 20px;
+              background: transparent;
+              color: #5a4f3d;
+              border: none;
+              border-radius: 9px;
               padding: 6px 16px;
               font-size: 13px;
+              font-weight: 500;
               cursor: pointer;
-              transition: all 0.2s;
+              transition: all 0.18s ease;
+              font-family: inherit;
             }
-            .media-tab:hover {
-              background: #e0eaf4;
-              color: #2c5f8a;
-              border-color: #5E9FD8;
-            }
+            .media-tab:hover { background: rgba(244, 63, 94, 0.1); color: #f43f5e; }
             .media-tab.active {
-              background: linear-gradient(45deg, #5E9FD8, #4A8BC8);
+              background: linear-gradient(135deg, #E8C040 0%, #B89010 50%, #DDB820 100%);
               color: white;
               font-weight: 600;
-              border-color: transparent;
+              box-shadow: 0 1px 3px rgba(160, 120, 0, 0.4), 0 1px 2px rgba(0, 0, 0, 0.06);
             }
+            .media-tab.active:hover { background: #7a6000; }
             .search-bar:focus {
               outline: none;
               border-color: #5E9FD8;
+              background-color: #ffffff;
+              box-shadow: 0 0 0 3px rgba(94, 159, 216, 0.18);
             }
 
             /* Stats Grid */
@@ -270,24 +398,27 @@
             }
 
             .stat-card {
-              background: linear-gradient(135deg, #5E9FD8 0%, #4A8BC8 100%);
+              background: linear-gradient(135deg, #420d18 0%, #300810 100%);
               color: white;
               padding: 10px 12px;
               border-radius: 15px;
               text-align: center;
-              box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+              border: 1px solid rgba(220, 170, 20, 0.25);
+              box-shadow: 0 4px 16px rgba(48, 8, 16, 0.35), inset 0 1px 0 rgba(220, 170, 20, 0.12);
               min-width: 110px;
               flex: 1;
               max-width: 200px;
             }
             .stat-number {
-              font-size: 0.75rem;
+              font-size: 0.9rem;
               font-weight: bold;
               margin-bottom: 0px;
+              color: rgba(255, 255, 255, 0.95);
             }
             .stat-label {
-              font-size: 12px;
-              opacity: 0.9;
+              font-size: 9px;
+              color: rgba(220, 170, 20, 0.75);
+              font-weight: 500;
             }
 
             /* Timeline Styles */
@@ -304,7 +435,7 @@
               background: white;
             }
             .timeline-year-header {
-              background: linear-gradient(45deg, #1F2937, #2D3748);
+              background: linear-gradient(45deg, #300810, #420d18);
               color: white;
               padding: 15px 20px 28px;
               font-size: 16px;
@@ -327,7 +458,7 @@
               font-style: italic;
             }
             .timeline-year-header:hover {
-              background: linear-gradient(45deg, #2D3748, #374151);
+              background: linear-gradient(45deg, #420d18, #500f1c);
               transform: translateY(-1px);
             }
             .year-header-content {
@@ -340,8 +471,11 @@
               margin-bottom: 10px;
             }
             .year-title {
-              font-size: 16px;
-              font-weight: bold;
+              font-family: 'Cormorant Garamond', Georgia, serif;
+              font-size: 22px;
+              font-weight: 700;
+              font-style: italic;
+              color: #A07800;
               display: flex;
               align-items: center;
               gap: 8px;
@@ -349,12 +483,15 @@
             .gallery-id-badge {
               font-size: 9px;
               font-weight: 800;
+              font-style: normal;
+              font-family: "Segoe UI", sans-serif;
               letter-spacing: 0.05em;
               text-transform: uppercase;
               padding: 2px 7px;
               border-radius: 8px;
-              background: white;
-              color: #1F2937;
+              background: linear-gradient(135deg, #E8C040 0%, #B89010 100%);
+              color: white;
+              border: none;
             }
             .year-preview {
               display: flex;
@@ -376,8 +513,9 @@
             }
             .timeline-year-count {
               font-size: 11px;
-              opacity: 0.9;
-              background: rgba(255, 255, 255, 0.2);
+              font-weight: 600;
+              background: linear-gradient(135deg, #E8C040 0%, #B89010 50%, #DDB820 100%);
+              color: white;
               padding: 5px 12px;
               border-radius: 20px;
             }
@@ -391,7 +529,7 @@
             }
             .timeline-year-content {
               padding: 20px;
-              background: white;
+              background: #fdf5f0;
               display: none;
             }
             .timeline-year.expanded .timeline-year-content {
@@ -815,20 +953,21 @@
               line-height: 1.2;
             }
             .download-btn {
-              background: linear-gradient(135deg, #2563eb, #1d4ed8);
+              background: linear-gradient(135deg, #3a0910 0%, #500f1c 100%);
               color: white;
+              border: none;
             }
-            .download-btn:hover { background: linear-gradient(135deg, #1d4ed8, #1e40af); }
+            .download-btn:hover { background: linear-gradient(135deg, #500f1c, #420d18); }
             .source-link-btn {
-              background: transparent;
-              color: #2563eb;
-              border: 1.5px solid #2563eb;
+              background: linear-gradient(135deg, #3a0910 0%, #500f1c 100%);
+              color: white;
+              border: none;
             }
-            .source-link-btn:hover { background: #eff6ff; }
+            .source-link-btn:hover { background: linear-gradient(135deg, #500f1c, #420d18); }
 
             /* Footer */
             .site-footer {
-              background: linear-gradient(135deg, #1F2937 0%, #2D3748 100%);
+              background: linear-gradient(160deg, #150205 0%, #200407 100%);
               color: white;
               padding: 10px 0;
               margin-top: 50px;
@@ -889,9 +1028,9 @@
               min-width: 40px;
               padding: 8px 12px;
               font-size: 13px;
-              background: rgba(94, 159, 216, 0.1);
-              color: #5E9FD8;
-              border: 1px solid #5E9FD8;
+              background: rgba(160, 120, 0, 0.1);
+              color: #A07800;
+              border: 1px solid #A07800;
               border-radius: 8px;
               cursor: pointer;
               text-decoration: none;
@@ -899,12 +1038,12 @@
               font-weight: 600;
             }
             .pagination-nav .btn:hover {
-              background: rgba(94, 159, 216, 0.2);
+              background: rgba(160, 120, 0, 0.2);
               transform: translateY(-2px);
             }
             .pagination-nav .btn.primary,
             .pagination-nav .btn[disabled] {
-              background: linear-gradient(45deg, #5E9FD8, #4A8BC8);
+              background: linear-gradient(135deg, #E8C040 0%, #B89010 50%, #DDB820 100%);
               color: white;
               transform: none;
               cursor: default;
@@ -956,8 +1095,8 @@
         .nav-segmented .segment-btn { padding: 10px 14px; font-size: 12px; }
         .nav-segmented .segment-btn span { font-size: 10px; }
 
-        .media-filter-tabs { gap: 4px; }
-        .media-tab { font-size: 11px; padding: 5px 10px; }
+        .media-filter-tabs { gap: 2px; padding: 3px; }
+        .media-tab { font-size: 11px; padding: 4px 10px; }
       }
 
     </style>
@@ -966,18 +1105,18 @@
 <style>
 /* ===== FLOAT GROUP ===== */
 #floatBtnGroup{position:fixed;right:16px;bottom:80px;display:flex;flex-direction:column;align-items:center;gap:8px;z-index:8000;touch-action:none;cursor:grab}
-.float-btn{width:58px;height:58px;border-radius:50%;border:2px solid rgba(94,159,216,0.4);background:#fff;color:#5E9FD8;display:flex;flex-direction:column;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 4px 18px rgba(0,0,0,0.15);font-size:22px;font-weight:600;transition:transform .18s,box-shadow .18s;position:relative;flex-shrink:0;user-select:none;overflow:hidden}
+.float-btn{width:58px;height:58px;border-radius:50%;border:2px solid rgba(196,18,48,0.6);background:#380a14;color:#A07800;display:flex;flex-direction:column;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 4px 18px rgba(0,0,0,0.15);font-size:22px;font-weight:600;transition:transform .18s,box-shadow .18s;position:relative;flex-shrink:0;user-select:none;overflow:hidden}
 .float-btn:hover{transform:scale(1.08);box-shadow:0 6px 24px rgba(0,0,0,0.22)}
-#plFloatBtn{background:linear-gradient(135deg,#2563eb,#7c3aed);color:#fff;border-color:rgba(255,255,255,0.3);font-size:20px;width:68px;height:68px;overflow:visible}
+#plFloatBtn{background:linear-gradient(135deg,#E8C040,#B89010,#DDB820);color:#fff;border-color:rgba(255,255,255,0.3);font-size:20px;width:68px;height:68px;overflow:visible}
 #plFloatBadge{position:absolute;top:-3px;right:-3px;background:#ef4444;color:#fff;border-radius:10px;font-size:10px;font-weight:700;padding:1px 5px;min-width:18px;text-align:center;display:none;line-height:1.6}
 #backToTopFloat{opacity:0.88;visibility:visible}
 .float-top-text{font-size:9px;font-weight:700;line-height:1.3;margin-top:1px;text-align:center}
-#backToTopFloat .float-top-text{color:#4A8BC8}
+#backToTopFloat .float-top-text{color:#A07800}
 .timeline-photo.pl-in-playlist{box-shadow:0 0 0 2.5px #2563eb,0 2px 8px rgba(0,0,0,0.1)}
 @media(max-width:768px){#floatBtnGroup{right:8px}.float-btn{width:50px;height:50px;font-size:18px}}
 /* ===== PLAYLIST ===== */
 .playlist-panel{position:fixed;width:300px;max-height:420px;background:#fff;border-radius:12px;box-shadow:0 6px 28px rgba(0,0,0,.22);z-index:7999;display:flex;flex-direction:column;overflow:hidden}
-.playlist-header{display:flex;align-items:center;gap:8px;padding:12px 14px;background:linear-gradient(135deg,#2563eb,#7c3aed);border-radius:12px 12px 0 0;color:#fff;cursor:pointer;font-size:14px;font-weight:700;flex-shrink:0;user-select:none;letter-spacing:0.2px}
+.playlist-header{display:flex;align-items:center;gap:8px;padding:12px 14px;background:linear-gradient(135deg,#150205,#200407);border-radius:12px 12px 0 0;color:#fff;cursor:pointer;font-size:14px;font-weight:700;flex-shrink:0;user-select:none;letter-spacing:0.2px}
 .playlist-panel.collapsed .playlist-header{border-radius:12px}
 .playlist-count-badge{background:rgba(255,255,255,.25);border-radius:10px;padding:2px 8px;font-size:12px;font-weight:700}
 .playlist-list{overflow-y:auto;flex:1;min-height:0}
@@ -991,11 +1130,11 @@
 .playlist-remove-btn{flex-shrink:0;background:#e5e7eb;border:none;cursor:pointer;color:#6b7280;font-size:14px;font-weight:700;line-height:1;padding:0;width:22px;height:22px;border-radius:50%;text-align:center;line-height:22px}
 .playlist-remove-btn:hover{background:#fecaca;color:#dc2626}
 .playlist-footer{display:flex;gap:6px;padding:8px 10px;border-top:1px solid #e5e7eb;flex-shrink:0}
-.pl-play-btn{flex:1;padding:6px;background:linear-gradient(135deg,#2563eb,#7c3aed);color:#fff;border:none;border-radius:6px;cursor:pointer;font-size:12px;font-weight:600}
+.pl-play-btn{flex:1;padding:6px;background:linear-gradient(135deg,#E8C040,#B89010,#DDB820);color:#fff;border:none;border-radius:6px;cursor:pointer;font-size:12px;font-weight:600}
 .pl-clear-btn{padding:6px 10px;background:#fee2e2;color:#dc2626;border:none;border-radius:6px;cursor:pointer;font-size:12px}
 .pl-card-add{position:absolute;bottom:26px;right:4px;background:rgba(0,0,0,.65);color:#fff;border:none;border-radius:4px;padding:2px 6px;font-size:11px;cursor:pointer;opacity:1;z-index:3;white-space:nowrap}
 .pl-card-add.pl-added{background:rgba(37,99,235,.8)}
-.pl-add-all-btn{display:none;padding:6px 11px;background:#1f2937;color:#fff;border:none;border-radius:6px;font-size:12px;cursor:pointer;white-space:nowrap;margin-top:6px}
+.pl-add-all-btn{display:none;padding:5px 14px;background:transparent;color:#A07800;border:1px solid rgba(160,120,0,0.45);border-radius:20px;font-size:11px;font-weight:600;cursor:pointer;white-space:nowrap;transition:background .2s,border-color .2s}.pl-add-all-btn:hover{background:rgba(160,120,0,0.08);border-color:rgba(160,120,0,0.75)}
 .pl-modal-add-btn{padding:3px 10px;background:rgba(37,99,235,.12);color:#2563eb;border:1px solid #bfdbfe;border-radius:12px;font-size:12px;cursor:pointer;display:none;white-space:nowrap}
 .pl-modal-add-btn:hover{background:#dbeafe}
 .pl-modal-add-btn.pl-in-list{background:rgba(37,99,235,.12);color:#2563eb;border-color:#93c5fd;box-shadow:0 0 0 1.5px #2563eb}
@@ -1023,26 +1162,29 @@
 </style>
     <div class="container">
       <header>
-        <h1>Xiao Zhan Social Media Archive<br />肖战社交媒体存档</h1>
-        <p
-          class="subtitle"
-          style="font-weight: 600; color: white; line-height: 1.8"
-        >
-          * Archive of Social Media Posts by Xiao Zhan<br />
-          *
-          <a
-            href="https://xz-studio-gallery.com/"
-            target="_blank"
-            style="color: white; text-decoration: underline"
-            >Click here for XZ Studio Gallery 肖战工作室高清图库</a
-          ><br />
-          <a
-            href="https://canadaxfx.github.io/XZ-HD-Gallery-Misc/"
-            target="_blank"
-            style="color: white; text-decoration: underline"
-            >Click here for XZ HD Gallery Misc 肖战高清图库-其他</a
-          ><br />
-        </p>
+        <h1>Xiao Zhan <span class="title-highlight">Social Media Archive</span><br /><span class="title-zh">肖战社交媒体存档</span></h1>
+        <div class="header-links-section">
+          <span class="header-links-desc">
+            <span class="desc-en">Archive of Social Media Posts by <a href="https://weibo.com/u/1792951112" target="_blank" rel="noopener">Xiao Zhan</a></span>
+            <span class="desc-zh">更多来源高清图库请点击下方链接</span>
+          </span>
+          <div class="header-links-row">
+            <a href="https://xz-studio-gallery.com/" target="_blank" class="header-link-card">
+              <div class="header-link-card-text">
+                <span class="card-en">XZ Studio Gallery</span>
+                <span class="card-zh">肖战工作室高清图库</span>
+              </div>
+              <span class="card-arrow">↗</span>
+            </a>
+            <a href="https://canadaxfx.github.io/XZ-HD-Gallery-Misc/" target="_blank" class="header-link-card">
+              <div class="header-link-card-text">
+                <span class="card-en">HD Gallery Misc</span>
+                <span class="card-zh">肖战高清图库-其他</span>
+              </div>
+              <span class="card-arrow">↗</span>
+            </a>
+          </div>
+        </div>
       </header>
 
       <div class="content-section">
@@ -1057,7 +1199,7 @@
           </div>
         </div>
 
-        <nav class="nav-segmented">
+        <div class="nav-segmented-wrap"><nav class="nav-segmented">
           <button
             class="segment-btn active"
             data-section="all"
@@ -1079,7 +1221,7 @@
           >
             Attached Media<span>配图&视频</span>
           </button>
-        </nav>
+        </nav></div>
 
         <div class="date-filter-container">
           <div class="date-select-wrapper">
@@ -1146,7 +1288,7 @@
         >
           Clear Search / 返回
         </button>
-        <div style="max-width:1000px;margin:4px auto 0;display:flex;justify-content:flex-end;padding-right:20px">
+        <div style="max-width:1000px;margin:4px auto 0;display:flex;justify-content:center;padding-right:20px">
           <button id="plAddAllBtn" class="pl-add-all-btn" onclick="addAllFilteredVideos()" style="display:none;">▶ Add <span id="plAddAllCount">0</span> videos to Playlist</button>
         </div>
 
