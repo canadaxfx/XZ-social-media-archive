@@ -62,6 +62,46 @@
         --surface-d:   #f0ead8;
         --border:      #d8ccb8;
       }
+      [data-theme="sapphire"] {
+        --bg-base: #020610; --bg-base-2: #040c1e;
+        --bg-dark: #081535; --bg-mid:    #0d1f4a;
+        --bg-btn:  #081535; --bg-btn-h:  #0d1f4a; --bg-float: #060e2a;
+        --red-rgb: 30, 70, 180; --shad-rgb: 8, 16, 48;
+        --grad-red:   linear-gradient(135deg, #081535 0%, #0d1f4a 100%);
+        --grad-red-h: linear-gradient(135deg, #0d1f4a, #0a1840);
+        --grad-year:  linear-gradient(45deg,  #081535, #0d1f4a);
+        --surface:   rgba(240, 244, 255, 0.98);
+        --surface-0: #f0f4ff; --surface-w: #e0e8f8;
+        --surface-m: #e8eef8; --surface-d: #dce5f5; --border: #c8d0e8;
+      }
+      [data-theme="violet"] {
+        --bg-base: #0d0418; --bg-base-2: #160622;
+        --bg-dark: #2a0840; --bg-mid:    #380b55;
+        --bg-btn:  #2a0840; --bg-btn-h:  #380b55; --bg-float: #200630;
+        --red-rgb: 100, 20, 180; --shad-rgb: 20, 5, 40;
+        --grad-red:   linear-gradient(135deg, #2a0840 0%, #380b55 100%);
+        --grad-red-h: linear-gradient(135deg, #380b55, #2e0948);
+        --grad-year:  linear-gradient(45deg,  #2a0840, #380b55);
+        --surface:   rgba(248, 242, 255, 0.98);
+        --surface-0: #f8f2ff; --surface-w: #ede0f8;
+        --surface-m: #f2ebfc; --surface-d: #ece0f5; --border: #d0c0e8;
+      }
+      #themeSwitcher {
+        position: fixed; top: 6px; right: 8px; z-index: 9000;
+        display: flex; gap: 6px; align-items: center;
+        padding: 5px 8px; border-radius: 20px;
+        background: rgba(0,0,0,0.35); backdrop-filter: blur(8px);
+        border: 1px solid rgba(255,255,255,0.1);
+      }
+      .theme-dot {
+        width: 14px; height: 14px; border-radius: 50%; border: 2px solid transparent;
+        cursor: pointer; padding: 0; transition: transform .18s, border-color .18s; outline: none;
+      }
+      .theme-dot:hover { transform: scale(1.25); }
+      .theme-dot.tdot-active { border-color: rgba(255,255,255,0.85); transform: scale(1.2); }
+      @media (max-width: 768px) {
+        .container { padding-top: 46px; }
+      }
             /* --- CORE STYLES --- */
             * {
               margin: 0;
@@ -433,7 +473,7 @@
             }
 
             .stat-card {
-              background: linear-gradient(135deg, #420d18 0%, #300810 100%);
+              background: linear-gradient(135deg, var(--bg-mid) 0%, var(--bg-dark) 100%);
               color: white;
               padding: 10px 12px;
               border-radius: 15px;
@@ -547,17 +587,17 @@
               transition: all 0.3s ease;
             }
             .timeline-year-count {
-              font-size: 11px;
+              font-size: 10px;
               font-weight: 600;
               background: var(--grad-gold);
               color: white;
-              padding: 5px 12px;
+              padding: 4px 7px;
               border-radius: 20px;
             }
             .expand-icon {
               font-size: 12px;
               transition: transform 0.3s ease;
-              margin-left: 10px;
+              margin-left: 0;
             }
             .timeline-year.expanded .expand-icon {
               transform: rotate(180deg);
@@ -2159,7 +2199,7 @@
                             <div class="year-header-content">
                                 <div class="year-header-top">
                                     <span class="year-title">${year}<span class="gallery-id-badge">Archive</span></span>
-                                    <div style="display:flex; align-items:center; gap:10px;">
+                                    <div style="display:flex; align-items:center; gap:4px;">
                                         <span class="timeline-year-count">${countLabel}</span>
                                         <span class="expand-icon">▼</span>
                                     </div>
@@ -2961,6 +3001,24 @@
           if (seek && v) seek.value = v.currentTime;
       }
 
+      // ── Theme Switcher ──
+      (function(){
+        const KEY = 'xzTheme';
+        function applyTheme(t) {
+          if (t === 'red') document.documentElement.removeAttribute('data-theme');
+          else document.documentElement.dataset.theme = t;
+          document.querySelectorAll('.theme-dot').forEach(b => b.classList.toggle('tdot-active', b.dataset.t === t));
+        }
+        const saved = localStorage.getItem(KEY) || 'red';
+        if (saved !== 'red') document.documentElement.dataset.theme = saved;
+        document.addEventListener('DOMContentLoaded', () => {
+          document.querySelectorAll('.theme-dot').forEach(btn => {
+            btn.classList.toggle('tdot-active', btn.dataset.t === saved);
+            btn.addEventListener('click', () => { applyTheme(btn.dataset.t); localStorage.setItem(KEY, btn.dataset.t); });
+          });
+        });
+      })();
+
     </script>
 <!-- DL UNLOCK PROMPT -->
 <div id="dlUnlockOverlay" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.65);z-index:99999;align-items:center;justify-content:center;">
@@ -2977,5 +3035,10 @@
     </div>
   </div>
 </div>
+  <div id="themeSwitcher">
+    <button class="theme-dot" data-t="red"      title="China Red 华夏红"         style="background:#8B0010;"></button>
+    <button class="theme-dot" data-t="sapphire" title="Midnight Sapphire 星夜蓝" style="background:#1A3FAA;"></button>
+    <button class="theme-dot" data-t="violet"   title="Imperial Violet 帝紫"     style="background:#5A0FA0;"></button>
+  </div>
   </body>
 </html>
