@@ -174,7 +174,7 @@
       .theme-dot:hover { transform: scale(1.25); }
       .theme-dot.tdot-active { border-color: rgba(255,255,255,0.85); transform: scale(1.2); }
       @media (max-width: 768px) {
-        .container { padding-top: 54px; }
+        .container { padding-top: 62px; }
       }
             /* --- CORE STYLES --- */
             * {
@@ -1890,7 +1890,7 @@
       function isYouTubeUrl(url) { return /youtube\.com\/watch|youtu\.be\//.test(url); }
 
       // --- Download Lock ---
-      const DL_HASH = '37f46387b605b43821fabfb33842d751f15c93781781abd83a8e5ebb7a2b2297';
+      const DL_HASH = '858a4b33bd3546c160fb7a0d42ba20d03da98635f5405dc8d0ec9689c1a3a5ef';
       const DL_KEY  = 'xzDlUnlocked';
       function dlIsUnlocked() { const t = localStorage.getItem(DL_KEY); return !!t && (Date.now() - parseInt(t)) < 2 * 60 * 1000; }
       function dlIsLocked(url) { return !!url && url.includes('canadaxfx.synology.me'); }
