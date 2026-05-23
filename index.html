@@ -2106,6 +2106,9 @@
         paginationState = {};
         document.getElementById("searchInput").value = "";
         updateStats();
+        // Auto-expand the latest year before rendering
+        const firstActiveYear = [...new Set(activeData.map(d => d.year))].sort((a, b) => b - a)[0];
+        if (firstActiveYear) expandedYears.add(firstActiveYear);
         renderTimeline();
 
         if (activeData.length > 0) {
@@ -2540,6 +2543,11 @@
           filteredVideosCache = filtered.filter(p => isVideoEntry(p));
           plUpdateAddAllBtn();
 
+          // Auto-expand the latest year with results if none are currently open
+          const filteredYears = [...new Set(filtered.map(d => d.year))].sort((a, b) => b - a);
+          if (filteredYears.length > 0 && !filteredYears.some(y => expandedYears.has(y))) {
+            expandedYears.add(filteredYears[0]);
+          }
           renderTimeline(filtered);
         });
       }
