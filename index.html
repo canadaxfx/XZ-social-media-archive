@@ -1229,6 +1229,11 @@
               border-color: #5E9FD8;
             }
 
+/* Desktop photo modal — allow wider on large screens */
+@media screen and (min-width: 768px) {
+    .modal-content { max-width: min(90vw, 1200px); }
+}
+
             /* Mobile Responsiveness */
       @media (max-width: 768px) {
         .container { padding: 15px; }
