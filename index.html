@@ -966,6 +966,8 @@
               max-height: 60vh;
               height: 60vh;
             }
+            .badge-quality { position: absolute; bottom: 0px; left: 10px; background: rgba(37, 99, 235, 0.85); color: #fff; padding: 2px 7px; border-radius: 4px; font-size: 11px; font-weight: 700; z-index: 11; letter-spacing: 0.05em; pointer-events: none; }
+            .badge-quality.is-4k { background: rgba(124, 58, 237, 0.85); }
             .badge-youtube { position: absolute; bottom: 0px; left: 10px; background: rgba(204, 0, 0, 0.85); color: #fff; padding: 2px 7px; border-radius: 4px; font-size: 11px; font-weight: 700; z-index: 11; letter-spacing: 0.05em; text-decoration: none; cursor: pointer; }
             .modal-photo {
               max-width: 100%;
@@ -1536,6 +1538,7 @@
             autoplay
             playsinline
           ></video>
+          <span id="badgeQuality" class="badge-quality hidden"></span>
           <a id="badgeYT" class="badge-youtube hidden" target="_blank" rel="noopener">YouTube ↗</a>
           <button class="nav-arrow next" id="nextBtn" onclick="navigatePhoto(1)">›</button>
         </div>
@@ -2651,6 +2654,16 @@
         const _isVid = photo.url && photo.url.match(/\.mp4$/i);
         const badgeYT = document.getElementById('badgeYT');
         if (badgeYT) { badgeYT.classList.toggle('hidden', !isYT); if (isYT) badgeYT.href = photo.url; }
+        const badgeQuality = document.getElementById('badgeQuality');
+        if (badgeQuality) {
+            if (_isVid && photo.quality === '4k') {
+                badgeQuality.textContent = '4K'; badgeQuality.classList.remove('hidden', 'is-4k'); badgeQuality.classList.add('is-4k');
+            } else if (_isVid && photo.quality === '1080p') {
+                badgeQuality.textContent = '1080P'; badgeQuality.classList.remove('hidden'); badgeQuality.classList.remove('is-4k');
+            } else {
+                badgeQuality.classList.add('hidden'); badgeQuality.classList.remove('is-4k');
+            }
+        }
         const _dlBtn = document.getElementById("downloadBtn");
         if (isYT) {
           if (photo.download_url) {
