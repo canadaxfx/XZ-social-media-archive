@@ -3275,10 +3275,10 @@
       'red':'gold','sakura':'gold','sapphire':'gold','lunar':'gold','violet':'gold',
       'washi-garnet':'rose','washi-slate':'cream'
     };
-    const LAYOUT_BRIGHTNESS = { A: 'brightness(0.6)', P: 'brightness(0.2)' };
+    const LAYOUT_BRIGHTNESS = { A: 'brightness(0.8)', P: 'brightness(0.2)' };
+    const LAYOUT_OPACITY    = { A: 0.55, P: 0.40 };
     const TILE_IMG = 50, TILE_STEP = 120;
     const TILE_IMG_MOB = 20, TILE_STEP_MOB = 90;
-    const MG_OP = 0.40;
     let mgSrc = 0, mgTone = 'gold', mgLayout = 'none';
 
     function mgCombined() {
@@ -3309,11 +3309,11 @@
       document.querySelectorAll('.mg-img').forEach(img => {
         img.src = SOURCES[mgSrc].file;
         img.style.filter  = f;
-        img.style.opacity = MG_OP;
+        img.style.opacity = LAYOUT_OPACITY['A'];
       });
       document.querySelectorAll('.mg-p-tile').forEach(img => {
         img.style.filter  = f;
-        img.style.opacity = MG_OP;
+        img.style.opacity = LAYOUT_OPACITY['P'];
       });
     }
     function mgSetLayout(layout) {
