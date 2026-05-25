@@ -173,6 +173,47 @@
       }
       .theme-dot:hover { transform: scale(1.25); }
       .theme-dot.tdot-active { border-color: rgba(255,255,255,0.85); transform: scale(1.2); }
+
+      /* ── Magnolia watermark ── */
+      #mgLayer { position:absolute; inset:0; pointer-events:none; z-index:1; }
+      .mg-slot { position:absolute; inset:0; display:none; }
+      .mg-slot.active { display:block; }
+      .mg-img { position:absolute; mix-blend-mode:screen; object-fit:contain; display:block; }
+      .slot-A .mg-l { width:100px; height:100px; top:50%; left:-10px;  transform:translateY(-50%) rotate(-6deg); }
+      .slot-A .mg-r { width:100px; height:100px; top:50%; right:-10px; transform:translateY(-50%) scaleX(-1) rotate(-6deg); }
+      .slot-P { position:fixed; inset:0; z-index:0; pointer-events:none; display:none; overflow:hidden; }
+      .slot-P.active { display:block; }
+      .mg-p-tile { position:absolute; width:50px; height:50px; object-fit:contain; mix-blend-mode:screen; }
+      @media (max-width: 600px) {
+        .slot-A .mg-l { width:75px; height:75px; }
+        .slot-A .mg-r { width:75px; height:75px; }
+        .mg-p-tile    { width:20px; height:20px; }
+      }
+      :root { --mg-text: rgba(255,255,255,.65); --mg-text-h: rgba(255,255,255,.95); }
+      [data-theme="washi-garnet"] { --mg-text: rgba(18,12,8,.7);  --mg-text-h: rgba(18,12,8,.95); }
+      [data-theme="washi-slate"]  { --mg-text: rgba(14,20,32,.7); --mg-text-h: rgba(14,20,32,.95); }
+      #mgBtn { background:none; border:none; cursor:pointer; font-size:15px; padding:0 2px;
+               color:rgba(255,255,255,.45); transition:color .2s; line-height:1; }
+      #mgBtn:hover, #mgBtn.mg-on { color:rgba(255,255,255,.95); }
+      #mgDivider { width:1px; height:14px; background:rgba(255,255,255,.2); display:inline-block; margin:0 2px; }
+      #mgPanel { display:none; position:fixed; top:34px; right:8px; z-index:8999;
+                 background:linear-gradient(135deg, var(--bg-base), var(--bg-base-2));
+                 border:1px solid rgba(var(--gold-rgb),.35);
+                 border-radius:12px; padding:12px 11px; backdrop-filter:blur(10px);
+                 font-family:'Segoe UI',sans-serif; min-width:190px; }
+      #mgPanel.open { display:block; }
+      .mg-ptitle { font-size:10px; font-weight:700; letter-spacing:.12em; text-transform:uppercase;
+                   color:var(--gold); margin:0 0 5px; }
+      .mg-prow { display:flex; flex-direction:column; gap:3px; margin-bottom:8px; }
+      .mg-pbtn { padding:5px 9px; border-radius:7px; text-align:left;
+                 border:1px solid rgba(var(--gold-rgb),.2); background:transparent;
+                 color:var(--mg-text); cursor:pointer; font-size:11.5px;
+                 transition:background .15s,border-color .15s,color .15s; }
+      .mg-pbtn:hover { background:rgba(var(--gold-dr),.08); color:var(--mg-text-h); }
+      .mg-pbtn.active { background:rgba(var(--gold-dr),.16); border-color:rgba(var(--gold-rgb),.7); color:var(--gold); }
+      .mg-pdiv { height:1px; background:rgba(var(--gold-rgb),.15); margin:6px 0; }
+      .mg-pgrid { display:grid; grid-template-columns:1fr 1fr 1fr; gap:3px; }
+
       @media (max-width: 768px) {
         .container { padding-top: 62px; }
       }
@@ -201,6 +242,8 @@
               text-align: center;
               padding: 12px 0 8px;
               color: white;
+              position: relative;
+              overflow: visible;
             }
             header::after {
               content: '';
@@ -1378,6 +1421,13 @@
 </style>
     <div class="container">
       <header>
+      <div id="mgLayer">
+        <div class="mg-slot slot-A" data-slot="A">
+          <img class="mg-img mg-l" alt="">
+          <img class="mg-img mg-r" alt="">
+        </div>
+        <div class="mg-slot slot-P" data-slot="P"></div>
+      </div>
         <h1>Xiao Zhan <span class="title-highlight">Social Media Archive</span><br /><span class="title-zh">肖战社交媒体存档</span></h1>
         <div class="header-links-section">
           <span class="header-links-desc">
@@ -3152,6 +3202,7 @@
           if (t === 'red') document.documentElement.removeAttribute('data-theme');
           else document.documentElement.dataset.theme = t;
           document.querySelectorAll('.theme-dot').forEach(b => b.classList.toggle('tdot-active', b.dataset.t === t));
+          if (window.mgUpdateTone) window.mgUpdateTone(t);
         }
         const saved = localStorage.getItem(KEY) || 'red';
         if (saved !== 'red') document.documentElement.dataset.theme = saved;
@@ -3187,6 +3238,132 @@
     <button class="theme-dot" data-t="violet"       title="Imperial Violet 帝紫"     style="background:#5A0FA0;"></button>
     <button class="theme-dot" data-t="washi-garnet" title="Washi Garnet 和纸赤"      style="background:linear-gradient(135deg,#EAEAEC 50%,#7A2030 50%);"></button>
     <button class="theme-dot" data-t="washi-slate"  title="Washi Slate 和纸靛"       style="background:linear-gradient(135deg,#ECEDF1 50%,#3A4860 50%);"></button>
+    <span id="mgDivider"></span>
+    <button id="mgBtn" title="玉兰水印 Magnolia watermark">❁</button>
   </div>
+
+  <div id="mgPanel">
+    <div class="mg-ptitle">Source · 图源</div>
+    <div class="mg-prow" id="mgSrcBtns">
+      <button class="mg-pbtn active" data-mgsrc="0">① Line sketch 线描</button>
+      <button class="mg-pbtn" data-mgsrc="1">② Illustrated branch 插画枝</button>
+      <button class="mg-pbtn" data-mgsrc="2">③ Single flower 单花</button>
+    </div>
+    <div class="mg-pdiv"></div>
+    <div class="mg-ptitle">Layout · 布局</div>
+    <div class="mg-pgrid" id="mgLayoutBtns">
+      <button class="mg-pbtn active" data-mglayout="none">None</button>
+      <button class="mg-pbtn" data-mglayout="A">Twin corners</button>
+      <button class="mg-pbtn" data-mglayout="P">Full page</button>
+    </div>
+  </div>
+
+  <script>
+  /* ── Magnolia watermark ── */
+  (function () {
+    const SOURCES = [
+      { file: 'magnolia/magnolia-line-sketch.png',        baseFilter: 'invert(1)' },
+      { file: 'magnolia/magnolia-illustrated-branch.png', baseFilter: 'grayscale(1)' },
+      { file: 'magnolia/magnolia-single-flower.png',      baseFilter: 'grayscale(1)' }
+    ];
+    const TONE_FILTERS = {
+      gold:  'sepia(.6) hue-rotate(5deg) saturate(2.2)',
+      cream: 'sepia(.15)',
+      rose:  'sepia(.2) hue-rotate(295deg) saturate(1.6) brightness(1.05)'
+    };
+    const THEME_TONE = {
+      'red':'gold','sakura':'gold','sapphire':'gold','lunar':'gold','violet':'gold',
+      'washi-garnet':'rose','washi-slate':'cream'
+    };
+    const LAYOUT_BRIGHTNESS = { A: 'brightness(0.6)', P: 'brightness(0.2)' };
+    const TILE_IMG = 50, TILE_STEP = 120;
+    const TILE_IMG_MOB = 20, TILE_STEP_MOB = 90;
+    const MG_OP = 0.40;
+    let mgSrc = 0, mgTone = 'gold', mgLayout = 'none';
+
+    function mgCombined() {
+      const tone = TONE_FILTERS[mgTone] || '';
+      const br   = LAYOUT_BRIGHTNESS[mgLayout] || 'brightness(0.6)';
+      return [SOURCES[mgSrc].baseFilter, br, tone].filter(Boolean).join(' ');
+    }
+    function mgBuildTiles() {
+      const mob  = window.innerWidth < 600;
+      const step = mob ? TILE_STEP_MOB : TILE_STEP;
+      const slot = document.querySelector('.slot-P');
+      slot.innerHTML = '';
+      const cols = Math.ceil(window.innerWidth  / step) + 1;
+      const rows = Math.ceil(window.innerHeight / step) + 1;
+      for (let r = 0; r < rows; r++) {
+        for (let c = 0; c < cols; c++) {
+          const img = document.createElement('img');
+          img.className = 'mg-p-tile';
+          img.src = SOURCES[mgSrc].file;
+          img.style.left = (c * step) + 'px';
+          img.style.top  = (r * step) + 'px';
+          slot.appendChild(img);
+        }
+      }
+    }
+    function mgApply() {
+      const f = mgCombined();
+      document.querySelectorAll('.mg-img').forEach(img => {
+        img.src = SOURCES[mgSrc].file;
+        img.style.filter  = f;
+        img.style.opacity = MG_OP;
+      });
+      document.querySelectorAll('.mg-p-tile').forEach(img => {
+        img.style.filter  = f;
+        img.style.opacity = MG_OP;
+      });
+    }
+    function mgSetLayout(layout) {
+      mgLayout = layout;
+      document.querySelectorAll('.mg-slot').forEach(s => s.classList.remove('active'));
+      if (layout !== 'none') {
+        const slot = document.querySelector('.slot-' + layout);
+        if (slot) slot.classList.add('active');
+      }
+      if (layout === 'P') mgBuildTiles();
+      mgApply();
+    }
+    window.mgUpdateTone = function (theme) {
+      mgTone = THEME_TONE[theme] || 'gold';
+      mgApply();
+    };
+    document.addEventListener('DOMContentLoaded', () => {
+      const curTheme = document.documentElement.dataset.theme || 'red';
+      mgTone = THEME_TONE[curTheme] || 'gold';
+      const mgBtn   = document.getElementById('mgBtn');
+      const mgPanel = document.getElementById('mgPanel');
+      mgBtn.addEventListener('click', e => {
+        e.stopPropagation();
+        mgPanel.classList.toggle('open');
+        mgBtn.classList.toggle('mg-on', mgPanel.classList.contains('open'));
+      });
+      document.addEventListener('click', e => {
+        if (!mgPanel.contains(e.target) && e.target !== mgBtn) {
+          mgPanel.classList.remove('open');
+          mgBtn.classList.remove('mg-on');
+        }
+      });
+      document.getElementById('mgSrcBtns').addEventListener('click', e => {
+        const btn = e.target.closest('[data-mgsrc]');
+        if (!btn) return;
+        document.querySelectorAll('#mgSrcBtns .mg-pbtn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        mgSrc = parseInt(btn.dataset.mgsrc);
+        if (mgLayout === 'P') mgBuildTiles();
+        mgApply();
+      });
+      document.getElementById('mgLayoutBtns').addEventListener('click', e => {
+        const btn = e.target.closest('[data-mglayout]');
+        if (!btn) return;
+        document.querySelectorAll('#mgLayoutBtns .mg-pbtn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        mgSetLayout(btn.dataset.mglayout);
+      });
+    });
+  })();
+  </script>
   </body>
 </html>
