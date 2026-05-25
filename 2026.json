@@ -10,7 +10,6 @@
         ],
         "groupName": "202605",
         "quality": "4k",
-        "duration": 32,
         "link": "https://weibo.com/1792951112/R10wS13IP",
         "category": "attached",
         "source": "weibo",
@@ -19,8 +18,32 @@
         "postText": "手握幸运星，好事自然成！#荣耀600#系列超级4K实况神机，4K闪光微单Live，4K直出超清晰！@荣耀手机 肖战工作室的微博视频",
         "englishTags": [
             "honor",
-            "phone",
-            "commercial"
+            "honor 600",
+            "weibo video",
+            "promotional video"
+        ]
+    },
+    {
+        "id": 82,
+        "url": "https://assets.xz-studio-gallery.com/full/20260525_WB_XZ.jpg",
+        "date": "2026-05-25",
+        "month": "May",
+        "year": "2026",
+        "tags": [
+            "HONOR"
+        ],
+        "groupName": "202605",
+        "link": "https://weibo.com/1792951112/R10wS13IP",
+        "category": "screenshot",
+        "source": "weibo",
+        "note": "",
+        "description": "",
+        "postText": "手握幸运星，好事自然成！#荣耀600#系列超级4K实况神机，4K闪光微单Live，4K直出超清晰！@荣耀手机 肖战工作室的微博视频",
+        "englishTags": [
+            "honor",
+            "honor 600",
+            "weibo video",
+            "promotional video"
         ]
     },
     {
