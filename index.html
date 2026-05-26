@@ -201,20 +201,26 @@
       #mgPanel { display:none; position:fixed; top:34px; right:8px; z-index:8999;
                  background:linear-gradient(135deg, var(--bg-base), var(--bg-base-2));
                  border:1px solid rgba(var(--gold-rgb),.35);
-                 border-radius:12px; padding:12px 11px; backdrop-filter:blur(10px);
-                 font-family:'Segoe UI',sans-serif; min-width:190px; }
+                 border-radius:12px; padding:9px 10px; backdrop-filter:blur(10px);
+                 font-family:'Segoe UI',sans-serif; width:fit-content; min-width:160px; max-width:210px; }
       #mgPanel.open { display:block; }
+      .mg-pheader { display:flex; justify-content:space-between; align-items:center; font-size:11px; font-weight:700; letter-spacing:.08em; color:var(--gold); margin:0 0 6px; padding-bottom:5px; border-bottom:1px solid rgba(var(--gold-rgb),.2); }
+      .mg-close { background:none; border:none; cursor:pointer; font-size:15px; color:rgba(var(--gold-rgb),.45); line-height:1; padding:0 2px; transition:color .15s; }
+      .mg-close:hover { color:var(--gold); }
+      .mg-onoff { display:flex; border-radius:8px; overflow:hidden; border:1px solid rgba(var(--gold-rgb),.25); margin-bottom:6px; }
+      .mg-onoff-btn { flex:1; padding:3px 10px; font-size:11px; font-weight:600; cursor:pointer; border:none; background:transparent; color:var(--mg-text); transition:all .2s; letter-spacing:.05em; }
+      .mg-onoff-btn.active { background:rgba(var(--gold-rgb),.18); color:var(--gold); }
       .mg-ptitle { font-size:10px; font-weight:700; letter-spacing:.12em; text-transform:uppercase;
-                   color:var(--gold); margin:0 0 5px; }
-      .mg-prow { display:flex; flex-direction:column; gap:3px; margin-bottom:8px; }
-      .mg-pbtn { padding:5px 9px; border-radius:7px; text-align:left;
+                   color:var(--gold); margin:0 0 3px; }
+      .mg-prow { display:flex; flex-direction:column; gap:2px; margin-bottom:5px; }
+      .mg-pbtn { padding:3px 8px; border-radius:7px; text-align:left;
                  border:1px solid rgba(var(--gold-rgb),.2); background:transparent;
                  color:var(--mg-text); cursor:pointer; font-size:11.5px;
                  transition:background .15s,border-color .15s,color .15s; }
       .mg-pbtn:hover { background:rgba(var(--gold-dr),.08); color:var(--mg-text-h); }
       .mg-pbtn.active { background:rgba(var(--gold-dr),.16); border-color:rgba(var(--gold-rgb),.7); color:var(--gold); }
-      .mg-pdiv { height:1px; background:rgba(var(--gold-rgb),.15); margin:6px 0; }
-      .mg-pgrid { display:grid; grid-template-columns:1fr 1fr 1fr; gap:3px; }
+      .mg-pdiv { height:1px; background:rgba(var(--gold-rgb),.15); margin:4px 0; }
+      .mg-pgrid { display:grid; grid-template-columns:1fr 1fr; gap:3px; }
 
       @media (max-width: 768px) {
         .container { padding-top: 62px; }
@@ -3246,17 +3252,21 @@
   </div>
 
   <div id="mgPanel">
+    <div class="mg-pheader"><span>❁ Watermark · 水印</span><button class="mg-close" id="mgCloseBtn">×</button></div>
+    <div class="mg-onoff">
+      <button class="mg-onoff-btn active" data-mgstate="off">OFF 关</button>
+      <button class="mg-onoff-btn" data-mgstate="on">ON 开</button>
+    </div>
     <div class="mg-ptitle">Source · 图源</div>
     <div class="mg-prow" id="mgSrcBtns">
-      <button class="mg-pbtn" data-mgsrc="1">② Illustrated branch 插画枝</button>
-      <button class="mg-pbtn" data-mgsrc="2">③ Single flower 单花</button>
-      <button class="mg-pbtn active" data-mgsrc="0">① Line sketch 线描</button>
+      <button class="mg-pbtn" data-mgsrc="1">② Branch 插画枝</button>
+      <button class="mg-pbtn" data-mgsrc="2">③ Flower 单花</button>
+      <button class="mg-pbtn active" data-mgsrc="0">① Sketch 线描</button>
     </div>
     <div class="mg-pdiv"></div>
     <div class="mg-ptitle">Layout · 布局</div>
     <div class="mg-pgrid" id="mgLayoutBtns">
-      <button class="mg-pbtn active" data-mglayout="none">None</button>
-      <button class="mg-pbtn" data-mglayout="A">Twin corners</button>
+      <button class="mg-pbtn active" data-mglayout="A">Twin corners</button>
       <button class="mg-pbtn" data-mglayout="P">Full page</button>
     </div>
   </div>
@@ -3282,7 +3292,7 @@
     const LAYOUT_OPACITY    = { A: 0.55, P: 0.40 };
     const TILE_IMG = 50, TILE_STEP = 120;
     const TILE_IMG_MOB = 20, TILE_STEP_MOB = 90;
-    let mgSrc = 0, mgTone = 'gold', mgLayout = 'none';
+    let mgSrc = 0, mgTone = 'gold', mgLayout = 'A', mgOn = false;
 
     function mgCombined() {
       const tone = TONE_FILTERS[mgTone] || '';
@@ -3322,11 +3332,11 @@
     function mgSetLayout(layout) {
       mgLayout = layout;
       document.querySelectorAll('.mg-slot').forEach(s => s.classList.remove('active'));
-      if (layout !== 'none') {
+      if (mgOn && layout !== 'none') {
         const slot = document.querySelector('.slot-' + layout);
         if (slot) slot.classList.add('active');
       }
-      if (layout === 'P') mgBuildTiles();
+      if (mgOn && layout === 'P') mgBuildTiles();
       mgApply();
     }
     window.mgUpdateTone = function (theme) {
@@ -3349,13 +3359,25 @@
           mgBtn.classList.remove('mg-on');
         }
       });
+      document.getElementById('mgCloseBtn').addEventListener('click', () => {
+        mgPanel.classList.remove('open');
+        mgBtn.classList.remove('mg-on');
+      });
+      document.querySelectorAll('.mg-onoff-btn').forEach(b => {
+        b.addEventListener('click', () => {
+          mgOn = b.dataset.mgstate === 'on';
+          document.querySelectorAll('.mg-onoff-btn').forEach(x => x.classList.remove('active'));
+          b.classList.add('active');
+          mgSetLayout(mgLayout);
+        });
+      });
       document.getElementById('mgSrcBtns').addEventListener('click', e => {
         const btn = e.target.closest('[data-mgsrc]');
         if (!btn) return;
         document.querySelectorAll('#mgSrcBtns .mg-pbtn').forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
         mgSrc = parseInt(btn.dataset.mgsrc);
-        if (mgLayout === 'P') mgBuildTiles();
+        if (mgOn && mgLayout === 'P') mgBuildTiles();
         mgApply();
       });
       document.getElementById('mgLayoutBtns').addEventListener('click', e => {
