@@ -160,6 +160,7 @@
           repeating-linear-gradient(172deg, transparent 0px, transparent 22px, rgba(116,118,126,0.040) 22px, rgba(116,118,126,0.040) 23px),
           linear-gradient(160deg, #ECEDF1 0%, #E6E7EC 40%, #E0E2E8 70%, #E4E6EB 100%);
       }
+      body:has(#photoModal:not(.hidden)) #themeSwitcher { display: none; }
       #themeSwitcher {
         position: fixed; top: 2px; right: 8px; z-index: 9000;
         display: flex; gap: 6px; align-items: center;
@@ -193,10 +194,10 @@
       [data-theme="washi-garnet"] { --mg-text: rgba(18,12,8,.7);  --mg-text-h: rgba(18,12,8,.95); }
       [data-theme="washi-slate"]  { --mg-text: rgba(14,20,32,.7); --mg-text-h: rgba(14,20,32,.95); }
       #mgBtn { background:none; border:none; cursor:pointer; font-size:15px; padding:0 2px;
-               color:rgba(255,255,255,.45); transition:color .2s; line-height:1; }
+               color:rgba(255,255,255,.82); transition:color .2s; line-height:1; }
       #mgBtn:hover, #mgBtn.mg-on { color:rgba(255,255,255,.95); }
       #mgDivider { width:1px; height:14px; background:rgba(255,255,255,.2); display:inline-block; margin:0 2px; }
-      #styleLabel { font-size:10px; color:rgba(255,255,255,.45); letter-spacing:.06em; white-space:nowrap; pointer-events:none; user-select:none; }
+      #styleLabel { font-size:10px; color:rgba(255,255,255,.75); letter-spacing:.06em; white-space:nowrap; pointer-events:none; user-select:none; }
       #mgPanel { display:none; position:fixed; top:34px; right:8px; z-index:8999;
                  background:linear-gradient(135deg, var(--bg-base), var(--bg-base-2));
                  border:1px solid rgba(var(--gold-rgb),.35);
@@ -917,7 +918,7 @@
               display: flex;
               align-items: center;
               justify-content: center;
-              z-index: 1000;
+              z-index: 9500;
               padding: 5px;
               overflow: hidden;
             }
