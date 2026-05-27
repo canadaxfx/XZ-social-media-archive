@@ -2131,8 +2131,14 @@
           btn.classList.toggle("active", btn.dataset.media === mediaType);
         });
 
-        // Re-apply filters with new media type
+        const savedSearch = document.getElementById("searchInput").value.trim();
         applyFilters();
+        if (savedSearch) {
+          const input = document.getElementById("searchInput");
+          input.value = savedSearch;
+          input.dispatchEvent(new Event("input"));
+          document.getElementById("clearSearchBtn").classList.remove("hidden");
+        }
       }
 
       function applyFilters() {
