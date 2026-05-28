@@ -1018,6 +1018,7 @@
               height: 60vh;
             }
             .badge-quality { position: absolute; bottom: 0px; left: 10px; background: rgba(37, 99, 235, 0.85); color: #fff; padding: 2px 7px; border-radius: 4px; font-size: 11px; font-weight: 700; z-index: 11; letter-spacing: 0.05em; pointer-events: none; }
+            .badge-quality.is-2k { background: rgba(99, 102, 241, 0.85); }
             .badge-quality.is-4k { background: rgba(124, 58, 237, 0.85); }
             .badge-youtube { position: absolute; bottom: 0px; left: 10px; background: rgba(204, 0, 0, 0.85); color: #fff; padding: 2px 7px; border-radius: 4px; font-size: 11px; font-weight: 700; z-index: 11; letter-spacing: 0.05em; text-decoration: none; cursor: pointer; }
             .modal-photo {
@@ -2631,6 +2632,62 @@
         });
       }
 
+      // --- Platform Popup ---
+      function _getPlatformPop() {
+        let pop = document.getElementById('platformPopover');
+        if (!pop) {
+          pop = document.createElement('div');
+          pop.id = 'platformPopover';
+          pop.onclick = e => e.stopPropagation();
+          pop.style.cssText = 'display:none;position:fixed;z-index:999999;background:var(--bg-float,rgba(22,18,38,0.97));border:1px solid rgba(var(--gold-rgb,180,140,40),0.45);border-radius:10px;box-shadow:0 6px 24px rgba(0,0,0,0.6);padding:6px;min-width:160px';
+          document.body.appendChild(pop);
+        }
+        return pop;
+      }
+      function setPlatformBtnBehavior(btn, mainLink, extraLinks) {
+        const existingPop = document.getElementById('platformPopover');
+        if (existingPop) existingPop.style.display = 'none';
+        const links = [];
+        const w = mainLink ? String(mainLink).trim() : '';
+        if (w) links.push({label: 'Weibo 微博', url: /^https?/i.test(w) ? w : 'https://' + w});
+        if (extraLinks && typeof extraLinks === 'object') {
+          const lmap = {weibo:'Weibo 微博',douyin:'Douyin 抖音',youtube:'YouTube',bilibili:'Bilibili',ins:'Instagram',xiaohongshu:'RedNote 小红书',xhs:'RedNote 小红书'};
+          Object.entries(extraLinks).forEach(([k, v]) => { if (v) links.push({label: lmap[k] || k, url: String(v)}); });
+        }
+        if (!links.length) { btn.style.display = 'none'; return; }
+        btn.style.display = 'inline-block';
+        btn.onclick = null;
+        btn.removeAttribute('href');
+        if (links.length === 1) {
+          btn.setAttribute('href', links[0].url);
+          btn.setAttribute('target', '_blank');
+        } else {
+          btn.onclick = (e) => { e.preventDefault(); e.stopPropagation(); showPlatformPopover(btn, links); };
+        }
+      }
+      function showPlatformPopover(triggerBtn, links) {
+        const pop = _getPlatformPop();
+        const cs = getComputedStyle(triggerBtn);
+        pop.style.backgroundImage = cs.backgroundImage;
+        pop.style.backgroundColor = cs.backgroundColor;
+        pop.style.borderRadius    = cs.borderRadius;
+        pop.style.border          = cs.border;
+        pop.style.boxShadow       = '0 4px 20px rgba(0,0,0,0.45)';
+        pop.innerHTML = links.map(l =>
+          `<a href="${l.url}" target="_blank" style="display:block;padding:9px 18px;text-decoration:none;color:rgba(255,255,255,0.95);border-radius:5px;font-size:13px;font-weight:600;white-space:nowrap;letter-spacing:0.02em" onmouseover="this.style.background='rgba(255,255,255,0.12)'" onmouseout="this.style.background=''">${l.label}</a>`
+        ).join('');
+        pop.style.display = 'block';
+        const r = triggerBtn.getBoundingClientRect();
+        const pw = pop.offsetWidth || 160;
+        const ph = pop.offsetHeight || 80;
+        let left = r.left + r.width / 2 - pw / 2;
+        let top  = r.top - ph - 10;
+        if (top < 8) top = r.bottom + 10;
+        pop.style.left = Math.max(8, Math.min(left, window.innerWidth - pw - 8)) + 'px';
+        pop.style.top  = top + 'px';
+        setTimeout(() => document.addEventListener('click', () => { pop.style.display = 'none'; }, {once: true}), 0);
+      }
+
       // --- MODAL ---
       function openModal(uid) {
         const targetItem = activeData.find((i) => i._uid === uid);
@@ -2719,11 +2776,13 @@
         const badgeQuality = document.getElementById('badgeQuality');
         if (badgeQuality) {
             if (_isVid && photo.quality === '4k') {
-                badgeQuality.textContent = '4K'; badgeQuality.classList.remove('hidden', 'is-4k'); badgeQuality.classList.add('is-4k');
+                badgeQuality.textContent = '4K'; badgeQuality.classList.remove('hidden', 'is-2k'); badgeQuality.classList.add('is-4k');
+            } else if (_isVid && photo.quality === '2k') {
+                badgeQuality.textContent = '2K'; badgeQuality.classList.remove('hidden', 'is-4k'); badgeQuality.classList.add('is-2k');
             } else if (_isVid && photo.quality === '1080p') {
-                badgeQuality.textContent = '1080P'; badgeQuality.classList.remove('hidden'); badgeQuality.classList.remove('is-4k');
+                badgeQuality.textContent = '1080P'; badgeQuality.classList.remove('hidden', 'is-4k', 'is-2k');
             } else {
-                badgeQuality.classList.add('hidden'); badgeQuality.classList.remove('is-4k');
+                badgeQuality.classList.add('hidden'); badgeQuality.classList.remove('is-4k', 'is-2k');
             }
         }
         const _dlBtn = document.getElementById("downloadBtn");
@@ -2741,15 +2800,7 @@
           dlSetBtn(_dlBtn, _dlUrl);
         }
         const srcBtn = document.getElementById("sourceLinkBtn");
-
-        // Use 'link' OR 'weibo' field
-        const linkUrl = photo.link || photo.weibo;
-        if (linkUrl) {
-          srcBtn.href = linkUrl;
-          srcBtn.style.display = "inline-block";
-        } else {
-          srcBtn.style.display = "none";
-        }
+        setPlatformBtnBehavior(srcBtn, photo.link || photo.weibo, photo.platform_links);
 
         const tagsContainer = document.getElementById("modalTags");
         if (tagsContainer) {
