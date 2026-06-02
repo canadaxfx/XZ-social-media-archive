@@ -1215,7 +1215,8 @@
         "englishTags": [
             "cartier",
             "photoshoot"
-        ]
+        ],
+        "source": "weibo"
     },
     {
         "id": 23,
@@ -1594,7 +1595,8 @@
         "englishTags": [
             "new year",
             "weibo update"
-        ]
+        ],
+        "source": "weibo"
     },
     {
         "id": 2,
