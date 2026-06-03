@@ -3360,8 +3360,9 @@
           document.querySelectorAll('.theme-dot').forEach(b => b.classList.toggle('tdot-active', b.dataset.t === t));
           if (window.mgUpdateTone) window.mgUpdateTone(t);
         }
-        const saved = localStorage.getItem(KEY) || 'red';
-        if (saved !== 'red') document.documentElement.dataset.theme = saved;
+        const saved = localStorage.getItem(KEY) || 'washi-slate';
+        if (saved === 'red') document.documentElement.removeAttribute('data-theme');
+        else document.documentElement.dataset.theme = saved;
         document.addEventListener('DOMContentLoaded', () => {
           document.querySelectorAll('.theme-dot').forEach(btn => {
             btn.classList.toggle('tdot-active', btn.dataset.t === saved);
