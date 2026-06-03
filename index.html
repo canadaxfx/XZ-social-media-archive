@@ -1946,6 +1946,61 @@
     </footer>
 
     <script>
+// ============================================================
+// XZ Social Media Archive — index.html  JS MAP
+// (search: /* ---------- SECTION ---------- */ to jump to each)
+//
+// HELPERS (top of script, before state)
+//   Source Meta             ~1950  getSourceMeta(source) — returns CSS class,
+//                                  badge label for weibo/oasis/ins/douyin
+//   URL / Media Helpers     ~1959  isYouTubeUrl, isRealVideo, isVideoEntry,
+//                                  isClip, isMotionUrl, isPlayableVideo,
+//                                  fmtDuration, getYouTubeId
+//                                  dlIsLocked/Unlocked (NAS download lock)
+//
+// CONSTANTS & STATE         ~2020  activeData[], currentTab, currentSourceFilter,
+//                                  currentMediaFilter, expandedYears,
+//                                  yearPaginationSettings, DL_KEY
+//                                  NOTE: Archive uses source string (weibo/oasis/ins/douyin)
+//                                  + category field (screenshot/attached) per entry
+//
+// DATA LOADING              ~2048  loadAllData() — fetches {year}.json files (2015–2026)
+//
+// TAB / FILTER              ~2096  switchTab, setMediaFilter, applyFilters,
+//                                  setupDateFilters, applyDateFilter, resetDateFilter
+//
+// TIMELINE                  ~2365  renderTimeline, toggleYear, renderYearContent,
+//                                  changePerPage, goToPage, createPaginationHTML
+//
+// UTILS                     ~2540  getThumbUrl, updateStats
+//
+// LAZY LOADING              ~2558  setupIntersectionObserver, observeImages
+//
+// SEARCH                    ~2579  setupSearch, clearSearch
+//
+// MODAL                     ~2700  openModal, updateModalView, navigatePhoto,
+//                                  jumpToPhoto, togglePostText, closeModal,
+//                                  generateThumbnails, updateNavigationButtons,
+//                                  handleKeyNav
+//                                  Platform popup: setPlatformBtnBehavior,
+//                                  showPlatformPopover ~2644
+//
+// PLAYLIST                  ~2947  plLoad/Save, plCardAdd, plSyncAllCards,
+//                                  plRender, plRemove, plTogglePanel,
+//                                  plPlayItem, addAllFilteredVideos,
+//                                  addYearToPlaylist
+//                                  PL_KEY = 'xzArchivePlaylist'
+//                                  NOTE: Archive uses item._uid (not photo.id)
+//
+// FLOAT GROUP               ~3119  setupFloatGroup, plPositionPanel
+//
+// VIDEO CONTROLS            ~3206  vcSetup, vcFmt, vcTogglePlay, vcToggleMute,
+//                                  vcFullscreen, vcUpdateSeek
+//
+// THEME & MAGNOLIA          ~3274  applyTheme, mgCombined, mgBuildTiles, mgApply
+//
+// ============================================================
+
       // --- SOURCE META HELPER ---
       function getSourceMeta(source) {
         switch (source) {
