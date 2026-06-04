@@ -945,8 +945,8 @@
               display: flex;
               flex-direction: column;
               align-items: stretch;
-              gap: 3px;
-              padding: 6px 10px 5px;
+              gap: 2px;
+              padding: 3px 10px 3px;
               border-bottom: 1px solid #e0e0e0;
               background: #f8f9fa;
               border-radius: 15px 15px 0 0;
@@ -1010,11 +1010,11 @@
             .close-modal {
               background: rgba(20,20,20,0.45);
               border: none;
-              font-size: 24px;
+              font-size: 22px;
               cursor: pointer;
               color: #fff;
               padding: 0;
-              width: 32px; height: 32px;
+              width: 28px; height: 28px;
               border-radius: 50%;
               display: flex; align-items: center; justify-content: center;
               flex-shrink: 0;
@@ -1118,22 +1118,22 @@
 
             /* Thumb Strip */
             .thumbnail-strip {
-              padding: 15px 20px;
+              padding: 8px 14px;
               background: #f8f9fa;
               border-top: 1px solid #e0e0e0;
               overflow-x: auto;
               white-space: nowrap;
               border-radius: 0 0 15px 15px;
-              min-height: 80px;
+              min-height: 60px;
               flex-shrink: 0;
             }
             .thumbnail-container {
               display: inline-flex;
-              gap: 10px;
+              gap: 8px;
             }
             .thumbnail {
-              width: 50px;
-              height: 50px;
+              width: 44px;
+              height: 44px;
               object-fit: cover;
               border-radius: 8px;
               cursor: pointer;
@@ -1392,7 +1392,7 @@
 <style>
 /* ===== FLOAT GROUP ===== */
 #floatBtnGroup{position:fixed;right:16px;bottom:80px;display:flex;flex-direction:column;align-items:center;gap:8px;z-index:8000;touch-action:none;cursor:grab}
-.float-btn{width:58px;height:58px;border-radius:50%;border:2px solid rgba(var(--red-rgb), 0.6);background:var(--bg-float);color:var(--gold);display:flex;flex-direction:column;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 4px 18px rgba(0,0,0,0.15);font-size:22px;font-weight:600;transition:transform .18s,box-shadow .18s;position:relative;flex-shrink:0;user-select:none;overflow:hidden}
+.float-btn{width:58px;height:58px;border-radius:50%;border:3px solid rgba(var(--red-rgb), 0.9);background:var(--bg-float);color:var(--gold);display:flex;flex-direction:column;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 4px 18px rgba(0,0,0,0.15), 0 0 0 3px rgba(var(--red-rgb), 0.4);font-size:22px;font-weight:600;transition:transform .18s,box-shadow .18s;position:relative;flex-shrink:0;user-select:none;overflow:hidden}
 .float-btn:hover{transform:scale(1.08);box-shadow:0 6px 24px rgba(0,0,0,0.22)}
 #plFloatBtn{background:var(--grad-gold);color:#fff;border-color:rgba(255,255,255,0.3);font-size:20px;width:68px;height:68px;overflow:visible}
 #plFloatBadge{position:absolute;top:-3px;right:-3px;background:#ef4444;color:#fff;border-radius:10px;font-size:10px;font-weight:700;padding:1px 5px;min-width:18px;text-align:center;display:none;line-height:1.6}
@@ -1404,7 +1404,7 @@
 .timeline-photo.pl-in-playlist{box-shadow:0 0 0 2.5px #2563eb,0 2px 8px rgba(0,0,0,0.1)}
 @media(max-width:768px){#floatBtnGroup{right:8px}.float-btn{width:50px;height:50px;font-size:18px}}
 /* ===== PLAYLIST ===== */
-.playlist-panel{position:fixed;width:300px;max-height:420px;background:#fff;border-radius:12px;box-shadow:0 6px 28px rgba(0,0,0,.22);z-index:7999;display:flex;flex-direction:column;overflow:hidden}
+.playlist-panel{position:fixed;width:300px;max-height:420px;background:#fff;border-radius:12px;box-shadow:0 6px 28px rgba(0,0,0,.22);z-index:9600;display:flex;flex-direction:column;overflow:hidden}
 .playlist-header{display:flex;align-items:center;gap:8px;padding:12px 14px;background:linear-gradient(135deg,#1e2a40,#111827);border-radius:12px 12px 0 0;color:#fff;cursor:pointer;font-size:14px;font-weight:700;flex-shrink:0;user-select:none;letter-spacing:0.2px}
 .playlist-panel.collapsed .playlist-header{border-radius:12px}
 .playlist-count-badge{background:rgba(255,255,255,.25);border-radius:10px;padding:2px 8px;font-size:12px;font-weight:700}
@@ -1430,21 +1430,25 @@
 .pl-counter-badge{background:#1f2937;color:#fff;padding:2px 9px;border-radius:10px;font-size:11px;margin-left:5px;display:none}
 #plToast{position:fixed;bottom:76px;left:50%;transform:translateX(-50%);background:#1f2937;color:#fff;padding:8px 18px;border-radius:8px;font-size:13px;z-index:9999;pointer-events:none;opacity:0;transition:opacity .3s}
 @media(max-width:600px){.playlist-panel{width:calc(100vw - 90px)}}
-@media(max-height:500px){.pl-fs-controls{padding:6px 12px}.pl-fs-nav-btn,.vc-btn{width:34px!important;height:34px!important}#vcPlayBtn{width:38px!important;height:38px!important}}
-@media(max-width:600px){.pl-fs-controls{flex-wrap:wrap;padding:8px 12px;gap:8px;justify-content:center}.vc-middle{order:10;flex:0 0 100%!important;min-width:100%!important}}
-.pl-fs-controls{display:none;align-items:center;gap:8px;padding:8px 16px;background:linear-gradient(to top, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.7) 100%);flex-shrink:0;border-radius:8px}
-.pl-fs-nav-btn{background:rgba(255,255,255,0.2);color:#fff;border:2px solid rgba(255,255,255,0.4);border-radius:8px;width:42px;height:42px;font-size:20px;cursor:pointer;transition:all .15s;line-height:1;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-weight:700;padding:0}
-.pl-fs-nav-btn:hover{background:rgba(255,255,255,0.3);border-color:rgba(255,255,255,0.6)}
+@media(max-height:500px){.pl-fs-controls{padding:4px 8px}.pl-fs-nav-btn,.vc-btn{width:26px!important;height:26px!important}#vcPlayBtn{width:30px!important;height:30px!important}}
+@media(max-width:600px){.pl-fs-controls{flex-wrap:wrap;padding:6px 8px;gap:6px;justify-content:center}.vc-middle{order:10;flex:0 0 100%!important;min-width:100%!important}}
+.pl-fs-controls{display:none;align-items:center;gap:6px;padding:4px 8px;background:var(--surface-w);border-top:1px solid var(--border);flex-shrink:0;border-radius:0 0 8px 8px}
+.pl-fs-nav-btn{background:rgba(0,0,0,0.18);color:#111;border:1px solid rgba(0,0,0,0.35);border-radius:8px;width:34px;height:34px;font-size:15px;cursor:pointer;transition:all .15s;line-height:1;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-weight:700;padding:0}
+.pl-fs-nav-btn:hover{background:rgba(0,0,0,0.28);border-color:rgba(0,0,0,0.5)}
 .pl-fs-nav-btn:disabled{opacity:.25;cursor:default}
-.pl-fs-nav-btn svg{width:20px;height:20px;fill:none;stroke:#fff;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
-.pl-fs-nav-counter{color:rgba(255,255,255,0.9);font-size:12px;min-width:50px;text-align:center}
-.vc-btn{background:rgba(255,255,255,0.1);color:#fff;border:1px solid rgba(255,255,255,0.2);border-radius:8px;width:38px;height:38px;font-size:16px;cursor:pointer;line-height:1;flex-shrink:0;transition:all .15s;display:flex;align-items:center;justify-content:center;padding:0}
-.vc-btn:hover{background:rgba(255,255,255,0.2);border-color:rgba(255,255,255,0.3)}
-.vc-btn svg{width:20px;height:20px;fill:none;stroke:#fff;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
-#vcPlayBtn{background:#fff;border:none;border-radius:50%;width:46px;height:46px;font-size:20px;color:#000;font-weight:700}
-#vcPlayBtn:hover{background:#f0f0f0;transform:scale(1.05)}
-#vcFsBtn{background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.2)}
-#vcFsBtn:hover{background:rgba(255,255,255,0.2);border-color:rgba(255,255,255,0.3)}
+.pl-fs-nav-btn svg{width:16px;height:16px;fill:none;stroke:#111;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+.pl-fs-nav-counter{color:rgba(0,0,0,0.6);font-size:12px;min-width:50px;text-align:center}
+.vc-btn{background:rgba(0,0,0,0.18);color:#111;border:1px solid rgba(0,0,0,0.35);border-radius:8px;width:30px;height:30px;font-size:13px;cursor:pointer;line-height:1;flex-shrink:0;transition:all .15s;display:flex;align-items:center;justify-content:center;padding:0}
+.vc-btn:hover{background:rgba(0,0,0,0.28);border-color:rgba(0,0,0,0.5)}
+.vc-btn svg{width:15px;height:15px;fill:none;stroke:#111;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+#vcPlayBtn{background:#1a1a1a;border:none;border-radius:50%;width:36px;height:36px;font-size:15px;color:#fff;font-weight:700}
+#vcPlayBtn:hover{background:#333;transform:scale(1.05)}
+#vcPlBtn{background:var(--grad-gold);color:#fff;border:none;border-radius:50%;width:32px;height:32px;font-size:14px;cursor:pointer;flex-shrink:0;display:flex;align-items:center;justify-content:center;position:relative;transition:all .15s}
+#vcPlBtn:hover{transform:scale(1.1)}
+#vcPlBadge{position:absolute;top:-3px;right:-3px;background:#ef4444;color:#fff;border-radius:8px;font-size:9px;font-weight:700;padding:0 3px;min-width:14px;text-align:center;display:none;line-height:1.6}
+.vc-seek{flex:1;min-width:0;height:3px;accent-color:var(--gold);cursor:pointer;border-radius:2px}
+.vc-time{color:rgba(0,0,0,0.55);font-size:11px;white-space:nowrap;flex-shrink:0;font-variant-numeric:tabular-nums;font-weight:500}
+.vc-middle{flex:1;min-width:0;display:flex;flex-direction:column;gap:3px;justify-content:center}
 .vc-seek{flex:1;min-width:0;height:5px;accent-color:#fff;cursor:pointer;border-radius:3px}
 .vc-time{color:rgba(255,255,255,0.9);font-size:12px;white-space:nowrap;flex-shrink:0;font-variant-numeric:tabular-nums;font-weight:500}
 .vc-middle{flex:1;min-width:0;display:flex;flex-direction:column;gap:5px;justify-content:center}
@@ -1645,6 +1649,7 @@
             <button class="vc-btn" id="vcMuteBtn" onclick="vcToggleMute()" title="Mute"><svg viewBox="0 0 24 24"><path d="M11 5L6 9H2v6h4l5 4V5z"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg></button>
             <button class="vc-btn" id="vcFsBtn" onclick="vcFullscreen()" title="Fullscreen"><svg viewBox="0 0 24 24"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/></svg></button>
             <button class="pl-fs-nav-btn" id="plFsNext" onclick="navigatePhoto(1)" title="Next"><svg viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg></button>
+            <button id="vcPlBtn" onclick="plTogglePanel()" title="Playlist 播放列表">🎬<span id="vcPlBadge"></span></button>
         </div>
 
         <div class="thumbnail-strip">
@@ -3076,6 +3081,8 @@
           if (!countEl) return;
           countEl.textContent = playlist.length;
           if (badge) { badge.textContent = playlist.length; badge.style.display = playlist.length ? 'block' : 'none'; }
+          const vcBadge = document.getElementById('vcPlBadge');
+          if (vcBadge) { vcBadge.textContent = playlist.length; vcBadge.style.display = playlist.length ? 'block' : 'none'; }
           if (!playlist.length) { if (panel) panel.style.display = 'none'; return; }
           const activeUid = playlistMode ? (currentGroupPhotos[currentPhotoIndex] || {})._uid : null;
           list.innerHTML = playlist.map((p, i) => `
@@ -3140,7 +3147,6 @@
 
       function plClear() {
           if (!playlist.length) return;
-          if (!confirm('清空播放列表？')) return;
           playlist = []; plSave(); plRender();
           if (playlistMode) closeModal();
       }
@@ -3304,7 +3310,7 @@
           seek.value = 0; seek._seeking = false;
           cur.textContent = '0:00'; dur.textContent = '0:00';
           playBtn.textContent = v.paused ? '▶' : '⏸';
-          muteBtn.textContent = v.muted ? '🔇' : '🔊';
+          muteBtn.innerHTML = v.muted ? '<svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5L6 9H2v6h4l5 4V5z"/><line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/></svg>' : '<svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5L6 9H2v6h4l5 4V5z"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>';
 
           v.ontimeupdate = () => {
               if (!seek._seeking) {
@@ -3318,7 +3324,7 @@
           };
           v.onplay  = () => { playBtn.textContent = '⏸'; };
           v.onpause = () => { playBtn.textContent = '▶'; };
-          v.onvolumechange = () => { muteBtn.textContent = v.muted ? '🔇' : '🔊'; };
+          v.onvolumechange = () => { muteBtn.innerHTML = v.muted ? '<svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5L6 9H2v6h4l5 4V5z"/><line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/></svg>' : '<svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5L6 9H2v6h4l5 4V5z"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>'; };
           v.onended = () => {
               if (playlistMode && currentPhotoIndex < currentGroupPhotos.length - 1) {
                   navigatePhoto(1);
