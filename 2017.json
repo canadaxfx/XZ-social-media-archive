@@ -6,7 +6,6 @@
         "month": "December",
         "year": "2017",
         "tags": [],
-        "category": "screenshot",
         "groupName": "201712",
         "photoText": "3:48\n< iCloud\n2017年12月31日 下午3:48\n马上要告别2017年了,这一年努力过,开\n心过,珍惜过,发自内心感谢帮助过我的\n每一个人。一向都不太会表达自己,那一\n切付之于行动吧,一切都会更好的,一定\n会!2018要更加努力才能对得起这么爱我\n的你们!不让你们这么辛苦!\nSOYEZZ小年团当战DAVTOV",
         "postText": "马上要告别2017年了,这一年努力过,开心过,珍惜过,发自内心感谢帮助过我的每一个人。一向都不太会表达自己,那一切付之于行动吧,一切都会更好的,一定会!2018要更加努力才能对得起这么爱我的你们!不让你们这么辛苦!",
@@ -15,7 +14,8 @@
             "reflection",
             "gratitude"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 328,
@@ -24,7 +24,6 @@
         "month": "December",
         "year": "2017",
         "tags": [],
-        "category": "screenshot",
         "groupName": "201712",
         "photoText": "X玖少年团肖战DAYTOY\n17-12-31 15:51 来自iPhone X\n2017\n云!2018安史小务\n能刈侍起这么发我\n的你们!不让你们这么辛苦!\n---",
         "postText": "马上要告别2017年了,这一年努力过,开心过,珍惜过,发自内心感谢帮助过我的每一个人。一向都不太会表达自己,那一切付之于行动吧,一切都会更好的,一定会!2018要更加努力才能对得起这么爱我的你们!不让你们这么辛苦!",
@@ -33,7 +32,8 @@
             "reflection",
             "gratitude"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 329,
@@ -42,7 +42,6 @@
         "month": "December",
         "year": "2017",
         "tags": [],
-        "category": "screenshot",
         "groupName": "201712",
         "photoText": "X玖少年团肖战DAYT...\n6\nDAY\nΤΟΥ 17-12-31 15:54\nτον\nV\n不善表达,但是谢谢你们,这一年辛苦啦。\n我们2018更好的相见!",
         "postText": "马上要告别2017年了,这一年努力过,开心过,珍惜过,发自内心感谢帮助过我的每一个人。一向都不太会表达自己,那一切付之于行动吧,一切都会更好的,一定会!2018要更加努力才能对得起这么爱我的你们!不让你们这么辛苦!",
@@ -51,7 +50,8 @@
             "reflection",
             "gratitude"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 330,
@@ -61,13 +61,13 @@
         "year": "2017",
         "tags": [],
         "groupName": "201712",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "马上要告别2017年了,这一年努力过,开心过,珍惜过,发自内心感谢帮助过我的每一个人。一向都不太会表达自己,那一切付之于行动吧,一切都会更好的,一定会!2018要更加努力才能对得起这么爱我的你们!不让你们这么辛苦!",
         "englishTags": [
             "new year message"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 331,
@@ -77,7 +77,6 @@
         "year": "2017",
         "tags": [],
         "groupName": "201712",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "马上要告别2017年了,这一年努力过,开心过,珍惜过,发自内心感谢帮助过我的每一个人。一向都不太会表达自己,那一切付之于行动吧,一切都会更好的,一定会!2018要更加努力才能对得起这么爱我的你们!不让你们这么辛苦!",
         "englishTags": [
@@ -85,7 +84,8 @@
             "reflection",
             "gratitude"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 332,
@@ -95,7 +95,6 @@
         "year": "2017",
         "tags": [],
         "groupName": "201712",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "马上要告别2017年了,这一年努力过,开心过,珍惜过,发自内心感谢帮助过我的每一个人。一向都不太会表达自己,那一切付之于行动吧,一切都会更好的,一定会!2018要更加努力才能对得起这么爱我的你们!不让你们这么辛苦!",
         "englishTags": [
@@ -103,7 +102,8 @@
             "reflection",
             "gratitude"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 333,
@@ -112,7 +112,6 @@
         "month": "December",
         "year": "2017",
         "tags": [],
-        "category": "attached",
         "groupName": "201712",
         "photoText": "",
         "duration": 7,
@@ -121,7 +120,8 @@
             "costume drama",
             "historical drama"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 326,
@@ -130,7 +130,6 @@
         "month": "December",
         "year": "2017",
         "tags": [],
-        "category": "screenshot",
         "groupName": "201712",
         "photoText": "DAY\nΤΟΥ\nX玖少年团肖战DAYTOY\n✔17-12-28 14:29 来自iPhone X\n我正在参加@新浪娱乐的#年度百问#,我提出了坚\n持过哪些微不足道...”③哪些微不足道的事情给你的\n生活带来了巨大改变...\n哪些微不足道的事情给你的生\n活带来了巨大改变??\n696个回答,51.1万热度\n?问答\n回答",
         "postText": "我正在参加@新浪娱乐的#年度百问#,我提出了坚 持过哪些微不足道...”③哪些微不足道的事情给你的 生活带来了巨大改变...\n哪些微不足",
@@ -138,7 +137,8 @@
             "weibo",
             "interview"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 324,
@@ -149,7 +149,6 @@
         "tags": [
             "圣诞"
         ],
-        "category": "screenshot",
         "groupName": "201712",
         "link": "",
         "note": "",
@@ -159,7 +158,8 @@
             "christmas",
             "holiday wishes"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 325,
@@ -173,13 +173,13 @@
         "link": "",
         "groupName": "201712",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "",
         "duration": 10,
         "englishTags": [
             "christmas"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 323,
@@ -190,7 +190,6 @@
         "tags": [
             "圣诞"
         ],
-        "category": "attached",
         "groupName": "201712",
         "photoText": "",
         "duration": 4,
@@ -198,7 +197,8 @@
         "englishTags": [
             "christmas"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 317,
@@ -207,7 +207,6 @@
         "month": "December",
         "year": "2017",
         "tags": [],
-        "category": "screenshot",
         "groupName": "201712",
         "photoText": "DAY\nΤΟΥ\nX玖少年团肖战DAYTOY\nTOY 冷坏了吧?!快回家洗个热水澡,早早睡,\n晚安!\n17-12-22 21:44",
         "postText": "TOY 冷坏了吧?!快回家洗个热水澡,早早睡, 晚安!",
@@ -216,7 +215,8 @@
             "winter",
             "goodnight"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 318,
@@ -227,14 +227,14 @@
         "tags": [
             "冬至"
         ],
-        "category": "screenshot",
         "groupName": "201712",
         "photoText": "DAY\nΤΟΥ\nX玖少年团肖战DAYTOY\n✔17-12-22 13:09 来自iPhone X\n今天是冬至!!那么问题来了!是吃饺子还是汤圆\n呢?!!?(就算你们非常嫌弃我的自拍我也要\n发!)\n好了,你不要再说了\n战战肖战铁粉\n● 不嫌弃!您!的!自!拍!\n冬至吃饺子\nX玖少年团肖战DAYTOY:这是谁?梁老板你为\n什么穿越了!!!! 查看图片\n命运扼住了我的咽喉\n@X玖少年团肖战DAYTOY",
         "postText": "TOY 冷坏了吧?!快回家洗个热水澡,早早睡, 晚安!",
         "englishTags": [
             "winter solstice"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 319,
@@ -246,7 +246,6 @@
         "link": "",
         "groupName": "201712",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "TOY 冷坏了吧?!快回家洗个热水澡,早早睡, 晚安!",
         "englishTags": [
@@ -254,7 +253,8 @@
             "goodnight",
             "winter"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 320,
@@ -269,14 +269,14 @@
         "link": "",
         "groupName": "201712",
         "note": "",
-        "category": "attached",
         "photoText": "好了，你不要再说了\n@X玖少年团肖战DAYTOY",
         "postText": "TOY 冷坏了吧?!快回家洗个热水澡,早早睡, 晚安!",
         "englishTags": [
             "meme",
             "toy"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 321,
@@ -288,14 +288,14 @@
         "link": "",
         "groupName": "201712",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "TOY 冷坏了吧?!快回家洗个热水澡,早早睡, 晚安!",
         "englishTags": [
             "toy",
             "goodnight"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 322,
@@ -309,14 +309,14 @@
         "link": "",
         "groupName": "201712",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "TOY 冷坏了吧?!快回家洗个热水澡,早早睡, 晚安!",
         "englishTags": [
             "selfie",
             "toy"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 315,
@@ -325,7 +325,6 @@
         "month": "December",
         "year": "2017",
         "tags": [],
-        "category": "screenshot",
         "groupName": "201712",
         "photoText": "热门\nX玖\n8\nDAY\nX玖少年团肖战DAYTOY\nΤΟΥ\n✔17-12-17 12:32 来自iPhone X\n我来了!!!\n好久不见!墨X玖少年团首战DAYTOY的秒拍\n视频\n分享",
         "postText": "我来了!!! 好久不见! 墨X玖少年团首战DAYTOY的秒拍",
@@ -335,7 +334,8 @@
             "debut",
             "stage performance"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 316,
@@ -347,14 +347,14 @@
         "link": "",
         "groupName": "201712",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "",
         "duration": 105,
         "englishTags": [
             "weibo",
             "december"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 314,
@@ -365,7 +365,6 @@
         "tags": [
             "吃了吗？"
         ],
-        "category": "attached",
         "groupName": "201712",
         "photoText": "",
         "duration": 8,
@@ -373,7 +372,8 @@
             "eating",
             "food"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 311,
@@ -382,7 +382,6 @@
         "month": "December",
         "year": "2017",
         "tags": [],
-        "category": "screenshot",
         "groupName": "201712",
         "photoText": "X玖\nDAY\nX玖少年团肖战DAYTOY\nΤΟΥ\n17-12-9 20:19 来自iPhone X\n[蝙蝠侠]行走在黑夜",
         "postText": "[蝙蝠侠]行走在黑夜",
@@ -390,7 +389,8 @@
             "batman",
             "cosplay"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 312,
@@ -400,14 +400,14 @@
         "year": "2017",
         "tags": [],
         "groupName": "201712",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "[蝙蝠侠]行走在黑夜",
         "englishTags": [
             "batman",
             "cosplay"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 313,
@@ -417,14 +417,14 @@
         "year": "2017",
         "tags": [],
         "groupName": "201712",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "[蝙蝠侠]行走在黑夜",
         "englishTags": [
             "batman",
             "cosplay"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 306,
@@ -433,7 +433,6 @@
         "month": "December",
         "year": "2017",
         "tags": [],
-        "category": "screenshot",
         "groupName": "201712",
         "link": "",
         "note": "",
@@ -442,7 +441,8 @@
         "englishTags": [
             "haircut"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 307,
@@ -454,14 +454,14 @@
             "自拍"
         ],
         "groupName": "201712",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "剪完头发 瓜娃子开心的飞起!",
         "englishTags": [
             "selfie",
             "haircut"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 308,
@@ -473,14 +473,14 @@
             "自拍"
         ],
         "groupName": "201712",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "剪完头发 瓜娃子开心的飞起!",
         "englishTags": [
             "selfie",
             "haircut"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 309,
@@ -492,14 +492,14 @@
             "自拍"
         ],
         "groupName": "201712",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "剪完头发 瓜娃子开心的飞起!",
         "englishTags": [
             "selfie",
             "haircut"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 310,
@@ -511,14 +511,14 @@
             "自拍"
         ],
         "groupName": "201712",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "剪完头发 瓜娃子开心的飞起!",
         "englishTags": [
             "selfie",
             "haircut"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 305,
@@ -527,7 +527,6 @@
         "month": "December",
         "year": "2017",
         "tags": [],
-        "category": "attached",
         "groupName": "201712",
         "photoText": "",
         "duration": 5,
@@ -536,7 +535,8 @@
             "costume drama",
             "historical drama"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 300,
@@ -545,7 +545,6 @@
         "month": "November",
         "year": "2017",
         "tags": [],
-        "category": "screenshot",
         "groupName": "201711",
         "photoText": "DAY X玖少年团肖战DAYTΟΥ\nΤΟΥ\n6\n● 看到大家都在数日子,真是唤起好多以前的\n回忆!谢谢你们最近手机出了问题,找到\n了以前的手机也发现了以前的照片,你们来\n猜猜这是哪一天?\n@入前年战DAYTOY\n17-11-29 23:11",
         "postText": "● 看到大家都在数日子,真是唤起好多以前的回忆!谢谢你们最近手机出了问题,找到了以前的手机也发现了以前的照片,你们来猜猜这是",
@@ -554,7 +553,8 @@
             "behind the scenes",
             "super star academy"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 301,
@@ -564,7 +564,6 @@
         "year": "2017",
         "tags": [],
         "groupName": "201711",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "● 看到大家都在数日子,真是唤起好多以前的回忆!谢谢你们最近手机出了问题,找到了以前的手机也发现了以前的照片,你们来猜猜这是",
         "englishTags": [
@@ -572,7 +571,8 @@
             "behind the scenes",
             "super star academy"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 302,
@@ -581,7 +581,6 @@
         "month": "November",
         "year": "2017",
         "tags": [],
-        "category": "screenshot",
         "groupName": "201711",
         "photoText": "DAY\nΤΟΥ\nX玖少年团肖战DAYTOY\n✔17-11-29 14:02 来自iPhone X\n裹成粽子再出门!!!\n好久不见咯!!日常想念你们!\nX玖\n8",
         "postText": "● 看到大家都在数日子,真是唤起好多以前的回忆!谢谢你们最近手机出了问题,找到了以前的手机也发现了以前的照片,你们来猜猜这是",
@@ -590,7 +589,8 @@
             "behind the scenes",
             "super star academy"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 303,
@@ -604,14 +604,14 @@
         "link": "",
         "groupName": "201711",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "● 看到大家都在数日子,真是唤起好多以前的回忆!谢谢你们最近手机出了问题,找到了以前的手机也发现了以前的照片,你们来猜猜这是",
         "englishTags": [
             "selfie",
             "throwback"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 304,
@@ -625,14 +625,14 @@
         "link": "",
         "groupName": "201711",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "● 看到大家都在数日子,真是唤起好多以前的回忆!谢谢你们最近手机出了问题,找到了以前的手机也发现了以前的照片,你们来猜猜这是",
         "englishTags": [
             "selfie",
             "throwback"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 299,
@@ -643,9 +643,7 @@
         "tags": [
             "中午好"
         ],
-        "category": "attached",
         "groupName": "201711",
-        "source": "weibo",
         "link": "",
         "note": "",
         "photoText": "",
@@ -658,7 +656,9 @@
             "sean xiao screenshot",
             "xiao zhan throwback",
             "sean xiao memories"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 298,
@@ -667,9 +667,7 @@
         "month": "November",
         "year": "2017",
         "tags": [],
-        "category": "attached",
         "groupName": "201711",
-        "source": "weibo",
         "link": "",
         "note": "",
         "photoText": "",
@@ -678,7 +676,9 @@
         "englishTags": [
             "weibo",
             "november"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 292,
@@ -687,7 +687,6 @@
         "month": "November",
         "year": "2017",
         "tags": [],
-        "category": "screenshot",
         "groupName": "201711",
         "photoText": "X玖\nDAY\nΤΟΥ\nX玖少年团肖战DAYTOY\n6\n8\nV\n17-11-19 21:39 来自 iPhone 7 Plus\n肖zz的秒拍视频\n回家咯\n@X玖少年团自战DAYTOY",
         "postText": "回家咯",
@@ -696,7 +695,8 @@
             "casual",
             "travel"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 293,
@@ -711,14 +711,14 @@
         "link": "",
         "groupName": "201711",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团 肖战DAYTOY",
         "postText": "回家咯",
         "englishTags": [
             "selfie",
             "casual"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 294,
@@ -733,7 +733,6 @@
         "link": "",
         "groupName": "201711",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "回家咯",
         "englishTags": [
@@ -741,7 +740,8 @@
             "food",
             "hometown"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 295,
@@ -756,14 +756,14 @@
         "link": "",
         "groupName": "201711",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "回家咯",
         "englishTags": [
             "chongqing",
             "food"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 296,
@@ -778,14 +778,14 @@
         "link": "",
         "groupName": "201711",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "回家咯",
         "englishTags": [
             "selfie",
             "casual"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 297,
@@ -797,13 +797,13 @@
         "link": "",
         "groupName": "201711",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "",
         "duration": 23,
         "englishTags": [
             "weibo"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 289,
@@ -812,7 +812,6 @@
         "month": "November",
         "year": "2017",
         "tags": [],
-        "category": "screenshot",
         "groupName": "201711",
         "photoText": "DAY\nΤΟΥ\nX玖少年团肖战DAYTOY\n● 早安啊,好久没来了!\nV\nວ\n17-11-17 09:27",
         "postText": "早安啊,好久没来了!",
@@ -820,7 +819,8 @@
             "good morning",
             "weibo"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 290,
@@ -835,14 +835,14 @@
         "link": "",
         "groupName": "201711",
         "note": "",
-        "category": "attached",
         "photoText": "令人窒息的爱\n@X玖少年团肖战DAYTOY",
         "postText": "早安啊,好久没来了!",
         "englishTags": [
             "early career",
             "weibo update"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 291,
@@ -854,14 +854,14 @@
         "link": "",
         "groupName": "201711",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "",
         "duration": 6,
         "englishTags": [
             "weibo",
             "november"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 288,
@@ -872,14 +872,14 @@
         "tags": [
             "升旗"
         ],
-        "category": "attached",
         "groupName": "201711",
         "photoText": "",
         "duration": 15,
         "englishTags": [
             "flag raising"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 285,
@@ -888,7 +888,6 @@
         "month": "November",
         "year": "2017",
         "tags": [],
-        "category": "screenshot",
         "groupName": "201711",
         "photoText": "DAY\nΤΟΥ\nX玖少年团肖战DAYTOY\n17-11-11 23:33 来自iPhone 7 Plus\n#NYLONWEEKEND##尼龙周末#\n开心的周末party\nYLOOU.FAS\n@X玖少年团肖战DAYTOY\nX玖\n8",
         "postText": "#NYLONWEEKEND##尼龙周末# 开心的周末party",
@@ -896,7 +895,8 @@
             "nylon",
             "party"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 286,
@@ -906,14 +906,14 @@
         "year": "2017",
         "tags": [],
         "groupName": "201711",
-        "category": "attached",
         "photoText": "CHINA\n@X玖少年团肖战DAYTOY",
         "postText": "#NYLONWEEKEND##尼龙周末# 开心的周末party",
         "englishTags": [
             "nylon",
             "party"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 287,
@@ -923,7 +923,6 @@
         "year": "2017",
         "tags": [],
         "groupName": "201711",
-        "category": "attached",
         "photoText": "NYLO\n@X玖少年团肖战DAYTOY",
         "postText": "#NYLONWEEKEND##尼龙周末# 开心的周末party",
         "englishTags": [
@@ -931,7 +930,8 @@
             "nylon weekend",
             "party"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 282,
@@ -943,7 +943,6 @@
             "北堂墨染",
             "杀青"
         ],
-        "category": "screenshot",
         "groupName": "201711",
         "photoText": "X玖\nDAY\nX玖少年团肖战DAYTOY\n6\nΤΟΥ\n✔17-11-8 14:05 来自 iPhone 7 Plus\n杀青!\n带不走的,那就留在记忆里吧,谢谢你们!\n@X玖少年团肖战DAYTOY",
         "postText": "杀青! 带不走的,那就留在记忆里吧,谢谢你们! @X玖少年团肖战DAYTOY",
@@ -952,7 +951,8 @@
             "wrap party",
             "character: beitang moran"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 283,
@@ -965,7 +965,6 @@
             "杀青"
         ],
         "groupName": "201711",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "杀青! 带不走的,那就留在记忆里吧,谢谢你们! @X玖少年团肖战DAYTOY",
         "englishTags": [
@@ -973,7 +972,8 @@
             "wrap party",
             "character: beitang moran"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 284,
@@ -989,7 +989,6 @@
         "link": "",
         "groupName": "201711",
         "note": "",
-        "category": "attached",
         "photoText": "inal Cranhing\nInternational Bush\nfrom manfang\nBest wishes\nBEST WISHES\n@@X玖少年团肖战DAYTO",
         "postText": "杀青! 带不走的,那就留在记忆里吧,谢谢你们! @X玖少年团肖战DAYTOY",
         "englishTags": [
@@ -997,7 +996,8 @@
             "filming wrap",
             "flower"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 277,
@@ -1008,7 +1008,6 @@
         "tags": [
             "画"
         ],
-        "category": "screenshot",
         "groupName": "201711",
         "photoText": "DAY X玖少年团肖战DAYTOY\nΤΟΥ\n11-6 18:43 来自iPhone 7 Plus\n#兔牙战时间#\nX玖\n8\n这几天迷上了手机涂鸦,十几分钟就可以完成,\n看得出来我画的是什么吗?\n(经纪人姐姐问我是不是要重操旧业)\nDAY\nτον\nX玖少年团肖战DAYTOY\n忘记说了第一张算是临摹\n三个按热度",
         "postText": "#兔牙战时间# 这几天迷上了手机涂鸦,十几分钟就可以完成, 看得出来我画的是什么吗? (经纪人姐姐问我是不是要重操旧业) 忘记说了第一张算是临摹",
@@ -1017,7 +1016,8 @@
             "drawing",
             "rabbit teeth"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 278,
@@ -1032,7 +1032,6 @@
         "link": "",
         "groupName": "201711",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "#兔牙战时间# 这几天迷上了手机涂鸦,十几分钟就可以完成, 看得出来我画的是什么吗? (经纪人姐姐问我是不是要重操旧业) 忘记说了第一张算是临摹",
         "englishTags": [
@@ -1041,7 +1040,8 @@
             "fanart",
             "drawing"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 279,
@@ -1056,7 +1056,6 @@
         "link": "",
         "groupName": "201711",
         "note": "",
-        "category": "attached",
         "photoText": "中国移动 4G\n下午7:09\n100%\n选择\n水彩(湿)\n编辑\n@X玖少年团肖战DAYTOY",
         "postText": "#兔牙战时间# 这几天迷上了手机涂鸦,十几分钟就可以完成, 看得出来我画的是什么吗? (经纪人姐姐问我是不是要重操旧业) 忘记说了第一张算是临摹",
         "englishTags": [
@@ -1065,7 +1064,8 @@
             "sketch",
             "doodle"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 280,
@@ -1077,7 +1077,6 @@
             "画"
         ],
         "groupName": "201711",
-        "category": "attached",
         "photoText": "中国移动\n4G\n下午4:14\n11%\n选择\n水彩(湿)\n编辑\n@X玖少年团肖战DAYTOY",
         "postText": "#兔牙战时间# 这几天迷上了手机涂鸦,十几分钟就可以完成, 看得出来我画的是什么吗? (经纪人姐姐问我是不是要重操旧业) 忘记说了第一张算是临摹",
         "englishTags": [
@@ -1085,7 +1084,8 @@
             "drawing",
             "rabbit teeth"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 281,
@@ -1100,7 +1100,6 @@
         "link": "",
         "groupName": "201711",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "#兔牙战时间# 这几天迷上了手机涂鸦,十几分钟就可以完成, 看得出来我画的是什么吗? (经纪人姐姐问我是不是要重操旧业) 忘记说了第一张算是临摹",
         "englishTags": [
@@ -1108,7 +1107,8 @@
             "astronaut",
             "sketch"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 270,
@@ -1117,7 +1117,6 @@
         "month": "November",
         "year": "2017",
         "tags": [],
-        "category": "screenshot",
         "groupName": "201711",
         "photoText": "X玖\nDAY\nX玖少年团肖战DAYTOY\n8\nΤΟΥ\n✔11-2 17:22 来自iPhone 7 Plus\n北京最美的时候.\n猜猜图三我是谁?\n@X玖少年团肖战DAYΤΟΥ\nDAY\nΤον\nX玖少年团肖战DAYTOY\n乍样\nX玖少年团伍嘉成\n第二个是我,是吗",
         "postText": "北京最美的时候.\n猜猜图三我是谁?\n@X玖少年团肖战DAYΤΟΥ",
@@ -1126,7 +1125,8 @@
             "x nine",
             "group photo"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 271,
@@ -1141,7 +1141,6 @@
         "link": "",
         "groupName": "201711",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "北京最美的时候.\n猜猜图三我是谁?\n@X玖少年团肖战DAYΤΟΥ",
         "englishTags": [
@@ -1149,7 +1148,8 @@
             "beijing",
             "oh my emperor"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 272,
@@ -1164,7 +1164,6 @@
         "link": "",
         "groupName": "201711",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "北京最美的时候.\n猜猜图三我是谁?\n@X玖少年团肖战DAYΤΟΥ",
         "englishTags": [
@@ -1172,7 +1171,8 @@
             "beijing",
             "oh my emperor"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 273,
@@ -1186,14 +1186,14 @@
         "link": "",
         "groupName": "201711",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "北京最美的时候.\n猜猜图三我是谁?\n@X玖少年团肖战DAYΤΟΥ",
         "englishTags": [
             "starbucks",
             "beijing"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 274,
@@ -1207,14 +1207,14 @@
         "link": "",
         "groupName": "201711",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "北京最美的时候.\n猜猜图三我是谁?\n@X玖少年团肖战DAYΤΟΥ",
         "englishTags": [
             "photography",
             "beijing"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 275,
@@ -1228,14 +1228,14 @@
         "link": "",
         "groupName": "201711",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "北京最美的时候.\n猜猜图三我是谁?\n@X玖少年团肖战DAYΤΟΥ",
         "englishTags": [
             "photoshoot",
             "beijing"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 276,
@@ -1249,14 +1249,14 @@
         "link": "",
         "groupName": "201711",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "北京最美的时候.\n猜猜图三我是谁?\n@X玖少年团肖战DAYΤΟΥ",
         "englishTags": [
             "photography",
             "beijing"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 265,
@@ -1265,7 +1265,6 @@
         "month": "October",
         "year": "2017",
         "tags": [],
-        "category": "screenshot",
         "groupName": "201710",
         "photoText": "X玖\n6\n8\nDAY\nΤΟΥ\nX玖少年团肖战DAYTOY\nV 17-10-29 17:50 来自iPhone 7 Plus\n跟着太阳一起收工.\n最近不带帽子就变炸毛怪了...\n你们说我有没有白回来点?\nΤΟΥ\nDAY\nΤΟΥ\nV\nX玖少年团肖战DAYTOY\n大家都很给面子\n●@X玖少年团肖战DAYTOY",
         "postText": "跟着太阳一起收工. 最近不带帽子就变炸毛怪了... 你们说我有没有白回来点?",
@@ -1275,7 +1274,8 @@
             "casual",
             "hat"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 266,
@@ -1289,7 +1289,6 @@
         "link": "",
         "groupName": "201710",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "跟着太阳一起收工. 最近不带帽子就变炸毛怪了... 你们说我有没有白回来点?",
         "englishTags": [
@@ -1297,7 +1296,8 @@
             "casual",
             "hat"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 267,
@@ -1311,7 +1311,6 @@
         "link": "",
         "groupName": "201710",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "跟着太阳一起收工. 最近不带帽子就变炸毛怪了... 你们说我有没有白回来点?",
         "englishTags": [
@@ -1319,7 +1318,8 @@
             "casual",
             "hat"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 268,
@@ -1333,7 +1333,6 @@
         "link": "",
         "groupName": "201710",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "跟着太阳一起收工. 最近不带帽子就变炸毛怪了... 你们说我有没有白回来点?",
         "englishTags": [
@@ -1341,7 +1340,8 @@
             "casual",
             "hat"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 269,
@@ -1355,14 +1355,14 @@
         "link": "",
         "groupName": "201710",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "跟着太阳一起收工. 最近不带帽子就变炸毛怪了... 你们说我有没有白回来点?",
         "englishTags": [
             "flower",
             "selfie"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 263,
@@ -1371,7 +1371,6 @@
         "month": "October",
         "year": "2017",
         "tags": [],
-        "category": "screenshot",
         "groupName": "201710",
         "photoText": "X玖\nDAY\nX玖少年团首战DAYTOY\n6\n8\nΤΟΥ\n✔17-10-22 19:35 来自iPhone 7 Plus\n好久不见,\n今天是我和你们见面的整整两周年!\n□□X玖少年团肖战DAYTOY的秒拍视频\n分享",
         "postText": "好久不见, 今天是我和你们见面的整整两周年!",
@@ -1379,7 +1378,8 @@
             "anniversary",
             "message to fans"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 264,
@@ -1391,13 +1391,13 @@
         "link": "",
         "groupName": "201710",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "",
         "duration": 133,
         "englishTags": [
             "weibo"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 258,
@@ -1406,14 +1406,14 @@
         "month": "October",
         "year": "2017",
         "tags": [],
-        "category": "screenshot",
         "groupName": "201710",
         "photoText": "X玖少年团肖战DAYTOY\n17-10-10 14:09 来自iPhone 7 Plus\n这就是等戏的结果\nX玖\nDAY\nΤΟΥ\n分享\n8",
         "postText": "这就是等戏的结果",
         "englishTags": [
             "behind the scenes"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 259,
@@ -1428,14 +1428,14 @@
         "link": "",
         "groupName": "201710",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "这就是等戏的结果",
         "englishTags": [
             "selfie",
             "special effects"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 260,
@@ -1450,14 +1450,14 @@
         "link": "",
         "groupName": "201710",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "这就是等戏的结果",
         "englishTags": [
             "selfie",
             "special effects"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 261,
@@ -1472,14 +1472,14 @@
         "link": "",
         "groupName": "201710",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "这就是等戏的结果",
         "englishTags": [
             "selfie",
             "special effects"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 262,
@@ -1494,14 +1494,14 @@
         "link": "",
         "groupName": "201710",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "这就是等戏的结果",
         "englishTags": [
             "selfie",
             "special effects"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 255,
@@ -1510,14 +1510,14 @@
         "month": "October",
         "year": "2017",
         "tags": [],
-        "category": "screenshot",
         "groupName": "201710",
         "photoText": "DAY\nΤΟΥ\nX玖少年团肖战DAYTOY\n10-9 23:41 来自 iPhone 7 Plus\n“我的心在说谎\n说下去会疯狂\n如果没有月亮那些日子都无妨”\nX玖\n8\n☆\n陆思恒\n哈哈哈哈你终于把智齿发出来了\nX玖少年团肖战DAYTOY:原谅我没有get到\n陆思恒回复@X玖少年团肖战DAYTOY:不觉\n得p2很像智齿吗!",
         "postText": "“我的心在说谎\n说下去会疯狂\n如果没有月亮那些日子都无妨”",
         "englishTags": [
             "lyrics"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 256,
@@ -1527,7 +1527,6 @@
         "year": "2017",
         "tags": [],
         "groupName": "201710",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "“我的心在说谎\n说下去会疯狂\n如果没有月亮那些日子都无妨”",
         "englishTags": [
@@ -1535,7 +1534,8 @@
             "song",
             "quote"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 257,
@@ -1545,13 +1545,13 @@
         "year": "2017",
         "tags": [],
         "groupName": "201710",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "“我的心在说谎\n说下去会疯狂\n如果没有月亮那些日子都无妨”",
         "englishTags": [
             "song lyrics"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 250,
@@ -1562,7 +1562,6 @@
         "tags": [
             "生日"
         ],
-        "category": "screenshot",
         "groupName": "201710",
         "photoText": "DAY\nΤΟΥ\nX玖少年团肖战DAYTOY\n✔17-10-5 17:11 来自iPhone 7 Plus\n工作的生日\n你们的祝福我都收到咯!!\n@X玖少年团肖战DAYTOY\nX玖",
         "postText": "工作的生日 你们的祝福我都收到咯!! @X玖少年团肖战DAYTOY",
@@ -1571,7 +1570,8 @@
             "x nine",
             "boy group"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 251,
@@ -1583,7 +1583,6 @@
         "link": "",
         "groupName": "201710",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "工作的生日 你们的祝福我都收到咯!! @X玖少年团肖战DAYTOY",
         "englishTags": [
@@ -1591,7 +1590,8 @@
             "x nine",
             "boy group"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 252,
@@ -1605,7 +1605,6 @@
         "link": "",
         "groupName": "201710",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "工作的生日 你们的祝福我都收到咯!! @X玖少年团肖战DAYTOY",
         "englishTags": [
@@ -1613,7 +1612,8 @@
             "x nine",
             "boy group"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 253,
@@ -1625,7 +1625,6 @@
             "生日"
         ],
         "groupName": "201710",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY\nHappy Birthday",
         "postText": "工作的生日 你们的祝福我都收到咯!! @X玖少年团肖战DAYTOY",
         "englishTags": [
@@ -1633,7 +1632,8 @@
             "x nine",
             "boy group"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 254,
@@ -1648,7 +1648,6 @@
         "link": "",
         "groupName": "201710",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "工作的生日 你们的祝福我都收到咯!! @X玖少年团肖战DAYTOY",
         "englishTags": [
@@ -1656,7 +1655,8 @@
             "group photo",
             "x nine"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 248,
@@ -1665,7 +1665,6 @@
         "month": "October",
         "year": "2017",
         "tags": [],
-        "category": "screenshot",
         "groupName": "201710",
         "photoText": "X玖\nDAY\nΤΟΥ\nX玖少年团首战DAYTOY\n6\n8\n“国庆快乐\n17-10-116:22 来自秒拍客户端\n1”X玖少年团肖战DAYTOY\n的秒拍视频(使用#秒拍#录制,免流量看热门\n短视频!)\n分享\n国庆快乐\n成依回战",
         "postText": "国庆快乐",
@@ -1673,7 +1672,8 @@
             "national day",
             "holiday greeting"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 249,
@@ -1685,14 +1685,14 @@
         "link": "",
         "groupName": "201710",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "",
         "duration": 73,
         "englishTags": [
             "weibo",
             "october"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 243,
@@ -1703,7 +1703,6 @@
         "tags": [
             "开学"
         ],
-        "category": "screenshot",
         "groupName": "201708",
         "photoText": "DAY\nΤΟΥ\nV\nX玖少年团肖战DAYTOY\n8-31 21:57 来自iPhone 7 Plus\n听说你们明天开学\n新的学期也要加油努力努力!\n@X玖少年元山は\nX玖\n8\n老师好\n我是大班的急冲冲",
         "postText": "听说你们明天开学 新的学期也要加油努力努力! @X玖少年元山は",
@@ -1712,7 +1711,8 @@
             "school uniform",
             "x-nine"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 244,
@@ -1729,7 +1729,6 @@
         "link": "",
         "groupName": "201708",
         "note": "",
-        "category": "attached",
         "photoText": "老师好\n我是大班的急冲冲\n@X玖少年团肖战DAYTOY",
         "postText": "听说你们明天开学 新的学期也要加油努力努力! @X玖少年元山は",
         "englishTags": [
@@ -1737,7 +1736,8 @@
             "school",
             "meme"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 245,
@@ -1749,7 +1749,6 @@
         "link": "",
         "groupName": "201708",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "听说你们明天开学 新的学期也要加油努力努力! @X玖少年元山は",
         "englishTags": [
@@ -1757,7 +1756,8 @@
             "super star academy",
             "school uniform"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 246,
@@ -1769,7 +1769,6 @@
         "link": "",
         "groupName": "201708",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "听说你们明天开学 新的学期也要加油努力努力! @X玖少年元山は",
         "englishTags": [
@@ -1777,7 +1776,8 @@
             "super star academy",
             "school uniform"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 247,
@@ -1789,7 +1789,6 @@
         "link": "",
         "groupName": "201708",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "听说你们明天开学 新的学期也要加油努力努力! @X玖少年元山は",
         "englishTags": [
@@ -1797,7 +1796,8 @@
             "super star academy",
             "school uniform"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 242,
@@ -1808,7 +1808,6 @@
         "tags": [
             "七夕"
         ],
-        "category": "screenshot",
         "groupName": "201708",
         "photoText": "X玖\nDAY\nX玖少年团肖战DAYTOY\n6\n8\nΤΟΥ\n✔17-8-28 20:56 来自iPhone 7 Plus\n在下疾冲见过各位:七夕节快乐\n电视剧狼殿下\n+关注\n#狼殿下#一个野性渤王@王大陸TaluWang,\n一个桀骜少年夜二冲@X玖少年团首战DAYTOY,\n摘星郡主@李沁对望真情与世仇,错别还是错爱?\n只知今生的纠缠,是你我生命中最难解的缘命题。\n《狼殿下》“战爱”预告:狼少年王大陆追爱李...\n@陈玉珊制作人@新丽传媒@耀客传媒\n出品\nNCM\nTelevision\n新丽电视\nhug\nNCM Television\n观看更多精彩视频\n分享\n腾讯视频\n戳我\n11万\n2.4万\n1.7万",
         "postText": "在下疾冲见过各位:七夕节快乐\n#狼殿下#一个野性渤王@王大陸TaluWang, 一个桀骜少年夜二冲",
@@ -1817,7 +1816,8 @@
             "qixi festival",
             "character introduction"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 240,
@@ -1826,7 +1826,6 @@
         "month": "August",
         "year": "2017",
         "tags": [],
-        "category": "screenshot",
         "groupName": "201708",
         "photoText": "X玖\nDAY\nΤΟΥ\nX玖少年团首战DAYTOY\n6\n8\n✔17-8-27 21:58 来自秒拍客户端\n“我依然是肖战#一周周记时间#”X玖少年团\n肖战DAYTOY的秒拍视频(使用#秒拍#录制,\n免流量看热门短视频!)\n分享\n②播放反馈",
         "postText": "我依然是肖战#一周周记时间#",
@@ -1834,7 +1833,8 @@
             "weibo",
             "weekly diary"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 241,
@@ -1846,14 +1846,14 @@
         "link": "",
         "groupName": "201708",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "",
         "duration": 164,
         "englishTags": [
             "weibo",
             "august"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 238,
@@ -1862,9 +1862,7 @@
         "month": "August",
         "year": "2017",
         "tags": [],
-        "category": "screenshot",
         "groupName": "201708",
-        "source": "weibo",
         "link": "",
         "note": "",
         "photoText": "DAY\nΤΟΥ\nX玖少年团首战DAYTOY\n✔ 17-8-20 15:44 来自iPhone 7 Plus\n6\n想要我绘制的魔力卡片?来@秒拍参与互动,赢\n取这份传递希望的礼物吧! (http:肖zz的\n秒拍视频)和我一起支持#画出生命线#公益活\n动,绘聚爱心,你我同程#BAZAAR明星慈善夜#\n@时尚芭莎 画出生命线,绘聚爱心,为爱加\n速!\n分享\nEW YO",
@@ -1872,7 +1870,9 @@
         "englishTags": [
             "super star academy",
             "promotional video"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 239,
@@ -1882,8 +1882,6 @@
         "year": "2017",
         "tags": [],
         "groupName": "201708",
-        "category": "attached",
-        "source": "weibo",
         "link": "",
         "note": "",
         "photoText": "",
@@ -1891,7 +1889,9 @@
         "englishTags": [
             "weibo",
             "august"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 233,
@@ -1900,7 +1900,6 @@
         "month": "August",
         "year": "2017",
         "tags": [],
-        "category": "screenshot",
         "groupName": "201708",
         "photoText": "DAY\nΤΟΥ\nX玖少年团肖战DAYTOY\n8-17 20:24 来自iPhone 7 Plus\n第一次黄昏跑步,\n原来每天夜跑的地方是这样?!\n想跟你们一起分享.\n用心留意,美景就在身边.\n@X玖少年团肖战DAYTOY\n@X玖少年团肖战DAYTOY\n@X玖少年团肖战DAYTOY\n@X玖少年团肖战DAYTOY\nX玖",
         "postText": "第一次黄昏跑步, 原来每天夜跑的地方是这样?! 想跟你们一起分享. 用心留意,美景就在身边.",
@@ -1909,7 +1908,8 @@
             "night run",
             "scenery"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 234,
@@ -1923,7 +1923,6 @@
         "link": "",
         "groupName": "201708",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "第一次黄昏跑步, 原来每天夜跑的地方是这样?! 想跟你们一起分享. 用心留意,美景就在身边.",
         "englishTags": [
@@ -1932,7 +1931,8 @@
             "night run",
             "scenery"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 235,
@@ -1946,7 +1946,6 @@
         "link": "",
         "groupName": "201708",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "第一次黄昏跑步, 原来每天夜跑的地方是这样?! 想跟你们一起分享. 用心留意,美景就在身边.",
         "englishTags": [
@@ -1955,7 +1954,8 @@
             "scenery",
             "photography"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 236,
@@ -1969,7 +1969,6 @@
         "link": "",
         "groupName": "201708",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "第一次黄昏跑步, 原来每天夜跑的地方是这样?! 想跟你们一起分享. 用心留意,美景就在身边.",
         "englishTags": [
@@ -1978,7 +1977,8 @@
             "scenery",
             "photography"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 237,
@@ -1992,7 +1992,6 @@
         "link": "",
         "groupName": "201708",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "第一次黄昏跑步, 原来每天夜跑的地方是这样?! 想跟你们一起分享. 用心留意,美景就在身边.",
         "englishTags": [
@@ -2001,7 +2000,8 @@
             "scenery",
             "photography"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 231,
@@ -2010,7 +2010,6 @@
         "month": "August",
         "year": "2017",
         "tags": [],
-        "category": "screenshot",
         "groupName": "201708",
         "photoText": "X玖\nDAY\nΤΟΥ\nX玖少年团肖战DAYTOY\nV\n8-13 20:58 来自iPhone 7 Plus\n又到一周周记时间X玖少年团肖战DAYTOY的秒\n拍视频\n2428次播放\n1:41\n--- OCR End ---",
         "postText": "又到一周周记时间X玖少年团肖战DAYTOY的秒拍视频",
@@ -2019,7 +2018,8 @@
             "daytoy",
             "vlog"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 232,
@@ -2031,14 +2031,14 @@
         "link": "",
         "groupName": "201708",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "",
         "duration": 101,
         "englishTags": [
             "weibo",
             "august"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 230,
@@ -2047,7 +2047,6 @@
         "month": "August",
         "year": "2017",
         "tags": [],
-        "category": "screenshot",
         "groupName": "201708",
         "photoText": "X玖少年团肖战DAYTOY\n阿坝州九寨沟的你们还好吗?注意安全!迅\n速撤离危险地区!\n17-8-8 22:06\nDAY\nΤΟΥ\n5471",
         "postText": "阿坝州九寨沟的你们还好吗?注意安全!迅速撤离危险地区!",
@@ -2056,7 +2055,8 @@
             "earthquake",
             "safety message"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 228,
@@ -2065,7 +2065,6 @@
         "month": "August",
         "year": "2017",
         "tags": [],
-        "category": "screenshot",
         "groupName": "201708",
         "photoText": "DAY\nX玖\nX玖少年团肖战DAYTOY\nΤΟΥ\n8-6 21:57 来自iPhone 7 Plus\n新鲜出炉,一周周记时间!\n跑跑跑!跑步让人清醒!秒拍视频\n18万次播放\nDAY\nΤΟΥ\nX玖少年团肖战DAYTOY\nV\n8-6 22:01\n1:41\n167\n听不到我在说什么吗?那就努力的听吧,我继续跑\n了\n乔傲",
         "postText": "新鲜出炉,一周周记时间! 跑跑跑!跑步让人清醒!秒拍视频",
@@ -2073,7 +2072,8 @@
             "running",
             "vlog"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 229,
@@ -2085,14 +2085,14 @@
         "link": "",
         "groupName": "201708",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "",
         "duration": 101,
         "englishTags": [
             "weibo",
             "august"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 223,
@@ -2101,14 +2101,14 @@
         "month": "August",
         "year": "2017",
         "tags": [],
-        "category": "screenshot",
         "groupName": "201708",
         "photoText": "X玖\nDAY\nX玖少年团肖战DAYTOY\nΤΟΥ\n8-4 12:41 来自iPhone 7 Plus\n零零散散的最近...\n●@X玖少年团肖战DAYTOY\nDAY\nX玖少年团肖战DAYTOY\n2571\nΤΟΥ\n8-4 12:43\n我又来抢..",
         "postText": "零零散散的最近...",
         "englishTags": [
             "daily life"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 224,
@@ -2118,13 +2118,13 @@
         "year": "2017",
         "tags": [],
         "groupName": "201708",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "零零散散的最近...",
         "englishTags": [
             "daily life"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 225,
@@ -2134,13 +2134,13 @@
         "year": "2017",
         "tags": [],
         "groupName": "201708",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "零零散散的最近...",
         "englishTags": [
             "daily life"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 226,
@@ -2150,13 +2150,13 @@
         "year": "2017",
         "tags": [],
         "groupName": "201708",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "零零散散的最近...",
         "englishTags": [
             "daily life"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 227,
@@ -2166,13 +2166,13 @@
         "year": "2017",
         "tags": [],
         "groupName": "201708",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY\nMeters/bonwe",
         "postText": "零零散散的最近...",
         "englishTags": [
             "daily life"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 221,
@@ -2181,7 +2181,6 @@
         "month": "July",
         "year": "2017",
         "tags": [],
-        "category": "screenshot",
         "groupName": "201707",
         "photoText": "X玖\nDAY X玖少年团肖战DAYTOY\n7-30 19:09 来自秒拍客户端\nΤΟΥ\nV\n“一周周记时间”肖zz的秒拍视频(使用#秒拍#录\n制,免流量看热门短视频!)\nDAY X玖少年团肖战DAYTOY\nΤΟΥ\n✔7-30 19:16\n我说有营养就是有营养!!\n请问你为什么这么多问题?\n查看原微博\nX玖少年团肖战DAYTOY\n7-30 19:17\n●你们最好咯! 查看图片\n我很可爱的你晓得吧!\n169\n按热度\n61\nDAY\nΤΟΥ\nDAY\nΤΟΥ",
         "postText": "“一周周记时间”\n我说有营养就是有营养!! 请问你为什么这么多问题?\n●你们最好咯! 我很可爱的你晓得吧!",
@@ -2189,7 +2188,8 @@
             "weibo update",
             "selfie"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 222,
@@ -2201,14 +2201,14 @@
         "link": "",
         "groupName": "201707",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "",
         "duration": 97,
         "englishTags": [
             "weibo",
             "july"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 213,
@@ -2217,7 +2217,6 @@
         "month": "July",
         "year": "2017",
         "tags": [],
-        "category": "screenshot",
         "groupName": "201707",
         "photoText": "DAY\nX玖少年团肖战DAYTOY\nΤΟΥ\n✔17-7-27 15:55 来自iPhone 7 Plus\n拍摄结束的你\n和得知马上要回组的你\nshanghai\n分享\nXX\n8\n歪么幺零吗\nΕΑΥΤΟΥ\n人\n凄凉",
         "postText": "拍摄结束的你\n和得知马上要回组的你",
@@ -2225,7 +2224,8 @@
             "behind the scenes",
             "filming"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 214,
@@ -2239,13 +2239,13 @@
         "link": "",
         "groupName": "201707",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "拍摄结束的你\n和得知马上要回组的你",
         "englishTags": [
             "selfie"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 215,
@@ -2259,13 +2259,13 @@
         "link": "",
         "groupName": "201707",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "拍摄结束的你\n和得知马上要回组的你",
         "englishTags": [
             "selfie"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 216,
@@ -2279,13 +2279,13 @@
         "link": "",
         "groupName": "201707",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "拍摄结束的你\n和得知马上要回组的你",
         "englishTags": [
             "selfie"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 217,
@@ -2300,7 +2300,6 @@
         "link": "",
         "groupName": "201707",
         "note": "",
-        "category": "attached",
         "photoText": "歪么么零吗\n@X玖少年团肖战DAYTOY\n@人民网",
         "postText": "拍摄结束的你\n和得知马上要回组的你",
         "englishTags": [
@@ -2308,7 +2307,8 @@
             "behind the scenes",
             "on set"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 218,
@@ -2323,7 +2323,6 @@
         "link": "",
         "groupName": "201707",
         "note": "",
-        "category": "attached",
         "photoText": "凄凉",
         "postText": "拍摄结束的你\n和得知马上要回组的你",
         "englishTags": [
@@ -2331,7 +2330,8 @@
             "sad",
             "behind the scenes"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 219,
@@ -2345,13 +2345,13 @@
         "link": "",
         "groupName": "201707",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "拍摄结束的你\n和得知马上要回组的你",
         "englishTags": [
             "selfie"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 220,
@@ -2365,7 +2365,6 @@
         "link": "",
         "groupName": "201707",
         "note": "",
-        "category": "attached",
         "photoText": "DAY\nτον\nX玖少年团肖战DAYTOY博主\n● 大意了大意了,盗表情包被发现了\n托腮",
         "postText": "拍摄结束的你\n和得知马上要回组的你",
         "englishTags": [
@@ -2373,7 +2372,8 @@
             "meme",
             "behind the scenes"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 207,
@@ -2383,14 +2383,14 @@
         "year": "2017",
         "tags": [],
         "groupName": "201707",
-        "category": "attached",
         "photoText": "X玖少年团肖战DAYTOY\n拍摄现场太热!你们快乖乖回家,别中暑\n了!\n超酷\n17-7-21 19:01\n6183\nDAY\nΤΟΥ",
         "postText": "拍摄现场太热!你们快乖乖回家,别中暑了!",
         "englishTags": [
             "filming",
             "behind the scenes"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 210,
@@ -2404,14 +2404,14 @@
         "link": "",
         "groupName": "201707",
         "note": "",
-        "category": "attached",
         "photoText": "超酷",
         "postText": "拍摄现场太热!你们快乖乖回家,别中暑了!",
         "englishTags": [
             "super star academy",
             "filming set"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 206,
@@ -2420,7 +2420,6 @@
         "month": "July",
         "year": "2017",
         "tags": [],
-        "category": "screenshot",
         "groupName": "201707",
         "photoText": "X玖\nDAY X玖少年团肖战DAYTOY\nΤΟΥ\nV\n17-7-20 13:48 来自iPhone 7 Plus\n爱你们!!♥\n那么问题来了!!这是鸭子还是鹦鹉!!??\n还..还是兔子\n●意欧少年团战DAYTOY",
         "postText": "爱你们!!♥ 那么问题来了!!这是鸭子还是鹦鹉!!?? 还..还是兔子",
@@ -2431,7 +2430,8 @@
             "parrot",
             "rabbit"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 208,
@@ -2441,7 +2441,6 @@
         "year": "2017",
         "tags": [],
         "groupName": "201707",
-        "category": "attached",
         "photoText": "X玖少年团肖战DAYTOY\n博主\nDAY\nτον\n✔ahahahahahahahah,你们是想骗我养小鸭\n子了是吗?!\n我的唇你的魂\n@X玖少年团当战DAYTOY",
         "postText": "爱你们!!♥ 那么问题来了!!这是鸭子还是鹦鹉!!?? 还..还是兔子",
         "englishTags": [
@@ -2451,7 +2450,8 @@
             "parrot",
             "rabbit"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 209,
@@ -2465,7 +2465,6 @@
         "link": "",
         "groupName": "201707",
         "note": "",
-        "category": "attached",
         "photoText": "我的唇你的魂",
         "postText": "爱你们!!♥ 那么问题来了!!这是鸭子还是鹦鹉!!?? 还..还是兔子",
         "englishTags": [
@@ -2473,7 +2472,8 @@
             "parrot",
             "rabbit"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 211,
@@ -2487,7 +2487,6 @@
         "link": "",
         "groupName": "201707",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "爱你们!!♥ 那么问题来了!!这是鸭子还是鹦鹉!!?? 还..还是兔子",
         "englishTags": [
@@ -2496,7 +2495,8 @@
             "parrot",
             "rabbit"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 212,
@@ -2506,7 +2506,6 @@
         "year": "2017",
         "tags": [],
         "groupName": "201707",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "爱你们!!♥ 那么问题来了!!这是鸭子还是鹦鹉!!?? 还..还是兔子",
         "englishTags": [
@@ -2516,7 +2515,8 @@
             "parrot",
             "rabbit"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 204,
@@ -2525,7 +2525,6 @@
         "month": "July",
         "year": "2017",
         "tags": [],
-        "category": "screenshot",
         "groupName": "201707",
         "photoText": "DAY\nΤΟΥ\nX玖少年团肖战DAYTOY\n7-16 07:58 来自秒拍客户端\n“早上好周记时间!“肖zz的秒拍视频(使用#秒\n拍#录制,免流量看热门短视频!)\nDAY X玖少年团肖战DAYTOY\nΤΟΥ\n7-16 10:36\n图片评论\n638\nDAY\n今天也要为你们打\nCALL\nX玖少年团肖战DAYTOY\nΤΟΥ 7-16 10:39\n对我的周记不离不弃! 查看图片\n342\n心疼却抱不住这么胖的自己",
         "postText": "早上好周记时间!\n今天也要为你们打CALL\n对我的周记不离不弃!\n心疼却抱不住这么胖的自己",
@@ -2534,7 +2533,8 @@
             "morning",
             "weekly diary"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 205,
@@ -2546,14 +2546,14 @@
         "link": "",
         "groupName": "201707",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "",
         "duration": 180,
         "englishTags": [
             "weibo",
             "july"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 199,
@@ -2562,7 +2562,6 @@
         "month": "July",
         "year": "2017",
         "tags": [],
-        "category": "screenshot",
         "groupName": "201707",
         "photoText": "DAY\nΤΟΥ\nX玖少年团肖战DAYTOY\n✔ 7-15 16:57 来自iPhone 7 Plus\n送你满满盛夏微风\nX玖\n8\n陆思恒\n6\n7-15 16:59\n美飞了\n1521\nX玖少年团肖战DAYTOY:延误boy您好\n陆思恒回复@X玖少年团肖战DAYTOY:我\n哭哭你看",
         "postText": "送你满满盛夏微风",
@@ -2570,7 +2569,8 @@
             "photoshoot",
             "summer"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 200,
@@ -2580,13 +2580,13 @@
         "year": "2017",
         "tags": [],
         "groupName": "201707",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "送你满满盛夏微风",
         "englishTags": [
             "summer breeze"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 201,
@@ -2596,13 +2596,13 @@
         "year": "2017",
         "tags": [],
         "groupName": "201707",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "送你满满盛夏微风",
         "englishTags": [
             "summer breeze"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 202,
@@ -2612,14 +2612,14 @@
         "year": "2017",
         "tags": [],
         "groupName": "201707",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "送你满满盛夏微风",
         "englishTags": [
             "photoshoot",
             "summer"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 203,
@@ -2629,14 +2629,14 @@
         "year": "2017",
         "tags": [],
         "groupName": "201707",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "送你满满盛夏微风",
         "englishTags": [
             "photoshoot",
             "summer"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 196,
@@ -2645,7 +2645,6 @@
         "month": "July",
         "year": "2017",
         "tags": [],
-        "category": "screenshot",
         "groupName": "201707",
         "photoText": "DAY\nΤΟΥ\nV\nX玖少年团肖战DAYTOY\n海绵~\n@少年図ΙDΑΥΤΟΥ\n17-7-14 21:54\n6470",
         "postText": "海绵~ @少年図ΙDΑΥΤΟΥ",
@@ -2653,7 +2652,8 @@
             "super star academy",
             "behind the scenes"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 197,
@@ -2668,7 +2668,6 @@
         "link": "",
         "groupName": "201707",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "海绵~ @少年図ΙDΑΥΤΟΥ",
         "englishTags": [
@@ -2676,7 +2675,8 @@
             "rabbit",
             "daytoy"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 191,
@@ -2688,7 +2688,6 @@
             "疾冲",
             "片场"
         ],
-        "category": "screenshot",
         "groupName": "201707",
         "photoText": "DAY\nΤΟΥ\nV\nX玖少年团肖战DAYTOY\n7-10 12:34 来自iPhone 7 Plus\n疾冲日常:\n我不热我不热我不热我不热我不热...\n@X玖少年团肖战DAYTOY\nX玖\n8\n热到旋转",
         "postText": "疾冲日常: 我不热我不热我不热我不热我不热... @X玖少年团肖战DAYTOY 热到旋转",
@@ -2697,7 +2696,8 @@
             "filming set",
             "behind the scenes"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 192,
@@ -2710,7 +2710,6 @@
             "片场"
         ],
         "groupName": "201707",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "疾冲日常: 我不热我不热我不热我不热我不热... @X玖少年团肖战DAYTOY 热到旋转",
         "englishTags": [
@@ -2719,7 +2718,8 @@
             "costume",
             "behind the scenes"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 193,
@@ -2734,7 +2734,6 @@
         "link": "",
         "groupName": "201707",
         "note": "",
-        "category": "attached",
         "photoText": "热到旋转\n@X7少年团自DAYTOY",
         "postText": "疾冲日常: 我不热我不热我不热我不热我不热... @X玖少年团肖战DAYTOY 热到旋转",
         "englishTags": [
@@ -2742,7 +2741,8 @@
             "behind the scenes",
             "meme"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 194,
@@ -2755,7 +2755,6 @@
             "片场"
         ],
         "groupName": "201707",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "疾冲日常: 我不热我不热我不热我不热我不热... @X玖少年团肖战DAYTOY 热到旋转",
         "englishTags": [
@@ -2764,7 +2763,8 @@
             "costume",
             "behind the scenes"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 195,
@@ -2777,7 +2777,6 @@
             "片场"
         ],
         "groupName": "201707",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "疾冲日常: 我不热我不热我不热我不热我不热... @X玖少年团肖战DAYTOY 热到旋转",
         "englishTags": [
@@ -2786,7 +2785,8 @@
             "costume",
             "behind the scenes"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 185,
@@ -2795,7 +2795,6 @@
         "month": "July",
         "year": "2017",
         "tags": [],
-        "category": "screenshot",
         "groupName": "201707",
         "photoText": "X玖少年团肖战DAYTOY\n17-7-3 00:40 来自iPhone 7 Plus\n这个点收工,碰见房门怎么也打不开!\n实力cos“生无可恋”\n笑容渐渐呆滞\nX玖\nDAY\nΤΟΥ",
         "postText": "这个点收工,碰见房门怎么也打不开! 实力cos“生无可恋” 笑容渐渐呆滞",
@@ -2805,7 +2804,8 @@
             "filming",
             "costume"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 186,
@@ -2815,7 +2815,6 @@
         "year": "2017",
         "tags": [],
         "groupName": "201707",
-        "category": "attached",
         "photoText": "DAY\nΤΟΥ\nX玖少年团肖战DAYTOY\n7-3 00:43\n终于进门了,晚安\n黑眼圈怎么肥四",
         "postText": "这个点收工,碰见房门怎么也打不开! 实力cos“生无可恋” 笑容渐渐呆滞",
         "englishTags": [
@@ -2824,7 +2823,8 @@
             "filming",
             "costume"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 187,
@@ -2838,14 +2838,14 @@
         "link": "",
         "groupName": "201707",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "这个点收工,碰见房门怎么也打不开! 实力cos“生无可恋” 笑容渐渐呆滞",
         "englishTags": [
             "selfie",
             "behind the scenes"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 188,
@@ -2859,14 +2859,14 @@
         "link": "",
         "groupName": "201707",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "这个点收工,碰见房门怎么也打不开! 实力cos“生无可恋” 笑容渐渐呆滞",
         "englishTags": [
             "selfie",
             "behind the scenes"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 189,
@@ -2880,14 +2880,14 @@
         "link": "",
         "groupName": "201707",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "这个点收工,碰见房门怎么也打不开! 实力cos“生无可恋” 笑容渐渐呆滞",
         "englishTags": [
             "selfie",
             "behind the scenes"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 190,
@@ -2901,14 +2901,14 @@
         "link": "",
         "groupName": "201707",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "这个点收工,碰见房门怎么也打不开! 实力cos“生无可恋” 笑容渐渐呆滞",
         "englishTags": [
             "selfie",
             "behind the scenes"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 183,
@@ -2917,7 +2917,6 @@
         "month": "June",
         "year": "2017",
         "tags": [],
-        "category": "screenshot",
         "groupName": "201706",
         "photoText": "X玖少年团肖战DAYTOY\n6-26 15:26 来自秒拍客户端\n“一周周记时间“肖zz的秒拍视频(使用#秒拍#录\n制,免流量看热门短视频!)\nDAY\nΤΟΥ\nV",
         "postText": "“一周周记时间“肖zz的秒拍视频(使用#秒拍#录\n制,免流量看热门短视频!)",
@@ -2925,7 +2924,8 @@
             "weibo video",
             "weekly vlog"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 184,
@@ -2937,13 +2937,13 @@
         "link": "",
         "groupName": "201706",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "",
         "duration": 178,
         "englishTags": [
             "weibo update"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 181,
@@ -2954,7 +2954,6 @@
         "tags": [
             "随笔"
         ],
-        "category": "screenshot",
         "groupName": "201706",
         "photoText": "●●●○○中国移动\n下午9:00\n<备忘录\n2017年6月24日下午9:00\n我这边下雨了,你们呢?\n在雨中跑步真的蛮爽的,你们不要尝试呃会感冒\n的!\n我过的怎么样?好吧我不再说充实了,没有通告\n的日子很宅很宅不出门,看书和自己喜欢的电\n影,也会画一些手稿。周围的人都觉得我太宅很\n伤脑筋啊...\n你们过得还好吗?\n其实我们都害怕成长之后会变成自己厌倦的人,\n所以要努力的去生活着呀!以前很喜欢的一句话\n送给你们:\n工作吧,就像不需要金钱一样;\n生活吧,就像明天是末日一样;\n跳舞吧,就像没有人注视一样;\n去爱吧,就像从未受过伤害一样!\n很想你们,晚安!\n@X取人团白DAYΤΟΥ\n52%",
         "postText": "我这边下雨了,你们呢?\n在雨中跑步真的蛮爽的,你们不要尝试呃会感冒 的!\n我过的怎么样?好吧我不再说充实了,没有通告 的日子很宅很宅不出门,看书和自己喜欢的电 影,也会画一些手稿。周围的人都觉得我太宅很 伤脑筋啊...\n你们过得还好吗?\n其实我们都害怕成长之后会变成自己厌倦的人, 所以要努力的去生活着呀!以前很喜欢的一句话 送给你们:\n工作吧,就像不需要金钱一样;\n生活吧,就像明天是末日一样;\n跳舞吧,就像没有人注视一样;\n去爱吧,就像从未受过伤害一样!\n很想你们,晚安!\n@X取人团白DAYΤΟΥ",
@@ -2965,7 +2964,8 @@
             "reading",
             "drawing"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 182,
@@ -2976,7 +2976,6 @@
         "tags": [
             "随笔"
         ],
-        "category": "screenshot",
         "groupName": "201706",
         "photoText": "DAY\nΤΟΥ\nX玖少年团肖战DAYTOY\n6-24 21:15\n一直被吞...sina胃口真大! 查看图片\n●●●○○中国移动\n<备忘录\n下午9:00\n2017年6月24日下午9:00\n我这边下雨了,你们呢?\nດາ 52%\n在雨中跑步真的蛮爽的,你们不要尝试呃会感冒\n的!\n我过的怎么样?好吧我不再说充实了,没有通告\n的日子很宅很宅不出门,看书和自己喜欢的电\n影,也会画一些手稿。周围的人都觉得我太宅很\n伤脑筋啊...\n你们过得还好吗?\n其实我们都害怕成长之后会变成自己厌倦的人,\n所以要努力的去生活着呀!以前很喜欢的一句话\n送给你们:\n工作吧,就像不需要金钱一样;\n生活吧,就像明天是末日一样;\n跳舞吧,就像没有人注视一样;\n去爱吧,就像从未受过伤害一样!\n很想你们,晚安!\n@XDAYΤΟΥ Ν\n16",
         "postText": "我这边下雨了,你们呢?\n在雨中跑步真的蛮爽的,你们不要尝试呃会感冒 的!\n我过的怎么样?好吧我不再说充实了,没有通告 的日子很宅很宅不出门,看书和自己喜欢的电 影,也会画一些手稿。周围的人都觉得我太宅很 伤脑筋啊...\n你们过得还好吗?\n其实我们都害怕成长之后会变成自己厌倦的人, 所以要努力的去生活着呀!以前很喜欢的一句话 送给你们:\n工作吧,就像不需要金钱一样;\n生活吧,就像明天是末日一样;\n跳舞吧,就像没有人注视一样;\n去爱吧,就像从未受过伤害一样!\n很想你们,晚安!\n@X取人团白DAYΤΟΥ",
@@ -2987,7 +2986,8 @@
             "reading",
             "drawing"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 174,
@@ -2996,7 +2996,6 @@
         "month": "June",
         "year": "2017",
         "tags": [],
-        "category": "screenshot",
         "groupName": "201706",
         "photoText": "DAY\nΤΟΥ\nV\nX玖少年团肖战DAYTOY\n6-23 20:03 来自iPhone 7 Plus\n所有滤镜都败给iphone自带相机,\nahahahahhahaha勇敢面对自己!\n有点不适应没胡子的自己\n是不是该吃药了",
         "postText": "所有滤镜都败给iphone自带相机, ahahahahhahaha勇敢面对自己! 有点不适应没胡子的自己 是不是该吃药了",
@@ -3005,7 +3004,8 @@
             "no beard",
             "humor"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 175,
@@ -3019,14 +3019,14 @@
         "link": "",
         "groupName": "201706",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "所有滤镜都败给iphone自带相机, ahahahahhahaha勇敢面对自己! 有点不适应没胡子的自己 是不是该吃药了",
         "englishTags": [
             "selfie",
             "no beard"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 176,
@@ -3040,14 +3040,14 @@
         "link": "",
         "groupName": "201706",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "所有滤镜都败给iphone自带相机, ahahahahhahaha勇敢面对自己! 有点不适应没胡子的自己 是不是该吃药了",
         "englishTags": [
             "selfie",
             "no beard"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 177,
@@ -3061,14 +3061,14 @@
         "link": "",
         "groupName": "201706",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "所有滤镜都败给iphone自带相机, ahahahahhahaha勇敢面对自己! 有点不适应没胡子的自己 是不是该吃药了",
         "englishTags": [
             "selfie",
             "no beard"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 178,
@@ -3082,14 +3082,14 @@
         "link": "",
         "groupName": "201706",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "所有滤镜都败给iphone自带相机, ahahahahhahaha勇敢面对自己! 有点不适应没胡子的自己 是不是该吃药了",
         "englishTags": [
             "selfie",
             "no beard"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 179,
@@ -3104,7 +3104,6 @@
         "link": "",
         "groupName": "201706",
         "note": "",
-        "category": "attached",
         "photoText": "是不是该吃药了\n@吃货少年自救DAYTOY",
         "postText": "所有滤镜都败给iphone自带相机, ahahahahhahaha勇敢面对自己! 有点不适应没胡子的自己 是不是该吃药了",
         "englishTags": [
@@ -3112,7 +3111,8 @@
             "selfie",
             "no beard"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 180,
@@ -3126,14 +3126,14 @@
         "link": "",
         "groupName": "201706",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "所有滤镜都败给iphone自带相机, ahahahahhahaha勇敢面对自己! 有点不适应没胡子的自己 是不是该吃药了",
         "englishTags": [
             "selfie",
             "no beard"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 169,
@@ -3144,7 +3144,6 @@
         "tags": [
             "肖大厨"
         ],
-        "category": "screenshot",
         "groupName": "201706",
         "photoText": "DAY\nΤΟΥ\nX玖少年团肖战DAYTOY\n6-22 19:26 来自iPhone 7 Plus\n再没有通告的日子里,\n变身“肖大厨时间”自制藤椒鸡!\n@X玖少年团门战DAYTO\n@X玖少年团肖战DAYTON\nFLA\n请看我诚挚的眼神\nDAYΤΟΥ",
         "postText": "再没有通告的日子里, 变身“肖大厨时间”自制藤椒鸡!\n请看我诚挚的眼神",
@@ -3153,7 +3152,8 @@
             "chicken",
             "chef"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 170,
@@ -3167,7 +3167,6 @@
         "link": "",
         "groupName": "201706",
         "note": "",
-        "category": "attached",
         "photoText": "请看我诚挚的眼神\n@X玖少年团肖战DAYTOY",
         "postText": "再没有通告的日子里, 变身“肖大厨时间”自制藤椒鸡!\n请看我诚挚的眼神",
         "englishTags": [
@@ -3176,7 +3175,8 @@
             "chicken",
             "kitchen"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 171,
@@ -3190,14 +3190,14 @@
         "link": "",
         "groupName": "201706",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "再没有通告的日子里, 变身“肖大厨时间”自制藤椒鸡!\n请看我诚挚的眼神",
         "englishTags": [
             "selfie",
             "cooking"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 172,
@@ -3209,7 +3209,6 @@
         "link": "",
         "groupName": "201706",
         "note": "",
-        "category": "attached",
         "photoText": "LAVOR\nFLAVOR\n@X玖少年团肖战DAYTOY\nSTARBUC\nOVER\n电子\n售68\n夏日好星晴\nSHOW\nFLA",
         "postText": "再没有通告的日子里, 变身“肖大厨时间”自制藤椒鸡!\n请看我诚挚的眼神",
         "englishTags": [
@@ -3217,7 +3216,8 @@
             "chicken",
             "food"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 173,
@@ -3231,7 +3231,6 @@
         "link": "",
         "groupName": "201706",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "再没有通告的日子里, 变身“肖大厨时间”自制藤椒鸡!\n请看我诚挚的眼神",
         "englishTags": [
@@ -3240,7 +3239,8 @@
             "food",
             "kitchen"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 164,
@@ -3252,7 +3252,6 @@
             "林修崖",
             "杀青"
         ],
-        "category": "screenshot",
         "groupName": "201706",
         "photoText": "DAY\nΤΟΥ\nX玖少年团肖战DAYTOY\n6\nV\n17-6-16 来自iPhone 7 Plus\n林修崖杀青咯!\n谢谢每一个人的照顾和指导!\n小伙伴们继续加油!!\n#电视剧斗破苍穹#\n@X玖少年团肖战DAYTOY\n@X玖少年团肖战DAYTOV\n@X玖少年团肖战DAYTOY\n破\n【第一季】",
         "postText": "林修崖杀青咯! 谢谢每一个人的照顾和指导! 小伙伴们继续加油!! #电视剧斗破苍穹#",
@@ -3261,7 +3260,8 @@
             "battle through the heavens",
             "filming wrap"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 165,
@@ -3274,7 +3274,6 @@
             "杀青"
         ],
         "groupName": "201706",
-        "category": "attached",
         "photoText": "斗破苍穹\n【第一季】\n@X玖少年团肖战DAYTOY",
         "postText": "林修崖杀青咯! 谢谢每一个人的照顾和指导! 小伙伴们继续加油!! #电视剧斗破苍穹#",
         "englishTags": [
@@ -3282,7 +3281,8 @@
             "battle through the heavens",
             "filming wrap"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 166,
@@ -3295,7 +3295,6 @@
             "杀青"
         ],
         "groupName": "201706",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "林修崖杀青咯! 谢谢每一个人的照顾和指导! 小伙伴们继续加油!! #电视剧斗破苍穹#",
         "englishTags": [
@@ -3303,7 +3302,8 @@
             "battle through the heavens",
             "filming wrap"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 167,
@@ -3319,7 +3319,6 @@
         "link": "",
         "groupName": "201706",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "林修崖杀青咯! 谢谢每一个人的照顾和指导! 小伙伴们继续加油!! #电视剧斗破苍穹#",
         "englishTags": [
@@ -3328,7 +3327,8 @@
             "filming wrap",
             "group photo"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 168,
@@ -3341,7 +3341,6 @@
             "杀青"
         ],
         "groupName": "201706",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "林修崖杀青咯! 谢谢每一个人的照顾和指导! 小伙伴们继续加油!! #电视剧斗破苍穹#",
         "englishTags": [
@@ -3349,7 +3348,8 @@
             "battle through the heavens",
             "filming wrap"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 162,
@@ -3358,7 +3358,6 @@
         "month": "June",
         "year": "2017",
         "tags": [],
-        "category": "screenshot",
         "groupName": "201706",
         "photoText": "DAY\nΤΟΥ\nV\nX玖少年团肖战DAYTOY\n6-12 20:10 来自iPhone 7 Plus\nCHONGQING!\nCHONGQING! 秒拍视频\n16万次播放\nDAY X玖少年团肖战DAYTOY\nΤΟΥ\nV\n6-12 22:49\n乘车头不要伸出窗外!\n抱腿痛哭\n1:52\n935",
         "postText": "CHONGQING! CHONGQING! 秒拍视频\n乘车头不要伸出窗外! 抱腿痛哭",
@@ -3367,7 +3366,8 @@
             "video",
             "crying"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 163,
@@ -3379,14 +3379,14 @@
         "link": "",
         "groupName": "201706",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "",
         "duration": 113,
         "englishTags": [
             "weibo",
             "super star academy"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 159,
@@ -3395,7 +3395,6 @@
         "month": "June",
         "year": "2017",
         "tags": [],
-        "category": "screenshot",
         "groupName": "201706",
         "photoText": "X玖少年团肖战DAYTOY\n6-8 19:12 来自iPhone 6s\n眼睛又不争气的..发炎了...\n不过不影响好心情! #快本二十正青春#\nDAY\nΤΟΥ\nV",
         "postText": "眼睛又不争气的..发炎了...不过不影响好心情! #快本二十正青春#",
@@ -3403,7 +3402,8 @@
             "happy camp",
             "variety show"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 160,
@@ -3413,14 +3413,14 @@
         "year": "2017",
         "tags": [],
         "groupName": "201706",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "眼睛又不争气的..发炎了...不过不影响好心情! #快本二十正青春#",
         "englishTags": [
             "happy camp",
             "variety show"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 161,
@@ -3430,14 +3430,14 @@
         "year": "2017",
         "tags": [],
         "groupName": "201706",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "眼睛又不争气的..发炎了...不过不影响好心情! #快本二十正青春#",
         "englishTags": [
             "happy camp",
             "variety show"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 153,
@@ -3448,7 +3448,6 @@
         "tags": [
             "六一"
         ],
-        "category": "screenshot",
         "groupName": "201706",
         "photoText": "DAY\nX玖少年团肖战DAYTOY\n5\nΤΟΥ\nV 6-1 10:21 来自iPhone 6s\n来自片场的祝福,“六一”快乐!\n正经不过3秒\n@X玖少年团肖战DAYTOY\n@X玖少年团肖战DAYTOY\n@X玖少年团肖战DAYTOY\n我还小\nDAY\nΤΟΥ\nX玖少年团肖战DAYTOY\n6-1 10:23\n共勉\n@X玖少年团肖战DAYTOY\n1720\n祝你们人老心不老\nX玖少年团伍嘉成\n6-1 10:26\n我要曝光面膜照片!\n1327\nX玖少年团肖战DAYTOY:让它静静躺在你相机里\n共228条回复 >\nX玖少年团伍嘉成\n6-1 10:37\n我是雷锋\n1601",
         "postText": "来自片场的祝福,“六一”快乐! 正经不过3秒",
@@ -3457,7 +3456,8 @@
             "set",
             "greeting"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 154,
@@ -3472,7 +3472,6 @@
         "link": "",
         "groupName": "201706",
         "note": "",
-        "category": "attached",
         "photoText": "我還小\n@X玖少年团肖战DAYTOY",
         "postText": "来自片场的祝福,“六一”快乐! 正经不过3秒",
         "englishTags": [
@@ -3481,7 +3480,8 @@
             "children's day",
             "super star academy"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 155,
@@ -3495,13 +3495,13 @@
         "link": "",
         "groupName": "201706",
         "note": "",
-        "category": "attached",
         "photoText": "",
         "englishTags": [
             "face mask",
             "skincare"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 156,
@@ -3516,7 +3516,6 @@
         "link": "",
         "groupName": "201706",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "来自片场的祝福,“六一”快乐! 正经不过3秒",
         "englishTags": [
@@ -3524,7 +3523,8 @@
             "super star academy",
             "childrens day"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 157,
@@ -3539,7 +3539,6 @@
         "link": "",
         "groupName": "201706",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "来自片场的祝福,“六一”快乐! 正经不过3秒",
         "englishTags": [
@@ -3547,7 +3546,8 @@
             "super star academy",
             "childrens day"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 158,
@@ -3562,7 +3562,6 @@
         "link": "",
         "groupName": "201706",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "来自片场的祝福,“六一”快乐! 正经不过3秒",
         "englishTags": [
@@ -3570,7 +3569,8 @@
             "super star academy",
             "childrens day"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 144,
@@ -3582,7 +3582,6 @@
             "疾冲",
             "香格里拉"
         ],
-        "category": "screenshot",
         "groupName": "201705",
         "link": "",
         "note": "",
@@ -3593,7 +3592,8 @@
             "shangri-la",
             "wolf"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 145,
@@ -3608,14 +3608,14 @@
         "link": "",
         "groupName": "201705",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "我.出.山.了! wahahahah!\n困炸了,晚安! 明天又是一条好汉! 我来啦!",
         "englishTags": [
             "shangri-la",
             "photoshoot"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 146,
@@ -3629,14 +3629,14 @@
         "link": "",
         "groupName": "201705",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "我.出.山.了! wahahahah!\n困炸了,晚安! 明天又是一条好汉! 我来啦!",
         "englishTags": [
             "selfie",
             "goodnight"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 147,
@@ -3651,14 +3651,14 @@
         "link": "",
         "groupName": "201705",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "我.出.山.了! wahahahah!\n困炸了,晚安! 明天又是一条好汉! 我来啦!",
         "englishTags": [
             "shangri-la",
             "photoshoot"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 148,
@@ -3673,14 +3673,14 @@
         "link": "",
         "groupName": "201705",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "我.出.山.了! wahahahah!\n困炸了,晚安! 明天又是一条好汉! 我来啦!",
         "englishTags": [
             "shangri-la",
             "photoshoot"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 149,
@@ -3696,7 +3696,6 @@
         "link": "",
         "groupName": "201705",
         "note": "",
-        "category": "attached",
         "photoText": "SHANGRI-LA\n@X玖少年团肖战DAYTOY",
         "postText": "我.出.山.了! wahahahah!\n困炸了,晚安! 明天又是一条好汉! 我来啦!",
         "englishTags": [
@@ -3704,7 +3703,8 @@
             "back shot",
             "travel"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 150,
@@ -3719,14 +3719,14 @@
         "link": "",
         "groupName": "201705",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "我.出.山.了! wahahahah!\n困炸了,晚安! 明天又是一条好汉! 我来啦!",
         "englishTags": [
             "shangri-la",
             "photoshoot"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 151,
@@ -3735,7 +3735,6 @@
         "month": "May",
         "year": "2017",
         "tags": [],
-        "category": "screenshot",
         "groupName": "201705",
         "photoText": "DAY X玖少年团肖战DAYTOY\nΤΟΥ\nV\n5-29 22:55 来自iPhone 6s\n好久没有这样\n放松、零零散散说说话了吧?\n秒拍视频\n14万次播放\n1:09\n转发 6856 评论3430\n赞 8826\n按热度\nDAY\nΤΟΥ\nX玖少年团肖战DAYTOY\n1696\nV\n5-29 22:55\n我是沙发!",
         "postText": "我.出.山.了! wahahahah!\n困炸了,晚安! 明天又是一条好汉! 我来啦!",
@@ -3743,7 +3742,8 @@
             "weibo update",
             "selfie"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 152,
@@ -3755,14 +3755,14 @@
         "link": "",
         "groupName": "201705",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "",
         "duration": 69,
         "englishTags": [
             "weibo",
             "may"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 142,
@@ -3773,7 +3773,6 @@
         "tags": [
             "520"
         ],
-        "category": "screenshot",
         "groupName": "201705",
         "photoText": "DAY\nΤΟΥ\nX玖少年团首战DAYTOY\n6\n17-5-20 21:11 来自秒拍客户端\n“有你们天天都是520#爱在520##绝对是真爱\n#”X玖少年团肖战DAYTOY的秒拍视频(使用\n#秒拍#录制,免流量看热门短视频!)\n分享",
         "postText": "有你们天天都是520#爱在520##绝对是真爱 #",
@@ -3782,7 +3781,8 @@
             "520",
             "fan interaction"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 143,
@@ -3796,13 +3796,13 @@
         "link": "",
         "groupName": "201705",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "",
         "duration": 202,
         "englishTags": [
             "weibo"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 139,
@@ -3813,14 +3813,14 @@
         "tags": [
             "母亲节"
         ],
-        "category": "screenshot",
         "groupName": "201705",
         "photoText": "DAY\nX玖少年团肖战DAYTOY\nБ\nΤΟΥ\n✔ 17-5-14 23:26 来自秒拍_超超超超好看\n“踩着母亲节的尾巴!”夕网页链接(使用#秒\n拍#录制,免流量看热门短视频!)\nDAY\nΤον\nX玖少年团肖战DAYT...\n想您\nDAYTOY\n秒拍",
         "postText": "“踩着母亲节的尾巴!”夕",
         "englishTags": [
             "mothers day"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 140,
@@ -3835,14 +3835,14 @@
         "link": "",
         "groupName": "201705",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "“踩着母亲节的尾巴!”夕",
         "englishTags": [
             "mother's day",
             "group photo"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 141,
@@ -3856,14 +3856,14 @@
         "link": "",
         "groupName": "201705",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "",
         "duration": 187,
         "englishTags": [
             "mothers day",
             "weibo"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 135,
@@ -3872,7 +3872,6 @@
         "month": "May",
         "year": "2017",
         "tags": [],
-        "category": "screenshot",
         "groupName": "201705",
         "photoText": "DAY\nΤΟΥ\nX玖少年团肖战DAYTOY\n17-5-7 21:45 来自iPhone 6s\n你谁啊!?发神ing.",
         "postText": "你谁啊!?发神ing.",
@@ -3880,7 +3879,8 @@
             "super star academy",
             "behind the scenes"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 136,
@@ -3894,13 +3894,13 @@
         "link": "",
         "groupName": "201705",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "你谁啊!?发神ing.",
         "englishTags": [
             "selfie"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 137,
@@ -3914,13 +3914,13 @@
         "link": "",
         "groupName": "201705",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "你谁啊!?发神ing.",
         "englishTags": [
             "beard"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 138,
@@ -3929,7 +3929,6 @@
         "month": "May",
         "year": "2017",
         "tags": [],
-        "category": "screenshot",
         "groupName": "201705",
         "photoText": "X玖少年团肖战DAYTOY\n别紧张,不是戏里的造型\n不是那样的\nDAY\nΤΟΥ\n博主\nV",
         "postText": "你谁啊!?发神ing.",
@@ -3937,7 +3936,8 @@
             "super star academy",
             "behind the scenes"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 133,
@@ -3946,14 +3946,14 @@
         "month": "May",
         "year": "2017",
         "tags": [],
-        "category": "screenshot",
         "groupName": "201705",
         "photoText": "DAY\nX玖少年团首战DAYTOY\n6\nΤΟΥ\n✔17-5-2 15:28 来自iPhone 6s\n5月,走起! ②网页链接.\n分享\n网",
         "postText": "5月,走起! ②网页链接.",
         "englishTags": [
             "weibo update"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 134,
@@ -3965,13 +3965,13 @@
         "link": "",
         "groupName": "201705",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "",
         "duration": 99,
         "englishTags": [
             "weibo"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 130,
@@ -3982,7 +3982,6 @@
         "tags": [
             "王大陆"
         ],
-        "category": "screenshot",
         "groupName": "201705",
         "photoText": "DAY X玖少年团首战DAYTOY\nΤΟΥ\n17-5-1 22:40 来自iPhone 6s\n#喊狼殿下发福利#收工也要健一发,劳动人民\n最光荣!(谢渤王殿下给回正脸)@王大陸\nTaluWang\n分享",
         "postText": "#喊狼殿下发福利#收工也要健一发,劳动人民 最光荣!(谢渤王殿下给回正脸)@王大陸 TaluWang",
@@ -3990,7 +3989,8 @@
             "wolf",
             "wang dalu"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 131,
@@ -4005,7 +4005,6 @@
         "link": "",
         "groupName": "201705",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "#喊狼殿下发福利#收工也要健一发,劳动人民 最光荣!(谢渤王殿下给回正脸)@王大陸 TaluWang",
         "englishTags": [
@@ -4013,7 +4012,8 @@
             "wang talu",
             "behind the scenes"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 132,
@@ -4028,7 +4028,6 @@
         "link": "",
         "groupName": "201705",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "#喊狼殿下发福利#收工也要健一发,劳动人民 最光荣!(谢渤王殿下给回正脸)@王大陸 TaluWang",
         "englishTags": [
@@ -4036,7 +4035,8 @@
             "wang talu",
             "behind the scenes"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 102,
@@ -4047,7 +4047,6 @@
         "tags": [
             "随笔"
         ],
-        "category": "screenshot",
         "groupName": "201704",
         "photoText": "……………中国移动\n下午10:40\n<备忘录\n+\nㄟ可不可以买你的不快乐\n只是想陪你吃饭 看你笑笑\n听你最近好不好\nㄟ可不可以买你的不快乐\n我们一起坐车一起散步\n一起看电影 好不好\nㄟ可不可以买你一个鐘头\n只是想关心你呀要你知道\n还有我在好不好\nㄟ可不可以买你的不快乐\n我们一起唱歌一起牵手一起听音乐\nㄟ可不可以买你一个鐘头\n只是想关心你呀要你知道\n还有我在好不好\nㄟ可不可以买你的不快乐\n我们一起唱歌一起牵手\n一起听音乐 好不好\n把你的不快乐卖给我\n然后抱一下好不好\n@X玖少年团白战DAYTOY\n37%",
         "postText": "ㄟ可不可以买你的不快乐\n只是想陪你吃饭 看你笑笑\n听你最近好不好\nㄟ可不可以买你的不快乐\n我们一起坐车一起散步\n一起看电影 好不好\nㄟ可不可以买你一个鐘头\n只是想关心你呀要你知道\n还有我在好不好\nㄟ可不可以买你的不快乐\n我们一起唱歌一起牵手一起听音乐\nㄟ可不可以买你一个鐘头\n只是想关心你呀要你知道\n还有我在好不好\nㄟ可不可以买你的不快乐\n我们一起唱歌一起牵手\n一起听音乐 好不好\n把你的不快乐卖给我\n然后抱一下好不好",
@@ -4056,7 +4055,8 @@
             "song",
             "poem"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 128,
@@ -4067,7 +4067,6 @@
         "tags": [
             "随笔"
         ],
-        "category": "screenshot",
         "groupName": "201704",
         "photoText": "DAY\nΤΟΥ\nX玖少年团肖战DAYTOY\n4-29 22:40\n四查看图片\n●●●●●中国移动\n<备忘录\n下午10:40\n37%\nㄟ可不可以买你的不快乐\n只是想陪你吃饭看你笑笑\n听你最近好不好\nㄟ可不可以买你的不快乐\n我们一起坐车一起散步\n一起看电影 好不好\nㄟ可不可以买你一个鐘头\n只是想关心你呀要你知道\n还有我在好不好\nㄟ可不可以买你的不快乐\n我们一起唱歌一起牵手一起听音乐\nㄟ可不可以买你一个鐘头\n只是想关心你呀要你知道\n还有我在好不好\nㄟ可不可以买你的不快乐\n我们一起唱歌一起牵手\n一起听音乐 好不好\n把你的不快乐卖给我\n然后抱一下好不好\n@X玖少年团白战DAYTOY\n9\n✔",
         "postText": "ㄟ可不可以买你的不快乐\n只是想陪你吃饭 看你笑笑\n听你最近好不好\nㄟ可不可以买你的不快乐\n我们一起坐车一起散步\n一起看电影 好不好\nㄟ可不可以买你一个鐘头\n只是想关心你呀要你知道\n还有我在好不好\nㄟ可不可以买你的不快乐\n我们一起唱歌一起牵手一起听音乐\nㄟ可不可以买你一个鐘头\n只是想关心你呀要你知道\n还有我在好不好\nㄟ可不可以买你的不快乐\n我们一起唱歌一起牵手\n一起听音乐 好不好\n把你的不快乐卖给我\n然后抱一下好不好",
@@ -4076,7 +4075,8 @@
             "song",
             "poem"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 129,
@@ -4085,7 +4085,6 @@
         "month": "April",
         "year": "2017",
         "tags": [],
-        "category": "screenshot",
         "groupName": "201704",
         "photoText": "X玖少年团肖战DAYTOY评论了微博\n2017-04-29 22:35\n以后“有钱”买你,好不好?GN\nhttp://t.cn/RXdvb09\nDAY X玖少年团肖战DAYTOY\nΤΟΥ\n有些话就让它烂在心里\n抓住TA",
         "postText": "ㄟ可不可以买你的不快乐\n只是想陪你吃饭 看你笑笑\n听你最近好不好\nㄟ可不可以买你的不快乐\n我们一起坐车一起散步\n一起看电影 好不好\nㄟ可不可以买你一个鐘头\n只是想关心你呀要你知道\n还有我在好不好\nㄟ可不可以买你的不快乐\n我们一起唱歌一起牵手一起听音乐\nㄟ可不可以买你一个鐘头\n只是想关心你呀要你知道\n还有我在好不好\nㄟ可不可以买你的不快乐\n我们一起唱歌一起牵手\n一起听音乐 好不好\n把你的不快乐卖给我\n然后抱一下好不好",
@@ -4094,7 +4093,8 @@
             "song",
             "music"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 126,
@@ -4105,14 +4105,14 @@
         "tags": [
             "晚安"
         ],
-        "category": "screenshot",
         "groupName": "201704",
         "photoText": "DAY\nΤΟΥ\nX玖少年团肖战DAYTOY\n4-25 22:51 来自iPhone 6s\n晚安\n@X玖少年团肖战DAYTOY",
         "postText": "晚安",
         "englishTags": [
             "goodnight"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 127,
@@ -4126,14 +4126,14 @@
         "link": "",
         "groupName": "201704",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "晚安",
         "englishTags": [
             "selfie",
             "goodnight"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 124,
@@ -4142,7 +4142,6 @@
         "month": "April",
         "year": "2017",
         "tags": [],
-        "category": "screenshot",
         "groupName": "201704",
         "photoText": "DAY\nX玖少年团首战DAYTOY\nΤΟΥ\n✔17-4-24 21:14 来自秒拍客户端\n“迷迷糊糊”网页链接(使用#秒拍#录制,免流\n量看热门短视频!)\n分享",
         "postText": "“迷迷糊糊”网页链接(使用#秒拍#录制,免流量看热门短视频!)",
@@ -4150,7 +4149,8 @@
             "super star academy",
             "behind the scenes"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 125,
@@ -4162,14 +4162,14 @@
         "link": "",
         "groupName": "201704",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "",
         "duration": 119,
         "englishTags": [
             "weibo",
             "april"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 122,
@@ -4178,14 +4178,14 @@
         "month": "April",
         "year": "2017",
         "tags": [],
-        "category": "screenshot",
         "groupName": "201704",
         "photoText": "DAY\nX玖少年团首战DAYTOY\nTOY 17-4-17 13:55 来自秒拍客户端\n“来了!”网页链接(使用#秒拍#录制,免流量\n看热门短视频!)\n分享",
         "postText": "“来了!”网页链接",
         "englishTags": [
             "super star academy"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 123,
@@ -4197,13 +4197,13 @@
         "link": "",
         "groupName": "201704",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "",
         "duration": 262,
         "englishTags": [
             "weibo"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 115,
@@ -4216,7 +4216,6 @@
             "雪",
             "疾冲"
         ],
-        "category": "screenshot",
         "groupName": "201704",
         "photoText": "DAY\nΤΟΥ\nV\nX玖少年团肖战DAYTOY\n4-16 23:47 来自iPhone 6s\n滤镜之多,现唯有黑白能救冲冲;\n那些年北京错过的大雪,\n香格里拉一日还给你!\nKSDAY TOY\nPOS MOLDAYTOY\n好取ってΠΕΡΑΥΤΟΥ",
         "postText": "滤镜之多,现唯有黑白能救冲冲; 那些年北京错过的大雪, 香格里拉一日还给你!",
@@ -4227,7 +4226,8 @@
             "ji chong",
             "black and white"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 116,
@@ -4241,7 +4241,6 @@
             "疾冲"
         ],
         "groupName": "201704",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "滤镜之多,现唯有黑白能救冲冲; 那些年北京错过的大雪, 香格里拉一日还给你!",
         "englishTags": [
@@ -4250,7 +4249,8 @@
             "wolf",
             "ji chong"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 117,
@@ -4264,7 +4264,6 @@
             "疾冲"
         ],
         "groupName": "201704",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "滤镜之多,现唯有黑白能救冲冲; 那些年北京错过的大雪, 香格里拉一日还给你!",
         "englishTags": [
@@ -4274,7 +4273,8 @@
             "ji chong",
             "black and white"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 118,
@@ -4288,7 +4288,6 @@
             "疾冲"
         ],
         "groupName": "201704",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "滤镜之多,现唯有黑白能救冲冲; 那些年北京错过的大雪, 香格里拉一日还给你!",
         "englishTags": [
@@ -4298,7 +4297,8 @@
             "jichong",
             "black and white"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 119,
@@ -4312,7 +4312,6 @@
             "疾冲"
         ],
         "groupName": "201704",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "滤镜之多,现唯有黑白能救冲冲; 那些年北京错过的大雪, 香格里拉一日还给你!",
         "englishTags": [
@@ -4322,7 +4321,8 @@
             "ji chong",
             "black and white"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 120,
@@ -4336,7 +4336,6 @@
             "疾冲"
         ],
         "groupName": "201704",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "滤镜之多,现唯有黑白能救冲冲; 那些年北京错过的大雪, 香格里拉一日还给你!",
         "englishTags": [
@@ -4346,7 +4345,8 @@
             "jichong",
             "black and white"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 121,
@@ -4360,7 +4360,6 @@
             "疾冲"
         ],
         "groupName": "201704",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "滤镜之多,现唯有黑白能救冲冲; 那些年北京错过的大雪, 香格里拉一日还给你!",
         "englishTags": [
@@ -4370,7 +4369,8 @@
             "ji chong",
             "black and white"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 112,
@@ -4379,7 +4379,6 @@
         "month": "April",
         "year": "2017",
         "tags": [],
-        "category": "screenshot",
         "groupName": "201704",
         "photoText": "DAY\nΤΟΥ\nX玖少年团肖战DAYTOY\n6\n17-4-13 00:33 来自iPhone 6s\n困!\n●肖zz的秒拍视频.\n分享",
         "postText": "困!",
@@ -4387,7 +4386,8 @@
             "sleepy",
             "super star academy"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 113,
@@ -4396,7 +4396,6 @@
         "month": "April",
         "year": "2017",
         "tags": [],
-        "category": "screenshot",
         "groupName": "201704",
         "photoText": "DAY\nΤον\nX玖少年团肖战DAYT...\n迟到的周记,请原谅我,送你们美丽风景一\n张,晚安\n@X玖少年团肖战DAYTOY",
         "postText": "困!",
@@ -4404,7 +4403,8 @@
             "sleepy",
             "super star academy"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 114,
@@ -4416,14 +4416,14 @@
         "link": "",
         "groupName": "201704",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "",
         "duration": 251,
         "englishTags": [
             "weibo update",
             "april"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 103,
@@ -4434,7 +4434,6 @@
         "tags": [
             "演唱会"
         ],
-        "category": "screenshot",
         "groupName": "201704",
         "link": "",
         "note": "",
@@ -4444,7 +4443,8 @@
             "concert",
             "x nine"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 104,
@@ -4459,7 +4459,6 @@
         "link": "",
         "groupName": "201704",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "只为你们,今天晚上见! @X玖少年团肖战DAY TOY",
         "englishTags": [
@@ -4467,7 +4466,8 @@
             "selfie",
             "x nine"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 105,
@@ -4478,7 +4478,6 @@
         "tags": [
             "演唱会"
         ],
-        "category": "screenshot",
         "groupName": "201704",
         "photoText": "DAY\nΤΟΥ\nX玖少年团肖战DAYTOY\n17-4-2 22:41 来自iPhone 6s\n谢谢,\n我只是你们的肖战,\n终于可以好好休息一下!GN!\n@X玖少年团DAYTOY\n@X玖少年团DΑΥΤΟΥ\n@X玖少年团ΗΔΕΑΥΤΟΥ\n战",
         "postText": "只为你们,今天晚上见! @X玖少年团肖战DAY TOY",
@@ -4486,7 +4485,8 @@
             "concert",
             "x nine"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 106,
@@ -4498,14 +4498,14 @@
             "演唱会"
         ],
         "groupName": "201704",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "只为你们,今天晚上见! @X玖少年团肖战DAY TOY",
         "englishTags": [
             "concert",
             "x nine"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 107,
@@ -4517,14 +4517,14 @@
             "演唱会"
         ],
         "groupName": "201704",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "只为你们,今天晚上见! @X玖少年团肖战DAY TOY",
         "englishTags": [
             "concert",
             "x nine"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 108,
@@ -4538,14 +4538,14 @@
         "link": "",
         "groupName": "201704",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "只为你们,今天晚上见! @X玖少年团肖战DAY TOY",
         "englishTags": [
             "selfie",
             "x nine"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 109,
@@ -4559,14 +4559,14 @@
         "link": "",
         "groupName": "201704",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "只为你们,今天晚上见! @X玖少年团肖战DAY TOY",
         "englishTags": [
             "selfie",
             "x nine"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 110,
@@ -4578,14 +4578,14 @@
             "演唱会"
         ],
         "groupName": "201704",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "只为你们,今天晚上见! @X玖少年团肖战DAY TOY",
         "englishTags": [
             "concert",
             "x nine"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 111,
@@ -4601,7 +4601,6 @@
         "link": "",
         "groupName": "201704",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "只为你们,今天晚上见! @X玖少年团肖战DAY TOY",
         "englishTags": [
@@ -4609,7 +4608,8 @@
             "x nine",
             "stage performance"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 101,
@@ -4620,7 +4620,6 @@
         "tags": [
             "随笔"
         ],
-        "category": "screenshot",
         "groupName": "201704",
         "photoText": "●●●●○中国移动 4G\n上午1:57\n<备忘录\n+\n2017年4月1日 上午1:56\n59%\n我来了,老说不要熬夜自己却一直犯规。\n今天到上海进行了第一次排练,\n说不紧张是骗人的,紧张是不想让你们失\n望,尽努力吧!\n看到大家的烦恼有很多啊!\n千万不要跟父母吵架,越长大你就会越明\n白他们对你来说是多么的珍贵!\n对于别人的误解和揣测,世界很大,守恒\n定律有多少人喜欢你就会有多少人讨厌\n你,在他们眼里你呼吸都是错的,所以干\n嘛不愿意去做你自己努力让喜欢你的人更\n爱你呢?心的过滤网要升级咯!\n重:排练会到很晚!!不要在外面站着\n等!快回家,感冒了飞不了了可怎么办\n啊!拙计!\n很想念那个可以在舞台上与你们相见的肖\n战,快了,4.2见。\n爱你们,晚安\n战!\n@X玖少年团自战DAYTOY",
         "postText": "我来了,老说不要熬夜自己却一直犯规。\n今天到上海进行了第一次排练,\n说不紧张是骗人的,紧张是不想让你们失\n望,尽努力吧!\n看到大家的烦恼有很多啊!\n千万不要跟父母吵架,越长大你就会越明\n白他们对你来说是多么的珍贵!\n对于别人的误解和揣测,世界很大,守恒\n定律有多少人喜欢你就会有多少人讨厌\n你,在他们眼里你呼吸都是错的,所以干\n嘛不愿意去做你自己努力让喜欢你的人更\n爱你呢?心的过滤网要升级咯!\n重:排练会到很晚!!不要在外面站着\n等!快回家,感冒了飞不了了可怎么办\n啊!拙计!\n很想念那个可以在舞台上与你们相见的肖\n战,快了,4.2",
@@ -4629,7 +4628,8 @@
             "shanghai",
             "stage performance"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 100,
@@ -4638,7 +4638,6 @@
         "month": "March",
         "year": "2017",
         "tags": [],
-        "category": "screenshot",
         "groupName": "201703",
         "photoText": "X玖\nDAY X玖少年团肖战DAYTOY\nΤΟΥ\nV\n3-30 07:25 来自 虾米音乐移动版\n早上好《Small Happiness》▷\n(分享自@虾米音乐)\nSmall Happiness\n44人赞过\nLove Letter\nSmall Happiness",
         "postText": "早上好《Small Happiness》▷ (分享自@虾米音乐)",
@@ -4646,7 +4645,8 @@
             "small happiness",
             "music"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 98,
@@ -4655,7 +4655,6 @@
         "month": "March",
         "year": "2017",
         "tags": [],
-        "category": "screenshot",
         "groupName": "201703",
         "photoText": "DAY\nΤΟΥ\nX玖少年团肖战DAYTOY\n3-26 18:48 来自秒拍客户端\n“我来了!4.2等你!\n#以己之名X玖少年团上海演\n唱会##明星悬赏令#”肖zz的秒拍视频(使用#秒拍#\n录制,免流量看热门短视频!)",
         "postText": "我来了!4.2等你! #以己之名X玖少年团上海演唱会##明星悬赏令#",
@@ -4664,7 +4663,8 @@
             "concert",
             "shanghai"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 99,
@@ -4676,14 +4676,14 @@
         "link": "",
         "groupName": "201703",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "",
         "duration": 213,
         "englishTags": [
             "weibo",
             "march"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 93,
@@ -4692,14 +4692,14 @@
         "month": "March",
         "year": "2017",
         "tags": [],
-        "category": "screenshot",
         "groupName": "201703",
         "photoText": "DAY\nΤΟΥ\nX玖少年团肖战DAYTOY\n☆\nV\n17-3-25 00:55 来自iPhone 6s\n收工!\n上面还是下面呢?",
         "postText": "收工! 上面还是下面呢?",
         "englishTags": [
             "behind the scenes"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 94,
@@ -4709,14 +4709,14 @@
         "year": "2017",
         "tags": [],
         "groupName": "201703",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "收工! 上面还是下面呢?",
         "englishTags": [
             "behind the scenes",
             "super star academy"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 95,
@@ -4726,14 +4726,14 @@
         "year": "2017",
         "tags": [],
         "groupName": "201703",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "收工! 上面还是下面呢?",
         "englishTags": [
             "behind the scenes",
             "super star academy"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 96,
@@ -4743,14 +4743,14 @@
         "year": "2017",
         "tags": [],
         "groupName": "201703",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "收工! 上面还是下面呢?",
         "englishTags": [
             "behind the scenes",
             "super star academy"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 97,
@@ -4760,14 +4760,14 @@
         "year": "2017",
         "tags": [],
         "groupName": "201703",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "收工! 上面还是下面呢?",
         "englishTags": [
             "behind the scenes",
             "super star academy"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 92,
@@ -4778,7 +4778,6 @@
         "tags": [
             "随笔"
         ],
-        "category": "screenshot",
         "groupName": "201703",
         "photoText": "●●●●○中国移动 4G\n1/5\n<备忘录\n下午11:15\n2017年3月23日下午11:15\n最近还好吗?\nLe\n+\n49%\n我们最近都在为演唱会做准备,努力在较\n短的时间能拿出最好的状态。\n想说的话还是有很多,但是敲出来的字却\n是零零散散,最近北京又变冷了,听说会\n下雪,会吗?\n看到你们好多人都说病了,照顾好自己\n啊,感冒真的就飞不起来了!!我也会照\n顾好自己,捍卫老大哥的尊严,\nahahahahah!\n也看到你们在说学习好难,工作不开心,\n其实成长就是一座攀爬的高山,越长大就\n会越难,牢骚烂在心里,回过头来看这些\n问题,就不难了\n最近越来越忙了,但有时间还是会来的,\n好好维护它哟!\n展开へ\n@X玫年团自DAYTOY",
         "postText": "最近还好吗?\n我们最近都在为演唱会做准备,努力在较\n短的时间能拿出最好的状态。\n想说的话还是有很多,但是敲出来的字却\n是零零散散,最近北京又变冷了,听说会\n下雪,会吗?\n看到你们好多人都说",
@@ -4787,7 +4786,8 @@
             "rehearsal",
             "beijing"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 90,
@@ -4799,7 +4799,6 @@
             "油菜花",
             "天天向上"
         ],
-        "category": "screenshot",
         "groupName": "201703",
         "photoText": "DAY\nΤΟΥ\nV\nX玖少年团肖战DAYTOY\n3-21 23:51 来自 iPhone 6s\n那我们周五油菜花里见咯!晚安!\n#天天向上#",
         "postText": "那我们周五油菜花里见咯!晚安! #天天向上#",
@@ -4808,7 +4807,8 @@
             "rapeseed field",
             "variety show"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 91,
@@ -4821,7 +4821,6 @@
             "天天向上"
         ],
         "groupName": "201703",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "那我们周五油菜花里见咯!晚安! #天天向上#",
         "englishTags": [
@@ -4829,7 +4828,8 @@
             "rapeseed field",
             "variety show"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 84,
@@ -4838,7 +4838,6 @@
         "month": "March",
         "year": "2017",
         "tags": [],
-        "category": "screenshot",
         "groupName": "201703",
         "photoText": "X玖少年团肖战DAYTOY\n17-3-19 18:17 来自iPhone 6s\n新的一周,新的肖战又来了,这一周是训练\n战,你怕了吗? 秒拍视频.\n我超怕的\nDAY\nΤΟΥ",
         "postText": "新的一周,新的肖战又来了,这一周是训练 战,你怕了吗? 秒拍视频. 我超怕的",
@@ -4846,7 +4845,8 @@
             "super star academy",
             "rehearsal"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 85,
@@ -4861,7 +4861,6 @@
         "link": "",
         "groupName": "201703",
         "note": "",
-        "category": "attached",
         "photoText": "我超怕的",
         "postText": "新的一周,新的肖战又来了,这一周是训练 战,你怕了吗? 秒拍视频. 我超怕的",
         "englishTags": [
@@ -4869,7 +4868,8 @@
             "super star academy",
             "training"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 86,
@@ -4883,14 +4883,14 @@
         "link": "",
         "groupName": "201703",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "新的一周,新的肖战又来了,这一周是训练 战,你怕了吗? 秒拍视频. 我超怕的",
         "englishTags": [
             "selfie",
             "training"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 87,
@@ -4904,14 +4904,14 @@
         "link": "",
         "groupName": "201703",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "新的一周,新的肖战又来了,这一周是训练 战,你怕了吗? 秒拍视频. 我超怕的",
         "englishTags": [
             "selfie",
             "training"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 88,
@@ -4925,14 +4925,14 @@
         "link": "",
         "groupName": "201703",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "新的一周,新的肖战又来了,这一周是训练 战,你怕了吗? 秒拍视频. 我超怕的",
         "englishTags": [
             "selfie",
             "training"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 89,
@@ -4944,14 +4944,14 @@
         "link": "",
         "groupName": "201703",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "",
         "duration": 144,
         "englishTags": [
             "weibo",
             "march"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 78,
@@ -4960,7 +4960,6 @@
         "month": "March",
         "year": "2017",
         "tags": [],
-        "category": "screenshot",
         "groupName": "201703",
         "photoText": "X玖少年团肖战DAYTOY\n17-3-13 12:09 来自iPhone 6s\n我来了我来了我来了!!想我吗?!想你们\n了!! 网页链接.\n微笑中透露着疲倦",
         "postText": "我来了我来了我来了!!想我吗?!想你们了!! 网页链接. 微笑中透露着疲倦",
@@ -4968,7 +4967,8 @@
             "weibo update",
             "selfie"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 79,
@@ -4982,14 +4982,14 @@
         "link": "",
         "groupName": "201703",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "我来了我来了我来了!!想我吗?!想你们了!! 网页链接. 微笑中透露着疲倦",
         "englishTags": [
             "selfie",
             "weibo"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 80,
@@ -5004,7 +5004,6 @@
         "link": "",
         "groupName": "201703",
         "note": "",
-        "category": "attached",
         "photoText": "微笑中透露着疲倦",
         "postText": "我来了我来了我来了!!想我吗?!想你们了!! 网页链接. 微笑中透露着疲倦",
         "englishTags": [
@@ -5012,7 +5011,8 @@
             "tired",
             "emoticon"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 81,
@@ -5026,14 +5026,14 @@
         "link": "",
         "groupName": "201703",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "我来了我来了我来了!!想我吗?!想你们了!! 网页链接. 微笑中透露着疲倦",
         "englishTags": [
             "selfie",
             "weibo"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 82,
@@ -5047,14 +5047,14 @@
         "link": "",
         "groupName": "201703",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "我来了我来了我来了!!想我吗?!想你们了!! 网页链接. 微笑中透露着疲倦",
         "englishTags": [
             "selfie",
             "weibo"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 83,
@@ -5066,13 +5066,13 @@
         "link": "",
         "groupName": "201703",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "",
         "duration": 139,
         "englishTags": [
             "weibo update"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 74,
@@ -5081,7 +5081,6 @@
         "month": "March",
         "year": "2017",
         "tags": [],
-        "category": "screenshot",
         "groupName": "201703",
         "photoText": "DAY\nΤΟΥ\nX玖少年团肖战DAYTOY\n3-5 21:17 来自iPhone 6s\n就算重感冒也要“围笑””\n秒拍视频.",
         "postText": "就算重感冒也要“围笑””",
@@ -5089,7 +5088,8 @@
             "super star academy",
             "behind the scenes"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 75,
@@ -5099,14 +5099,14 @@
         "year": "2017",
         "tags": [],
         "groupName": "201703",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "就算重感冒也要“围笑””",
         "englishTags": [
             "super star academy",
             "behind the scenes"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 76,
@@ -5120,13 +5120,13 @@
         "link": "",
         "groupName": "201703",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "就算重感冒也要“围笑””",
         "englishTags": [
             "selfie"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 77,
@@ -5138,14 +5138,14 @@
         "link": "",
         "groupName": "201703",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "",
         "duration": 107,
         "englishTags": [
             "weibo",
             "march"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 69,
@@ -5154,7 +5154,6 @@
         "month": "March",
         "year": "2017",
         "tags": [],
-        "category": "screenshot",
         "groupName": "201703",
         "photoText": "DAY\nΤΟΥ\nX玖少年团肖战DAYTOY\n3-2 12:38 来自iPhone 6s\n我来剧透一下:连今天的发型都是爱你们的形状\n歪?是小宝贝么",
         "postText": "我来剧透一下:连今天的发型都是爱你们的形状 歪?是小宝贝么",
@@ -5162,7 +5161,8 @@
             "super star academy",
             "behind the scenes"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 70,
@@ -5176,13 +5176,13 @@
         "link": "",
         "groupName": "201703",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "我来剧透一下:连今天的发型都是爱你们的形状 歪?是小宝贝么",
         "englishTags": [
             "selfie"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 71,
@@ -5196,13 +5196,13 @@
         "link": "",
         "groupName": "201703",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "我来剧透一下:连今天的发型都是爱你们的形状 歪?是小宝贝么",
         "englishTags": [
             "selfie"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 72,
@@ -5216,13 +5216,13 @@
         "link": "",
         "groupName": "201703",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "我来剧透一下:连今天的发型都是爱你们的形状 歪?是小宝贝么",
         "englishTags": [
             "selfie"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 73,
@@ -5238,7 +5238,6 @@
         "link": "",
         "groupName": "201703",
         "note": "",
-        "category": "attached",
         "photoText": "歪?是小宝贝么\n@快乐少年团肖战DAYTOY",
         "postText": "我来剧透一下:连今天的发型都是爱你们的形状 歪?是小宝贝么",
         "englishTags": [
@@ -5246,7 +5245,8 @@
             "emoticon",
             "super star academy"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 64,
@@ -5255,7 +5255,6 @@
         "month": "February",
         "year": "2017",
         "tags": [],
-        "category": "screenshot",
         "groupName": "201702",
         "photoText": "DAY\nΤΟΥ\nX玖少年团肖战DAYTOY\nV\n2-26 12:32 来自iPhone 6s\n我又来了!依然是肖战,依然顶着大肿脸报道!好想和\n你们快点见面!\n秒拍视频.\n明天星期\n捉妖记胡巴\n2-26 12:40\n快点见面\n5\n737\nX玖少年团肖战DAYTOY:可爱的小胡巴,马上就要\n见咯!\n♡♡",
         "postText": "我又来了!依然是肖战,依然顶着大肿脸报道!好想和你们快点见面! @X玖少年团肖战DAYTOY:可爱的小",
@@ -5264,7 +5263,8 @@
             "super star academy",
             "behind the scenes"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 65,
@@ -5278,7 +5278,6 @@
         "link": "",
         "groupName": "201702",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "我又来了!依然是肖战,依然顶着大肿脸报道!好想和你们快点见面! @X玖少年团肖战DAYTOY:可爱的小",
         "englishTags": [
@@ -5286,7 +5285,8 @@
             "x nine",
             "super star academy"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 66,
@@ -5300,7 +5300,6 @@
         "link": "",
         "groupName": "201702",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "我又来了!依然是肖战,依然顶着大肿脸报道!好想和你们快点见面! @X玖少年团肖战DAYTOY:可爱的小",
         "englishTags": [
@@ -5308,7 +5307,8 @@
             "x nine",
             "super star academy"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 67,
@@ -5324,7 +5324,6 @@
         "link": "",
         "groupName": "201702",
         "note": "",
-        "category": "attached",
         "photoText": "明天星期一",
         "postText": "我又来了!依然是肖战,依然顶着大肿脸报道!好想和你们快点见面! @X玖少年团肖战DAYTOY:可爱的小",
         "englishTags": [
@@ -5333,7 +5332,8 @@
             "x-nine",
             "monday"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 68,
@@ -5345,14 +5345,14 @@
         "link": "",
         "groupName": "201702",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "",
         "duration": 223,
         "englishTags": [
             "weibo",
             "february"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 58,
@@ -5361,7 +5361,6 @@
         "month": "February",
         "year": "2017",
         "tags": [],
-        "category": "screenshot",
         "groupName": "201702",
         "photoText": "DAY\nX玖少年团肖战DAYTOY\n6\nΤΟΥ\n✔17-2-19 12:33 来自iPhone 6s\n我依然是肖战!\n最后致最好的你们!\n秒拍视频.\n@欧少年团肖战DAYTOY\n2007 2.19.",
         "postText": "我依然是肖战!\n最后致最好的你们!",
@@ -5370,7 +5369,8 @@
             "graduation",
             "fan meeting"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 59,
@@ -5384,13 +5384,13 @@
         "link": "",
         "groupName": "201702",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "我依然是肖战!\n最后致最好的你们!",
         "englishTags": [
             "selfie"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 60,
@@ -5404,14 +5404,14 @@
         "link": "",
         "groupName": "201702",
         "note": "",
-        "category": "attached",
         "photoText": "fo\nshift\ncontrol\nalt\nopti\nZ\nD\nF\nSTAEDTLER REG 925 85-05\n@X玖少年团肖战DAYTOY\n2017.2.19.",
         "postText": "我依然是肖战!\n最后致最好的你们!",
         "englishTags": [
             "self portrait",
             "drawing"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 61,
@@ -5425,13 +5425,13 @@
         "link": "",
         "groupName": "201702",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "我依然是肖战!\n最后致最好的你们!",
         "englishTags": [
             "selfie"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 62,
@@ -5445,13 +5445,13 @@
         "link": "",
         "groupName": "201702",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "我依然是肖战!\n最后致最好的你们!",
         "englishTags": [
             "selfie"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 63,
@@ -5463,14 +5463,14 @@
         "link": "",
         "groupName": "201702",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "",
         "duration": 188,
         "englishTags": [
             "weibo update",
             "february 2017"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 57,
@@ -5481,7 +5481,6 @@
         "tags": [
             "情人节"
         ],
-        "category": "screenshot",
         "groupName": "201702",
         "photoText": "DAY\nΤΟΥ\nX玖少年团肖战DAYTOY 财\n2-14 13:30 来自iPhone 6s\n#有爱就说吧#今天,我们一起过!\n因为分享 所以感动\n“有爱就说吧》\nLo\nGENERATI\n@X玖少年团肖战DAYTOY",
         "postText": "#有爱就说吧#今天,我们一起过!\n因为分享 所以感动\n“有爱就说吧》",
@@ -5490,7 +5489,8 @@
             "weibo",
             "message"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 51,
@@ -5501,7 +5501,6 @@
         "tags": [
             "元宵"
         ],
-        "category": "screenshot",
         "groupName": "201702",
         "photoText": "X玖少年团肖战DAYTOY\n17-2-11 21:10 来自 iPhone 6s\n元宵快乐,录完周记去剪了一个瓜兮兮的头发!记\n得吃元宵!! 秒拍视频.\n回眸一笑\n@X玖少年团肖战DAYTOY\n@X玖少年团肖战DAYTOY\nDAY\nΤΟΥ\nV\n6",
         "postText": "元宵快乐,录完周记去剪了一个瓜兮兮的头发!记 得吃元宵!! 秒拍视频.\n回眸一笑",
@@ -5509,7 +5508,8 @@
             "lantern festival",
             "haircut"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 52,
@@ -5523,7 +5523,6 @@
         "link": "",
         "groupName": "201702",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "元宵快乐,录完周记去剪了一个瓜兮兮的头发!记 得吃元宵!! 秒拍视频.\n回眸一笑",
         "englishTags": [
@@ -5531,7 +5530,8 @@
             "weibo",
             "lantern festival"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 53,
@@ -5546,7 +5546,6 @@
         "link": "",
         "groupName": "201702",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY\n回眸一笑",
         "postText": "元宵快乐,录完周记去剪了一个瓜兮兮的头发!记 得吃元宵!! 秒拍视频.\n回眸一笑",
         "clip": true,
@@ -5555,7 +5554,8 @@
             "looking back",
             "lantern festival"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 54,
@@ -5567,14 +5567,14 @@
             "元宵"
         ],
         "groupName": "201702",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "元宵快乐,录完周记去剪了一个瓜兮兮的头发!记 得吃元宵!! 秒拍视频.\n回眸一笑",
         "englishTags": [
             "lantern festival",
             "haircut"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 55,
@@ -5588,7 +5588,6 @@
         "link": "",
         "groupName": "201702",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "元宵快乐,录完周记去剪了一个瓜兮兮的头发!记 得吃元宵!! 秒拍视频.\n回眸一笑",
         "englishTags": [
@@ -5596,7 +5595,8 @@
             "weibo",
             "lantern festival"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 56,
@@ -5608,14 +5608,14 @@
         "link": "",
         "groupName": "201702",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "",
         "englishTags": [
             "weibo",
             "february"
         ],
-        "duration": 130
+        "duration": 130,
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 50,
@@ -5626,7 +5626,6 @@
         "tags": [
             "随笔"
         ],
-        "category": "screenshot",
         "groupName": "201702",
         "photoText": "DAY\nΤΟΥ\nX玖少年团肖战DAYTOY\n295\nV\n2-7 23:02\n图片评论\n●●●●○中国移动\n取消\n下午11:02\n发评论\nX玖少年团肖战DAYTOY\n73%\n发送\n今天大家过的还好吗?有人在问真的会看吗?\n当然会看啊,已经答应了不是吗?看见有的地\n方下雪了啊,真是羡慕啊;还有要即将考试的\n童鞋,要加油哟!;工作不顺心?不要急,事\n情要一件一件的做;“诗词大会”我有看额;火\n锅我是真的很久没吃了;想家吗?说不想肯定\n是骗人的,但是每个人都有自己要完成的事\n情!大家晚安咯!\n同时转发\n☑\n@\nGIF\n+\n我你在这一是不白へ\nqwe\nr\ntyu\ni\nop\na S\ndfghjkl\n123\nZ\nXCV\nb\nnm\nX\n换行\n空格\n@X玖少年团肖战DAYTOY",
         "postText": "今天大家过的还好吗?有人在问真的会看吗? 当然会看啊,已经答应了不是吗?看见有的地方下雪了啊,真是羡慕啊;还有要即将考试的 童鞋,要加油哟!;工作不顺心?不要急,事情要一件一件的做;“诗词大会”我有看额;火 锅我是真的很久没吃了;想家吗?说不想肯定是骗人的,但是每个人都有自己要完成的事情!大家晚安咯!",
@@ -5635,7 +5634,8 @@
             "daily life",
             "personal thoughts"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 43,
@@ -5644,7 +5644,6 @@
         "month": "February",
         "year": "2017",
         "tags": [],
-        "category": "screenshot",
         "groupName": "201702",
         "photoText": "X玖少年团肖战DAYTOY 财\nDAY\nΤΟΥ\n2-6 14:11 来自iPhone 6s\n今天难得放假,谁都不要叫醒我!!诶,已经中午\n了。。。。。我的天线已经启动!快来连接!!\n微博视频.\n少年团肖战DAYTOY",
         "postText": "今天难得放假,谁都不要叫醒我!!诶,已经中午 了。。。。。我的天线已经启动!快来连接!!",
@@ -5652,7 +5651,8 @@
             "super star academy",
             "behind the scenes"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 44,
@@ -5662,14 +5662,14 @@
         "year": "2017",
         "tags": [],
         "groupName": "201702",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "今天难得放假,谁都不要叫醒我!!诶,已经中午 了。。。。。我的天线已经启动!快来连接!!",
         "englishTags": [
             "super star academy",
             "behind the scenes"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 45,
@@ -5679,14 +5679,14 @@
         "year": "2017",
         "tags": [],
         "groupName": "201702",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "今天难得放假,谁都不要叫醒我!!诶,已经中午 了。。。。。我的天线已经启动!快来连接!!",
         "englishTags": [
             "super star academy",
             "behind the scenes"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 46,
@@ -5696,14 +5696,14 @@
         "year": "2017",
         "tags": [],
         "groupName": "201702",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "今天难得放假,谁都不要叫醒我!!诶,已经中午 了。。。。。我的天线已经启动!快来连接!!",
         "englishTags": [
             "super star academy",
             "behind the scenes"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 47,
@@ -5713,14 +5713,14 @@
         "year": "2017",
         "tags": [],
         "groupName": "201702",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "今天难得放假,谁都不要叫醒我!!诶,已经中午 了。。。。。我的天线已经启动!快来连接!!",
         "englishTags": [
             "super star academy",
             "behind the scenes"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 48,
@@ -5731,7 +5731,6 @@
         "tags": [
             "秘密花园"
         ],
-        "category": "screenshot",
         "groupName": "201702",
         "photoText": "DAY\nΤΟΥ\nX玖少年团肖战DAYTOY\n17-2-6 14:15\n那就在这里吧,我们的小秘密",
         "postText": "今天难得放假,谁都不要叫醒我!!诶,已经中午 了。。。。。我的天线已经启动!快来连接!!",
@@ -5739,7 +5738,8 @@
             "secret garden",
             "weibo update"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 49,
@@ -5751,14 +5751,14 @@
         "link": "",
         "groupName": "201702",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "",
         "duration": 226,
         "englishTags": [
             "weibo",
             "super star academy"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 38,
@@ -5769,7 +5769,6 @@
         "tags": [
             "迎财神"
         ],
-        "category": "screenshot",
         "groupName": "201702",
         "link": "",
         "note": "",
@@ -5779,7 +5778,8 @@
             "new year",
             "traditional festival"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 39,
@@ -5793,14 +5793,14 @@
         "link": "",
         "groupName": "201702",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "顶着大肿脸开工啦!今天要迎财神爷哟!!\n山水勝利人人誇\n財神到\n幸福安康年年發",
         "englishTags": [
             "selfie",
             "new year"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 40,
@@ -5814,14 +5814,14 @@
         "link": "",
         "groupName": "201702",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "顶着大肿脸开工啦!今天要迎财神爷哟!!\n山水勝利人人誇\n財神到\n幸福安康年年發",
         "englishTags": [
             "selfie",
             "new year"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 41,
@@ -5835,14 +5835,14 @@
         "link": "",
         "groupName": "201702",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "顶着大肿脸开工啦!今天要迎财神爷哟!!\n山水勝利人人誇\n財神到\n幸福安康年年發",
         "englishTags": [
             "selfie",
             "new year"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 42,
@@ -5856,14 +5856,14 @@
         "link": "",
         "groupName": "201702",
         "note": "",
-        "category": "attached",
         "photoText": "恭喜發財\n靈山水勝利人人誇\n財神到\n幸福安康年年發\n@X玖少年团肖战DAYTOY",
         "postText": "顶着大肿脸开工啦!今天要迎财神爷哟!!\n山水勝利人人誇\n財神到\n幸福安康年年發",
         "englishTags": [
             "new year",
             "traditional festival"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 34,
@@ -5874,7 +5874,6 @@
         "tags": [
             "鸡年"
         ],
-        "category": "screenshot",
         "groupName": "201701",
         "photoText": "DAY\nΤΟΥ\nX玖少年团肖战DAYTOY\n✔17-1-27 19:38 来自 iPhone 6s\n新鲜出炉!祝大家新年快乐!鸡年吉祥!第一次在\n剧组过年!蛮有意义的!新的一年也拜托大家了!\n秒拍视频.\n吉\n2017\n年\n待的画面终于出现",
         "postText": "新鲜出炉!祝大家新年快乐!鸡年吉祥!第一次在剧组过年!蛮有意义的!新的一年也拜托大家了!",
@@ -5883,7 +5882,8 @@
             "rooster year",
             "behind the scenes"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 35,
@@ -5898,7 +5898,6 @@
         "link": "",
         "groupName": "201701",
         "note": "",
-        "category": "attached",
         "photoText": "期待的画面终于出现了\nwww.hello kitty.toy",
         "postText": "新鲜出炉!祝大家新年快乐!鸡年吉祥!第一次在剧组过年!蛮有意义的!新的一年也拜托大家了!",
         "englishTags": [
@@ -5906,7 +5905,8 @@
             "new year",
             "behind the scenes"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 36,
@@ -5918,7 +5918,6 @@
             "鸡年"
         ],
         "groupName": "201701",
-        "category": "attached",
         "photoText": "HAPPY CHINESE NEW YEAR\n雞\n吉年\n2017\n01/28\n丁酉\n@X玖少年团肖战DAYTOY 2020",
         "postText": "新鲜出炉!祝大家新年快乐!鸡年吉祥!第一次在剧组过年!蛮有意义的!新的一年也拜托大家了!",
         "englishTags": [
@@ -5926,7 +5925,8 @@
             "rooster year",
             "behind the scenes"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 37,
@@ -5940,14 +5940,14 @@
         "link": "",
         "groupName": "201701",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "",
         "duration": 88,
         "englishTags": [
             "weibo",
             "year of the rooster"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 28,
@@ -5956,9 +5956,7 @@
         "month": "January",
         "year": "2017",
         "tags": [],
-        "category": "screenshot",
         "groupName": "201701",
-        "source": "weibo",
         "link": "",
         "note": "",
         "photoText": "DAY\nΤΟΥ\nX玖少年团肖战DAYTOY\n17-1-20 23:15 来自iPhone 6s\n这次长沙行程太太太太棒了!\n谢谢大家的照顾!\n周记也要赶在小年夜祝大家小年夜快乐!\n晚安\n秒拍视频.\n33.7万次观看\n分享",
@@ -5967,7 +5965,9 @@
             "weibo",
             "changsha",
             "new year's eve"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 29,
@@ -5981,15 +5981,15 @@
         "link": "",
         "groupName": "201701",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "这次长沙行程太太太太棒了!\n谢谢大家的照顾!\n周记也要赶在小年夜祝大家小年夜快乐!\n晚安",
         "englishTags": [
             "weibo",
             "changsha",
             "new year's eve"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 30,
@@ -6003,15 +6003,15 @@
         "link": "",
         "groupName": "201701",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "这次长沙行程太太太太棒了!\n谢谢大家的照顾!\n周记也要赶在小年夜祝大家小年夜快乐!\n晚安",
         "englishTags": [
             "selfie",
             "weibo",
             "changsha"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 31,
@@ -6025,8 +6025,6 @@
         "link": "",
         "groupName": "201701",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "这次长沙行程太太太太棒了!\n谢谢大家的照顾!\n周记也要赶在小年夜祝大家小年夜快乐!\n晚安",
         "englishTags": [
@@ -6034,7 +6032,9 @@
             "weibo",
             "changsha",
             "little new year"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 32,
@@ -6048,8 +6048,6 @@
         "link": "",
         "groupName": "201701",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "这次长沙行程太太太太棒了!\n谢谢大家的照顾!\n周记也要赶在小年夜祝大家小年夜快乐!\n晚安",
         "englishTags": [
@@ -6057,7 +6055,9 @@
             "weibo",
             "changsha",
             "little new year"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 33,
@@ -6069,14 +6069,14 @@
         "link": "",
         "groupName": "201701",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "",
         "duration": 197,
         "englishTags": [
             "weibo",
             "january"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 24,
@@ -6085,7 +6085,6 @@
         "month": "January",
         "year": "2017",
         "tags": [],
-        "category": "screenshot",
         "groupName": "201701",
         "photoText": "DAY\nΤΟΥ\nV\nX玖少年团肖战DAYTOY\n17-1-15 20:00 来自iPhone 6s\n我来了,辛苦大家了!!\n心情如图\n☆微博视频.\n突然兴奋\n@X玖少年团肖战DAYTOY",
         "postText": "我来了,辛苦大家了!! 心情如图 突然兴奋",
@@ -6093,7 +6092,8 @@
             "super star academy",
             "behind the scenes"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 25,
@@ -6107,13 +6107,13 @@
         "link": "",
         "groupName": "201701",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "我来了,辛苦大家了!! 心情如图 突然兴奋",
         "englishTags": [
             "selfie"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 26,
@@ -6128,14 +6128,14 @@
         "link": "",
         "groupName": "201701",
         "note": "",
-        "category": "attached",
         "photoText": "突然兴奋\n@X玖少年团肖战DAYTOY",
         "postText": "我来了,辛苦大家了!! 心情如图 突然兴奋",
         "englishTags": [
             "meme",
             "weibo"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 27,
@@ -6147,14 +6147,14 @@
         "link": "",
         "groupName": "201701",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "",
         "duration": 139,
         "englishTags": [
             "weibo",
             "january"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 19,
@@ -6163,7 +6163,6 @@
         "month": "January",
         "year": "2017",
         "tags": [],
-        "category": "screenshot",
         "groupName": "201701",
         "link": "",
         "note": "",
@@ -6172,7 +6171,8 @@
         "englishTags": [
             "good night"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 20,
@@ -6184,13 +6184,13 @@
             "自拍"
         ],
         "groupName": "201701",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "愉快的,晚安",
         "englishTags": [
             "selfie"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 21,
@@ -6202,13 +6202,13 @@
             "自拍"
         ],
         "groupName": "201701",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "愉快的,晚安",
         "englishTags": [
             "selfie"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 22,
@@ -6220,13 +6220,13 @@
             "自拍"
         ],
         "groupName": "201701",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "愉快的,晚安",
         "englishTags": [
             "selfie"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 23,
@@ -6238,13 +6238,13 @@
             "自拍"
         ],
         "groupName": "201701",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "愉快的,晚安",
         "englishTags": [
             "selfie"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 15,
@@ -6253,7 +6253,6 @@
         "month": "January",
         "year": "2017",
         "tags": [],
-        "category": "screenshot",
         "groupName": "201701",
         "photoText": "DAY\nTOY\nX玖少年团肖战DAYTOY\n17-1-9 17:52 来自 iPhone 6s\n我来了我来了!最近一直在上课!非常非常的充实\n和忙碌,新的一年要开一个好头!!图片可是我的\n私存秒拍视频.",
         "postText": "我来了我来了!最近一直在上课!非常非常的充实 和忙碌,新的一年要开一个好头!!图片可是我的 私存秒拍视频.",
@@ -6261,7 +6260,8 @@
             "super star academy",
             "behind the scenes"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 16,
@@ -6275,14 +6275,14 @@
         "link": "",
         "groupName": "201701",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "我来了我来了!最近一直在上课!非常非常的充实 和忙碌,新的一年要开一个好头!!图片可是我的 私存秒拍视频.",
         "englishTags": [
             "selfie",
             "weibo"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 17,
@@ -6296,14 +6296,14 @@
         "link": "",
         "groupName": "201701",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "我来了我来了!最近一直在上课!非常非常的充实 和忙碌,新的一年要开一个好头!!图片可是我的 私存秒拍视频.",
         "englishTags": [
             "selfie",
             "weibo"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 18,
@@ -6315,14 +6315,14 @@
         "link": "",
         "groupName": "201701",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "",
         "duration": 10,
         "englishTags": [
             "weibo",
             "january"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 12,
@@ -6333,7 +6333,6 @@
         "tags": [
             "夏之光"
         ],
-        "category": "screenshot",
         "groupName": "201701",
         "photoText": "DAY\nΤΟΥ\nV\nX玖少年团肖战DAYTOY\n17-1-4 00:45 来自 iPhone 6s\n花季·雨季,\n美好的年纪!\n好好珍惜把握现在,\n光光,生快啊!要长大了!\n@X玖少年团夏之光X_Light",
         "postText": "花季·雨季, 美好的年纪! 好好珍惜把握现在, 光光,生快啊!要长大了! @X玖少年团夏之光X_Light",
@@ -6342,7 +6341,8 @@
             "x light",
             "birthday message"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 13,
@@ -6354,7 +6354,6 @@
         "link": "",
         "groupName": "201701",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "花季·雨季, 美好的年纪! 好好珍惜把握现在, 光光,生快啊!要长大了! @X玖少年团夏之光X_Light",
         "englishTags": [
@@ -6362,7 +6361,8 @@
             "x light",
             "birthday message"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 14,
@@ -6377,7 +6377,6 @@
         "link": "",
         "groupName": "201701",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "花季·雨季, 美好的年纪! 好好珍惜把握现在, 光光,生快啊!要长大了! @X玖少年团夏之光X_Light",
         "englishTags": [
@@ -6385,7 +6384,8 @@
             "xia zhiguang",
             "group photo"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 1,
@@ -6397,7 +6397,6 @@
             "第一次",
             "古装"
         ],
-        "category": "screenshot",
         "groupName": "201701",
         "photoText": "DAY X玖少年团肖战DAYTOY\nΤΟΥ\nV\n17-1-1 23:54 来自 iPhone 6s\nOh第一次哟\n安了安了!\nஜ",
         "postText": "Oh第一次哟\n安了安了!",
@@ -6406,7 +6405,8 @@
             "oh my emperor",
             "first role"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 2,
@@ -6422,7 +6422,6 @@
         "link": "",
         "groupName": "201701",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "Oh第一次哟\n安了安了!",
         "englishTags": [
@@ -6430,7 +6429,8 @@
             "ancient costume",
             "selfie"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 3,
@@ -6446,7 +6446,6 @@
         "link": "",
         "groupName": "201701",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "Oh第一次哟\n安了安了!",
         "englishTags": [
@@ -6454,7 +6453,8 @@
             "group photo",
             "oh my emperor"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 4,
@@ -6470,7 +6470,6 @@
         "link": "",
         "groupName": "201701",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "Oh第一次哟\n安了安了!",
         "englishTags": [
@@ -6478,7 +6477,8 @@
             "costume drama",
             "group photo"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 5,
@@ -6494,14 +6494,14 @@
         "link": "",
         "groupName": "201701",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "Oh第一次哟\n安了安了!",
         "englishTags": [
             "costume",
             "selfie"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 6,
@@ -6512,7 +6512,6 @@
         "tags": [
             "赵磊"
         ],
-        "category": "screenshot",
         "groupName": "201701",
         "photoText": "X玖少年团肖战DAYTOY\n17-1-1 00:21 来自iPhone 6s\n掐着时间发祝福!\n磊磊生日快乐!\n谢谢你们!\n新年快乐!\n秒拍视频.\nDAY\nΤΟΥ\nV\n6",
         "postText": "Oh第一次哟\n安了安了!",
@@ -6520,7 +6519,8 @@
             "zhao lei",
             "oh my emperor"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 7,
@@ -6535,7 +6535,6 @@
         "link": "",
         "groupName": "201701",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "Oh第一次哟\n安了安了!",
         "englishTags": [
@@ -6543,7 +6542,8 @@
             "group photo",
             "super star academy"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 8,
@@ -6557,13 +6557,13 @@
         "link": "",
         "groupName": "201701",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "Oh第一次哟\n安了安了!",
         "englishTags": [
             "selfie"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 9,
@@ -6577,13 +6577,13 @@
         "link": "",
         "groupName": "201701",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "Oh第一次哟\n安了安了!",
         "englishTags": [
             "selfie"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 10,
@@ -6597,13 +6597,13 @@
         "link": "",
         "groupName": "201701",
         "note": "",
-        "category": "attached",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "Oh第一次哟\n安了安了!",
         "englishTags": [
             "selfie"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 11,
@@ -6618,13 +6618,13 @@
         "link": "",
         "groupName": "201701",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "",
         "duration": 321,
         "englishTags": [
             "new year gala",
             "weibo"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     }
 ]
