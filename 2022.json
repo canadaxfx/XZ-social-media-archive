@@ -8,7 +8,6 @@
         "tags": [
             "雪"
         ],
-        "category": "screenshot",
         "groupName": "202212",
         "photoText": "公开\nX玖少年团肖战DAYTOY\n22-12-30 14:00 来自微博视频号\n发布于重庆\n抖落\n□X玖少年团肖战DAYTOY的微博视频\n474万次观看\n00:11",
         "postText": "抖落",
@@ -16,7 +15,8 @@
             "snow",
             "douluo continent"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 168,
@@ -30,14 +30,14 @@
         "link": "",
         "groupName": "202212",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "",
         "duration": 12,
         "englishTags": [
             "snow",
             "weibo"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 165,
@@ -48,7 +48,6 @@
         "tags": [
             "非正式跨年派对"
         ],
-        "category": "screenshot",
         "groupName": "202212",
         "photoText": "公开\nX玖少年团肖战DAYTOY\n22-12-27 17:00 发布于重庆\n#非正式跨年派对#2023年即将到来,祝福大家顺\n顺利利,平平安安!你的2023年新年愿望是什\n么?\n2022\n2022 NEW YEAR'S PARTY\nEXPRESS►►►►\n非正式跨年派对\n直通车票\n49014042022FZS001\n车厢 NO. 001\n日期 DATE 即刻出发\n始发站 FROM 微博\n到达站 DEST 快乐星球\n快来和我一起加入非正式跨年派对\n12月跨年就要在微博\n@X玖少年团肖战DAYTOY\n@X玖少年团肖战DAYTOY\n2022 NEW YEAR'S PARTY EXPRESS ►►►►\nYEAR'S PARTY►►►►\n2 NEW YEAR\nPARTY ONI JEJ UP\n2022 NEW\nPAF",
         "postText": "#非正式跨年派对#2023年即将到来,祝福大家顺顺利利,平平安安!你的2023年新年愿望是什么",
@@ -57,7 +56,8 @@
             "informal new year party",
             "2023 wishes"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 166,
@@ -69,14 +69,14 @@
             "非正式跨年派对"
         ],
         "groupName": "202212",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "2022\n2022 NEW YEAR'S PARTY\nW YEAR'S PARTY ►►►►►►\n非正式跨年派对\n直通车票\n49014042022FZS001\n车厢 NO. 001\n始发站 FROM 微博\n日期 DATE 即刻出发 到达站 DEST 快乐星球\nLL\n2 NEW YEAR\n快来和我一起加入非正式跨年派对\n12月跨年就要在微博\n@X玖少年团肖战DAYTOY\n2022 NEW YEAR'S PARTY EXPRESS ►►►►\nPARTY ONI JE UP @X玖少年团肖战DAYTOY\n2022 NEW Y\nPAR",
         "postText": "#非正式跨年派对#2023年即将到来,祝福大家顺顺利利,平平安安!你的2023年新年愿望是什么",
         "englishTags": [
             "new year gala",
             "weibo"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 158,
@@ -88,7 +88,6 @@
             "冬至",
             "雪"
         ],
-        "category": "screenshot",
         "groupName": "202212",
         "photoText": "公开\nX玖少年团肖战DAYTOY\n22-12-22 12:11 发布于北京\n冬至快乐\n@X玖少年团肖战DAYTOY\n@X玖少年团肖战DAYTOY\n@X玖少年团肖战DAYTOY",
         "postText": "冬至快乐",
@@ -96,7 +95,8 @@
             "winter solstice",
             "snow"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 159,
@@ -109,14 +109,14 @@
             "雪"
         ],
         "groupName": "202212",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "冬至快乐",
         "englishTags": [
             "winter solstice",
             "snow"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 160,
@@ -129,8 +129,6 @@
             "雪"
         ],
         "groupName": "202212",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "冬至快乐",
         "englishTags": [
@@ -138,7 +136,9 @@
             "snow",
             "weibo",
             "greeting"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 161,
@@ -151,14 +151,14 @@
             "雪"
         ],
         "groupName": "202212",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "冬至快乐",
         "englishTags": [
             "winter solstice",
             "snow"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 162,
@@ -171,14 +171,14 @@
             "雪"
         ],
         "groupName": "202212",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "冬至快乐",
         "englishTags": [
             "winter solstice",
             "snow"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 163,
@@ -191,14 +191,14 @@
             "雪"
         ],
         "groupName": "202212",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "冬至快乐",
         "englishTags": [
             "winter solstice",
             "snow"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 164,
@@ -211,14 +211,14 @@
             "雪"
         ],
         "groupName": "202212",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "冬至快乐",
         "englishTags": [
             "winter solstice",
             "snow"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 156,
@@ -231,8 +231,6 @@
             "年度好剧推荐",
             "电视剧大赏"
         ],
-        "category": "screenshot",
-        "source": "weibo",
         "groupName": "202212",
         "link": "",
         "note": "",
@@ -242,7 +240,9 @@
             "you are my glory",
             "weibo drama awards",
             "gu wei"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 157,
@@ -258,15 +258,15 @@
         "link": "",
         "groupName": "202212",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "●微博\nAWARDS\nTV SERIES\n年度好剧推荐《余生请多指教》\n肖战饰顾魏\n2022电视剧大赏\nTV SERIES\nAWARDS\nSina 新浪娱乐\n美好生活剧力绽放\n●@X玖少年团肖战DAYTOY\n微博电视剧 |\n·微博明星\n---",
         "postText": "美好生活,剧力绽放!2022年微博#电视剧大赏# 热力开启,我推荐的年度好剧是《余生,请多指教》,我想对顾魏说:顾医生,心怀热忱,坚守初心。#年度好剧推荐#",
         "englishTags": [
             "you are my glory",
             "weibo drama awards",
             "dr gu wei"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 151,
@@ -277,7 +277,6 @@
         "tags": [
             "自拍"
         ],
-        "category": "screenshot",
         "groupName": "202211",
         "photoText": "肖战 DAYTOY\n19\nV\n22-11-30 00:50 发布于浙江\n雨夜和火锅很配\nLIVE\n@X玖少年团肖战DAYTOY\n@X玖少年团肖战DAYTOY\n:\nLIVE",
         "postText": "雨夜和火锅很配 @X玖少年团肖战DAYTOY : LIVE",
@@ -286,9 +285,10 @@
             "night",
             "food"
         ],
-        "source": "weibo",
         "link": "",
-        "note": ""
+        "note": "",
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 152,
@@ -303,14 +303,14 @@
         "link": "",
         "groupName": "202211",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "雨夜和火锅很配 @X玖少年团肖战DAYTOY : LIVE",
         "englishTags": [
             "weibo awards",
             "red carpet"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 153,
@@ -326,13 +326,13 @@
         "link": "",
         "groupName": "202211",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "",
         "englishTags": [
             "selfie",
             "weibo live"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 154,
@@ -348,13 +348,13 @@
         "link": "",
         "groupName": "202211",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "",
         "englishTags": [
             "selfie",
             "weibo live"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 155,
@@ -369,14 +369,14 @@
         "link": "",
         "groupName": "202211",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "雨夜和火锅很配 @X玖少年团肖战DAYTOY : LIVE",
         "englishTags": [
             "food",
             "hotpot"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 150,
@@ -389,7 +389,6 @@
             "微博视界大会",
             "年度表现力演员"
         ],
-        "category": "screenshot",
         "groupName": "202211",
         "photoText": "肖战 DAYTOY\n22-11-29 22:00 来自明星动态\n微博\nMGA\n微博视界大会·微光盛典\nWEIBO TV & INTERNET VIDEO\nSUMMIT 2022\n年度表现力演员\n肖战",
         "postText": "微博视界大会·微光盛典 WEIBO TV & INTERNET VIDEO SUMMIT 2022 年度表现力演员 肖战",
@@ -398,7 +397,8 @@
             "awards",
             "actor of the year"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 143,
@@ -410,7 +410,6 @@
             "日常",
             "坚果"
         ],
-        "category": "screenshot",
         "groupName": "202211",
         "photoText": "公开\nX玖少年团肖战DAYTOY\n22-11-15 20:10 发布于重庆\n#随手一拍镜头感#存货...抖..抖..抖落...\n@X玖少年团肖战DAYTOY\n@X玖少年团肖战DAYTOY\n@X玖少年团肖战DAYTOY",
         "postText": "#随手一拍镜头感#存货...抖..抖..抖落...",
@@ -418,9 +417,10 @@
             "casual",
             "selfie"
         ],
-        "source": "weibo",
         "link": "",
-        "note": ""
+        "note": "",
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 144,
@@ -432,8 +432,6 @@
             "日常"
         ],
         "groupName": "202211",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "#随手一拍镜头感#存货...抖..抖..抖落...",
         "englishTags": [
@@ -442,7 +440,9 @@
             "selfie"
         ],
         "link": "",
-        "note": ""
+        "note": "",
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 145,
@@ -456,14 +456,14 @@
         "link": "",
         "groupName": "202211",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "#随手一拍镜头感#存货...抖..抖..抖落...",
         "englishTags": [
             "photography",
             "weibo update"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 146,
@@ -477,14 +477,14 @@
         "link": "",
         "groupName": "202211",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "#随手一拍镜头感#存货...抖..抖..抖落...",
         "englishTags": [
             "nuts",
             "weibo"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 147,
@@ -498,15 +498,15 @@
         "link": "",
         "groupName": "202211",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "#随手一拍镜头感#存货...抖..抖..抖落...",
         "englishTags": [
             "nuts",
             "pet",
             "weibo post"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 148,
@@ -520,14 +520,14 @@
         "link": "",
         "groupName": "202211",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "#随手一拍镜头感#存货...抖..抖..抖落...",
         "englishTags": [
             "selfie",
             "weibo"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 149,
@@ -541,14 +541,14 @@
         "link": "",
         "groupName": "202211",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "#随手一拍镜头感#存货...抖..抖..抖落...",
         "englishTags": [
             "food",
             "weibo"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 142,
@@ -560,7 +560,6 @@
             "生日",
             "系统代发"
         ],
-        "category": "screenshot",
         "groupName": "202210",
         "photoText": "公开\nX玖少年团肖战DAYTOY\n22-10-5 00:30 来自生日动态\nHappy Birthday\n今天是我的生日,来祝福我吧!",
         "postText": "Happy Birthday\n今天是我的生日,来祝福我吧!",
@@ -568,7 +567,8 @@
             "birthday",
             "weibo"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 134,
@@ -579,7 +579,6 @@
         "tags": [
             "坚果"
         ],
-        "category": "screenshot",
         "groupName": "202209",
         "photoText": "公开\nX玖少年团肖战DAYTOY\n22-9-29 14:22 发布于重庆\n好久不见啊!\nDAYTOY\nがX玖少年团肖战DAYTOY",
         "postText": "好久不见啊!",
@@ -588,7 +587,8 @@
             "pet",
             "cat"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 135,
@@ -600,14 +600,14 @@
             "坚果"
         ],
         "groupName": "202209",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "好久不见啊!",
         "englishTags": [
             "nuts",
             "pet dog"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 136,
@@ -619,14 +619,14 @@
             "坚果"
         ],
         "groupName": "202209",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "好久不见啊!",
         "englishTags": [
             "nuts",
             "pet"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 137,
@@ -638,15 +638,15 @@
             "坚果"
         ],
         "groupName": "202209",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "好久不见啊!",
         "englishTags": [
             "nuts",
             "pet",
             "weibo update"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 138,
@@ -658,14 +658,14 @@
             "坚果"
         ],
         "groupName": "202209",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "好久不见啊!",
         "englishTags": [
             "nuts",
             "pet dog"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 139,
@@ -677,13 +677,13 @@
             "坚果"
         ],
         "groupName": "202209",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "",
         "englishTags": [
             "nuts",
             "weibo"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 140,
@@ -695,15 +695,15 @@
             "坚果"
         ],
         "groupName": "202209",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "好久不见啊!",
         "englishTags": [
             "nuts",
             "pet",
             "weibo update"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 141,
@@ -715,15 +715,15 @@
             "坚果"
         ],
         "groupName": "202209",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "好久不见啊!",
         "englishTags": [
             "nuts",
             "pet dog",
             "weibo update"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 133,
@@ -735,7 +735,6 @@
             "张艺兴",
             "友情宣传"
         ],
-        "category": "screenshot",
         "groupName": "202209",
         "photoText": "肖战 DAYTOY\n22-9-21 12:30 发布于重庆\n大兴, COOL! 一起来听~\n张艺兴\n+关注\n面纱张艺兴的微博视频\n記\nPIACTO\n行\n「西廠\n4817万次观看\nホソ\n設\n生耳卡拉OK\n03:21",
         "postText": "大兴, COOL! 一起来听~",
@@ -744,7 +743,8 @@
             "cool magazine",
             "promotional"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 131,
@@ -755,14 +755,14 @@
         "tags": [
             "中秋"
         ],
-        "category": "screenshot",
         "groupName": "202209",
         "photoText": "公开\nX玖少年团肖战DAYTOY\n22-9-10 14:34 发布于 北京\n#我的镜头下#花好月圆,平安顺遂。中秋快乐\n@X玖少年团当战DAYTOY",
         "postText": "#我的镜头下#花好月圆,平安顺遂。中秋快乐",
         "englishTags": [
             "mid-autumn festival"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 132,
@@ -774,14 +774,14 @@
             "中秋"
         ],
         "groupName": "202209",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "#我的镜头下#花好月圆,平安顺遂。中秋快乐",
         "englishTags": [
             "mid-autumn festival",
             "weibo post"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 122,
@@ -793,7 +793,6 @@
             "日常",
             "背心"
         ],
-        "category": "screenshot",
         "groupName": "202208",
         "photoText": "肖战 DAYTOY\n22-8-30 12:19 发布于 北京\n记录时间-📝\n肖战DAYTOY",
         "postText": "记录时间-📝",
@@ -801,9 +800,10 @@
             "behind the scenes",
             "photoshoot"
         ],
-        "source": "weibo",
         "link": "",
-        "note": ""
+        "note": "",
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 123,
@@ -817,13 +817,13 @@
         "link": "",
         "groupName": "202208",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "记录时间-📝",
         "englishTags": [
             "tank top"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 124,
@@ -837,13 +837,13 @@
         "link": "",
         "groupName": "202208",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "记录时间-📝",
         "englishTags": [
             "tank top"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 125,
@@ -857,13 +857,13 @@
         "link": "",
         "groupName": "202208",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "记录时间-📝",
         "englishTags": [
             "tank top"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 126,
@@ -877,13 +877,13 @@
         "link": "",
         "groupName": "202208",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "记录时间-📝",
         "englishTags": [
             "tank top"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 127,
@@ -897,13 +897,13 @@
         "link": "",
         "groupName": "202208",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "记录时间-📝",
         "englishTags": [
             "tank top"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 128,
@@ -917,14 +917,14 @@
         "link": "",
         "groupName": "202208",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "记录时间-📝",
         "englishTags": [
             "hand",
             "weibo"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 129,
@@ -935,15 +935,15 @@
         "tags": [
             "季节的声音"
         ],
-        "category": "screenshot",
         "groupName": "202208",
-        "source": "oasis",
         "photoText": "X玖少年团肖战DAYTOY\n季节的声音\n发布于2022/08/30 00:22\n在绿洲,遇见美好遇见你",
         "postText": "记录时间-📝",
         "englishTags": [
             "oasis",
             "season's sounds"
-        ]
+        ],
+        "platform": "oasis",
+        "type": "screenshot"
     },
     {
         "id": 130,
@@ -958,14 +958,14 @@
         "link": "",
         "groupName": "202208",
         "note": "",
-        "category": "attached",
-        "source": "oasis",
         "photoText": "",
         "englishTags": [
             "oasis",
             "photoshoot",
             "season's sounds"
-        ]
+        ],
+        "platform": "oasis",
+        "type": "attached"
     },
     {
         "id": 120,
@@ -976,15 +976,15 @@
         "tags": [
             "健身器材"
         ],
-        "category": "screenshot",
         "groupName": "202207",
-        "source": "oasis",
         "photoText": "X玖少年团肖战DAYTOY\n发布于2022/07/15 07:30\n在绿洲,遇见美好遇见你",
         "postText": "在绿洲,遇见美好遇见你",
         "englishTags": [
             "oasis",
             "fitness equipment"
-        ]
+        ],
+        "platform": "oasis",
+        "type": "screenshot"
     },
     {
         "id": 121,
@@ -996,14 +996,14 @@
             "健身器材"
         ],
         "groupName": "202207",
-        "category": "attached",
-        "source": "oasis",
         "photoText": "15\n25\n115\n225\n25\n15",
         "postText": "在绿洲,遇见美好遇见你",
         "englishTags": [
             "oasis",
             "gym equipment"
-        ]
+        ],
+        "platform": "oasis",
+        "type": "attached"
     },
     {
         "id": 115,
@@ -1015,15 +1015,15 @@
             "无题",
             "追剧"
         ],
-        "category": "screenshot",
         "groupName": "202207",
-        "source": "oasis",
         "photoText": "X玖少年团肖战DAYTOY\n无题\n发布于2022/07/12 10:15\n在绿洲,遇见美好遇见你",
         "postText": "无题\n在绿洲,遇见美好遇见你",
         "englishTags": [
             "oasis",
             "drama watching"
-        ]
+        ],
+        "platform": "oasis",
+        "type": "screenshot"
     },
     {
         "id": 116,
@@ -1036,13 +1036,13 @@
             "追剧"
         ],
         "groupName": "202207",
-        "category": "attached",
-        "source": "oasis",
         "photoText": "",
         "englishTags": [
             "oasis",
             "drama watching"
-        ]
+        ],
+        "platform": "oasis",
+        "type": "attached"
     },
     {
         "id": 117,
@@ -1056,13 +1056,13 @@
         "link": "",
         "groupName": "202207",
         "note": "",
-        "category": "attached",
-        "source": "oasis",
         "photoText": "",
         "englishTags": [
             "photoshoot",
             "oasis"
-        ]
+        ],
+        "platform": "oasis",
+        "type": "attached"
     },
     {
         "id": 118,
@@ -1077,14 +1077,14 @@
         "link": "",
         "groupName": "202207",
         "note": "",
-        "category": "attached",
-        "source": "oasis",
         "photoText": "",
         "englishTags": [
             "oasis",
             "sky",
             "photography"
-        ]
+        ],
+        "platform": "oasis",
+        "type": "attached"
     },
     {
         "id": 119,
@@ -1099,14 +1099,14 @@
         "link": "",
         "groupName": "202207",
         "note": "",
-        "category": "attached",
-        "source": "oasis",
         "photoText": "",
         "englishTags": [
             "oasis",
             "sky",
             "photography"
-        ]
+        ],
+        "platform": "oasis",
+        "type": "attached"
     },
     {
         "id": 105,
@@ -1118,7 +1118,6 @@
             "羽毛球",
             "日常"
         ],
-        "category": "screenshot",
         "groupName": "202207",
         "photoText": "●公开\nX玖少年团肖战DAYTOY\n✔ 22-7-5 19:50 发布于北京\n闲暇碎片...\nSE THE\n@X玖少年团肖战ΑΥΤΟΥ\nRAISE THE\nchork Out\nSE THE B\nETME\n@X玖少年团肖战DAYTOY\n@@X玖少年团肖战DAYTOY\n@X玖少年团肖战DAYTOY\n久少年\n少年团肖战DAYTO\n@XE少年团战DΑΥΤΟΥ",
         "postText": "闲暇碎片...",
@@ -1126,9 +1125,10 @@
             "casual",
             "daily life"
         ],
-        "source": "weibo",
         "link": "",
-        "note": ""
+        "note": "",
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 106,
@@ -1142,15 +1142,15 @@
         "link": "",
         "groupName": "202207",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "RAISE THE BAR\nWorkout\n@X玖少年团肖战DAYTOY",
         "postText": "闲暇碎片...",
         "englishTags": [
             "badminton",
             "weibo",
             "leisure"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 107,
@@ -1164,14 +1164,14 @@
         "link": "",
         "groupName": "202207",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "SE THE BA\n@X玖少年团肖战DAYTOY",
         "postText": "闲暇碎片...",
         "englishTags": [
             "badminton",
             "weibo"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 108,
@@ -1185,14 +1185,14 @@
         "link": "",
         "groupName": "202207",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "闲暇碎片...",
         "englishTags": [
             "vest",
             "weibo"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 109,
@@ -1206,14 +1206,14 @@
         "link": "",
         "groupName": "202207",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "闲暇碎片...",
         "englishTags": [
             "badminton",
             "weibo"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 110,
@@ -1227,15 +1227,15 @@
         "link": "",
         "groupName": "202207",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "闲暇碎片...",
         "englishTags": [
             "photography",
             "weibo",
             "leisure"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 111,
@@ -1249,15 +1249,15 @@
         "link": "",
         "groupName": "202207",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "闲暇碎片...",
         "englishTags": [
             "photography",
             "weibo",
             "leisure"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 112,
@@ -1273,14 +1273,14 @@
         "link": "",
         "groupName": "202207",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "闲暇碎片...",
         "englishTags": [
             "swimming pool",
             "selfie"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 113,
@@ -1294,14 +1294,14 @@
         "link": "",
         "groupName": "202207",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "闲暇碎片...",
         "englishTags": [
             "vest",
             "weibo"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 114,
@@ -1315,14 +1315,14 @@
         "link": "",
         "groupName": "202207",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "闲暇碎片...",
         "englishTags": [
             "badminton",
             "weibo"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 100,
@@ -1334,7 +1334,6 @@
             "TODS",
             "胶囊"
         ],
-        "category": "screenshot",
         "groupName": "202206",
         "photoText": "◎ 热门\n肖战 DAYTOY\n22-6-23 10:01 发布于北京\n悦然携手@TODS,珍重此刻。#TOD'S FOR XZ 胶囊系\n列#Be Together, For Tomorrow\nT",
         "postText": "悦然携手@TODS,珍重此刻。#TOD'S FOR XZ 胶囊系列#Be Together, For Tomorrow",
@@ -1343,7 +1342,8 @@
             "capsule collection",
             "magazine"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 101,
@@ -1356,14 +1356,14 @@
             "胶囊"
         ],
         "groupName": "202206",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "悦然携手@TODS,珍重此刻。#TOD'S FOR XZ 胶囊系列#Be Together, For Tomorrow",
         "englishTags": [
             "tods",
             "capsule collection"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 102,
@@ -1376,14 +1376,14 @@
             "胶囊"
         ],
         "groupName": "202206",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "悦然携手@TODS,珍重此刻。#TOD'S FOR XZ 胶囊系列#Be Together, For Tomorrow",
         "englishTags": [
             "tods",
             "capsule collection"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 103,
@@ -1396,14 +1396,14 @@
             "胶囊"
         ],
         "groupName": "202206",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "悦然携手@TODS,珍重此刻。#TOD'S FOR XZ 胶囊系列#Be Together, For Tomorrow",
         "englishTags": [
             "tods",
             "capsule collection"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 104,
@@ -1416,15 +1416,15 @@
             "胶囊"
         ],
         "groupName": "202206",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "悦然携手@TODS,珍重此刻。#TOD'S FOR XZ 胶囊系列#Be Together, For Tomorrow",
         "englishTags": [
             "tods",
             "capsule collection",
             "campaign"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 98,
@@ -1435,7 +1435,6 @@
         "tags": [
             "青岛啤酒"
         ],
-        "category": "screenshot",
         "groupName": "202206",
         "photoText": "热门\n肖战 DAYTOY\n22-6-16 10:10 发布于北京\n与百年民族品牌@青岛啤酒欢聚时刻一起畅享欢聚,看\n见更远未来!#青岛啤酒 畅享欢聚时刻#\n肖战\n青岛啤酒品牌代言人\n未成年人禁止饮酒\nTSINGTA\nDRAFT\n纯生\n@@X玖少年团肖战DAYTOY\nTSINGTAO\n青島啤酒\n青岛纯生鲜活人生\nFRESH ALIVE PURE",
         "postText": "与百年民族品牌@青岛啤酒欢聚时刻一起畅享欢聚,看见更远未来!#青岛啤酒 畅享欢聚时刻#",
@@ -1444,7 +1443,8 @@
             "commercial",
             "endorsement"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 99,
@@ -1456,8 +1456,6 @@
             "青岛啤酒"
         ],
         "groupName": "202206",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "肖战\n青岛啤酒品牌代言人\nTSINGTAO\nTSINGTAO\nREFRESH YOUR LIFE\n青島啤酒。\nDRAFT\n纯生\n净含量:316ml\n*未成年人禁止饮酒\n@X玖少年团肖战DAYTΟΥ\nTSINGTAO\n青島啤酒\n青岛纯生鲜活人生\nFRESH ALIVE • PURE",
         "postText": "与百年民族品牌@青岛啤酒欢聚时刻一起畅享欢聚,看见更远未来!#青岛啤酒 畅享欢聚时刻#",
         "englishTags": [
@@ -1465,7 +1463,9 @@
             "brand ambassador",
             "commercial",
             "weibo post"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 96,
@@ -1477,7 +1477,6 @@
             "想象上海",
             "GUCCI"
         ],
-        "category": "screenshot",
         "groupName": "202206",
         "photoText": "●公开\nX玖少年团肖战DAYTOY\n✔ 22-6-15 22:00 发布于北京\n踏上艺术之旅,参与#想象上海BloomingShanghai#艺\n术创作征集企划,探索城市的美。@GUCCI\n想\nHUASHENG MEDIA\n栩栩华生\nGUCCI\n想象上海\nCMC”华人文化成员企业\n象\nBLOOMING SHANGHAI\n上\n海\n@X玖少年团肖战DAYTOY\n@@X玖少年团肖战DAYTOY\nZ.",
         "postText": "踏上艺术之旅,参与#想象上海BloomingShanghai#艺术创作征集企划,探索城市的美。@GUCCI",
@@ -1486,7 +1485,8 @@
             "blooming shanghai",
             "art exhibition"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 97,
@@ -1502,15 +1502,15 @@
         "link": "",
         "groupName": "202206",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "想\n象\n上\nBLOOMING SHANGHAI\n海\nGUCCI\n栩栩华生\nHUASHENG MEDIA\nCMC”华人文化成员企业\n!!\n想象上海\n%\n@X玖少年团肖战DAYTOΥ\n●@X玖少年团肖战DAYTOY\nZ.",
         "postText": "踏上艺术之旅,参与#想象上海BloomingShanghai#艺术创作征集企划,探索城市的美。@GUCCI",
         "englishTags": [
             "gucci",
             "blooming shanghai",
             "art exhibition"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 87,
@@ -1522,15 +1522,15 @@
             "梦中的那片海"
         ],
         "groupName": "202206",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "“我叫肖春生,叫我春生就行了!”\n初识在寒冬,暂别在酷暑。\n时间在不停地往前走,\n但是你的坚守,挥洒的汗水,\n北方的冰雪,南方的风雨,他们都会记得。\n野火烧不尽,春风吹又生!\n回见了您嘞!\n@X玖少年团肖战DAYTOΟΥ",
         "englishTags": [
             "where dreams begin",
             "drama",
             "weibo post"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 88,
@@ -1545,15 +1545,15 @@
         "link": "",
         "groupName": "202206",
         "note": "",
-        "category": "screenshot",
-        "source": "weibo",
         "photoText": "<所有 iCloud\n“我叫肖春生,叫我春生就行了!”\n初识在寒冬,暂别在酷暑。\n时间在不停地往前走,\n但是你的坚守,挥洒的汗水,\n北方的冰雪,南方的风雨,他们都会记得。\n野火烧不尽,春风吹又生!\n回见了您嘞!\n@X玖少年团肖战DAYTOΟΥ\nQ",
         "postText": "“我叫肖春生,叫我春生就行了!”\n初识在寒冬,暂别在酷暑。\n时间在不停地往前走,\n但是你的坚守,挥洒的汗水,\n北方的冰雪,南方的风雨,他们都会记得。\n野火烧不尽,春风吹又生!\n回见了您嘞!\n@X玖少年团肖战DAYTOΟΥ",
         "englishTags": [
             "where dreams begin",
             "weibo post",
             "drama promotion"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 89,
@@ -1565,15 +1565,15 @@
             "梦中的那片海"
         ],
         "groupName": "202206",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "“我叫肖春生,叫我春生就行了!”\n初识在寒冬,暂别在酷暑。\n时间在不停地往前走,\n但是你的坚守,挥洒的汗水,\n北方的冰雪,南方的风雨,他们都会记得。\n野火烧不尽,春风吹又生!\n回见了您嘞!\n@X玖少年团肖战DAYTOΟΥ",
         "englishTags": [
             "where dreams begin",
             "drama",
             "character introduction"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 90,
@@ -1585,15 +1585,15 @@
             "梦中的那片海"
         ],
         "groupName": "202206",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "“我叫肖春生,叫我春生就行了!”\n初识在寒冬,暂别在酷暑。\n时间在不停地往前走,\n但是你的坚守,挥洒的汗水,\n北方的冰雪,南方的风雨,他们都会记得。\n野火烧不尽,春风吹又生!\n回见了您嘞!\n@X玖少年团肖战DAYTOΟΥ",
         "englishTags": [
             "where dreams begin",
             "drama",
             "weibo post"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 91,
@@ -1605,15 +1605,15 @@
             "梦中的那片海"
         ],
         "groupName": "202206",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "“我叫肖春生,叫我春生就行了!”\n初识在寒冬,暂别在酷暑。\n时间在不停地往前走,\n但是你的坚守,挥洒的汗水,\n北方的冰雪,南方的风雨,他们都会记得。\n野火烧不尽,春风吹又生!\n回见了您嘞!\n@X玖少年团肖战DAYTOΟΥ",
         "englishTags": [
             "where dreams begin",
             "drama",
             "weibo post"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 92,
@@ -1625,15 +1625,15 @@
             "梦中的那片海"
         ],
         "groupName": "202206",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "“我叫肖春生,叫我春生就行了!”\n初识在寒冬,暂别在酷暑。\n时间在不停地往前走,\n但是你的坚守,挥洒的汗水,\n北方的冰雪,南方的风雨,他们都会记得。\n野火烧不尽,春风吹又生!\n回见了您嘞!\n@X玖少年团肖战DAYTOΟΥ",
         "englishTags": [
             "where dreams begin",
             "drama",
             "weibo post"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 93,
@@ -1645,15 +1645,15 @@
             "梦中的那片海"
         ],
         "groupName": "202206",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "“我叫肖春生,叫我春生就行了!”\n初识在寒冬,暂别在酷暑。\n时间在不停地往前走,\n但是你的坚守,挥洒的汗水,\n北方的冰雪,南方的风雨,他们都会记得。\n野火烧不尽,春风吹又生!\n回见了您嘞!\n@X玖少年团肖战DAYTOΟΥ",
         "englishTags": [
             "where dreams begin",
             "drama",
             "weibo post"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 94,
@@ -1665,15 +1665,15 @@
             "梦中的那片海"
         ],
         "groupName": "202206",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "“我叫肖春生,叫我春生就行了!”\n初识在寒冬,暂别在酷暑。\n时间在不停地往前走,\n但是你的坚守,挥洒的汗水,\n北方的冰雪,南方的风雨,他们都会记得。\n野火烧不尽,春风吹又生!\n回见了您嘞!\n@X玖少年团肖战DAYTOΟΥ",
         "englishTags": [
             "where dreams begin",
             "drama",
             "weibo post"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 95,
@@ -1685,15 +1685,15 @@
             "梦中的那片海"
         ],
         "groupName": "202206",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "“我叫肖春生,叫我春生就行了!”\n初识在寒冬,暂别在酷暑。\n时间在不停地往前走,\n但是你的坚守,挥洒的汗水,\n北方的冰雪,南方的风雨,他们都会记得。\n野火烧不尽,春风吹又生!\n回见了您嘞!\n@X玖少年团肖战DAYTOΟΥ",
         "englishTags": [
             "where dreams begin",
             "drama",
             "weibo post"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 86,
@@ -1704,7 +1704,6 @@
         "tags": [
             "梦中的那片海"
         ],
-        "category": "screenshot",
         "groupName": "202206",
         "photoText": "◎ 热门\n肖战 DAYTOY\n✔ 22-6-6 10:10 来自微博视频号\n发布于浙江\n奔跑于山谷清风,仰首看云彩天光,在潺潺水声中闭眼\n深呼吸———全新#拉夫劳伦地球淡香氛#,以地球之名,\n嗅自然芬芳。@RalphLauren拉夫劳伦香氛肖战工作\n室的微博视频\n1065万次观看\n0:30",
         "postText": "奔跑于山谷清风,仰首看云彩天光,在潺潺水声中闭眼 深呼吸———全新#拉夫劳伦地球淡香氛#,以地球之名, 嗅自然芬芳。@RalphLauren拉夫劳伦香氛肖战工作室的微博视频",
@@ -1714,7 +1713,8 @@
             "fragrance",
             "commercial"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 84,
@@ -1725,8 +1725,6 @@
         "tags": [
             "端午"
         ],
-        "category": "screenshot",
-        "source": "weibo",
         "groupName": "202206",
         "link": "",
         "note": "",
@@ -1735,7 +1733,9 @@
         "englishTags": [
             "dragon boat festival",
             "holiday"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 85,
@@ -1750,14 +1750,14 @@
         "link": "",
         "groupName": "202206",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "端午安康\n@X玖少年团肖战DAYTOY",
         "postText": "来微博一起过节\n端午安康,#端午节#来分享吃到的粽子和你的假期心情\n吧。\n端午安康\n端",
         "englishTags": [
             "dragon boat festival",
             "drawing"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 81,
@@ -1768,15 +1768,15 @@
         "tags": [
             "消肿"
         ],
-        "category": "screenshot",
         "groupName": "202205",
-        "source": "oasis",
         "photoText": "X玖少年团肖战DAYTOY\nSHA KOK ESTATE\nTEMPLE STREET\nFOR BEST ACTOR RESS\n오늘 당신에게\n좋은 일이 있을 겁니다.\n(今天你会有好事发生)\n오늘 당신에게\n좋은 일이 있을 겁니다.\n(今天你会有好事发生)\n消肿!!\n发布于2022/05/31 03:15\n在绿洲,遇见美好遇见你",
         "postText": "오늘 당신에게\n좋은 일이 있을 겁니다.\n(今天你会有好事发生)\n오늘 당신에게\n좋은 일이 있을 겁니다.\n(今天你会有好事发生)\n消肿!!",
         "englishTags": [
             "oasis",
             "good things will happen"
-        ]
+        ],
+        "platform": "oasis",
+        "type": "screenshot"
     },
     {
         "id": 82,
@@ -1790,14 +1790,14 @@
         "link": "",
         "groupName": "202205",
         "note": "",
-        "category": "attached",
-        "source": "oasis",
         "photoText": "SHA KOK ESTATE\nTEMPLE STREET\n好演員專用\nFOR BEST ACTOR/RESS",
         "postText": "오늘 당신에게\n좋은 일이 있을 겁니다.\n(今天你会有好事发生)\n오늘 당신에게\n좋은 일이 있을 겁니다.\n(今天你会有好事发生)\n消肿!!",
         "englishTags": [
             "oasis",
             "good things will happen"
-        ]
+        ],
+        "platform": "oasis",
+        "type": "attached"
     },
     {
         "id": 83,
@@ -1812,15 +1812,15 @@
         "link": "",
         "groupName": "202205",
         "note": "",
-        "category": "attached",
-        "source": "oasis",
         "photoText": "102\n107\n오늘 당신에게\n좋은 일이 있을 겁니다.\n(今天你会有好事发生)\n오늘 당신에게\n좋은 일이 있을 겁니다.\n(今天你会有好事发生)",
         "postText": "오늘 당신에게\n좋은 일이 있을 겁니다.\n(今天你会有好事发生)\n오늘 당신에게\n좋은 일이 있을 겁니다.\n(今天你会有好事发生)\n消肿!!",
         "englishTags": [
             "oasis",
             "drama",
             "korean text"
-        ]
+        ],
+        "platform": "oasis",
+        "type": "attached"
     },
     {
         "id": 79,
@@ -1832,7 +1832,6 @@
             "文艺志愿者",
             "口播"
         ],
-        "category": "screenshot",
         "groupName": "202205",
         "photoText": "肖战 DAYTOY\n22-5-23 16:53 来自微博视频号\n发布于北京\n#文艺志愿者致敬延安文艺座谈会#我是文艺志愿者肖\n战,不忘初心,与人民同行,让我们一起学习讲话精\n神,坚定从艺理想,弘扬时代风尚! X玖少年团肖战\nDAYTOY的微博视频\n肖战\n文艺志愿者\n900万次观看\n0:55",
         "postText": "#文艺志愿者致敬延安文艺座谈会#我是文艺志愿者肖 战,不忘初心,与人民同行,让我们一起学习讲话精 神,坚定从艺理想,弘扬时代风尚!",
@@ -1841,7 +1840,8 @@
             "narration",
             "yan'an forum"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 80,
@@ -1856,14 +1856,14 @@
         "link": "",
         "groupName": "202205",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "",
         "duration": 55,
         "englishTags": [
             "volunteer",
             "public service announcement"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 78,
@@ -1874,9 +1874,7 @@
         "tags": [
             "给小满的一场🌧️"
         ],
-        "category": "attached",
         "groupName": "202205",
-        "source": "douyin",
         "link": "https://www.douyin.com/video/7100080942827572516",
         "photoText": "",
         "postText": "给小满的一场🌧️",
@@ -1884,7 +1882,9 @@
         "englishTags": [
             "douyin",
             "rain"
-        ]
+        ],
+        "platform": "douyin",
+        "type": "attached"
     },
     {
         "id": 76,
@@ -1895,7 +1895,6 @@
         "tags": [
             "背影"
         ],
-        "category": "screenshot",
         "groupName": "202205",
         "photoText": "肖战 DAYTOY\n22-5-10 19:01 发布于北京\n库存\n@X玖少年团肖战DAYTOY",
         "postText": "库存",
@@ -1903,7 +1902,8 @@
             "back view",
             "behind the scenes"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 77,
@@ -1915,15 +1915,15 @@
             "背影"
         ],
         "groupName": "202205",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "库存",
         "englishTags": [
             "back view",
             "weibo",
             "archive photo"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 75,
@@ -1934,9 +1934,7 @@
         "tags": [
             "用表情包开启…🤓#五月你好"
         ],
-        "category": "attached",
         "groupName": "202205",
-        "source": "douyin",
         "link": "https://www.douyin.com/video/7092620875924524299",
         "photoText": "",
         "postText": "用表情包开启…🤓#五月你好",
@@ -1944,7 +1942,9 @@
         "englishTags": [
             "douyin",
             "may"
-        ]
+        ],
+        "platform": "douyin",
+        "type": "attached"
     },
     {
         "id": 74,
@@ -1955,9 +1955,7 @@
         "tags": [
             "# 送给生活一首诗今日分享《一个愿望》📖"
         ],
-        "category": "attached",
         "groupName": "202204",
-        "source": "douyin",
         "link": "https://www.douyin.com/video/7089753990828657957",
         "photoText": "",
         "postText": "#送给生活一首诗今日分享《一个愿望》📖",
@@ -1966,7 +1964,9 @@
             "douyin",
             "poem",
             "reading"
-        ]
+        ],
+        "platform": "douyin",
+        "type": "attached"
     },
     {
         "id": 69,
@@ -1977,14 +1977,14 @@
         "tags": [
             "下班"
         ],
-        "category": "screenshot",
         "groupName": "202204",
         "photoText": "●公开\nX玖少年团肖战DAYTOY\n22-4-16 01:23\n下班\n@X玖少年团肖战DAYTOY\n@X玖少年团肖战DAYTOY\nOLIVE\nOLIVE",
         "postText": "下班",
         "englishTags": [
             "leaving work"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 70,
@@ -1999,14 +1999,14 @@
         "link": "",
         "groupName": "202204",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "下班",
         "englishTags": [
             "off duty",
             "candid"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 71,
@@ -2022,14 +2022,14 @@
         "link": "",
         "groupName": "202204",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "",
         "englishTags": [
             "selfie",
             "live",
             "weibo"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 72,
@@ -2045,13 +2045,13 @@
         "link": "",
         "groupName": "202204",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "",
         "englishTags": [
             "selfie",
             "live stream"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 73,
@@ -2066,14 +2066,14 @@
         "link": "",
         "groupName": "202204",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "下班",
         "englishTags": [
             "leaving work",
             "candid"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 67,
@@ -2085,7 +2085,6 @@
             "石头",
             "商务"
         ],
-        "category": "screenshot",
         "groupName": "202204",
         "photoText": "肖战 DAYTOY\nV\n22-4-6 10:13\n新一年,和@石头科技一起,持续创新,不断进阶。#\n高能进阶 生活有光#\n2 石头\n用创新 简化生活\n高能进阶一步到位\n系列\nG10S (স)\n自清洁扫拖机器人\n树\n肖战\n石头品牌代言人\n@X玖少年团肖战DAYTOY",
         "postText": "新一年,和@石头科技一起,持续创新,不断进阶。#高能进阶 生活有光#",
@@ -2094,7 +2093,8 @@
             "brand ambassador",
             "commercial"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 68,
@@ -2107,15 +2107,15 @@
             "商务"
         ],
         "groupName": "202204",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "②石头\n用创新 简化生活\n高能进阶一步到位\nG10S\n(系列)\n自清洁扫拖机器人\n肖战\n石头品牌代言人\nTOD'S\nroborock\n@X玖少年团肖战DAYTOY",
         "postText": "新一年,和@石头科技一起,持续创新,不断进阶。#高能进阶 生活有光#",
         "englishTags": [
             "roborock",
             "brand ambassador",
             "weibo ad"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 66,
@@ -2126,9 +2126,7 @@
         "tags": [
             "# 憋笑大挑战 尽力了🤪"
         ],
-        "category": "attached",
         "groupName": "202204",
-        "source": "douyin",
         "link": "https://www.douyin.com/video/7081993119561944352",
         "photoText": "",
         "postText": "#憋笑大挑战 尽力了🤪",
@@ -2136,7 +2134,9 @@
         "englishTags": [
             "douyin",
             "challenge"
-        ]
+        ],
+        "platform": "douyin",
+        "type": "attached"
     },
     {
         "id": 60,
@@ -2148,7 +2148,6 @@
             "余生请多指教",
             "大结局"
         ],
-        "category": "screenshot",
         "groupName": "202203",
         "photoText": "肖战 DAYTOY\n22-3-31 13:22\n顾魏即将拥有他所向往的一切,真的替老顾感到开心,\n今晚让我们一起见证 #余生请多指教今天大结局#\n@电视剧余生请多指教:#余生请多指教今天大结局#婚礼邀\n请函送上~邀您今晚共同见证余生夫妇珍贵永恒的人生时刻\n#余生请多指教#\n余生夫妇\n婚礼邀请函\n余生夫妇诚邀您共同见证\n珍贵永恒的人生时刻\n与子携手共度余生\n新娘:林之校\n新郎:顾魏\n2022年3月31日晚\n湖南卫视腾讯视频邀您共赏\n余生\n请多指教\nTHE OATH OF LOVE",
         "postText": "顾魏即将拥有他所向往的一切,真的替老顾感到开心,今晚让我们一起见证 #余生请多指教今天大结局#\n@电视剧余生请多指教:#余生请多指教今天大结局#婚礼邀请函送上~邀您今晚共同见证余生夫妇珍贵永恒的人生时刻#余生请多指教#",
@@ -2158,7 +2157,8 @@
             "wedding",
             "gu wei"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 61,
@@ -2171,7 +2171,6 @@
             "收官",
             "随笔"
         ],
-        "category": "screenshot",
         "groupName": "202203",
         "photoText": "肖战 DAYTOY\n✔22-3-31 20:25\n余生今天就要圆满收官了。短短半个多月来,我和大家\n一起追剧,和大家一样在观众的角度走近顾魏的平行世\n界,再次感受他平凡简单又温暖的“顾”事。\n老顾,对病人负责、对家人尊重、对爱人真诚。他遇到\n了一个闯入他生活的女孩儿,不知不觉,从一个人到一\n双人,从小家庭到大家庭... 爱情故事里,总有很多人会\n问:“你为什么喜欢上我?”爱真的可以有许多具象的、\n确定的原因作为成分吗?爱的产生也许真的就在一瞬,\n也许并没有什么说得清的理由。每个人都是不完美的\n人,单枪匹马,在社会上摸索着过活。相遇,相知,相\n爱,不论是朋友、同事、家人、爱人,都需要相互支\n撑、理解,才能走完余生。相敬如宾的夫妻,吵吵闹闹\n的夫妻,只要相伴相爱,都是不同形式的相濡以沫。\n杀青当天是无锡的凌晨,天蒙蒙亮,有一点冷。因为工\n作,我从现场直接飞去了另外的城市,错过了大家的杀\n青宴。今天余生终于圆满收官了,这个角色的塑造和成\n长,这部剧给大家带来的或多或少的共鸣和感动,是全\n体演员、全体工作人员的努力造就的。我想补上本该在\n杀青宴上对大家说的感谢的话:感谢剧组台前幕后所有\n人的付出。每一场戏、每一个细节的丰满和完善、每一\n个场景的协调与保障,都是剧组所有工作人员和演员们\n共同努力和碰撞出来的结果。特别感谢@杨紫,林之\n校的灵动活泼和对家人的爱,感动着作为观众的我。作\n为这部戏中我最重要的搭档,我们在现场的对戏、打\n磨,也帮助着我更好地进入角色、塑造角色。感谢导\n演、编剧,不厌其烦地和演员们一次次讨论,雕琢着属\n于人物的每一个细节。谢谢制片人,是你的相信给了我\n能接下这个角色的勇气。\n今日收官,再次感谢大家对于这部剧的支持。希望余生\n留给大家的唯有美好,希望淡淡的温暖可以一直陪伴大\n家。一路走来,老顾与校校有不解与误会,有争端与争\n吵,而共同经历过曲折坎坷的终成眷属最为珍贵。祝福\n在平行时空中的老顾和校校会永远幸福!你们在生活中\n秉持的信念,就是我向往的样子。同时也希望剧外的观\n众们,拥有同样的幸福美满!\n圆满收官\n金\n生多家\n来福(虎),再见!\n@X玖少年团肖战DAYTOY",
         "postText": "顾魏即将拥有他所向往的一切,真的替老顾感到开心,今晚让我们一起见证 #余生请多指教今天大结局#\n@电视剧余生请多指教:#余生请多指教今天大结局#婚礼邀请函送上~邀您今晚共同见证余生夫妇珍贵永恒的人生时刻#余生请多指教#",
@@ -2180,7 +2179,8 @@
             "finale",
             "wedding"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 62,
@@ -2197,8 +2197,6 @@
         "link": "",
         "groupName": "202203",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "圆满收官\n余请指\n生多家\n来福(虎),再见!\n●@X玖少年团肖战DAYTOΥ @X玖少",
         "postText": "顾魏即将拥有他所向往的一切,真的替老顾感到开心,今晚让我们一起见证 #余生请多指教今天大结局#\n@电视剧余生请多指教:#余生请多指教今天大结局#婚礼邀请函送上~邀您今晚共同见证余生夫妇珍贵永恒的人生时刻#余生请多指教#",
         "englishTags": [
@@ -2206,7 +2204,9 @@
             "finale",
             "wedding",
             "painting"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 63,
@@ -2218,9 +2218,7 @@
             "余生收官 下次再见。",
             "余生请多指教"
         ],
-        "category": "attached",
         "groupName": "202203",
-        "source": "douyin",
         "link": "https://www.douyin.com/video/7081271466779544835",
         "photoText": "",
         "postText": "余生收官，下次再见。",
@@ -2228,7 +2226,9 @@
         "englishTags": [
             "you are my glory",
             "douyin"
-        ]
+        ],
+        "platform": "douyin",
+        "type": "attached"
     },
     {
         "id": 64,
@@ -2240,9 +2240,7 @@
             "来福",
             "鱼生"
         ],
-        "category": "screenshot",
         "groupName": "202203",
-        "source": "oasis",
         "photoText": "X玖少年团肖战DAYTOY\n★生,来福!要幸福!\n发布于2022/03/31 12:25\n在绿洲,遇见美好遇见你",
         "postText": "顾魏即将拥有他所向往的一切,真的替老顾感到开心,今晚让我们一起见证 #余生请多指教今天大结局#\n@电视剧余生请多指教:#余生请多指教今天大结局#婚礼邀请函送上~邀您今晚共同见证余生夫妇珍贵永恒的人生时刻#余生请多指教#",
         "englishTags": [
@@ -2250,7 +2248,9 @@
             "finale",
             "wedding",
             "gu wei"
-        ]
+        ],
+        "platform": "oasis",
+        "type": "screenshot"
     },
     {
         "id": 65,
@@ -2263,14 +2263,14 @@
             "鱼生"
         ],
         "groupName": "202203",
-        "category": "attached",
-        "source": "oasis",
         "photoText": "",
         "englishTags": [
             "oasis",
             "laifu",
             "yusheng"
-        ]
+        ],
+        "platform": "oasis",
+        "type": "attached"
     },
     {
         "id": 58,
@@ -2282,7 +2282,6 @@
             "余生请多指教",
             "海报"
         ],
-        "category": "screenshot",
         "groupName": "202203",
         "photoText": "肖战 DAYTOY\nV\n22-3-29 20:00\nto林之校@杨紫:\n感谢你让顾魏感受到爱情是勇敢的动力,无论好坏、共\n同面对,也懂得了两个人要相互支撑才能走完余生。#\n余生请多指教#\n肖战饰顾魏\n謝\n指\nThe Ooth\nof Love\n湖南卫视金鹰独播剧场每晚8点首播\n腾讯视频全网独播,会员每周日到周四22点更新2集\n周五周六1集,后续每日22点转免1集\n▶ 腾讯视频\n出品方\n湖南卫视\n企鹅影视 承制方梵世锦\n@X玖少年团肖战DAYTOYERNITY PICTURES",
         "postText": "to林之校@杨紫: 感谢你让顾魏感受到爱情是勇敢的动力,无论好坏、共同面对,也懂得了两个人要相互支撑才能走完余生。#余生请多指教# 肖战饰顾魏",
@@ -2293,7 +2292,8 @@
             "yang zi",
             "drama poster"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 59,
@@ -2306,8 +2306,6 @@
             "海报"
         ],
         "groupName": "202203",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "肖战饰顾魏\n指\nThe Oathy of\nLove\n湖南卫视金鹰独播剧场每晚8点首播\n腾讯视频全网独播,会员每周日到周四22点更新2集\n周五周六1集,后续每日22点转免1集\n腾讯视频\n湖南卫视\n出品方\n企鹅影视\n承制方梵舌世锦\n@X玖少年团肖战DAYTOYERNITY PICTURES",
         "postText": "to林之校@杨紫: 感谢你让顾魏感受到爱情是勇敢的动力,无论好坏、共同面对,也懂得了两个人要相互支撑才能走完余生。#余生请多指教# 肖战饰顾魏",
         "englishTags": [
@@ -2316,7 +2314,9 @@
             "yang zi",
             "lin zhixiao",
             "drama poster"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 54,
@@ -2328,16 +2328,16 @@
             "坚果",
             "小可爱"
         ],
-        "category": "screenshot",
         "groupName": "202203",
-        "source": "oasis",
         "photoText": "X玖少年团肖战DAYTOY\n看到这个小可爱了吗?是我的!\n发布于2022/03/28 22:55\n在绿洲,遇见美好遇见你",
         "postText": "看到这个小可爱了吗?是我的!",
         "englishTags": [
             "cat",
             "pet",
             "oasis"
-        ]
+        ],
+        "platform": "oasis",
+        "type": "screenshot"
     },
     {
         "id": 55,
@@ -2350,14 +2350,14 @@
             "小可爱"
         ],
         "groupName": "202203",
-        "category": "attached",
-        "source": "oasis",
         "photoText": "",
         "englishTags": [
             "cat",
             "pet",
             "oasis"
-        ]
+        ],
+        "platform": "oasis",
+        "type": "attached"
     },
     {
         "id": 56,
@@ -2370,14 +2370,14 @@
             "小可爱"
         ],
         "groupName": "202203",
-        "category": "attached",
-        "source": "oasis",
         "photoText": "",
         "englishTags": [
             "nuts",
             "pet",
             "cat"
-        ]
+        ],
+        "platform": "oasis",
+        "type": "attached"
     },
     {
         "id": 57,
@@ -2390,14 +2390,14 @@
             "小可爱"
         ],
         "groupName": "202203",
-        "category": "attached",
-        "source": "oasis",
         "photoText": "",
         "englishTags": [
             "nuts",
             "pet",
             "cat"
-        ]
+        ],
+        "platform": "oasis",
+        "type": "attached"
     },
     {
         "id": 51,
@@ -2409,7 +2409,6 @@
             "余生请多指教",
             "idoltube"
         ],
-        "category": "screenshot",
         "groupName": "202203",
         "photoText": "热门\n肖战 DAYTOY\n22-3-20 22:00 来自微博视频号\n#余生请多指教##idoltube#我可能会和顾魏成为朋友,\n但一定不会成为饭友...X玖少年团肖战 DAYTOY的微\n博视频\n4289万次观看\nIdoube\n1:03",
         "postText": "#余生请多指教##idoltube#我可能会和顾魏成为朋友, 但一定不会成为饭友...",
@@ -2418,7 +2417,8 @@
             "idoltube",
             "gu wei"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 52,
@@ -2433,14 +2433,14 @@
         "link": "",
         "groupName": "202203",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "",
         "duration": 63,
         "englishTags": [
             "you are my glory",
             "idoltube"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 53,
@@ -2452,9 +2452,7 @@
             "和我一起合唱吧🎙️ # 余生合唱挑战",
             "余生请多指教"
         ],
-        "category": "attached",
         "groupName": "202203",
-        "source": "douyin",
         "link": "https://www.douyin.com/video/7080907945558428966",
         "photoText": "",
         "postText": "和我一起合唱吧🎙️ #余生合唱挑战 ",
@@ -2463,7 +2461,9 @@
             "you are my glory",
             "douyin",
             "singing challenge"
-        ]
+        ],
+        "platform": "douyin",
+        "type": "attached"
     },
     {
         "id": 49,
@@ -2474,7 +2474,6 @@
         "tags": [
             "余生请多指教"
         ],
-        "category": "screenshot",
         "groupName": "202203",
         "photoText": "肖战 DAYTOY\nV\n22-3-19 19:33\n大概是:不用谢,我想有时间一起约个饭吧!\n看图片\n杨紫\n四查\n+关注\n在线帮林之校求助!请问“不用写,我瞎”是什么意思?@X\n玖少年团肖战DAYTOY\n???\n不用写我瞎\n小小的脑袋\n大大的疑惑",
         "postText": "大概是:不用谢,我想有时间一起约个饭吧!\n@杨紫: 在线帮林之校求助!请问“不用写,我瞎”是什么意思",
@@ -2484,7 +2483,8 @@
             "yang zi",
             "drama promotion"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 50,
@@ -2500,8 +2500,6 @@
         "link": "",
         "groupName": "202203",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "顾\n虑\n重\n重\n@欢乐喜剧HODADDY",
         "postText": "大概是:不用谢,我想有时间一起约个饭吧!\n@杨紫: 在线帮林之校求助!请问“不用写,我瞎”是什么意思",
         "englishTags": [
@@ -2510,7 +2508,9 @@
             "meme",
             "lin zhixiao",
             "gu wei"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 45,
@@ -2522,7 +2522,6 @@
             "余生请多指教",
             "生日"
         ],
-        "category": "screenshot",
         "groupName": "202203",
         "photoText": "18:42\n<返回\n肖战 DAYTOY\nV\n22-3-18 18:33\n微博正文\n今天跟大家一起回到了19年的秋天,除了感动还是感\n动。感谢余生(来福),一起走过。\nHAPPY\nBIRTHDAY\n@x玖少年团白哉DAYTOY\n* 肖战最新动态追踪\n火爆全球\n转发 7.7万 评论 7.7万\nV\n肖战 DAYTOY博主\n余生=life=来福=好养活\n转发\n@x玖少年团白哉DAYTCY\n...\n赞 36.7万\n评论\n赞",
         "postText": "今天跟大家一起回到了19年的秋天,除了感动还是感动。感谢余生(来福),一起走过。\n肖战 DAYTOY博主: 余生=life",
@@ -2531,7 +2530,8 @@
             "birthday",
             "drama promotion"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 46,
@@ -2548,8 +2548,6 @@
         "link": "",
         "groupName": "202203",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "@欧气少年团团DAYTCY",
         "postText": "今天跟大家一起回到了19年的秋天,除了感动还是感动。感谢余生(来福),一起走过。\n肖战 DAYTOY博主: 余生=life",
         "englishTags": [
@@ -2557,7 +2555,9 @@
             "dog",
             "emoji",
             "laifu"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 47,
@@ -2573,15 +2573,15 @@
         "link": "",
         "groupName": "202203",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "HAPPY\nBIRTHDAY\n@X玖少年团肖战DAYTOY",
         "postText": "今天跟大家一起回到了19年的秋天,除了感动还是感动。感谢余生(来福),一起走过。\n肖战 DAYTOY博主: 余生=life",
         "englishTags": [
             "you are my glory",
             "birthday",
             "cake"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 48,
@@ -2597,15 +2597,15 @@
         "link": "",
         "groupName": "202203",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "万事来福\n火爆全球!!\n2019.10.05\n的崽\n-X.3\n@X玖少年团肖战DAYTOY",
         "postText": "今天跟大家一起回到了19年的秋天,除了感动还是感动。感谢余生(来福),一起走过。\n肖战 DAYTOY博主: 余生=life",
         "englishTags": [
             "you are my glory",
             "birthday",
             "polaroid"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 38,
@@ -2618,7 +2618,6 @@
             "开播",
             "海报"
         ],
-        "category": "screenshot",
         "groupName": "202203",
         "photoText": "肖战 DAYTOY\n22-3-15 20:20\n#余生请多指教今日开播#遇见你那天,我的世界充满光\n亮。余生,请多指教。\n这座城市\n有一个人注定与我相关\n肖战饰顾魏\n指\n教\nTHE\nOATH\nOF\nLOVE\n湖南卫视金鹰独播剧场今晚8点20首播\n腾讯视频今晚全网独播,会员每周日到周四22点更新2集\n周五周六1集,非会员首播日24点转免1集,后续每日22点转免1集\n▶ 腾讯视频\n湖南卫视\n出品方企鹅影视承制方\n梵活世锦\n●@X玖少年团肖战DAYTOY",
         "postText": "#余生请多指教今日开播#遇见你那天,我的世界充满光亮。余生,请多指教。\n这座城市\n有一个人注定与我相关\n肖战饰顾魏\n@X玖少年团肖战DAYTOY",
@@ -2627,7 +2626,8 @@
             "drama premiere",
             "promotional poster"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 39,
@@ -2641,15 +2641,15 @@
             "海报"
         ],
         "groupName": "202203",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "肖战饰顾魏\n这座城市\n有一个人注定与我相关\n指\n教\nTHE\nOATH\nOF\nLOVE\n湖南卫视金鹰独播剧场今晚8点20首播\n腾讯视频今晚全网独播,会员每周日到周四22点更新2集\n周五周六1集,非会员首播日24点转免1集,后续每日22点转免1集\n▶腾讯视频\n油化学中\n出品方企鹅影视承制方\n湖南卫视\n梵活世锦\n●@X玖少年团肖战DAYTOPVIETERNITY PICTURES",
         "postText": "#余生请多指教今日开播#遇见你那天,我的世界充满光亮。余生,请多指教。\n这座城市\n有一个人注定与我相关\n肖战饰顾魏\n@X玖少年团肖战DAYTOY",
         "englishTags": [
             "you are my glory",
             "drama premiere",
             "promotional poster"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 40,
@@ -2661,7 +2661,6 @@
             "余生请多指教",
             "随笔"
         ],
-        "category": "screenshot",
         "groupName": "202203",
         "photoText": "肖战 DAYTOY\n22-3-15 22:47\n随记:\n翻看当时记录生活的一张张照片,看到了开机第一天的\n照片...如果不去细想,这一切好像就发生在昨天:片场\n的路线、拍摄的戏份,都还在眼前,就在这一天,我进\n入了顾魏的生活。\n老顾,每天三点一线的生活,你想过要改变吗?我相信\n是有的,但从小的生长环境和过往的经历,让你选择呆\n在安全区。你真的喜欢这样循规蹈矩的生活吗?我也相\n信一个人久了之后,生活都由自己把控,也是舒适的。\n对于自己的职业能力,你有过自我怀疑吗?毕竟在“事\n故”之后,你也有过躲闪。但我们永远无法知道我们的\n生活明天会发生什么,就像你也不知道,会有一个叫\n“校校”的女孩“横冲直撞”闯入你的生活。写着写着,重\n叠着你的样子,看着那个时候的自己,青涩却真诚地去\n描绘你的一切,更加感慨时光荏苒。怎么样,老顾现在\n过得还幸福吗?没有吵架吧?虽然你也吵不赢~\n2年零217天,不长也不短,我们好像都更成熟了一些。\n经历了更多的事情,有开心的也有难过的...都把他们留\n在过去吧。重要的是,新的每一天,去爱、去生活、去\n珍惜当下的每一刻!\n当时从顾魏客厅望出去一眼就能看到摩天轮,那个能把\n我们吹翻的天台,风还这么大吗?天台周围正在建的高\n楼建好了吗?那只在看店的“小三花”,现在有长胖些了\n吗?\n我来了。\n余生,请多指教。\n19.8.11\n@X玖少年团肖战DAYTOY\n@X玖少年团肖战DAYTOY\n@X玖少年团肖战DAYTOY",
         "postText": "#余生请多指教今日开播#遇见你那天,我的世界充满光亮。余生,请多指教。\n这座城市\n有一个人注定与我相关\n肖战饰顾魏\n@X玖少年团肖战DAYTOY",
@@ -2670,7 +2669,8 @@
             "drama premiere",
             "gu wei"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 41,
@@ -2685,15 +2685,15 @@
         "link": "",
         "groupName": "202203",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "@X玖少年团肖战DAYTOY\n19.8.11",
         "postText": "#余生请多指教今日开播#遇见你那天,我的世界充满光亮。余生,请多指教。\n这座城市\n有一个人注定与我相关\n肖战饰顾魏\n@X玖少年团肖战DAYTOY",
         "englishTags": [
             "you are my glory",
             "selfie",
             "drama premiere"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 42,
@@ -2708,15 +2708,15 @@
         "link": "",
         "groupName": "202203",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "#余生请多指教今日开播#遇见你那天,我的世界充满光亮。余生,请多指教。\n这座城市\n有一个人注定与我相关\n肖战饰顾魏\n@X玖少年团肖战DAYTOY",
         "englishTags": [
             "you are my glory",
             "promotional photo",
             "doctor gu wei"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 43,
@@ -2731,15 +2731,15 @@
         "link": "",
         "groupName": "202203",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "#余生请多指教今日开播#遇见你那天,我的世界充满光亮。余生,请多指教。\n这座城市\n有一个人注定与我相关\n肖战饰顾魏\n@X玖少年团肖战DAYTOY",
         "englishTags": [
             "you are my glory",
             "promotional photo",
             "doctor gu wei"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 44,
@@ -2755,8 +2755,6 @@
         "link": "",
         "groupName": "202203",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "#余生请多指教今日开播#遇见你那天,我的世界充满光亮。余生,请多指教。\n这座城市\n有一个人注定与我相关\n肖战饰顾魏\n@X玖少年团肖战DAYTOY",
         "englishTags": [
@@ -2764,7 +2762,9 @@
             "cat",
             "weibo",
             "gu wei"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 37,
@@ -2776,7 +2776,6 @@
             "余生请多指教",
             "定档"
         ],
-        "category": "screenshot",
         "groupName": "202203",
         "photoText": "肖战 DAYTOY\n✔ 22-3-14 10:10\n#余生请多指教定档3月15日#专注认真、保持初心和善\n意的顾魏,明晚见\n@电视剧余生请多指教:#余生请多指教定档3月15日#即使\n生命重来很多遍,我依旧想在那个春天遇见你,因为那天的\n相遇,让我的世界从此被你照亮~@杨紫 @X玖少年团肖战\nDAYTOY @翟子路 @马渝捷 @李沐沐沐宸@小林是李昀锐\n@赵诗意 @章煜奇 ELEven #余生请多指教人海相伴海报#\n#余生请多指教#3月15日,@湖南卫视 @金鹰独播剧场 晚\n8点20。@腾讯视频全网独播,每日22点更新。\n杨紫林之校\n李沐宸\n即\n生命再来很多遍\n我\n依然想要遇见你\n那个春天,\n使\n子路肖\n李锐江\n因那\n为天\n生\n马捷高\n章煜奇金石\n赵诗意印\n3月15日,湖南卫视金鹰独播剧场晚8点20\n腾讯视频全网独播,每日22点更新\n腾讯视频\n湖南卫视\n出品方企鹅影视承制方 梵活世锦",
         "postText": "#余生请多指教定档3月15日#专注认真、保持初心和善意的顾魏,明晚见\n@电视剧余生请多指教:#余生请多指教定档3月15日#即使生命重来很多遍,我依旧想在那个春天遇见你,因为那天的相遇,让我的世界从此被你照亮~@杨紫 @X玖少年团肖战DAYTOY @翟子路 @马渝捷 @李沐沐沐宸@小林是李昀锐 @赵诗意 @章煜奇 ELEven #余生请多指教人海相伴海报##余生请多指教#3月15日,@湖南卫视 @金鹰独播剧场 晚8点20。@腾讯视频全网独播,每日22点更新。",
@@ -2785,7 +2784,8 @@
             "drama promotion",
             "character poster"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 36,
@@ -2796,9 +2796,7 @@
         "tags": [
             "惊蛰吃个🍐"
         ],
-        "category": "attached",
         "groupName": "202203",
-        "source": "douyin",
         "link": "https://www.douyin.com/video/7071615380069879047",
         "photoText": "",
         "postText": "惊蛰吃个🍐",
@@ -2807,7 +2805,9 @@
             "douyin",
             "pear",
             "eating"
-        ]
+        ],
+        "platform": "douyin",
+        "type": "attached"
     },
     {
         "id": 33,
@@ -2818,7 +2818,6 @@
         "tags": [
             "雪"
         ],
-        "category": "screenshot",
         "groupName": "202203",
         "photoText": "肖战\nV\n22-3-2 15:40\n#春暖花开的3月来了#春去春会来!\nOLIVE\n@X玖少年团等战DAYTOY",
         "postText": "#春暖花开的3月来了#春去春会来! @X玖少年团等战DAYTOY",
@@ -2826,7 +2825,8 @@
             "snow",
             "spring"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 34,
@@ -2838,13 +2838,13 @@
             "雪"
         ],
         "groupName": "202203",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "",
         "englishTags": [
             "snow",
             "weibo"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 35,
@@ -2859,14 +2859,14 @@
         "link": "",
         "groupName": "202203",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "#春暖花开的3月来了#春去春会来! @X玖少年团等战DAYTOY",
         "englishTags": [
             "snow",
             "photography"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 32,
@@ -2877,9 +2877,7 @@
         "tags": [
             "# 欢欢喜喜闹元宵 祝大家节日快乐！"
         ],
-        "category": "attached",
         "groupName": "202202",
-        "source": "douyin",
         "link": "https://www.douyin.com/video/7064938792645446948",
         "photoText": "",
         "postText": "#欢欢喜喜闹元宵 祝大家节日快乐！",
@@ -2887,7 +2885,9 @@
         "englishTags": [
             "douyin",
             "lantern festival"
-        ]
+        ],
+        "platform": "douyin",
+        "type": "attached"
     },
     {
         "id": 27,
@@ -2899,9 +2899,7 @@
             "收工",
             "雪"
         ],
-        "category": "screenshot",
         "groupName": "202202",
-        "source": "weibo",
         "link": "",
         "note": "",
         "photoText": "肖战\n22-2-13 23:00\n收工的❄️\nLIVE\nLIVE",
@@ -2909,7 +2907,9 @@
         "englishTags": [
             "snow",
             "weibo update"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 28,
@@ -2925,13 +2925,13 @@
         "link": "",
         "groupName": "202202",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "",
         "englishTags": [
             "snow",
             "weibo live"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 29,
@@ -2947,13 +2947,13 @@
         "link": "",
         "groupName": "202202",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "",
         "englishTags": [
             "snow",
             "weibo live"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 30,
@@ -2968,14 +2968,14 @@
         "link": "",
         "groupName": "202202",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "收工的❄️",
         "englishTags": [
             "snow",
             "weibo update"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 31,
@@ -2990,14 +2990,14 @@
         "link": "",
         "groupName": "202202",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "GORE-TEX\nINFINIUM™\n@X玖少年团肖战DAYTOY",
         "postText": "收工的❄️",
         "englishTags": [
             "snow",
             "weibo update"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 24,
@@ -3008,7 +3008,6 @@
         "tags": [
             "GUCCI"
         ],
-        "category": "screenshot",
         "groupName": "202202",
         "photoText": "热门\n肖战\n✔22-2-9 10:10\n与@GUCCI一起探知视觉美学语言,\n#GucciLinkToLove#探索浪漫想象新边界\n@X玖少年团肖战DAYTOY\n@X玖少年团肖战DAYTOY",
         "postText": "与@GUCCI一起探知视觉美学语言,#GucciLinkToLove#探索浪漫想象新边界",
@@ -3017,7 +3016,8 @@
             "gucci link to love",
             "campaign"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 25,
@@ -3029,14 +3029,14 @@
             "GUCCI"
         ],
         "groupName": "202202",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "与@GUCCI一起探知视觉美学语言,#GucciLinkToLove#探索浪漫想象新边界",
         "englishTags": [
             "gucci",
             "gucci link to love"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 26,
@@ -3048,14 +3048,14 @@
             "GUCCI"
         ],
         "groupName": "202202",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "与@GUCCI一起探知视觉美学语言,#GucciLinkToLove#探索浪漫想象新边界",
         "englishTags": [
             "gucci",
             "gucci link to love"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 23,
@@ -3067,7 +3067,6 @@
             "梦中的那片海",
             "官宣"
         ],
-        "category": "screenshot",
         "groupName": "202202",
         "photoText": "肖战\n22-2-7 10:23\n我是肖春生,咱那片海见。#梦中的那片海阵容官宣\n#\n@电视剧梦中的那片海:#梦中的那片海阵容官宣#\n青葱岁月的大院往事,纯真年代的热血青春。\n人生海海,每个人皆是时代的一页。\n领衔主演:@X玖少年团肖战DAYTOY @李沁\n主演:@刘芮麟 Wayne @曹斐然 @赵昕zhaozhao @崔航\nFelix @张龄心@鲁诺 lenox\n出品方:@新湃传媒 @西嘻影业\n总制片人:杨晓培 @Flu-fish-感冒的鱼\n导演:付宁@付宁导演编剧\n总策划:叶京\n编剧:徐兵、周鹤洋\n制片人:陈瑶、祝凯\n#电视剧梦中的那片海#\n梦中的那片海\nWHERE DREAMS BEGIN\n电视剧梦中的那片海",
         "postText": "我是肖春生,咱那片海见。#梦中的那片海阵容官宣 @电视剧梦中的那片海:#梦中的那片海阵容官宣# 青葱岁月的大院往事,纯真年代的热血青春。人生海海,每个人皆是时代的一页。领衔主演:@X玖少年团肖战DAYTOY @李沁 主演:@刘芮麟 Wayne @曹斐然 @赵昕zhaozhao @崔航 Felix @张龄心@鲁诺 lenox 出品方:@新湃传媒 @西嘻影业 总制片人:杨晓培 @Flu-fish-感冒的鱼 导演:付宁@付宁导演编剧 总策划:叶京 编剧:徐兵、周鹤洋 制片人:陈瑶、祝凯 #电视剧梦中的那片海#",
@@ -3077,7 +3076,8 @@
             "li qin",
             "xiao chunsheng"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 22,
@@ -3089,7 +3089,6 @@
             "冬奥",
             "央视新闻"
         ],
-        "category": "screenshot",
         "groupName": "202202",
         "photoText": "肖战\n22-2-4 00:13\n期待冬奥赛场上的那抹中国红!奥运健儿,加油!#今\n日立春冬奥开幕#\n@央视新闻:【#今日立春冬奥开幕#北京欢迎你,今晚北京\n见!】2008年,我们欢聚中国北京,见证体育盛宴;\n2022年,我们再会双奥之城,共襄冰雪传奇。今晚,#北\n京2022年冬奥会#正式开幕。此刻,发条微博,为冬奥健\n儿喝彩,为中国加油!#北京冬奥开幕式倒计时直播#\n2月4日 北京冬奥会开幕\n中国\n央视\n扫描二维码\n下载全新央视新闻客户端\n新闻\n@央视新闻",
         "postText": "期待冬奥赛场上的那抹中国红!奥运健儿,加油!#今日立春冬奥开幕#\n@央视新闻:【#今日立春冬奥开幕#北京欢迎你,今晚北京见!】2008年,我们欢聚中国北京,见证体育盛宴;2022年,我们再会双奥之城,共襄冰雪传奇。今晚,#北京2022年冬奥会#正式开幕。此刻,发条微博,为冬奥健儿喝彩,为中国加油!#北京冬奥开幕式倒计时直播#",
@@ -3099,7 +3098,8 @@
             "cctv news",
             "beijing"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 21,
@@ -3110,9 +3110,7 @@
         "tags": [
             "2022心想事🍊"
         ],
-        "category": "attached",
         "groupName": "202202",
-        "source": "douyin",
         "link": "https://www.douyin.com/video/7059633084144160007",
         "photoText": "",
         "postText": "2022心想事🍊",
@@ -3120,7 +3118,9 @@
         "englishTags": [
             "douyin",
             "new year wishes"
-        ]
+        ],
+        "platform": "douyin",
+        "type": "attached"
     },
     {
         "id": 13,
@@ -3132,7 +3132,6 @@
             "虎年",
             "美食"
         ],
-        "category": "screenshot",
         "groupName": "202201",
         "photoText": "肖战\nV\n22-1-31 20:22\n猜猜哪道菜是我做的?\n祝大家虎年大吉,平安顺遂!\n2022\n在团战DAYTOY",
         "postText": "猜猜哪道菜是我做的? 祝大家虎年大吉,平安顺遂!\n2022\n在团战DAYTOY",
@@ -3141,7 +3140,8 @@
             "food",
             "cooking"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 14,
@@ -3156,8 +3156,6 @@
         "link": "",
         "groupName": "202201",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "猜猜哪道菜是我做的? 祝大家虎年大吉,平安顺遂!\n2022\n在团战DAYTOY",
         "englishTags": [
@@ -3165,7 +3163,9 @@
             "selfie",
             "new year",
             "cooking"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 15,
@@ -3178,15 +3178,15 @@
             "美食"
         ],
         "groupName": "202201",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "猜猜哪道菜是我做的? 祝大家虎年大吉,平安顺遂!\n2022\n在团战DAYTOY",
         "englishTags": [
             "year of the tiger",
             "food",
             "weibo post"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 16,
@@ -3198,9 +3198,7 @@
             "年夜饭",
             "备菜"
         ],
-        "category": "screenshot",
         "groupName": "202201",
-        "source": "oasis",
         "photoText": "X玖少年团肖战DAYTOY\n巴适的年夜饭从备菜开始\n发布于2022/01/31 05:07\n在绿洲,遇见美好遇见你",
         "postText": "猜猜哪道菜是我做的? 祝大家虎年大吉,平安顺遂!\n2022\n在团战DAYTOY",
         "englishTags": [
@@ -3208,7 +3206,9 @@
             "cooking",
             "oasis",
             "year of the tiger"
-        ]
+        ],
+        "platform": "oasis",
+        "type": "screenshot"
     },
     {
         "id": 17,
@@ -3221,14 +3221,14 @@
             "备菜"
         ],
         "groupName": "202201",
-        "category": "attached",
-        "source": "oasis",
         "photoText": "",
         "englishTags": [
             "oasis",
             "new year's eve dinner",
             "cooking prep"
-        ]
+        ],
+        "platform": "oasis",
+        "type": "attached"
     },
     {
         "id": 18,
@@ -3241,14 +3241,14 @@
             "备菜"
         ],
         "groupName": "202201",
-        "category": "attached",
-        "source": "oasis",
         "photoText": "",
         "englishTags": [
             "oasis",
             "new year's eve dinner",
             "cooking prep"
-        ]
+        ],
+        "platform": "oasis",
+        "type": "attached"
     },
     {
         "id": 19,
@@ -3261,14 +3261,14 @@
             "备菜"
         ],
         "groupName": "202201",
-        "category": "attached",
-        "source": "oasis",
         "photoText": "",
         "englishTags": [
             "new year's eve dinner",
             "cooking",
             "oasis"
-        ]
+        ],
+        "platform": "oasis",
+        "type": "attached"
     },
     {
         "id": 20,
@@ -3281,14 +3281,14 @@
             "备菜"
         ],
         "groupName": "202201",
-        "category": "attached",
-        "source": "oasis",
         "photoText": "",
         "englishTags": [
             "new year's eve dinner",
             "cooking",
             "oasis"
-        ]
+        ],
+        "platform": "oasis",
+        "type": "attached"
     },
     {
         "id": 12,
@@ -3299,9 +3299,7 @@
         "tags": [
             "就是愣个巴适！#温暖中国年"
         ],
-        "category": "attached",
         "groupName": "202201",
-        "source": "douyin",
         "link": "https://www.douyin.com/video/7057467643233651999",
         "photoText": "",
         "postText": "就是愣个巴适！#温暖中国年 ",
@@ -3309,7 +3307,9 @@
         "englishTags": [
             "douyin",
             "warm china new year"
-        ]
+        ],
+        "platform": "douyin",
+        "type": "attached"
     },
     {
         "id": 11,
@@ -3320,9 +3320,7 @@
         "tags": [
             "温暖中国年"
         ],
-        "category": "attached",
         "groupName": "202201",
-        "source": "douyin",
         "link": "https://www.douyin.com/video/7055254238422666526",
         "photoText": "",
         "postText": "点击加号，一起沉浸式过年！#温暖中国年 ",
@@ -3331,7 +3329,9 @@
             "douyin",
             "chinese new year"
         ],
-        "quality": "1080p"
+        "quality": "1080p",
+        "platform": "douyin",
+        "type": "attached"
     },
     {
         "id": 10,
@@ -3343,7 +3343,6 @@
             "王牌部队",
             "致敬老兵"
         ],
-        "category": "screenshot",
         "groupName": "202201",
         "photoText": "热门\n肖战\nV\n22-1-17 12:11\n#每个老兵都有三次生命#不忘英雄,致敬老兵!感谢你\n们用青春和热血守卫祖国和平!#王牌部队致敬老兵#\n@电视剧王牌部队:#每个老兵都有三次生命#第一次,他们\n在战场上勇往直前直面生死;第二次,他们跨越世纪无惧困\n难;第三次,他们的故事被人们了解,老兵记忆永存!#王\n牌部队致敬老兵#一起守护老兵故事,为记忆的城墙添砖加\n瓦,为老兵砌成记忆的丰碑。@新浪公益@关爱抗战老兵\n公益基金 @星光公益联盟\n领衔男主演:@Johnny黄景瑜 @X玖少年团肖战DAYTOY\n(按姓氏首字母排序)\n领衔女主演:@钟楚曦\n主演:@傅程鹏_浤鳴 @演员徐洪浩@侯梦莎 HMS @刘晓\n洁儿 @TNT赵荀@张进1226@夏侯镔@演员关亚军\n王牌部队致敬老兵 王牌部部人致敬老兵 王牌部队致敬老兵\n饰顾\n高\n粱\n野\n共郁有二八王叩\n王牌部队致敬老兵王牌部人致敬老兵 金牌制的人致敬老兵\n土牌台风致敬老兵十万军台风致取毛兵",
         "postText": "#每个老兵都有三次生命#不忘英雄,致敬老兵!感谢你们用青春和热血守卫祖国和平!#王牌部队致敬老兵#@电视剧王牌部队:#每个老兵都有三次",
@@ -3353,7 +3352,8 @@
             "veterans",
             "drama"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 8,
@@ -3366,8 +3366,6 @@
             "再见",
             "收官"
         ],
-        "category": "screenshot",
-        "source": "weibo",
         "groupName": "202201",
         "link": "",
         "note": "",
@@ -3377,7 +3375,9 @@
             "ace troops",
             "farewell",
             "gu yiye"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 9,
@@ -3393,15 +3393,15 @@
         "link": "",
         "groupName": "202201",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "",
         "duration": 35,
         "englishTags": [
             "ace troops",
             "farewell",
             "finale"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 7,
@@ -3413,9 +3413,7 @@
             "王牌部队",
             "顾一野"
         ],
-        "category": "attached",
         "groupName": "202201",
-        "source": "douyin",
         "link": "https://www.douyin.com/video/7051422360099966245",
         "photoText": "",
         "postText": "#王牌部队全员集结 生死在一起，顾一野报到！#王牌部队",
@@ -3424,7 +3422,9 @@
             "ace troops",
             "gu yiye",
             "douyin"
-        ]
+        ],
+        "platform": "douyin",
+        "type": "attached"
     },
     {
         "id": 6,
@@ -3436,8 +3436,6 @@
             "韩旭",
             "女篮"
         ],
-        "category": "screenshot",
-        "source": "weibo",
         "groupName": "202201",
         "link": "",
         "note": "",
@@ -3447,7 +3445,9 @@
             "han xu",
             "basketball",
             "weibo post"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 5,
@@ -3458,16 +3458,16 @@
         "tags": [
             "小寒的一些选择🤓"
         ],
-        "category": "attached",
         "groupName": "202201",
-        "source": "douyin",
         "link": "https://www.douyin.com/video/7049657107641044232",
         "photoText": "",
         "postText": "小寒的一些选择🤓",
         "duration": 237,
         "englishTags": [
             "douyin"
-        ]
+        ],
+        "platform": "douyin",
+        "type": "attached"
     },
     {
         "id": 4,
@@ -3479,8 +3479,6 @@
             "王牌部队",
             "预告"
         ],
-        "category": "screenshot",
-        "source": "weibo",
         "groupName": "202201",
         "link": "",
         "note": "",
@@ -3490,7 +3488,9 @@
             "ace troops",
             "trailer",
             "military drama"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 1,
@@ -3501,16 +3501,16 @@
         "tags": [
             "#2022年第一条抖音 来了"
         ],
-        "category": "attached",
         "groupName": "202201",
-        "source": "douyin",
         "link": "https://www.douyin.com/video/7047896658528455950",
         "photoText": "",
         "postText": "#2022年第一条抖音 来了",
         "duration": 16,
         "englishTags": [
             "douyin"
-        ]
+        ],
+        "platform": "douyin",
+        "type": "attached"
     },
     {
         "id": 2,
@@ -3522,7 +3522,6 @@
             "冲",
             "背影"
         ],
-        "category": "screenshot",
         "groupName": "202201",
         "photoText": "X玖少年团肖战DAYTOY\n22-1-1 00:00\n#2021我想对你说#感谢。\n2022,冲!\n@X玖少年团肖战DAYTOΥ",
         "postText": "#2021我想对你说#感谢。2022,冲!@X玖少年团肖战DAYTOΥ",
@@ -3530,7 +3529,8 @@
             "back view",
             "weibo"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 3,
@@ -3543,13 +3543,13 @@
             "背影"
         ],
         "groupName": "202201",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "#2021我想对你说#感谢。2022,冲!@X玖少年团肖战DAYTOΥ",
         "englishTags": [
             "weibo",
             "back view"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     }
 ]
