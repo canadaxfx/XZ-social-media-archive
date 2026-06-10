@@ -11,15 +11,15 @@
         ],
         "groupName": "202605",
         "link": "https://weibo.com/1792951112/R10wS13IP",
-        "category": "screenshot",
-        "source": "weibo",
         "postText": "手握幸运星，好事自然成！#荣耀600#系列超级4K实况神机，4K闪光微单Live，4K直出超清晰！@荣耀手机 肖战工作室的微博视频",
         "englishTags": [
             "honor",
             "honor 600",
             "weibo video",
             "promotional video"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 81,
@@ -34,8 +34,6 @@
         "groupName": "202605",
         "quality": "4k",
         "link": "https://weibo.com/1792951112/R10wS13IP",
-        "category": "attached",
-        "source": "weibo",
         "postText": "手握幸运星，好事自然成！#荣耀600#系列超级4K实况神机，4K闪光微单Live，4K直出超清晰！@荣耀手机 肖战工作室的微博视频",
         "englishTags": [
             "honor",
@@ -43,7 +41,9 @@
             "weibo video",
             "promotional video"
         ],
-        "duration": 32
+        "duration": 32,
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 80,
@@ -56,8 +56,6 @@
         ],
         "groupName": "202605",
         "link": "https://weibo.com/1792951112/R05XTlEgv",
-        "category": "screenshot",
-        "source": "weibo",
         "note": "",
         "description": "",
         "postText": "和@TODS 的每一次相遇，总留下温暖记忆，也点亮崭新灵感。相伴五年，默契同行，#TODS·X# 伴我步履不停，行向新程。TODS的微博视频",
@@ -66,7 +64,9 @@
             "brand ambassador",
             "campaign",
             "fashion"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 79,
@@ -81,8 +81,6 @@
         "quality": "1080p",
         "duration": 20,
         "link": "https://weibo.com/1792951112/R05XTlEgv",
-        "category": "attached",
-        "source": "weibo",
         "note": "",
         "description": "",
         "postText": "和@TODS 的每一次相遇，总留下温暖记忆，也点亮崭新灵感。相伴五年，默契同行，#TODS·X# 伴我步履不停，行向新程。TODS的微博视频",
@@ -91,7 +89,9 @@
             "brand ambassador",
             "campaign",
             "fashion"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 76,
@@ -104,15 +104,15 @@
         ],
         "groupName": "202605",
         "link": "https://weibo.com/1792951112/QEU6hbKVa",
-        "category": "screenshot",
-        "source": "weibo",
         "note": "",
         "description": "",
         "postText": "缅怀逝者，致敬重生，祝福汶川，祝福祖国！#汶川地震18周年##5月12日14时28分#",
         "englishTags": [
             "wencuan earthquake",
             "cctv news"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 78,
@@ -125,8 +125,6 @@
         ],
         "groupName": "202605",
         "link": "https://weibo.com/1792951112/QEx9dx6Rt",
-        "category": "screenshot",
-        "source": "weibo",
         "note": "",
         "description": "",
         "postText": "东方有舒客。答案，东方客栈见。@舒客Saky#舒客更懂东方人的口腔美护# 肖战工作室的微博视频",
@@ -134,7 +132,9 @@
             "saky",
             "endorsement",
             "weibo video"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 77,
@@ -149,8 +149,6 @@
         "quality": "1080p",
         "duration": 99,
         "link": "https://weibo.com/1792951112/QEx9dx6Rt",
-        "category": "attached",
-        "source": "weibo",
         "note": "",
         "description": "",
         "postText": "东方有舒客。答案，东方客栈见。@舒客Saky#舒客更懂东方人的口腔美护# 肖战工作室的微博视频",
@@ -158,7 +156,9 @@
             "saky",
             "endorsement",
             "weibo video"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 74,
@@ -175,8 +175,6 @@
         ],
         "groupName": "202605",
         "link": "https://weibo.com/1792951112/QDzXT5zSH",
-        "category": "screenshot",
-        "source": "weibo",
         "note": "",
         "description": "",
         "postText": "[太阳][月亮]",
@@ -186,7 +184,9 @@
             "moon",
             "blood moon",
             "bird's claw"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 73,
@@ -203,8 +203,6 @@
         ],
         "groupName": "202605",
         "link": "https://weibo.com/1792951112/QDzXT5zSH",
-        "category": "attached",
-        "source": "weibo",
         "note": "",
         "description": "",
         "postText": "[太阳][月亮]",
@@ -214,7 +212,9 @@
             "moon",
             "blood moon",
             "bird's claw"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 72,
@@ -231,8 +231,6 @@
         ],
         "groupName": "202605",
         "link": "https://weibo.com/1792951112/QDzXT5zSH",
-        "category": "attached",
-        "source": "weibo",
         "note": "",
         "description": "",
         "postText": "[太阳][月亮]",
@@ -242,7 +240,9 @@
             "moon",
             "blood moon",
             "bird's claw"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 71,
@@ -259,8 +259,6 @@
         ],
         "groupName": "202605",
         "link": "https://weibo.com/1792951112/QDzXT5zSH",
-        "category": "attached",
-        "source": "weibo",
         "note": "",
         "description": "",
         "postText": "[太阳][月亮]",
@@ -270,7 +268,9 @@
             "moon",
             "blood moon",
             "bird's claw"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 70,
@@ -287,8 +287,6 @@
         ],
         "groupName": "202605",
         "link": "https://weibo.com/1792951112/QDzXT5zSH",
-        "category": "attached",
-        "source": "weibo",
         "note": "",
         "description": "",
         "postText": "[太阳][月亮]",
@@ -298,7 +296,9 @@
             "moon",
             "blood moon",
             "bird's claw"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 69,
@@ -311,19 +311,19 @@
         ],
         "groupName": "202604",
         "link": "https://weibo.com/1792951112/QDcMOgHOC",
-        "category": "screenshot",
-        "source": "weibo",
         "note": "",
         "description": "",
         "postText": "都市光影流转，故事徐徐展开。一起来看张晓波导演的#爱情没有神话# ！",
         "englishTags": [
             "movie promotion",
             "love without a myth"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 68,
-        "url": "https://assets.xz-studio-gallery.com/full/20260426_%E5%A4%AE%E8%A7%86%E6%96%B0%E9%97%BB_XZ-MISC-1.mp4",
+        "url": "https://assets.xz-studio-gallery.com/full/20260426_央视新闻_XZ-MISC-1.mp4",
         "date": "2026-04-25",
         "month": "April",
         "year": "2026",
@@ -334,8 +334,6 @@
         "groupName": "202604",
         "duration": 42,
         "link": "https://www.douyin.com/video/7632845160145063177",
-        "category": "attached",
-        "source": "douyin",
         "postText": "#光影伴旅  @肖战  邀你五一假期到重庆，#跟着电影去旅游  打卡洪崖洞、解放碑、长江索道……赴一场光影山城之约！",
         "englishTags": [
             "cctv news",
@@ -345,7 +343,9 @@
             "hongyadong",
             "jiefangbei"
         ],
-        "quality": "1080p"
+        "quality": "1080p",
+        "platform": "douyin",
+        "type": "attached"
     },
     {
         "id": 67,
@@ -358,8 +358,6 @@
         ],
         "groupName": "202604",
         "link": "https://weibo.com/1792951112/QC0GAtTBk",
-        "category": "screenshot",
-        "source": "weibo",
         "note": "",
         "description": "",
         "postText": "为可能，尽所能。与@尚界汽车 一起创造属于我们的盛大时刻！#尚界Z7# 肖战工作室的微博视频",
@@ -367,7 +365,9 @@
             "shangjie z7",
             "automotive",
             "commercial"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 66,
@@ -382,8 +382,6 @@
         "quality": "4k",
         "duration": 39,
         "link": "https://weibo.com/1792951112/QC0GAtTBk",
-        "category": "attached",
-        "source": "weibo",
         "note": "",
         "description": "",
         "postText": "为可能，尽所能。与@尚界汽车 一起创造属于我们的盛大时刻！#尚界Z7# 肖战工作室的微博视频",
@@ -391,7 +389,9 @@
             "shangjie z7",
             "automotive",
             "commercial"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 65,
@@ -404,8 +404,6 @@
         ],
         "groupName": "202604",
         "link": "https://weibo.com/1792951112/QBSWWixMu",
-        "category": "screenshot",
-        "source": "weibo",
         "note": "",
         "description": "",
         "postText": "致敬最可爱的人！#12位志愿军烈士遗骸归国# #最可爱的人回来了#",
@@ -415,7 +413,9 @@
             "korean war",
             "repatriation",
             "soldiers"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 62,
@@ -428,14 +428,14 @@
         ],
         "groupName": "202604",
         "link": "https://weibo.com/1792951112/QBE1MqDba",
-        "category": "screenshot",
-        "source": "weibo",
         "postText": "近看远看环看，发量浓密无缝感。全新#欧莱雅PRO防脱黑宝瓶# ，养黑亮发。肖战工作室的微博视频",
         "englishTags": [
             "l'oreal pro",
             "hair care",
             "endorsement"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 61,
@@ -450,14 +450,14 @@
         "quality": "1080p",
         "duration": 28,
         "link": "https://weibo.com/1792951112/QBE1MqDba",
-        "category": "attached",
-        "source": "weibo",
         "postText": "近看远看环看，发量浓密无缝感。全新#欧莱雅PRO防脱黑宝瓶# ，养黑亮发。肖战工作室的微博视频",
         "englishTags": [
             "l'oreal pro",
             "hair care",
             "endorsement"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 64,
@@ -470,14 +470,14 @@
         ],
         "groupName": "202604",
         "link": "https://weibo.com/1792951112/QASTNcmLb",
-        "category": "screenshot",
-        "source": "weibo",
         "postText": "@蒙牛精选牧场 所有的精挑细选，都在这里，一起探秘5S标准。#5S标准认准精选牧场# 肖战工作室的微博视频",
         "englishTags": [
             "mengniu",
             "endorsement",
             "weibo video"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 63,
@@ -491,15 +491,15 @@
         "groupName": "202604",
         "duration": 230,
         "link": "https://weibo.com/1792951112/QASTNcmLb",
-        "category": "attached",
-        "source": "weibo",
         "postText": "@蒙牛精选牧场 所有的精挑细选，都在这里，一起探秘5S标准。#5S标准认准精选牧场# 肖战工作室的微博视频",
         "englishTags": [
             "mengniu",
             "endorsement",
             "weibo video"
         ],
-        "quality": "1080p"
+        "quality": "1080p",
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 60,
@@ -513,8 +513,6 @@
         ],
         "groupName": "202604",
         "link": "https://weibo.com/1792951112/QA8HJubcK",
-        "category": "screenshot",
-        "source": "weibo",
         "note": "",
         "description": "",
         "postText": "#十日终焉开机# 我叫齐夏，是个骗子，我说的话你只能信一半。#剧集十日终焉#预约： 网页链接  肖战的微博视频",
@@ -523,7 +521,9 @@
             "drama",
             "filming start",
             "qi xia"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 59,
@@ -539,8 +539,6 @@
         "quality": "1080p",
         "duration": 32,
         "link": "https://weibo.com/1792951112/QA8HJubcK",
-        "category": "attached",
-        "source": "weibo",
         "note": "",
         "description": "",
         "postText": "#十日终焉开机# 我叫齐夏，是个骗子，我说的话你只能信一半。#剧集十日终焉#预约： 网页链接  肖战的微博视频",
@@ -549,7 +547,9 @@
             "drama",
             "filming start",
             "qi xia"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 58,
@@ -562,8 +562,6 @@
         ],
         "groupName": "202604",
         "link": "https://weibo.com/1792951112/QzYkiAZd1",
-        "category": "screenshot",
-        "source": "weibo",
         "note": "",
         "description": "",
         "postText": "和我一起，六度开启新爽感。畅行山野，清爽随身而至。用六神，爽爽爽出神！@六神官方微博 #用六神爽出神# 肖战工作室的微博视频",
@@ -572,7 +570,9 @@
             "endorsement",
             "skincare",
             "campaign"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 57,
@@ -587,8 +587,6 @@
         "quality": "1080p",
         "duration": 59,
         "link": "https://weibo.com/1792951112/QzYkiAZd1",
-        "category": "attached",
-        "source": "weibo",
         "note": "",
         "description": "",
         "postText": "和我一起，六度开启新爽感。畅行山野，清爽随身而至。用六神，爽爽爽出神！@六神官方微博 #用六神爽出神# 肖战工作室的微博视频",
@@ -596,7 +594,9 @@
             "liushin",
             "endorsement",
             "commercial"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 56,
@@ -610,8 +610,6 @@
         ],
         "groupName": "202604",
         "link": "https://weibo.com/1792951112/Qzhs32zIu",
-        "category": "screenshot",
-        "source": "weibo",
         "note": "",
         "description": "",
         "postText": "铭记！缅怀！#一人一句祭英魂##家国永念#",
@@ -619,7 +617,9 @@
             "cctv news",
             "qingming festival",
             "weibo"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 55,
@@ -633,8 +633,6 @@
         ],
         "groupName": "202603",
         "link": "https://weibo.com/1792951112/QwVMF4wmX",
-        "category": "screenshot",
-        "source": "weibo",
         "note": "",
         "description": "",
         "postText": "每一面，无惧细看！@NARS #NARS超雾瓶粉底# 肖战工作室的微博视频",
@@ -642,7 +640,9 @@
             "nars",
             "foundation",
             "weibo video"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 54,
@@ -657,8 +657,6 @@
         "groupName": "202603",
         "quality": "1080p",
         "link": "https://weibo.com/1792951112/QwVMF4wmX",
-        "category": "attached",
-        "source": "weibo",
         "note": "",
         "description": "",
         "postText": "每一面，无惧细看！@NARS #NARS超雾瓶粉底# 肖战工作室的微博视频",
@@ -667,7 +665,9 @@
             "nars",
             "foundation",
             "weibo video"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 52,
@@ -683,8 +683,6 @@
         ],
         "groupName": "202603",
         "link": "https://weibo.com/1792951112/QwfYN3iWa",
-        "category": "screenshot",
-        "source": "weibo",
         "note": "",
         "description": "",
         "postText": "感谢SMG、感谢东方卫视#电视剧品质盛典#。感谢《藏海传》台前幕后所有的工作人员，感谢每一位观众朋友。 ​​​",
@@ -693,7 +691,9 @@
             "cang hai zhuan",
             "best actor",
             "award"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 51,
@@ -709,8 +709,6 @@
         ],
         "groupName": "202603",
         "link": "https://weibo.com/1792951112/QwfYN3iWa",
-        "category": "attached",
-        "source": "weibo",
         "note": "",
         "description": "",
         "postText": "感谢SMG、感谢东方卫视#电视剧品质盛典#。感谢《藏海传》台前幕后所有的工作人员，感谢每一位观众朋友。 ​​​",
@@ -719,7 +717,9 @@
             "cang hai zhuan",
             "best actor",
             "award"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 50,
@@ -733,14 +733,14 @@
         ],
         "link": "https://www.instagram.com/p/DVTvUqPDKfO/",
         "groupName": "202603",
-        "category": "attached",
-        "source": "ins",
         "englishTags": [
             "gucci",
             "milan fashion week",
             "instagram"
         ],
-        "postText": "#GucciPrimavera diaries"
+        "postText": "#GucciPrimavera diaries",
+        "platform": "ins",
+        "type": "attached"
     },
     {
         "id": 49,
@@ -754,14 +754,14 @@
         ],
         "link": "https://www.instagram.com/p/DVTvUqPDKfO/",
         "groupName": "202603",
-        "category": "attached",
-        "source": "ins",
         "englishTags": [
             "gucci",
             "milan fashion week",
             "instagram"
         ],
-        "postText": "#GucciPrimavera diaries"
+        "postText": "#GucciPrimavera diaries",
+        "platform": "ins",
+        "type": "attached"
     },
     {
         "id": 48,
@@ -775,14 +775,14 @@
         ],
         "link": "https://www.instagram.com/p/DVTvUqPDKfO/",
         "groupName": "202603",
-        "category": "attached",
-        "source": "ins",
         "englishTags": [
             "gucci",
             "milan fashion week",
             "instagram"
         ],
-        "postText": "#GucciPrimavera diaries"
+        "postText": "#GucciPrimavera diaries",
+        "platform": "ins",
+        "type": "attached"
     },
     {
         "id": 47,
@@ -796,14 +796,14 @@
         ],
         "link": "https://www.instagram.com/p/DVTvUqPDKfO/",
         "groupName": "202603",
-        "category": "attached",
-        "source": "ins",
         "englishTags": [
             "gucci",
             "milan fashion week",
             "instagram"
         ],
-        "postText": "N/A"
+        "postText": "N/A",
+        "platform": "ins",
+        "type": "attached"
     },
     {
         "id": 46,
@@ -815,16 +815,16 @@
             "GUCCI",
             "米兰时装秀"
         ],
-        "category": "screenshot",
         "groupName": "202603",
-        "source": "ins",
         "link": "https://www.instagram.com/p/DVTvUqPDKfO/",
         "englishTags": [
             "gucci",
             "milan fashion week",
             "instagram"
         ],
-        "postText": "#GucciPrimavera diaries"
+        "postText": "#GucciPrimavera diaries",
+        "platform": "ins",
+        "type": "screenshot"
     },
     {
         "id": 45,
@@ -838,15 +838,15 @@
         ],
         "link": "https://www.instagram.com/p/DVTbGN-jGJP/",
         "groupName": "202602",
-        "category": "attached",
-        "source": "ins",
         "duration": 19,
         "englishTags": [
             "tods",
             "milan fashion week",
             "instagram"
         ],
-        "postText": "Original audio"
+        "postText": "Original audio",
+        "platform": "ins",
+        "type": "attached"
     },
     {
         "id": 44,
@@ -858,16 +858,16 @@
             "TODS",
             "米兰时装秀"
         ],
-        "category": "screenshot",
         "groupName": "202602",
-        "source": "ins",
         "link": "https://www.instagram.com/p/DVTbGN-jGJP/",
         "englishTags": [
             "tods",
             "milan fashion week",
             "instagram"
         ],
-        "postText": "Original audio"
+        "postText": "Original audio",
+        "platform": "ins",
+        "type": "screenshot"
     },
     {
         "id": 43,
@@ -881,13 +881,13 @@
         ],
         "link": "https://weibo.com/1792951112/QtW2Sappd",
         "groupName": "202602",
-        "category": "attached",
-        "source": "weibo",
         "postText": "Hi米兰，又见面了@GUCCI #GucciPrimavera# ​​​",
         "englishTags": [
             "gucci",
             "milan fashion week"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 42,
@@ -901,13 +901,13 @@
         ],
         "link": "https://weibo.com/1792951112/QtW2Sappd",
         "groupName": "202602",
-        "category": "attached",
-        "source": "weibo",
         "postText": "Hi米兰，又见面了@GUCCI #GucciPrimavera# ​​​",
         "englishTags": [
             "gucci",
             "milan fashion week"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 41,
@@ -921,13 +921,13 @@
         ],
         "link": "https://weibo.com/1792951112/QtW2Sappd",
         "groupName": "202602",
-        "category": "attached",
-        "source": "weibo",
         "postText": "Hi米兰，又见面了@GUCCI #GucciPrimavera# ​​​",
         "englishTags": [
             "gucci",
             "milan fashion week"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 40,
@@ -941,13 +941,13 @@
         ],
         "link": "https://weibo.com/1792951112/QtW2Sappd",
         "groupName": "202602",
-        "category": "attached",
-        "source": "weibo",
         "postText": "Hi米兰，又见面了@GUCCI #GucciPrimavera# ​​​",
         "englishTags": [
             "gucci",
             "milan fashion week"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 39,
@@ -959,15 +959,15 @@
             "GUCCI",
             "米兰时装秀"
         ],
-        "category": "screenshot",
         "groupName": "202602",
-        "source": "weibo",
         "link": "https://weibo.com/1792951112/QtW2Sappd",
         "postText": "Hi米兰，又见面了@GUCCI #GucciPrimavera# ​​​",
         "englishTags": [
             "gucci",
             "milan fashion week"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 38,
@@ -983,14 +983,14 @@
         "link": "https://weibo.com/1792951112/QtQUlpkt4",
         "groupName": "202602",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "postText": "下班！[咖啡] ​​​",
         "englishTags": [
             "gucci",
             "milan fashion week",
             "leaving work"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 37,
@@ -1006,14 +1006,14 @@
         "link": "https://weibo.com/1792951112/QtQUlpkt4",
         "groupName": "202602",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "postText": "下班！[咖啡] ​​​",
         "englishTags": [
             "gucci",
             "milan fashion week",
             "leaving work"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 36,
@@ -1031,15 +1031,15 @@
         "link": "https://weibo.com/1792951112/QtQUlpkt4",
         "groupName": "202602",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "postText": "下班！[咖啡] ​​​",
         "englishTags": [
             "gucci",
             "milan fashion week",
             "gif",
             "leaving work"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 35,
@@ -1057,15 +1057,15 @@
         "link": "https://weibo.com/1792951112/QtQUlpkt4",
         "groupName": "202602",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "postText": "下班！[咖啡] ​​​",
         "englishTags": [
             "gucci",
             "milan fashion week",
             "gif",
             "leaving work"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 34,
@@ -1083,15 +1083,15 @@
         "link": "https://weibo.com/1792951112/QtQUlpkt4",
         "groupName": "202602",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "postText": "下班！[咖啡] ​​​",
         "englishTags": [
             "gucci",
             "milan fashion week",
             "gif",
             "leaving work"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 33,
@@ -1107,14 +1107,14 @@
         "link": "https://weibo.com/1792951112/QtQUlpkt4",
         "groupName": "202602",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "postText": "下班！[咖啡] ​​​",
         "englishTags": [
             "gucci",
             "milan fashion week",
             "leaving work"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 32,
@@ -1130,14 +1130,14 @@
         "link": "https://weibo.com/1792951112/QtQUlpkt4",
         "groupName": "202602",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "postText": "下班！[咖啡] ​​​",
         "englishTags": [
             "gucci",
             "milan fashion week",
             "leaving work"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 31,
@@ -1152,14 +1152,14 @@
         ],
         "link": "https://weibo.com/1792951112/QtQUlpkt4",
         "groupName": "202602",
-        "category": "attached",
-        "source": "weibo",
         "postText": "下班！[咖啡] ​​​",
         "englishTags": [
             "gucci",
             "milan fashion week",
             "leaving work"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 30,
@@ -1172,17 +1172,17 @@
             "GUCCI",
             "米兰时装秀"
         ],
-        "category": "screenshot",
         "groupName": "202602",
         "link": "https://weibo.com/1792951112/QtQUlpkt4",
-        "source": "weibo",
         "note": "",
         "postText": "下班！[咖啡] ​​​",
         "englishTags": [
             "gucci",
             "milan fashion week",
             "leaving work"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 29,
@@ -1196,15 +1196,15 @@
         ],
         "link": "https://weibo.com/1792951112/QtPvm1OPw",
         "groupName": "202602",
-        "category": "attached",
-        "source": "weibo",
         "postText": "再回米兰，@TODS 的美学现场令人难忘。看意式工艺与当代艺术对话，与匠心近距离共鸣。#TODS2026秋冬系列时装秀##ItalianSignature# ​​​",
         "englishTags": [
             "tods",
             "milan fashion week",
             "fashion show",
             "fall winter collection"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 28,
@@ -1220,15 +1220,15 @@
         "link": "https://weibo.com/1792951112/QtPvm1OPw",
         "groupName": "202602",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "postText": "再回米兰，@TODS 的美学现场令人难忘。看意式工艺与当代艺术对话，与匠心近距离共鸣。#TODS2026秋冬系列时装秀##ItalianSignature# ​​​",
         "englishTags": [
             "tods",
             "milan fashion week",
             "ddv",
             "fashion show"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 27,
@@ -1242,15 +1242,15 @@
         ],
         "link": "https://weibo.com/1792951112/QtPvm1OPw",
         "groupName": "202602",
-        "category": "attached",
-        "source": "weibo",
         "postText": "再回米兰，@TODS 的美学现场令人难忘。看意式工艺与当代艺术对话，与匠心近距离共鸣。#TODS2026秋冬系列时装秀##ItalianSignature# ​​​",
         "englishTags": [
             "tods",
             "milan fashion week",
             "fashion show",
             "fall winter collection"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 26,
@@ -1266,15 +1266,15 @@
         "link": "https://weibo.com/1792951112/QtPvm1OPw",
         "groupName": "202602",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "postText": "再回米兰，@TODS 的美学现场令人难忘。看意式工艺与当代艺术对话，与匠心近距离共鸣。#TODS2026秋冬系列时装秀##ItalianSignature# ​​​",
         "englishTags": [
             "tods",
             "milan fashion week",
             "ddv",
             "fashion show"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 25,
@@ -1286,9 +1286,7 @@
             "TODS",
             "米兰时装秀"
         ],
-        "category": "screenshot",
         "groupName": "202602",
-        "source": "weibo",
         "link": "https://weibo.com/1792951112/QtPvm1OPw",
         "postText": "再回米兰，@TODS 的美学现场令人难忘。看意式工艺与当代艺术对话，与匠心近距离共鸣。#TODS2026秋冬系列时装秀##ItalianSignature# ​​​",
         "englishTags": [
@@ -1296,7 +1294,9 @@
             "milan fashion week",
             "fashion show",
             "fall winter collection"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 24,
@@ -1312,15 +1312,15 @@
         "link": "https://www.instagram.com/p/DVMihLLiP0q/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ%3D%3D&img_index=1",
         "groupName": "202602",
         "note": "",
-        "category": "attached",
-        "source": "ins",
         "englishTags": [
             "milan",
             "fashion week",
             "balcony",
             "instagram"
         ],
-        "postText": "Good night.🌕"
+        "postText": "Good night.🌕",
+        "platform": "ins",
+        "type": "attached"
     },
     {
         "id": 23,
@@ -1336,15 +1336,15 @@
         "link": "https://www.instagram.com/p/DVMihLLiP0q/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ%3D%3D&img_index=1",
         "groupName": "202602",
         "note": "",
-        "category": "attached",
-        "source": "ins",
         "englishTags": [
             "milan",
             "fashion week",
             "balcony",
             "instagram"
         ],
-        "postText": "Good night.🌕"
+        "postText": "Good night.🌕",
+        "platform": "ins",
+        "type": "attached"
     },
     {
         "id": 22,
@@ -1359,15 +1359,15 @@
         ],
         "link": "https://www.instagram.com/p/DVMihLLiP0q/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ%3D%3D&img_index=1",
         "groupName": "202602",
-        "category": "attached",
-        "source": "ins",
         "englishTags": [
             "milan",
             "fashion week",
             "balcony",
             "instagram"
         ],
-        "postText": "Good night.🌕"
+        "postText": "Good night.🌕",
+        "platform": "ins",
+        "type": "attached"
     },
     {
         "id": 21,
@@ -1383,15 +1383,15 @@
         "link": "https://www.instagram.com/p/DVMihLLiP0q/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ%3D%3D&img_index=1",
         "groupName": "202602",
         "note": "",
-        "category": "attached",
-        "source": "ins",
         "englishTags": [
             "milan",
             "fashion week",
             "balcony",
             "instagram"
         ],
-        "postText": "Good night.🌕"
+        "postText": "Good night.🌕",
+        "platform": "ins",
+        "type": "attached"
     },
     {
         "id": 20,
@@ -1407,15 +1407,15 @@
         "link": "https://www.instagram.com/p/DVMihLLiP0q/?utm_source=ig_web_copy_link&igsh=NTc4MTIwNjQ2YQ%3D%3D&img_index=1",
         "groupName": "202602",
         "note": "",
-        "category": "attached",
-        "source": "ins",
         "englishTags": [
             "milan",
             "fashion week",
             "balcony",
             "instagram"
         ],
-        "postText": "Good night.🌕"
+        "postText": "Good night.🌕",
+        "platform": "ins",
+        "type": "attached"
     },
     {
         "id": 19,
@@ -1428,9 +1428,7 @@
             "时装周",
             "阳台"
         ],
-        "category": "screenshot",
         "groupName": "202602",
-        "source": "ins",
         "link": "https://www.instagram.com/p/DVMihLLiP0q/",
         "englishTags": [
             "milan",
@@ -1438,7 +1436,9 @@
             "balcony",
             "instagram"
         ],
-        "postText": "Good night.🌕"
+        "postText": "Good night.🌕",
+        "platform": "ins",
+        "type": "screenshot"
     },
     {
         "id": 18,
@@ -1454,15 +1454,15 @@
         ],
         "link": "https://weibo.com/1792951112/Qt3lLrRDo",
         "groupName": "202602",
-        "category": "attached",
-        "source": "weibo",
         "postText": "我是东北长大的，却一直怕冬天。我不爱跟人太近，习惯躲着。当年因为怕雪，一个人去到南方，以为离得远一点，心里的坎就能过去。再回到故乡… 再次置身凛冽寒风之中，这片土地熟悉，却还是让我不安。\n       和一群人不期而遇，每天吵吵闹闹，简直不可思议。我一直以为，我是来医治别人的。曾经拼命逃离的寒冬，如今成了我暂时停留的地方。\n       雪依旧落在这座城市。但看着周围的笑脸，好像又不怎么冷了。",
         "englishTags": [
             "xiaocheng liangfang",
             "filming wrap",
             "liu zhenliang",
             "essay"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 17,
@@ -1478,15 +1478,15 @@
         ],
         "link": "https://weibo.com/1792951112/Qt3lLrRDo",
         "groupName": "202602",
-        "category": "attached",
-        "source": "weibo",
         "postText": "我是东北长大的，却一直怕冬天。我不爱跟人太近，习惯躲着。当年因为怕雪，一个人去到南方，以为离得远一点，心里的坎就能过去。再回到故乡… 再次置身凛冽寒风之中，这片土地熟悉，却还是让我不安。\n       和一群人不期而遇，每天吵吵闹闹，简直不可思议。我一直以为，我是来医治别人的。曾经拼命逃离的寒冬，如今成了我暂时停留的地方。\n       雪依旧落在这座城市。但看着周围的笑脸，好像又不怎么冷了。",
         "englishTags": [
             "xiaocheng liangfang",
             "filming wrap",
             "liu zhenliang",
             "essay"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 16,
@@ -1500,17 +1500,17 @@
             "刘铮亮",
             "随笔"
         ],
-        "category": "screenshot",
         "groupName": "202602",
         "link": "https://weibo.com/1792951112/Qt3lLrRDo",
         "postText": "我是东北长大的，却一直怕冬天。我不爱跟人太近，习惯躲着。当年因为怕雪，一个人去到南方，以为离得远一点，心里的坎就能过去。再回到故乡… 再次置身凛冽寒风之中，这片土地熟悉，却还是让我不安。\n       和一群人不期而遇，每天吵吵闹闹，简直不可思议。我一直以为，我是来医治别人的。曾经拼命逃离的寒冬，如今成了我暂时停留的地方。\n       雪依旧落在这座城市。但看着周围的笑脸，好像又不怎么冷了。",
-        "source": "weibo",
         "englishTags": [
             "xiaocheng liangfang",
             "filming wrap",
             "liu zhenliang",
             "essay"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 15,
@@ -1522,16 +1522,16 @@
             "小城良方",
             "杀青特辑"
         ],
-        "category": "screenshot",
         "groupName": "202602",
         "link": "https://weibo.com/1792951112/QsYBW9BNm",
         "postText": "#小城良方官宣杀青# #小城良方# 是归途，也是新篇。 刘铮亮，回头见。 ​​​",
-        "source": "weibo",
         "englishTags": [
             "a tale of hidden joy",
             "filming wrap",
             "liu zhenliang"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 14,
@@ -1546,8 +1546,6 @@
         ],
         "link": "https://weibo.com/1792951112/QsieRwqkl",
         "groupName": "202602",
-        "category": "attached",
-        "source": "weibo",
         "note": "",
         "postText": "歌声为约，岁岁相见，愿时光温柔，团圆常伴。#北京台春晚#",
         "quality": "1080p",
@@ -1557,7 +1555,9 @@
             "spring festival gala",
             "people's daily",
             "sui sui nian nian"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 13,
@@ -1570,17 +1570,17 @@
             "人民日报",
             "岁岁年年"
         ],
-        "category": "screenshot",
         "groupName": "202602",
         "link": "https://weibo.com/1792951112/QsieRwqkl",
         "postText": "歌声为约，岁岁相见，愿时光温柔，团圆常伴。#北京台春晚#",
-        "source": "weibo",
         "englishTags": [
             "beijing tv",
             "spring festival gala",
             "people's daily",
             "sui sui nian nian"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 53,
@@ -1593,8 +1593,6 @@
         ],
         "groupName": "202602",
         "link": "https://www.douyin.com/video/7607028390206118329",
-        "category": "attached",
-        "source": "douyin",
         "note": "",
         "description": "",
         "postText": "🫴🏼万事顺遂，平安健康。祝大家新年快乐！🎆#新年有礼了 #新春陀螺转场",
@@ -1602,7 +1600,9 @@
         "englishTags": [
             "douyin",
             "new year"
-        ]
+        ],
+        "platform": "douyin",
+        "type": "attached"
     },
     {
         "id": 12,
@@ -1617,14 +1617,14 @@
         ],
         "link": "https://weibo.com/1792951112/Qs9lfkQY4",
         "groupName": "202602",
-        "category": "attached",
-        "source": "weibo",
         "postText": "新年好！\n大家新年快乐，马到成功，健康顺遂！[马上有福][马上来财] ​​​",
         "englishTags": [
             "li-ning",
             "new year",
             "year of the horse"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 11,
@@ -1639,14 +1639,14 @@
         ],
         "link": "https://weibo.com/1792951112/Qs9lfkQY4",
         "groupName": "202602",
-        "category": "attached",
-        "source": "weibo",
         "postText": "新年好！\n大家新年快乐，马到成功，健康顺遂！[马上有福][马上来财] ​​​",
         "englishTags": [
             "li-ning",
             "new year",
             "year of the horse"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 10,
@@ -1659,16 +1659,16 @@
             "马年",
             "李宁"
         ],
-        "category": "screenshot",
         "groupName": "202602",
         "link": "https://weibo.com/1792951112/Qs9lfkQY4",
         "postText": "新年好！\n大家新年快乐，马到成功，健康顺遂！[马上有福][马上来财] ​​​",
-        "source": "weibo",
         "englishTags": [
             "li-ning",
             "new year",
             "year of the horse"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 9,
@@ -1682,17 +1682,17 @@
             "张艺谋",
             "蒙牛"
         ],
-        "category": "screenshot",
         "groupName": "202602",
         "link": "https://weibo.com/1792951112/QqxUtfFmY",
         "postText": "每一步滑行都是对要强精神的致敬。蒙牛2026年冬奥《开幕》中国红在哪里，要强就在哪里，骨子里要强的中国人，让世界看见。#蒙牛携张艺谋导演团队为冬奥开幕##蒙牛奥林匹克全球合作伙伴#\nhttp://t.cn/AX5Mm6tf ​​​",
-        "source": "weibo",
         "englishTags": [
             "winter olympics",
             "opening ceremony",
             "zhang yimou",
             "mengniu"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 8,
@@ -1704,16 +1704,16 @@
             "微博King",
             "微博之夜"
         ],
-        "category": "screenshot",
         "groupName": "202602",
-        "source": "weibo",
         "link": "https://weibo.com/1792951112/QqtqAmu1f",
         "note": "",
         "postText": "http://t.cn/AX5M3Vbk",
         "englishTags": [
             "weibo king",
             "weibo night"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 7,
@@ -1725,16 +1725,16 @@
             "微博年度榜样影人",
             "微博之夜"
         ],
-        "category": "screenshot",
         "groupName": "202602",
-        "source": "weibo",
         "link": "https://weibo.com/1792951112/Qqt3jyHSh",
         "note": "",
         "postText": "http://t.cn/AX5fr7sj",
         "englishTags": [
             "weibo night",
             "awards"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 6,
@@ -1749,13 +1749,13 @@
         "link": "https://weibo.com/1792951112/QpXr315gC",
         "groupName": "202602",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "postText": "以微博之力，让世界更美！2025#微博之夜# 即将开启，2月5日，和我一起见证年度闪耀时刻！#微博之夜阵容官宣#\n【请大家严格遵守《微博之夜安全倡议》《禁限带物品须知》，不应援、不聚集、不逗留，为了自己和他人安全，我们线上直播见！】  ​​​",
         "englishTags": [
             "weibo night",
             "announcement"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 5,
@@ -1767,8 +1767,6 @@
             "微博之夜",
             "官宣"
         ],
-        "category": "screenshot",
-        "source": "weibo",
         "link": "https://weibo.com/1792951112/QpXr315gC",
         "groupName": "202602",
         "note": "",
@@ -1776,7 +1774,9 @@
         "englishTags": [
             "weibo night",
             "announcement"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 4,
@@ -1791,8 +1791,6 @@
         ],
         "link": "https://weibo.com/1792951112/Ql615E6lp",
         "groupName": "202601",
-        "category": "attached",
-        "source": "weibo",
         "note": "",
         "postText": "不要回头！http://t.cn/AX4eBgbC ​​​",
         "quality": "1080p",
@@ -1801,7 +1799,9 @@
             "new year gala",
             "stage performance",
             "don't look back"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 3,
@@ -1814,17 +1814,17 @@
             "舞台",
             "不要回头"
         ],
-        "category": "screenshot",
         "groupName": "202601",
         "link": "https://weibo.com/1792951112/Ql615E6lp",
-        "source": "weibo",
         "note": "",
         "postText": "不要回头！http://t.cn/AX4eBgbC ​​​",
         "englishTags": [
             "new year gala",
             "stage performance",
             "don't look back"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 2,
@@ -1838,13 +1838,13 @@
         ],
         "link": "https://weibo.com/1792951112/Ql0Mp3jyI",
         "groupName": "202601",
-        "category": "attached",
-        "source": "weibo",
         "note": "",
         "postText": "2026，冲吧！[赞啊] ​​​",
         "englishTags": [
             "back view"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 1,
@@ -1856,14 +1856,14 @@
             "冲",
             "背影"
         ],
-        "category": "screenshot",
-        "source": "weibo",
         "link": "https://weibo.com/1792951112/Ql0Mp3jyI",
         "groupName": "202601",
         "note": "",
         "postText": "2026，冲吧！[赞啊] ​​​",
         "englishTags": [
             "back view"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "screenshot"
     }
 ]
