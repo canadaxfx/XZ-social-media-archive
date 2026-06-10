@@ -9,16 +9,16 @@
             "冲",
             "背影"
         ],
-        "category": "screenshot",
         "groupName": "202012",
-        "source": "oasis",
         "photoText": "X玖少年团肖战DAYTOY\n#2020我想对你说这是今年的最\n后一条了,新的一年加油冲呀!2020/12\n31\nThursday\nThursday\n在绿洲,遇见美好遇见你",
         "postText": "#2020我想对你说这是今年的最 后一条了,新的一年加油冲呀!",
         "englishTags": [
             "back view",
             "oasis",
             "new year wishes"
-        ]
+        ],
+        "platform": "oasis",
+        "type": "screenshot"
     },
     {
         "id": 80,
@@ -31,13 +31,13 @@
             "背影"
         ],
         "groupName": "202012",
-        "category": "attached",
-        "source": "oasis",
         "photoText": "",
         "englishTags": [
             "back view",
             "oasis app"
-        ]
+        ],
+        "platform": "oasis",
+        "type": "attached"
     },
     {
         "id": 74,
@@ -49,9 +49,7 @@
             "日常",
             "设计"
         ],
-        "category": "screenshot",
         "groupName": "202012",
-        "source": "oasis",
         "photoText": "X玖少年团肖战 DAYTOY\nSOUL\n伤脑筋哦...\n活在当下...\n不减了,吃面包去\n发布于2020/12/29 19:35\n在绿洲,遇见美好遇见你",
         "postText": "伤脑筋哦...\n活在当下...\n不减了,吃面包去",
         "englishTags": [
@@ -60,7 +58,9 @@
             "selfie"
         ],
         "link": "",
-        "note": ""
+        "note": "",
+        "platform": "oasis",
+        "type": "screenshot"
     },
     {
         "id": 75,
@@ -72,14 +72,14 @@
             "设计"
         ],
         "groupName": "202012",
-        "category": "screenshot",
-        "source": "oasis",
         "photoText": "",
         "englishTags": [
             "oasis"
         ],
         "link": "",
-        "note": ""
+        "note": "",
+        "platform": "oasis",
+        "type": "screenshot"
     },
     {
         "id": 76,
@@ -93,8 +93,6 @@
         "link": "",
         "groupName": "202012",
         "note": "",
-        "category": "attached",
-        "source": "oasis",
         "photoText": "SOUL",
         "postText": "伤脑筋哦...\n活在当下...\n不减了,吃面包去",
         "englishTags": [
@@ -102,7 +100,9 @@
             "bread",
             "casual",
             "selfie"
-        ]
+        ],
+        "platform": "oasis",
+        "type": "attached"
     },
     {
         "id": 77,
@@ -118,15 +118,15 @@
         "link": "",
         "groupName": "202012",
         "note": "",
-        "category": "attached",
-        "source": "oasis",
         "photoText": "伤脑筋哦...",
         "postText": "伤脑筋哦...\n活在当下...\n不减了,吃面包去",
         "englishTags": [
             "cat",
             "meme",
             "oasis"
-        ]
+        ],
+        "platform": "oasis",
+        "type": "attached"
     },
     {
         "id": 78,
@@ -137,9 +137,7 @@
         "tags": [
             "#我的漫画身份 准备迎接2021✌🏻"
         ],
-        "category": "attached",
         "groupName": "202012",
-        "source": "douyin",
         "link": "https://www.douyin.com/video/6911696929831308552",
         "photoText": "",
         "postText": "#我的漫画身份 准备迎接2021✌🏻",
@@ -147,7 +145,9 @@
         "englishTags": [
             "douyin",
             "comic identity"
-        ]
+        ],
+        "platform": "douyin",
+        "type": "attached"
     },
     {
         "id": 72,
@@ -158,15 +158,15 @@
         "tags": [
             "雪"
         ],
-        "category": "screenshot",
         "groupName": "202012",
-        "source": "oasis",
         "photoText": "X玖少年团肖战DAYTOY\n?\n雪?!\n发布于2019/12/16 17:06\n在绿洲,遇见美好遇见你",
         "postText": "? 雪?!",
         "englishTags": [
             "snow",
             "oasis"
-        ]
+        ],
+        "platform": "oasis",
+        "type": "screenshot"
     },
     {
         "id": 73,
@@ -182,15 +182,15 @@
         "link": "",
         "groupName": "202012",
         "note": "",
-        "category": "attached",
-        "source": "oasis",
         "photoText": "?",
         "postText": "? 雪?!",
         "englishTags": [
             "cat",
             "meme",
             "oasis"
-        ]
+        ],
+        "platform": "oasis",
+        "type": "attached"
     },
     {
         "id": 69,
@@ -203,9 +203,7 @@
             "顾一野",
             "杀青"
         ],
-        "category": "screenshot",
         "groupName": "202012",
-        "source": "oasis",
         "photoText": "X玖少年团肖战DAYTOY\n122天,\n挣扎过、迷茫过,无数次的剖析过。\n自信、勇敢、坚强、执拗...不用去执着完\n美,无论如何他们都是你,却也不足以概括\n你。\n最远和最近的距离都是你,\n陪伴着、鞭策着、指引着我昂首向前!\n“山回路转不见君,雪上空留马行处。”\n回见!\n小别离\n发布于2020/12/14 20:44\n在绿洲,遇见美好遇见你",
         "postText": "122天, 挣扎过、迷茫过,无数次的剖析过。 自信、勇敢、坚强、执拗...不用去执着完美,无论如何他们都是你,却也不足以概括你。 最远和最近的距离都是你, 陪伴着、鞭策着、指引着我昂首向前! “山回路转不见君,雪上空留马行处。” 回见! 小别离",
         "englishTags": [
@@ -213,7 +211,9 @@
             "gu yiye",
             "farewell post",
             "ace troops"
-        ]
+        ],
+        "platform": "oasis",
+        "type": "screenshot"
     },
     {
         "id": 70,
@@ -227,13 +227,13 @@
         "link": "",
         "groupName": "202012",
         "note": "",
-        "category": "attached",
-        "source": "oasis",
         "photoText": "",
         "englishTags": [
             "oasis",
             "photoshoot"
-        ]
+        ],
+        "platform": "oasis",
+        "type": "attached"
     },
     {
         "id": 71,
@@ -249,15 +249,15 @@
         "link": "",
         "groupName": "202012",
         "note": "",
-        "category": "screenshot",
-        "source": "oasis",
         "photoText": "122天,\n挣扎过、迷茫过,无数次的剖析过。\n自信、勇敢、坚强、执拗...不用去执着完\n美,无论如何他们都是你,却也不足以概括\n你。\n最远和最近的距离都是你,\n陪伴着、鞭策着、指引着我昂首向前!\n“山回路转不见君,雪上空留马行处。”\n回见!",
         "postText": "122天, 挣扎过、迷茫过,无数次的剖析过。 自信、勇敢、坚强、执拗...不用去执着完美,无论如何他们都是你,却也不足以概括你。 最远和最近的距离都是你, 陪伴着、鞭策着、指引着我昂首向前! “山回路转不见君,雪上空留马行处。” 回见! 小别离",
         "englishTags": [
             "oasis",
             "gu yiye",
             "farewell post"
-        ]
+        ],
+        "platform": "oasis",
+        "type": "screenshot"
     },
     {
         "id": 68,
@@ -268,16 +268,16 @@
         "tags": [
             "失败的尝试"
         ],
-        "category": "attached",
         "groupName": "202012",
-        "source": "douyin",
         "link": "https://www.douyin.com/video/6903503953825205517",
         "photoText": "",
         "postText": "失败的尝试",
         "duration": 14,
         "englishTags": [
             "douyin"
-        ]
+        ],
+        "platform": "douyin",
+        "type": "attached"
     },
     {
         "id": 65,
@@ -288,15 +288,15 @@
         "tags": [
             "run"
         ],
-        "category": "screenshot",
-        "source": "oasis",
         "groupName": "202012",
         "photoText": "X玖少年团肖战DAYTOY\n嘿嘿嘿嘿嘿\nrunrunrun!!!\n发布于2020/12/06 10:21\n在绿洲,遇见美好遇见你",
         "postText": "嘿嘿嘿嘿嘿\nrunrunrun!!!",
         "englishTags": [
             "oasis",
             "run"
-        ]
+        ],
+        "platform": "oasis",
+        "type": "screenshot"
     },
     {
         "id": 66,
@@ -312,15 +312,15 @@
         "link": "",
         "groupName": "202012",
         "note": "",
-        "category": "attached",
-        "source": "oasis",
         "photoText": "嘿嘿嘿嘿嘿",
         "postText": "嘿嘿嘿嘿嘿\nrunrunrun!!!",
         "englishTags": [
             "oasis",
             "meme",
             "dog"
-        ]
+        ],
+        "platform": "oasis",
+        "type": "attached"
     },
     {
         "id": 67,
@@ -332,13 +332,13 @@
             "run"
         ],
         "groupName": "202012",
-        "category": "attached",
-        "source": "oasis",
         "photoText": "",
         "englishTags": [
             "oasis",
             "run"
-        ]
+        ],
+        "platform": "oasis",
+        "type": "attached"
     },
     {
         "id": 64,
@@ -349,9 +349,7 @@
         "tags": [
             "游戏结束的有点快"
         ],
-        "category": "attached",
         "groupName": "202011",
-        "source": "douyin",
         "link": "https://www.douyin.com/video/6897919305422228736",
         "photoText": "",
         "postText": "游戏结束的有点快",
@@ -359,7 +357,9 @@
         "englishTags": [
             "douyin",
             "gaming"
-        ]
+        ],
+        "platform": "douyin",
+        "type": "attached"
     },
     {
         "id": 62,
@@ -372,8 +372,6 @@
             "疾冲",
             "海报"
         ],
-        "category": "screenshot",
-        "source": "weibo",
         "groupName": "202011",
         "link": "",
         "note": "",
@@ -383,7 +381,9 @@
             "wolf",
             "ji chong",
             "poster"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 63,
@@ -397,8 +397,6 @@
             "海报"
         ],
         "groupName": "202011",
-        "category": "attached",
-        "source": "weibo",
         "link": "",
         "note": "",
         "photoText": "狼\nThe\nWolf\n【疾冲】肖战饰\n腾讯视频Y 爱奇艺 YOUKU >\n出品人/曹华益吕超总制作人总导演/陈玉珊编剧/吴志伟 黄纪柔陈健豪孟芝陈芃雯导演/王为曹华美术指导/韩忠造型指望陈同勋\n出品公司@义玖少年团肖战DAYTΟΥ",
@@ -407,7 +405,9 @@
             "wolf",
             "ji chong",
             "poster"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 59,
@@ -418,8 +418,6 @@
         "tags": [
             "搬砖结束😳"
         ],
-        "category": "attached",
-        "source": "douyin",
         "link": "https://www.douyin.com/video/6884642440259669248",
         "groupName": "202010",
         "photoText": "",
@@ -427,7 +425,9 @@
         "duration": 15,
         "englishTags": [
             "douyin"
-        ]
+        ],
+        "platform": "douyin",
+        "type": "attached"
     },
     {
         "id": 60,
@@ -440,16 +440,16 @@
             "健身",
             "自拍"
         ],
-        "category": "screenshot",
         "groupName": "202010",
-        "source": "oasis",
         "photoText": "X玖少年团肖战DAYTOY\n努力搬砖!\n发布于2020/10/17 05:45\n在绿洲,遇见美好遇见你",
         "postText": "努力搬砖!",
         "englishTags": [
             "oasis",
             "selfie",
             "workout"
-        ]
+        ],
+        "platform": "oasis",
+        "type": "screenshot"
     },
     {
         "id": 61,
@@ -463,14 +463,14 @@
             "自拍"
         ],
         "groupName": "202010",
-        "category": "attached",
-        "source": "oasis",
         "photoText": "",
         "englishTags": [
             "oasis",
             "selfie",
             "workout"
-        ]
+        ],
+        "platform": "oasis",
+        "type": "attached"
     },
     {
         "id": 58,
@@ -481,16 +481,16 @@
         "tags": [
             "hello啊😬"
         ],
-        "category": "attached",
         "groupName": "202009",
-        "source": "douyin",
         "link": "https://www.douyin.com/video/6877330104121330944",
         "photoText": "",
         "postText": "hello啊😬",
         "duration": 12,
         "englishTags": [
             "douyin"
-        ]
+        ],
+        "platform": "douyin",
+        "type": "attached"
     },
     {
         "id": 56,
@@ -502,16 +502,16 @@
             "顾魏",
             "怪不好意思的"
         ],
-        "category": "screenshot",
         "groupName": "202009",
-        "source": "oasis",
         "photoText": "X玖少年团肖战DAYTOY\n怪不好意思的\n害!谁还不会整点儿土味情话啊!\n发布于2020/09/22 03:10\n在绿洲,遇见美好遇见你",
         "postText": "怪不好意思的\n害!谁还不会整点儿土味情话啊!",
         "englishTags": [
             "gu wei",
             "oasis",
             "awkward"
-        ]
+        ],
+        "platform": "oasis",
+        "type": "screenshot"
     },
     {
         "id": 57,
@@ -524,15 +524,15 @@
             "怪不好意思的"
         ],
         "groupName": "202009",
-        "category": "attached",
-        "source": "oasis",
         "photoText": "怪不好意思的",
         "postText": "怪不好意思的\n害!谁还不会整点儿土味情话啊!",
         "englishTags": [
             "gu wei",
             "oasis",
             "awkward"
-        ]
+        ],
+        "platform": "oasis",
+        "type": "attached"
     },
     {
         "id": 54,
@@ -543,8 +543,6 @@
         "tags": [
             "坚果"
         ],
-        "category": "screenshot",
-        "source": "oasis",
         "groupName": "202009",
         "photoText": "X玖少年团肖战DAYTOY\n営\n发布于2020/09/09 19:34\n在绿洲,分享美好生活",
         "postText": "在绿洲,分享美好生活",
@@ -552,7 +550,9 @@
             "oasis",
             "pet",
             "cat"
-        ]
+        ],
+        "platform": "oasis",
+        "type": "screenshot"
     },
     {
         "id": 55,
@@ -564,14 +564,14 @@
             "坚果"
         ],
         "groupName": "202009",
-        "category": "attached",
-        "source": "oasis",
         "photoText": "",
         "englishTags": [
             "nuts",
             "oasis",
             "pet"
-        ]
+        ],
+        "platform": "oasis",
+        "type": "attached"
     },
     {
         "id": 51,
@@ -584,9 +584,7 @@
             "粽子",
             "画"
         ],
-        "category": "screenshot",
         "groupName": "202006",
-        "source": "oasis",
         "photoText": "X玖少年团肖战DAYTOY\n端午安康\n安康,顺遂!#粽子绘画大赛\n发布于2020/06/25 06:09\n在绿洲,遇见美好遇见你",
         "postText": "端午安康安康,顺遂!#粽子绘画大赛",
         "englishTags": [
@@ -594,7 +592,9 @@
             "zongzi",
             "drawing",
             "oasis"
-        ]
+        ],
+        "platform": "oasis",
+        "type": "screenshot"
     },
     {
         "id": 52,
@@ -609,14 +609,14 @@
         "link": "",
         "groupName": "202006",
         "note": "",
-        "category": "attached",
-        "source": "oasis",
         "photoText": "",
         "englishTags": [
             "dragon boat festival",
             "zongzi",
             "oasis"
-        ]
+        ],
+        "platform": "oasis",
+        "type": "attached"
     },
     {
         "id": 53,
@@ -630,8 +630,6 @@
             "画"
         ],
         "groupName": "202006",
-        "category": "attached",
-        "source": "oasis",
         "photoText": "端午安康",
         "postText": "端午安康安康,顺遂!#粽子绘画大赛",
         "englishTags": [
@@ -639,7 +637,9 @@
             "zongzi",
             "drawing",
             "oasis"
-        ]
+        ],
+        "platform": "oasis",
+        "type": "attached"
     },
     {
         "id": 48,
@@ -652,9 +652,7 @@
             "画",
             "填色"
         ],
-        "category": "screenshot",
         "groupName": "202006",
-        "source": "oasis",
         "photoText": "X玖少年团肖战DAYTOY\n加油\n加油\n不聚集、不扎堆;戴口罩、勤洗手;好习惯、要\n坚持。#为肖战的手绘加油填色\n发布于2020/06/18 03:29\n在绿洲,遇见美好遇见你",
         "postText": "加油 加油 不聚集、不扎堆;戴口罩、勤洗手;好习惯、要坚持。#为肖战的手绘加油填色",
         "englishTags": [
@@ -662,7 +660,9 @@
             "drawing",
             "coloring",
             "public welfare"
-        ]
+        ],
+        "platform": "oasis",
+        "type": "screenshot"
     },
     {
         "id": 49,
@@ -676,14 +676,14 @@
             "填色"
         ],
         "groupName": "202006",
-        "category": "attached",
-        "source": "oasis",
         "photoText": "",
         "englishTags": [
             "oasis",
             "drawing",
             "coloring"
-        ]
+        ],
+        "platform": "oasis",
+        "type": "attached"
     },
     {
         "id": 50,
@@ -697,14 +697,14 @@
             "填色"
         ],
         "groupName": "202006",
-        "category": "attached",
-        "source": "oasis",
         "photoText": "",
         "englishTags": [
             "oasis",
             "drawing",
             "coloring"
-        ]
+        ],
+        "platform": "oasis",
+        "type": "attached"
     },
     {
         "id": 47,
@@ -715,8 +715,6 @@
         "tags": [
             "新的！🍊🍋🍯🧊🌸🌱"
         ],
-        "category": "attached",
-        "source": "douyin",
         "link": "https://www.douyin.com/video/6837709423113293064",
         "groupName": "202006",
         "note": "",
@@ -727,7 +725,9 @@
             "douyin",
             "fruit",
             "flowers"
-        ]
+        ],
+        "platform": "douyin",
+        "type": "attached"
     },
     {
         "id": 42,
@@ -738,16 +738,16 @@
         "tags": [
             "蓝天白云"
         ],
-        "category": "screenshot",
         "groupName": "202006",
-        "source": "oasis",
         "photoText": "X玖少年团肖战DAYTOY\n看看蓝天白云...头发都这么长了\n发布于2020/06/12 01:45\n在绿洲,遇见美好遇见你",
         "postText": "看看蓝天白云...头发都这么长了",
         "englishTags": [
             "oasis",
             "blue sky",
             "long hair"
-        ]
+        ],
+        "platform": "oasis",
+        "type": "screenshot"
     },
     {
         "id": 43,
@@ -762,14 +762,14 @@
         "link": "",
         "groupName": "202006",
         "note": "",
-        "category": "attached",
-        "source": "oasis",
         "photoText": "",
         "englishTags": [
             "oasis",
             "photography",
             "blue sky"
-        ]
+        ],
+        "platform": "oasis",
+        "type": "attached"
     },
     {
         "id": 44,
@@ -783,13 +783,13 @@
         "link": "",
         "groupName": "202006",
         "note": "",
-        "category": "attached",
-        "source": "oasis",
         "photoText": "",
         "englishTags": [
             "selfie",
             "oasis app"
-        ]
+        ],
+        "platform": "oasis",
+        "type": "attached"
     },
     {
         "id": 45,
@@ -803,13 +803,13 @@
         "link": "",
         "groupName": "202006",
         "note": "",
-        "category": "attached",
-        "source": "oasis",
         "photoText": "",
         "englishTags": [
             "photoshoot",
             "oasis"
-        ]
+        ],
+        "platform": "oasis",
+        "type": "attached"
     },
     {
         "id": 46,
@@ -823,13 +823,13 @@
         "link": "",
         "groupName": "202006",
         "note": "",
-        "category": "attached",
-        "source": "oasis",
         "photoText": "",
         "englishTags": [
             "photoshoot",
             "oasis"
-        ]
+        ],
+        "platform": "oasis",
+        "type": "attached"
     },
     {
         "id": 39,
@@ -840,16 +840,16 @@
         "tags": [
             "蓝天白云"
         ],
-        "category": "screenshot",
         "groupName": "202006",
-        "source": "oasis",
         "photoText": "X玖少年团肖战DAYTOY\n蓝天白云,你看到了啥?\n发布于2020/06/05 01:28\n在绿洲,遇见美好遇见你",
         "postText": "蓝天白云,你看到了啥?",
         "englishTags": [
             "oasis",
             "blue sky",
             "clouds"
-        ]
+        ],
+        "platform": "oasis",
+        "type": "screenshot"
     },
     {
         "id": 40,
@@ -861,14 +861,14 @@
             "蓝天白云"
         ],
         "groupName": "202006",
-        "category": "attached",
-        "source": "oasis",
         "photoText": "",
         "englishTags": [
             "oasis",
             "blue sky",
             "white clouds"
-        ]
+        ],
+        "platform": "oasis",
+        "type": "attached"
     },
     {
         "id": 41,
@@ -884,8 +884,6 @@
         "link": "",
         "groupName": "202006",
         "note": "",
-        "category": "attached",
-        "source": "oasis",
         "photoText": "",
         "englishTags": [
             "oasis",
@@ -893,7 +891,9 @@
             "drawing",
             "blue sky",
             "white clouds"
-        ]
+        ],
+        "platform": "oasis",
+        "type": "attached"
     },
     {
         "id": 37,
@@ -905,8 +905,6 @@
             "母亲节",
             "画"
         ],
-        "category": "screenshot",
-        "source": "oasis",
         "groupName": "202005",
         "photoText": "X玖少年团肖战DAYTOY\nMother's\nDay\n一生所唤,一世陪伴。\n妈妈,母亲节快乐!\n发布于2020/05/09 22:05\nZ.\n在绿洲,遇见美好遇见你",
         "postText": "一生所唤,一世陪伴。妈妈,母亲节快乐!",
@@ -914,7 +912,9 @@
             "mother's day",
             "drawing",
             "oasis"
-        ]
+        ],
+        "platform": "oasis",
+        "type": "screenshot"
     },
     {
         "id": 38,
@@ -927,15 +927,15 @@
             "画"
         ],
         "groupName": "202005",
-        "category": "attached",
-        "source": "oasis",
         "photoText": "Mother's\nDay.",
         "postText": "一生所唤,一世陪伴。妈妈,母亲节快乐!",
         "englishTags": [
             "mother's day",
             "drawing",
             "oasis"
-        ]
+        ],
+        "platform": "oasis",
+        "type": "attached"
     },
     {
         "id": 35,
@@ -946,15 +946,15 @@
         "tags": [
             "画"
         ],
-        "category": "screenshot",
-        "source": "oasis",
         "groupName": "202004",
         "photoText": "X玖少年团肖战DAYTOY\n发布于2020/04/20 20:24\n在绿洲,分享美好生活",
         "postText": "在绿洲,分享美好生活",
         "englishTags": [
             "oasis",
             "drawing"
-        ]
+        ],
+        "platform": "oasis",
+        "type": "screenshot"
     },
     {
         "id": 36,
@@ -966,13 +966,13 @@
             "画"
         ],
         "groupName": "202004",
-        "category": "attached",
-        "source": "oasis",
         "photoText": "",
         "englishTags": [
             "painting",
             "oasis"
-        ]
+        ],
+        "platform": "oasis",
+        "type": "attached"
     },
     {
         "id": 33,
@@ -984,15 +984,15 @@
             "红梅赞",
             "画"
         ],
-        "category": "screenshot",
         "groupName": "202004",
-        "source": "oasis",
         "photoText": "X玖少年团肖战DAYTOY\n发布于2020/04/09 23:06\n在绿洲,遇见美好遇见你",
         "englishTags": [
             "red plum praise",
             "painting",
             "oasis"
-        ]
+        ],
+        "platform": "oasis",
+        "type": "screenshot"
     },
     {
         "id": 34,
@@ -1005,14 +1005,14 @@
             "画"
         ],
         "groupName": "202004",
-        "category": "attached",
-        "source": "oasis",
         "photoText": "",
         "englishTags": [
             "red plum praise",
             "painting",
             "oasis"
-        ]
+        ],
+        "platform": "oasis",
+        "type": "attached"
     },
     {
         "id": 30,
@@ -1024,16 +1024,16 @@
             "自我抬头",
             "蜘蛛侠"
         ],
-        "category": "screenshot",
         "groupName": "202002",
-        "source": "oasis",
         "photoText": "X玖少年团肖战DAYTOY\n自我抬头!\n发布于2020/02/24 04:08\n在绿洲,遇见美好遇见你",
         "postText": "自我抬头!",
         "englishTags": [
             "oasis",
             "spiderman",
             "selfie"
-        ]
+        ],
+        "platform": "oasis",
+        "type": "screenshot"
     },
     {
         "id": 31,
@@ -1046,14 +1046,14 @@
             "蜘蛛侠"
         ],
         "groupName": "202002",
-        "category": "attached",
-        "source": "oasis",
         "photoText": "",
         "englishTags": [
             "oasis",
             "spiderman",
             "selfie"
-        ]
+        ],
+        "platform": "oasis",
+        "type": "attached"
     },
     {
         "id": 32,
@@ -1066,14 +1066,14 @@
             "蜘蛛侠"
         ],
         "groupName": "202002",
-        "category": "attached",
-        "source": "oasis",
         "photoText": "",
         "englishTags": [
             "oasis",
             "spiderman",
             "selfie"
-        ]
+        ],
+        "platform": "oasis",
+        "type": "attached"
     },
     {
         "id": 28,
@@ -1086,9 +1086,7 @@
             "画",
             "sprinting"
         ],
-        "category": "screenshot",
         "groupName": "202002",
-        "source": "oasis",
         "photoText": "X玖少年团肖战DAYTOY\na message...\nSprinting...\n发布于2020/02/14 09:48\n在绿洲,遇见美好遇见你",
         "postText": "Sprinting...",
         "englishTags": [
@@ -1096,7 +1094,9 @@
             "oasis",
             "valentines day",
             "drawing"
-        ]
+        ],
+        "platform": "oasis",
+        "type": "screenshot"
     },
     {
         "id": 29,
@@ -1110,15 +1110,15 @@
             "sprinting"
         ],
         "groupName": "202002",
-        "category": "attached",
-        "source": "oasis",
         "photoText": "a message...",
         "postText": "Sprinting...",
         "englishTags": [
             "valentines day",
             "painting",
             "sprinting"
-        ]
+        ],
+        "platform": "oasis",
+        "type": "attached"
     },
     {
         "id": 26,
@@ -1130,15 +1130,15 @@
             "元宵",
             "画"
         ],
-        "category": "screenshot",
         "groupName": "202002",
-        "source": "oasis",
         "photoText": "X玖少年团肖战DAYTOY\nyuăn\n元\nxião\n元宵\n元宵喜乐\n岁岁平安\n发布于2020/02/08 07:28\n在绿洲,遇见美好遇见你",
         "postText": "yuăn 元 xião 元宵 元宵喜乐 岁岁平安",
         "englishTags": [
             "oasis",
             "lantern festival"
-        ]
+        ],
+        "platform": "oasis",
+        "type": "screenshot"
     },
     {
         "id": 27,
@@ -1151,14 +1151,14 @@
             "画"
         ],
         "groupName": "202002",
-        "category": "attached",
-        "source": "oasis",
         "photoText": "yuán\n元宵\nxī 喜乐\nxiāo\nlè\n元宵",
         "postText": "yuăn 元 xião 元宵 元宵喜乐 岁岁平安",
         "englishTags": [
             "oasis",
             "lantern festival"
-        ]
+        ],
+        "platform": "oasis",
+        "type": "attached"
     },
     {
         "id": 24,
@@ -1171,8 +1171,6 @@
             "画",
             "抗疫"
         ],
-        "category": "screenshot",
-        "source": "oasis",
         "groupName": "202002",
         "photoText": "X玖少年团肖战DAYTOY\n中国加油\n希望就在前方!\n会好的!一定会!\n#抗疫行动 #手写加油接力\n发布于2020/02/05 10:42\n在绿洲,遇见美好遇见你",
         "postText": "中国加油 希望就在前方! 会好的!一定会! #抗疫行动 #手写加油接力",
@@ -1181,7 +1179,9 @@
             "calligraphy",
             "covid-19",
             "charity"
-        ]
+        ],
+        "platform": "oasis",
+        "type": "screenshot"
     },
     {
         "id": 25,
@@ -1195,8 +1195,6 @@
             "抗疫"
         ],
         "groupName": "202002",
-        "category": "attached",
-        "source": "oasis",
         "photoText": "中国加油❤",
         "postText": "中国加油 希望就在前方! 会好的!一定会! #抗疫行动 #手写加油接力",
         "englishTags": [
@@ -1204,7 +1202,9 @@
             "calligraphy",
             "covid-19",
             "charity"
-        ]
+        ],
+        "platform": "oasis",
+        "type": "attached"
     },
     {
         "id": 22,
@@ -1217,7 +1217,6 @@
             "Cartier",
             "商务"
         ],
-        "category": "screenshot",
         "groupName": "202001",
         "photoText": "热门\nA. 肖战\n1-17 09:21 来自 OPPO Reno3 Pro 5G\n大展\n红图\n#LetsCartier#充满无限可能的未来,待我去描绘!坚\n定自我,不忘初心。与@卡地亚一起无畏前行,做更\n真实的自己!\nCartier 卡地亚\n+关注\n#卡地亚在天猫# #LetsCartier#敢于探索,坚定前行,肆\n意抒发灵感的青年演员@X玖少年团肖战DAYTOY 腕间全\n新 JUSTE UN CLOU手镯与画笔默契共振,以坚定笔触描\n绘无限可能。卡地亚 JUSTE UN CLOU系列全新手镯,天\n猫独家全球首发。2月10日,卡地亚#天猫超级品牌日#\n点击网页链接,开启天猫礼遇臻享之旅!卡地亚\nCartier 的秒拍视频\n秒拍\n3550万次观看\n0:09",
         "postText": "大展 红图 #LetsCartier#充满无限可能的未来,待我去描绘!坚定自我,不忘初心。与@卡地亚一起无畏前行,做更真实的自己!",
@@ -1225,7 +1224,8 @@
             "cartier",
             "photoshoot"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 23,
@@ -1239,14 +1239,14 @@
             "商务"
         ],
         "groupName": "202001",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "",
         "duration": 17,
         "englishTags": [
             "cartier",
             "commercial"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 20,
@@ -1257,15 +1257,15 @@
         "tags": [
             "花"
         ],
-        "category": "screenshot",
         "groupName": "202001",
-        "source": "oasis",
         "photoText": "X玖少年团肖战DAYTOY\n发布于2020/01/16 01:47\n在绿洲,遇见美好遇见你",
         "postText": "在绿洲,遇见美好遇见你",
         "englishTags": [
             "oasis",
             "flower"
-        ]
+        ],
+        "platform": "oasis",
+        "type": "screenshot"
     },
     {
         "id": 21,
@@ -1277,13 +1277,13 @@
             "花"
         ],
         "groupName": "202001",
-        "category": "attached",
-        "source": "oasis",
         "photoText": "",
         "englishTags": [
             "flower",
             "oasis"
-        ]
+        ],
+        "platform": "oasis",
+        "type": "attached"
     },
     {
         "id": 15,
@@ -1294,9 +1294,7 @@
         "tags": [
             "GUCCI"
         ],
-        "category": "screenshot",
         "groupName": "202001",
-        "source": "oasis",
         "link": "",
         "note": "",
         "photoText": "X玖少年团肖战DAYTOY\nGucci\n晚安\n发布于2020/01/12 01:16\n在绿洲,遇见美好遇见你\n2019微博之夜\n微博によ",
@@ -1305,7 +1303,9 @@
             "gucci",
             "weibo night",
             "oasis"
-        ]
+        ],
+        "platform": "oasis",
+        "type": "screenshot"
     },
     {
         "id": 16,
@@ -1319,15 +1319,15 @@
         "link": "",
         "groupName": "202001",
         "note": "",
-        "category": "attached",
-        "source": "oasis",
         "photoText": "Gucci",
         "postText": "Gucci 晚安 2019微博之夜",
         "englishTags": [
             "gucci",
             "weibo night",
             "oasis"
-        ]
+        ],
+        "platform": "oasis",
+        "type": "attached"
     },
     {
         "id": 17,
@@ -1341,15 +1341,15 @@
         "link": "",
         "groupName": "202001",
         "note": "",
-        "category": "attached",
-        "source": "oasis",
         "photoText": "2019微博之夜\n微博king",
         "postText": "Gucci 晚安 2019微博之夜",
         "englishTags": [
             "gucci",
             "weibo night",
             "oasis"
-        ]
+        ],
+        "platform": "oasis",
+        "type": "attached"
     },
     {
         "id": 18,
@@ -1362,9 +1362,7 @@
             "恼人的秋天",
             "那英"
         ],
-        "category": "screenshot",
         "groupName": "202001",
-        "source": "oasis",
         "photoText": "X玖少年团肖战DAYTOY\nDance!\n发布于2020/01/12 11:51\n在绿洲,遇见美好遇见你",
         "postText": "Gucci 晚安 2019微博之夜",
         "englishTags": [
@@ -1373,7 +1371,9 @@
             "oasis",
             "gucci",
             "weibo night"
-        ]
+        ],
+        "platform": "oasis",
+        "type": "screenshot"
     },
     {
         "id": 19,
@@ -1387,15 +1387,15 @@
             "那英"
         ],
         "groupName": "202001",
-        "category": "attached",
-        "source": "oasis",
         "photoText": "",
         "englishTags": [
             "our song",
             "na ying",
             "oasis",
             "stage performance"
-        ]
+        ],
+        "platform": "oasis",
+        "type": "attached"
     },
     {
         "id": 10,
@@ -1407,16 +1407,16 @@
             "坚果",
             "探班"
         ],
-        "category": "screenshot",
         "groupName": "202001",
-        "source": "oasis",
         "photoText": "X玖少年团肖战DAYTOY\n●探班!\n发布于2020/01/04 03:35\n在绿洲,遇见美好遇见你",
         "postText": "●探班!",
         "englishTags": [
             "oasis",
             "cat",
             "behind the scenes"
-        ]
+        ],
+        "platform": "oasis",
+        "type": "screenshot"
     },
     {
         "id": 11,
@@ -1429,15 +1429,15 @@
             "探班"
         ],
         "groupName": "202001",
-        "category": "attached",
-        "source": "oasis",
         "photoText": "",
         "englishTags": [
             "oasis",
             "cat",
             "pet",
             "nuts"
-        ]
+        ],
+        "platform": "oasis",
+        "type": "attached"
     },
     {
         "id": 12,
@@ -1450,15 +1450,15 @@
             "探班"
         ],
         "groupName": "202001",
-        "category": "attached",
-        "source": "oasis",
         "photoText": "",
         "englishTags": [
             "oasis",
             "cat",
             "pet",
             "nuts"
-        ]
+        ],
+        "platform": "oasis",
+        "type": "attached"
     },
     {
         "id": 13,
@@ -1471,15 +1471,15 @@
             "探班"
         ],
         "groupName": "202001",
-        "category": "attached",
-        "source": "oasis",
         "photoText": "23\n10",
         "postText": "●探班!",
         "englishTags": [
             "oasis",
             "cat",
             "behind the scenes"
-        ]
+        ],
+        "platform": "oasis",
+        "type": "attached"
     },
     {
         "id": 14,
@@ -1492,15 +1492,15 @@
             "探班"
         ],
         "groupName": "202001",
-        "category": "attached",
-        "source": "oasis",
         "photoText": "",
         "englishTags": [
             "oasis",
             "cat",
             "pet",
             "nuts"
-        ]
+        ],
+        "platform": "oasis",
+        "type": "attached"
     },
     {
         "id": 6,
@@ -1511,15 +1511,15 @@
         "tags": [
             "麦粒肿"
         ],
-        "category": "screenshot",
-        "source": "oasis",
         "groupName": "202001",
         "photoText": "X玖少年团肖战DAYTOY\n我\n生活\n2020的第一颗麦粒肿,比以往的时候来的更早一些!\n发布于2020/01/02 05:19\n在绿洲,遇见美好遇见你",
         "postText": "2020的第一颗麦粒肿,比以往的时候来的更早一些!",
         "englishTags": [
             "oasis",
             "eye stye"
-        ]
+        ],
+        "platform": "oasis",
+        "type": "screenshot"
     },
     {
         "id": 7,
@@ -1534,8 +1534,6 @@
         "link": "",
         "groupName": "202001",
         "note": "",
-        "category": "attached",
-        "source": "oasis",
         "photoText": "我\n生活",
         "postText": "2020的第一颗麦粒肿,比以往的时候来的更早一些!",
         "englishTags": [
@@ -1543,7 +1541,9 @@
             "meme",
             "casual",
             "selfie"
-        ]
+        ],
+        "platform": "oasis",
+        "type": "attached"
     },
     {
         "id": 8,
@@ -1554,15 +1554,15 @@
         "tags": [
             "不能再吃了"
         ],
-        "category": "screenshot",
         "groupName": "202001",
-        "source": "oasis",
         "photoText": "X玖少年团肖战DAYTOY\n日常反应迟钝\n快停下!不能再吃了!\n发布于2020/01/02 23:29\n在绿洲,遇见美好遇见你",
         "postText": "2020的第一颗麦粒肿,比以往的时候来的更早一些!",
         "englishTags": [
             "oasis",
             "post"
-        ]
+        ],
+        "platform": "oasis",
+        "type": "screenshot"
     },
     {
         "id": 9,
@@ -1577,15 +1577,15 @@
         "link": "",
         "groupName": "202001",
         "note": "",
-        "category": "attached",
-        "source": "oasis",
         "photoText": "日常反应迟钝",
         "postText": "2020的第一颗麦粒肿,比以往的时候来的更早一些!",
         "englishTags": [
             "oasis",
             "meme",
             "daily life"
-        ]
+        ],
+        "platform": "oasis",
+        "type": "attached"
     },
     {
         "id": 1,
@@ -1597,7 +1597,6 @@
             "神奇",
             "冲"
         ],
-        "category": "screenshot",
         "groupName": "202001",
         "photoText": "X玖少年团肖战DAYTOY\n1-1 01:19 来自 OPPO Reno3 Pro 5G\n神奇的2019!\n新年快乐!2020冲!\n@X玖少年团肖战DAYTOY\n@X玖少年团肖战DAYTOY\n@X玖少年团合战DAYTOY",
         "postText": "神奇的2019!\n新年快乐!2020冲!",
@@ -1605,7 +1604,8 @@
             "new year",
             "weibo update"
         ],
-        "source": "weibo"
+        "platform": "weibo",
+        "type": "screenshot"
     },
     {
         "id": 2,
@@ -1622,8 +1622,6 @@
         "link": "",
         "groupName": "202001",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "神奇的2019!\n新年快乐!2020冲!",
         "englishTags": [
@@ -1631,7 +1629,9 @@
             "new year gala",
             "oriental",
             "magic"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 3,
@@ -1648,8 +1648,6 @@
         "link": "",
         "groupName": "202001",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "神奇的2019!\n新年快乐!2020冲!",
         "englishTags": [
@@ -1657,7 +1655,9 @@
             "new year gala",
             "oriental",
             "magic"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 4,
@@ -1672,15 +1672,15 @@
         "link": "",
         "groupName": "202001",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "神奇的2019!\n新年快乐!2020冲!",
         "englishTags": [
             "weibo",
             "new year",
             "back view"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     },
     {
         "id": 5,
@@ -1697,8 +1697,6 @@
         "link": "",
         "groupName": "202001",
         "note": "",
-        "category": "attached",
-        "source": "weibo",
         "photoText": "@X玖少年团肖战DAYTOY",
         "postText": "神奇的2019!\n新年快乐!2020冲!",
         "englishTags": [
@@ -1706,6 +1704,8 @@
             "new year gala",
             "oriental",
             "magical"
-        ]
+        ],
+        "platform": "weibo",
+        "type": "attached"
     }
 ]
