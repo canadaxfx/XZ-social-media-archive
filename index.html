@@ -1982,8 +1982,8 @@
 // CONSTANTS & STATE         ~2020  activeData[], currentTab, currentSourceFilter,
 //                                  currentMediaFilter, expandedYears,
 //                                  yearPaginationSettings, DL_KEY
-//                                  NOTE: Archive uses source string (weibo/oasis/ins/douyin)
-//                                  + category field (screenshot/attached) per entry
+//                                  NOTE: Archive uses platform string (weibo/oasis/ins/douyin)
+//                                  + type field (screenshot/attached) per entry
 //
 // DATA LOADING              ~2048  loadAllData() — fetches {year}.json files (2015–2026)
 //
@@ -2147,9 +2147,9 @@
           if (item.date && item.date.length >= 4) {
             item.year = item.date.substring(0, 4);
           }
-          // NEW: Default source to 'weibo' if missing
-          if (!item.source) {
-            item.source = "weibo";
+          // NEW: Default platform to 'weibo' if missing
+          if (!item.platform) {
+            item.platform = "weibo";
           }
         });
 
@@ -2192,11 +2192,11 @@
         // 1. Filter by Category first
         if (tabName === "screenshot") {
           categoryData = allData.filter(
-            (item) => item.category === "screenshot",
+            (item) => item.type === "screenshot",
           );
         } else if (tabName === "attached") {
           categoryData = allData.filter(
-            (item) => item.category === "attached" || !item.category,
+            (item) => item.type === "attached" || !item.type,
           );
         } else {
           // "all" - include both screenshot and attached
@@ -2232,7 +2232,7 @@
           activeData = [...categoryData];
         } else {
           activeData = categoryData.filter(
-            (item) => item.source === currentSourceFilter,
+            (item) => item.platform === currentSourceFilter,
           );
         }
 
@@ -2329,7 +2329,7 @@
         // Filter against categoryData with all filters applied at once
         let filtered = categoryData.filter((item) => {
           // 1. Check Source
-          if (sourceVal !== "all" && item.source !== sourceVal) return false;
+          if (sourceVal !== "all" && item.platform !== sourceVal) return false;
 
           // 2. Check Year
           if (yVal !== "all" && item.year !== yVal) return false;
@@ -2565,7 +2565,7 @@
             const motionExt = isClipMp4 ? 'MP4' : (isMotion ? (item.url.match(/\.(\w+)$/i) || [])[1]?.toUpperCase() : '');
             const motionBadge = (isMotion || isClipMp4) ? '<span class="motion-badge">' + motionExt + '</span>' : '';
 
-            const { cssClass, thumbLabel } = getSourceMeta(item.source);
+            const { cssClass, thumbLabel } = getSourceMeta(item.platform);
             const durBadge = ((isVideoEntry(item) || isClipMp4) && item.duration)
               ? `<div class="dur-badge">${fmtDuration(item.duration)}</div>`
               : '';
@@ -2862,7 +2862,7 @@
         dateEl.textContent = photo.date;
 
         const badgeEl = document.getElementById("modalSourceBadge");
-        const { cssClass, badgeLabel } = getSourceMeta(photo.source);
+        const { cssClass, badgeLabel } = getSourceMeta(photo.platform);
         badgeEl.className = "source-badge";
         badgeEl.classList.add(cssClass);
         badgeEl.innerHTML = badgeLabel;
