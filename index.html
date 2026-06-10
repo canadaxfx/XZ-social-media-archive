@@ -197,7 +197,7 @@
                color:rgba(255,255,255,.82); transition:color .2s; line-height:1; }
       #mgBtn:hover, #mgBtn.mg-on { color:rgba(255,255,255,.95); }
       #mgDivider { width:1px; height:14px; background:rgba(255,255,255,.2); display:inline-block; margin:0 2px; }
-      #styleLabel { font-size:10px; color:rgba(255,255,255,.75); letter-spacing:.06em; white-space:nowrap; pointer-events:none; user-select:none; }
+      #styleLabel { font-size:10px; line-height:1; color:rgba(255,255,255,.75); letter-spacing:.06em; white-space:nowrap; pointer-events:none; user-select:none; }
       #mgPanel { display:none; position:fixed; top:34px; right:8px; z-index:8999;
                  background:linear-gradient(135deg, var(--bg-base), var(--bg-base-2));
                  border:1px solid rgba(var(--gold-rgb),.35);
@@ -356,7 +356,7 @@
             }
 
             .nav-segmented {
-              display: inline-flex;
+              display: flex;
               justify-content: center;
               gap: 4px;
               margin: 0 auto;
@@ -365,10 +365,13 @@
               border-radius: 12px;
               padding: 4px;
               backdrop-filter: none;
+              width: 100%;
+              max-width: 1000px;
             }
             .nav-segmented-wrap { display: flex; justify-content: center; margin-bottom: 10px; }
 
             .nav-segmented .segment-btn {
+              flex: 1;
               padding: 8px 18px !important;
               border: none !important;
               background: transparent !important;
@@ -380,6 +383,7 @@
               border-radius: 9px;
               white-space: nowrap;
               line-height: 1.2;
+              text-align: center;
               font-family: inherit;
             }
 
@@ -398,19 +402,11 @@
             }
 
             .nav-segmented .segment-btn span {
-              display: block;
-              font-size: 11px;
-              font-weight: 500;
-              margin-top: 2px;
-              color: #94a3b8;
-            }
-
-            .nav-segmented .segment-btn:hover span {
-              color: #2c5f8a;
-            }
-
-            .nav-segmented .segment-btn.active span {
-              color: rgba(255, 255, 255, 0.85);
+              display: inline;
+              font-size: inherit;
+              font-weight: inherit;
+              margin-left: 6px;
+              color: inherit;
             }
 
       /* --- DATE FILTER STYLES --- */
@@ -439,17 +435,7 @@
         border-color: rgba(var(--gold-dr), 0.7);
       }
 
-      .filter-hint {
-        position: absolute;
-        left: 50%;
-        top: 0%;
-        transform: translateX(-50%);
-        font-size: 11px;
-        color: rgba(0, 0, 0, 0.4);
-        pointer-events: none;
-        white-space: nowrap;
-        z-index: 0;
-      }
+
 
       .date-select-wrapper select {
         position: relative;
@@ -463,6 +449,8 @@
         cursor: pointer;
         outline: none;
         border-radius: 20px;
+        text-align: center;
+        text-align-last: center;
       }
 
       .date-select-wrapper select option {
@@ -506,10 +494,10 @@
 
       /* Mobile Adjustment */
       @media (max-width: 480px) {
-        .date-select-wrapper select {
-          padding: 8px 4px;
-          font-size: 12px;
-        }
+        .date-filter-container { flex-wrap: nowrap; gap: 2px; padding: 0 5px; }
+        .date-select-wrapper { padding: 0; gap: 0; flex: 1; min-width: 0; display: flex; justify-content: space-between; }
+        .date-select-wrapper select { font-size: 12px; padding: 6px 0; letter-spacing: -0.5px; flex: 1; background: transparent; }
+        .reset-date-btn { width: 24px; height: 24px; font-size: 12px; flex-shrink: 0; margin-left: 2px; padding: 0; }
       }
 
 
@@ -530,7 +518,7 @@
             /* Search */
             .search-bar {
               width: 100%;
-              max-width: 500px;
+              max-width: 1000px;
               padding: 13px 16px 13px 44px;
               border: 1px solid var(--border);
               background-color: var(--surface-m);
@@ -547,6 +535,25 @@
             }
             .search-bar::placeholder { color: #94a3b8; }
             .search-bar:hover { border-color: #cbd5e1; background-color: #fff; }
+            #clearSearchBtn {
+              margin: 0 auto 15px;
+              background: linear-gradient(45deg, #6c757d, #495057);
+              color: white;
+              max-width: 1000px;
+              width: 100%;
+              padding: 10px 15px;
+              border: none;
+              border-radius: 25px;
+              cursor: pointer;
+              font-size: 13px;
+              font-weight: 600;
+              transition: all 0.3s ease;
+              display: block;
+            }
+            #clearSearchBtn:hover {
+              background: linear-gradient(45deg, #5a6268, #343a40);
+              transform: translateY(-2px);
+            }
 
             /* Media Filter Tabs (for Attached Media) */
             .media-filter-tabs {
@@ -590,37 +597,24 @@
 
             /* Stats Grid */
             .stats-grid {
-              display: flex;
+              display: grid;
+              grid-template-columns: repeat(auto-fit, minmax(50px, 100px));
               justify-content: center;
-              gap: 15px;
-              flex-wrap: wrap;
-              max-width: 740px;
+              gap: 10px;
+              max-width: 600px;
               margin: 0 auto 15px;
             }
-
             .stat-card {
               background: linear-gradient(135deg, var(--bg-mid) 0%, var(--bg-dark) 100%);
               color: white;
-              padding: 10px 12px;
+              padding: 8px 8px;
               border-radius: 15px;
               text-align: center;
               border: 1px solid rgba(var(--gold-rgb), 0.25);
               box-shadow: 0 4px 16px rgba(var(--shad-rgb), 0.35), inset 0 1px 0 rgba(var(--gold-rgb), 0.12);
-              min-width: 110px;
-              flex: 1;
-              max-width: 200px;
             }
-            .stat-number {
-              font-size: 0.9rem;
-              font-weight: bold;
-              margin-bottom: 0px;
-              color: rgba(255, 255, 255, 0.95);
-            }
-            .stat-label {
-              font-size: 9px;
-              color: rgba(var(--gold-rgb), 0.75);
-              font-weight: 500;
-            }
+            .stat-number { font-size: 0.85rem; font-weight: bold; margin-bottom: 0px; color: rgba(255, 255, 255, 0.95); font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-feature-settings: normal; }
+            .stat-label { font-size: 8px; color: rgba(var(--gold-rgb), 0.75); font-weight: 500; white-space: nowrap; }
 
             /* Timeline Styles */
             .timeline-container {
@@ -1311,9 +1305,9 @@
 
             /* Mobile Responsiveness */
       @media (max-width: 768px) {
-        .container { padding: 15px; }
+        .container { padding: 15px; padding-top: 20px; }
         .year-photos-grid { grid-template-columns: repeat(3, 1fr); gap: 8px; }
-        .stats-grid { grid-template-columns: repeat(3, 1fr); gap: 8px; }
+        .stats-grid { grid-template-columns: repeat(3, 1fr); gap: 8px; max-width: 100%; }
 
         .modal { padding: 5px; align-items: flex-start; padding-top: 5px; }
         .modal-content { max-width: 95vw; max-height: 98vh; margin-top: 0; }
@@ -1325,7 +1319,7 @@
 
         .nav-segmented { width: 100%; justify-content: center; }
         .nav-segmented .segment-btn { padding: 10px 14px; font-size: 12px; }
-        .nav-segmented .segment-btn span { font-size: 10px; }
+        .nav-segmented .segment-btn span { display: block; font-size: 10px; margin-left: 0; margin-top: 2px; }
 
         .media-filter-tabs { gap: 2px; padding: 3px; }
         .media-tab { font-size: 11px; padding: 4px 10px; }
@@ -1498,37 +1492,17 @@
             <div class="stat-number" id="yearsSpanDisplay">0</div>
             <div class="stat-label">Years</div>
           </div>
+          <div class="stat-card">
+            <div class="stat-number" id="expandedYearsDisplay">0</div>
+            <div class="stat-label">Years Expanded</div>
+          </div>
         </div>
-
-        <div class="nav-segmented-wrap"><nav class="nav-segmented">
-          <button
-            class="segment-btn active"
-            data-section="all"
-            onclick="switchTab('all')"
-          >
-            All<span>全部</span>
-          </button>
-          <button
-            class="segment-btn"
-            data-section="screenshot"
-            onclick="switchTab('screenshot')"
-          >
-            Screenshots<span>截图</span>
-          </button>
-          <button
-            class="segment-btn"
-            data-section="attached"
-            onclick="switchTab('attached')"
-          >
-            Attached Media<span>配图&视频</span>
-          </button>
-        </nav></div>
 
         <div class="date-filter-container">
           <div class="date-select-wrapper">
-            <span class="filter-hint">按平台和日期选择</span>
+
             <select id="filterSource" onchange="applyDateFilter()">
-              <option value="all">Source</option>
+              <option value="all">Platform</option>
               <option value="weibo">Weibo 微博</option>
               <option value="oasis">Oasis 绿洲</option>
               <option value="douyin">Douyin 抖音</option>
@@ -1567,7 +1541,33 @@
           >
             Clear / 重选
           </button>
+          <button id="expandAllBtn" onclick="toggleExpandAll()" title="Expand / Collapse all years"
+            style="background:none;border:none;cursor:pointer;font-size:12px;color:var(--gold);opacity:0.75;padding:2px 4px;white-space:nowrap">▼ All</button>
         </div>
+
+        <div class="nav-segmented-wrap"><nav class="nav-segmented">
+          <button
+            class="segment-btn active"
+            data-section="all"
+            onclick="switchTab('all')"
+          >
+            All<span>全部</span>
+          </button>
+          <button
+            class="segment-btn"
+            data-section="screenshot"
+            onclick="switchTab('screenshot')"
+          >
+            Screenshots<span>截图</span>
+          </button>
+          <button
+            class="segment-btn"
+            data-section="attached"
+            onclick="switchTab('attached')"
+          >
+            Attached Media<span>配图&视频</span>
+          </button>
+        </nav></div>
 
         <div class="media-filter-tabs hidden" id="mediaFilterTabs">
           <button class="media-tab active" data-media="all" onclick="setMediaFilter('all')">All 全部</button>
@@ -1582,10 +1582,9 @@
           id="searchInput"
         />
         <button
-          class="btn primary hidden"
           id="clearSearchBtn"
+          class="hidden"
           onclick="clearSearch()"
-          style="display: block; margin: 0 auto 20px; max-width: 400px"
         >
           Clear Search / 返回
         </button>
@@ -1972,56 +1971,56 @@
 // (search: /* ---------- SECTION ---------- */ to jump to each)
 //
 // HELPERS (top of script, before state)
-//   Source Meta             ~1950  getSourceMeta(source) — returns CSS class,
-//                                  badge label for weibo/oasis/ins/douyin
-//   URL / Media Helpers     ~1959  isYouTubeUrl, isRealVideo, isVideoEntry,
-//                                  isClip, isMotionUrl, isPlayableVideo,
-//                                  fmtDuration, getYouTubeId
-//                                  dlIsLocked/Unlocked (NAS download lock)
+//   Source Meta             getSourceMeta(source) — returns CSS class,
+//                           badge label for weibo/oasis/ins/douyin
+//   URL / Media Helpers     isYouTubeUrl, isRealVideo, isVideoEntry,
+//                           isClip, isMotionUrl, isPlayableVideo,
+//                           fmtDuration, getYouTubeId
+//                           dlIsLocked/Unlocked (NAS download lock)
 //
-// CONSTANTS & STATE         ~2020  activeData[], currentTab, currentSourceFilter,
-//                                  currentMediaFilter, expandedYears,
-//                                  yearPaginationSettings, DL_KEY
-//                                  NOTE: Archive uses platform string (weibo/oasis/ins/douyin)
-//                                  + type field (screenshot/attached) per entry
+// CONSTANTS & STATE         activeData[], currentTab, currentSourceFilter,
+//                           currentMediaFilter, expandedYears,
+//                           yearPaginationSettings, DL_KEY
+//                           NOTE: Archive uses platform string (weibo/oasis/ins/douyin)
+//                           + type field (screenshot/attached) per entry
 //
-// DATA LOADING              ~2048  loadAllData() — fetches {year}.json files (2015–2026)
+// DATA LOADING              loadAllData() — fetches {year}.json files (2015–2026)
 //
-// TAB / FILTER              ~2096  switchTab, setMediaFilter, applyFilters,
-//                                  setupDateFilters, applyDateFilter, resetDateFilter
+// TAB / FILTER              switchTab, setMediaFilter, applyFilters,
+//                           setupDateFilters, applyDateFilter
 //
-// TIMELINE                  ~2365  renderTimeline, toggleYear, renderYearContent,
-//                                  changePerPage, goToPage, createPaginationHTML
+// TIMELINE                  renderTimeline, toggleYear,
+//                           changePerPage, goToPage, createPaginationHTML
 //
-// UTILS                     ~2540  getThumbUrl, updateStats
+// UTILS                     getThumbUrl, updateStats
 //
-// LAZY LOADING              ~2558  setupIntersectionObserver, observeImages
+// LAZY LOADING              setupIntersectionObserver, observeImages
 //
-// SEARCH                    ~2579  setupSearch, clearSearch
+// SEARCH                    setupSearch, clearSearch
 //
-// MODAL                     ~2700  openModal, updateModalView, navigatePhoto,
-//                                  jumpToPhoto, togglePostText, closeModal,
-//                                  generateThumbnails, updateNavigationButtons,
-//                                  handleKeyNav
-//                                  Platform popup: setPlatformBtnBehavior,
-//                                  showPlatformPopover ~2644
+// MODAL                     setPlatformBtnBehavior, showPlatformPopover,
+//                           openModal, updateModalView, navigatePhoto,
+//                           jumpToPhoto, togglePostText, closeModal,
+//                           generateThumbnails, updateNavigationButtons,
+//                           handleKeyNav
 //
-// PLAYLIST                  ~2947  plLoad/Save, plCardAdd, plSyncAllCards,
-//                                  plRender, plRemove, plTogglePanel,
-//                                  plPlayItem, addAllFilteredVideos,
-//                                  addYearToPlaylist
-//                                  PL_KEY = 'xzArchivePlaylist'
-//                                  NOTE: Archive uses item._uid (not photo.id)
+// PLAYLIST                  plLoad/Save, plCardAdd, plSyncAllCards,
+//                           plRender, plRemove, plTogglePanel,
+//                           plPlayItem, addAllFilteredVideos,
+//                           addYearToPlaylist
+//                           PL_KEY = 'xzArchivePlaylist'
+//                           NOTE: Archive uses item._uid (not photo.id)
 //
-// FLOAT GROUP               ~3119  setupFloatGroup, plPositionPanel
+// FLOAT GROUP               setupFloatGroup, plPositionPanel
 //
-// VIDEO CONTROLS            ~3206  vcSetup, vcFmt, vcTogglePlay, vcToggleMute,
-//                                  vcFullscreen, vcUpdateSeek
+// VIDEO CONTROLS            vcSetup, vcFmt, vcTogglePlay, vcToggleMute,
+//                           vcFullscreen, vcUpdateSeek
 //
-// THEME & MAGNOLIA          ~3274  applyTheme, mgCombined, mgBuildTiles, mgApply
+// THEME & MAGNOLIA          applyTheme, mgCombined, mgBuildTiles, mgApply
 //
 // ============================================================
 
+      /* ---------- Source Meta Helpers ---------- */
       // --- SOURCE META HELPER ---
       function getSourceMeta(source) {
         switch (source) {
@@ -2032,6 +2031,7 @@
         }
       }
 
+      /* ---------- URL / Media Helpers ---------- */
       function isYouTubeUrl(url) { return /youtube\.com\/watch|youtu\.be\//.test(url); }
 
       // --- Download Lock ---
@@ -2090,6 +2090,7 @@
         return m + ':' + String(s).padStart(2, '0');
       }
 
+      /* ---------- Constants & State ---------- */
       // --- VARIABLES ---
       let allData = [];
       let categoryData = [];
@@ -2120,6 +2121,7 @@
         plLoad();
       });
 
+      /* ---------- Data Loading ---------- */
       // --- DATA LOADING & TABS ---
       async function loadAllData() {
         // Files array remains the same
@@ -2169,6 +2171,7 @@
         switchTab("all");
       }
 
+      /* ---------- Tab / Filter Functions ---------- */
       function switchTab(tabName) {
         currentTab = tabName;
 
@@ -2438,6 +2441,7 @@
         return html;
       }
 
+      /* ---------- Timeline Functions ---------- */
       function renderTimeline(dataToRender = activeData) {
         const container = document.getElementById("timelineContainer");
         if (dataToRender.length === 0) {
@@ -2613,6 +2617,7 @@
           .getElementById(`grid-${year}`)
           .scrollIntoView({ behavior: "smooth", block: "start" });
       }
+      /* ---------- Utils ---------- */
       function getThumbUrl(fullUrl) {
         if (isYouTubeUrl(fullUrl)) {
           const ytId = getYouTubeId(fullUrl);
@@ -2630,7 +2635,22 @@
         document.getElementById("yearsSpanDisplay").textContent = new Set(
           activeData.map((d) => d.year),
         ).size;
+        const expEl = document.getElementById("expandedYearsDisplay");
+        if (expEl) expEl.textContent = expandedYears.size;
       }
+      function toggleExpandAll() {
+        const allYears = [...document.querySelectorAll('[data-year]')].map(el => el.dataset.year);
+        const allExpanded = allYears.every(y => expandedYears.has(y));
+        const btn = document.getElementById('expandAllBtn');
+        if (allExpanded) {
+          allYears.forEach(y => { if (expandedYears.has(y)) toggleYear(y); });
+          if (btn) btn.textContent = '▼ All';
+        } else {
+          allYears.forEach(y => { if (!expandedYears.has(y)) toggleYear(y); });
+          if (btn) btn.textContent = '▲ All';
+        }
+      }
+      /* ---------- Lazy Loading ---------- */
       function setupIntersectionObserver() {
         imageObserver = new IntersectionObserver(
           (entries, obs) => {
@@ -2665,6 +2685,7 @@
         });
       }
 
+      /* ---------- Search Functions ---------- */
       function setupSearch() {
         const input = document.getElementById("searchInput");
         const clearBtn = document.getElementById("clearSearchBtn");
@@ -2741,6 +2762,7 @@
         }
         return pop;
       }
+      /* ---------- Modal Functions ---------- */
       function setPlatformBtnBehavior(btn, mainLink, extraLinks) {
         const existingPop = document.getElementById('platformPopover');
         if (existingPop) existingPop.style.display = 'none';
@@ -3358,6 +3380,7 @@
           if (seek && v) seek.value = v.currentTime;
       }
 
+      /* ---------- Theme & Magnolia ---------- */
       // ── Theme Switcher ──
       (function(){
         const KEY = 'xzTheme';
