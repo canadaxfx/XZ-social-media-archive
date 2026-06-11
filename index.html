@@ -1441,10 +1441,14 @@
 #vcPlBtn{background:var(--grad-gold);color:#fff;border:none;border-radius:50%;width:32px;height:32px;font-size:14px;cursor:pointer;flex-shrink:0;display:flex;align-items:center;justify-content:center;position:relative;transition:all .15s}
 #vcPlBtn:hover{transform:scale(1.1)}
 #vcPlBadge{position:absolute;top:-3px;right:-3px;background:#ef4444;color:#fff;border-radius:8px;font-size:9px;font-weight:700;padding:0 3px;min-width:14px;text-align:center;display:none;line-height:1.6}
-.vc-seek{flex:1;min-width:0;height:3px;accent-color:var(--gold);cursor:pointer;border-radius:2px}
+.vc-seek{flex:1;min-width:0;height:4px;cursor:pointer;border-radius:2px;-webkit-appearance:none;appearance:none;background:linear-gradient(to right,var(--gold) 0%,var(--gold) var(--seek-pct,0%),rgba(120,120,120,0.4) var(--seek-pct,0%),rgba(120,120,120,0.4) 100%)}
+.vc-seek::-webkit-slider-runnable-track{height:4px;border-radius:2px}
+.vc-seek::-webkit-slider-thumb{-webkit-appearance:none;width:13px;height:13px;border-radius:50%;background:var(--gold);cursor:pointer;margin-top:-4.5px;border:none}
+.vc-seek::-moz-range-track{height:4px;border-radius:2px;background:rgba(120,120,120,0.4)}
+.vc-seek::-moz-range-progress{height:4px;border-radius:2px;background:var(--gold)}
+.vc-seek::-moz-range-thumb{width:13px;height:13px;border-radius:50%;background:var(--gold);cursor:pointer;border:none}
 .vc-time{color:rgba(0,0,0,0.55);font-size:11px;white-space:nowrap;flex-shrink:0;font-variant-numeric:tabular-nums;font-weight:500}
 .vc-middle{flex:1;min-width:0;display:flex;flex-direction:column;gap:3px;justify-content:center}
-.vc-seek{flex:1;min-width:0;height:5px;accent-color:#fff;cursor:pointer;border-radius:3px}
 .vc-time{color:rgba(255,255,255,0.9);font-size:12px;white-space:nowrap;flex-shrink:0;font-variant-numeric:tabular-nums;font-weight:500}
 .vc-middle{flex:1;min-width:0;display:flex;flex-direction:column;gap:5px;justify-content:center}
 </style>
@@ -3322,6 +3326,11 @@
           return m + ':' + String(Math.floor(s % 60)).padStart(2, '0');
       }
 
+      function vcSeekPct(seek) {
+          const pct = (seek.max > 0) ? (parseFloat(seek.value) / parseFloat(seek.max) * 100).toFixed(1) + '%' : '0%';
+          seek.style.setProperty('--seek-pct', pct);
+      }
+
       function vcSetup(v) {
           const seek    = document.getElementById('vcSeek');
           const playBtn = document.getElementById('vcPlayBtn');
@@ -3331,6 +3340,7 @@
           if (!seek) return;
 
           seek.value = 0; seek._seeking = false;
+          vcSeekPct(seek);
           cur.textContent = '0:00'; dur.textContent = '0:00';
           playBtn.textContent = v.paused ? '▶' : '⏸';
           muteBtn.innerHTML = v.muted ? '<svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5L6 9H2v6h4l5 4V5z"/><line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/></svg>' : '<svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5L6 9H2v6h4l5 4V5z"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>';
@@ -3338,6 +3348,7 @@
           v.ontimeupdate = () => {
               if (!seek._seeking) {
                   seek.value = v.currentTime;
+                  vcSeekPct(seek);
                   cur.textContent = vcFmt(v.currentTime);
               }
           };
@@ -3354,7 +3365,7 @@
               }
           };
 
-          seek.oninput  = () => { seek._seeking = true; cur.textContent = vcFmt(parseFloat(seek.value)); };
+          seek.oninput  = () => { seek._seeking = true; vcSeekPct(seek); cur.textContent = vcFmt(parseFloat(seek.value)); };
           seek.onchange = () => { v.currentTime = parseFloat(seek.value); seek._seeking = false; };
       }
 
