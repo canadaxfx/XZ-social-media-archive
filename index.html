@@ -470,6 +470,16 @@
       #filterSource:hover {
         background-color: #e9ecef;
       }
+      .date-select-wrapper select{display:none}
+      .csel{position:relative;flex:1;min-width:0}
+      .csel-btn{width:100%;background:transparent;border:none;outline:none;font-size:13px;font-weight:600;color:#555;cursor:pointer;padding:5px 2px;display:flex;align-items:center;justify-content:center;gap:2px;white-space:nowrap;font-family:inherit}
+      .csel-btn .csel-arrow{font-size:9px;opacity:0.6;flex-shrink:0}
+      .csel-list{display:none;position:absolute;top:calc(100% + 4px);left:0;background:#fff;border-radius:10px;box-shadow:0 4px 20px rgba(0,0,0,0.18);z-index:9999;width:max-content;max-width:150px;max-height:240px;overflow-y:auto;border:1px solid var(--border)}
+      .csel:last-child .csel-list{left:auto;right:0}
+      .csel-list.open{display:block}
+      .csel-opt{padding:9px 14px;font-size:13px;cursor:pointer;color:#333;white-space:nowrap}
+      .csel-opt:hover{background:rgba(var(--gold-dr),0.1)}
+      .csel-opt.csel-sel{color:var(--gold);font-weight:700}
 
       .reset-date-btn {
         padding: 6px 12px;
@@ -493,10 +503,10 @@
       }
 
       /* Mobile Adjustment */
-      @media (max-width: 480px) {
+      @media (max-width: 600px) {
         .date-filter-container { flex-wrap: nowrap; gap: 2px; padding: 0 5px; }
         .date-select-wrapper { padding: 0; gap: 0; flex: 1; min-width: 0; display: flex; justify-content: space-between; }
-        .date-select-wrapper select { font-size: 12px; padding: 6px 0; letter-spacing: -0.5px; flex: 1; background: transparent; }
+        .date-select-wrapper select { font-size: 12px; padding: 6px 0; letter-spacing: -0.5px; flex: 1; min-width: 0; max-width: 80px; background: transparent; }
         .reset-date-btn { width: 24px; height: 24px; font-size: 12px; flex-shrink: 0; margin-left: 2px; padding: 0; }
       }
 
@@ -2169,6 +2179,7 @@
           opt.innerText = y;
           yearSelect.appendChild(opt);
         });
+        if (window.cselBuild) window.cselBuild('filterYear');
 
         switchTab("all");
       }
@@ -2289,6 +2300,53 @@
         renderTimeline(activeData);
       }
 
+      // custom filter dropdowns — replaces native <select> popups for mobile width control
+      (function(){
+        function build(id){
+          var sel=document.getElementById(id);if(!sel)return;
+          var old=document.getElementById('_cx_'+id);if(old)old.remove();
+          var cur=sel.value;
+          var w=document.createElement('div');w.className='csel';w.id='_cx_'+id;
+          var b=document.createElement('button');b.type='button';b.className='csel-btn';
+          var lbl=document.createElement('span');lbl.className='csel-lbl';
+          lbl.textContent=sel.options[sel.selectedIndex]?sel.options[sel.selectedIndex].text:sel.options[0].text;
+          var arr=document.createElement('span');arr.className='csel-arrow';arr.textContent='▾';
+          b.appendChild(lbl);b.appendChild(arr);
+          b.addEventListener('click',function(e){e.stopPropagation();cselToggle(id);});
+          var ul=document.createElement('div');ul.className='csel-list';ul.id='_cx_list_'+id;
+          Array.prototype.forEach.call(sel.options,function(o){
+            var li=document.createElement('div');
+            li.className='csel-opt'+(o.value===cur?' csel-sel':'');
+            li.textContent=o.text;li.dataset.v=o.value;
+            li.addEventListener('click',function(e){e.stopPropagation();cselPick(id,o.value,o.text);});
+            ul.appendChild(li);
+          });
+          w.appendChild(b);w.appendChild(ul);
+          sel.parentNode.insertBefore(w,sel);
+        }
+        function cselToggle(id){
+          var ul=document.getElementById('_cx_list_'+id);if(!ul)return;
+          var was=ul.classList.contains('open');cselCloseAll();if(!was)ul.classList.add('open');
+        }
+        function cselCloseAll(){document.querySelectorAll('.csel-list.open').forEach(function(l){l.classList.remove('open');});}
+        function cselPick(id,val,txt){
+          var sel=document.getElementById(id);if(sel)sel.value=val;
+          var lbl=document.querySelector('#_cx_'+id+' .csel-lbl');if(lbl)lbl.textContent=txt;
+          document.querySelectorAll('#_cx_list_'+id+' .csel-opt').forEach(function(o){o.classList.toggle('csel-sel',o.dataset.v===val);});
+          cselCloseAll();
+          if(typeof applyDateFilter==='function')applyDateFilter();
+        }
+        document.addEventListener('click',cselCloseAll);
+        window.cselBuild=build;
+        window.cselReset=function(id){
+          var sel=document.getElementById(id);if(!sel)return;
+          var lbl=document.querySelector('#_cx_'+id+' .csel-lbl');
+          if(lbl)lbl.textContent=sel.options[0]?sel.options[0].text:'All';
+          document.querySelectorAll('#_cx_list_'+id+' .csel-opt').forEach(function(o){o.classList.toggle('csel-sel',o.dataset.v==='all');});
+        };
+        document.addEventListener('DOMContentLoaded',function(){['filterSource','filterMonth'].forEach(build);});
+      })();
+
       function setupDateFilters() {
         // Populate Day Dropdown (1-31)
         const daySelect = document.getElementById("filterDay");
@@ -2299,6 +2357,7 @@
           opt.innerText = val;
           daySelect.appendChild(opt);
         }
+        if (window.cselBuild) window.cselBuild('filterDay');
       }
 
       function applyDateFilter() {
@@ -2389,7 +2448,7 @@
         elFilterDay.value = "all";
         document.getElementById("filterSource").value = "all";
         currentSourceFilter = "all";
-
+        ['filterSource','filterYear','filterMonth','filterDay'].forEach(function(id){if(window.cselReset)window.cselReset(id);});
         applyDateFilter(); // Re-runs filter, which resets to full list
       }
 
