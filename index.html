@@ -482,24 +482,24 @@
       .csel-opt.csel-sel{color:var(--gold);font-weight:700}
 
       .reset-date-btn {
-        padding: 6px 12px;
-        border-radius: 20px;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
         border: none;
-        background: #5E9FD8;
+        background: var(--grad-gold);
         color: white;
         cursor: pointer;
-        font-weight: 600;
-        font-size: 12px;
+        font-weight: bold;
         display: flex;
         align-items: center;
         justify-content: center;
-        transition: all 0.2s;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        transition: all 0.2s ease;
         white-space: nowrap;
       }
 
       .reset-date-btn:hover {
-        background: #4A8BC8;
-        transform: scale(1.05);
+        transform: scale(1.1);
       }
 
       /* Mobile Adjustment */
@@ -1401,7 +1401,7 @@
 .float-btn:hover{transform:scale(1.08);box-shadow:0 6px 24px rgba(0,0,0,0.22)}
 #plFloatBtn{background:var(--grad-gold);color:#fff;border-color:rgba(255,255,255,0.3);font-size:20px;width:68px;height:68px;overflow:visible}
 #plFloatBadge{position:absolute;top:-3px;right:-3px;background:#ef4444;color:#fff;border-radius:10px;font-size:10px;font-weight:700;padding:1px 5px;min-width:18px;text-align:center;display:none;line-height:1.6}
-#backToTopFloat{opacity:0.88;visibility:visible}
+#backToTopFloat{opacity:0.88;visibility:visible;font-size:18px;line-height:1}
 .float-top-text{font-size:9px;font-weight:700;line-height:1.1;margin-top:0;text-align:center}
 #backToTopFloat .float-top-text{color:var(--gold)}
 [data-theme="washi-garnet"] #backToTopFloat,[data-theme="washi-slate"] #backToTopFloat{color:rgba(255,255,255,0.92)}
