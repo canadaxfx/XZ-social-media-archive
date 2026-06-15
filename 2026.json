@@ -58,15 +58,14 @@
         ],
         "groupName": "202606",
         "link": "https://weibo.com/1792951112/R3BjKAVZM",
-        "type": "image",
+        "type": "screenshot",
         "platform": "weibo",
-        "note": "",
-        "description": "",
         "postText": "https://weibo.com/1792951112?ct=1781148605311\n明星动态：2026微博电影之夜\n微博网友年度瞩目影人",
         "englishTags": [
             "weibo movie night",
             "annual most anticipated actor"
-        ]
+        ],
+        "source": []
     },
     {
         "id": 83,
