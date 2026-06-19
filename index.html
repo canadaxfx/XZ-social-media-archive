@@ -2113,6 +2113,7 @@
       let currentMediaFilter = "all";
       let expandedYears = new Set();
       let paginationState = {};
+      let _rtCache = null;
       let imageObserver = null;
       let currentGroupPhotos = [];
       let currentPhotoIndex = 0;
@@ -2510,13 +2511,18 @@
           return;
         }
 
-        const grouped = dataToRender.reduce((acc, item) => {
-          if (!acc[item.year]) acc[item.year] = [];
-          acc[item.year].push(item);
-          return acc;
-        }, {});
-
-        const sortedYears = Object.keys(grouped).sort((a, b) => b - a);
+        let grouped, sortedYears;
+        if (_rtCache && _rtCache.dataRef === dataToRender) {
+          ({ grouped, sortedYears } = _rtCache);
+        } else {
+          grouped = dataToRender.reduce((acc, item) => {
+            if (!acc[item.year]) acc[item.year] = [];
+            acc[item.year].push(item);
+            return acc;
+          }, {});
+          sortedYears = Object.keys(grouped).sort((a, b) => b - a);
+          _rtCache = { dataRef: dataToRender, grouped, sortedYears };
+        }
 
         container.innerHTML = sortedYears
           .map((year) => {
@@ -2594,9 +2600,9 @@
           const uidsString = contentEl.dataset.photoUids;
           let itemsToRender = null;
           if (uidsString) {
-            const uids = uidsString.split(",").map((u) => parseInt(u, 10));
+            const uids = new Set(uidsString.split(",").map((u) => parseInt(u, 10)));
             itemsToRender = activeData.filter((item) =>
-              uids.includes(item._uid),
+              uids.has(item._uid),
             );
           }
           renderYearContent(year, itemsToRender);
@@ -2753,9 +2759,11 @@
         if (!input.value.trim()) {
           clearBtn.classList.add("hidden");
         }
+        let _searchTimer;
         input.addEventListener("input", (e) => {
           const term = e.target.value.toLowerCase().trim();
           if (!term) {
+            clearTimeout(_searchTimer);
             clearBtn.classList.add("hidden");
             currentRenderData = [...activeData];
             filteredVideosCache = activeData.filter(p => isVideoEntry(p));
@@ -2764,29 +2772,32 @@
             return;
           }
           clearBtn.classList.remove("hidden");
-          const filtered = activeData.filter(
-            (item) =>
-              (item.tags &&
-                Array.isArray(item.tags) &&
-                item.tags.some((t) => {
-                  const lowerTag = t.toLowerCase();
-                  const lowerTerm = term;
-                  return (
-                    lowerTag.includes(lowerTerm) || lowerTerm.includes(lowerTag)
-                  );
-                })) ||
-              item.date.includes(term) ||
-              (item.note && item.note.toLowerCase().includes(term)) ||
-              (item.photoText && item.photoText.toLowerCase().includes(term)) ||
-              (Array.isArray(item.englishTags) && item.englishTags.some(t => t.toLowerCase().includes(term))) ||
-              (item.postText && item.postText.toLowerCase().includes(term)),
-          );
+          clearTimeout(_searchTimer);
+          _searchTimer = setTimeout(() => {
+            const filtered = activeData.filter(
+              (item) =>
+                (item.tags &&
+                  Array.isArray(item.tags) &&
+                  item.tags.some((t) => {
+                    const lowerTag = t.toLowerCase();
+                    const lowerTerm = term;
+                    return (
+                      lowerTag.includes(lowerTerm) || lowerTerm.includes(lowerTag)
+                    );
+                  })) ||
+                item.date.includes(term) ||
+                (item.note && item.note.toLowerCase().includes(term)) ||
+                (item.photoText && item.photoText.toLowerCase().includes(term)) ||
+                (Array.isArray(item.englishTags) && item.englishTags.some(t => t.toLowerCase().includes(term))) ||
+                (item.postText && item.postText.toLowerCase().includes(term)),
+            );
 
-          currentRenderData = filtered;
-          filteredVideosCache = filtered.filter(p => isVideoEntry(p));
-          plUpdateAddAllBtn();
+            currentRenderData = filtered;
+            filteredVideosCache = filtered.filter(p => isVideoEntry(p));
+            plUpdateAddAllBtn();
 
-          renderTimeline(filtered);
+            renderTimeline(filtered);
+          }, 300);
         });
       }
 
