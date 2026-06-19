@@ -2104,6 +2104,7 @@
 
       /* ---------- Constants & State ---------- */
       // --- VARIABLES ---
+      const DATA_VER = '20260619-1'; // bump when pushing new JSON to GitHub
       let allData = [];
       let categoryData = [];
       let activeData = [];
@@ -2146,7 +2147,7 @@
 
         for (let f of files) {
           try {
-            const res = await fetch(`${f}.json?v=${Date.now()}`);
+            const res = await fetch(`${f}.json?v=${DATA_VER}`);
             if (res.ok) {
               const json = await res.json();
               if (Array.isArray(json)) combined.push(...json);
