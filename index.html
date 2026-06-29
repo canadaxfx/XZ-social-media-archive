@@ -1222,6 +1222,26 @@
               transform: translateY(-1px);
               background: rgba(255, 255, 255, 0.1);
             }
+      .hub-card { position:relative; display:inline-flex; flex-direction:column; padding:14px 22px; text-decoration:none; color:inherit; transition:opacity .2s,transform .15s; max-width:300px; cursor:pointer; }
+      .hub-card:hover { opacity:.9; transform:translateY(-3px); }
+      .hub-card:hover .hc-corner { border-color:rgba(var(--gold-rgb),.95); }
+      .hub-card:hover .hub-cta { color:rgba(var(--gold-rgb),.95); }
+      .hub-card:active { transform:scale(0.97); opacity:.75; }
+      .hub-card:active .hc-corner { border-color:rgba(var(--gold-rgb),.95); }
+      .hc-corner { position:absolute; width:13px; height:13px; border-color:rgba(var(--gold-rgb),.6); border-style:solid; transition:border-color .2s; }
+      .hc-tl { top:0; left:0; border-width:2px 0 0 2px; }
+      .hc-tr { top:0; right:0; border-width:2px 2px 0 0; }
+      .hc-bl { bottom:0; left:0; border-width:0 0 2px 2px; }
+      .hc-br { bottom:0; right:0; border-width:0 2px 2px 0; }
+      .hub-title { font-size:14px; font-weight:700; color:rgba(255,255,255,.95); margin-bottom:3px; }
+      [data-theme="washi-garnet"] .hub-title { color: #120C08; }
+      [data-theme="washi-slate"]  .hub-title { color: #0E1420; }
+      .hub-subtitle { color: rgba(var(--gold-rgb),.85); }
+      .hub-cta { color: rgba(var(--gold-rgb),.8); }
+      [data-theme="washi-garnet"] .hub-subtitle,
+      [data-theme="washi-garnet"] .hub-cta { color: rgba(18,12,8,0.9); }
+      [data-theme="washi-slate"] .hub-subtitle,
+      [data-theme="washi-slate"] .hub-cta { color: rgba(14,20,32,0.9); }
             #terms-content {
               background-color: rgba(255, 255, 255, 0.1);
               border-radius: 10px;
@@ -1686,7 +1706,7 @@
 
     <div id="reportModal" class="modal hidden">
       <div class="modal-content" style="max-width: 500px">
-        <button class="close-modal" onclick="closeReportModal()">
+        <button class="close-modal" onclick="closeReportModal()" style="position:absolute;top:12px;right:12px;">
           &times;
         </button>
         <div class="report-form-container" style="padding: 10px">
@@ -1926,19 +1946,13 @@
 
     <footer class="site-footer">
       <div class="footer-content">
-        <div style="margin-bottom: 10px; font-weight: 700">Explore more</div>
-        <a
-          class="footer-link"
-          href="https://canadaxfx.github.io/XZworks/"
-          target="_blank"
-          >Screen Arts of Xiao Zhan</a
-        >
-        <a
-          class="footer-link"
-          href="https://www.youtube.com/@CanadaXFX"
-          target="_blank"
-          >CanadaXFX YouTube Channel</a
-        >
+        <a class="hub-card" href="https://canadaxfx.github.io/xzhub/" target="_blank" rel="noopener">
+          <span class="hc-corner hc-tl"></span><span class="hc-corner hc-tr"></span>
+          <div class="hub-title">🌐 Xiao Zhan Universe ↗</div>
+          <div class="hub-subtitle" style="font-size:12px;margin-bottom:6px">肖战粉丝站 · 全站导航</div>
+          <div class="hub-cta" style="font-size:12px;line-height:1.6;transition:color .2s">Galleries · Video · Articles · Social Media<br>Explore all 8 fan sites →</div>
+          <span class="hc-corner hc-bl"></span><span class="hc-corner hc-br"></span>
+        </a>
       </div>
 
       <div
@@ -2104,7 +2118,7 @@
 
       /* ---------- Constants & State ---------- */
       // --- VARIABLES ---
-      const DATA_VER = '20260627-1'; // bump when pushing new JSON to GitHub
+      const DATA_VER = '20260628-1'; // bump when pushing new JSON to GitHub
       let allData = [];
       let categoryData = [];
       let activeData = [];
