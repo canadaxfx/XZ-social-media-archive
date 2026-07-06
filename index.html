@@ -2118,7 +2118,7 @@
 
       /* ---------- Constants & State ---------- */
       // --- VARIABLES ---
-      const DATA_VER = '20260704-1'; // bump when pushing new JSON to GitHub
+      const DATA_VER = '20260706-1'; // bump when pushing new JSON to GitHub
       let allData = [];
       let categoryData = [];
       let activeData = [];
@@ -2455,6 +2455,10 @@
         document.getElementById("searchInput").value = "";
         document.getElementById("clearSearchBtn").classList.add("hidden");
 
+        // Auto-expand when filter narrows to a single year
+        const filteredYears = [...new Set(filtered.map(d => d.year))];
+        if (filteredYears.length === 1) expandedYears.add(filteredYears[0]);
+
         renderTimeline(filtered);
       }
 
@@ -2750,20 +2754,25 @@
       }
       function observeImages() {
         const imgs = Array.from(document.querySelectorAll(".lazy-image[data-src]"));
+        // Set up IntersectionObserver immediately so it starts watching
         imgs.forEach((img) => {
           if (!img.src) imageObserver.observe(img);
         });
-        // IntersectionObserver fires asynchronously and can miss elements just made
-        // visible via display:none→block. Force-load images already in the viewport.
-        const vh = window.innerHeight;
-        imgs.forEach((img) => {
-          if (img.src) return;
-          const rect = img.getBoundingClientRect();
-          if (rect.width > 0 && rect.top < vh + 100 && rect.bottom > -100) {
-            img.src = img.dataset.src;
-            img.onload = () => img.classList.remove("loading-placeholder");
-            if (imageObserver) imageObserver.unobserve(img);
-          }
+        // Viewport force-load runs after requestAnimationFrame to ensure browser
+        // has computed layout — getBoundingClientRect() can return zero width when
+        // the DOM was just rebuilt (e.g. after renderTimeline), causing the IO to
+        // miss elements that are already visible.
+        requestAnimationFrame(() => {
+          const vh = window.innerHeight;
+          document.querySelectorAll(".lazy-image[data-src]").forEach((img) => {
+            if (img.src) return;
+            const rect = img.getBoundingClientRect();
+            if (rect.width > 0 && rect.top < vh + 100 && rect.bottom > -100) {
+              img.src = img.dataset.src;
+              img.onload = () => img.classList.remove("loading-placeholder");
+              if (imageObserver) imageObserver.unobserve(img);
+            }
+          });
         });
       }
 
