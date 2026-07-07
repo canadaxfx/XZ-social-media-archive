@@ -1357,17 +1357,21 @@
         "date": "2018-11-10",
         "month": "November",
         "year": "2018",
-        "tags": [],
-        "link": "",
+        "tags": [
+            "没有自拍"
+        ],
+        "link": "https://m.weibo.cn/s/video/index?object_id=1042151%3A4304915007497416&segment_id=4304915007497416",
         "groupName": "201811",
-        "note": "",
         "photoText": "",
         "duration": 6,
         "englishTags": [
             "weibo"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "source": [],
+        "hidden": "",
+        "postText": "来自 肖战 的微博故事"
     },
     {
         "id": 222,
@@ -2428,6 +2432,26 @@
         "type": "attached"
     },
     {
+        "id": 291,
+        "url": "https://assets.xz-studio-gallery.com/full/20180911_XZ-Weibo-1.mp4",
+        "date": "2018-09-11",
+        "month": "September",
+        "year": "2018",
+        "tags": [],
+        "groupName": "201809",
+        "duration": 13,
+        "link": "https://m.weibo.cn/s/video/index?object_id=1042151%3A4283002759379783&segment_id=4283002759379783",
+        "type": "attached",
+        "platform": "weibo",
+        "englishTags": [
+            "weibo",
+            "september"
+        ],
+        "source": [],
+        "hidden": "",
+        "postText": "来自 肖战 的微博故事"
+    },
+    {
         "id": 163,
         "url": "https://assets.xz-studio-gallery.com/full/20180909_WB_XZ.jpg",
         "date": "2018-09-09",
@@ -2701,7 +2725,11 @@
             "photoshoot"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "link": "https://m.weibo.cn/s/video/index?object_id=1042151%3A4280658806397256&segment_id=4280658806397256",
+        "source": [],
+        "hidden": "",
+        "postText": "你们都看到大辫子小林同学了吗？！"
     },
     {
         "id": 155,
@@ -2873,9 +2901,8 @@
         "month": "July",
         "year": "2018",
         "tags": [],
-        "link": "",
+        "link": "https://m.weibo.cn/s/video/index?object_id=1042151%3A4265322103138470&segment_id=4265322103138470",
         "groupName": "201807",
-        "note": "",
         "photoText": "",
         "duration": 6,
         "englishTags": [
@@ -2883,7 +2910,10 @@
             "july"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "source": [],
+        "hidden": "",
+        "postText": "我爱工作，希望工作也爱我QAQ"
     },
     {
         "id": 146,
@@ -3700,6 +3730,27 @@
         "type": "attached"
     },
     {
+        "id": 292,
+        "url": "https://assets.xz-studio-gallery.com/full/20180428_XZ-Weibo-1.mp4",
+        "date": "2018-04-28",
+        "month": "April",
+        "year": "2018",
+        "tags": [],
+        "groupName": "201804",
+        "duration": 15,
+        "link": "https://m.weibo.cn/s/video/index?object_id=1042151%3A23135424223885979878868&segment_id=4223885979878868",
+        "type": "attached",
+        "platform": "weibo",
+        "note": "",
+        "description": "",
+        "postText": "佛了佛了",
+        "englishTags": [
+            "weibo",
+            "2018",
+            "buddha"
+        ]
+    },
+    {
         "id": 102,
         "url": "https://assets.xz-studio-gallery.com/full/20180427_WB_XZ.jpg",
         "date": "2018-04-27",
@@ -4148,7 +4199,11 @@
             "dental surgery"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "link": "https://m.weibo.cn/s/video/index?object_id=1042151%3A23135424225382037315946&segment_id=4225382037315946",
+        "source": [],
+        "hidden": "",
+        "postText": "大清早的拔牙🦷"
     },
     {
         "id": 82,
