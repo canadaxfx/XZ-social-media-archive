@@ -2989,7 +2989,11 @@
             "vacation"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "link": "https://m.weibo.cn/s/video/index?object_id=1042151%3A4396204956568471&segment_id=4396204956568471",
+        "source": [],
+        "hidden": "",
+        "description": "一天假期，没看烟火😭溜了溜了"
     },
     {
         "id": 169,
@@ -5788,7 +5792,11 @@
             "pet"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "link": "https://m.weibo.cn/s/video/index?object_id=1042151%3A4336780846248970&segment_id=4336780846248970",
+        "source": [],
+        "hidden": "",
+        "postText": "嗯？？你这几个意思？？"
     },
     {
         "id": 34,
@@ -6060,7 +6068,11 @@
             "nuts"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "link": "https://m.weibo.cn/s/video/index?object_id=1042151%3A4335194094946382&segment_id=4335194094946382",
+        "source": [],
+        "hidden": "",
+        "postText": "看来你已经痊愈了！(￣ー￣)！"
     },
     {
         "id": 21,
@@ -6082,7 +6094,11 @@
             "nuts"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "link": "https://m.weibo.cn/s/video/index?object_id=1042151%3A4335005392909799&segment_id=4335005392909799",
+        "source": [],
+        "hidden": "",
+        "postText": "小宝贝生病了QAQ！！"
     },
     {
         "id": 20,
@@ -6142,7 +6158,11 @@
             "weibo update"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "link": "https://m.weibo.cn/s/video/index?object_id=1042151%3A4332015940492605&segment_id=4332015940492605",
+        "source": [],
+        "hidden": "",
+        "postText": "炸毛突然冒泡"
     },
     {
         "id": 17,
