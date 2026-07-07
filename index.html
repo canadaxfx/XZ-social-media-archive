@@ -2820,6 +2820,11 @@
             filteredVideosCache = filtered.filter(p => isVideoEntry(p));
             plUpdateAddAllBtn();
 
+            // Auto-expand all years with results, reset IO to clear stale state
+            new Set(filtered.map(p => p.year)).forEach(y => expandedYears.add(y));
+            if (imageObserver) imageObserver.disconnect();
+            setupIntersectionObserver();
+
             renderTimeline(filtered);
           }, 300);
         });
