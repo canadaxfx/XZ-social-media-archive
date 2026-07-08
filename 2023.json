@@ -19,7 +19,8 @@
             "music video"
         ],
         "platform": "weibo",
-        "type": "screenshot"
+        "type": "screenshot",
+        "size_mb": 0.53
     },
     {
         "id": 136,
@@ -41,7 +42,8 @@
             "filming start"
         ],
         "platform": "weibo",
-        "type": "screenshot"
+        "type": "screenshot",
+        "size_mb": 0.82
     },
     {
         "id": 137,
@@ -67,7 +69,8 @@
             "poster"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 2.37
     },
     {
         "id": 126,
@@ -87,7 +90,8 @@
             "photoshoot"
         ],
         "platform": "weibo",
-        "type": "screenshot"
+        "type": "screenshot",
+        "size_mb": 0.32
     },
     {
         "id": 127,
@@ -106,7 +110,8 @@
             "photoshoot"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 2.7
     },
     {
         "id": 128,
@@ -125,7 +130,8 @@
             "photoshoot"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 5.5
     },
     {
         "id": 129,
@@ -144,7 +150,8 @@
             "photoshoot"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 5.19
     },
     {
         "id": 130,
@@ -163,7 +170,8 @@
             "photoshoot"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 6.11
     },
     {
         "id": 131,
@@ -182,7 +190,8 @@
             "photoshoot"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 2.98
     },
     {
         "id": 132,
@@ -201,7 +210,8 @@
             "photoshoot"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 3.67
     },
     {
         "id": 133,
@@ -220,7 +230,8 @@
             "photoshoot"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 6.41
     },
     {
         "id": 134,
@@ -239,7 +250,8 @@
             "photoshoot"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 5.61
     },
     {
         "id": 135,
@@ -258,7 +270,8 @@
             "photoshoot"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 5.87
     },
     {
         "id": 124,
@@ -276,7 +289,8 @@
             "haircut"
         ],
         "platform": "weibo",
-        "type": "screenshot"
+        "type": "screenshot",
+        "size_mb": 0.69
     },
     {
         "id": 125,
@@ -294,7 +308,8 @@
             "haircut"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 6.27
     },
     {
         "id": 122,
@@ -314,7 +329,8 @@
             "snowman"
         ],
         "platform": "weibo",
-        "type": "screenshot"
+        "type": "screenshot",
+        "size_mb": 0.23
     },
     {
         "id": 123,
@@ -338,7 +354,8 @@
             "photography"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 0.14
     },
     {
         "id": 119,
@@ -360,7 +377,8 @@
         "link": "",
         "note": "",
         "platform": "weibo",
-        "type": "screenshot"
+        "type": "screenshot",
+        "size_mb": 0.21
     },
     {
         "id": 120,
@@ -382,7 +400,8 @@
             "selfie"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 1.68
     },
     {
         "id": 121,
@@ -405,7 +424,8 @@
             "live stream"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 5.2
     },
     {
         "id": 115,
@@ -426,7 +446,8 @@
         "link": "",
         "note": "",
         "platform": "weibo",
-        "type": "screenshot"
+        "type": "screenshot",
+        "size_mb": 0.1
     },
     {
         "id": 116,
@@ -445,7 +466,8 @@
             "photography"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 1.25
     },
     {
         "id": 117,
@@ -464,7 +486,8 @@
             "photography"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 0.33
     },
     {
         "id": 118,
@@ -484,7 +507,8 @@
             "douyin"
         ],
         "platform": "douyin",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 1.32
     },
     {
         "id": 114,
@@ -505,7 +529,8 @@
             "public service announcement"
         ],
         "platform": "weibo",
-        "type": "screenshot"
+        "type": "screenshot",
+        "size_mb": 0.32
     },
     {
         "id": 113,
@@ -527,7 +552,8 @@
             "astronauts"
         ],
         "platform": "weibo",
-        "type": "screenshot"
+        "type": "screenshot",
+        "size_mb": 0.97
     },
     {
         "id": 112,
@@ -549,7 +575,8 @@
             "filmmaker of the year"
         ],
         "platform": "weibo",
-        "type": "screenshot"
+        "type": "screenshot",
+        "size_mb": 0.19
     },
     {
         "id": 110,
@@ -571,7 +598,8 @@
             "cns"
         ],
         "platform": "weibo",
-        "type": "screenshot"
+        "type": "screenshot",
+        "size_mb": 0.39
     },
     {
         "id": 111,
@@ -594,7 +622,8 @@
             "music video"
         ],
         "platform": "douyin",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 47.91
     },
     {
         "id": 109,
@@ -618,7 +647,8 @@
         "platform": "douyin",
         "type": "attached",
         "source": [],
-        "hidden": ""
+        "hidden": "",
+        "size_mb": 6.08
     },
     {
         "id": 139,
@@ -640,7 +670,8 @@
         "englishTags": [
             "sunshine by my side",
             "fireworks"
-        ]
+        ],
+        "size_mb": 0.24
     },
     {
         "id": 108,
@@ -661,7 +692,8 @@
             "where dreams begin"
         ],
         "platform": "douyin",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 2.01
     },
     {
         "id": 105,
@@ -684,7 +716,8 @@
             "good luck"
         ],
         "platform": "weibo",
-        "type": "screenshot"
+        "type": "screenshot",
+        "size_mb": 0.24
     },
     {
         "id": 106,
@@ -712,7 +745,8 @@
             "gif"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 1.9
     },
     {
         "id": 107,
@@ -739,7 +773,8 @@
             "good luck"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 1.99
     },
     {
         "id": 102,
@@ -761,7 +796,8 @@
             "official announcement"
         ],
         "platform": "weibo",
-        "type": "screenshot"
+        "type": "screenshot",
+        "size_mb": 0.75
     },
     {
         "id": 103,
@@ -783,7 +819,8 @@
             "official announcement"
         ],
         "platform": "weibo",
-        "type": "screenshot"
+        "type": "screenshot",
+        "size_mb": 0.53
     },
     {
         "id": 104,
@@ -809,7 +846,8 @@
             "shichahai"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 0.29
     },
     {
         "id": 101,
@@ -830,7 +868,8 @@
             "spacecraft launch"
         ],
         "platform": "weibo",
-        "type": "screenshot"
+        "type": "screenshot",
+        "size_mb": 1.18
     },
     {
         "id": 100,
@@ -852,7 +891,8 @@
             "anniversary"
         ],
         "platform": "weibo",
-        "type": "screenshot"
+        "type": "screenshot",
+        "size_mb": 1.2
     },
     {
         "id": 99,
@@ -873,7 +913,8 @@
             "official announcement"
         ],
         "platform": "weibo",
-        "type": "screenshot"
+        "type": "screenshot",
+        "size_mb": 0.71
     },
     {
         "id": 94,
@@ -894,7 +935,8 @@
             "xi'an"
         ],
         "platform": "weibo",
-        "type": "screenshot"
+        "type": "screenshot",
+        "size_mb": 0.21
     },
     {
         "id": 95,
@@ -918,7 +960,8 @@
             "stage play"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 9.08
     },
     {
         "id": 96,
@@ -942,7 +985,8 @@
             "stage play"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 1.07
     },
     {
         "id": 97,
@@ -966,7 +1010,8 @@
             "stage play"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 5.5
     },
     {
         "id": 98,
@@ -990,7 +1035,8 @@
             "stage performance"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 23.14
     },
     {
         "id": 87,
@@ -1009,7 +1055,8 @@
             "exhibition"
         ],
         "platform": "weibo",
-        "type": "screenshot"
+        "type": "screenshot",
+        "size_mb": 0.33
     },
     {
         "id": 88,
@@ -1031,7 +1078,8 @@
             "exhibition"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 0.16
     },
     {
         "id": 89,
@@ -1050,7 +1098,8 @@
             "exhibition"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 0.26
     },
     {
         "id": 90,
@@ -1073,7 +1122,8 @@
             "xiao zhan fashion"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 2.72
     },
     {
         "id": 91,
@@ -1095,7 +1145,8 @@
             "exhibition"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 1.47
     },
     {
         "id": 92,
@@ -1117,7 +1168,8 @@
             "exhibition"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 1.49
     },
     {
         "id": 93,
@@ -1139,7 +1191,8 @@
             "exhibition"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 1.49
     },
     {
         "id": 77,
@@ -1162,7 +1215,8 @@
             "photoshoot"
         ],
         "platform": "weibo",
-        "type": "screenshot"
+        "type": "screenshot",
+        "size_mb": 0.25
     },
     {
         "id": 78,
@@ -1182,7 +1236,8 @@
             "photoshoot"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 2.16
     },
     {
         "id": 79,
@@ -1202,7 +1257,8 @@
             "photoshoot"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 4.17
     },
     {
         "id": 80,
@@ -1222,7 +1278,8 @@
             "photoshoot"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 4.91
     },
     {
         "id": 81,
@@ -1242,7 +1299,8 @@
             "photoshoot"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 3.91
     },
     {
         "id": 82,
@@ -1262,7 +1320,8 @@
             "photoshoot"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 3.21
     },
     {
         "id": 83,
@@ -1283,7 +1342,8 @@
             "xiao zhan fashion"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 6.1
     },
     {
         "id": 84,
@@ -1303,7 +1363,8 @@
             "photoshoot"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 5.59
     },
     {
         "id": 85,
@@ -1323,7 +1384,8 @@
             "photoshoot"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 4.91
     },
     {
         "id": 86,
@@ -1343,7 +1405,8 @@
             "photoshoot"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 4.84
     },
     {
         "id": 76,
@@ -1365,7 +1428,8 @@
             "quality actor"
         ],
         "platform": "weibo",
-        "type": "screenshot"
+        "type": "screenshot",
+        "size_mb": 0.18
     },
     {
         "id": 74,
@@ -1385,7 +1449,8 @@
             "event"
         ],
         "platform": "weibo",
-        "type": "screenshot"
+        "type": "screenshot",
+        "size_mb": 0.42
     },
     {
         "id": 75,
@@ -1404,7 +1469,8 @@
             "event"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 0.74
     },
     {
         "id": 69,
@@ -1426,7 +1492,8 @@
             "xiao zhan awards ceremony"
         ],
         "platform": "weibo",
-        "type": "screenshot"
+        "type": "screenshot",
+        "size_mb": 0.43
     },
     {
         "id": 70,
@@ -1447,7 +1514,8 @@
             "photoshoot"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 0.44
     },
     {
         "id": 71,
@@ -1470,7 +1538,8 @@
             "ice cream"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 1.43
     },
     {
         "id": 72,
@@ -1495,7 +1564,8 @@
             "selfie"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 6.6
     },
     {
         "id": 73,
@@ -1520,7 +1590,8 @@
             "selfie"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 4.48
     },
     {
         "id": 53,
@@ -1537,7 +1608,8 @@
             "tods"
         ],
         "platform": "weibo",
-        "type": "screenshot"
+        "type": "screenshot",
+        "size_mb": 0.24
     },
     {
         "id": 54,
@@ -1560,7 +1632,8 @@
             "photoshoot"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 0.19
     },
     {
         "id": 55,
@@ -1585,7 +1658,8 @@
             "live"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 1.08
     },
     {
         "id": 56,
@@ -1610,7 +1684,8 @@
             "live"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 1.09
     },
     {
         "id": 57,
@@ -1631,7 +1706,8 @@
             "back view"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 0.38
     },
     {
         "id": 58,
@@ -1656,7 +1732,8 @@
             "live"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 1.56
     },
     {
         "id": 59,
@@ -1680,7 +1757,8 @@
             "photoshoot"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 0.98
     },
     {
         "id": 60,
@@ -1705,7 +1783,8 @@
             "photoshoot"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 1.8
     },
     {
         "id": 61,
@@ -1728,7 +1807,8 @@
             "fashion week"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 0.96
     },
     {
         "id": 62,
@@ -1751,7 +1831,8 @@
             "live"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 1.18
     },
     {
         "id": 63,
@@ -1769,7 +1850,8 @@
             "instagram"
         ],
         "platform": "ins",
-        "type": "screenshot"
+        "type": "screenshot",
+        "size_mb": 0.28
     },
     {
         "id": 64,
@@ -1791,7 +1873,8 @@
             "instagram"
         ],
         "platform": "ins",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 0.24
     },
     {
         "id": 65,
@@ -1813,7 +1896,8 @@
             "instagram"
         ],
         "platform": "ins",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 0.11
     },
     {
         "id": 66,
@@ -1834,7 +1918,8 @@
             "photoshoot"
         ],
         "platform": "ins",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 0.27
     },
     {
         "id": 67,
@@ -1855,7 +1940,8 @@
             "photoshoot"
         ],
         "platform": "ins",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 0.38
     },
     {
         "id": 68,
@@ -1876,7 +1962,8 @@
             "rainy day"
         ],
         "platform": "douyin",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 5.46
     },
     {
         "id": 45,
@@ -1900,7 +1987,8 @@
             "food"
         ],
         "platform": "weibo",
-        "type": "screenshot"
+        "type": "screenshot",
+        "size_mb": 0.44
     },
     {
         "id": 46,
@@ -1928,7 +2016,8 @@
             "back view"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 0.33
     },
     {
         "id": 47,
@@ -1953,7 +2042,8 @@
             "live"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 5.26
     },
     {
         "id": 48,
@@ -1978,7 +2068,8 @@
             "live"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 3.01
     },
     {
         "id": 49,
@@ -2002,7 +2093,8 @@
             "food"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 1.22
     },
     {
         "id": 50,
@@ -2027,7 +2119,8 @@
             "instagram"
         ],
         "platform": "ins",
-        "type": "screenshot"
+        "type": "screenshot",
+        "size_mb": 0.39
     },
     {
         "id": 51,
@@ -2047,7 +2140,8 @@
             "instagram"
         ],
         "platform": "ins",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 0.17
     },
     {
         "id": 52,
@@ -2067,7 +2161,8 @@
             "instagram"
         ],
         "platform": "ins",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 0.14
     },
     {
         "id": 37,
@@ -2089,7 +2184,8 @@
             "fashion week"
         ],
         "platform": "weibo",
-        "type": "screenshot"
+        "type": "screenshot",
+        "size_mb": 0.17
     },
     {
         "id": 38,
@@ -2114,7 +2210,8 @@
             "livestream"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 2.67
     },
     {
         "id": 39,
@@ -2136,7 +2233,8 @@
             "fashion week"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 6.25
     },
     {
         "id": 40,
@@ -2161,7 +2259,8 @@
             "gucci"
         ],
         "platform": "ins",
-        "type": "screenshot"
+        "type": "screenshot",
+        "size_mb": 0.17
     },
     {
         "id": 41,
@@ -2185,7 +2284,8 @@
             "instagram"
         ],
         "platform": "ins",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 0.05
     },
     {
         "id": 42,
@@ -2209,7 +2309,8 @@
             "italy"
         ],
         "platform": "ins",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 0.04
     },
     {
         "id": 43,
@@ -2233,7 +2334,8 @@
             "instagram"
         ],
         "platform": "ins",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 0.06
     },
     {
         "id": 44,
@@ -2257,7 +2359,8 @@
             "italy"
         ],
         "platform": "ins",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 0.04
     },
     {
         "id": 30,
@@ -2279,7 +2382,8 @@
             "fashion week"
         ],
         "platform": "weibo",
-        "type": "screenshot"
+        "type": "screenshot",
+        "size_mb": 0.3
     },
     {
         "id": 31,
@@ -2301,7 +2405,8 @@
             "fashion week"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 1.96
     },
     {
         "id": 32,
@@ -2323,7 +2428,8 @@
             "airport"
         ],
         "platform": "weibo",
-        "type": "screenshot"
+        "type": "screenshot",
+        "size_mb": 0.17
     },
     {
         "id": 33,
@@ -2343,7 +2449,8 @@
             "fashion week"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 4.2
     },
     {
         "id": 34,
@@ -2366,7 +2473,8 @@
             "live"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 4.57
     },
     {
         "id": 35,
@@ -2387,7 +2495,8 @@
             "instagram"
         ],
         "platform": "ins",
-        "type": "screenshot"
+        "type": "screenshot",
+        "size_mb": 0.36
     },
     {
         "id": 36,
@@ -2407,7 +2516,8 @@
             "instagram"
         ],
         "platform": "ins",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 0.22
     },
     {
         "id": 25,
@@ -2428,7 +2538,8 @@
             "walking"
         ],
         "platform": "weibo",
-        "type": "screenshot"
+        "type": "screenshot",
+        "size_mb": 0.44
     },
     {
         "id": 26,
@@ -2452,7 +2563,8 @@
             "back view"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 0.7
     },
     {
         "id": 27,
@@ -2478,7 +2590,8 @@
             "dog"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 0.63
     },
     {
         "id": 28,
@@ -2502,7 +2615,8 @@
             "photoshoot"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 2.83
     },
     {
         "id": 29,
@@ -2526,7 +2640,8 @@
             "photoshoot"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 3.71
     },
     {
         "id": 20,
@@ -2548,7 +2663,8 @@
             "spring summer collection"
         ],
         "platform": "weibo",
-        "type": "screenshot"
+        "type": "screenshot",
+        "size_mb": 0.35
     },
     {
         "id": 21,
@@ -2570,7 +2686,8 @@
             "spring summer collection"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 6.92
     },
     {
         "id": 22,
@@ -2592,7 +2709,8 @@
             "spring summer collection"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 8.22
     },
     {
         "id": 23,
@@ -2614,7 +2732,8 @@
             "spring summer collection"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 8.19
     },
     {
         "id": 24,
@@ -2636,7 +2755,8 @@
             "spring summer collection"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 8.5
     },
     {
         "id": 14,
@@ -2657,7 +2777,8 @@
             "drama"
         ],
         "platform": "weibo",
-        "type": "screenshot"
+        "type": "screenshot",
+        "size_mb": 0.55
     },
     {
         "id": 15,
@@ -2678,7 +2799,8 @@
             "behind the scenes"
         ],
         "platform": "weibo",
-        "type": "screenshot"
+        "type": "screenshot",
+        "size_mb": 0.13
     },
     {
         "id": 16,
@@ -2702,7 +2824,8 @@
             "behind the scenes"
         ],
         "platform": "weibo",
-        "type": "screenshot"
+        "type": "screenshot",
+        "size_mb": 0.12
     },
     {
         "id": 17,
@@ -2726,7 +2849,8 @@
             "weibo update"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 0.14
     },
     {
         "id": 18,
@@ -2750,7 +2874,8 @@
             "wrap up"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 0.21
     },
     {
         "id": 19,
@@ -2774,7 +2899,8 @@
             "wrap up"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 0.2
     },
     {
         "id": 12,
@@ -2793,7 +2919,8 @@
             "holiday greeting"
         ],
         "platform": "weibo",
-        "type": "screenshot"
+        "type": "screenshot",
+        "size_mb": 0.42
     },
     {
         "id": 13,
@@ -2811,7 +2938,8 @@
             "lantern festival"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 1.96
     },
     {
         "id": 11,
@@ -2832,7 +2960,8 @@
             "filming"
         ],
         "platform": "weibo",
-        "type": "screenshot"
+        "type": "screenshot",
+        "size_mb": 0.35
     },
     {
         "id": 6,
@@ -2851,7 +2980,8 @@
             "new year greetings"
         ],
         "platform": "weibo",
-        "type": "screenshot"
+        "type": "screenshot",
+        "size_mb": 0.31
     },
     {
         "id": 7,
@@ -2876,7 +3006,8 @@
             "photoshoot"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 0.91
     },
     {
         "id": 8,
@@ -2900,7 +3031,8 @@
             "new year greetings"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 1.66
     },
     {
         "id": 9,
@@ -2924,7 +3056,8 @@
             "new year greetings"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 1.55
     },
     {
         "id": 10,
@@ -2948,7 +3081,8 @@
             "new year greeting"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 1.66
     },
     {
         "id": 5,
@@ -2970,7 +3104,8 @@
             "rabbit"
         ],
         "platform": "douyin",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 7.92
     },
     {
         "id": 3,
@@ -2992,7 +3127,8 @@
             "new year"
         ],
         "platform": "weibo",
-        "type": "screenshot"
+        "type": "screenshot",
+        "size_mb": 0.49
     },
     {
         "id": 4,
@@ -3014,7 +3150,8 @@
             "new year"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 0.65
     },
     {
         "id": 1,
@@ -3034,7 +3171,8 @@
             "running"
         ],
         "platform": "weibo",
-        "type": "screenshot"
+        "type": "screenshot",
+        "size_mb": 0.21
     },
     {
         "id": 2,
@@ -3054,6 +3192,7 @@
             "back view"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 3.88
     }
 ]
