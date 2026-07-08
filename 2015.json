@@ -20,7 +20,8 @@
             "stage performance"
         ],
         "platform": "weibo",
-        "type": "screenshot"
+        "type": "screenshot",
+        "size_mb": 0.13
     },
     {
         "id": 14,
@@ -46,7 +47,8 @@
             "group photo"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 0.05
     },
     {
         "id": 15,
@@ -72,7 +74,8 @@
             "group photo"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 0.06
     },
     {
         "id": 16,
@@ -98,7 +101,8 @@
             "group photo"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 0.14
     },
     {
         "id": 17,
@@ -124,7 +128,8 @@
             "group photo"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 0.18
     },
     {
         "id": 11,
@@ -145,7 +150,8 @@
             "stage performance"
         ],
         "platform": "weibo",
-        "type": "screenshot"
+        "type": "screenshot",
+        "size_mb": 0.24
     },
     {
         "id": 12,
@@ -168,7 +174,8 @@
             "weibo"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 21.3
     },
     {
         "id": 9,
@@ -188,7 +195,8 @@
             "performance"
         ],
         "platform": "weibo",
-        "type": "screenshot"
+        "type": "screenshot",
+        "size_mb": 0.21
     },
     {
         "id": 10,
@@ -209,7 +217,8 @@
             "weibo"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 15.57
     },
     {
         "id": 7,
@@ -229,7 +238,8 @@
             "singing competition"
         ],
         "platform": "weibo",
-        "type": "screenshot"
+        "type": "screenshot",
+        "size_mb": 0.2
     },
     {
         "id": 8,
@@ -250,7 +260,8 @@
             "weibo"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 12.22
     },
     {
         "id": 5,
@@ -271,7 +282,8 @@
             "weibo"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 5.2
     },
     {
         "id": 6,
@@ -291,7 +303,8 @@
             "han mubo"
         ],
         "platform": "weibo",
-        "type": "screenshot"
+        "type": "screenshot",
+        "size_mb": 0.26
     },
     {
         "id": 3,
@@ -310,7 +323,8 @@
             "variety show"
         ],
         "platform": "weibo",
-        "type": "screenshot"
+        "type": "screenshot",
+        "size_mb": 0.11
     },
     {
         "id": 4,
@@ -329,7 +343,8 @@
             "weibo"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 4.54
     },
     {
         "id": 2,
@@ -346,7 +361,8 @@
             "debut"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 1.4
     },
     {
         "id": 1,
@@ -367,6 +383,7 @@
             "debut era"
         ],
         "platform": "weibo",
-        "type": "screenshot"
+        "type": "screenshot",
+        "size_mb": 0.05
     }
 ]
