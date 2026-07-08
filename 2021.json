@@ -17,7 +17,8 @@
             "oasis"
         ],
         "platform": "oasis",
-        "type": "screenshot"
+        "type": "screenshot",
+        "size_mb": 0.2
     },
     {
         "id": 87,
@@ -39,7 +40,8 @@
             "oasis"
         ],
         "platform": "oasis",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 0.05
     },
     {
         "id": 85,
@@ -59,7 +61,8 @@
             "douyin"
         ],
         "platform": "douyin",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 3.68
     },
     {
         "id": 80,
@@ -82,7 +85,8 @@
             "oasis"
         ],
         "platform": "oasis",
-        "type": "screenshot"
+        "type": "screenshot",
+        "size_mb": 0.85
     },
     {
         "id": 81,
@@ -107,7 +111,8 @@
             "oasis"
         ],
         "platform": "oasis",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 0.06
     },
     {
         "id": 82,
@@ -133,7 +138,8 @@
             "oasis"
         ],
         "platform": "oasis",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 0.04
     },
     {
         "id": 83,
@@ -156,7 +162,8 @@
             "stage play"
         ],
         "platform": "oasis",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 0.23
     },
     {
         "id": 84,
@@ -182,7 +189,8 @@
             "photoshoot"
         ],
         "platform": "oasis",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 0.39
     },
     {
         "id": 78,
@@ -203,7 +211,8 @@
             "weibo update"
         ],
         "platform": "weibo",
-        "type": "screenshot"
+        "type": "screenshot",
+        "size_mb": 0.39
     },
     {
         "id": 79,
@@ -225,7 +234,8 @@
             "holiday wishes"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 1.49
     },
     {
         "id": 75,
@@ -249,7 +259,8 @@
             "oasis"
         ],
         "platform": "oasis",
-        "type": "screenshot"
+        "type": "screenshot",
+        "size_mb": 0.18
     },
     {
         "id": 76,
@@ -273,7 +284,8 @@
             "oasis"
         ],
         "platform": "oasis",
-        "type": "screenshot"
+        "type": "screenshot",
+        "size_mb": 0.83
     },
     {
         "id": 77,
@@ -296,7 +308,8 @@
             "oasis"
         ],
         "platform": "oasis",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 0.36
     },
     {
         "id": 70,
@@ -317,7 +330,8 @@
             "weibo post"
         ],
         "platform": "weibo",
-        "type": "screenshot"
+        "type": "screenshot",
+        "size_mb": 0.42
     },
     {
         "id": 71,
@@ -341,7 +355,8 @@
             "weibo post"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 0.24
     },
     {
         "id": 72,
@@ -363,7 +378,8 @@
             "mooncake"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 1.81
     },
     {
         "id": 73,
@@ -385,7 +401,8 @@
             "mooncake"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 1.7
     },
     {
         "id": 74,
@@ -407,7 +424,8 @@
             "mooncake"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 1.93
     },
     {
         "id": 68,
@@ -429,7 +447,8 @@
             "charity ambassador"
         ],
         "platform": "weibo",
-        "type": "screenshot"
+        "type": "screenshot",
+        "size_mb": 0.73
     },
     {
         "id": 69,
@@ -451,7 +470,8 @@
             "charity ambassador"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 2.03
     },
     {
         "id": 66,
@@ -474,7 +494,8 @@
             "drama promotion"
         ],
         "platform": "weibo",
-        "type": "screenshot"
+        "type": "screenshot",
+        "size_mb": 0.34
     },
     {
         "id": 67,
@@ -501,7 +522,8 @@
             "drawing"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 0.25
     },
     {
         "id": 65,
@@ -523,7 +545,8 @@
             "advocacy"
         ],
         "platform": "weibo",
-        "type": "screenshot"
+        "type": "screenshot",
+        "size_mb": 0.54
     },
     {
         "id": 64,
@@ -545,7 +568,8 @@
         ],
         "note": "",
         "platform": "douyin",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 1.28
     },
     {
         "id": 63,
@@ -567,7 +591,8 @@
         ],
         "note": "",
         "platform": "douyin",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 5.21
     },
     {
         "id": 61,
@@ -588,7 +613,8 @@
             "oasis"
         ],
         "platform": "oasis",
-        "type": "screenshot"
+        "type": "screenshot",
+        "size_mb": 0.31
     },
     {
         "id": 62,
@@ -609,7 +635,8 @@
             "oasis"
         ],
         "platform": "oasis",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 0.06
     },
     {
         "id": 60,
@@ -632,7 +659,8 @@
             "singing"
         ],
         "platform": "douyin",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 3.84
     },
     {
         "id": 58,
@@ -652,7 +680,8 @@
             "drawing"
         ],
         "platform": "oasis",
-        "type": "screenshot"
+        "type": "screenshot",
+        "size_mb": 0.24
     },
     {
         "id": 59,
@@ -672,7 +701,8 @@
             "drawing"
         ],
         "platform": "oasis",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 0.07
     },
     {
         "id": 57,
@@ -694,7 +724,8 @@
         ],
         "note": "",
         "platform": "douyin",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 1.13
     },
     {
         "id": 49,
@@ -714,7 +745,8 @@
             "cultural volunteer"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 10.21
     },
     {
         "id": 50,
@@ -738,7 +770,8 @@
             "oasis"
         ],
         "platform": "oasis",
-        "type": "screenshot"
+        "type": "screenshot",
+        "size_mb": 2.2
     },
     {
         "id": 51,
@@ -762,7 +795,8 @@
             "oasis"
         ],
         "platform": "oasis",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 0.26
     },
     {
         "id": 52,
@@ -786,7 +820,8 @@
             "oasis"
         ],
         "platform": "oasis",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 0.28
     },
     {
         "id": 53,
@@ -810,7 +845,8 @@
             "oasis"
         ],
         "platform": "oasis",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 0.19
     },
     {
         "id": 54,
@@ -834,7 +870,8 @@
             "oasis"
         ],
         "platform": "oasis",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 0.25
     },
     {
         "id": 55,
@@ -858,7 +895,8 @@
             "oasis"
         ],
         "platform": "oasis",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 0.3
     },
     {
         "id": 56,
@@ -881,7 +919,8 @@
             "oasis"
         ],
         "platform": "oasis",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 0.22
     },
     {
         "id": 42,
@@ -901,7 +940,8 @@
             "food"
         ],
         "platform": "oasis",
-        "type": "screenshot"
+        "type": "screenshot",
+        "size_mb": 0.78
     },
     {
         "id": 43,
@@ -921,7 +961,8 @@
             "emoticon"
         ],
         "platform": "oasis",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 0.08
     },
     {
         "id": 44,
@@ -941,7 +982,8 @@
             "oasis"
         ],
         "platform": "oasis",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 0.39
     },
     {
         "id": 45,
@@ -959,7 +1001,8 @@
             "little bread"
         ],
         "platform": "oasis",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 0.4
     },
     {
         "id": 46,
@@ -979,7 +1022,8 @@
             "photoshoot"
         ],
         "platform": "oasis",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 0.35
     },
     {
         "id": 47,
@@ -997,7 +1041,8 @@
             "little bread"
         ],
         "platform": "oasis",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 0.33
     },
     {
         "id": 48,
@@ -1018,7 +1063,8 @@
             "run run run"
         ],
         "platform": "douyin",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 7.69
     },
     {
         "id": 37,
@@ -1039,7 +1085,8 @@
         "link": "",
         "note": "",
         "platform": "oasis",
-        "type": "screenshot"
+        "type": "screenshot",
+        "size_mb": 0.54
     },
     {
         "id": 38,
@@ -1059,7 +1106,8 @@
             "oasis app"
         ],
         "platform": "oasis",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 0.28
     },
     {
         "id": 39,
@@ -1079,7 +1127,8 @@
             "oasis app"
         ],
         "platform": "oasis",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 0.28
     },
     {
         "id": 40,
@@ -1099,7 +1148,8 @@
             "oasis app"
         ],
         "platform": "oasis",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 0.3
     },
     {
         "id": 41,
@@ -1119,7 +1169,8 @@
             "oasis"
         ],
         "platform": "oasis",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 0.1
     },
     {
         "id": 36,
@@ -1141,7 +1192,8 @@
         ],
         "note": "",
         "platform": "douyin",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 1.54
     },
     {
         "id": 34,
@@ -1162,7 +1214,8 @@
             "spring"
         ],
         "platform": "oasis",
-        "type": "screenshot"
+        "type": "screenshot",
+        "size_mb": 0.29
     },
     {
         "id": 35,
@@ -1182,7 +1235,8 @@
             "hands"
         ],
         "platform": "oasis",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 0.3
     },
     {
         "id": 32,
@@ -1201,7 +1255,8 @@
             "little bread"
         ],
         "platform": "oasis",
-        "type": "screenshot"
+        "type": "screenshot",
+        "size_mb": 0.45
     },
     {
         "id": 33,
@@ -1219,7 +1274,8 @@
             "little bread"
         ],
         "platform": "oasis",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 0.51
     },
     {
         "id": 30,
@@ -1238,7 +1294,8 @@
             "sui sui ping an"
         ],
         "platform": "oasis",
-        "type": "screenshot"
+        "type": "screenshot",
+        "size_mb": 0.34
     },
     {
         "id": 31,
@@ -1256,7 +1313,8 @@
             "sui sui ping an"
         ],
         "platform": "oasis",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 0.36
     },
     {
         "id": 29,
@@ -1281,7 +1339,8 @@
             "safety"
         ],
         "platform": "weibo",
-        "type": "screenshot"
+        "type": "screenshot",
+        "size_mb": 0.22
     },
     {
         "id": 27,
@@ -1302,7 +1361,8 @@
             "wuhan"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 0.92
     },
     {
         "id": 28,
@@ -1325,7 +1385,8 @@
             "wuhan"
         ],
         "platform": "douyin",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 1.1
     },
     {
         "id": 22,
@@ -1348,7 +1409,8 @@
             "behind the scenes"
         ],
         "platform": "oasis",
-        "type": "screenshot"
+        "type": "screenshot",
+        "size_mb": 1.47
     },
     {
         "id": 23,
@@ -1371,7 +1433,8 @@
             "behind the scenes"
         ],
         "platform": "oasis",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 0.29
     },
     {
         "id": 24,
@@ -1395,7 +1458,8 @@
             "oasis"
         ],
         "platform": "oasis",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 0.13
     },
     {
         "id": 25,
@@ -1419,7 +1483,8 @@
             "oasis"
         ],
         "platform": "oasis",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 0.16
     },
     {
         "id": 26,
@@ -1443,7 +1508,8 @@
             "oasis"
         ],
         "platform": "oasis",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 0.27
     },
     {
         "id": 21,
@@ -1462,7 +1528,8 @@
             "charity event"
         ],
         "platform": "weibo",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 2.06
     },
     {
         "id": 19,
@@ -1484,7 +1551,8 @@
             "drawing"
         ],
         "platform": "oasis",
-        "type": "screenshot"
+        "type": "screenshot",
+        "size_mb": 0.21
     },
     {
         "id": 20,
@@ -1506,7 +1574,8 @@
             "drawing"
         ],
         "platform": "oasis",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 0.08
     },
     {
         "id": 18,
@@ -1528,7 +1597,8 @@
             "cloud spring festival"
         ],
         "platform": "douyin",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 3.71
     },
     {
         "id": 17,
@@ -1550,7 +1620,8 @@
             "drama promotion"
         ],
         "platform": "douyin",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 1.51
     },
     {
         "id": 14,
@@ -1573,7 +1644,8 @@
             "oasis"
         ],
         "platform": "oasis",
-        "type": "screenshot"
+        "type": "screenshot",
+        "size_mb": 1.49
     },
     {
         "id": 15,
@@ -1595,7 +1667,8 @@
             "oasis"
         ],
         "platform": "oasis",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 0.34
     },
     {
         "id": 16,
@@ -1621,7 +1694,8 @@
             "oasis"
         ],
         "platform": "oasis",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 0.61
     },
     {
         "id": 11,
@@ -1640,7 +1714,8 @@
             "blue silver fur"
         ],
         "platform": "oasis",
-        "type": "screenshot"
+        "type": "screenshot",
+        "size_mb": 1.54
     },
     {
         "id": 12,
@@ -1662,7 +1737,8 @@
             "blue silver fur"
         ],
         "platform": "oasis",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 0.66
     },
     {
         "id": 13,
@@ -1685,7 +1761,8 @@
             "blue silver grass"
         ],
         "platform": "oasis",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 0.41
     },
     {
         "id": 10,
@@ -1707,7 +1784,8 @@
             "drama promotion"
         ],
         "platform": "douyin",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 1.35
     },
     {
         "id": 9,
@@ -1729,7 +1807,8 @@
             "douyin"
         ],
         "platform": "douyin",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 3.74
     },
     {
         "id": 6,
@@ -1750,7 +1829,8 @@
             "oasis"
         ],
         "platform": "oasis",
-        "type": "screenshot"
+        "type": "screenshot",
+        "size_mb": 0.44
     },
     {
         "id": 7,
@@ -1774,7 +1854,8 @@
             "meme"
         ],
         "platform": "oasis",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 0.03
     },
     {
         "id": 8,
@@ -1794,7 +1875,8 @@
             "oasis"
         ],
         "platform": "oasis",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 0.37
     },
     {
         "id": 4,
@@ -1815,7 +1897,8 @@
             "oasis"
         ],
         "platform": "oasis",
-        "type": "screenshot"
+        "type": "screenshot",
+        "size_mb": 0.21
     },
     {
         "id": 5,
@@ -1835,7 +1918,8 @@
             "oasis"
         ],
         "platform": "oasis",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 0.16
     },
     {
         "id": 3,
@@ -1857,7 +1941,8 @@
         ],
         "note": "",
         "platform": "douyin",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 2.42
     },
     {
         "id": 1,
@@ -1880,7 +1965,8 @@
             "selfie"
         ],
         "platform": "oasis",
-        "type": "screenshot"
+        "type": "screenshot",
+        "size_mb": 0.6
     },
     {
         "id": 2,
@@ -1905,6 +1991,7 @@
             "morning"
         ],
         "platform": "oasis",
-        "type": "attached"
+        "type": "attached",
+        "size_mb": 0.18
     }
 ]
