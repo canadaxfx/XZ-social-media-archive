@@ -1045,6 +1045,8 @@
             .badge-quality.is-2k { background: rgba(99, 102, 241, 0.85); }
             .badge-quality.is-4k { background: rgba(124, 58, 237, 0.85); }
             .badge-youtube { position: absolute; bottom: 0px; left: 10px; background: rgba(204, 0, 0, 0.85); color: #fff; padding: 2px 7px; border-radius: 4px; font-size: 11px; font-weight: 700; z-index: 11; letter-spacing: 0.05em; text-decoration: none; cursor: pointer; }
+            #badgesRow .badge-quality, #badgesRow .badge-youtube { position: static; bottom: auto; left: auto; z-index: auto; }
+            .badge-size { background: rgba(0,0,0,0.55); color: #fff; padding: 2px 7px; border-radius: 4px; font-size: 11px; font-weight: 600; letter-spacing: 0.05em; pointer-events: none; }
             .modal-photo {
               max-width: 100%;
               max-height: 100%;
@@ -1662,8 +1664,11 @@
             autoplay
             playsinline
           ></video>
-          <span id="badgeQuality" class="badge-quality hidden"></span>
-          <a id="badgeYT" class="badge-youtube hidden" target="_blank" rel="noopener">YouTube ↗</a>
+          <div id="badgesRow" style="position:absolute;bottom:0;left:10px;display:flex;gap:6px;align-items:center;z-index:11;">
+              <span id="badgeQuality" class="badge-quality hidden"></span>
+              <a id="badgeYT" class="badge-youtube hidden" target="_blank" rel="noopener">YouTube ↗</a>
+              <span id="badgeSize" class="badge-size hidden"></span>
+          </div>
           <button class="nav-arrow next" id="nextBtn" onclick="navigatePhoto(1)">›</button>
         </div>
 
@@ -3003,6 +3008,16 @@
                 badgeQuality.textContent = '1080P'; badgeQuality.classList.remove('hidden', 'is-4k', 'is-2k');
             } else {
                 badgeQuality.classList.add('hidden'); badgeQuality.classList.remove('is-4k', 'is-2k');
+            }
+        }
+        const badgeSize = document.getElementById('badgeSize');
+        if (badgeSize) {
+            if (photo.size_mb) {
+                const _sz = photo.size_mb >= 1 ? photo.size_mb.toFixed(1) + ' MB' : Math.round(photo.size_mb * 1024) + ' KB';
+                badgeSize.textContent = _sz;
+                badgeSize.classList.remove('hidden');
+            } else {
+                badgeSize.classList.add('hidden');
             }
         }
         const _dlBtn = document.getElementById("downloadBtn");
