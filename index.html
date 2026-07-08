@@ -2123,7 +2123,7 @@
 
       /* ---------- Constants & State ---------- */
       // --- VARIABLES ---
-      const DATA_VER = '20260706-3'; // bump when pushing new JSON to GitHub
+      const DATA_VER = '20260707-1'; // bump when pushing new JSON to GitHub
       let allData = [];
       let categoryData = [];
       let activeData = [];
@@ -2664,12 +2664,15 @@
             const durBadge = ((isVideoEntry(item) || isClipMp4) && item.duration)
               ? `<div class="dur-badge">${fmtDuration(item.duration)}</div>`
               : '';
+            const sizeBadge = (!isVideoEntry(item) && !isClipMp4 && item.size_mb)
+              ? (() => { const sz = item.size_mb >= 1 ? item.size_mb.toFixed(1) + 'M' : Math.round(item.size_mb * 1024) + 'K'; return '<div style="position:absolute;top:4px;left:4px;background:rgba(0,0,0,0.55);color:white;border-radius:4px;padding:1px 3px;font-size:9px;font-weight:600;z-index:2;letter-spacing:0.2px;">' + sz + '</div>'; })()
+              : '';
 
             const inPlaylist = playlist.some(p => p._uid === item._uid);
             return `
     <div class="timeline-photo${inPlaylist ? ' pl-in-playlist' : ''}" id="plcard-${item._uid}" onclick="openModal(${item._uid})">
         ${isYouTubeUrl(item.url) ? '<div class="yt-overlay-icon">▶</div>' : isVideoEntry(item) ? '<div class="video-overlay-icon">▶</div>' : ""}
-        ${durBadge}
+        ${durBadge}${sizeBadge}
         ${motionBadge}
         ${isRealVideo(item) ? `<button class="pl-card-add${inPlaylist ? ' pl-added' : ''}" id="plcadd-${item._uid}" onclick="event.stopPropagation();plCardAdd(${item._uid})"><b>${inPlaylist ? '✓' : '＋'}</b> Playlist</button>` : ''}
         <img data-src="${getThumbUrl(item.url)}" class="lazy-image loading-placeholder">
