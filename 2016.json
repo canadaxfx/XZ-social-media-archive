@@ -3140,7 +3140,7 @@
         "tags": [],
         "groupName": "201606",
         "photoText": "@肖战DAYTOY",
-        "postText": "每天都是学习,充实的生活!今天你跑了吗?想 你们",
+        "postText": "每天都是学习，充实的生活！今天你跑了吗？想你们[兔子][鲜花][心]",
         "englishTags": [
             "running",
             "fitness",
@@ -3148,7 +3148,10 @@
         ],
         "platform": "weibo",
         "type": "attached",
-        "size_mb": 1.16
+        "size_mb": 1.16,
+        "link": "",
+        "source": [],
+        "hidden": ""
     },
     {
         "id": 146,
@@ -3161,15 +3164,16 @@
         ],
         "link": "",
         "groupName": "201606",
-        "note": "",
         "photoText": "@肖战DAYTOY",
-        "postText": "每天都是学习,充实的生活!今天你跑了吗?想 你们",
+        "postText": "每天都是学习，充实的生活！今天你跑了吗？想你们[兔子][鲜花][心]",
         "englishTags": [
             "selfie"
         ],
         "platform": "weibo",
         "type": "attached",
-        "size_mb": 0.2
+        "size_mb": 0.2,
+        "source": [],
+        "hidden": ""
     },
     {
         "id": 145,
@@ -3180,7 +3184,7 @@
         "tags": [],
         "groupName": "201606",
         "photoText": "DAY\nΤΟΥ\nX玖少年团首战DAYTOY\n✔ 16-6-18 22:46 来自iPhone 6s\n每天都是学习,充实的生活!今天你跑了吗?想\n你们\n@肖战DAYTOY\n@肖战DAYTOΥ",
-        "postText": "每天都是学习,充实的生活!今天你跑了吗?想 你们",
+        "postText": "每天都是学习，充实的生活！今天你跑了吗？想你们[兔子][鲜花][心]",
         "englishTags": [
             "running",
             "fitness",
@@ -3188,7 +3192,10 @@
         ],
         "platform": "weibo",
         "type": "screenshot",
-        "size_mb": 0.07
+        "size_mb": 0.07,
+        "link": "",
+        "source": [],
+        "hidden": ""
     },
     {
         "id": 144,
