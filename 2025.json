@@ -964,12 +964,13 @@
         "platform": "weibo",
         "note": "",
         "description": "在#元气森林小元气调饮店# 携手我的好搭子小元气，给生活加点元气。@元气森林官方微博 肖战工作室的微博视频",
-        "size_mb": 7.05,
+        "size_mb": 81.8,
         "englishTags": [
             "genki forest",
             "endorsement",
             "commercial"
-        ]
+        ],
+        "quality": "4k"
     },
     {
         "id": 185,
@@ -1537,15 +1538,16 @@
         "link": "",
         "type": "screenshot",
         "platform": "weibo",
-        "note": "",
-        "description": "携手净水科技，创造健康美好生活。和@安吉尔 共度纯净每一天。#安吉尔开启全屋净饮水新时代# 肖战工作室的微博视频",
         "size_mb": 0.2,
         "englishTags": [
             "angel",
             "brand ambassador",
             "water purifier",
             "commercial"
-        ]
+        ],
+        "source": [],
+        "hidden": "",
+        "postText": "携手净水科技，创造健康美好生活。和@安吉尔 共度纯净每一天。#安吉尔开启全屋净饮水新时代# 肖战工作室的微博视频"
     },
     {
         "id": 231,
@@ -1561,15 +1563,17 @@
         "link": "",
         "type": "attached",
         "platform": "weibo",
-        "note": "",
-        "description": "携手净水科技，创造健康美好生活。和@安吉尔 共度纯净每一天。#安吉尔开启全屋净饮水新时代# 肖战工作室的微博视频",
-        "size_mb": 5.88,
+        "size_mb": 63.73,
         "englishTags": [
             "angel",
             "weibo",
             "brand ambassador",
             "water purifier"
-        ]
+        ],
+        "source": [],
+        "hidden": "",
+        "postText": "携手净水科技，创造健康美好生活。和@安吉尔 共度纯净每一天。#安吉尔开启全屋净饮水新时代# 肖战工作室的微博视频",
+        "quality": "4k"
     },
     {
         "id": 161,
