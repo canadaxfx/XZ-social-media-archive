@@ -3102,7 +3102,6 @@
         "tags": [],
         "groupName": "201606",
         "link": "",
-        "note": "",
         "photoText": "",
         "duration": 141,
         "englishTags": [
@@ -3111,7 +3110,10 @@
         ],
         "platform": "weibo",
         "type": "attached",
-        "size_mb": 5.18
+        "size_mb": 5.18,
+        "source": [],
+        "hidden": "",
+        "postText": "一次很棒的行程!! wahahahhh!!时间太赶,大家都辛苦了! 秒拍视频."
     },
     {
         "id": 148,
@@ -3122,14 +3124,17 @@
         "tags": [],
         "groupName": "201606",
         "photoText": "DAY\nΤΟΥ\nX玖少年团肖战DAYTOY\n6\nV\n16-6-21 13:34 来自iPhone 6s\n一次很棒的行程!! wahahahhh!!时间太赶,大\n家都辛苦了! 囗秒拍视频.\n◎秒拍\nIII 02:00",
-        "postText": "一次很棒的行程!! wahahahhh!!时间太赶,大家都辛苦了! 囗秒拍视频.",
+        "postText": "一次很棒的行程!! wahahahhh!!时间太赶,大家都辛苦了! 秒拍视频.",
         "englishTags": [
             "super star academy",
             "filming"
         ],
         "platform": "weibo",
         "type": "screenshot",
-        "size_mb": 0.22
+        "size_mb": 0.22,
+        "link": "",
+        "source": [],
+        "hidden": ""
     },
     {
         "id": 147,
