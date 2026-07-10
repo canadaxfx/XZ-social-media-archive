@@ -2835,6 +2835,53 @@
         "size_mb": 0.44
     },
     {
+        "id": 301,
+        "url": "https://assets.xz-studio-gallery.com/full/20160709_XZ-Weibo-1.jpg",
+        "date": "2016-07-09",
+        "month": "July",
+        "year": "2016",
+        "tags": [
+            "视频周记"
+        ],
+        "groupName": "201607",
+        "link": "",
+        "type": "screenshot",
+        "platform": "weibo",
+        "note": "",
+        "description": "",
+        "postText": "不知道这种以周记跟大家见面的形式还要到多久！不过很喜欢跟你们分享我们的生活点滴！不要切台！下面由记者肖，为大家带来现场报道！🌐🔦",
+        "size_mb": 0.1,
+        "englishTags": [
+            "video diary",
+            "super star academy",
+            "behind the scenes"
+        ]
+    },
+    {
+        "id": 302,
+        "url": "https://assets.xz-studio-gallery.com/full/20160709_XZ-Weibo-2.mp4",
+        "date": "2016-07-09",
+        "month": "July",
+        "year": "2016",
+        "tags": [
+            "视频周记"
+        ],
+        "groupName": "201607",
+        "duration": 244,
+        "link": "",
+        "type": "attached",
+        "platform": "weibo",
+        "note": "",
+        "description": "",
+        "postText": "不知道这种以周记跟大家见面的形式还要到多久！不过很喜欢跟你们分享我们的生活点滴！不要切台！下面由记者肖，为大家带来现场报道！🌐🔦",
+        "size_mb": 7.91,
+        "englishTags": [
+            "vlog",
+            "super star academy",
+            "behind the scenes"
+        ]
+    },
+    {
         "id": 158,
         "url": "https://assets.xz-studio-gallery.com/full/20160708_WB_XZ.jpg",
         "date": "2016-07-08",
