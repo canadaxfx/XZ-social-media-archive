@@ -633,16 +633,18 @@
             }
             .timeline-year {
               margin-bottom: 20px;
-              border: 1px solid #e0e0e0;
+              border: 1px solid rgba(var(--gold-rgb), 0.45);
+              border-left: 8px solid var(--gold);
+              border-top: 3px solid rgba(var(--gold-rgb), 0.6);
               border-radius: 15px;
               overflow: hidden;
-              box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-              background: white;
+              box-shadow: 0 4px 16px rgba(var(--shad-rgb), 0.22);
+              background: var(--surface-0);
             }
             .timeline-year-header {
-              background: var(--grad-year);
-              color: white;
-              padding: 15px 20px 28px;
+              background: var(--surface-0);
+              color: var(--gold);
+              padding: 12px 20px 0;
               font-size: 16px;
               font-weight: bold;
               cursor: pointer;
@@ -652,18 +654,16 @@
             }
             .yr-pl-btn{background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.3);color:rgba(255,255,255,0.9);font-size:10px;cursor:pointer;padding:3px 9px;font-style:italic;display:inline-block;border-radius:10px;margin-top:6px;transition:background .15s,border-color .15s}
             .yr-pl-btn:hover{background:rgba(255,255,255,0.25);border-color:rgba(255,255,255,0.55);color:#fff}
-            .timeline-year-header::after {
-              content: "Click thumbnails for high-res • 点击缩略图打开高清";
-              position: absolute;
-              bottom: 5px;
-              left: 20px;
-              font-size: 11px;
-              opacity: 0.8;
-              font-weight: normal;
-              font-style: italic;
+            .year-preview-zone {
+              background: var(--grad-year); margin: 8px -20px 0; padding: 10px 20px 12px;
+              border-top: 1px solid rgba(255,255,255,0.06); opacity: 0.82;
             }
+            .timeline-year.expanded .year-preview-zone { display: none; }
+            .timeline-year.expanded .timeline-year-header { background: var(--grad-year); color: white; }
+            .timeline-year.expanded .timeline-year-header:hover { background: var(--grad-year); filter: brightness(1.1); }
+            .year-hint { font-size: 10px; color: rgba(255,255,255,0.45); font-style: italic; margin-top: 6px; }
             .timeline-year-header:hover {
-              background: var(--grad-red-h);
+              background: var(--surface-w);
               transform: translateY(-1px);
             }
             .year-header-content {
@@ -1380,7 +1380,8 @@
       }
       [data-theme="washi-garnet"] .stat-number { color: #120C08; }
       [data-theme="washi-garnet"] .stat-label  { color: rgba(100,28,42,0.8); }
-      [data-theme="washi-garnet"] .year-title  { color: rgba(255,215,205,0.95); }
+      [data-theme="washi-garnet"] .year-title  { color: var(--gold); }
+      [data-theme="washi-garnet"] .timeline-year.expanded .year-title { color: rgba(255,215,205,0.95); }
       [data-theme="washi-garnet"] .card-zh   { color: rgba(100,28,42,0.92); }
       [data-theme="washi-garnet"] .card-arrow { color: rgba(100,28,42,0.65); }
       [data-theme="washi-garnet"] .site-footer { color: #120C08; }
@@ -1406,7 +1407,8 @@
       }
       [data-theme="washi-slate"] .stat-number { color: #0E1420; }
       [data-theme="washi-slate"] .stat-label  { color: rgba(38,56,88,0.8); }
-      [data-theme="washi-slate"] .year-title  { color: rgba(200,215,240,0.95); }
+      [data-theme="washi-slate"] .year-title  { color: var(--gold); }
+      [data-theme="washi-slate"] .timeline-year.expanded .year-title { color: rgba(200,215,240,0.95); }
       [data-theme="washi-slate"] .card-zh   { color: rgba(38,56,88,0.92); }
       [data-theme="washi-slate"] .card-arrow { color: rgba(38,56,88,0.65); }
       [data-theme="washi-slate"] .site-footer { color: #0E1420; }
@@ -2582,8 +2584,11 @@
                                         <span class="expand-icon">▼</span>
                                     </div>
                                 </div>
-                                <div class="year-preview">${previewHtml}</div>
-                                ${yearVideoCount ? `<button class="yr-pl-btn" onclick="event.stopPropagation();addYearToPlaylist('${year}')">＋ Add ${yearVideoCount} video${yearVideoCount > 1 ? 's' : ''} to playlist · 加入播放列表</button>` : ''}
+                                <div class="year-preview-zone">
+                                    <div class="year-preview">${previewHtml}</div>
+                                    ${yearVideoCount ? `<button class="yr-pl-btn" onclick="event.stopPropagation();addYearToPlaylist('${year}')">＋ Add ${yearVideoCount} video${yearVideoCount > 1 ? 's' : ''} to playlist · 加入播放列表</button>` : ''}
+                                    <div class="year-hint">Click thumbnails for high-res · 点击缩略图打开高清</div>
+                                </div>
                             </div>
                         </div>
                         <div class="timeline-year-content" data-photo-uids="${photoUids}">
