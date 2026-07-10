@@ -1525,6 +1525,53 @@
         "size_mb": 0.17
     },
     {
+        "id": 230,
+        "url": "https://assets.xz-studio-gallery.com/full/20250921_XZ-Weibo-1.jpg",
+        "date": "2025-09-21",
+        "month": "September",
+        "year": "2025",
+        "tags": [
+            "安吉尔"
+        ],
+        "groupName": "202509",
+        "link": "",
+        "type": "screenshot",
+        "platform": "weibo",
+        "note": "",
+        "description": "携手净水科技，创造健康美好生活。和@安吉尔 共度纯净每一天。#安吉尔开启全屋净饮水新时代# 肖战工作室的微博视频",
+        "size_mb": 0.2,
+        "englishTags": [
+            "angel",
+            "brand ambassador",
+            "water purifier",
+            "commercial"
+        ]
+    },
+    {
+        "id": 231,
+        "url": "https://assets.xz-studio-gallery.com/full/20250921_XZ-Weibo-2.mp4",
+        "date": "2025-09-21",
+        "month": "September",
+        "year": "2025",
+        "tags": [
+            "安吉尔"
+        ],
+        "groupName": "202509",
+        "duration": 92,
+        "link": "",
+        "type": "attached",
+        "platform": "weibo",
+        "note": "",
+        "description": "携手净水科技，创造健康美好生活。和@安吉尔 共度纯净每一天。#安吉尔开启全屋净饮水新时代# 肖战工作室的微博视频",
+        "size_mb": 5.88,
+        "englishTags": [
+            "angel",
+            "weibo",
+            "brand ambassador",
+            "water purifier"
+        ]
+    },
+    {
         "id": 161,
         "url": "https://assets.xz-studio-gallery.com/full/20250918_WB_XZ.jpg",
         "date": "2025-09-18",
