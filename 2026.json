@@ -118,7 +118,7 @@
         ],
         "source": [],
         "duration": 128,
-        "size_mb": 26.4,
+        "size_mb": 26.43,
         "hidden": ""
     },
     {
@@ -136,7 +136,7 @@
         "type": "screenshot",
         "platform": "weibo",
         "postText": "#十日终焉官宣杀青# #十日终焉杀青特辑# 轮回了那么多次，早就习惯了说“下次见”。 #剧集十日终焉# 🐧预约：http://t.cn/A6D2e85e🧣预约：http://t.cn/AXMIzsuD",
-        "size_mb": 0.1,
+        "size_mb": 0.24,
         "englishTags": [
             "ten days end",
             "wrap up special",
@@ -347,7 +347,7 @@
         "note": "",
         "description": "",
         "postText": "偏心，不想放手。\n#YSL偏心护手霜# @YSL圣罗兰美妆 http://t.cn/AXCwWeKy ​​​",
-        "size_mb": 8.58,
+        "size_mb": 8.62,
         "englishTags": [
             "ysl",
             "hand cream",
@@ -448,7 +448,8 @@
         ],
         "source": [],
         "duration": 88,
-        "hidden": ""
+        "hidden": "",
+        "size_mb": 19.24
     },
     {
         "id": 97,
