@@ -165,13 +165,22 @@
       #themeSwitcher {
         position: fixed; top: 2px; right: 8px; z-index: 9000;
         display: flex; gap: 6px; align-items: center;
-        padding: 5px 8px; border-radius: 20px;
+        padding: 5px 10px; border-radius: 20px;
         background: rgba(0,0,0,0.35); backdrop-filter: blur(8px);
         border: 1px solid rgba(255,255,255,0.1);
+        cursor: pointer; transition: opacity .3s;
       }
+      #themeSwitcher.ts-scrolled { opacity: 0; pointer-events: none; }
+      .ts-expand {
+        display: flex; gap: 5px; align-items: center;
+        max-width: 0; overflow: hidden; opacity: 0;
+        transition: max-width .28s ease, opacity .2s ease;
+      }
+      #themeSwitcher.ts-open .ts-expand { max-width: 200px; opacity: 1; }
       .theme-dot {
         width: 14px; height: 14px; border-radius: 50%; border: 2px solid transparent;
         cursor: pointer; padding: 0; transition: transform .18s, border-color .18s; outline: none;
+        flex-shrink: 0;
       }
       .theme-dot:hover { transform: scale(1.25); }
       .theme-dot.tdot-active { border-color: rgba(255,255,255,0.85); transform: scale(1.2); }
@@ -199,6 +208,8 @@
       #mgBtn:hover, #mgBtn.mg-on { color:rgba(255,255,255,.95); }
       #mgDivider { width:1px; height:14px; background:rgba(255,255,255,.2); display:inline-block; margin:0 2px; }
       #styleLabel { font-size:10px; line-height:1; color:rgba(255,255,255,.75); letter-spacing:.06em; white-space:nowrap; pointer-events:none; user-select:none; }
+      #styleLabel::after { content: ' ▾'; font-size:8px; opacity:.7; }
+      #themeSwitcher.ts-open #styleLabel::after { content: ' ▴'; }
       #mgPanel { display:none; position:fixed; top:34px; right:8px; z-index:8999;
                  background:linear-gradient(135deg, var(--bg-base), var(--bg-base-2));
                  border:1px solid rgba(var(--gold-rgb),.35);
@@ -3537,10 +3548,14 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
         if (saved === 'red') document.documentElement.removeAttribute('data-theme');
         else document.documentElement.dataset.theme = saved;
         document.addEventListener('DOMContentLoaded', () => {
+          const ts = document.getElementById('themeSwitcher');
           document.querySelectorAll('.theme-dot').forEach(btn => {
             btn.classList.toggle('tdot-active', btn.dataset.t === saved);
-            btn.addEventListener('click', () => { applyTheme(btn.dataset.t); localStorage.setItem(KEY, btn.dataset.t); });
+            btn.addEventListener('click', () => { applyTheme(btn.dataset.t); localStorage.setItem(KEY, btn.dataset.t); ts.classList.remove('ts-open'); });
           });
+          ts.addEventListener('click', e => { if (!ts.classList.contains('ts-open')) { ts.classList.add('ts-open'); e.stopPropagation(); } });
+          document.addEventListener('click', e => { if (!ts.contains(e.target)) ts.classList.remove('ts-open'); });
+          window.addEventListener('scroll', () => { ts.classList.toggle('ts-scrolled', window.scrollY > 80); }, { passive: true });
         });
       })();
 
@@ -3562,15 +3577,17 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
 </div>
   <div id="themeSwitcher">
     <span id="styleLabel">换肤 Skin</span>
-    <button class="theme-dot" data-t="red"          title="China Red 华夏红"         style="background:#8B0010;"></button>
-    <button class="theme-dot" data-t="sakura"       title="Sakura Night 樱夜"        style="background:#2A1018;"></button>
-    <button class="theme-dot" data-t="sapphire"     title="Midnight Sapphire 星夜蓝" style="background:#1A3FAA;"></button>
-    <button class="theme-dot" data-t="lunar"        title="Lunar 月色"               style="background:#3A5890;"></button>
-    <button class="theme-dot" data-t="violet"       title="Imperial Violet 帝紫"     style="background:#5A0FA0;"></button>
-    <button class="theme-dot" data-t="washi-garnet" title="Washi Garnet 和纸赤"      style="background:linear-gradient(135deg,#EAEAEC 50%,#7A2030 50%);"></button>
-    <button class="theme-dot" data-t="washi-slate"  title="Washi Slate 和纸靛"       style="background:linear-gradient(135deg,#ECEDF1 50%,#3A4860 50%);"></button>
-    <span id="mgDivider"></span>
-    <button id="mgBtn" title="玉兰水印 Magnolia watermark">❁</button>
+    <div class="ts-expand">
+      <button class="theme-dot" data-t="red"          title="China Red 华夏红"         style="background:#8B0010;"></button>
+      <button class="theme-dot" data-t="sakura"       title="Sakura Night 樱夜"        style="background:#2A1018;"></button>
+      <button class="theme-dot" data-t="sapphire"     title="Midnight Sapphire 星夜蓝" style="background:#1A3FAA;"></button>
+      <button class="theme-dot" data-t="lunar"        title="Lunar 月色"               style="background:#3A5890;"></button>
+      <button class="theme-dot" data-t="violet"       title="Imperial Violet 帝紫"     style="background:#5A0FA0;"></button>
+      <button class="theme-dot" data-t="washi-garnet" title="Washi Garnet 和纸赤"      style="background:linear-gradient(135deg,#EAEAEC 50%,#7A2030 50%);"></button>
+      <button class="theme-dot" data-t="washi-slate"  title="Washi Slate 和纸靛"       style="background:linear-gradient(135deg,#ECEDF1 50%,#3A4860 50%);"></button>
+      <span id="mgDivider"></span>
+      <button id="mgBtn" title="玉兰水印 Magnolia watermark">❁</button>
+    </div>
   </div>
 
   <div id="mgPanel">
