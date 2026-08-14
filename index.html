@@ -2736,8 +2736,8 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
         paginationState[year].page = page;
         renderYearContent(year);
         document
-          .getElementById(`grid-${year}`)
-          .scrollIntoView({ behavior: "smooth", block: "start" });
+          .getElementById(`nav-${year}`)
+          .scrollIntoView({ behavior: "smooth", block: "nearest" });
       }
       /* ---------- Utils ---------- */
       function getThumbUrl(fullUrl) {
