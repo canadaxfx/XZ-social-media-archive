@@ -1059,6 +1059,8 @@
             .badge-youtube { position: absolute; bottom: 0px; left: 10px; background: rgba(204, 0, 0, 0.85); color: #fff; padding: 2px 7px; border-radius: 4px; font-size: 11px; font-weight: 700; z-index: 11; letter-spacing: 0.05em; text-decoration: none; cursor: pointer; }
             #badgesRow .badge-quality, #badgesRow .badge-youtube { position: static; bottom: auto; left: auto; z-index: auto; }
             .badge-size { background: rgba(0,0,0,0.55); color: #fff; padding: 2px 7px; border-radius: 4px; font-size: 11px; font-weight: 600; letter-spacing: 0.05em; pointer-events: none; }
+            .badge-4k { position: absolute; bottom: 0; right: 10px; background: transparent; color: #fff; padding: 2px 7px; border-radius: 4px; font-size: 11px; font-weight: 700; text-decoration: none; z-index: 11; letter-spacing: 0.03em; border: 1px solid rgba(255,255,255,0.6); }
+            .badge-4k:hover { background: rgba(255,255,255,0.15); }
             .modal-photo {
               max-width: 100%;
               max-height: 100%;
@@ -1694,6 +1696,7 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
               <a id="badgeYT" class="badge-youtube hidden" target="_blank" rel="noopener">YouTube ↗</a>
               <span id="badgeSize" class="badge-size hidden"></span>
           </div>
+          <a id="badgeAlt" class="badge-4k hidden" href="#" target="_blank"></a>
           <button class="nav-arrow next" id="nextBtn" onclick="navigatePhoto(1)">›</button>
         </div>
 
@@ -2148,7 +2151,7 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
 
       /* ---------- Constants & State ---------- */
       // --- VARIABLES ---
-      const DATA_VER = '20260809-1'; // bump when pushing new JSON to GitHub
+      const DATA_VER = '20260814-2'; // bump when pushing new JSON to GitHub
       let allData = [];
       let categoryData = [];
       let activeData = [];
@@ -3064,6 +3067,20 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
           const _dlUrl = (_isVid && photo.url_4k) ? photo.url_4k :
                          (_isVid && photo.url_hd) ? photo.url_hd : photo.url;
           dlSetBtn(_dlBtn, _dlUrl);
+        }
+        const badgeAlt = document.getElementById('badgeAlt');
+        if (badgeAlt) {
+          if (_isVid && photo.url_4k) {
+            badgeAlt.href = photo.url_4k;
+            badgeAlt.textContent = '点击下载 ↓ 4K版本' + (photo.size_4k ? ' (' + photo.size_4k + ' MB)' : '');
+            badgeAlt.classList.remove('hidden');
+          } else if (_isVid && photo.url_hd) {
+            badgeAlt.href = photo.url_hd;
+            badgeAlt.textContent = '点击下载 ↓ ' + (photo.quality_hd || '1080p').toUpperCase() + '版本' + (photo.size_hd ? ' (' + photo.size_hd + ' MB)' : '');
+            badgeAlt.classList.remove('hidden');
+          } else {
+            badgeAlt.classList.add('hidden');
+          }
         }
         const srcBtn = document.getElementById("sourceLinkBtn");
         setPlatformBtnBehavior(srcBtn, photo.link || photo.weibo, photo.platform_links);
