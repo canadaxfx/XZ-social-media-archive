@@ -1,5 +1,30 @@
 [
     {
+        "id": 117,
+        "url": "https://assets.xz-studio-gallery.com/full/20260814_WB_XZ.jpg",
+        "date": "2026-08-14",
+        "month": "August",
+        "year": "2026",
+        "tags": [
+            "人民日报"
+        ],
+        "groupName": "202608",
+        "link": "https://weibo.com/1792951112/RdnDEmLla",
+        "type": "screenshot",
+        "platform": "weibo",
+        "note": "",
+        "description": "",
+        "postText": "铭记历史，缅怀先烈，吾辈自强！#日本战败投降81周年#",
+        "size_mb": 0.91,
+        "englishTags": [
+            "people's daily",
+            "weibo",
+            "commemoration",
+            "history",
+            "patriotism"
+        ]
+    },
+    {
         "id": 115,
         "url": "https://assets.xz-studio-gallery.com/full/20260807_XZ-Weibo-1.mp4",
         "date": "2026-08-07",
