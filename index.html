@@ -2677,7 +2677,8 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
         let totalPages = 1;
         if (state.limit !== "all") {
           const limit = parseInt(state.limit);
-          totalPages = Math.ceil(items.length / limit);
+          totalPages = Math.max(1, Math.ceil(items.length / limit));
+          if (state.page > totalPages) state.page = 1;
           const start = (state.page - 1) * limit;
           displayItems = items.slice(start, start + limit);
         }
