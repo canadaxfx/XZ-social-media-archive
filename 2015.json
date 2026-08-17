@@ -175,7 +175,8 @@
         ],
         "platform": "weibo",
         "type": "attached",
-        "size_mb": 21.3
+        "size_mb": 21.3,
+        "quality": "480p"
     },
     {
         "id": 9,
@@ -218,7 +219,8 @@
         ],
         "platform": "weibo",
         "type": "attached",
-        "size_mb": 15.57
+        "size_mb": 15.57,
+        "quality": "480p"
     },
     {
         "id": 7,
@@ -261,7 +263,8 @@
         ],
         "platform": "weibo",
         "type": "attached",
-        "size_mb": 12.22
+        "size_mb": 12.22,
+        "quality": "480p"
     },
     {
         "id": 5,
@@ -283,7 +286,8 @@
         ],
         "platform": "weibo",
         "type": "attached",
-        "size_mb": 5.2
+        "size_mb": 5.2,
+        "quality": "480p"
     },
     {
         "id": 6,
@@ -344,7 +348,8 @@
         ],
         "platform": "weibo",
         "type": "attached",
-        "size_mb": 4.54
+        "size_mb": 4.54,
+        "quality": "480p"
     },
     {
         "id": 2,
@@ -362,7 +367,8 @@
         ],
         "platform": "weibo",
         "type": "attached",
-        "size_mb": 1.4
+        "size_mb": 1.4,
+        "quality": "480p"
     },
     {
         "id": 1,
