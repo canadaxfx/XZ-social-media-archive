@@ -42,7 +42,8 @@
         "englishTags": [
             "ace troops",
             "weibo update"
-        ]
+        ],
+        "quality": "720p"
     },
     {
         "id": 264,
@@ -361,7 +362,8 @@
             "liuliumei",
             "endorsement",
             "commercial"
-        ]
+        ],
+        "quality": "1080p"
     },
     {
         "id": 252,
@@ -563,7 +565,8 @@
             "ralph lauren",
             "fragrance",
             "endorsement"
-        ]
+        ],
+        "quality": "1080p"
     },
     {
         "id": 247,
@@ -675,7 +678,8 @@
         ],
         "platform": "douyin",
         "type": "attached",
-        "size_mb": 3.68
+        "size_mb": 3.68,
+        "quality": "720p"
     },
     {
         "id": 243,
@@ -766,7 +770,8 @@
             "winter campaign"
         ],
         "source": [],
-        "hidden": ""
+        "hidden": "",
+        "quality": "1080p"
     },
     {
         "id": 241,
@@ -859,7 +864,8 @@
             "joyoung",
             "cooking",
             "endorsement"
-        ]
+        ],
+        "quality": "1080p"
     },
     {
         "id": 239,
@@ -904,7 +910,8 @@
         "englishTags": [
             "roseonly",
             "endorsement"
-        ]
+        ],
+        "quality": "1080p"
     },
     {
         "id": 236,
@@ -978,7 +985,8 @@
             "campaign",
             "fashion",
             "video"
-        ]
+        ],
+        "quality": "1080p"
     },
     {
         "id": 80,
@@ -1176,7 +1184,8 @@
             "public welfare"
         ],
         "source": [],
-        "hidden": ""
+        "hidden": "",
+        "quality": "1080p"
     },
     {
         "id": 126,
@@ -1222,7 +1231,8 @@
             "weibo post"
         ],
         "source": [],
-        "hidden": ""
+        "hidden": "",
+        "quality": "1080p"
     },
     {
         "id": 128,
@@ -1269,7 +1279,8 @@
             "campaign"
         ],
         "source": [],
-        "hidden": ""
+        "hidden": "",
+        "quality": "1080p"
     },
     {
         "id": 231,
@@ -1502,7 +1513,8 @@
             "endorsement",
             "food",
             "weibo post"
-        ]
+        ],
+        "quality": "1080p"
     },
     {
         "id": 75,
@@ -1936,7 +1948,8 @@
         "note": "",
         "platform": "douyin",
         "type": "attached",
-        "size_mb": 1.28
+        "size_mb": 1.28,
+        "quality": "720p"
     },
     {
         "id": 223,
@@ -1983,7 +1996,8 @@
             "budweiser",
             "weibo",
             "music festival"
-        ]
+        ],
+        "quality": "1080p"
     },
     {
         "id": 124,
@@ -2025,7 +2039,8 @@
         "postText": "从此刻起，愿你每夜好眠。与@梦洁高端床上用品 一起#享受好梦时刻#。",
         "size_mb": 3.38,
         "source": [],
-        "hidden": ""
+        "hidden": "",
+        "quality": "1080p"
     },
     {
         "id": 218,
@@ -2201,7 +2216,8 @@
             "endorsement"
         ],
         "source": [],
-        "hidden": ""
+        "hidden": "",
+        "quality": "1080p"
     },
     {
         "id": 63,
@@ -2224,7 +2240,8 @@
         "note": "",
         "platform": "douyin",
         "type": "attached",
-        "size_mb": 5.21
+        "size_mb": 5.21,
+        "quality": "720p"
     },
     {
         "id": 120,
@@ -2269,7 +2286,8 @@
             "endorsement"
         ],
         "source": [],
-        "hidden": ""
+        "hidden": "",
+        "quality": "1080p"
     },
     {
         "id": 215,
@@ -2478,7 +2496,8 @@
             "wetv",
             "tencent",
             "brand ambassador"
-        ]
+        ],
+        "quality": "1080p"
     },
     {
         "id": 207,
@@ -2549,7 +2568,8 @@
             "bubly",
             "endorsement",
             "weibo post"
-        ]
+        ],
+        "quality": "1080p"
     },
     {
         "id": 206,
@@ -2620,7 +2640,8 @@
             "manhan dacan",
             "beef noodles",
             "endorsement"
-        ]
+        ],
+        "quality": "1080p"
     },
     {
         "id": 61,
@@ -2688,7 +2709,8 @@
         ],
         "platform": "douyin",
         "type": "attached",
-        "size_mb": 3.84
+        "size_mb": 3.84,
+        "quality": "720p"
     },
     {
         "id": 116,
@@ -2733,7 +2755,8 @@
         "englishTags": [
             "zenith",
             "brand ambassador"
-        ]
+        ],
+        "quality": "1080p"
     },
     {
         "id": 203,
@@ -2852,7 +2875,8 @@
             "sumidagawa",
             "coffee",
             "endorsement"
-        ]
+        ],
+        "quality": "1080p"
     },
     {
         "id": 88,
@@ -3016,7 +3040,8 @@
             "weibo post"
         ],
         "source": [],
-        "hidden": ""
+        "hidden": "",
+        "quality": "1080p"
     },
     {
         "id": 198,
@@ -3130,7 +3155,8 @@
             "mex",
             "beer",
             "endorsement"
-        ]
+        ],
+        "quality": "1080p"
     },
     {
         "id": 194,
@@ -3223,7 +3249,8 @@
             "endorsement",
             "beauty",
             "campaign"
-        ]
+        ],
+        "quality": "1080p"
     },
     {
         "id": 57,
@@ -3246,7 +3273,8 @@
         "note": "",
         "platform": "douyin",
         "type": "attached",
-        "size_mb": 1.13
+        "size_mb": 1.13,
+        "quality": "720p"
     },
     {
         "id": 112,
@@ -3292,7 +3320,8 @@
         "englishTags": [
             "breo",
             "brand ambassador"
-        ]
+        ],
+        "quality": "1080p"
     },
     {
         "id": 49,
@@ -3317,7 +3346,8 @@
         "link": "",
         "source": [],
         "hidden": "",
-        "postText": "学党史、传精神、跟党走，我是文艺志愿者肖战，向为国奉献的英雄们致敬，不起学习焦裕禄精神。#文艺志愿者学党史传精神跟党走# http://t.cn/A6VSjvfX"
+        "postText": "学党史、传精神、跟党走，我是文艺志愿者肖战，向为国奉献的英雄们致敬，不起学习焦裕禄精神。#文艺志愿者学党史传精神跟党走# http://t.cn/A6VSjvfX",
+        "quality": "720p"
     },
     {
         "id": 50,
@@ -3658,7 +3688,8 @@
         ],
         "platform": "douyin",
         "type": "attached",
-        "size_mb": 7.69
+        "size_mb": 7.69,
+        "quality": "720p"
     },
     {
         "id": 110,
@@ -3703,7 +3734,8 @@
         "englishTags": [
             "zwilling j.a. henckels",
             "brand ambassador"
-        ]
+        ],
+        "quality": "1080p"
     },
     {
         "id": 190,
@@ -3771,7 +3803,8 @@
         "englishTags": [
             "tods",
             "brand ambassador"
-        ]
+        ],
+        "quality": "1080p"
     },
     {
         "id": 37,
@@ -3924,7 +3957,8 @@
         "note": "",
         "platform": "douyin",
         "type": "attached",
-        "size_mb": 1.54
+        "size_mb": 1.54,
+        "quality": "720p"
     },
     {
         "id": 34,
@@ -4183,7 +4217,8 @@
             "tilun snow",
             "ice cream",
             "endorsement"
-        ]
+        ],
+        "quality": "1080p"
     },
     {
         "id": 146,
@@ -4229,7 +4264,8 @@
             "oatmeal",
             "ocak",
             "brand ambassador"
-        ]
+        ],
+        "quality": "1080p"
     },
     {
         "id": 29,
@@ -4324,7 +4360,8 @@
         "englishTags": [
             "roborock",
             "brand ambassador"
-        ]
+        ],
+        "quality": "1080p"
     },
     {
         "id": 185,
@@ -4417,7 +4454,8 @@
             "lining",
             "sports",
             "weibo"
-        ]
+        ],
+        "size_mb": 0.49
     },
     {
         "id": 180,
@@ -4465,7 +4503,8 @@
         "link": "",
         "source": [],
         "hidden": "",
-        "postText": "#如梦之梦九周年#, 看见自己, 肖战, 走进五号。@央华戏剧"
+        "postText": "#如梦之梦九周年#, 看见自己, 肖战, 走进五号。@央华戏剧",
+        "quality": "720p"
     },
     {
         "id": 28,
@@ -4489,7 +4528,8 @@
         ],
         "platform": "douyin",
         "type": "attached",
-        "size_mb": 1.1
+        "size_mb": 1.1,
+        "quality": "720p"
     },
     {
         "id": 178,
@@ -4905,7 +4945,8 @@
         "link": "",
         "source": [],
         "hidden": "",
-        "postText": "#学雷锋文艺志愿服务# 一起重温雷锋日记，书写新时代雷锋故事，我是#文艺志愿者# 肖战，今天是雷锋纪念日，由我来为您朗读一篇雷锋日记。"
+        "postText": "#学雷锋文艺志愿服务# 一起重温雷锋日记，书写新时代雷锋故事，我是#文艺志愿者# 肖战，今天是雷锋纪念日，由我来为您朗读一篇雷锋日记。",
+        "quality": "720p"
     },
     {
         "id": 104,
@@ -4952,7 +4993,8 @@
             "molsion",
             "eyewear",
             "endorsement"
-        ]
+        ],
+        "quality": "1080p"
     },
     {
         "id": 167,
@@ -5182,7 +5224,8 @@
             "public service announcement",
             "shanghai police",
             "weibo"
-        ]
+        ],
+        "quality": "1080p"
     },
     {
         "id": 18,
@@ -5205,7 +5248,8 @@
         ],
         "platform": "douyin",
         "type": "attached",
-        "size_mb": 3.71
+        "size_mb": 3.71,
+        "quality": "720p"
     },
     {
         "id": 17,
@@ -5228,7 +5272,8 @@
         ],
         "platform": "douyin",
         "type": "attached",
-        "size_mb": 1.51
+        "size_mb": 1.51,
+        "quality": "720p"
     },
     {
         "id": 108,
@@ -5280,7 +5325,9 @@
         "url_hd": "https://assets.xz-studio-gallery.com/hd/20241217_异乡人_XZ-MISC-1.mp4",
         "source": [],
         "hidden": "",
-        "size_mb": 31.36
+        "size_mb": 31.36,
+        "quality": "720p",
+        "size_hd": 120.2
     },
     {
         "id": 160,
@@ -5330,7 +5377,8 @@
         ],
         "url_hd": "https://assets.xz-studio-gallery.com/hd/20210212_XZ-Weibo-3.mp4",
         "quality_hd": "1080p",
-        "size_hd": 171.69
+        "size_hd": 171.69,
+        "quality": "480p"
     },
     {
         "id": 14,
@@ -5594,7 +5642,8 @@
         ],
         "platform": "douyin",
         "type": "attached",
-        "size_mb": 1.35
+        "size_mb": 1.35,
+        "quality": "720p"
     },
     {
         "id": 154,
@@ -5661,7 +5710,8 @@
         ],
         "platform": "douyin",
         "type": "attached",
-        "size_mb": 3.74
+        "size_mb": 3.74,
+        "quality": "720p"
     },
     {
         "id": 6,
@@ -5795,7 +5845,8 @@
         "note": "",
         "platform": "douyin",
         "type": "attached",
-        "size_mb": 2.42
+        "size_mb": 2.42,
+        "quality": "720p"
     },
     {
         "id": 144,
@@ -6069,7 +6120,8 @@
         "englishTags": [
             "weibo lucky ox",
             "new year"
-        ]
+        ],
+        "quality": "1080p"
     },
     {
         "id": 106,
@@ -6117,6 +6169,11 @@
         ],
         "url_hd": "https://assets.xz-studio-gallery.com/hd/20241130_野子_XZ-MISC-1.mp4",
         "source": [],
-        "hidden": ""
+        "hidden": "",
+        "duration": 222,
+        "size_mb": 29.65,
+        "size_4k": 113.57,
+        "quality": "720p",
+        "size_hd": 113.57
     }
 ]
