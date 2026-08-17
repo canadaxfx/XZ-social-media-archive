@@ -508,7 +508,8 @@
         ],
         "platform": "douyin",
         "type": "attached",
-        "size_mb": 1.32
+        "size_mb": 1.32,
+        "quality": "720p"
     },
     {
         "id": 114,
@@ -623,7 +624,74 @@
         ],
         "platform": "douyin",
         "type": "attached",
-        "size_mb": 47.91
+        "size_mb": 47.91,
+        "quality": "720p"
+    },
+    {
+        "id": 149,
+        "url": "https://assets.xz-studio-gallery.com/full/20231005_XZ-Weibo-1.jpg",
+        "date": "2023-10-05",
+        "month": "October",
+        "year": "2023",
+        "tags": [
+            "生日"
+        ],
+        "groupName": "202310",
+        "link": "",
+        "type": "screenshot",
+        "platform": "weibo",
+        "note": "",
+        "description": "",
+        "postText": "“顺顺利利，健健康康！” \r\n祝自己，也送你们！[蛋糕] ​​​",
+        "size_mb": 0.06,
+        "englishTags": [
+            "birthday",
+            "weibo"
+        ]
+    },
+    {
+        "id": 150,
+        "url": "https://assets.xz-studio-gallery.com/full/20231005_XZ-Weibo-2.jpg",
+        "date": "2023-10-05",
+        "month": "October",
+        "year": "2023",
+        "tags": [
+            "生日"
+        ],
+        "groupName": "202310",
+        "link": "",
+        "type": "attached",
+        "platform": "weibo",
+        "note": "",
+        "description": "",
+        "postText": "“顺顺利利，健健康康！” \r\n祝自己，也送你们！[蛋糕] ​​​",
+        "size_mb": 0.19,
+        "englishTags": [
+            "birthday",
+            "weibo"
+        ]
+    },
+    {
+        "id": 151,
+        "url": "https://assets.xz-studio-gallery.com/full/20231005_XZ-Weibo-3.jpg",
+        "date": "2023-10-05",
+        "month": "October",
+        "year": "2023",
+        "tags": [
+            "生日动态"
+        ],
+        "groupName": "202310",
+        "link": "",
+        "type": "screenshot",
+        "platform": "weibo",
+        "note": "",
+        "description": "",
+        "postText": "NA",
+        "size_mb": 0.14,
+        "englishTags": [
+            "birthday",
+            "weibo"
+        ]
     },
     {
         "id": 109,
@@ -648,7 +716,8 @@
         "type": "attached",
         "source": [],
         "hidden": "",
-        "size_mb": 6.08
+        "size_mb": 6.08,
+        "quality": "720p"
     },
     {
         "id": 139,
@@ -693,7 +762,8 @@
         ],
         "platform": "douyin",
         "type": "attached",
-        "size_mb": 2.01
+        "size_mb": 2.01,
+        "quality": "720p"
     },
     {
         "id": 143,
@@ -2179,7 +2249,8 @@
         ],
         "platform": "douyin",
         "type": "attached",
-        "size_mb": 5.46
+        "size_mb": 5.46,
+        "quality": "720p"
     },
     {
         "id": 45,
@@ -3321,7 +3392,8 @@
         ],
         "platform": "douyin",
         "type": "attached",
-        "size_mb": 7.92
+        "size_mb": 7.92,
+        "quality": "720p"
     },
     {
         "id": 3,
