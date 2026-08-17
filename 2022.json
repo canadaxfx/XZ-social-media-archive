@@ -39,7 +39,8 @@
         ],
         "platform": "weibo",
         "type": "attached",
-        "size_mb": 3.38
+        "size_mb": 3.38,
+        "quality": "720p"
     },
     {
         "id": 165,
@@ -598,6 +599,51 @@
         "size_mb": 0.15
     },
     {
+        "id": 197,
+        "url": "https://assets.xz-studio-gallery.com/full/20221005_XZ-Weibo-1.jpg",
+        "date": "2022-10-05",
+        "month": "October",
+        "year": "2022",
+        "tags": [
+            "生日动态"
+        ],
+        "groupName": "202210",
+        "link": "",
+        "type": "screenshot",
+        "platform": "weibo",
+        "note": "",
+        "description": "",
+        "postText": "NA",
+        "size_mb": 0.07,
+        "englishTags": [
+            "birthday",
+            "weibo"
+        ]
+    },
+    {
+        "id": 198,
+        "url": "https://assets.xz-studio-gallery.com/full/20221001_XZ-Weibo-1.jpg",
+        "date": "2022-10-01",
+        "month": "October",
+        "year": "2022",
+        "tags": [
+            "央视新闻"
+        ],
+        "groupName": "202210",
+        "link": "",
+        "type": "screenshot",
+        "platform": "weibo",
+        "note": "",
+        "description": "",
+        "postText": "祝福祖国繁荣富强，国泰民安🇨🇳#庆祝新中国成立73周年#",
+        "size_mb": 0.57,
+        "englishTags": [
+            "cctv news",
+            "national day",
+            "celebration"
+        ]
+    },
+    {
         "id": 134,
         "url": "https://assets.xz-studio-gallery.com/full/20220929_WB_XZ.jpg",
         "date": "2022-09-29",
@@ -1059,7 +1105,8 @@
             "ysl",
             "skincare",
             "beauty campaign"
-        ]
+        ],
+        "quality": "1080p"
     },
     {
         "id": 120,
@@ -1587,7 +1634,8 @@
             "ocak",
             "oat milk",
             "brand endorsement"
-        ]
+        ],
+        "quality": "4k"
     },
     {
         "id": 191,
@@ -1633,7 +1681,8 @@
             "extra gum",
             "endorsement",
             "weibo"
-        ]
+        ],
+        "quality": "1080p"
     },
     {
         "id": 98,
@@ -1985,7 +2034,8 @@
             "ralph lauren",
             "fragrance",
             "weibo"
-        ]
+        ],
+        "quality": "1080p"
     },
     {
         "id": 84,
@@ -2145,7 +2195,8 @@
             "new farm",
             "milk",
             "endorsement"
-        ]
+        ],
+        "quality": "4k"
     },
     {
         "id": 185,
@@ -2191,7 +2242,8 @@
             "breo",
             "endorsement",
             "weibo"
-        ]
+        ],
+        "quality": "1080p"
     },
     {
         "id": 183,
@@ -2238,7 +2290,8 @@
             "darlie",
             "endorsement",
             "oral care"
-        ]
+        ],
+        "quality": "1080p"
     },
     {
         "id": 79,
@@ -2283,7 +2336,8 @@
         ],
         "platform": "weibo",
         "type": "attached",
-        "size_mb": 8.3
+        "size_mb": 8.3,
+        "quality": "720p"
     },
     {
         "id": 78,
@@ -2305,7 +2359,8 @@
         ],
         "platform": "douyin",
         "type": "attached",
-        "size_mb": 3.48
+        "size_mb": 3.48,
+        "quality": "720p"
     },
     {
         "id": 76,
@@ -2393,7 +2448,8 @@
             "l'oreal pro",
             "haircare",
             "endorsement"
-        ]
+        ],
+        "quality": "1080p"
     },
     {
         "id": 75,
@@ -2415,7 +2471,8 @@
         ],
         "platform": "douyin",
         "type": "attached",
-        "size_mb": 1.57
+        "size_mb": 1.57,
+        "quality": "720p"
     },
     {
         "id": 74,
@@ -2438,7 +2495,8 @@
         ],
         "platform": "douyin",
         "type": "attached",
-        "size_mb": 3.39
+        "size_mb": 3.39,
+        "quality": "720p"
     },
     {
         "id": 69,
@@ -2616,7 +2674,8 @@
         ],
         "platform": "douyin",
         "type": "attached",
-        "size_mb": 3.8
+        "size_mb": 3.8,
+        "quality": "720p"
     },
     {
         "id": 179,
@@ -2663,7 +2722,8 @@
             "pepsi",
             "endorsement",
             "weibo"
-        ]
+        ],
+        "quality": "1080p"
     },
     {
         "id": 60,
@@ -2759,7 +2819,8 @@
         ],
         "platform": "douyin",
         "type": "attached",
-        "size_mb": 4.36
+        "size_mb": 4.36,
+        "quality": "720p"
     },
     {
         "id": 64,
@@ -2981,7 +3042,8 @@
         ],
         "platform": "weibo",
         "type": "attached",
-        "size_mb": 4.89
+        "size_mb": 4.89,
+        "quality": "720p"
     },
     {
         "id": 53,
@@ -3005,7 +3067,8 @@
         ],
         "platform": "douyin",
         "type": "attached",
-        "size_mb": 10.41
+        "size_mb": 10.41,
+        "quality": "720p"
     },
     {
         "id": 49,
@@ -3364,7 +3427,8 @@
         ],
         "platform": "douyin",
         "type": "attached",
-        "size_mb": 1.56
+        "size_mb": 1.56,
+        "quality": "720p"
     },
     {
         "id": 33,
@@ -3471,7 +3535,8 @@
         "englishTags": [
             "nars",
             "brand ambassador"
-        ]
+        ],
+        "quality": "4k"
     },
     {
         "id": 32,
@@ -3493,7 +3558,8 @@
         ],
         "platform": "douyin",
         "type": "attached",
-        "size_mb": 6.11
+        "size_mb": 6.11,
+        "quality": "720p"
     },
     {
         "id": 27,
@@ -3737,7 +3803,8 @@
         ],
         "platform": "douyin",
         "type": "attached",
-        "size_mb": 5.09
+        "size_mb": 5.09,
+        "quality": "720p"
     },
     {
         "id": 13,
@@ -3935,7 +4002,8 @@
         ],
         "platform": "douyin",
         "type": "attached",
-        "size_mb": 4.19
+        "size_mb": 4.19,
+        "quality": "720p"
     },
     {
         "id": 175,
@@ -3982,7 +4050,8 @@
             "zenith",
             "watch",
             "weibo post"
-        ]
+        ],
+        "quality": "1080p"
     },
     {
         "id": 11,
@@ -4078,7 +4147,8 @@
         ],
         "platform": "weibo",
         "type": "attached",
-        "size_mb": 5.66
+        "size_mb": 5.66,
+        "quality": "720p"
     },
     {
         "id": 173,
@@ -4125,7 +4195,8 @@
             "ace troops",
             "weibo",
             "farewell"
-        ]
+        ],
+        "quality": "1080p"
     },
     {
         "id": 7,
@@ -4149,7 +4220,8 @@
         ],
         "platform": "douyin",
         "type": "attached",
-        "size_mb": 0.97
+        "size_mb": 0.97,
+        "quality": "720p"
     },
     {
         "id": 6,
@@ -4220,7 +4292,8 @@
             "dove",
             "chocolate",
             "endorsement"
-        ]
+        ],
+        "quality": "1080p"
     },
     {
         "id": 5,
@@ -4241,7 +4314,8 @@
         ],
         "platform": "douyin",
         "type": "attached",
-        "size_mb": 23.87
+        "size_mb": 23.87,
+        "quality": "720p"
     },
     {
         "id": 4,
@@ -4286,7 +4360,8 @@
         ],
         "platform": "douyin",
         "type": "attached",
-        "size_mb": 2.07
+        "size_mb": 2.07,
+        "quality": "720p"
     },
     {
         "id": 2,
@@ -4373,6 +4448,7 @@
         "englishTags": [
             "saic audi",
             "weibo update"
-        ]
+        ],
+        "quality": "1080p"
     }
 ]
