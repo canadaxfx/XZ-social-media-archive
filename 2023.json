@@ -653,6 +653,53 @@
         "quality": "1080p"
     },
     {
+        "id": 157,
+        "url": "https://assets.xz-studio-gallery.com/full/20231105_XZ-Weibo-1.jpg",
+        "date": "2023-11-05",
+        "month": "November",
+        "year": "2023",
+        "tags": [
+            "开小灶"
+        ],
+        "groupName": "202311",
+        "link": "",
+        "type": "screenshot",
+        "platform": "weibo",
+        "note": "",
+        "description": "",
+        "postText": "匠心翻炒火候生香，锅气入馔风味十足。@开小灶官方微博 全新系列，一起品尝私房好味。#好好吃饭开小灶# ​​​http://t.cn/A6WMh7IH",
+        "size_mb": 0.2,
+        "englishTags": [
+            "kaixiazao",
+            "food",
+            "endorsement"
+        ]
+    },
+    {
+        "id": 158,
+        "url": "https://assets.xz-studio-gallery.com/full/20231105_XZ-Weibo-2.mp4",
+        "date": "2023-11-05",
+        "month": "November",
+        "year": "2023",
+        "tags": [
+            "开小灶"
+        ],
+        "groupName": "202311",
+        "duration": 27,
+        "link": "",
+        "type": "attached",
+        "platform": "weibo",
+        "note": "",
+        "description": "",
+        "postText": "匠心翻炒火候生香，锅气入馔风味十足。@开小灶官方微博 全新系列，一起品尝私房好味。#好好吃饭开小灶# ​​​http://t.cn/A6WMh7IH",
+        "size_mb": 7.33,
+        "englishTags": [
+            "kaixiaozhao",
+            "food",
+            "endorsement"
+        ]
+    },
+    {
         "id": 113,
         "url": "https://assets.xz-studio-gallery.com/full/20231026_WB_XZ.jpg",
         "date": "2023-10-26",
