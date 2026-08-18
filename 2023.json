@@ -312,6 +312,77 @@
         "size_mb": 6.27
     },
     {
+        "id": 152,
+        "url": "https://assets.xz-studio-gallery.com/full/20231223_XZ-Weibo-1.jpg",
+        "date": "2023-12-23",
+        "month": "December",
+        "year": "2023",
+        "tags": [
+            "开小灶"
+        ],
+        "groupName": "202312",
+        "link": "",
+        "type": "screenshot",
+        "platform": "weibo",
+        "note": "",
+        "description": "",
+        "postText": "寒冬岁末，和@开小灶官方微博 一起开个小灶，温暖过冬。 #有了开小灶轻松吃大餐#  http://t.cn/A6l9ZL1D",
+        "size_mb": 0.15,
+        "englishTags": [
+            "kaixiaozhao",
+            "brand ambassador",
+            "winter"
+        ]
+    },
+    {
+        "id": 153,
+        "url": "https://assets.xz-studio-gallery.com/full/20231223_XZ-Weibo-2.mp4",
+        "date": "2023-12-23",
+        "month": "December",
+        "year": "2023",
+        "tags": [
+            "开小灶"
+        ],
+        "groupName": "202312",
+        "duration": 29,
+        "link": "",
+        "type": "attached",
+        "platform": "weibo",
+        "note": "",
+        "description": "",
+        "postText": "寒冬岁末，和@开小灶官方微博 一起开个小灶，温暖过冬。 #有了开小灶轻松吃大餐#  http://t.cn/A6l9ZL1D",
+        "size_mb": 7.11,
+        "englishTags": [
+            "kaixiazao",
+            "brand endorsement",
+            "winter"
+        ],
+        "quality": "1080p"
+    },
+    {
+        "id": 154,
+        "url": "https://assets.xz-studio-gallery.com/full/20231219_XZ-Weibo-1.jpg",
+        "date": "2023-12-19",
+        "month": "December",
+        "year": "2023",
+        "tags": [
+            "央视新闻"
+        ],
+        "groupName": "202312",
+        "link": "",
+        "type": "screenshot",
+        "platform": "weibo",
+        "note": "",
+        "description": "",
+        "postText": "愿平安🙏 ​​​",
+        "size_mb": 0.27,
+        "englishTags": [
+            "cctv news",
+            "weibo",
+            "public welfare"
+        ]
+    },
+    {
         "id": 122,
         "url": "https://assets.xz-studio-gallery.com/full/20231211_WB_XZ.jpg",
         "date": "2023-12-11",
@@ -532,6 +603,54 @@
         "platform": "weibo",
         "type": "screenshot",
         "size_mb": 0.32
+    },
+    {
+        "id": 155,
+        "url": "https://assets.xz-studio-gallery.com/full/20231107_XZ-Weibo-1.jpg",
+        "date": "2023-11-07",
+        "month": "November",
+        "year": "2023",
+        "tags": [
+            "宝诗龙"
+        ],
+        "groupName": "202311",
+        "link": "",
+        "type": "screenshot",
+        "platform": "weibo",
+        "postText": "与@Boucheron宝诗龙 一同书写自由创艺新篇。#宝诗龙Quatre# http://t.cn/A6WNeTvK",
+        "size_mb": 0.14,
+        "englishTags": [
+            "boucheron",
+            "jewelry",
+            "quatre collection"
+        ],
+        "source": [],
+        "hidden": ""
+    },
+    {
+        "id": 156,
+        "url": "https://assets.xz-studio-gallery.com/full/20231107_XZ-Weibo-2.mp4",
+        "date": "2023-11-07",
+        "month": "November",
+        "year": "2023",
+        "tags": [
+            "宝诗龙"
+        ],
+        "groupName": "202311",
+        "duration": 17,
+        "link": "",
+        "type": "attached",
+        "platform": "weibo",
+        "postText": "与@Boucheron宝诗龙 一同书写自由创艺新篇。#宝诗龙Quatre# http://t.cn/A6WNeTvK",
+        "size_mb": 1.69,
+        "englishTags": [
+            "boucheron",
+            "jewelry",
+            "quatre collection"
+        ],
+        "source": [],
+        "hidden": "",
+        "quality": "1080p"
     },
     {
         "id": 113,
