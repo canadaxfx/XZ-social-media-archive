@@ -413,6 +413,28 @@
         "quality": "720p"
     },
     {
+        "id": 334,
+        "url": "https://assets.xz-studio-gallery.com/full/20171215_XZ-Weibo-1.jpg",
+        "date": "2017-12-15",
+        "month": "December",
+        "year": "2017",
+        "tags": [
+            "妖猫传"
+        ],
+        "groupName": "201712",
+        "link": "",
+        "type": "screenshot",
+        "platform": "weibo",
+        "note": "",
+        "description": "",
+        "postText": "#妖猫传1222# 幻术里面也有真相，12.22来看极乐之宴的辉煌",
+        "size_mb": 0.26,
+        "englishTags": [
+            "demon cat",
+            "movie promotion"
+        ]
+    },
+    {
         "id": 311,
         "url": "https://assets.xz-studio-gallery.com/full/20171209_WB_XZ.jpg",
         "date": "2017-12-09",
