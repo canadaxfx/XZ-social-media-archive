@@ -43,6 +43,57 @@
         "quality": "720p"
     },
     {
+        "id": 199,
+        "url": "https://assets.xz-studio-gallery.com/full/20221228_XZ-Weibo-1.jpg",
+        "date": "2022-12-28",
+        "month": "December",
+        "year": "2022",
+        "tags": [
+            "李宁"
+        ],
+        "groupName": "202212",
+        "link": "",
+        "type": "screenshot",
+        "platform": "weibo",
+        "note": "",
+        "description": "",
+        "postText": "就快新年了，还是那句祝福：新年快乐，#日进斗金#。与@李宁运动生活 一起，发现《藏不住的新意》。http://t.cn/A6K33WDd",
+        "size_mb": 0.57,
+        "englishTags": [
+            "lining",
+            "weibo",
+            "new year",
+            "sports",
+            "fashion"
+        ]
+    },
+    {
+        "id": 200,
+        "url": "https://assets.xz-studio-gallery.com/full/20221229_李宁_XZ-MISC-1.mp4",
+        "date": "2022-12-28",
+        "month": "December",
+        "year": "2022",
+        "tags": [
+            "李宁"
+        ],
+        "groupName": "202212",
+        "link": "",
+        "type": "attached",
+        "platform": "weibo",
+        "note": "",
+        "description": "",
+        "postText": "就快新年了，还是那句祝福：新年快乐，#日进斗金#。与@李宁运动生活 一起，发现《藏不住的新意》。http://t.cn/A6K33WDd",
+        "size_mb": 79.22,
+        "englishTags": [
+            "lining",
+            "new year",
+            "sports",
+            "campaign"
+        ],
+        "duration": 396,
+        "quality": "1080p"
+    },
+    {
         "id": 165,
         "url": "https://assets.xz-studio-gallery.com/full/20221227WB_XZ.jpg",
         "date": "2022-12-27",
