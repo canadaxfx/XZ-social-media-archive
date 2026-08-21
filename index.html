@@ -413,6 +413,7 @@
               background: var(--grad-gold-h) !important;
             }
 
+            .seg-type-badge { vertical-align: middle; }
             .nav-segmented .segment-btn span {
               display: inline;
               font-size: inherit;
@@ -1367,6 +1368,7 @@
         .nav-segmented { width: 100%; justify-content: center; }
         .nav-segmented .segment-btn { padding: 10px 14px; font-size: 12px; }
         .nav-segmented .segment-btn span { display: block; font-size: 10px; margin-left: 0; margin-top: 2px; }
+        .seg-type-badge { vertical-align: text-top; }
 
         .media-filter-tabs { gap: 2px; padding: 3px; }
         .media-tab { font-size: 11px; padding: 4px 10px; }
@@ -1619,14 +1621,14 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
             data-section="screenshot"
             onclick="switchTab('screenshot')"
           >
-            Screenshots<span>截图</span>
+            Screenshots<span>截图<span style="display:inline-block;background:rgba(0,0,0,0.25);border-radius:3px;padding:0 4px;font-size:9px;font-weight:900;margin-left:4px" class="seg-type-badge">S</span></span>
           </button>
           <button
             class="segment-btn"
             data-section="attached"
             onclick="switchTab('attached')"
           >
-            Attached Media<span>配图&视频</span>
+            Attached Media<span>配图&视频<span style="display:inline-block;background:rgba(0,0,0,0.25);border-radius:3px;padding:0 4px;font-size:9px;font-weight:900;margin-left:4px" class="seg-type-badge">M</span></span>
           </button>
         </nav></div>
 
@@ -2216,7 +2218,22 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
           }
         });
 
-        combined.sort((a, b) => b.date.localeCompare(a.date));
+        combined.sort((a, b) => {
+          const dc = b.date.localeCompare(a.date);
+          if (dc !== 0) return dc;
+          // Use link first, postGroup as fallback — both identify same-post entries
+          const ag = a.link || a.postGroup || '';
+          const bg = b.link || b.postGroup || '';
+          const gc = ag.localeCompare(bg);
+          if (gc !== 0) return gc;
+          // Same group: screenshot before attached
+          if (ag) {
+            const tc = (a.type === 'screenshot' ? 0 : 1) - (b.type === 'screenshot' ? 0 : 1);
+            if (tc !== 0) return tc;
+          }
+          // No group key: preserve original JSON order
+          return a._uid - b._uid;
+        });
         allData = combined;
 
         const years = [...new Set(allData.map((d) => d.year))].sort().reverse();
@@ -2693,6 +2710,8 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
             const motionBadge = (isMotion || isClipMp4) ? '<span class="motion-badge">' + motionExt + '</span>' : '';
 
             const { cssClass, thumbLabel } = getSourceMeta(item.platform);
+            const typeIcon = item.type === 'screenshot' ? 'S' : 'M';
+            const srcBadgeLabel = `${thumbLabel}<span style="display:inline-block;background:rgba(0,0,0,0.35);border-radius:3px;padding:0 3px;margin-left:3px;font-size:7px;font-weight:900;letter-spacing:0.5px;vertical-align:middle">${typeIcon}</span>`;
             const durBadge = ((isVideoEntry(item) || isClipMp4) && item.duration)
               ? `<div class="dur-badge">${fmtDuration(item.duration)}</div>`
               : '';
@@ -2710,7 +2729,7 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
         <img data-src="${getThumbUrl(item.url)}" class="lazy-image loading-placeholder">
         <div class="photo-overlay">
             <div class="photo-date">${item.date}</div>
-            <div class="thumb-src-badge ${cssClass}">${thumbLabel}</div>
+            <div class="thumb-src-badge ${cssClass}">${srcBadgeLabel}</div>
         </div>
     </div>`;
           })
