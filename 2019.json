@@ -1754,7 +1754,8 @@
             "zhenguoli",
             "weibo post",
             "brand endorsement"
-        ]
+        ],
+        "quality": "720p"
     },
     {
         "id": 256,
@@ -2020,7 +2021,8 @@
             "bigshot",
             "magazine",
             "photoshoot"
-        ]
+        ],
+        "quality": "480p"
     },
     {
         "id": 349,
@@ -2069,7 +2071,8 @@
             "weibo",
             "double eleven",
             "promotional"
-        ]
+        ],
+        "quality": "1080p"
     },
     {
         "id": 250,
