@@ -1621,7 +1621,7 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
             data-section="screenshot"
             onclick="switchTab('screenshot')"
           >
-            Screenshots<span>截图<span style="display:inline-block;background:rgba(0,0,0,0.25);border-radius:3px;padding:0 4px;font-size:9px;font-weight:900;margin-left:4px" class="seg-type-badge">S</span></span>
+            Screenshots<span>截图<span style="display:inline-block;background:white;color:#374151;border-radius:3px;padding:0 4px;font-size:9px;font-weight:900;margin-left:4px" class="seg-type-badge">S</span></span>
           </button>
           <button
             class="segment-btn"
@@ -2711,7 +2711,9 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
 
             const { cssClass, thumbLabel } = getSourceMeta(item.platform);
             const typeIcon = item.type === 'screenshot' ? 'S' : 'M';
-            const srcBadgeLabel = `${thumbLabel}<span style="display:inline-block;background:rgba(0,0,0,0.35);border-radius:3px;padding:0 3px;margin-left:3px;font-size:7px;font-weight:900;letter-spacing:0.5px;vertical-align:middle">${typeIcon}</span>`;
+            const typeBg    = item.type === 'screenshot' ? 'white' : 'rgba(0,0,0,0.35)';
+            const typeColor = item.type === 'screenshot' ? 'color:#374151;' : '';
+            const srcBadgeLabel = `${thumbLabel}<span style="display:inline-block;background:${typeBg};${typeColor}border-radius:3px;padding:0 3px;margin-left:3px;font-size:7px;font-weight:900;letter-spacing:0.5px;vertical-align:middle">${typeIcon}</span>`;
             const durBadge = ((isVideoEntry(item) || isClipMp4) && item.duration)
               ? `<div class="dur-badge">${fmtDuration(item.duration)}</div>`
               : '';
