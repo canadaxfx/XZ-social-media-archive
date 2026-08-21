@@ -1710,6 +1710,53 @@
         "size_mb": 0.04
     },
     {
+        "id": 345,
+        "url": "https://assets.xz-studio-gallery.com/full/20191030_XZ-Weibo-1.jpg",
+        "date": "2019-10-30",
+        "month": "October",
+        "year": "2019",
+        "tags": [
+            "真果粒"
+        ],
+        "groupName": "201910",
+        "link": "",
+        "type": "screenshot",
+        "platform": "weibo",
+        "note": "",
+        "description": "",
+        "postText": "不能陪伴你们的日子，就让小果粒@真果粒 替我照顾你们吧！#桃你欢心赞不绝口# http://t.cn/Ai18k0b9",
+        "size_mb": 0.1,
+        "englishTags": [
+            "zhenguoli",
+            "endorsement",
+            "weibo post"
+        ]
+    },
+    {
+        "id": 346,
+        "url": "https://assets.xz-studio-gallery.com/full/20191030_XZ-Weibo-2.mp4",
+        "date": "2019-10-30",
+        "month": "October",
+        "year": "2019",
+        "tags": [
+            "真果粒"
+        ],
+        "groupName": "201910",
+        "duration": 28,
+        "link": "",
+        "type": "attached",
+        "platform": "weibo",
+        "note": "",
+        "description": "",
+        "postText": "不能陪伴你们的日子，就让小果粒@真果粒 替我照顾你们吧！#桃你欢心赞不绝口# http://t.cn/Ai18k0b9",
+        "size_mb": 2.12,
+        "englishTags": [
+            "zhenguoli",
+            "weibo post",
+            "brand endorsement"
+        ]
+    },
+    {
         "id": 256,
         "url": "https://assets.xz-studio-gallery.com/full/20191029_WB_XZ.jpg",
         "date": "2019-10-29",
@@ -1928,6 +1975,101 @@
         "platform": "weibo",
         "type": "attached",
         "size_mb": 2.84
+    },
+    {
+        "id": 347,
+        "url": "https://assets.xz-studio-gallery.com/full/20191027_XZ-Weibo-1.jpg",
+        "date": "2019-10-27",
+        "month": "October",
+        "year": "2019",
+        "tags": [
+            "大片"
+        ],
+        "groupName": "201910",
+        "link": "",
+        "type": "screenshot",
+        "platform": "weibo",
+        "note": "",
+        "description": "",
+        "postText": "哇！！！！@大片Bigshot ​​​http://t.cn/Ai1Jlvxt",
+        "size_mb": 0.08,
+        "englishTags": [
+            "bigshot",
+            "photoshoot"
+        ]
+    },
+    {
+        "id": 348,
+        "url": "https://assets.xz-studio-gallery.com/full/20191027_XZ-Weibo-2.mp4",
+        "date": "2019-10-27",
+        "month": "October",
+        "year": "2019",
+        "tags": [
+            "大片"
+        ],
+        "groupName": "201910",
+        "duration": 12,
+        "link": "",
+        "type": "attached",
+        "platform": "weibo",
+        "note": "",
+        "description": "",
+        "postText": "哇！！！！@大片Bigshot ​​​http://t.cn/Ai1Jlvxt",
+        "size_mb": 0.27,
+        "englishTags": [
+            "bigshot",
+            "magazine",
+            "photoshoot"
+        ]
+    },
+    {
+        "id": 349,
+        "url": "https://assets.xz-studio-gallery.com/full/20191027_XZ-Weibo-3.jpg",
+        "date": "2019-10-27",
+        "month": "October",
+        "year": "2019",
+        "tags": [
+            "博朗"
+        ],
+        "groupName": "201910",
+        "link": "",
+        "type": "screenshot",
+        "platform": "weibo",
+        "note": "",
+        "description": "",
+        "postText": "博朗的设计很经典，又在不断超越自我。既是颜值担当，又是实力战将。这个双十一，邀你一起体验@德国博朗Braun 不止所见的妙。12月博朗分享会，我们不见不散。https://t.cn/Ai1VmXbQ\r\nhttp://t.cn/Ai1Vn0JE",
+        "size_mb": 0.74,
+        "englishTags": [
+            "braun",
+            "weibo",
+            "double eleven",
+            "promotional"
+        ]
+    },
+    {
+        "id": 350,
+        "url": "https://assets.xz-studio-gallery.com/full/20191027_XZ-Weibo-4.mp4",
+        "date": "2019-10-27",
+        "month": "October",
+        "year": "2019",
+        "tags": [
+            "博朗"
+        ],
+        "groupName": "201910",
+        "duration": 22,
+        "link": "",
+        "type": "attached",
+        "platform": "weibo",
+        "note": "",
+        "description": "",
+        "postText": "博朗的设计很经典，又在不断超越自我。既是颜值担当，又是实力战将。这个双十一，邀你一起体验@德国博朗Braun 不止所见的妙。12月博朗分享会，我们不见不散。https://t.cn/Ai1VmXbQ\r\nhttp://t.cn/Ai1Vn0JE",
+        "size_mb": 7.19,
+        "englishTags": [
+            "braun",
+            "weibo",
+            "double eleven",
+            "promotional"
+        ]
     },
     {
         "id": 250,
