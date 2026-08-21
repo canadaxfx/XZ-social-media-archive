@@ -2822,6 +2822,81 @@
         "size_mb": 0.29
     },
     {
+        "id": 124,
+        "url": "https://assets.xz-studio-gallery.com/full/20260122_XZ-Weibo-1.mp4",
+        "date": "2026-01-22",
+        "month": "January",
+        "year": "2026",
+        "tags": [
+            "每日鲜语"
+        ],
+        "groupName": "202601",
+        "duration": 60,
+        "link": "https://weibo.com/1792951112/5257829925527707",
+        "type": "attached",
+        "platform": "weibo",
+        "note": "",
+        "description": "",
+        "postText": "在更高处的鲜语云上牧场\r\n见证更高标准的新鲜有机\r\n@每日鲜语 高端鲜奶新标杆! #每日鲜语#\r\nhttp://t.cn/AXGu3YTG",
+        "postGroup": "5257829925527707",
+        "size_mb": 15.49,
+        "englishTags": [
+            "daily fresh",
+            "dairy",
+            "endorsement"
+        ]
+    },
+    {
+        "id": 125,
+        "url": "https://assets.xz-studio-gallery.com/full/20260122_XZ-Weibo-2.jpg",
+        "date": "2026-01-22",
+        "month": "January",
+        "year": "2026",
+        "tags": [
+            "每日鲜语"
+        ],
+        "groupName": "202601",
+        "link": "https://weibo.com/1792951112/5257829925527707",
+        "type": "screenshot",
+        "platform": "weibo",
+        "note": "",
+        "description": "",
+        "postText": "在更高处的鲜语云上牧场\r\n见证更高标准的新鲜有机\r\n@每日鲜语 高端鲜奶新标杆! #每日鲜语#\r\nhttp://t.cn/AXGu3YTG",
+        "postGroup": "5257829925527707",
+        "size_mb": 0.29,
+        "englishTags": [
+            "daily fresh",
+            "dairy",
+            "endorsement"
+        ]
+    },
+    {
+        "id": 123,
+        "url": "https://assets.xz-studio-gallery.com/full/20260115_XZ-Weibo-1.jpg",
+        "date": "2026-01-15",
+        "month": "January",
+        "year": "2026",
+        "tags": [
+            "蒙牛"
+        ],
+        "groupName": "202601",
+        "link": "https://weibo.com/1792951112/5251674153425419",
+        "type": "screenshot",
+        "platform": "weibo",
+        "note": "",
+        "description": "",
+        "postText": "新年的起点，不在翻页的日历，而在你笃定向前的每个瞬间，接住好彩头，事事皆如愿，步步皆坦途。#送礼送蒙牛要强接彩头# #蒙牛奥林匹克全球合作伙伴#",
+        "postGroup": "5251674153425419",
+        "standalone": true,
+        "size_mb": 0.46,
+        "englishTags": [
+            "mengniu",
+            "olympic partner",
+            "new year",
+            "endorsement"
+        ]
+    },
+    {
         "id": 1,
         "url": "https://assets.xz-studio-gallery.com/full/20260101_WB_XZ.jpg",
         "date": "2026-01-01",
