@@ -715,6 +715,56 @@
         "year": "2025"
     },
     {
+        "id": 232,
+        "url": "https://assets.xz-studio-gallery.com/full/20251205_XZ-Weibo-1.jpg",
+        "date": "2025-12-05",
+        "month": "December",
+        "year": "2025",
+        "tags": [
+            "欧莱雅男士"
+        ],
+        "groupName": "202512",
+        "link": "https://weibo.com/1792951112/5240435296698968",
+        "type": "screenshot",
+        "platform": "weibo",
+        "note": "",
+        "description": "",
+        "postText": "和@欧莱雅男士 一起守住年轻，挑战再升级。#欧莱雅男士淡纹家族# http://t.cn/AXyqR7GS肖战工作室的微博视频",
+        "postGroup": "5240435296698968",
+        "size_mb": 0.2,
+        "englishTags": [
+            "l'oreal men",
+            "skincare",
+            "endorsement"
+        ]
+    },
+    {
+        "id": 233,
+        "url": "https://assets.xz-studio-gallery.com/full/20251205_XZ-Weibo-2.mp4",
+        "date": "2025-12-05",
+        "month": "December",
+        "year": "2025",
+        "tags": [
+            "欧莱雅男士"
+        ],
+        "groupName": "202512",
+        "duration": 20,
+        "link": "https://weibo.com/1792951112/5240435296698968",
+        "type": "attached",
+        "platform": "weibo",
+        "note": "",
+        "description": "",
+        "postText": "和@欧莱雅男士 一起守住年轻，挑战再升级。#欧莱雅男士淡纹家族# http://t.cn/AXyqR7GS肖战工作室的微博视频",
+        "postGroup": "5240435296698968",
+        "size_mb": 3.93,
+        "englishTags": [
+            "l'oreal men",
+            "skincare",
+            "endorsement"
+        ],
+        "quality": "1080p"
+    },
+    {
         "date": "2025-12-03",
         "englishTags": [
             "movie",
