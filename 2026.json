@@ -1642,7 +1642,9 @@
             "boucheron",
             "paris",
             "weibo post"
-        ]
+        ],
+        "duration": 60,
+        "size_mb": 44.74
     },
     {
         "id": 46,
@@ -2706,7 +2708,9 @@
             "tods",
             "weibo",
             "spring summer collection"
-        ]
+        ],
+        "quality": "4k",
+        "duration": 64
     },
     {
         "id": 9,
@@ -2822,31 +2826,6 @@
         "size_mb": 0.29
     },
     {
-        "id": 124,
-        "url": "https://assets.xz-studio-gallery.com/full/20260122_XZ-Weibo-1.mp4",
-        "date": "2026-01-22",
-        "month": "January",
-        "year": "2026",
-        "tags": [
-            "每日鲜语"
-        ],
-        "groupName": "202601",
-        "duration": 60,
-        "link": "https://weibo.com/1792951112/5257829925527707",
-        "type": "attached",
-        "platform": "weibo",
-        "note": "",
-        "description": "",
-        "postText": "在更高处的鲜语云上牧场\r\n见证更高标准的新鲜有机\r\n@每日鲜语 高端鲜奶新标杆! #每日鲜语#\r\nhttp://t.cn/AXGu3YTG",
-        "postGroup": "5257829925527707",
-        "size_mb": 15.49,
-        "englishTags": [
-            "daily fresh",
-            "dairy",
-            "endorsement"
-        ]
-    },
-    {
         "id": 125,
         "url": "https://assets.xz-studio-gallery.com/full/20260122_XZ-Weibo-2.jpg",
         "date": "2026-01-22",
@@ -2864,6 +2843,32 @@
         "postText": "在更高处的鲜语云上牧场\r\n见证更高标准的新鲜有机\r\n@每日鲜语 高端鲜奶新标杆! #每日鲜语#\r\nhttp://t.cn/AXGu3YTG",
         "postGroup": "5257829925527707",
         "size_mb": 0.29,
+        "englishTags": [
+            "daily fresh",
+            "dairy",
+            "endorsement"
+        ]
+    },
+    {
+        "id": 126,
+        "url": "https://assets.xz-studio-gallery.com/full/20260122_蒙牛_XZ-MISC-1.mp4",
+        "date": "2026-01-22",
+        "month": "January",
+        "year": "2026",
+        "tags": [
+            "每日鲜语"
+        ],
+        "groupName": "202601",
+        "quality": "1080p",
+        "duration": 60,
+        "link": "https://weibo.com/1792951112/5257829925527707",
+        "type": "attached",
+        "platform": "weibo",
+        "note": "",
+        "description": "",
+        "postText": "在更高处的鲜语云上牧场\r\n见证更高标准的新鲜有机\r\n@每日鲜语 高端鲜奶新标杆! #每日鲜语#\r\nhttp://t.cn/AXGu3YTG",
+        "postGroup": "5257829925527707",
+        "size_mb": 15.5,
         "englishTags": [
             "daily fresh",
             "dairy",
