@@ -2153,7 +2153,7 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
 
       /* ---------- Constants & State ---------- */
       // --- VARIABLES ---
-      const DATA_VER = '20260815-1'; // bump when pushing new JSON to GitHub
+      const DATA_VER = '20260823-2'; // bump when pushing new JSON to GitHub
       let allData = [];
       let categoryData = [];
       let activeData = [];
@@ -3071,6 +3071,11 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
                 const { cssClass: cls2, badgeLabel: lbl2 } = getSourceMeta(kl);
                 _badges.push(`<span class="source-badge ${cls2}">${lbl2}</span>`);
             });
+        }
+        // link field is always a Weibo URL — add Weibo badge if primary is not already Weibo
+        if (photo.link && !_seen.has('weibo')) {
+            const { cssClass: cls3, badgeLabel: lbl3 } = getSourceMeta('weibo');
+            _badges.push(`<span class="source-badge ${cls3}">${lbl3}</span>`);
         }
         badgeEl.innerHTML = _badges.join('');
 
