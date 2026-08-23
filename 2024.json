@@ -743,9 +743,8 @@
         ],
         "groupName": "202411",
         "id": 141,
-        "link": "",
+        "link": "https://weibo.com/1792951112/5102730765403101",
         "month": "November",
-        "note": "",
         "photoText": "公开\nX玖少年团肖战DAYTOY\n24-11-20 10:21 来自微博视频号\n发布于北京\n做了一场\"漂流\"的梦肖战工作室的微博视频\nMILK\n10\n配合善解人意",
         "platform": "weibo",
         "postText": "做了一场\"漂流\"的梦肖战工作室的微博视频",
@@ -755,7 +754,9 @@
         ],
         "type": "screenshot",
         "url": "https://assets.xz-studio-gallery.com/full/20241120_WB_XZ.jpg",
-        "year": "2024"
+        "year": "2024",
+        "source": [],
+        "hidden": ""
     },
     {
         "date": "2024-11-20",
@@ -779,6 +780,34 @@
         "type": "attached",
         "url": "https://assets.xz-studio-gallery.com/full/20241120_DY_XZ.mp4",
         "year": "2024"
+    },
+    {
+        "id": 182,
+        "url": "https://assets.xz-studio-gallery.com/full/20241120_XZ-Weibo-1.mp4",
+        "date": "2024-11-20",
+        "month": "November",
+        "year": "2024",
+        "tags": [
+            "漂流",
+            "MV"
+        ],
+        "groupName": "202411",
+        "duration": 330,
+        "link": "https://weibo.com/1792951112/5102730765403101",
+        "type": "attached",
+        "platform": "weibo",
+        "note": "https://weibo.com/6519508247/QeLsiuJz5",
+        "description": "",
+        "postText": "做了一场\"漂流\"的梦🌊http://t.cn/A6nk1ypQ ​",
+        "postGroup": "5102730765403101",
+        "size_mb": 40.29,
+        "englishTags": [
+            "drifting",
+            "music video"
+        ],
+        "url_4k": "https://assets.xz-studio-gallery.com/4k/20241120_XZ-Weibo-1.mp4",
+        "size_4k": 175.08,
+        "quality": "720p"
     },
     {
         "date": "2024-11-19",
