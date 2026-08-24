@@ -3076,13 +3076,14 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
         const badgeEl = document.getElementById("modalSourceBadge");
         badgeEl.className = '';
         badgeEl.style.cssText = 'display:flex;align-items:center;gap:5px';
-        const _seen = new Set([String(photo.platform || '').toLowerCase()]);
+        const _normPlat = p => { const k = String(p).toLowerCase().trim(); return (k==='xiaohongshu'||k==='xhs') ? 'rednote' : k==='instagram' ? 'ins' : k; };
+        const _seen = new Set([_normPlat(photo.platform || '')]);
         const _badges = [];
         const { cssClass, badgeLabel } = getSourceMeta(photo.platform);
         _badges.push(`<span class="source-badge ${cssClass}">${badgeLabel}</span>`);
         if (photo.platform_links && typeof photo.platform_links === 'object') {
             Object.keys(photo.platform_links).forEach(k => {
-                const kl = k.toLowerCase();
+                const kl = _normPlat(k);
                 if (_seen.has(kl)) return;
                 _seen.add(kl);
                 const { cssClass: cls2, badgeLabel: lbl2 } = getSourceMeta(kl);
@@ -3090,7 +3091,7 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
             });
         }
         // link field is always a Weibo URL — add Weibo badge if primary is not already Weibo
-        if (photo.link && !_seen.has('weibo')) {
+        if (photo.link && !_seen.has(_normPlat('weibo'))) {
             const { cssClass: cls3, badgeLabel: lbl3 } = getSourceMeta('weibo');
             _badges.push(`<span class="source-badge ${cls3}">${lbl3}</span>`);
         }
