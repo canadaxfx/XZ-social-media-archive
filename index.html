@@ -2265,6 +2265,57 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
         if (window.cselBuild) window.cselBuild('filterYear');
 
         switchTab("all");
+        applyDeepLinkParams();
+      }
+
+      /* ---------- Deep-link params (?q=&platform=&year=&month=&day=&media=) ----------
+         Read on load so links from the unified XZ Gallery All-in-One search site land
+         here with the same keyword + filters already applied. Purely additive — no
+         effect when the site is opened normally (no query string). Runs after the
+         default switchTab("all") baseline above. */
+      function applyDeepLinkParams() {
+        const params = new URLSearchParams(location.search);
+        const q = params.get('q');
+        const platform = params.get('platform');
+        const year = params.get('year');
+        const month = params.get('month');
+        const day = params.get('day');
+        const media = params.get('media');
+        if (!q && !platform && !year && !month && !day && !media) return false;
+
+        if (q) {
+          const searchInput = document.getElementById('searchInput');
+          if (searchInput) searchInput.value = q;
+        }
+
+        const filterSourceEl = document.getElementById('filterSource');
+        if (platform && filterSourceEl && filterSourceEl.querySelector(`option[value="${platform}"]`)) {
+          filterSourceEl.value = platform;
+          if (window.cselBuild) window.cselBuild('filterSource');
+        }
+        if (year && elFilterYear.querySelector(`option[value="${year}"]`)) {
+          elFilterYear.value = year;
+          if (window.cselBuild) window.cselBuild('filterYear');
+        }
+        if (month && elFilterMonth.querySelector(`option[value="${month}"]`)) {
+          elFilterMonth.value = month;
+          if (window.cselBuild) window.cselBuild('filterMonth');
+        }
+        if (day && elFilterDay.querySelector(`option[value="${day}"]`)) {
+          elFilterDay.value = day;
+          if (window.cselBuild) window.cselBuild('filterDay');
+        }
+
+        if (media === 'photo' || media === 'video') {
+          if (currentTab !== 'attached') switchTab('attached');
+          currentMediaFilter = media;
+          document.querySelectorAll('.media-tab').forEach(btn => btn.classList.toggle('active', btn.dataset.media === media));
+        }
+
+        // Syncs currentSourceFilter from the dropdown, applies date+media filters,
+        // and (with the fix above) re-applies the search text if one was set.
+        applyDateFilter();
+        return true;
       }
 
       /* ---------- Tab / Filter Functions ---------- */
@@ -2358,22 +2409,26 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
 
         expandedYears.clear();
         paginationState = {};
-        document.getElementById("searchInput").value = "";
         updateStats();
-        renderTimeline();
 
-        if (activeData.length > 0) {
-          const years = [...new Set(activeData.map((d) => d.year))]
-            .sort()
-            .reverse();
+        // If a date filter is also active, let applyDateFilter() do the (further
+        // narrowed) render — it preserves search itself, same as here.
+        if (
+          activeData.length > 0 &&
+          (elFilterYear.value !== "all" || elFilterMonth.value !== "all" || elFilterDay.value !== "all")
+        ) {
+          applyDateFilter();
+          return;
+        }
 
-          if (
-            elFilterYear.value !== "all" ||
-            elFilterMonth.value !== "all" ||
-            elFilterDay.value !== "all"
-          ) {
-            applyDateFilter();
-          }
+        // Previously cleared the search box unconditionally here, so switching
+        // media/platform filter while a search was active silently dropped it.
+        // Re-run the search against the new activeData instead, if one is active.
+        const searchInput = document.getElementById("searchInput");
+        if (searchInput.value.trim()) {
+          searchInput.dispatchEvent(new Event("input"));
+        } else {
+          renderTimeline();
         }
       }
 
@@ -2527,15 +2582,19 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
         // Update stats and render timeline
         updateStats();
 
-        // Clear text search input to avoid confusion
-        document.getElementById("searchInput").value = "";
-        document.getElementById("clearSearchBtn").classList.add("hidden");
-
         // Auto-expand when filter narrows to a single year
         const filteredYears = [...new Set(filtered.map(d => d.year))];
         if (filteredYears.length === 1) expandedYears.add(filteredYears[0]);
 
-        renderTimeline(filtered);
+        // Previously cleared the search box unconditionally here, so changing a
+        // date/platform dropdown while a search was active silently dropped it.
+        // Re-run the search against the new activeData instead, if one is active.
+        const searchInput = document.getElementById("searchInput");
+        if (searchInput.value.trim()) {
+          searchInput.dispatchEvent(new Event("input"));
+        } else {
+          renderTimeline(filtered);
+        }
       }
 
       function resetDateFilter() {
