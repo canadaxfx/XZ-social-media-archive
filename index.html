@@ -930,6 +930,9 @@
           color: #fff;
           box-shadow: 0 0 0 1px rgba(255,255,255,0.35);
       }
+      .bg-rednote  { background: #E60023; color: #fff; }
+      .bg-twitter  { background: #1DA1F2; color: #fff; }
+      .bg-platform { background: #6b7280; color: #fff; }
 
             /* Modal Styles */
             .modal {
@@ -2091,11 +2094,18 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
       /* ---------- Source Meta Helpers ---------- */
       // --- SOURCE META HELPER ---
       function getSourceMeta(source) {
-        switch (source) {
-          case "oasis":  return { cssClass: "bg-oasis",  dotLabel: "Oasis",     badgeLabel: "OASIS",  thumbLabel: "OASIS" };
-          case "ins":    return { cssClass: "bg-ins",    dotLabel: "Instagram", badgeLabel: "INSTAGRAM", thumbLabel: "INS" };
-          case "douyin": return { cssClass: "bg-douyin", dotLabel: "Douyin",    badgeLabel: "DOUYIN", thumbLabel: "DOUYIN" };
-          default:       return { cssClass: "bg-weibo",  dotLabel: "Weibo",     badgeLabel: "WEIBO",  thumbLabel: "WEIBO" };
+        switch (String(source).toLowerCase()) {
+          case "weibo":   return { cssClass: "bg-weibo",   dotLabel: "Weibo",     badgeLabel: "WEIBO",     thumbLabel: "WEIBO" };
+          case "oasis":   return { cssClass: "bg-oasis",   dotLabel: "Oasis",     badgeLabel: "OASIS",     thumbLabel: "OASIS" };
+          case "ins":
+          case "instagram": return { cssClass: "bg-ins",   dotLabel: "Instagram", badgeLabel: "INSTAGRAM", thumbLabel: "INS" };
+          case "douyin":  return { cssClass: "bg-douyin",  dotLabel: "Douyin",    badgeLabel: "DOUYIN",    thumbLabel: "DOUYIN" };
+          case "rednote":
+          case "xiaohongshu":
+          case "xhs":     return { cssClass: "bg-rednote", dotLabel: "RedNote",   badgeLabel: "REDNOTE",   thumbLabel: "XHS" };
+          case "twitter": return { cssClass: "bg-twitter", dotLabel: "Twitter",   badgeLabel: "TWITTER",   thumbLabel: "TW" };
+          default: { const lbl = String(source).toUpperCase().slice(0, 8);
+                     return { cssClass: "bg-platform", dotLabel: lbl, badgeLabel: lbl, thumbLabel: lbl }; }
         }
       }
 
