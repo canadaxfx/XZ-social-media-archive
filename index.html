@@ -3090,10 +3090,21 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
                 _badges.push(`<span class="source-badge ${cls2}">${lbl2}</span>`);
             });
         }
-        // link field is always a Weibo URL — add Weibo badge if primary is not already Weibo
-        if (photo.link && !_seen.has(_normPlat('weibo'))) {
-            const { cssClass: cls3, badgeLabel: lbl3 } = getSourceMeta('weibo');
-            _badges.push(`<span class="source-badge ${cls3}">${lbl3}</span>`);
+        // link field may be Weibo or another platform — detect from URL
+        if (photo.link) {
+            const _linkPlat = (url => {
+                if (/weibo\.com|weibo\.cn/i.test(url)) return 'weibo';
+                if (/douyin\.com/i.test(url)) return 'douyin';
+                if (/instagram\.com/i.test(url)) return 'ins';
+                if (/oasis\.weibo/i.test(url)) return 'oasis';
+                if (/xiaohongshu\.com|xhslink\.com/i.test(url)) return 'rednote';
+                if (/twitter\.com|x\.com/i.test(url)) return 'twitter';
+                return null;
+            })(photo.link);
+            if (_linkPlat && !_seen.has(_normPlat(_linkPlat))) {
+                const { cssClass: cls3, badgeLabel: lbl3 } = getSourceMeta(_linkPlat);
+                _badges.push(`<span class="source-badge ${cls3}">${lbl3}</span>`);
+            }
         }
         badgeEl.innerHTML = _badges.join('');
 
