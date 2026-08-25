@@ -1,5 +1,31 @@
 [
     {
+        "id": 127,
+        "url": "https://assets.xz-studio-gallery.com/full/20260824_WB_XZ.jpg",
+        "date": "2026-08-24",
+        "month": "August",
+        "year": "2026",
+        "tags": [
+            "世界技能大赛",
+            "新华社"
+        ],
+        "groupName": "202608",
+        "link": "https://weibo.com/1792951112/ReQQQExyw",
+        "type": "screenshot",
+        "platform": "weibo",
+        "note": "",
+        "description": "",
+        "postText": "期待全球能工巧匠闪耀申城，也预祝中国代表团取得佳绩！#2026上海世赛#",
+        "postGroup": "ReQQQExyw",
+        "standalone": true,
+        "size_mb": 0.17,
+        "englishTags": [
+            "world skills competition",
+            "shanghai",
+            "xinhua news agency"
+        ]
+    },
+    {
         "id": 117,
         "url": "https://assets.xz-studio-gallery.com/full/20260814_WB_XZ.jpg",
         "date": "2026-08-14",
