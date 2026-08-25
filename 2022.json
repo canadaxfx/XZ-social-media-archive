@@ -4488,7 +4488,8 @@
         ],
         "type": "attached",
         "url": "https://assets.xz-studio-gallery.com/full/20220320_余生请多指教_XZ.mp4",
-        "year": "2022"
+        "year": "2022",
+        "postText": "#余生请多指教##idoltube#我可能会和顾魏成为朋友, 但一定不会成为饭友..."
     },
     {
         "date": "2022-03-20",
@@ -4512,7 +4513,9 @@
         ],
         "type": "screenshot",
         "url": "https://assets.xz-studio-gallery.com/full/20220320_WB_XZ.jpg",
-        "year": "2022"
+        "year": "2022",
+        "source": [],
+        "hidden": ""
     },
     {
         "date": "2022-03-19",
