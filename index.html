@@ -265,13 +265,6 @@
               position: relative;
               overflow: visible;
             }
-            header::after {
-              content: '';
-              display: block;
-              height: 2px;
-              background: linear-gradient(90deg, transparent 0%, rgba(var(--gold-rgb), 0.6) 15%, rgba(var(--gold-rgb), 1) 50%, rgba(var(--gold-rgb), 0.6) 85%, transparent 100%);
-              margin-top: 10px;
-            }
             h1 {
               font-family: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
               font-size: clamp(1.4rem, 4vw, 2.2rem);
@@ -365,6 +358,69 @@
               .header-links-row { gap: 8px; }
               .header-link-card { padding: 6px 11px 6px 10px; }
               .card-en { font-size: 11px; }
+            }
+
+            /* Lighter text-link mini-nav style (ported from XZ Gallery Navigator),
+               replacing the .header-link-card boxes above. */
+            .header-mini-nav {
+              font-size: 11px;
+              line-height: 1.5;
+            }
+            .mini-nav-label {
+              display: block;
+              color: var(--gold);
+              font-weight: 600;
+              letter-spacing: 0.03em;
+            }
+            .mini-nav-arrow {
+              display: inline-block;
+              font-size: 1.6em;
+              line-height: 0;
+              vertical-align: 0.05em;
+            }
+            .mini-nav-links {
+              white-space: nowrap;
+            }
+            .mini-nav-dot {
+              color: rgba(255, 255, 255, 0.3);
+              margin: 0 6px;
+            }
+            .header-mini-nav a {
+              color: rgba(255, 255, 255, 0.7);
+              font-weight: 500;
+              text-decoration: underline;
+              text-decoration-color: rgba(255, 255, 255, 0.6);
+              text-decoration-thickness: 1px;
+              text-underline-offset: 3px;
+              transition: color 0.2s ease, text-decoration-color 0.2s ease;
+            }
+            .header-mini-nav a:hover { color: rgba(var(--gold-rgb), 1); text-decoration-color: rgba(var(--gold-rgb), 1); }
+            /* Navigator link stays a plain text link like its siblings (not a
+               boxed/filled chip) — emphasized via a heavier gradient underline
+               instead, echoing the same border-bottom accent the active nav tab uses. */
+            .header-mini-nav a.mini-nav-chip {
+              display: inline-flex;
+              align-items: center;
+              gap: 4px;
+              color: rgba(255, 255, 255, 0.92);
+              font-weight: 700;
+              text-decoration: none;
+              border-bottom: 2.5px solid rgba(var(--gold-rgb), 0.85);
+              padding-bottom: 1px;
+              transition: border-color 0.2s ease, color 0.2s ease;
+            }
+            .header-mini-nav a.mini-nav-chip::before {
+              content: '🏛️';
+              font-size: 1.2em;
+              opacity: 0.9;
+            }
+            .header-mini-nav a.mini-nav-chip:hover {
+              color: white;
+              border-bottom-color: rgba(var(--gold-rgb), 1);
+            }
+            @media (max-width: 768px) {
+              .header-mini-nav { font-size: 10px; }
+              .mini-nav-dot { margin: 0 4px; }
             }
 
             .nav-segmented {
@@ -1391,6 +1447,11 @@
       [data-theme="washi-garnet"] h1     { color: #120C08; }
       [data-theme="washi-garnet"] header { color: #120C08; }
       [data-theme="washi-garnet"] .title-zh { color: rgba(18,12,8,0.82); }
+      [data-theme="washi-garnet"] .mini-nav-dot { color: rgba(18,12,8,0.3); }
+      [data-theme="washi-garnet"] .header-mini-nav a { color: rgba(18,12,8,0.8); text-decoration-color: rgba(18,12,8,0.55); text-decoration-thickness: 1px; }
+      [data-theme="washi-garnet"] .header-mini-nav a:hover { color: rgba(100,28,42,0.95); text-decoration-color: rgba(100,28,42,0.8); }
+      [data-theme="washi-garnet"] .header-mini-nav a.mini-nav-chip,
+      [data-theme="washi-garnet"] .header-mini-nav a.mini-nav-chip:hover { color: #120C08; }
       [data-theme="washi-garnet"] .header-links-desc,
       [data-theme="washi-garnet"] .header-links-desc a { color: rgba(18,12,8,0.78); }
       [data-theme="washi-garnet"] .card-en { color: rgba(18,12,8,0.92); }
@@ -1418,6 +1479,11 @@
       [data-theme="washi-slate"] h1     { color: #0E1420; }
       [data-theme="washi-slate"] header { color: #0E1420; }
       [data-theme="washi-slate"] .title-zh { color: rgba(14,20,32,0.82); }
+      [data-theme="washi-slate"] .mini-nav-dot { color: rgba(14,20,32,0.3); }
+      [data-theme="washi-slate"] .header-mini-nav a { color: rgba(14,20,32,0.8); text-decoration-color: rgba(14,20,32,0.55); text-decoration-thickness: 1px; }
+      [data-theme="washi-slate"] .header-mini-nav a:hover { color: rgba(38,56,88,0.95); text-decoration-color: rgba(38,56,88,0.8); }
+      [data-theme="washi-slate"] .header-mini-nav a.mini-nav-chip,
+      [data-theme="washi-slate"] .header-mini-nav a.mini-nav-chip:hover { color: #0E1420; }
       [data-theme="washi-slate"] .header-links-desc,
       [data-theme="washi-slate"] .header-links-desc a { color: rgba(14,20,32,0.78); }
       [data-theme="washi-slate"] .card-en { color: rgba(14,20,32,0.92); }
@@ -1532,44 +1598,21 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
       </div>
         <h1>Xiao Zhan <span class="title-highlight">Social Media Archive</span><br /><span class="title-zh">肖战社交媒体存档</span></h1>
         <div class="header-links-section">
-          <span class="header-links-desc">
-            <span class="desc-en">Archive of Social Media Posts by <a href="https://weibo.com/u/1792951112" target="_blank" rel="noopener">Xiao Zhan</a></span>
-            <span class="desc-zh">更多来源高清图库请点击下方链接</span>
-          </span>
-          <div class="header-links-row">
-            <a href="https://xz-studio-gallery.com/" target="_blank" class="header-link-card">
-              <div class="header-link-card-text">
-                <span class="card-en">XZ Studio Gallery</span>
-                <span class="card-zh">肖战工作室高清图库</span>
-              </div>
-              <span class="card-arrow">↗</span>
-            </a>
-            <a href="https://xz-hd-gallery-misc.pages.dev/" target="_blank" class="header-link-card">
-              <div class="header-link-card-text">
-                <span class="card-en">HD Gallery Misc</span>
-                <span class="card-zh">肖战高清图库-其他</span>
-              </div>
-              <span class="card-arrow">↗</span>
-            </a>
-          </div>
+          <nav class="header-mini-nav">
+            <span class="mini-nav-label">More galleries 更多图库 <span class="mini-nav-arrow">▾</span></span>
+            <div class="mini-nav-links">
+              <a href="https://xz-gallery-navigator.pages.dev/" target="_blank" rel="noopener" class="mini-nav-chip">Navigator 跨库导航</a>
+              <span class="mini-nav-dot">·</span>
+              <a href="https://xz-studio-gallery.com/" target="_blank" rel="noopener">XZ Studio 工作室</a>
+              <span class="mini-nav-dot">·</span>
+              <a href="https://xz-hd-gallery-misc.pages.dev/" target="_blank" rel="noopener">HD Misc 高清-其他</a>
+            </div>
+          </nav>
         </div>
       </header>
 
       <div class="content-section">
-        <div class="stats-grid">
-          <div class="stat-card">
-            <div class="stat-number" id="totalPhotosDisplay">0</div>
-            <div class="stat-label">Items</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-number" id="yearsSpanDisplay">0</div>
-            <div class="stat-label">Years</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-number" id="expandedYearsDisplay">0</div>
-            <div class="stat-label">Years Expanded</div>
-          </div>
-        </div>
+        <div id="statsSummaryLine" style="text-align:center;font-size:13px;opacity:0.75;margin:0 0 10px;"></div>
 
         <div class="date-filter-container">
           <div class="date-select-wrapper">
@@ -1995,7 +2038,7 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
           <span class="hc-corner hc-tl"></span><span class="hc-corner hc-tr"></span>
           <div class="hub-title">🌐 Xiao Zhan Universe ↗</div>
           <div class="hub-subtitle" style="font-size:12px;margin-bottom:6px">肖战粉丝站 · 全站导航</div>
-          <div class="hub-cta" style="font-size:12px;line-height:1.6;transition:color .2s">Galleries · Video · Articles · Social Media<br>Explore all 8 fan sites →</div>
+          <div class="hub-cta" style="font-size:12px;line-height:1.6;transition:color .2s">Galleries · Video · Articles · Social Media<br>Explore all 9 fan sites →</div>
           <span class="hc-corner hc-bl"></span><span class="hc-corner hc-br"></span>
         </a>
       </div>
@@ -2861,14 +2904,15 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
             .replace(/(\.[^.]+)$/, "_m.jpg");
         return fullUrl;
       }
+      // Plain one-line summary ("3,412 items · 2015–2026"), matching XZ
+      // Gallery Navigator's statsSummaryLine — replaced the old 3-card grid.
+      // No "sources" segment here — Archive's JSON has no source field.
       function updateStats() {
-        document.getElementById("totalPhotosDisplay").textContent =
-          activeData.length;
-        document.getElementById("yearsSpanDisplay").textContent = new Set(
-          activeData.map((d) => d.year),
-        ).size;
-        const expEl = document.getElementById("expandedYearsDisplay");
-        if (expEl) expEl.textContent = expandedYears.size;
+        const el = document.getElementById("statsSummaryLine");
+        if (!el) return;
+        const yearNums = activeData.map((d) => parseInt(d.year)).filter((n) => !isNaN(n));
+        const range = yearNums.length ? `${Math.min(...yearNums)}–${Math.max(...yearNums)}` : '';
+        el.textContent = `${activeData.length.toLocaleString()} items${range ? ' · ' + range : ''}`;
       }
       function toggleExpandAll() {
         const allYears = [...document.querySelectorAll('[data-year]')].map(el => el.dataset.year);
