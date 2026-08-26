@@ -3663,7 +3663,6 @@
     },
     {
         "date": "2022-05-12",
-        "description": "",
         "englishTags": [
             "cctv news",
             "wenzhou earthquake",
@@ -3673,16 +3672,17 @@
         "id": 257,
         "link": "https://weibo.com/detail/4768092926512993",
         "month": "May",
-        "note": "",
         "platform": "weibo",
         "postText": "#汶川地震十四周年#愿山河无恙，祖国安康！",
         "size_mb": 0.99,
         "tags": [
             "央视新闻"
         ],
-        "type": "attached",
+        "type": "screenshot",
         "url": "https://assets.xz-studio-gallery.com/full/20220512_XZ-Weibo-1.jpg",
-        "year": "2022"
+        "year": "2022",
+        "source": [],
+        "hidden": ""
     },
     {
         "date": "2022-05-10",
@@ -3779,7 +3779,6 @@
     },
     {
         "date": "2022-05-05",
-        "description": "",
         "englishTags": [
             "weibo",
             "communist youth league",
@@ -3789,16 +3788,17 @@
         "id": 254,
         "link": "https://weibo.com/detail/4765721562976595",
         "month": "May",
-        "note": "",
         "platform": "weibo",
         "postText": "#建团百年#，我们再启程！#100年共青春#",
         "size_mb": 0.79,
         "tags": [
             "共青团中央"
         ],
-        "type": "attached",
+        "type": "screenshot",
         "url": "https://assets.xz-studio-gallery.com/full/20220505_XZ-Weibo-3.jpg",
-        "year": "2022"
+        "year": "2022",
+        "source": [],
+        "hidden": ""
     },
     {
         "date": "2022-05-04",
