@@ -367,16 +367,21 @@
               line-height: 1.5;
             }
             .mini-nav-label {
-              display: block;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              gap: 2px;
               color: var(--gold);
               font-weight: 600;
               letter-spacing: 0.03em;
             }
+            /* Flexbox-centered against the label's own box height rather than
+               vertical-align/font-baseline tuning — see Studio's CLAUDE.md for why. */
             .mini-nav-arrow {
-              display: inline-block;
+              display: inline-flex;
+              align-items: center;
               font-size: 1.6em;
-              line-height: 0;
-              vertical-align: 0.05em;
+              line-height: 1;
             }
             .mini-nav-links {
               white-space: nowrap;
@@ -1550,8 +1555,8 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
 .playlist-remove-btn{flex-shrink:0;background:#e5e7eb;border:none;cursor:pointer;color:#6b7280;font-size:14px;font-weight:700;line-height:1;padding:0;width:22px;height:22px;border-radius:50%;text-align:center;line-height:22px}
 .playlist-remove-btn:hover{background:#fecaca;color:#dc2626}
 .playlist-footer{display:flex;gap:6px;padding:8px 10px;border-top:1px solid #e5e7eb;flex-shrink:0}
-.pl-play-btn{flex:1;padding:6px;background:var(--grad-gold);color:#fff;border:none;border-radius:6px;cursor:pointer;font-size:12px;font-weight:600}
-.pl-clear-btn{padding:6px 10px;background:#fee2e2;color:#dc2626;border:none;border-radius:6px;cursor:pointer;font-size:12px}
+.pl-play-btn{flex:1;min-width:0;padding:5px 4px;background:var(--grad-gold);color:#fff;border:none;border-radius:6px;cursor:pointer;font-size:10px;font-weight:600;line-height:1.35;text-align:center;white-space:normal}
+.pl-clear-btn{padding:6px 10px;background:#fee2e2;color:#dc2626;border:none;border-radius:6px;cursor:pointer;font-size:10px;white-space:nowrap}
 .pl-card-add{position:absolute;bottom:26px;right:4px;background:rgba(0,0,0,.65);color:#fff;border:none;border-radius:4px;padding:2px 6px;font-size:11px;cursor:pointer;opacity:1;z-index:3;white-space:nowrap}
 .pl-card-add.pl-added{background:rgba(37,99,235,.8)}
 .pl-add-all-btn{display:none;padding:5px 14px;background:transparent;color:var(--gold);border:1px solid rgba(var(--gold-dr),0.45);border-radius:20px;font-size:11px;font-weight:600;cursor:pointer;white-space:nowrap;transition:background .2s,border-color .2s}.pl-add-all-btn:hover{background:rgba(var(--gold-dr),0.08);border-color:rgba(var(--gold-dr),0.75)}
@@ -1595,7 +1600,7 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
         </div>
         <div class="mg-slot slot-P" data-slot="P"></div>
       </div>
-        <h1>Xiao Zhan <span class="title-highlight">Social Media Archive</span><br /><span class="title-zh">肖战社交媒体存档</span></h1>
+        <h1>Xiao Zhan <span class="title-highlight">Social Media Archive</span><br /><span class="title-zh">肖战 <span id="secretTrigger" style="cursor:default;user-select:none">❁</span> 社交媒体存档</span></h1>
         <div class="header-links-section">
           <nav class="header-mini-nav">
             <span class="mini-nav-label">More galleries 更多图库 <span class="mini-nav-arrow">▾</span></span>
@@ -2025,7 +2030,8 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
         </div>
         <div class="playlist-list" id="plList"></div>
         <div class="playlist-footer">
-            <button class="pl-play-btn" onclick="plPlayFromStart()">▶ Play All 播放全部</button>
+            <button class="pl-play-btn" onclick="plPlayFromStart()">▶ Play All<br>顺序播放</button>
+            <button class="pl-play-btn" onclick="plPlayFromStart(true)">🔀 Shuffle<br>随机播放</button>
             <button class="pl-clear-btn" onclick="plClear()">Clear 清空</button>
         </div>
     </div>
@@ -3494,16 +3500,26 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
           }
       }
 
-      function plPlayFromStart() {
+      // One-off shuffle — returns a new array, never mutates the input.
+      function shuffleArray(arr) {
+        const a = arr.slice();
+        for (let i = a.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [a[i], a[j]] = [a[j], a[i]];
+        }
+        return a;
+      }
+
+      function plPlayFromStart(shuffle) {
           if (!playlist.length) return;
           const panel = document.getElementById('playlistPanel');
           if (panel) { panel.style.display = 'flex'; setTimeout(plPositionPanel, 0); }
-          plPlayItem(0);
+          plPlayItem(0, shuffle ? shuffleArray(playlist) : null);
       }
 
-      function plPlayItem(index) {
+      function plPlayItem(index, group) {
           playlistMode = true;
-          currentGroupPhotos = [...playlist];
+          currentGroupPhotos = group || [...playlist];
           currentPhotoIndex = index;
           document.getElementById('photoModal').classList.remove('hidden');
           updateModalView();
