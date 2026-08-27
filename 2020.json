@@ -1698,7 +1698,9 @@
         ],
         "type": "attached",
         "url": "https://assets.xz-studio-gallery.com/full/20200506_%E4%B8%AD%E6%96%B0%E7%BB%8F%E7%BA%AC%E4%B8%93%E8%AE%BF_XZ-MISC-1.mp4",
-        "year": "2020"
+        "year": "2020",
+        "quality": "720p",
+        "duration": 651
     },
     {
         "date": "2020-05-06",
@@ -2305,7 +2307,6 @@
     },
     {
         "date": "2020-01-19",
-        "description": "",
         "englishTags": [
             "our song",
             "perfect life",
@@ -2321,16 +2322,21 @@
         "platform": "weibo",
         "postGroup": "2020-01-19_1",
         "postText": "我们是那战队！\n完美生活 http://t.cn/A6vHPjSa ​ ​​​",
-        "quality": "1080p",
+        "quality": "480p",
         "tags": [
             "完美生活",
             "我们的歌",
             "那战队"
         ],
         "type": "attached",
-        "url": "https://assets.xz-studio-gallery.com/full/20241005_%E5%AE%8C%E7%BE%8E%E7%94%9F%E6%B4%BB_XZ-MISC-1.mp4",
-        "url_hd": "https://assets.xz-studio-gallery.com/hd/20241005_%E5%AE%8C%E7%BE%8E%E7%94%9F%E6%B4%BB_XZ-MISC-1.mp4",
-        "year": "2020"
+        "url": "https://assets.xz-studio-gallery.com/full/20241005_完美生活_XZ-MISC-1.mp4",
+        "url_hd": "https://assets.xz-studio-gallery.com/hd/20241005_完美生活_XZ-MISC-1.mp4",
+        "year": "2020",
+        "duration": 275,
+        "size_mb": 38.75,
+        "size_hd": 126.89,
+        "source": [],
+        "hidden": ""
     },
     {
         "date": "2020-01-19",
