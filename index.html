@@ -2748,6 +2748,13 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
             if (realVideoCount > 0) countParts.push(`${realVideoCount} 🎬`);
             if (ytCount > 0) countParts.push(`${ytCount} <span style="display:inline-flex;align-items:center;background:#ff0000;color:white;border-radius:3px;padding:0 4px;font-size:9px;font-weight:700;vertical-align:middle;">▶</span>`);
             const countLabel = countParts.join(' ') || '0 items';
+            const distinctMonths = [...new Set(items.map((p) => p.month))].filter(Boolean);
+            const monthJumpHTML = distinctMonths.length > 1
+              ? `<select id="month-jump-${year}" onchange="jumpToMonth('${year}', this.value)">
+                                    <option value="">Jump to month ▾</option>
+                                    ${distinctMonths.map((m) => `<option value="${m}">${m}</option>`).join("")}
+                                </select>`
+              : '';
 
             return `
                     <div class="timeline-year ${isExpanded ? "expanded" : ""}" data-year="${year}">
@@ -2769,6 +2776,7 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
                         </div>
                         <div class="timeline-year-content" data-photo-uids="${photoUids}">
                             <div class="year-controls">
+                                ${monthJumpHTML}
                                 <select onchange="changePerPage('${year}', this.value)">
                                     <option value="21">21 / page</option>
                                     <option value="42">42 / page</option>
@@ -2896,6 +2904,27 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
         document
           .getElementById(`nav-${year}`)
           .scrollIntoView({ behavior: "smooth", block: "nearest" });
+      }
+
+      // "Jump to month" dropdown on a year box (ported from XZ Gallery Navigator).
+      // Archive has no extra filter chain inside renderYearContent beyond the plain
+      // year filter (see its `itemsToRender` default), so recomputing it directly
+      // here is safe — matches exactly what goToPage above already does.
+      function jumpToMonth(year, monthValue) {
+        if (!monthValue) return;
+        const items = currentRenderData.filter((i) => i.year == year);
+        const idx = items.findIndex((p) => p.month === monthValue);
+        if (idx === -1) return;
+        const state = paginationState[year] || { page: 1, limit: 21 };
+        if (state.limit === "all") {
+          const grid = document.getElementById(`grid-${year}`);
+          const card = grid ? grid.children[idx] : null;
+          if (card) card.scrollIntoView({ behavior: "smooth", block: "center" });
+          return;
+        }
+        const limit = parseInt(state.limit);
+        const page = Math.floor(idx / limit) + 1;
+        goToPage(year, page);
       }
       /* ---------- Utils ---------- */
       function getThumbUrl(fullUrl) {
@@ -3066,7 +3095,7 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
         const w = mainLink ? String(mainLink).trim() : '';
         if (w) links.push({label: 'Weibo 微博', url: /^https?/i.test(w) ? w : 'https://' + w});
         if (extraLinks && typeof extraLinks === 'object') {
-          const lmap = {weibo:'Weibo 微博',douyin:'Douyin 抖音',youtube:'YouTube',bilibili:'Bilibili',ins:'Instagram',xiaohongshu:'RedNote 小红书',xhs:'RedNote 小红书'};
+          const lmap = {weibo:'Weibo 微博',douyin:'Douyin 抖音',youtube:'YouTube',bilibili:'Bilibili',ins:'Instagram',xiaohongshu:'RedNote 小红书',xhs:'RedNote 小红书',qq:'QQ 腾讯',wx:'WeChat 微信',wechat:'WeChat 微信',mgtv:'MGTV 芒果TV'};
           Object.entries(extraLinks).forEach(([k, v]) => { if (v) links.push({label: lmap[k] || k, url: String(v)}); });
         }
         if (!links.length) { btn.style.display = 'none'; return; }
