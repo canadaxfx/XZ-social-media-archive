@@ -2218,7 +2218,7 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
 
       /* ---------- Constants & State ---------- */
       // --- VARIABLES ---
-      const DATA_VER = '20260825-1'; // bump when pushing new JSON to GitHub
+      const DATA_VER = '20260827-1'; // bump when pushing new JSON to GitHub
       let allData = [];
       let categoryData = [];
       let activeData = [];
@@ -2932,10 +2932,20 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
           const ytId = getYouTubeId(fullUrl);
           return ytId ? `https://img.youtube.com/vi/${ytId}/mqdefault.jpg` : fullUrl;
         }
-        if (fullUrl.includes("/full/"))
+        if (fullUrl.includes("/full/")) {
+          // Video thumbnails keep the source extension in the key
+          // (thumbs/{base}.mov_m.jpg) so a video and an image sharing the same
+          // date+index (e.g. a Live Photo saved as both a still .jpg and its
+          // .mov motion component) don't collide on the same thumbnail —
+          // must match autosync's thumb_key() (app.py). See autosync CLAUDE.md
+          // "Video/Image Thumbnail-Key Collision" (Aug 2026).
+          const extMatch = fullUrl.match(/(\.[^.]+)$/);
+          const ext = extMatch ? extMatch[1].toLowerCase() : "";
+          const suffix = (ext === ".mp4" || ext === ".mov") ? `${ext}_m.jpg` : "_m.jpg";
           return fullUrl
             .replace("/full/", "/thumbs/")
-            .replace(/(\.[^.]+)$/, "_m.jpg");
+            .replace(/(\.[^.]+)$/, suffix);
+        }
         return fullUrl;
       }
       // Plain one-line summary ("3,412 items · 2015–2026"), matching XZ
