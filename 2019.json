@@ -2017,7 +2017,9 @@
             "two tigers",
             "movie promotion"
         ],
-        "postGroup": "2019-11-07_3"
+        "postGroup": "2019-11-07_3",
+        "duration": 220,
+        "size_mb": 40.52
     },
     {
         "date": "2019-11-05",
