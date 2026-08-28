@@ -2218,7 +2218,7 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
 
       /* ---------- Constants & State ---------- */
       // --- VARIABLES ---
-      const DATA_VER = '20260828-1'; // bump when pushing new JSON to GitHub
+      const DATA_VER = '20260828-2'; // bump when pushing new JSON to GitHub
       let allData = [];
       let categoryData = [];
       let activeData = [];
@@ -3022,6 +3022,7 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
             }
           });
         });
+        _scheduleDeferredLoadCheck();
       }
 
       // Safety net (fixed Aug 2026, ported from XZ Gallery Navigator): the
@@ -3030,8 +3031,7 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
       // Navigator, same lazy-load pattern as here) that this one-shot read
       // can be wrong and permanently skip an image — nothing here ever
       // re-checked afterward, since there was no scroll/focus/visibility-
-      // driven retry of any kind. rAF-throttled since scroll fires far more
-      // often than every frame.
+      // driven retry of any kind.
       function forceLoadVisibleImages() {
         const vh = window.innerHeight;
         document.querySelectorAll('.lazy-image[data-src]').forEach((img) => {
@@ -3049,15 +3049,40 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
         if (document.visibilityState === 'visible') forceLoadVisibleImages();
       });
       window.addEventListener('focus', forceLoadVisibleImages);
+      // Throttled via setTimeout, NOT requestAnimationFrame (fixed Aug 2026,
+      // caught via direct testing on Navigator, same pattern here): rAF is
+      // exactly the primitive that gets throttled/paused by the browser in a
+      // non-compositing context (a background tab, or -- confirmed directly --
+      // an automation/headless browser pane that isn't actively displayed) --
+      // the same root cause as the *original* bug this safety net exists to
+      // catch. setTimeout doesn't share that failure mode.
       let _scrollLoadPending = false;
       window.addEventListener('scroll', () => {
         if (_scrollLoadPending) return;
         _scrollLoadPending = true;
-        requestAnimationFrame(() => {
+        setTimeout(() => {
           forceLoadVisibleImages();
           _scrollLoadPending = false;
-        });
+        }, 100);
       }, { passive: true });
+
+      // Second-chance safety net (fixed Aug 2026): scroll/focus/visibility
+      // only fire on a fresh USER action -- they don't help when a render
+      // happens programmatically with nothing for the user to react to
+      // (e.g. a silent background data refresh landing while the user is
+      // reading a page that already looks finished). Called from
+      // observeImages() so every render gets a short delayed recheck
+      // regardless of trigger. Coalesced with a pending flag since multiple
+      // renders can land in the same batch.
+      let _deferredLoadCheckPending = false;
+      function _scheduleDeferredLoadCheck() {
+        if (_deferredLoadCheckPending) return;
+        _deferredLoadCheckPending = true;
+        setTimeout(() => {
+          forceLoadVisibleImages();
+          _deferredLoadCheckPending = false;
+        }, 400);
+      }
 
       /* ---------- Search Functions ---------- */
       function setupSearch() {
