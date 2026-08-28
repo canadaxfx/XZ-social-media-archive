@@ -654,7 +654,8 @@
             "boiling point star",
             "2019"
         ],
-        "postGroup": "2019-12-18_5"
+        "postGroup": "2019-12-18_5",
+        "quality": "720p"
     },
     {
         "id": 432,
@@ -5436,7 +5437,8 @@
         ],
         "type": "attached",
         "url": "https://assets.xz-studio-gallery.com/full/20190722_XZ-Weibo-3.mp4",
-        "year": "2019"
+        "year": "2019",
+        "quality": "480p"
     },
     {
         "date": "2019-07-22",
