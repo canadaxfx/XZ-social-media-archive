@@ -3081,22 +3081,29 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
           clearBtn.classList.remove("hidden");
           clearTimeout(_searchTimer);
           _searchTimer = setTimeout(() => {
-            const filtered = activeData.filter(
-              (item) =>
+            // Multiple space-separated keywords are AND'd together (added Aug
+            // 2026) — "花絮 GUCCI" now matches an item where "花絮" appears
+            // anywhere (e.g. postText) AND "GUCCI" appears anywhere else
+            // (e.g. tags), rather than requiring that exact phrase-with-space
+            // as one literal substring, which almost never occurs since the
+            // two keywords are typically in different fields.
+            const tokens = term.split(/\s+/).filter(Boolean);
+            const filtered = activeData.filter((item) =>
+              tokens.every((lowerTerm) =>
                 (item.tags &&
                   Array.isArray(item.tags) &&
                   item.tags.some((t) => {
                     const lowerTag = t.toLowerCase();
-                    const lowerTerm = term;
                     return (
                       lowerTag.includes(lowerTerm) || lowerTerm.includes(lowerTag)
                     );
                   })) ||
-                item.date.includes(term) ||
-                (item.note && item.note.toLowerCase().includes(term)) ||
-                (item.photoText && item.photoText.toLowerCase().includes(term)) ||
-                (Array.isArray(item.englishTags) && item.englishTags.some(t => t.toLowerCase().includes(term))) ||
-                (item.postText && item.postText.toLowerCase().includes(term)),
+                item.date.includes(lowerTerm) ||
+                (item.note && item.note.toLowerCase().includes(lowerTerm)) ||
+                (item.photoText && item.photoText.toLowerCase().includes(lowerTerm)) ||
+                (Array.isArray(item.englishTags) && item.englishTags.some(t => t.toLowerCase().includes(lowerTerm))) ||
+                (item.postText && item.postText.toLowerCase().includes(lowerTerm))
+              )
             );
 
             currentRenderData = filtered;
