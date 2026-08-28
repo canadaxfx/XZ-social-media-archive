@@ -2283,16 +2283,30 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
           }
         });
 
+        // Manually merged entries (postGroup) may legitimately carry different —
+        // or missing — individual `link` values (e.g. a Weibo item with no link
+        // grouped together with an Oasis item that has its own link, so the
+        // organizer's shared link box doesn't have to overwrite one platform's
+        // link with the other's). postGroup must therefore win over an entry's
+        // own link when deciding sort position, or such a group won't actually
+        // cluster — only entries with NO postGroup fall back to using their own
+        // link as a natural grouping key (multiple attachments from one
+        // never-manually-grouped post already share one link from fetch time).
+        const ARCHIVE_PLATFORM_ORDER = ['weibo', 'oasis', 'ins', 'douyin', 'rednote', 'twitter'];
+        const _platformRank = p => { const i = ARCHIVE_PLATFORM_ORDER.indexOf(p); return i === -1 ? 99 : i; };
         combined.sort((a, b) => {
           const dc = b.date.localeCompare(a.date);
           if (dc !== 0) return dc;
-          // Use link first, postGroup as fallback — both identify same-post entries
-          const ag = a.link || a.postGroup || '';
-          const bg = b.link || b.postGroup || '';
+          const ag = a.postGroup || a.link || '';
+          const bg = b.postGroup || b.link || '';
           const gc = ag.localeCompare(bg);
           if (gc !== 0) return gc;
-          // Same group: screenshot before attached
+          // Same group: cluster by platform first (e.g. all Weibo entries
+          // together, then all Oasis entries), then screenshot before attached
+          // within each platform.
           if (ag) {
+            const pc = _platformRank(a.platform) - _platformRank(b.platform);
+            if (pc !== 0) return pc;
             const tc = (a.type === 'screenshot' ? 0 : 1) - (b.type === 'screenshot' ? 0 : 1);
             if (tc !== 0) return tc;
           }
