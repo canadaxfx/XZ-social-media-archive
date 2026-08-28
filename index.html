@@ -3024,6 +3024,41 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
         });
       }
 
+      // Safety net (fixed Aug 2026, ported from XZ Gallery Navigator): the
+      // rAF check in observeImages() reads getBoundingClientRect() exactly
+      // once, at render time. Confirmed directly (scripted repro on
+      // Navigator, same lazy-load pattern as here) that this one-shot read
+      // can be wrong and permanently skip an image — nothing here ever
+      // re-checked afterward, since there was no scroll/focus/visibility-
+      // driven retry of any kind. rAF-throttled since scroll fires far more
+      // often than every frame.
+      function forceLoadVisibleImages() {
+        const vh = window.innerHeight;
+        document.querySelectorAll('.lazy-image[data-src]').forEach((img) => {
+          if (img.src) return;
+          const rect = img.getBoundingClientRect();
+          if (rect.width > 0 && rect.top < vh + 100 && rect.bottom > -100) {
+            img.src = img.dataset.src;
+            img.onload = () => img.classList.remove('loading-placeholder');
+            img.onerror = () => img.classList.remove('loading-placeholder');
+            if (imageObserver) imageObserver.unobserve(img);
+          }
+        });
+      }
+      document.addEventListener('visibilitychange', () => {
+        if (document.visibilityState === 'visible') forceLoadVisibleImages();
+      });
+      window.addEventListener('focus', forceLoadVisibleImages);
+      let _scrollLoadPending = false;
+      window.addEventListener('scroll', () => {
+        if (_scrollLoadPending) return;
+        _scrollLoadPending = true;
+        requestAnimationFrame(() => {
+          forceLoadVisibleImages();
+          _scrollLoadPending = false;
+        });
+      }, { passive: true });
+
       /* ---------- Search Functions ---------- */
       function setupSearch() {
         const input = document.getElementById("searchInput");
