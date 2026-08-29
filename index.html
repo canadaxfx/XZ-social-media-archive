@@ -783,6 +783,12 @@
               margin-top: 8px;
               opacity: 0.9;
             }
+            /* Only the tiny preview thumbnails hide on expand — they're redundant once the
+               full grid is showing below. The bulk add/remove-all button (a sibling in
+               .year-preview-zone) stays visible in both states. */
+            .timeline-year.expanded .year-preview {
+              display: none;
+            }
             .preview-thumb {
               width: 32px;
               height: 32px;
