@@ -3491,6 +3491,7 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
           const fsNext = document.getElementById('plFsNext');
           if (fsPrev) fsPrev.disabled = currentPhotoIndex === 0;
           if (fsNext) fsNext.disabled = currentPhotoIndex === currentGroupPhotos.length - 1;
+          if (playlistMode) plRender();   // keep the playlist panel's active-item highlight in sync
       }
 
       function generateThumbnails() {
