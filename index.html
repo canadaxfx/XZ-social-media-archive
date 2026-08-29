@@ -3927,9 +3927,9 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
           if (!seek) return;
 
           seek.value = 0; seek._seeking = false;
-          // Clear the previous track's scale — onloadedmetadata will set the real value.
-          // Until then the slider is frozen (max===min) so a stale scale can't be dragged.
-          seek.max = (isFinite(v.duration) && v.duration > 0) ? v.duration : 0;
+          // seek.max is left untouched here: onloadedmetadata sets the real value, and
+          // seek.onchange below refuses to seek until v.duration is known, so a briefly
+          // stale scale can't cause a bad jump — and the bar stays grabbable meanwhile.
           vcSeekPct(seek);
           cur.textContent = '0:00'; dur.textContent = '0:00';
           playBtn.textContent = v.paused ? '▶' : '⏸';
@@ -3950,6 +3950,7 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
           v.onpause = () => { playBtn.textContent = '▶'; };
           v.onvolumechange = () => { muteBtn.innerHTML = v.muted ? '<svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5L6 9H2v6h4l5 4V5z"/><line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/></svg>' : '<svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5L6 9H2v6h4l5 4V5z"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/></svg>'; };
           v.onended = () => {
+              if (Date.now() < (v._seekGuardUntil || 0)) return;   // scrubbed to the end — stay put
               if (playlistMode && currentPhotoIndex < currentGroupPhotos.length - 1) {
                   navigatePhoto(1);
               }
@@ -3958,9 +3959,15 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
           seek.oninput  = () => { seek._seeking = true; vcSeekPct(seek); cur.textContent = vcFmt(parseFloat(seek.value)); };
           seek.onchange = () => {
               const d = v.duration;
-              // Only seek once the real duration is known, and never to the exact end
-              // (seeking to duration fires `ended`, which auto-advances the playlist).
-              if (isFinite(d) && d > 0) v.currentTime = Math.max(0, Math.min(parseFloat(seek.value), d - 0.25));
+              // Only seek once the real duration is actually known (before that, seek.max is
+              // a stale/default scale and seek.value is meaningless).
+              if (isFinite(d) && d > 0) {
+                  v.currentTime = Math.max(0, Math.min(parseFloat(seek.value), d - 0.05));
+                  // A seek just moved playback — if it lands near the end, the tail plays out
+                  // and fires `ended`. Mark a short window so that `ended` is treated as
+                  // "user scrubbed here", not "video finished", and does NOT auto-advance.
+                  v._seekGuardUntil = Date.now() + 1200;
+              }
               seek._seeking = false;
           };
       }
