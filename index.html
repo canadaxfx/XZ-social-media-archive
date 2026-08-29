@@ -3648,6 +3648,7 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
           const vcBadge = document.getElementById('vcPlBadge');
           if (vcBadge) { vcBadge.textContent = playlist.length; vcBadge.style.display = playlist.length ? 'block' : 'none'; }
           plSyncBulkButtons();
+          plSyncAllCards();
           if (!playlist.length) { if (panel) panel.style.display = 'none'; return; }
           const activeUid = playlistMode ? (currentGroupPhotos[currentPhotoIndex] || {})._uid : null;
           list.innerHTML = playlist.map((p, i) => `
