@@ -2060,7 +2060,7 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
         </div>
         <div class="playlist-list" id="plList"></div>
         <div class="playlist-footer">
-            <button class="pl-play-btn" onclick="plPlayFromStart()">▶ Play All<br>顺序播放</button>
+            <button class="pl-play-btn" id="plDirBtn" onclick="plPlayDir()">▶ Play All<br>顺序播放</button>
             <button class="pl-play-btn" onclick="plPlayFromStart(true)">🔀 Shuffle<br>随机播放</button>
             <button class="pl-clear-btn" onclick="plClear()">Clear 清空</button>
         </div>
@@ -3712,6 +3712,17 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
           const panel = document.getElementById('playlistPanel');
           if (panel) { panel.style.display = 'flex'; setTimeout(plPositionPanel, 0); }
           plPlayItem(0, shuffle ? shuffleArray(playlist) : null);
+      }
+
+      var _plDir = -1;  // flips to 1 (forward 顺序) on first press; label always mirrors the play direction
+      function plPlayDir() {
+          if (!playlist.length) return;
+          _plDir = -_plDir;
+          const b = document.getElementById('plDirBtn');
+          if (b) b.innerHTML = _plDir === 1 ? '▶ Play All<br>顺序播放' : '▶ Play Reverse<br>倒序播放';
+          const panel = document.getElementById('playlistPanel');
+          if (panel) { panel.style.display = 'flex'; setTimeout(plPositionPanel, 0); }
+          plPlayItem(0, _plDir === -1 ? [...playlist].reverse() : null);
       }
 
       function plPlayItem(index, group) {
