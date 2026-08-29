@@ -3897,6 +3897,22 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
           if (v && v.webkitEnterFullscreen) v.webkitEnterFullscreen();
       }
 
+      // Swaps #vcFsBtn's icon between "enter" (4 outward corners) and "exit" (4 inward
+      // corners) fullscreen, so the button reflects actual state — not just whichever icon
+      // was last clicked (matters since Escape/the OS back-gesture can exit fullscreen
+      // without going through vcFullscreen() at all).
+      const _VC_FS_ICON_ENTER = '<svg viewBox="0 0 24 24"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/></svg>';
+      const _VC_FS_ICON_EXIT  = '<svg viewBox="0 0 24 24"><path d="M8 3v3a2 2 0 0 1-2 2H3m18 0h-3a2 2 0 0 1-2-2V3m0 18v-3a2 2 0 0 1 2-2h3M3 16h3a2 2 0 0 1 2 2v3"/></svg>';
+      function vcSyncFsBtn() {
+          const btn = document.getElementById('vcFsBtn');
+          if (!btn) return;
+          const isFs = !!(document.fullscreenElement || document.webkitFullscreenElement);
+          btn.innerHTML = isFs ? _VC_FS_ICON_EXIT : _VC_FS_ICON_ENTER;
+          btn.title = isFs ? 'Exit fullscreen' : 'Fullscreen';
+      }
+      document.addEventListener('fullscreenchange', vcSyncFsBtn);
+      document.addEventListener('webkitfullscreenchange', vcSyncFsBtn);
+
       function vcUpdateSeek() {
           const v = document.getElementById('modalVideo');
           const seek = document.getElementById('vcSeek');
