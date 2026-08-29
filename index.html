@@ -1128,6 +1128,24 @@
               max-height: 60vh;
               height: 60vh;
             }
+
+            /* vcFullscreen() fullscreens THIS wrapper (not the bare <video>), so plNavBar's
+               Prev/Next/play/mute/playlist controls stay visible in fullscreen. The
+               thumbnail strip already sits outside the wrapper in the DOM here, so it's
+               naturally excluded from fullscreen with no extra hiding rule needed. */
+            .vc-fs-wrap { display: flex; flex-direction: column; min-height: 0; }
+            .vc-fs-wrap:fullscreen,
+            .vc-fs-wrap:-webkit-full-screen {
+              width: 100vw; height: 100vh; background: #000;
+            }
+            .vc-fs-wrap:fullscreen .modal-photo-container,
+            .vc-fs-wrap:-webkit-full-screen .modal-photo-container {
+              flex: 1; max-height: none; height: auto; min-height: 0;
+            }
+            .vc-fs-wrap:fullscreen .pl-fs-controls,
+            .vc-fs-wrap:-webkit-full-screen .pl-fs-controls {
+              border-radius: 0;
+            }
             .badge-quality { position: absolute; bottom: 0px; left: 10px; background: rgba(37, 99, 235, 0.85); color: #fff; padding: 2px 7px; border-radius: 4px; font-size: 11px; font-weight: 700; z-index: 11; letter-spacing: 0.05em; pointer-events: none; }
             .badge-quality.is-2k { background: rgba(99, 102, 241, 0.85); }
             .badge-quality.is-4k { background: rgba(124, 58, 237, 0.85); }
@@ -1741,6 +1759,11 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
           <p id="postTextContent" style="margin:0;"></p>
         </div>
 
+        <!-- vc-fs-wrap is the fullscreen target (see vcFullscreen()) instead of the bare
+             <video> — so plNavBar's Prev/Next/play/mute/playlist controls stay visible and
+             usable in fullscreen instead of disappearing along with everything outside
+             whatever element got fullscreened. -->
+        <div class="vc-fs-wrap" id="vcFsWrap">
         <div class="modal-photo-container">
           <button class="nav-arrow prev" id="prevBtn" onclick="navigatePhoto(-1)">‹</button>
           <img id="modalPhoto" class="modal-photo" alt="Current photo" />
@@ -1774,6 +1797,7 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
             <button class="vc-btn" id="vcFsBtn" onclick="vcFullscreen()" title="Fullscreen"><svg viewBox="0 0 24 24"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/></svg></button>
             <button class="pl-fs-nav-btn" id="plFsNext" onclick="navigatePhoto(1)" title="Next"><svg viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg></button>
             <button id="vcPlBtn" onclick="plTogglePanel()" title="Playlist 播放列表">🎬<span id="vcPlBadge"></span></button>
+        </div>
         </div>
 
         <div class="thumbnail-strip">
@@ -2218,7 +2242,7 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
 
       /* ---------- Constants & State ---------- */
       // --- VARIABLES ---
-      const DATA_VER = '20260828-2'; // bump when pushing new JSON to GitHub
+      const DATA_VER = '20260829-1'; // bump when pushing new JSON to GitHub
       let allData = [];
       let categoryData = [];
       let activeData = [];
@@ -3856,10 +3880,21 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
           v.muted = !v.muted;
       }
 
+      // Fullscreens #vcFsWrap (photo/video area + pl-fs-controls), not the bare <video> —
+      // fullscreening just the video would take plNavBar's Prev/Next/play/mute/playlist
+      // controls along with everything else outside the video, hiding them.
       function vcFullscreen() {
+          const wrap = document.getElementById('vcFsWrap');
+          if (document.fullscreenElement || document.webkitFullscreenElement) {
+              (document.exitFullscreen || document.webkitExitFullscreen || function () {}).call(document);
+              return;
+          }
+          if (wrap && wrap.requestFullscreen) { wrap.requestFullscreen().catch(() => {}); return; }
+          if (wrap && wrap.webkitRequestFullscreen) { wrap.webkitRequestFullscreen(); return; }
+          // Fallback for older iOS Safari, which only supports fullscreen on <video> itself —
+          // Prev/Next won't be reachable in that fallback path, but basic fullscreen still works.
           const v = document.getElementById('modalVideo');
-          const req = v.requestFullscreen || v.webkitRequestFullscreen || v.webkitEnterFullscreen;
-          if (req) req.call(v).catch(() => {});
+          if (v && v.webkitEnterFullscreen) v.webkitEnterFullscreen();
       }
 
       function vcUpdateSeek() {
