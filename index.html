@@ -3111,6 +3111,10 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
           const ytId = getYouTubeId(fullUrl);
           return ytId ? `https://img.youtube.com/vi/${ytId}/mqdefault.jpg` : fullUrl;
         }
+        // Article-archive videos (articles/video/X.mp4) — a poster jpg sits beside the file
+        if (fullUrl.includes("/articles/video/")) {
+          return fullUrl.replace(/\.(mp4|mov|m4v|webm)(\?.*)?$/i, "_poster.jpg");
+        }
         if (fullUrl.includes("/full/")) {
           // Video thumbnails keep the source extension in the key
           // (thumbs/{base}.mov_m.jpg) so a video and an image sharing the same
