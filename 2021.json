@@ -5493,7 +5493,10 @@
         ],
         "type": "attached",
         "url": "https://assets.xz-studio-gallery.com/full/20210213_DY_XZ.mp4",
-        "year": "2021"
+        "year": "2021",
+        "platform_links": {
+            "douyin": "https://www.douyin.com/video/6928974816003263758"
+        }
     },
     {
         "date": "2021-02-12",
