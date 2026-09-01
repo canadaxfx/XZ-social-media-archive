@@ -3779,6 +3779,56 @@
         "postGroup": "2019-08-30_1"
     },
     {
+        "id": 435,
+        "url": "https://assets.xz-studio-gallery.com/full/20190829_WB_XZ.jpg",
+        "date": "2019-08-29",
+        "month": "August",
+        "year": "2019",
+        "tags": [
+            "佳洁士"
+        ],
+        "groupName": "201908",
+        "link": "",
+        "type": "screenshot",
+        "platform": "weibo",
+        "note": "",
+        "description": "",
+        "postText": "很开心作为@佳洁士Crest 品牌大使加入@屈臣氏中国 点亮微笑公益行动！快来和我一起#点亮微笑，美有道理#，让唇腭裂儿童重获微笑人生!",
+        "size_mb": 0.35,
+        "englishTags": [
+            "crest",
+            "watsons",
+            "brand ambassador",
+            "charity event"
+        ]
+    },
+    {
+        "id": 436,
+        "url": "https://assets.xz-studio-gallery.com/full/20190829_XZ-Weibo-1.mp4",
+        "date": "2019-08-29",
+        "month": "August",
+        "year": "2019",
+        "tags": [
+            "佳洁士"
+        ],
+        "groupName": "201908",
+        "duration": 31,
+        "link": "",
+        "type": "attached",
+        "platform": "weibo",
+        "note": "",
+        "description": "",
+        "postText": "很开心作为@佳洁士Crest 品牌大使加入@屈臣氏中国 点亮微笑公益行动！快来和我一起#点亮微笑，美有道理#，让唇腭裂儿童重获微笑人生!",
+        "size_mb": 3.24,
+        "englishTags": [
+            "crest",
+            "watsons",
+            "brand ambassador",
+            "charity event"
+        ],
+        "quality": "720p"
+    },
+    {
         "date": "2019-08-23",
         "englishTags": [
             "jade dynasty",
