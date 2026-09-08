@@ -2380,7 +2380,7 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
 
       /* ---------- Constants & State ---------- */
       // --- VARIABLES ---
-      const DATA_VER = '20260829-1'; // bump when pushing new JSON to GitHub
+      const DATA_VER = '20260908-1'; // bump when pushing new JSON to GitHub
       let allData = [];
       let categoryData = [];
       let activeData = [];
@@ -2607,10 +2607,7 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
         } else {
           activeData = categoryData.filter(item => {
             if (item.platform === currentSourceFilter) return true;
-            if (item.platform_links && typeof item.platform_links === 'object') {
-              return Object.keys(item.platform_links).some(k => k.toLowerCase() === currentSourceFilter);
-            }
-            return false;
+            return normPlatformLinks(item.platform_links).some(x => x.platform.toLowerCase() === currentSourceFilter);
           });
         }
 
@@ -2761,8 +2758,7 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
           // 1. Check Source
           if (sourceVal !== "all") {
             const matchPrimary = item.platform === sourceVal;
-            const matchExtra = item.platform_links && typeof item.platform_links === 'object' &&
-              Object.keys(item.platform_links).some(k => k.toLowerCase() === sourceVal);
+            const matchExtra = normPlatformLinks(item.platform_links).some(x => x.platform.toLowerCase() === sourceVal);
             if (!matchPrimary && !matchExtra) return false;
           }
 
@@ -3348,6 +3344,21 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
         return pop;
       }
       /* ---------- Modal Functions ---------- */
+      // platform_links may be the legacy {platform:url} object OR the current list
+      // [{platform,url},…] — every link is independent, so the same platform can
+      // appear more than once (e.g. two weibo cross-posts). Always read via this.
+      function normPlatformLinks(pl) {
+        if (Array.isArray(pl)) {
+          return pl.filter(x => x && x.platform && x.url)
+                   .map(x => ({ platform: String(x.platform).trim(), url: String(x.url).trim() }));
+        }
+        if (pl && typeof pl === 'object') {
+          return Object.entries(pl).filter(([, v]) => v)
+                   .map(([k, v]) => ({ platform: String(k).trim(), url: String(v).trim() }));
+        }
+        return [];
+      }
+
       function setPlatformBtnBehavior(btn, mainLink, extraLinks, primarySource) {
         const existingPop = document.getElementById('platformPopover');
         if (existingPop) existingPop.style.display = 'none';
@@ -3360,9 +3371,9 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
         // entry's actual platform (this gallery's `platform` is a plain string,
         // never had a primarySource param at all until this fix).
         if (w) links.push({label: lmap[_ps] || primarySource || 'Weibo 微博', url: /^https?/i.test(w) ? w : 'https://' + w});
-        if (extraLinks && typeof extraLinks === 'object') {
-          Object.entries(extraLinks).forEach(([k, v]) => { if (v) links.push({label: lmap[String(k).toLowerCase()] || k, url: String(v)}); });
-        }
+        normPlatformLinks(extraLinks).forEach(({ platform, url }) => {
+          links.push({ label: lmap[platform.toLowerCase()] || platform, url });
+        });
         if (!links.length) { btn.style.display = 'none'; return; }
         btn.style.display = 'inline-block';
         btn.onclick = null;
@@ -3483,15 +3494,13 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
         const _badges = [];
         const { cssClass, badgeLabel } = getSourceMeta(photo.platform);
         _badges.push(`<span class="source-badge ${cssClass}">${badgeLabel}</span>`);
-        if (photo.platform_links && typeof photo.platform_links === 'object') {
-            Object.keys(photo.platform_links).forEach(k => {
-                const kl = _normPlat(k);
-                if (_seen.has(kl)) return;
-                _seen.add(kl);
-                const { cssClass: cls2, badgeLabel: lbl2 } = getSourceMeta(kl);
-                _badges.push(`<span class="source-badge ${cls2}">${lbl2}</span>`);
-            });
-        }
+        normPlatformLinks(photo.platform_links).forEach(x => {
+            const kl = _normPlat(x.platform);
+            if (_seen.has(kl)) return;
+            _seen.add(kl);
+            const { cssClass: cls2, badgeLabel: lbl2 } = getSourceMeta(kl);
+            _badges.push(`<span class="source-badge ${cls2}">${lbl2}</span>`);
+        });
         // link field may be Weibo or another platform — detect from URL
         if (photo.link) {
             const _linkPlat = (url => {
