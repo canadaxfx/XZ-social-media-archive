@@ -781,9 +781,12 @@
         "month": "November",
         "note": "https://weibo.com/6519508247/P1lQdoVK7",
         "platform": "weibo",
-        "platform_links": {
-            "douyin": "https://www.douyin.com/video/7439576134783700281"
-        },
+        "platform_links": [
+            {
+                "platform": "douyin",
+                "url": "https://www.douyin.com/video/7439576134783700281"
+            }
+        ],
         "postGroup": "5103123014093977",
         "postText": "微博: 步入一场梦幻“漂流”http://t.cn/A6mvODiq ​​\n抖音: 在漂流里“瞬移”",
         "quality": "4k",
