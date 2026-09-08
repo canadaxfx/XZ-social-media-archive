@@ -1778,6 +1778,9 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
               <option value="oasis">Oasis</option>
               <option value="douyin">Douyin</option>
               <option value="ins">Instagram</option>
+              <option value="x">X / Twitter</option>
+              <option value="facebook">Facebook</option>
+              <option value="other">Others 其他</option>
             </select>
 
             <select id="filterYear" onchange="applyDateFilter()">
@@ -2605,10 +2608,7 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
         if (currentSourceFilter === "all") {
           activeData = [...categoryData];
         } else {
-          activeData = categoryData.filter(item => {
-            if (item.platform === currentSourceFilter) return true;
-            return normPlatformLinks(item.platform_links).some(x => x.platform.toLowerCase() === currentSourceFilter);
-          });
+          activeData = categoryData.filter(item => _itemMatchesPlatform(item, currentSourceFilter));
         }
 
         // Apply media type filter (only for "attached" tab)
@@ -2756,11 +2756,7 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
         // Filter against categoryData with all filters applied at once
         let filtered = categoryData.filter((item) => {
           // 1. Check Source
-          if (sourceVal !== "all") {
-            const matchPrimary = item.platform === sourceVal;
-            const matchExtra = normPlatformLinks(item.platform_links).some(x => x.platform.toLowerCase() === sourceVal);
-            if (!matchPrimary && !matchExtra) return false;
-          }
+          if (sourceVal !== "all" && !_itemMatchesPlatform(item, sourceVal)) return false;
 
           // 2. Check Year
           if (yVal !== "all" && item.year !== yVal) return false;
@@ -3359,6 +3355,54 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
         return [];
       }
 
+      // Platforms that have their own <option> in #filterSource (+ synonyms). The
+      // "Others 其他" filter matches any entry whose platforms are ALL outside this
+      // set — so a hand-entered platform (threads, lofter, …) with no dedicated
+      // option is still reachable. Keep in sync with #filterSource.
+      const _KNOWN_PLATFORMS = new Set(['weibo', 'oasis', 'douyin', 'ins', 'instagram',
+        'x', 'twitter', 'facebook']);
+
+      // Does `item`'s platform (primary string + platform_links) satisfy the
+      // #filterSource value? Handles x↔twitter / ins↔instagram / rednote synonyms
+      // and the "other" catch-all.
+      function _itemMatchesPlatform(item, sVal) {
+        if (!sVal || sVal === 'all') return true;
+        const set = new Set();
+        if (item.platform) {
+          (Array.isArray(item.platform) ? item.platform : [item.platform])
+            .forEach(t => set.add(String(t).toLowerCase().trim()));
+        }
+        normPlatformLinks(item.platform_links).forEach(x => set.add(x.platform.toLowerCase()));
+        if (!set.size) set.add('weibo');
+        if (set.has('twitter')) set.add('x');
+        if (set.has('x')) set.add('twitter');
+        if (set.has('xiaohongshu') || set.has('xhs')) set.add('rednote');
+        if (set.has('instagram')) set.add('ins');
+        if (set.has('ins')) set.add('instagram');
+        if (sVal === 'other') return ![...set].some(p => _KNOWN_PLATFORMS.has(p));
+        return set.has(sVal);
+      }
+
+      // Best-guess platform key from a link's host — lets the PRIMARY link be labelled
+      // from the URL itself instead of trusting a possibly-mismatched platform field
+      // (e.g. an entry tagged platform:"douyin" whose citation link is a weibo.com URL).
+      function platformFromUrl(u) {
+        let h = '';
+        try { h = new URL(/^https?:\/\//i.test(u) ? u : 'https://' + u).hostname.toLowerCase(); } catch (e) { return ''; }
+        if (h.indexOf('oasis.weibo') !== -1) return 'oasis';
+        if (/(^|\.)weibo\.(com|cn)$/.test(h) || h === 'weibo.video') return 'weibo';
+        if (h.indexOf('douyin.com') !== -1) return 'douyin';
+        if (h.indexOf('xiaohongshu.com') !== -1 || h === 'xhslink.com') return 'rednote';
+        if (/(^|\.)(x|twitter)\.com$/.test(h) || h === 't.co') return 'x';
+        if (h.indexOf('instagram.com') !== -1 || h === 'instagr.am') return 'instagram';
+        if (h.indexOf('youtube.com') !== -1 || h === 'youtu.be') return 'youtube';
+        if (h.indexOf('bilibili.com') !== -1 || h === 'b23.tv') return 'bilibili';
+        if (h.indexOf('facebook.com') !== -1 || h === 'fb.watch') return 'facebook';
+        if (h.indexOf('qq.com') !== -1) return 'qq';
+        if (h.indexOf('mgtv.com') !== -1) return 'mgtv';
+        return '';
+      }
+
       function setPlatformBtnBehavior(btn, mainLink, extraLinks, primarySource) {
         const existingPop = document.getElementById('platformPopover');
         if (existingPop) existingPop.style.display = 'none';
@@ -3366,11 +3410,10 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
         const links = [];
         const w = mainLink ? String(mainLink).trim() : '';
         const _ps = primarySource ? String(primarySource).toLowerCase().trim() : '';
-        // Fall back to the raw platform string itself (never a hardcoded 'Weibo') --
-        // this used to always label the main link 'Weibo 微博' regardless of the
-        // entry's actual platform (this gallery's `platform` is a plain string,
-        // never had a primarySource param at all until this fix).
-        if (w) links.push({label: lmap[_ps] || primarySource || 'Weibo 微博', url: /^https?/i.test(w) ? w : 'https://' + w});
+        // Label from the URL host first; then the entry's platform field (a plain
+        // string here, and often mismatched — e.g. platform:"douyin" with a
+        // weibo.com citation link); then the raw string; 'Weibo 微博' only last.
+        if (w) links.push({label: lmap[platformFromUrl(w)] || lmap[_ps] || primarySource || 'Weibo 微博', url: /^https?/i.test(w) ? w : 'https://' + w});
         normPlatformLinks(extraLinks).forEach(({ platform, url }) => {
           links.push({ label: lmap[platform.toLowerCase()] || platform, url });
         });
