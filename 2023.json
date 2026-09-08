@@ -869,9 +869,12 @@
         "note": "https://weibo.com/1784473157/No6e2014j",
         "photoText": "",
         "platform": "douyin",
-        "platform_links": {
-            "douyin": "https://www.douyin.com/video/7290403548460797236"
-        },
+        "platform_links": [
+            {
+                "platform": "douyin",
+                "url": "https://www.douyin.com/video/7290403548460797236"
+            }
+        ],
         "postText": "同行追梦，步履不停！",
         "quality": "1080p",
         "size_mb": 82.75,
@@ -1424,9 +1427,12 @@
         "month": "September",
         "note": "https://weibo.com/6519508247/Q4zYVngpS",
         "platform": "weibo",
-        "platform_links": {
-            "douyin": "https://www.douyin.com/video/7278655169989020968"
-        },
+        "platform_links": [
+            {
+                "platform": "douyin",
+                "url": "https://www.douyin.com/video/7278655169989020968"
+            }
+        ],
         "postGroup": "4945967461961065",
         "postText": "微博：来看🎆#骄阳伴我# http://t.cn/A6OKYkYI ​​​\n抖音：“神笔”盛阳🌞#骄阳伴我",
         "quality": "1080p",
