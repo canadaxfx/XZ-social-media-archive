@@ -5574,9 +5574,8 @@
         "platform": "weibo",
         "postGroup": "2021-02-12_2",
         "postText": "故乡与异乡，万家灯火总有一盏灯会为你而亮。",
-        "quality": "720p",
-        "size_hd": 120.2,
-        "size_mb": 31.36,
+        "quality": "1080p",
+        "size_mb": 120.2,
         "source": [],
         "tags": [
             "东方卫视春晚",
@@ -5584,7 +5583,6 @@
         ],
         "type": "attached",
         "url": "https://assets.xz-studio-gallery.com/full/20241217_异乡人_XZ-MISC-1.mp4",
-        "url_hd": "https://assets.xz-studio-gallery.com/hd/20241217_异乡人_XZ-MISC-1.mp4",
         "year": "2021"
     },
     {
@@ -6488,10 +6486,8 @@
         "platform": "weibo",
         "postGroup": "2021-01-01_1",
         "postText": "踏着力气，踩着梦[拳头]",
-        "quality": "720p",
-        "size_4k": 113.57,
-        "size_hd": 113.57,
-        "size_mb": 29.65,
+        "quality": "1080p",
+        "size_mb": 113.6,
         "source": [],
         "tags": [
             "东方卫视跨年",
@@ -6499,7 +6495,6 @@
         ],
         "type": "attached",
         "url": "https://assets.xz-studio-gallery.com/full/20241130_野子_XZ-MISC-1.mp4",
-        "url_hd": "https://assets.xz-studio-gallery.com/hd/20241130_野子_XZ-MISC-1.mp4",
         "year": "2021"
     },
     {
