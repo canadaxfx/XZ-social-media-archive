@@ -1143,8 +1143,8 @@
 
             /* vcFullscreen() fullscreens THIS wrapper (not the bare <video>), so plNavBar's
                Prev/Next/play/mute/playlist controls stay visible in fullscreen. The
-               thumbnail strip already sits outside the wrapper in the DOM here, so it's
-               naturally excluded from fullscreen with no extra hiding rule needed. */
+               thumbnail strip lives inside the wrapper (video -> strip -> controls, same
+               order as the other galleries), so it's hidden while fullscreen. */
             .vc-fs-wrap { display: flex; flex-direction: column; min-height: 0; }
             .vc-fs-wrap:fullscreen,
             .vc-fs-wrap:-webkit-full-screen {
@@ -1153,6 +1153,10 @@
             .vc-fs-wrap:fullscreen .modal-photo-container,
             .vc-fs-wrap:-webkit-full-screen .modal-photo-container {
               flex: 1; max-height: none; height: auto; min-height: 0;
+            }
+            .vc-fs-wrap:fullscreen .thumbnail-strip,
+            .vc-fs-wrap:-webkit-full-screen .thumbnail-strip {
+              display: none;
             }
             /* In fullscreen the control bar floats as a centered pill over the bottom of the video. */
             .vc-fs-wrap:fullscreen .pl-fs-controls,
@@ -1925,6 +1929,10 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
           </div>
         </div>
 
+        <div class="thumbnail-strip">
+          <div class="thumbnail-container" id="thumbnailContainer"></div>
+        </div>
+
         <!-- Video control bar (shown when a video is open) -->
         <div class="pl-fs-controls" id="plNavBar">
             <button class="pl-fs-nav-btn" id="plFsPrev" onclick="navigatePhoto(-1)" title="上一个 Previous"><svg viewBox="0 0 24 24" style="fill:currentColor;stroke:none"><path d="M5 6h2.4v12H5z M19 6v12l-11-6z"/></svg></button>
@@ -1943,10 +1951,6 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
         </div>
         <div id="vcUpNext"><div class="vcun-head"><span class="vcun-title">接下来 · Up Next</span><button id="vcUnLoop" class="vcun-hbtn" onclick="plToggleLoop()" title="循环播放 Loop">🔁</button></div><div id="vcUpNextList"></div></div>
         <button id="vcFsClose" onclick="vcExitFs()" title="退出全屏 Exit fullscreen"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
-        </div>
-
-        <div class="thumbnail-strip">
-          <div class="thumbnail-container" id="thumbnailContainer"></div>
         </div>
 
         <div class="photo-info-panel">
@@ -2388,7 +2392,7 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
 
       /* ---------- Constants & State ---------- */
       // --- VARIABLES ---
-      const DATA_VER = '20260910-3'; // bump when pushing new JSON to GitHub
+      const DATA_VER = '20260910-4'; // bump when pushing new JSON to GitHub
       let allData = [];
       let categoryData = [];
       let activeData = [];
