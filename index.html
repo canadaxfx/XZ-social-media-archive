@@ -1429,13 +1429,12 @@
               border: none;
             }
             .download-btn:hover { background: var(--grad-red-h); }
-            /* "View on Platform" → secondary outline, next to the filled "Download HD" primary. */
             .action-btn.source-link-btn {
-              background: transparent;
-              color: #3a4356;
-              border: 1px solid #c7ccd6;
+              background: var(--grad-red);
+              color: white;
+              border: none;
             }
-            .action-btn.source-link-btn:hover { background: rgba(20,20,25,.05); }
+            .action-btn.source-link-btn:hover { background: var(--grad-red-h); }
 
             /* Footer */
             .site-footer {
@@ -2389,7 +2388,7 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
 
       /* ---------- Constants & State ---------- */
       // --- VARIABLES ---
-      const DATA_VER = '20260910-1'; // bump when pushing new JSON to GitHub
+      const DATA_VER = '20260910-2'; // bump when pushing new JSON to GitHub
       let allData = [];
       let categoryData = [];
       let activeData = [];
