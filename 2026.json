@@ -1,5 +1,49 @@
 [
     {
+        "id": 135,
+        "url": "https://assets.xz-studio-gallery.com/full/20260915_XZ-Weibo-1.mp4",
+        "date": "2026-09-15",
+        "month": "September",
+        "year": "2026",
+        "tags": [
+            "荣耀",
+            "Magic9"
+        ],
+        "groupName": "202609",
+        "quality": "4k",
+        "duration": 15,
+        "link": "https://weibo.com/1792951112/5343353466269484",
+        "type": "attached",
+        "platform": "weibo",
+        "note": "",
+        "description": "",
+        "postText": "看清每一个细节，拍出每一种情绪。 @荣耀手机 #荣耀Magic9# 系列，阿莱色彩科学，把生活随手拍出电影感。 http://t.cn/AXOGM9YT ​​​",
+        "postGroup": "5343353466269484",
+        "size_mb": 9.27,
+        "englishTags": []
+    },
+    {
+        "id": 136,
+        "url": "https://assets.xz-studio-gallery.com/full/20260915_WB_XZ.jpg",
+        "date": "2026-09-15",
+        "month": "September",
+        "year": "2026",
+        "tags": [
+            "荣耀",
+            "Magic9"
+        ],
+        "groupName": "202609",
+        "link": "https://weibo.com/1792951112/5343353466269484",
+        "type": "screenshot",
+        "platform": "weibo",
+        "note": "",
+        "description": "",
+        "postText": "看清每一个细节，拍出每一种情绪。 @荣耀手机 #荣耀Magic9# 系列，阿莱色彩科学，把生活随手拍出电影感。 http://t.cn/AXOGM9YT ​​​",
+        "postGroup": "5343353466269484",
+        "size_mb": 0.08,
+        "englishTags": []
+    },
+    {
         "id": 132,
         "url": "https://assets.xz-studio-gallery.com/full/20260904_XZ-Weibo-1.mp4",
         "date": "2026-09-04",
@@ -193,7 +237,7 @@
         "postText": "期待全球能工巧匠闪耀申城，也预祝中国代表团取得佳绩！#2026上海世赛#",
         "postGroup": "ReQQQExyw",
         "standalone": true,
-        "size_mb": 0.17,
+        "size_mb": 0.16,
         "englishTags": [
             "world skills competition",
             "shanghai",
@@ -316,7 +360,7 @@
         "note": "",
         "description": "",
         "postText": "好久不见，莫得闲。今天中午12 点，戈止镇的故事如约而至。#莫得闲剧好看今日开播# http://t.cn/AXC5DGAu ​​​",
-        "size_mb": 0.54,
+        "size_mb": 0.14,
         "englishTags": [
             "drama",
             "the legend of the hidden",
