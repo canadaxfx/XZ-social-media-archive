@@ -1056,12 +1056,15 @@
               display: flex;
               flex-wrap: nowrap;
               gap: 4px;
-              overflow: hidden;
+              overflow-x: auto;
+              overflow-y: hidden;
+              scrollbar-width: none;
               flex: 1;
               min-width: 0;
               align-items: center;
               padding: 0 2px 2px;
             }
+            .modal-tags-container::-webkit-scrollbar { display: none; }
             .modal-tag-pill {
               font-size: 10px;
               padding: 2px 8px;
@@ -1070,6 +1073,7 @@
               border-radius: 10px;
               border: 1px solid #e4e6eb;
               white-space: nowrap;
+              flex-shrink: 0;
             }
             .modal-header-top {
               display: flex;
@@ -1339,6 +1343,7 @@
               border-radius: 15px;
               border: 1px solid #e4e6eb;
               white-space: nowrap;
+              flex-shrink: 0;
               transition: all 0.2s ease;
             }
 
@@ -1400,6 +1405,8 @@
             .photo-info-panel {
               padding: 10px;
               background: white;
+              max-height: 250px;
+              overflow-y: auto;
               flex-shrink: 0;
             }
             .download-actions-row {
@@ -1427,12 +1434,18 @@
               display: inline-block;
               line-height: 1.2;
             }
-            .download-btn {
+            .action-btn:disabled {
+              background: #ccc !important;
+              cursor: not-allowed;
+              transform: none !important;
+              box-shadow: none !important;
+            }
+            .action-btn.download-btn {
               background: var(--grad-red);
               color: white;
               border: none;
             }
-            .download-btn:hover { background: var(--grad-red-h); }
+            .action-btn.download-btn:hover { background: var(--grad-red-h); }
             .action-btn.source-link-btn {
               background: var(--grad-red);
               color: white;
@@ -2392,7 +2405,7 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
 
       /* ---------- Constants & State ---------- */
       // --- VARIABLES ---
-      const DATA_VER = '20260910-4'; // bump when pushing new JSON to GitHub
+      const DATA_VER = '20260916-1'; // bump when pushing new JSON to GitHub
       let allData = [];
       let categoryData = [];
       let activeData = [];
