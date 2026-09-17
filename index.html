@@ -980,8 +980,9 @@
 
             /* Source Colors (Affects both Dots and Badges) */
             .bg-weibo {
-                background: #B8860B; /* Gold */
-                color: #fff;         /* Black text for Modal Badge */
+                background-color: #f6b60d;
+                border: 1px solid #ffe082;
+                color: #fff;
             }
             .bg-oasis {
                 background: #2CB353; /* Green */
@@ -996,11 +997,10 @@
       .bg-douyin {
           background: #000000;
           color: #fff;
-          box-shadow: 0 0 0 1px rgba(255,255,255,0.35);
       }
-      .bg-rednote  { background: #E60023; color: #fff; }
-      .bg-twitter  { background: #1DA1F2; color: #fff; }
-      .bg-platform { background: #6b7280; color: #fff; }
+      .bg-rednote  { background-color: #ff2442; border: 1px solid #ff8fab; color: #fff; }
+      .bg-twitter  { background: #1da1f2; color: #fff; }
+      .bg-platform { background-color: #999999; color: #fff; }
 
             /* Modal Styles */
             .modal {
@@ -1095,14 +1095,14 @@
               font-weight: 500;
             }
       .source-badge {
-        font-size: 11px;       /* Slightly larger for readability */
-        padding: 4px 10px;
-        border-radius: 12px;   /* Pill shape looks more modern */
+        display: inline-block;
+        padding: 2px 6px;
+        border-radius: 10px;
+        font-size: 10px;
         color: white;
-        font-weight: 700;
-        text-transform: uppercase;
-        white-space: nowrap;   /* Forces text to stay on one line */
-        letter-spacing: 0.5px;
+        font-weight: bold;
+        vertical-align: middle;
+        white-space: nowrap;
       }
 
             .photo-counter {
@@ -2409,7 +2409,7 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
 
       /* ---------- Constants & State ---------- */
       // --- VARIABLES ---
-      const DATA_VER = '20260916-3'; // bump when pushing new JSON to GitHub
+      const DATA_VER = '20260916-4'; // bump when pushing new JSON to GitHub
       let allData = [];
       let categoryData = [];
       let activeData = [];
