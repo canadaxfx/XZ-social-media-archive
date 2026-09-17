@@ -1601,9 +1601,13 @@
         .modal-content { max-width: 95vw; max-height: 98vh; margin-top: 0; }
         .modal-photo-container { flex: none; height: 35vh; min-height: 200px; max-height: 300px; }
         .nav-arrow { width: 40px; height: 40px; font-size: 16px; }
+        .nav-arrow.prev { left: 10px; }
+        .nav-arrow.next { right: 10px; }
         .thumbnail-strip { padding: 8px 10px; min-height: 50px; }
         .thumbnail { width: 40px; height: 40px; }
         .close-modal { width: 34px; height: 34px; }
+        .photo-info-panel { max-height: none; overflow-y: visible; }
+        .action-btn { padding: 5px 8px; font-size: 12px; }
 
         .nav-segmented { width: 100%; justify-content: center; }
         .nav-segmented .segment-btn { padding: 10px 14px; font-size: 12px; }
@@ -2405,7 +2409,7 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
 
       /* ---------- Constants & State ---------- */
       // --- VARIABLES ---
-      const DATA_VER = '20260916-2'; // bump when pushing new JSON to GitHub
+      const DATA_VER = '20260916-3'; // bump when pushing new JSON to GitHub
       let allData = [];
       let categoryData = [];
       let activeData = [];
