@@ -1106,10 +1106,11 @@
       }
 
             .photo-counter {
-              font-weight: 600;
-              color: #5E9FD8;
+              font-weight: 700;
+              color: var(--gold);
               font-size: 12px;
-              min-width: 60px;
+              width: 50px;
+              flex-shrink: 0;
             }
             .close-modal {
               background: rgba(0,0,0,0.06);
@@ -2409,7 +2410,7 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
 
       /* ---------- Constants & State ---------- */
       // --- VARIABLES ---
-      const DATA_VER = '20260916-4'; // bump when pushing new JSON to GitHub
+      const DATA_VER = '20260916-5'; // bump when pushing new JSON to GitHub
       let allData = [];
       let categoryData = [];
       let activeData = [];
@@ -3548,8 +3549,9 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
             plModalBtn.style.display = isRealVid ? 'inline-block' : 'none';
             if (isRealVid) plSyncModalAddBtn(photo);
         }
-        document.getElementById("photoCounter").textContent =
-          `${currentPhotoIndex + 1} / ${currentGroupPhotos.length}`;
+        document.getElementById("photoCounter").textContent = playlistMode
+          ? `${currentPhotoIndex + 1} / ${currentGroupPhotos.length}`
+          : `${currentPhotoIndex + 1} of ${currentGroupPhotos.length}`;
 
         // NEW: Update Badge and Title
         const dateEl = document.getElementById("groupTitleDate");
