@@ -2410,7 +2410,7 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
 
       /* ---------- Constants & State ---------- */
       // --- VARIABLES ---
-      const DATA_VER = '20260916-5'; // bump when pushing new JSON to GitHub
+      const DATA_VER = '20260928-1'; // bump when pushing new JSON to GitHub
       let allData = [];
       let categoryData = [];
       let activeData = [];
@@ -3254,6 +3254,29 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
         }, 100);
       }, { passive: true });
 
+      // Periodic safety net (fixed Sept 2026, ported from XZ Gallery
+      // Navigator): every recovery above is triggered by a specific event
+      // (scroll settling, focus, visibility, one-shot post-render timeout) --
+      // confirmed directly on Navigator that a fast/large scroll can move the
+      // viewport across an image's on-screen position between two rendered
+      // frames, so IntersectionObserver never sees it intersect at all. Once
+      // that happens nothing ever looks at it again -- none of the existing
+      // listeners fire a second time with nothing to react to. This interval
+      // re-scans while any placeholder remains and stops itself once the
+      // page is clean, closing that gap regardless of what caused it.
+      let _lazyLoadPollTimer = null;
+      function _ensureLazyLoadPoll() {
+        if (_lazyLoadPollTimer) return;
+        _lazyLoadPollTimer = setInterval(() => {
+          if (!document.querySelector('.lazy-image[data-src]:not([src]), .lazy-image[data-src][src=""]')) {
+            clearInterval(_lazyLoadPollTimer);
+            _lazyLoadPollTimer = null;
+            return;
+          }
+          forceLoadVisibleImages();
+        }, 1000);
+      }
+
       // Second-chance safety net (fixed Aug 2026): scroll/focus/visibility
       // only fire on a fresh USER action -- they don't help when a render
       // happens programmatically with nothing for the user to react to
@@ -3270,6 +3293,11 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
           forceLoadVisibleImages();
           _deferredLoadCheckPending = false;
         }, 400);
+        // Every render can introduce fresh placeholders (a new search, a
+        // filter change, a silent background refresh) -- restart the
+        // periodic poll each time in case an earlier poll already stopped
+        // itself after a previous render went fully clean.
+        _ensureLazyLoadPoll();
       }
 
       /* ---------- Search Functions ---------- */
