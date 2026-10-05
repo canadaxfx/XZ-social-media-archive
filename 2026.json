@@ -63,6 +63,47 @@
         "englishTags": []
     },
     {
+        "id": 159,
+        "url": "https://assets.xz-studio-gallery.com/full/20261005_WB_XZ-2.jpg",
+        "date": "2026-10-05",
+        "month": "October",
+        "year": "2026",
+        "tags": [
+            "生日动态"
+        ],
+        "groupName": "202610",
+        "link": "https://weibo.com/1792951112/RlanGom35",
+        "type": "screenshot",
+        "platform": "weibo",
+        "note": "",
+        "description": "",
+        "postText": "http://t.cn/AXWmWKWg",
+        "postGroup": "RlanGom35",
+        "standalone": true,
+        "size_mb": 0.07,
+        "englishTags": []
+    },
+    {
+        "id": 160,
+        "url": "https://assets.xz-studio-gallery.com/full/20261005_XZ-Weibo-3.jpg",
+        "date": "2026-10-05",
+        "month": "October",
+        "year": "2026",
+        "tags": [
+            "异想天开",
+            "MV"
+        ],
+        "groupName": "202610",
+        "link": "https://weibo.com/1792951112/RlekT6h7z",
+        "type": "screenshot",
+        "platform": "weibo",
+        "note": "",
+        "description": "",
+        "postText": "异想天开▶️http://t.cn/AXWm953b",
+        "postGroup": "RlekT6h7z",
+        "size_mb": 0.06
+    },
+    {
         "id": 153,
         "url": "https://assets.xz-studio-gallery.com/full/20261001_XZ-Weibo-1.mp4",
         "date": "2026-10-01",
