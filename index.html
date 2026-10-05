@@ -1000,6 +1000,7 @@
       }
       .bg-rednote  { background-color: #ff2442; border: 1px solid #ff8fab; color: #fff; }
       .bg-twitter  { background: #000000; color: #fff; } /* X (formerly Twitter) */
+      .bg-facebook { background: #0866FF; color: #fff; } /* Facebook brand blue */
       .bg-platform { background-color: #999999; color: #fff; }
 
             /* Modal Styles */
@@ -2345,6 +2346,7 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
           case "xhs":     return { cssClass: "bg-rednote", dotLabel: "RedNote",   badgeLabel: "REDNOTE",   thumbLabel: "XHS" };
           case "twitter":
           case "x":       return { cssClass: "bg-twitter", dotLabel: "X",         badgeLabel: "X",         thumbLabel: "X" };
+          case "facebook": return { cssClass: "bg-facebook", dotLabel: "Facebook", badgeLabel: "FB",        thumbLabel: "FB" };
           default: { const lbl = String(source).toUpperCase().slice(0, 8);
                      return { cssClass: "bg-platform", dotLabel: lbl, badgeLabel: lbl, thumbLabel: lbl }; }
         }
@@ -2411,7 +2413,7 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
 
       /* ---------- Constants & State ---------- */
       // --- VARIABLES ---
-      const DATA_VER = '20261005-1'; // bump when pushing new JSON to GitHub
+      const DATA_VER = '20261005-2'; // bump when pushing new JSON to GitHub
       let allData = [];
       let categoryData = [];
       let activeData = [];
