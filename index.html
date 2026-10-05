@@ -999,7 +999,7 @@
           color: #fff;
       }
       .bg-rednote  { background-color: #ff2442; border: 1px solid #ff8fab; color: #fff; }
-      .bg-twitter  { background: #1da1f2; color: #fff; }
+      .bg-twitter  { background: #000000; color: #fff; } /* X (formerly Twitter) */
       .bg-platform { background-color: #999999; color: #fff; }
 
             /* Modal Styles */
@@ -1807,7 +1807,7 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
               <option value="oasis">Oasis</option>
               <option value="douyin">Douyin</option>
               <option value="ins">Instagram</option>
-              <option value="x">X / Twitter</option>
+              <option value="x">X</option>
               <option value="facebook">Facebook</option>
               <option value="other">Others 其他</option>
             </select>
@@ -2343,7 +2343,8 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
           case "rednote":
           case "xiaohongshu":
           case "xhs":     return { cssClass: "bg-rednote", dotLabel: "RedNote",   badgeLabel: "REDNOTE",   thumbLabel: "XHS" };
-          case "twitter": return { cssClass: "bg-twitter", dotLabel: "Twitter",   badgeLabel: "TWITTER",   thumbLabel: "TW" };
+          case "twitter":
+          case "x":       return { cssClass: "bg-twitter", dotLabel: "X",         badgeLabel: "X",         thumbLabel: "X" };
           default: { const lbl = String(source).toUpperCase().slice(0, 8);
                      return { cssClass: "bg-platform", dotLabel: lbl, badgeLabel: lbl, thumbLabel: lbl }; }
         }
@@ -2410,7 +2411,7 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
 
       /* ---------- Constants & State ---------- */
       // --- VARIABLES ---
-      const DATA_VER = '20260928-1'; // bump when pushing new JSON to GitHub
+      const DATA_VER = '20261005-1'; // bump when pushing new JSON to GitHub
       let allData = [];
       let categoryData = [];
       let activeData = [];
@@ -2484,7 +2485,7 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
         // cluster — only entries with NO postGroup fall back to using their own
         // link as a natural grouping key (multiple attachments from one
         // never-manually-grouped post already share one link from fetch time).
-        const ARCHIVE_PLATFORM_ORDER = ['weibo', 'oasis', 'ins', 'douyin', 'rednote', 'twitter'];
+        const ARCHIVE_PLATFORM_ORDER = ['weibo', 'oasis', 'ins', 'douyin', 'rednote', 'x', 'twitter'];
         const _platformRank = p => { const i = ARCHIVE_PLATFORM_ORDER.indexOf(p); return i === -1 ? 99 : i; };
         combined.sort((a, b) => {
           const dc = b.date.localeCompare(a.date);
@@ -3461,7 +3462,7 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
       function setPlatformBtnBehavior(btn, mainLink, extraLinks, primarySource) {
         const existingPop = document.getElementById('platformPopover');
         if (existingPop) existingPop.style.display = 'none';
-        const lmap = {weibo:'Weibo 微博',oasis:'Oasis 绿洲',douyin:'Douyin 抖音',youtube:'YouTube',bilibili:'Bilibili',ins:'Instagram',instagram:'Instagram',xiaohongshu:'RedNote 小红书',xhs:'RedNote 小红书',rednote:'RedNote 小红书',twitter:'Twitter',x:'X',facebook:'Facebook',qq:'QQ 腾讯',wx:'WeChat 微信',wechat:'WeChat 微信',mgtv:'MGTV 芒果TV'};
+        const lmap = {weibo:'Weibo 微博',oasis:'Oasis 绿洲',douyin:'Douyin 抖音',youtube:'YouTube',bilibili:'Bilibili',ins:'Instagram',instagram:'Instagram',xiaohongshu:'RedNote 小红书',xhs:'RedNote 小红书',rednote:'RedNote 小红书',twitter:'X',x:'X',facebook:'Facebook',qq:'QQ 腾讯',wx:'WeChat 微信',wechat:'WeChat 微信',mgtv:'MGTV 芒果TV'};
         const links = [];
         const w = mainLink ? String(mainLink).trim() : '';
         const _ps = primarySource ? String(primarySource).toLowerCase().trim() : '';
@@ -3588,7 +3589,7 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
         const badgeEl = document.getElementById("modalSourceBadge");
         badgeEl.className = '';
         badgeEl.style.cssText = 'display:flex;align-items:center;gap:5px';
-        const _normPlat = p => { const k = String(p).toLowerCase().trim(); return (k==='xiaohongshu'||k==='xhs') ? 'rednote' : k==='instagram' ? 'ins' : k; };
+        const _normPlat = p => { const k = String(p).toLowerCase().trim(); return (k==='xiaohongshu'||k==='xhs') ? 'rednote' : k==='instagram' ? 'ins' : k==='twitter' ? 'x' : k; };
         const _seen = new Set([_normPlat(photo.platform || '')]);
         const _badges = [];
         const { cssClass, badgeLabel } = getSourceMeta(photo.platform);
@@ -3608,7 +3609,7 @@ if (location.hostname.includes('github.io') && !localStorage.getItem('cfBannerDi
                 if (/douyin\.com/i.test(url)) return 'douyin';
                 if (/instagram\.com/i.test(url)) return 'ins';
                 if (/xiaohongshu\.com|xhslink\.com/i.test(url)) return 'rednote';
-                if (/twitter\.com|x\.com/i.test(url)) return 'twitter';
+                if (/twitter\.com|x\.com/i.test(url)) return 'x';
                 return null;
             })(photo.link);
             if (_linkPlat && !_seen.has(_normPlat(_linkPlat))) {
