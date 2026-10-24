@@ -60,6 +60,46 @@
         "englishTags": []
     },
     {
+        "id": 189,
+        "url": "https://assets.xz-studio-gallery.com/full/20261024_XZ-Weibo-3.jpg",
+        "date": "2026-10-24",
+        "month": "October",
+        "year": "2026",
+        "tags": [
+            "小城良方"
+        ],
+        "groupName": "202610",
+        "link": "https://weibo.com/1792951112/5357612427641003",
+        "type": "attached",
+        "platform": "weibo",
+        "note": "",
+        "description": "",
+        "postText": "每天被迫营业中。#小城良方# ​​​",
+        "postGroup": "5357612427641003",
+        "size_mb": 2.3,
+        "englishTags": []
+    },
+    {
+        "id": 190,
+        "url": "https://assets.xz-studio-gallery.com/full/20261024_WB_XZ-2.jpg",
+        "date": "2026-10-24",
+        "month": "October",
+        "year": "2026",
+        "tags": [
+            "小城良方"
+        ],
+        "groupName": "202610",
+        "link": "https://weibo.com/1792951112/5357612427641003",
+        "type": "screenshot",
+        "platform": "weibo",
+        "note": "",
+        "description": "",
+        "postText": "每天被迫营业中。#小城良方# ​​​",
+        "postGroup": "5357612427641003",
+        "size_mb": 0.06,
+        "englishTags": []
+    },
+    {
         "id": 184,
         "url": "https://assets.xz-studio-gallery.com/full/20261022_XZ-Weibo-1.mp4",
         "date": "2026-10-22",
